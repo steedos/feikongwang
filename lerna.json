@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "steedos-packages-expense/*"
+  ],
+  "useNx": false,
+  "version": "2.6.0",
+  "npmClient": "yarn"
+}

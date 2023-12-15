@@ -1,0 +1,33 @@
+{
+  "name": "project-ee",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "steedos-packages-expense/*"
+  ],
+  "scripts": {
+    "start": "./node_modules/moleculer/bin/moleculer-runner.js {steedos-packages-hr,steedos-packages-oa,steedos-packages-pm}/*/package.service.js --config steedos.config.js",
+    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js {steedos-packages-hr,steedos-packages-oa,steedos-packages-pm}/*/src/index.{js,ts} --config steedos.config.js --hot --repl",
+    "repl": "moleculer-runner --repl --config steedos.config.js",
+    "bootstrap": "lerna clean --yes && lerna bootstrap",
+    "build": "lerna run build",
+    "npm:login": "npm login --registry https://registry.npmjs.org",
+    "version:latest": "yarn build && lerna version --force-publish --exact",
+    "publish:latest": "lerna publish from-package --registry https://registry.npmjs.org",
+    "version:beta": "yarn build && lerna version prerelease --preid beta --force-publish --exact",
+    "publish:beta": "lerna publish from-package --registry https://registry.npmjs.org --dist-tag beta",
+    "sync_to_npmmirror": "lerna exec --no-private  -- npx cnpm sync \\$LERNA_PACKAGE_NAME"
+  },
+  "dependencies": {
+    "@steedos/service-package-loader": "^2.6.2-beta.13",
+    "dotenv-flow": "^3.2.0",
+    "moleculer": "^0.14.31",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "lerna": "^5.4.0",
+    "moleculer-repl": "^0.7.4",
+    "ts-jest": "^29.0.3"
+  }
+}

@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  steedos-enterprise:
+    image: steedos/steedos-enterprise:latest
+    container_name: steedos-enterprise
+    ports:
+      - "80:80"    
+      - "443:443"
+      - "9001:9001"
+    environment:
+      - ROOT_URL=http://127.0.0.1
+      - TRANSPORTER=redis://redis:6379
+      - CACHER=redis://redis:6379/1
+      - STEEDOS_LOG_LEVEL=info
+      - NPM_REGISTRY_URL=https://registry.npmmirror.com
+    tty: true
+    volumes:
+      - "./storage:/steedos-storage"
+    depends_on:
+      redis:
+        condition: service_started
+  steedos-apps:
+    build: 
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    image: steedos/steedos-apps:latest
+    container_name: steedos-apps
+    environment:
+      - TRANSPORTER=redis://redis:6379
+      - CACHER=redis://redis:6379/1
+    depends_on:
+      redis:
+        condition: service_started
+  redis:
+    image: ecr.aws.steedos.cn/dockerhub/redis:6.2
+    command: "redis-server --save \"\" --appendonly no --loglevel warning"
