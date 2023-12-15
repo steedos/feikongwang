@@ -1,0 +1,8 @@
+name: object_expense_category
+desktop: true
+icon: channel_program_levels
+label: 费用类别
+mobile: true
+object: expense_category
+permissions: []
+type: object

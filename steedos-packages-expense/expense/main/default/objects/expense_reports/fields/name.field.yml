@@ -1,0 +1,9 @@
+name: name
+create: true
+filterable: true
+index: true
+label: 报销名称
+required: true
+searchable: true
+sort_no: 100
+type: text

@@ -1,0 +1,8 @@
+name: object_expense_advance_payment
+desktop: true
+icon: assignment
+label: 预支款
+mobile: true
+object: expense_advance_payment
+permissions: []
+type: object

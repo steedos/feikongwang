@@ -1,0 +1,11 @@
+name: name
+create: true
+filterable: true
+index: true
+inlineHelpText: 例如：去北京出差
+is_wide: false
+label: 差旅名称
+required: true
+searchable: true
+sort_no: 100
+type: text

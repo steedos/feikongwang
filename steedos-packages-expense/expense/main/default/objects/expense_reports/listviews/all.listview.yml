@@ -1,0 +1,29 @@
+name: all
+columns:
+  - field: name
+  - field: reports_number
+  - field: business_purpose
+  - field: start
+  - field: end
+  - field: expense_trips
+filter_scope: space
+filters: []
+is_enable: true
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: reports_number
+  - field: business_purpose
+  - field: start
+  - field: end
+  - field: expense_trips
+  - field: created_by
+  - field: created
+shared: true
+sort:
+  - field_name: start
+    order: desc
+sort_no: 100
+type: grid

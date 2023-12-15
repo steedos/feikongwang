@@ -1,0 +1,8 @@
+name: object_expense_reports
+desktop: true
+icon: medication_statement
+label: 报销
+mobile: true
+object: expense_reports
+permissions: []
+type: object

@@ -1,0 +1,8 @@
+name: object_expense_trips
+desktop: true
+icon: job_position
+label: 差旅
+mobile: true
+object: expense_trips
+permissions: []
+type: object

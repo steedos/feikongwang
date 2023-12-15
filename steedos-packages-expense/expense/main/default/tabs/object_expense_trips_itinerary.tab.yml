@@ -1,0 +1,8 @@
+name: object_expense_trips_itinerary
+desktop: true
+icon: product_item_transaction
+label: 差旅行程
+mobile: true
+object: expense_trips_itinerary
+permissions: []
+type: object

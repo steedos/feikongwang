@@ -1,0 +1,8 @@
+name: object_expense
+desktop: true
+icon: lead_list
+label: 费用
+mobile: true
+object: expense
+permissions: []
+type: object

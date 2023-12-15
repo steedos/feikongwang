@@ -1,0 +1,9 @@
+name: name
+create: true
+filterable: true
+index: true
+label: 出发地点
+required: true
+searchable: true
+sort_no: 100
+type: text

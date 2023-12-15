@@ -1,0 +1,29 @@
+name: all
+columns:
+  - field: name
+  - field: arrived
+  - field: departure_date
+  - field: remark
+  - field: expense_trips
+  - field: created
+filter_scope: space
+filters: []
+is_enable: true
+label: 所有
+mobile_columns:
+  - field: name
+  - field: arrived
+  - field: departure_date
+  - field: remark
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: arrived
+  - field: departure_date
+  - field: expense_trips
+shared: true
+sort:
+  - field_name: created
+    order: desc
+sort_no: 100
+type: grid
