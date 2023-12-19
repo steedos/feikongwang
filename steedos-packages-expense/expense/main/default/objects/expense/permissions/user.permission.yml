@@ -62,3 +62,9 @@ field_permissions:
   - field: expense_trips
     readable: true
     editable: false
+  - field: state
+    readable: true
+    editable: true
+  - field: receipt
+    readable: true
+    editable: true

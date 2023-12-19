@@ -1,0 +1,120 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:aef150ae20e2"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:bb949f3fa2c1"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "行程",
+                    "className": "p-t p-l-xs",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:9f41c431b1a9",
+                            "relatedObjectApiName": "expense_trips_itinerary"
+                        }
+                    ],
+                    "id": "u:70b11d7fa2b1"
+                },
+                {
+                    "title": "费用",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:9f41c431b1a9",
+                            "relatedObjectApiName": "expense"
+                        }
+                    ],
+                    "id": "u:70b11d7fa2b1",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "预支款",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "id": "u:9f41c431b1a9",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "relatedObjectApiName": "expense_advance_payment"
+                        }
+                    ],
+                    "id": "u:70b11d7fa2b1",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:9f41c431b1a9",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:70b11d7fa2b1",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "审批单",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:9f41c431b1a9",
+                            "relatedObjectApiName": "instances"
+                        }
+                    ],
+                    "id": "u:70b11d7fa2b1",
+                    "className": "p-t p-l-xs"
+                }
+            ],
+            "id": "u:5d9cad914f72"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_expense_trips_record_detail",
+    "name": "page_expense_trips_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

@@ -1,0 +1,13 @@
+name: expense_reports_detail
+is_active: true
+label: 报销详情页
+locked: false
+object_name: expense_reports
+pageAssignments:
+  - type: orgDefault
+    page: expense_reports_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

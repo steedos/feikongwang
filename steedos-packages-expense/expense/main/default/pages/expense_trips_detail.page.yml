@@ -1,0 +1,13 @@
+name: expense_trips_detail
+is_active: true
+label: 差旅详情页
+locked: false
+object_name: expense_trips
+pageAssignments:
+  - type: orgDefault
+    page: expense_trips_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

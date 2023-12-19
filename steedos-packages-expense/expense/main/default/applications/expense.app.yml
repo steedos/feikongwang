@@ -1,5 +1,6 @@
 name: 费控
 code: expense
+description: 在线费控管理系统，通过处理费用、审批和报销来帮助您进行在线费用管理。
 enable_nav_schema: false
 icon_slds: case
 is_creator: true
@@ -8,8 +9,11 @@ is_use_ie: false
 is_use_iframe: false
 locked: false
 mobile: true
-showSidebar: true
+showSidebar: false
 sort: 100
+tab_groups:
+  - group_name: 设置
+    default_open: true
 tab_items:
   object_expense_trips:
     index: 1
@@ -19,12 +23,15 @@ tab_items:
     index: 3
   object_expense_advance_payment:
     index: 4
-  object_expense_category:
+  object_instance_tasks:
     index: 5
+  object_expense_category:
+    index: 6
 tabs:
   - object_expense_trips
   - object_expense
   - object_expense_reports
   - object_expense_advance_payment
   - object_expense_category
+  - object_instance_tasks
 visible: true

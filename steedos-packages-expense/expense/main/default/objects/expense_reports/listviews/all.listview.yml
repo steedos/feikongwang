@@ -6,6 +6,7 @@ columns:
   - field: start
   - field: end
   - field: expense_trips
+  - field: instance_state
 filter_scope: space
 filters: []
 is_enable: true

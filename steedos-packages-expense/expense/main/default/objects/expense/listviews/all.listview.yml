@@ -6,7 +6,7 @@ columns:
   - field: amount
   - field: describe
   - field: expense_reports
-  - field: expense_trips
+  - field: state
   - field: created
 filter_scope: space
 filters: []
@@ -17,6 +17,7 @@ mobile_columns:
   - field: date
   - field: category
   - field: amount
+  - field: state
 scrolling_mode: standard
 searchable_fields:
   - field: name
@@ -26,6 +27,7 @@ searchable_fields:
   - field: expense_reports
   - field: expense_trips
   - field: created
+  - field: state
 shared: true
 sort:
   - field_name: created
