@@ -2,6 +2,7 @@ name: all
 columns:
   - field: name
   - field: describe
+  - field: open
 filter_scope: space
 filters: []
 is_enable: true

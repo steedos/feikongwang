@@ -47,3 +47,6 @@ field_permissions:
   - field: describe
     readable: true
     editable: true
+  - field: open
+    readable: true
+    editable: true
