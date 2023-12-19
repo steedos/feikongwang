@@ -1,0 +1,163 @@
+[
+    {
+        "_id": "${space_id}_657c05e7c16d8605beba1bd9",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "locked": false,
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ],
+        "name": "IT设施费",
+        "describe": "您的IT基础和网络连接，购买计算机设备的费用记录为IT和计算机费用。",
+        "space": "657bac50dd33de05cc1f2432",
+        "created": "2023-12-15T07:53:11.452Z",
+        "modified": "2023-12-19T08:52:30.789Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "open": true
+    },
+    {
+        "_id": "${space_id}_658159e978325605bf25453d",
+        "name": "交通费",
+        "describe": "正常业务运行所使用的燃料、汽油及公用交通工具带来的各项费用",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:57.973Z",
+        "modified": "2023-12-19T08:52:57.973Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf25453e",
+        "name": "住宿费",
+        "describe": "商务出行时任何涉及旅馆留宿等的支出都可以在这里输入。",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:57.996Z",
+        "modified": "2023-12-19T08:52:57.996Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf25453f",
+        "name": "停车费",
+        "describe": "您在业务差旅时支付的停车费可以在此费用类别下记录。",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.015Z",
+        "modified": "2023-12-19T08:52:58.015Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf254540",
+        "name": "其它费用",
+        "describe": "与主要经营活动无关的其他活动费用",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.033Z",
+        "modified": "2023-12-19T08:52:58.033Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf254541",
+        "name": "办公用品",
+        "describe": "业务运行带来的各种花费",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.051Z",
+        "modified": "2023-12-19T08:52:58.051Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf254542",
+        "name": "燃料/差旅支出",
+        "describe": "此类别用于跟踪所有里程相关费用。",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.071Z",
+        "modified": "2023-12-19T08:52:58.071Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf254543",
+        "name": "航空旅行费用",
+        "describe": "商务旅行如酒店预订，航班费用等支出都被记录为差旅支出。",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.088Z",
+        "modified": "2023-12-19T08:52:58.088Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf254544",
+        "name": "话费",
+        "describe": "电话、传真等通讯费用",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.106Z",
+        "modified": "2023-12-19T08:52:58.106Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    },
+    {
+        "_id": "${space_id}_658159ea78325605bf254545",
+        "name": "餐饮娱乐费",
+        "describe": "食品和娱乐的费用记录到此账户。",
+        "open": true,
+        "space": "657bac50dd33de05cc1f2432",
+        "owner": "657bac4bdd33de05cc1f2430",
+        "created": "2023-12-19T08:52:58.124Z",
+        "modified": "2023-12-19T08:52:58.124Z",
+        "created_by": "657bac4bdd33de05cc1f2430",
+        "modified_by": "657bac4bdd33de05cc1f2430",
+        "company_id": "657bac50dd33de05cc1f2432",
+        "company_ids": [
+            "657bac50dd33de05cc1f2432"
+        ]
+    }
+]

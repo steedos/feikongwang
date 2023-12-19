@@ -1,0 +1,14 @@
+name: expense_category
+description: 费用类别数据导入
+encoding: GB2312
+field_mappings:
+  - api_name: name
+    header: 类别名称
+  - api_name: describe
+    header: 描述
+  - api_name: open
+    header: 启用（true/false）
+locked: false
+object_name: expense_category
+operation: insert
+value_separator: ','
