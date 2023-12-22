@@ -19,7 +19,7 @@
     "sync_to_npmmirror": "lerna exec --no-private  -- npx cnpm sync \\$LERNA_PACKAGE_NAME"
   },
   "dependencies": {
-    "@steedos/service-package-loader": "^2.6.2-beta.14",
+    "@steedos/service-package-loader": "^2.6.2-beta.19",
     "dotenv-flow": "^3.2.0",
     "moleculer": "^0.14.31",
     "ts-node": "^10.9.1",
