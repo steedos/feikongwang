@@ -14,6 +14,6 @@ enable_tree: false
 enable_workflow: false
 icon: lead_list
 is_enable: true
-label: 费用
+label: 费用发票
 locked: false
 version: 2

@@ -1,4 +1,4 @@
-name: 费控
+name: 费用管理
 code: expense
 description: 在线费控管理系统，通过处理费用、审批和报销来帮助您进行在线费用管理。
 enable_nav_schema: false
@@ -25,8 +25,6 @@ tab_items:
     index: 4
   object_instance_tasks:
     index: 5
-  object_expense_category:
-    index: 6
 tabs:
   - object_expense_trips
   - object_expense
