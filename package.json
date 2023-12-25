@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "workspaces": [
-    "steedos-packages-expense/*"
+    "steedos-packages/*"
   ],
   "scripts": {
-    "start": "./node_modules/moleculer/bin/moleculer-runner.js steedos-packages-expense/*/package.service.js --config steedos.config.js",
-    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js steedos-packages-expense/*/src/index.{js,ts} --config steedos.config.js --hot --repl",
+    "start": "./node_modules/moleculer/bin/moleculer-runner.js steedos-packages/*/package.service.js --config steedos.config.js",
+    "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js steedos-packages/*/src/index.{js,ts} --config steedos.config.js --hot --repl",
     "repl": "moleculer-runner --repl --config steedos.config.js",
     "bootstrap": "lerna clean --yes && lerna bootstrap",
     "build": "lerna run build",
