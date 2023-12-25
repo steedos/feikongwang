@@ -1,4 +1,6 @@
 name: expense_trips_detail
+__filename: >-
+  /workspace/expense/steedos-packages/expense/main/default/pages/expense_trips_detail.page.yml
 is_active: true
 label: 差旅详情页
 locked: false

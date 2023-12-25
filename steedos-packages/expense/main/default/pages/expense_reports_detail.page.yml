@@ -1,4 +1,6 @@
 name: expense_reports_detail
+__filename: >-
+  /workspace/expense/steedos-packages/expense/main/default/pages/expense_reports_detail.page.yml
 is_active: true
 label: 报销详情页
 locked: false

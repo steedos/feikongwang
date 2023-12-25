@@ -23,6 +23,22 @@
                             "recordId": "${recordId}",
                             "appId": "${appId}",
                             "id": "u:bd91e43a9080"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:01ea21d5a7e2",
+                            "relatedObjectApiName": "cms_files"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:b2e7f364e24c",
+                            "relatedObjectApiName": "instances"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
@@ -52,36 +68,6 @@
                             "recordId": "${recordId}",
                             "id": "u:9eba32ade87a",
                             "relatedObjectApiName": "expense_advance_payment"
-                        }
-                    ],
-                    "id": "u:ce8f96e56f50",
-                    "className": "p-t p-l-xs"
-                },
-                {
-                    "title": "附件",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "id": "u:9eba32ade87a",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "relatedObjectApiName": "cms_files"
-                        }
-                    ],
-                    "id": "u:ce8f96e56f50",
-                    "className": "p-t p-l-xs"
-                },
-                {
-                    "title": "审批单",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "id": "u:9eba32ade87a",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "relatedObjectApiName": "instances"
                         }
                     ],
                     "id": "u:ce8f96e56f50",
