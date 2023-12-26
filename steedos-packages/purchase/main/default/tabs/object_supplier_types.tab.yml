@@ -1,0 +1,7 @@
+name: object_supplier_types
+desktop: true
+label: 供应商类型
+mobile: true
+object: supplier_types
+permissions: []
+type: object

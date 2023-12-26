@@ -1,0 +1,6 @@
+name: code
+label: 供应商编号
+type: text
+sort_no: 110
+filterable: true
+searchable: true
