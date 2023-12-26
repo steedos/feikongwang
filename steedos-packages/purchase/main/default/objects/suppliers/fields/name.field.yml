@@ -2,7 +2,7 @@ name: name
 type: text
 label: 供应商名称
 required: true
-sort_no: 100
+sort_no: 10
 sortable: true
 searchable: true
 filterable: true

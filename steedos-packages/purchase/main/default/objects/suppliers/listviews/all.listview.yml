@@ -1,7 +1,9 @@
 name: all
 columns:
   - field: name
-  - field: code
+  - field: supplier_code
+  - field: supplier_type
+  - field: credit_code
   - field: enable
 filter_scope: space
 filters: []
