@@ -1,0 +1,7 @@
+name: object_purchase_contracts
+desktop: true
+label: 采购合同
+mobile: true
+object: purchase_contracts
+permissions: []
+type: object

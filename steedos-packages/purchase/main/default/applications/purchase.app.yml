@@ -15,6 +15,7 @@ tab_groups:
   - group_name: 设置
     default_open: true
 tabs:
+  - object_purchase_contracts
   - object_suppliers
   - object_supplier_types
 visible: true

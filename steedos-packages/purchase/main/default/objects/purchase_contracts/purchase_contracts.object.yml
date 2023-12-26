@@ -1,0 +1,9 @@
+name: purchase_contracts
+label: 采购合同
+custom: true
+enable_api: true
+enable_search: false
+icon: data_model
+is_enable: true
+enable_enhanced_lookup: true
+version: 2
