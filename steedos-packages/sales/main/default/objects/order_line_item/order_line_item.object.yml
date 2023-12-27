@@ -4,5 +4,5 @@ enable_files: true
 enable_search: true
 enable_enhanced_lookup: true
 icon: orders
-label: 订单产品
+label: 销售订单明细
 version: 2

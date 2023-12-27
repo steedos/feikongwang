@@ -1,8 +1,0 @@
-name: product_consumed
-enable_audit: true
-enable_files: true
-enable_search: true
-enable_enhanced_lookup: true
-icon: product_consumed
-label: 产品消耗
-version: 2

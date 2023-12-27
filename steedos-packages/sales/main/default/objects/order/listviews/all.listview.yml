@@ -2,7 +2,6 @@ name: all
 columns:
   - order_number
   - account_id
-  - agreement_id
   - effective_date
   - type
   - status

@@ -4,5 +4,5 @@ enable_files: true
 enable_search: true
 enable_enhanced_lookup: true
 icon: quotes
-label: 报价
+label: 报价单
 version: 2
