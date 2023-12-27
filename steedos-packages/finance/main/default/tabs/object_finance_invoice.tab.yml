@@ -1,0 +1,7 @@
+name: object_finance_invoice
+desktop: true
+label: 开票
+mobile: true
+object: finance_invoice
+permissions: []
+type: object

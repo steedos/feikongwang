@@ -1,0 +1,39 @@
+name: account
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 付款方名称
+multiple: false
+omit: false
+readonly: false
+reference_to: accounts
+required: true
+searchable: false
+sort_no: 140
+sortable: false
+type: lookup
+create: false
+depend_on:
+  - contract
+filtersFunction: !!js/function |
+  function (filters, values) {
+      const contract = values.contract;
+      if (!contract) {
+        return ['_id', '=', 'none'];
+      } else {
+        const queryResult = Steedos.authRequest(`/graphql`, {
+                              type: 'POST', async: false, 
+                              data: JSON.stringify({
+                                query: `{contracts(filters: ["_id","=", `+ JSON.stringify(contract) + `]){_id, othercompany__expand{_id}}}`
+                              })
+                            });
+        const accounts = queryResult && queryResult.data && queryResult.data.contracts[0].othercompany__expand;
+        const ids = new Array();
+        for (const item of accounts) {
+          ids.push(item._id);
+        }
+        return ["_id", "in", ids];
+      }
+  }

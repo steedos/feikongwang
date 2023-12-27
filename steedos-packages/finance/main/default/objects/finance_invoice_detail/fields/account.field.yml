@@ -1,0 +1,16 @@
+name: account
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 付款方名称
+multiple: false
+omit: false
+readonly: true
+reference_to: accounts
+required: true
+searchable: false
+sort_no: 170
+sortable: false
+type: lookup

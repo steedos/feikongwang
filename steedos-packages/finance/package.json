@@ -1,18 +1,19 @@
 {
-    "name": "@steedos-labs/expense",
+    "name": "@steedos-labs/finance",
     "version": "2.5.6",
-    "description": "费控管理",
+    "description": "财务管理模块：开票、收款、收票、付款。",
     "main": "package.service.js",
     "scripts": {
         "build": "webpack --config webpack.config.js",
         "build:watch": "webpack --config webpack.config.js --watch"
     },
-    "license": "MIT",
     "publishConfig": {
         "access": "public"
     },
     "dependencies": {
-        "@steedos-labs/invoice": "2.5.6"
+        "@steedos-labs/invoice": "2.5.6",
+        "@steedos-labs/master": "2.5.6",
+        "bignumber.js": "^9.1.1"
     },
     "devDependencies": {
         "webpack": "^5.88.2",

@@ -1,0 +1,211 @@
+[
+    {
+        "_id": "${space_id}_626250cb87e5c50032d9bdf9",
+        "amount": 80000,
+        "amount_description": "合同预付款",
+        "company_id": "h4zSCDAYLtnZCu8kx",
+        "contract": "${space_id}_62f5fc813a99bfb696152434",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-04-22T00:00:00Z"
+        },
+        "finished": false,
+        "payment_method": "汇款",
+        "payment_type": "合同付款",
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_62f5fe453a99bfb696152453",
+        "taxrate": "${space_id}_62610e0732cc250032e1a998",
+        "space": "vDZsjkNNhFqioLvmu",
+        "created": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "h4zSCDAYLtnZCu8kx"
+        ],
+        "id": "FK-2021-0005",
+        "account_banks": "中国银行股份有限公司上海市紫薇路支行",
+        "contract_amount": 200000,
+        "contract_types_name": "买卖合同",
+        "payment_sacle": 0.4,
+        "payment_invoicefolder": [],
+        "billno": "56382",
+        "payment_date": {
+            "$date": "2022-04-22T00:00:00Z"
+        },
+        "payment_status": "paid",
+        "amount_type": "immobilization",
+        "ticket_information": "先票后款",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60"
+    },
+    {
+        "_id": "${space_id}_6262527487e5c50032d9be06",
+        "amount": 120000,
+        "amount_description": "合同进度款",
+        "company_id": "h4zSCDAYLtnZCu8kx",
+        "contract": "${space_id}_62f5fc813a99bfb696152434",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-09-30T00:00:00Z"
+        },
+        "finished": false,
+        "payment_method": "汇款",
+        "payment_type": "合同付款",
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_62f5fe453a99bfb696152453",
+        "taxrate": "${space_id}_62610e0732cc250032e1a998",
+        "space": "vDZsjkNNhFqioLvmu",
+        "created": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "h4zSCDAYLtnZCu8kx"
+        ],
+        "id": "FK-2021-0001",
+        "account_banks": "中国银行股份有限公司上海市紫薇路支行",
+        "contract_amount": 200000,
+        "contract_types_name": "买卖合同",
+        "payment_sacle": 0.6,
+        "amount_type": "immobilization",
+        "payment_invoicefolder": [
+            "${space_id}_6262583987e5c50032d9be18"
+        ],
+        "ticket_information": "先票后款",
+        "payment_date": null,
+        "payment_status": "unpaid",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60"
+    },
+    {
+        "_id": "${space_id}_62fefe1cf63a8f27ae6a0266",
+        "amount": 450000,
+        "company_id": "h4zSCDAYLtnZCu8kx",
+        "contract": "${space_id}_62fefdb0f63a8f27ae6a0261",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "payment_invoicefolder": [],
+        "payment_method": "汇款",
+        "supplier": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "supplier_bank": "${space_id}_62fefe07f63a8f27ae6a0264",
+        "ticket_information": "先票后款",
+        "space": "vDZsjkNNhFqioLvmu",
+        "created": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "h4zSCDAYLtnZCu8kx"
+        ],
+        "amount_type": "immobilization",
+        "instance_state": "draft",
+        "payment_status": "paid",
+        "project": "${space_id}_62fefd49f63a8f27ae6a025f",
+        "id": "FK-2021-0002",
+        "account_banks": "中国银行股份有限公司上海市紫薇路支行",
+        "contract_amount": 900000,
+        "contract_types_name": "买卖合同",
+        "payment_sacle": 0.5,
+        "payment_type": "合同付款",
+        "payment_date": {
+            "$date": "2022-06-23T00:00:00Z"
+        },
+        "due_date": {
+            "$date": "2022-06-23T00:00:00Z"
+        },
+        "amount_description": "首付款"
+    },
+    {
+        "_id": "${space_id}_62fefefaf63a8f27ae6a026a",
+        "amount": 450000,
+        "company_id": "h4zSCDAYLtnZCu8kx",
+        "contract": "${space_id}_62fefdb0f63a8f27ae6a0261",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-09-18T00:00:00Z"
+        },
+        "payment_invoicefolder": [],
+        "supplier": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "supplier_bank": "${space_id}_62fefe07f63a8f27ae6a0264",
+        "ticket_information": "先票后款",
+        "space": "vDZsjkNNhFqioLvmu",
+        "created": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "h4zSCDAYLtnZCu8kx"
+        ],
+        "amount_type": "immobilization",
+        "instance_state": "draft",
+        "payment_status": "unpaid",
+        "project": "${space_id}_62fefd49f63a8f27ae6a025f",
+        "id": "FK-2021-0003",
+        "account_banks": "中国银行股份有限公司上海市紫薇路支行",
+        "contract_amount": 900000,
+        "contract_types_name": "买卖合同",
+        "payment_sacle": 0.5,
+        "payment_date": null,
+        "payment_method": "汇款",
+        "payment_type": "合同付款",
+        "taxrate": "${space_id}_62610e0c32cc250032e1a9a4",
+        "amount_description": "合同进度款"
+    },
+    {
+        "_id": "${space_id}_630488079cc40f03d6e7cb6b",
+        "amount": 1500000,
+        "company_id": "h4zSCDAYLtnZCu8kx",
+        "contract": "${space_id}_630499e2a83ab114f20efc8d",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "payment_date": null,
+        "payment_invoicefolder": [],
+        "payment_status": "unpaid",
+        "payment_type": "合同付款",
+        "supplier": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "supplier_bank": "${space_id}_62b56ec98aee24003d08efd3",
+        "ticket_information": "先票后款",
+        "space": "vDZsjkNNhFqioLvmu",
+        "created": {
+            "$date": "2022-08-25T08:20:46.642Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T08:25:25.833Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "h4zSCDAYLtnZCu8kx"
+        ],
+        "amount_type": "immobilization",
+        "instance_state": "draft",
+        "project": "${space_id}_62620e5787e5c50032d9bd39",
+        "id": "FK-2021-0004",
+        "account_banks": "中国农业银行股份有限公司上海陆家嘴支行",
+        "contract_amount": 500000,
+        "contract_types_name": "买卖合同",
+        "payment_sacle": 3,
+        "due_date": {
+            "$date": "2022-08-31T00:00:00Z"
+        },
+        "amount_description": "合同进度款"
+    }
+]

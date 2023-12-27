@@ -1,0 +1,31 @@
+[
+    {
+        "_id": "${space_id}_62bbaea92a914502650a2c84",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount": 10000,
+        "bill_date": {
+            "$date": "2022-06-10T00:00:00Z"
+        },
+        "invoice_number": "839127A",
+        "invoiceapply": "${space_id}_62aad9082c7a71003fe03eb9",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "tax": "${space_id}_62610e0732cc250032e1a998",
+        "space": "fM7StbzNByQbR8J8A",
+        "created": {
+            "$date": "2022-08-12T05:58:39.072Z"
+        },
+        "modified": {
+            "$date": "2022-08-12T05:58:39.072Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xGNTCDDCSmYaWavyL",
+        "company_ids": [
+            "xGNTCDDCSmYaWavyL"
+        ],
+        "contract": "${space_id}_6262243287e5c50032d9bda5",
+        "no": "CRI-00001",
+        "excluding_tax": 9433.962264150943,
+        "tax_amount": 566.04
+    }
+]

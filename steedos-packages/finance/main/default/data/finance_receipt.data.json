@@ -1,0 +1,63 @@
+[
+    {
+        "_id": "${space_id}_6262583987e5c50032d9be18",
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "contract": "${space_id}_63184d8474519003c9545bb7",
+        "count": 2,
+        "invoice_number": "33810981,33810982",
+        "name": "燃料采购余款",
+        "sumprice": 192000,
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T10:24:20.04Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "id": "SP-2021-0003",
+        "verified": "done",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60",
+        "due_date": {
+            "$date": "2022-08-03T00:00:00Z"
+        }
+    },
+    {
+        "_id": "${space_id}_630487fb9cc40f03d6e7cb69",
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "contract": "${space_id}_63184d8474519003c9545bb7",
+        "is_active": true,
+        "name": "采购收票",
+        "sumprice": 1500000,
+        "verified": "done",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T10:24:20.455Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60",
+        "id": "SP-2021-0001",
+        "count": 2,
+        "actual_date": {
+            "$date": "2022-08-03T00:00:00Z"
+        },
+        "due_date": {
+            "$date": "2022-08-03T00:00:00Z"
+        }
+    }
+]
