@@ -38,10 +38,6 @@ fields:
     label: 原始订单产品
     help: 要减少订单产品的编号。如果订单产品正减少另一个订单产品时必填。（只读）
     description: 
-  price_book_entry_id:
-    label: 价格手册条目
-    help: 
-    description: 
   product_code:
     label: 产品代码
     help: 用于识别产品的内部代码或产品号。（只读）

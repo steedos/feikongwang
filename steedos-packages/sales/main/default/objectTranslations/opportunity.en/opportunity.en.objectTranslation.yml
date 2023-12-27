@@ -6,10 +6,6 @@ fields:
     label: 客户
     help: 业务机会所链接的客户名。您可输入客户名或使用查找图标选择客户。如果您更改的客户有合作伙伴，则将从“合作伙伴”相关列表删除所有合作伙伴。
     description: 
-  agreement_id:
-    label: 主协议
-    help: 
-    description: 
   amount:
     label: 金额
     help: >-
@@ -121,10 +117,6 @@ fields:
   partner_account:
     label: 合作伙伴客户
     help: 表示该业务机会属于某合作伙伴（只读）
-    description: 
-  price_book_id:
-    label: 价格手册
-    help: 
     description: 
   private:
     label: 专用

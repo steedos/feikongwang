@@ -6,10 +6,6 @@ fields:
     label: 客户
     help: 报价的业务机会所链接的客户名。
     description: 
-  agreement:
-    label: 主协议
-    help: 
-    description: 
   billing_address:
     label: 收票人地址
     help: 
@@ -69,10 +65,6 @@ fields:
   phone:
     label: 电话
     help: 与报价关联的联系人电话号码。如果可用，则在您添加联系人时自动填写。
-    description: 
-  price_book_entry_id:
-    label: 价格手册条目
-    help: 
     description: 
   quote_currency:
     label: 报价币种

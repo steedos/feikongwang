@@ -18,18 +18,6 @@ fields:
     label: 启用日期
     help: 
     description: 
-  agreement_end_date:
-    label: 主协议结束日期
-    help: 
-    description: 
-  agreement_id:
-    label: 主协议编号
-    help: 
-    description: 
-  agreement_name:
-    label: 主协议名
-    help: 
-    description: 
   bill_to_contact:
     label: 开单对象联系人
     help: 
@@ -92,10 +80,6 @@ fields:
     description: 
   po_number:
     label: 订单编号
-    help: 
-    description: 
-  price_book_id:
-    label: 价格手册
     help: 
     description: 
   quote_id:

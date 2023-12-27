@@ -25,11 +25,7 @@ fields:
   list_price:
     label: 定价
     help: 
-    description: 
-  price_book_entry_id:
-    label: 价格手册条目
-    help: 
-    description: 
+    description:  
   product_id:
     label: 产品
     help: 价格手册中所列的行项目产品的名称。
