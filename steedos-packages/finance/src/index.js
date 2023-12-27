@@ -38,7 +38,7 @@ module.exports = {
 	/**
 	 * Dependencies
 	 */
-	dependencies: ["@steedos-labs/master"],
+	dependencies: ["@steedos-labs/base"],
 
 	/**
 	 * Actions

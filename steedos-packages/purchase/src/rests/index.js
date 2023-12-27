@@ -7,5 +7,4 @@
  * @Description: 
  */
 module.exports = {
-    api_get_stock_picking_numberstatus_id: require('./api_get_stock_picking_numberstatus_id'),
 }

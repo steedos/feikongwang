@@ -11,11 +11,8 @@ oauth2_enabled: false
 oauth2_logout_enabled: false
 objects:
   - measurement_unit
-  - asset_type
   - material_group
   - product
-  - warehouse
-  - stock_location
   - bank_type
   - bank
   - invoice_type

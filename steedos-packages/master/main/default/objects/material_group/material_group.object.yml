@@ -17,5 +17,5 @@ enable_tree: true
 parent_field: material_group
 icon: account
 is_enable: true
-label: 物料分组
+label: 产品分组
 version: 2

@@ -21,7 +21,6 @@
         ],
         "state__c": "入库",
         "vendor": "${space_id}_Dh2o6BcPzXsMnzphb",
-        "warehouse_id__c": "${space_id}_62aae0af2c7a71003fe03ed3",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
             "$date": "2022-08-15T06:26:45.582Z"
@@ -61,7 +60,6 @@
         "phone": "18720930028",
         "state__c": "入库",
         "vendor": "${space_id}_Dh2o6BcPzXsMnzphb",
-        "warehouse_id__c": "${space_id}_62aae0af2c7a71003fe03ed3",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
             "$date": "2022-08-15T06:26:45.582Z"
@@ -107,7 +105,6 @@
         ],
         "state__c": "结束",
         "vendor": "${space_id}_Dh2o6BcPzXsMnzphb",
-        "warehouse_id__c": "${space_id}_62aae0af2c7a71003fe03ed3",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
             "$date": "2022-08-15T06:26:45.582Z"

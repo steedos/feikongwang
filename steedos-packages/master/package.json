@@ -1,7 +1,7 @@
 {
-    "name": "@steedos-labs/master",
+    "name": "@steedos-labs/base",
     "version": "2.5.6",
-    "description": "主数据管理",
+    "description": "基础数据",
     "main": "package.service.js",
     "scripts": {
         "build": "webpack --config webpack.config.js",

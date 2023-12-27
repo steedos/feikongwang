@@ -7,7 +7,4 @@
  * @Description: 
  */
 module.exports = {
-    purchase_order_trigger: require('./purchase_order_trigger'),
-    purchase_stock_delivery_trigger: require('./purchase_stock_delivery_trigger'),
-    purchase_stock_picking_trigger: require('./purchase_stock_picking_trigger'),
 }

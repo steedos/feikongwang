@@ -1190,11 +1190,6 @@
   resolved "https://registry.npmmirror.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@steedos-labs/master@2.2.9-beta.3":
-  version "2.2.9-beta.3"
-  resolved "https://registry.npmmirror.com/@steedos-labs/master/-/master-2.2.9-beta.3.tgz#af8ddb4aebcf367baf1939c54b2157e824730c86"
-  integrity sha512-u/3UmuKY5M6UJRnYytF4MI/zrwLVAD3g8oYETjACWHOuaYfSSg9GDcWk3CHaXcEmx32D1UCihWCF7wItTkicLg==
-
 "@steedos/client@2.6.2-beta.24":
   version "2.6.2-beta.24"
   resolved "https://registry.npmmirror.com/@steedos/client/-/client-2.6.2-beta.24.tgz#66e31d5b4f019dfef7294bdea9de6a8c858ba385"
