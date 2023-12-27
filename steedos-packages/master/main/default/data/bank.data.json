@@ -1,0 +1,1302 @@
+[
+    {
+        "_id": "${space_id}_6261147132cc250032e1a9f9",
+        "name": "中国银行股份有限公司上海市紫薇路支行",
+        "combinenum": "104290008086",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:13.71Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:12.248Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147232cc250032e1a9fa",
+        "name": "中国银行股份有限公司上海市朱泾支行",
+        "combinenum": "104290098058",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:14.289Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:13.798Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147232cc250032e1a9fb",
+        "name": "中国银行股份有限公司上海市朱家角支行",
+        "combinenum": "104290045022",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:14.787Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:14.619Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147332cc250032e1a9fc",
+        "name": "中国银行股份有限公司上海市周浦支行",
+        "combinenum": "104290065122",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:15.3Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:15.401Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147432cc250032e1a9fd",
+        "name": "中国银行股份有限公司上海市周家渡支行",
+        "combinenum": "104290006031",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:15.81Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:16.127Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147432cc250032e1a9fe",
+        "name": "中国银行股份有限公司上海市中银大厦支行",
+        "combinenum": "104290003791",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:16.404Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:16.878Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147532cc250032e1a9ff",
+        "name": "中国银行股份有限公司上海市中兴路支行",
+        "combinenum": "104290070028",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:16.908Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:17.669Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147532cc250032e1aa00",
+        "name": "中国银行股份有限公司上海市中山北路支行",
+        "combinenum": "104290015040",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:17.496Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:18.307Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147632cc250032e1aa01",
+        "name": "中国银行股份有限公司上海市中华路支行",
+        "combinenum": "104290060098",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:18.009Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:19.021Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147632cc250032e1aa02",
+        "name": "中国银行股份有限公司上海市中春路支行",
+        "combinenum": "104290025133",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:18.589Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:19.789Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147732cc250032e1aa03",
+        "name": "中国银行股份有限公司上海市制造局路支行",
+        "combinenum": "104290090027",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:19.294Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:20.513Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147832cc250032e1aa04",
+        "name": "中国银行股份有限公司上海市志丹路支行",
+        "combinenum": "104290075056",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:19.812Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:21.202Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147832cc250032e1aa05",
+        "name": "中国银行股份有限公司上海市正大广场支行",
+        "combinenum": "104290006082",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:20.4Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:21.964Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147932cc250032e1aa06",
+        "name": "中国银行股份有限公司上海市镇宁路支行",
+        "combinenum": "104290030115",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:20.908Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:22.674Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147932cc250032e1aa07",
+        "name": "中国银行股份有限公司上海市真北路支行",
+        "combinenum": "104290075089",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:21.493Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:23.481Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147a32cc250032e1aa08",
+        "name": "中国银行股份有限公司上海市肇嘉浜路支行",
+        "combinenum": "104290050136",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:22.187Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:24.193Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147b32cc250032e1aa09",
+        "name": "中国银行股份有限公司上海市长阳路支行",
+        "combinenum": "104290085239",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:23.5Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:24.887Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147c32cc250032e1aa0a",
+        "name": "中国农业银行股份有限公司上海陆家嘴支行",
+        "combinenum": "103290024013",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:24.498Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:25.614Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147d32cc250032e1aa0b",
+        "name": "中国农业银行股份有限公司长春上海路支行",
+        "combinenum": "103241019761",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:25.3Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:26.38Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147e32cc250032e1aa0c",
+        "name": "中国农业银行股份有限公司银川上海西路支行",
+        "combinenum": "103871051708",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:25.809Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:27.1Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147e32cc250032e1aa0d",
+        "name": "中国农业银行股份有限公司上海遵义路支行",
+        "combinenum": "103290043063",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:26.392Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:27.918Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261147f32cc250032e1aa0e",
+        "name": "中国农业银行股份有限公司上海紫竹科学园区支行",
+        "combinenum": "103290003288",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:27.503Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:28.732Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148032cc250032e1aa0f",
+        "name": "中国农业银行股份有限公司上海庄行支行",
+        "combinenum": "103290008021",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:28.494Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:29.398Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148132cc250032e1aa10",
+        "name": "中国农业银行股份有限公司上海颛桥支行",
+        "combinenum": "103290003190",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:29.01Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:30.178Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148132cc250032e1aa11",
+        "name": "中国农业银行股份有限公司上海砖桥支行",
+        "combinenum": "103290009215",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:29.598Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:30.913Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148232cc250032e1aa12",
+        "name": "中国农业银行股份有限公司上海祝桥支行",
+        "combinenum": "103290007060",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:30.108Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:31.693Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148232cc250032e1aa13",
+        "name": "中国农业银行股份有限公司上海株洲路支行",
+        "combinenum": "103290015125",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:30.594Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:32.481Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148332cc250032e1aa14",
+        "name": "中国农业银行股份有限公司上海朱泾支行",
+        "combinenum": "103290010210",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:31.105Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:33.275Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148332cc250032e1aa15",
+        "name": "中国农业银行股份有限公司上海朱家角支行",
+        "combinenum": "103290011157",
+        "pk_banktype": "${space_id}_6261101532cc250032e1a9b3",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:31.694Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:33.99Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148432cc250032e1aa16",
+        "name": "中国建设银行股份有限公司上海遵义路支行",
+        "combinenum": "105290074082",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:32.212Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:34.723Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148532cc250032e1aa17",
+        "name": "中国建设银行股份有限公司上海自贸实验区分行",
+        "combinenum": "105290040088",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:32.81Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:35.405Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148532cc250032e1aa18",
+        "name": "中国建设银行股份有限公司上海紫竹支行",
+        "combinenum": "105290074103",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:33.386Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:36.192Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148632cc250032e1aa19",
+        "name": "中国建设银行股份有限公司上海颛桥支行",
+        "combinenum": "105290078137",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:33.889Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:36.997Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148632cc250032e1aa1a",
+        "name": "中国建设银行股份有限公司上海祝桥支行",
+        "combinenum": "105290081096",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:34.387Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:37.804Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148732cc250032e1aa1b",
+        "name": "中国建设银行股份有限公司上海朱泾支行",
+        "combinenum": "105290069086",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:34.899Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:38.577Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148732cc250032e1aa1c",
+        "name": "中国建设银行股份有限公司上海朱家角支行",
+        "combinenum": "105290083018",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:35.593Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:39.297Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148832cc250032e1aa1d",
+        "name": "中国建设银行股份有限公司上海周浦支行",
+        "combinenum": "105290081012",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:36.305Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:40.074Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148932cc250032e1aa1e",
+        "name": "中国建设银行股份有限公司上海周家嘴路支行",
+        "combinenum": "105290072052",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:36.887Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:12.981Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148932cc250032e1aa1f",
+        "name": "中国建设银行股份有限公司上海周家渡支行",
+        "combinenum": "105290038054",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:37.589Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:40.998Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148a32cc250032e1aa20",
+        "name": "中国建设银行股份有限公司上海周东路支行",
+        "combinenum": "105290041082",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:38.408Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:42.28Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148b32cc250032e1aa21",
+        "name": "中国建设银行股份有限公司上海重庆南路支行",
+        "combinenum": "105290076019",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:39.21Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:42.992Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148b32cc250032e1aa22",
+        "name": "中国建设银行股份有限公司上海中远两湾城支行",
+        "combinenum": "105290077128",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:39.79Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:43.797Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148c32cc250032e1aa23",
+        "name": "中国建设银行股份有限公司上海中原支行",
+        "combinenum": "105290075018",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:40.294Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:44.514Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148c32cc250032e1aa24",
+        "name": "中国工商银行股份有限公司上海市钻石交易中心支行",
+        "combinenum": "102290035817",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:40.801Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:45.28Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148d32cc250032e1aa25",
+        "name": "中国工商银行股份有限公司上海市朱泾城南支行",
+        "combinenum": "102290007081",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:41.294Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:46.004Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148e32cc250032e1aa26",
+        "name": "中国工商银行股份有限公司上海市周家嘴路支行",
+        "combinenum": "102290002684",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:41.806Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:46.733Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148e32cc250032e1aa27",
+        "name": "中国工商银行股份有限公司上海市中山公园支行",
+        "combinenum": "102290012536",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:42.306Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:47.558Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148f32cc250032e1aa28",
+        "name": "中国工商银行股份有限公司上海市政悦路支行",
+        "combinenum": "102290002246",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:42.809Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:48.282Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261148f32cc250032e1aa29",
+        "name": "中国工商银行股份有限公司上海市正大广场支行",
+        "combinenum": "102290014152",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:43.392Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:49.007Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149032cc250032e1aa2a",
+        "name": "中国工商银行股份有限公司上海市镇宁路支行",
+        "combinenum": "102290005019",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:43.91Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:49.707Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149032cc250032e1aa2b",
+        "name": "中国工商银行股份有限公司上海市真新支行",
+        "combinenum": "102290075324",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:44.409Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:50.482Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149132cc250032e1aa2c",
+        "name": "中国工商银行股份有限公司上海市真华路支行",
+        "combinenum": "102290003697",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:44.995Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:51.202Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149132cc250032e1aa2d",
+        "name": "中国工商银行股份有限公司上海市肇嘉浜路支行",
+        "combinenum": "102290004761",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:45.502Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:51.991Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149232cc250032e1aa2e",
+        "name": "中国工商银行股份有限公司上海市赵巷支行",
+        "combinenum": "102290080104",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:45.993Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:52.712Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149232cc250032e1aa2f",
+        "name": "中国工商银行股份有限公司上海市长兴支行",
+        "combinenum": "102290074934",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:46.59Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:53.486Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149332cc250032e1aa30",
+        "name": "中国工商银行股份有限公司上海市长宁支行空港分理处",
+        "combinenum": "102290005385",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:47.091Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:54.221Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149332cc250032e1aa31",
+        "name": "中国工商银行股份有限公司上海市长宁支行曹家渡分理处",
+        "combinenum": "102290012665",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:47.612Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:54.974Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149432cc250032e1aa32",
+        "name": "中国工商银行股份有限公司上海市长江西路支行",
+        "combinenum": "102290003656",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:48.108Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:55.693Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149432cc250032e1aa33",
+        "name": "中国工商银行股份有限公司上海市长岛路支行",
+        "combinenum": "102290007395",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:48.606Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:56.399Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149532cc250032e1aa34",
+        "name": "中国工商银行股份有限公司上海市张庙支行",
+        "combinenum": "102290003525",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:49.305Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:59:57.196Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "enablestate": "enable"
+    },
+    {
+        "_id": "${space_id}_6261149632cc250032e1aa35",
+        "name": "中国工商银行股份有限公司上海市闸北支行",
+        "combinenum": "102290032513",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:50.093Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:23:50.093Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_6261149632cc250032e1aa36",
+        "name": "中国工商银行股份有限公司上海市枣庄路支行",
+        "combinenum": "102290006546",
+        "pk_banktype": "${space_id}_6261101332cc250032e1a9ae",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-21T08:23:50.603Z"
+        },
+        "modified": {
+            "$date": "2022-04-21T08:23:50.603Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    }
+]

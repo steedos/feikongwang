@@ -1,0 +1,4 @@
+name: date_receive
+label: 期望接收时间
+sort_no: 280
+type: date

@@ -1,0 +1,11 @@
+name: name
+data_type: text
+formula: material_coding.product_code
+formula_blank_value: zeroes
+index: true
+is_name: true
+label: 物料编码
+required: true
+searchable: true
+sort_no: 110
+type: formula

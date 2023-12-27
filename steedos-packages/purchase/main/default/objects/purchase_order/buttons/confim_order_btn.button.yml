@@ -1,0 +1,5 @@
+name: confim_order_btn
+is_enable: true
+label: 确认订单
+'on': record_only
+type: script

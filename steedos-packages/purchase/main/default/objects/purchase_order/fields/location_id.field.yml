@@ -1,0 +1,19 @@
+name: location_id
+depend_on:
+  - warehouse_id
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters,values
+  ) {
+    
+    if(values == undefined){
+      return [];
+    }else{
+      return [["warehouse_id","=",values.warehouse_id]]
+    }
+
+  }
+label: 库位
+reference_to: stock_location
+required: true
+sort_no: 236
+type: lookup

@@ -1,0 +1,82 @@
+name: purchase_order_item
+custom: true
+enable_api: true
+enable_audit: false
+enable_chatter: false
+enable_enhanced_lookup: true
+enable_events: false
+enable_files: false
+enable_inline_edit: true
+enable_instances: false
+enable_notes: false
+enable_search: true
+enable_share: false
+enable_tasks: false
+enable_workflow: false
+form:
+  onValuesChange: !<tag:yaml.org,2002:js/function> |-
+    function(args
+    ) {      
+      const material_coding = args.changedValues.material_coding
+     
+      if(material_coding != undefined){
+        const unit_id = Creator.getObjectRecord("product", material_coding, ["unit"]).unit;  
+        if(unit_id != undefined){
+          args.form.setFieldsValue({unit: unit_id});
+        }
+      }
+    }
+actions:
+  standard_edit: 
+    label: Edit
+    visible: !!js/function |
+      function(object_name,record_id,record,data){
+       if(Creator.getObjectRecord("purchase_order", data.purchase_order, ["state"]).state == "询价"){
+          return true
+        }else{
+          return false
+        }
+      }
+  
+  standard_delete:
+    label: Delete
+    visible: !!js/function |
+      function(object_name,record_id,record,data){
+        debugger
+        if(data == undefined){
+          return false
+        }
+        if(Creator.getObjectRecord("purchase_order", data.purchase_order, ["state"]).state == "询价"){
+          return true
+        }else{
+          return false
+        }
+      }
+  standard_new:
+    label: New
+    visible: !!js/function |
+      function(object_name,record_id,record_permission,data){
+        if(data == undefined || object_name !== 'purchase_order'){
+          return false
+        }
+        const record = data.__super.__super.__super._master.record
+        if(record.state == "询价"){
+          return true
+        }else{
+          return false
+        }
+      }
+  standard_delete_many:
+    label: Delete
+    visible: !!js/function |
+      function(object_name,record_id,record,data){
+        if(data == undefined){
+          return false
+        }
+      }
+
+icon: account
+is_enable: true
+label: 采购订单项
+version: 2
+

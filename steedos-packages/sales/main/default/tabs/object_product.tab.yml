@@ -1,0 +1,7 @@
+name: object_product
+desktop: true
+label: 物料
+mobile: true
+object: product
+permissions: []
+type: object

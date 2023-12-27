@@ -1,0 +1,8 @@
+name: name
+formula: 'PO{YYYY}{MM}{000}'
+index: true
+label: 单据编号
+required: true
+searchable: true
+sort_no: 250
+type: autonumber

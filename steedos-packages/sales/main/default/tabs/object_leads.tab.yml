@@ -1,0 +1,7 @@
+name: object_leads
+desktop: true
+label: 潜在客户
+mobile: true
+object: leads
+permissions: []
+type: object

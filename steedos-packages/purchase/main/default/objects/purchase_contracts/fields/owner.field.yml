@@ -1,6 +1,0 @@
-name: owner
-label: 负责人
-hidden: false
-readonly: false
-sort_no: 50
-type: lookup

@@ -1,0 +1,62 @@
+name: purchase_order
+custom: true
+enable_api: true
+enable_audit: false
+enable_chatter: false
+enable_enhanced_lookup: true
+enable_events: false
+enable_files: false
+enable_inline_edit: true
+enable_instances: false
+enable_notes: false
+enable_search: true
+enable_share: false
+enable_tasks: false
+enable_tree: false
+enable_workflow: false
+icon: account
+is_enable: true
+label: 采购订单
+version: 2
+form:
+  onValuesChange: !!js/function |
+    function(args){
+      const vendor = args.changedValues.vendor
+      if(vendor != undefined){
+        
+        args.form.setFieldsValue({
+          address:  Creator.getObjectRecord("accounts", vendor, ["address"]).address});
+      }
+    }
+  afterView: !!js/function |
+    function () {
+      
+      if(this.doc.state != "询价"){
+        $(".add-related-object-record").remove()
+      }
+      
+      
+      
+    }
+actions:
+  standard_edit: 
+    label: Edit
+    visible: !!js/function |
+      function(object_name,record_id,record,data){
+        if(data.state == '询价'){
+          return true;
+        }else{
+          return false;
+        }
+      }
+  
+  standard_delete:
+    label: Delete
+    visible: !!js/function |
+      function(object_name,record_id,record,data){
+        if(data.state == '询价'){
+          return true;
+        }else{
+          return false;
+        }
+      }

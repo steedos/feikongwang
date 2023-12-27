@@ -1,6 +1,0 @@
-name: supplier_code
-label: 供应商编号
-type: text
-sort_no: 20
-filterable: true
-searchable: true

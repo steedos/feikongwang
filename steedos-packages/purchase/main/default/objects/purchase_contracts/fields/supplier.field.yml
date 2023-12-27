@@ -1,5 +1,0 @@
-name: supplier
-label: 供应商
-type: lookup
-reference_to: suppliers
-sort_no: 30

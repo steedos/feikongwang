@@ -1,0 +1,14 @@
+name: name
+filterable: true
+hidden: false
+index: true
+is_name: false
+is_wide: false
+label: 代码
+omit: false
+readonly: false
+required: true
+searchable: true
+sort_no: 200
+sortable: false
+type: text

@@ -1,0 +1,6 @@
+name: price_unit
+label: 单价
+precision: 18
+scale: 2
+sort_no: 140
+type: currency

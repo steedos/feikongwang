@@ -1,0 +1,116 @@
+[
+    {
+        "_id": "${space_id}_6262538187e5c50032d9be0c",
+        "label": "增值税专用发票",
+        "name": "ZZ",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-04-22T07:04:33.778Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T03:49:41.873Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b13fc10aa493003e5328f3",
+        "label": "增值税普通发票",
+        "name": "ZP",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T03:49:21.578Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T03:49:27.903Z"
+        },
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b13fe50aa493003e5328f4",
+        "label": "普通发票",
+        "name": "PT",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T03:49:57.287Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T03:51:28.318Z"
+        },
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b140550aa493003e5328f5",
+        "label": "机动车专用发票",
+        "name": "JP",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T03:51:49.817Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T03:51:49.817Z"
+        },
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b140670aa493003e5328f6",
+        "label": "机打发票",
+        "name": "JD",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T03:52:07.171Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T03:52:07.171Z"
+        },
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b140770aa493003e5328f7",
+        "label": "定额发票",
+        "name": "DE",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T03:52:23.494Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T03:52:23.494Z"
+        },
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    }
+]

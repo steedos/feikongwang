@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "${space_id}_626107fa32cc250032e1a967",
+        "account_id": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "billing_address": "上海市",
+        "effective_date": {
+            "$date": "2022-04-01T00:00:00Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "status": "Draft",
+        "total_amount": null,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:32:05.218Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "order_number": "2022040001",
+        "type": "none",
+        "agreement_id": "${space_id}_6305d3e8336fcc09215a6f4f"
+    }
+]

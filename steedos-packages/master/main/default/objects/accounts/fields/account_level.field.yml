@@ -1,0 +1,6 @@
+name: account_level
+label: 供应商等级
+type: lookup
+reference_to: accounts_level
+sort_no: 100
+group: 工程信息

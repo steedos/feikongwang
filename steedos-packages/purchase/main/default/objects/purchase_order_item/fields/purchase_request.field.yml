@@ -1,0 +1,20 @@
+name: purchase_request
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters,values
+  ) {
+    if(values == undefined){
+      return [];
+    }else{
+      if(Creator.getObjectRecord() != undefined){
+        var pr = Creator.getObjectRecord().pr || [];
+        return [['_id','in',pr]]
+      }
+      console.log(2)
+      return [];
+    }
+  }
+label: 采购申请单
+reference_to: purchase_request
+searchable: true
+sort_no: 200
+type: lookup

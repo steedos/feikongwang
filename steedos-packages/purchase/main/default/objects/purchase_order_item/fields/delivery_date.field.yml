@@ -1,0 +1,4 @@
+name: delivery_date
+label: 交货日期
+sort_no: 170
+type: date

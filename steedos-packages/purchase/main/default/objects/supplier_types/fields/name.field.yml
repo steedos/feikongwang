@@ -1,8 +1,0 @@
-name: name
-type: text
-label: 供应商类型
-required: true
-sort_no: 100
-sortable: true
-searchable: true
-filterable: true

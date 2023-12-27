@@ -1,0 +1,12 @@
+name: mine
+columns:
+  - name
+  - start_date
+  - end_date
+  - budgeted_cost
+  - actual_cost
+  - type
+  - status
+filter_scope: mine
+label: 我的市场活动
+shared: true

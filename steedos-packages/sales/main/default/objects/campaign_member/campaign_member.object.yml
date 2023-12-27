@@ -1,0 +1,6 @@
+name: campaign_member
+enable_audit: true
+enable_enhanced_lookup: true
+icon: campaign
+label: 市场活动成员
+version: 2

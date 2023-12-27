@@ -1,8 +1,19 @@
+/*
+ * @Author: 孙浩林 sunhaolin@steedos.com
+ * @Date: 2023-10-20 13:27:06
+ * @LastEditors: 孙浩林 sunhaolin@steedos.com
+ * @LastEditTime: 2023-10-28 11:07:24
+ * @FilePath: /steedos-ee-gitlab/steedos-packages-pm/purchase/src/index.js
+ * @Description: 
+ */
 "use strict";
 const path = require('path');
 const project = require('../package.json');
 const packageName = project.name;
+
 const packageLoader = require('@steedos/service-package-loader');
+
+const rests = require('./rests')
 
 /**
  * @typedef {import('moleculer').Context} Context Moleculer's Context
@@ -16,14 +27,15 @@ module.exports = {
 	 * Settings
 	 */
 	settings: {
+		
 	},
-	metadata: {
-		$package: {
-			name: project.name,
-			path: path.join(__dirname, ".."),
-			isPackage: true
-		}
-	},
+    metadata: {
+        $package: {
+            name: project.name,
+            path: path.join(__dirname, ".."),
+            isPackage: true
+        }
+    },
 
 	/**
 	 * Dependencies
@@ -34,6 +46,7 @@ module.exports = {
 	 * Actions
 	 */
 	actions: {
+		...rests,
 
 	},
 
@@ -48,6 +61,7 @@ module.exports = {
 	 * Methods
 	 */
 	methods: {
+
 	},
 
 	/**

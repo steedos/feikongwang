@@ -1,0 +1,7 @@
+name: object_campaign
+desktop: true
+label: 市场活动
+mobile: true
+object: campaign
+permissions: []
+type: object

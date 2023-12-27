@@ -1,0 +1,114 @@
+[
+    {
+        "_id": "${space_id}_6261083132cc250032e1a96c",
+        "attributes": "outsourcing",
+        "gross_weight": null,
+        "height": null,
+        "length": null,
+        "name": "Dell台式电脑 - PC908",
+        "net_weight": null,
+        "number_of_quantity_installments": null,
+        "number_of_revenue_installments": null,
+        "product_code": "Dell-908",
+        "product_currency": "${space_id}_6261092232cc250032e1a973",
+        "width": null,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "is_active": true,
+        "purpose": [
+            "purchase",
+            "sale",
+            "stock"
+        ],
+        "quantity_scheduling_enabled": false,
+        "revenue_scheduling_enabled": false,
+        "material_group": "${space_id}_627497fc40f71f0031853acb",
+        "unit": "${space_id}_6274983b40f71f0031853acd",
+        "separate_accounting": false
+    },
+    {
+        "_id": "${space_id}_6262685c87e5c50032d9be3c",
+        "attributes": "outsourcing",
+        "gross_weight": null,
+        "height": null,
+        "is_active": true,
+        "length": null,
+        "name": "Dell笔记本电脑 - PF5899",
+        "net_weight": null,
+        "number_of_quantity_installments": null,
+        "number_of_revenue_installments": null,
+        "product_code": "Dell-908",
+        "product_currency": "${space_id}_6261092232cc250032e1a973",
+        "purpose": [
+            "purchase",
+            "sale",
+            "stock"
+        ],
+        "quantity_scheduling_enabled": false,
+        "revenue_scheduling_enabled": false,
+        "width": null,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "material_group": "${space_id}_627497fc40f71f0031853acb",
+        "separate_accounting": false
+    },
+    {
+        "_id": "${space_id}_6274d05740f71f0031853ade",
+        "attributes": "outsourcing",
+        "gross_weight": 1,
+        "height": 0,
+        "is_active": false,
+        "length": 0,
+        "name": "macbook air",
+        "net_weight": 1,
+        "number_of_quantity_installments": null,
+        "number_of_revenue_installments": null,
+        "quantity_scheduling_enabled": false,
+        "revenue_scheduling_enabled": false,
+        "width": 0,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "material_group": "${space_id}_627497fc40f71f0031853acb",
+        "product_code": "mac-001",
+        "specification": "macbookair",
+        "separate_accounting": false,
+        "amount": 9888,
+        "inventory": true
+    }
+]

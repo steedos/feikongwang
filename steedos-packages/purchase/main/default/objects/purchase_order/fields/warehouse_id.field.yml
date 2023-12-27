@@ -1,0 +1,6 @@
+name: warehouse_id
+label: 仓库
+reference_to: warehouse
+sort_no: 235
+type: lookup
+required: true

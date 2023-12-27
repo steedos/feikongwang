@@ -1,0 +1,6 @@
+name: parent
+label: 上级库位
+reference_to: stock_location
+sort_no: 120
+type: lookup
+filterable: true

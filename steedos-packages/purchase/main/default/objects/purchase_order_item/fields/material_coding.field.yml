@@ -1,0 +1,7 @@
+name: material_coding
+is_name: false
+label: 物料
+reference_to: product
+required: true
+sort_no: 100
+type: lookup

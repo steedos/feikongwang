@@ -1,0 +1,6 @@
+name: account_type
+label: 供应商类型
+type: lookup
+reference_to: accounts_type
+sort_no: 110
+group: 工程信息

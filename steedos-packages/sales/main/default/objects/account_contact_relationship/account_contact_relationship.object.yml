@@ -1,0 +1,7 @@
+name: account_contact_relationship
+enable_chatter: true
+enable_search: true
+enable_enhanced_lookup: true
+icon: account
+label: 客户联系人关系
+version: 2

@@ -1,0 +1,12 @@
+name: all
+columns:
+  - name
+  - start_date
+  - end_date
+  - budgeted_cost
+  - actual_cost
+  - type
+  - status
+filter_scope: space
+label: 所有市场活动
+shared: true

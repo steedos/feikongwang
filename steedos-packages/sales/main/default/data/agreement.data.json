@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "${space_id}_6305d3e8336fcc09215a6f4f",
+        "account_id": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "agreement_term": 12,
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "owner_expiration_notice": "60天",
+        "start_date": {
+            "$date": "2021-08-01T00:00:00Z"
+        },
+        "status": "Enabled",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:31:52.635Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:31:52.635Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "agreement_number": "2022080001"
+    }
+]

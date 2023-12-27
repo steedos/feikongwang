@@ -1,0 +1,188 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "container",
+            "body": [
+                {
+                    "type": "image",
+                    "id": "u:8d99ea193465",
+                    "src": "https://5000-indigo-chipmunk-y2fnydg5.ws.vscode.steedos.cn/images/logo_platform.png",
+                    "title": "",
+                    "enlargeAble": false,
+                    "width": 214,
+                    "height": 45,
+                    "className": "steedos_images m-t m-b m-r m-l-xs b-white",
+                    "thumbRatio": "4:3",
+                    "imageClassName": "b-white",
+                    "thumbClassName": "b-white"
+                },
+                {
+                    "type": "form",
+                    "title": "用户注册",
+                    "id": "u:714ce8090896",
+                    "body": [
+                        {
+                            "type": "input-text",
+                            "name": "username",
+                            "label": "用户名",
+                            "required": true,
+                            "id": "u:eabf6080a9d3",
+                            "themeCss": {
+                                "labelClassName": {
+                                    "padding-and-margin:default": {
+                                        "marginLeft": "",
+                                        "paddingLeft": "",
+                                        "marginTop": "",
+                                        "marginRight": "",
+                                        "marginBottom": "",
+                                        "paddingTop": "",
+                                        "paddingRight": "",
+                                        "paddingBottom": ""
+                                    },
+                                    "font:default": {
+                                        "fontWeight": "",
+                                        "lineHeight": "",
+                                        "font-family": ""
+                                    }
+                                }
+                            },
+                            "labelClassName": "labelClassName-eabf6080a9d3",
+                            "size": "full"
+                        },
+                        {
+                            "type": "input-text",
+                            "name": "email",
+                            "label": "邮箱",
+                            "required": true,
+                            "id": "u:f92bf09b93a3"
+                        },
+                        {
+                            "type": "input-text",
+                            "name": "email",
+                            "label": "手机号",
+                            "required": true,
+                            "id": "u:f92bf09b93a3"
+                        },
+                        {
+                            "type": "input-password",
+                            "name": "password",
+                            "label": "密码",
+                            "required": true,
+                            "id": "u:8ec48dc85c85"
+                        },
+                        {
+                            "type": "input-password",
+                            "name": "confirm_password",
+                            "label": "确认密码",
+                            "required": true,
+                            "id": "u:069bff159d95"
+                        },
+                        {
+                            "type": "control",
+                            "label": "",
+                            "body": [
+                                {
+                                    "type": "submit",
+                                    "id": "u:b6d68c5b9953",
+                                    "label": "注册",
+                                    "editorState": "default",
+                                    "onEvent": {
+                                        "click": {
+                                            "weight": 0,
+                                            "actions": [
+                                                {
+                                                    "actionType": "ajax",
+                                                    "outputVar": "responseResult",
+                                                    "args": {
+                                                        "options": {},
+                                                        "api": {
+                                                            "url": "${context.rooot}/service/api/@steedos-labs/crm/register/user",
+                                                            "method": "post",
+                                                            "requestAdaptor": "",
+                                                            "adaptor": "",
+                                                            "messages": {},
+                                                            "headers": {
+                                                                "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                            },
+                                                            "data": {
+                                                                "user": "${user}"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "id": "u:75e56f1f72a6"
+                        }
+                    ],
+                    "mode": "horizontal",
+                    "className": "no-border b-5x b-white m-none p-none font-bold",
+                    "panelClassName": "w-full m-none p-none",
+                    "submitText": "提交",
+                    "debug": true,
+                    "horizontal": {
+                        "left": 3,
+                        "right": 9
+                    }
+                }
+            ],
+            "style": {
+                "position": "static",
+                "display": "block",
+                "top-border-width": "",
+                "left-border-width": "",
+                "right-border-width": "",
+                "bottom-border-width": "",
+                "right-border-style": "solid",
+                "textAlign": "left"
+            },
+            "wrapperBody": false,
+            "id": "u:d1eeaf3c3a1f",
+            "isFixedHeight": false,
+            "isFixedWidth": false,
+            "size": "",
+            "className": "anonymous_registration"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:920c66c9e960",
+    "asideResizor": false,
+    "pullRefresh": {
+        "disabled": true
+    },
+    "css": {
+        ".steedos_images .antd-Image": {
+            "border": "0px"
+        },
+        "@media (min-width: 640px)": {
+            ".anonymous_registration_page .antd-Page-body": {
+                "display": "flex",
+                "justify-content": "center",
+                "align-items": "center"
+            },
+            ".anonymous_registration": {
+                "min-width": "450px",
+                "width": "40%",
+                "max-width": "500px"
+            }
+        },
+        ".anonymous_registration_page": {
+            "background-image": "url(/images/background.svg)"
+        }
+    },
+    "asideSticky": false,
+    "className": "anonymous_registration_page"
+}

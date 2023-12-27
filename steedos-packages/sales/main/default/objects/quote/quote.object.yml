@@ -1,0 +1,8 @@
+name: quote
+enable_audit: true
+enable_files: true
+enable_search: true
+enable_enhanced_lookup: true
+icon: quotes
+label: 报价
+version: 2

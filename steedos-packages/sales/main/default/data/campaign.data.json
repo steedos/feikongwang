@@ -1,0 +1,37 @@
+[
+    {
+        "_id": "${space_id}_62b2bc7e0aa493003e532a12",
+        "actual_cost": 92100,
+        "budgeted_cost": 100000,
+        "expected_response": 89,
+        "expected_revenue": 150000,
+        "is_active": true,
+        "name": "低代码产品推广会",
+        "number_sent": 2000,
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "start_date": {
+            "$date": "2022-06-01T00:00:00Z"
+        },
+        "status": "Planned",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:16:46.915Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "count_converted": 0,
+        "count_leads": 0,
+        "count_member": 0,
+        "type": "Customer_Event",
+        "end_date": {
+            "$date": "2022-09-30T00:00:00Z"
+        }
+    }
+]

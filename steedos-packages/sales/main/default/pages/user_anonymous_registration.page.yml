@@ -1,0 +1,10 @@
+name: user_anonymous_registration
+__filename: >-
+  /workspace/steedos-ee/steedos-packages-pm/crm/main/default/pages/user_anonymous_registration.page.yml
+allow_anonymous: true
+is_active: true
+label: 用户匿名注册页面
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

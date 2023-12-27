@@ -1,0 +1,4 @@
+name: is_qualified
+label: 合格供应商
+type: boolean
+sort_no: 100

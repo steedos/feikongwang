@@ -1,0 +1,4 @@
+name: date
+label: 采购日期
+sort_no: 160
+type: date

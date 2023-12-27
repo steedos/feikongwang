@@ -1,0 +1,11 @@
+name: number
+formula: '{00000}'
+hidden: false
+is_name: true
+label: 序号
+omit: false
+readonly: true
+searchable: true
+sort_no: 100
+type: autonumber
+visible_on: "{{global.mode ==='read' ? true : false}}"

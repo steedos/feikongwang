@@ -1,0 +1,9 @@
+name: price_subtotal
+data_type: currency
+formula: price_unit*amount_demand
+formula_blank_value: zeroes
+label: 小计
+precision: 18
+scale: 2
+sort_no: 160
+type: formula

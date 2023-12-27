@@ -1,0 +1,7 @@
+name: object_opportunity
+desktop: true
+label: 业务机会
+mobile: true
+object: opportunity
+permissions: []
+type: object

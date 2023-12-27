@@ -1,0 +1,7 @@
+name: amount_demand
+label: 需求数量
+precision: 18
+required: true
+scale: 2
+sort_no: 120
+type: number

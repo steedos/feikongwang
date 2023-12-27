@@ -1,0 +1,13 @@
+name: campaign_detail_page
+description: 市场活动详情微页面
+is_active: true
+label: 市场活动详情页
+object_name: campaign
+pageAssignments:
+  - type: orgDefault
+    page: campaign_detail_page
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

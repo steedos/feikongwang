@@ -1,0 +1,6 @@
+name: product_description_variants
+is_wide: true
+label: 说明
+rows: 2
+sort_no: 180
+type: textarea

@@ -1,0 +1,76 @@
+[
+    {
+        "_id": "${space_id}_6262526887e5c50032d9be04",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "budget_confirmed": true,
+        "discovery_completed": false,
+        "due_date": {
+            "$date": "2021-10-01T00:00:00Z"
+        },
+        "iq_score": null,
+        "lead_source": "Other",
+        "name": "商户低代码平台采购",
+        "owner": "9ZQcWvzsbqkbMyGdb",
+        "partner_account": false,
+        "private": false,
+        "probability": "100%",
+        "rating": "Hot",
+        "roi_analysis_completed": true,
+        "stage": "Closed_Won",
+        "synced_quoted": false,
+        "total_opportunity_quantity": null,
+        "type": "New_Business",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:11:18.526Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "expected_revenue": 0,
+        "amount": 0
+    },
+    {
+        "_id": "${space_id}_626252fa87e5c50032d9be0a",
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "budget_confirmed": true,
+        "discovery_completed": false,
+        "due_date": {
+            "$date": "2022-08-01T00:00:00Z"
+        },
+        "iq_score": null,
+        "lead_source": "Partner",
+        "name": "人事管理内部系统",
+        "owner": "TzudkPm4KRCDN3gTP",
+        "partner_account": false,
+        "private": false,
+        "probability": "35%",
+        "rating": "Warm",
+        "roi_analysis_completed": true,
+        "stage": "Proposal",
+        "synced_quoted": false,
+        "total_opportunity_quantity": null,
+        "type": "New_Business",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:11:18.898Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "expected_revenue": 0,
+        "amount": 0
+    }
+]

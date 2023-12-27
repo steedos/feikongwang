@@ -1,0 +1,8 @@
+name: case
+enable_audit: true
+enable_files: true
+enable_search: true
+enable_enhanced_lookup: true
+icon: case
+label: 个案
+version: 2

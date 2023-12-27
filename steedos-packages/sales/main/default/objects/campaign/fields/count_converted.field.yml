@@ -1,0 +1,23 @@
+name: count_converted
+data_type: number
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 已转换潜在客户数
+omit: true
+precision: 18
+readonly: false
+required: false
+scale: 0
+searchable: false
+sort_no: 550
+sortable: false
+summary_object: leads
+summary_type: count
+type: summary
+summary_filters: 
+  - field: converted
+    operation: '='
+    value: true

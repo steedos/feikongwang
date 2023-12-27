@@ -1,0 +1,8 @@
+name: price_book
+enable_audit: true
+enable_files: true
+enable_search: true
+enable_enhanced_lookup: true
+icon: pricebook
+label: 价格手册
+version: 2

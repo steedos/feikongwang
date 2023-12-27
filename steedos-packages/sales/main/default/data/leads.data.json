@@ -1,0 +1,31 @@
+[
+    {
+        "_id": "${space_id}_626106e032cc250032e1a95d",
+        "address": "上海市徐汇区肇嘉浜路1188号金河国际大厦18F",
+        "annual_revenue": null,
+        "company": "江苏大仲集团有限公司",
+        "lead_source": "Other",
+        "mobilephone": "13890674539",
+        "name": "陈中元",
+        "number_of_employees": 600,
+        "owner": "9ZQcWvzsbqkbMyGdb",
+        "phone": "021-86883962",
+        "rating": "Hot",
+        "salutation": "Male",
+        "status": "New",
+        "title": "信息管理部主管",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:12:18.342Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

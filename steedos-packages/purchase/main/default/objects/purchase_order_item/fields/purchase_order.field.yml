@@ -1,0 +1,7 @@
+name: purchase_order
+label: 采购订单
+reference_to: purchase_order
+searchable: true
+sort_no: 190
+type: master_detail
+write_requires_master_read: false

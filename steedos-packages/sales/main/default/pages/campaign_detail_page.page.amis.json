@@ -1,0 +1,84 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:e8e2c3e2b9f1"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:shadow sm:rounded sm:border border-slate-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:771f63ccda73"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "相关",
+                    "className": "px-0 pt-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "campaign",
+                            "recordId": "${recordId}",
+                            "id": "u:893ba6bfffb7",
+                            "relatedObjectApiName": "campaign_member"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "campaign",
+                            "recordId": "${recordId}",
+                            "id": "u:0a3a3be44781",
+                            "relatedObjectApiName": "leads"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "campaign",
+                            "recordId": "${recordId}",
+                            "id": "u:a022ea6e7496",
+                            "relatedObjectApiName": "opportunity"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "campaign",
+                            "recordId": "${recordId}",
+                            "id": "u:1d64e2abd6a1",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:05c641156811"
+                }
+            ],
+            "id": "u:aee4978fccdc"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_campaign_record_detail",
+    "name": "page_campaign_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

@@ -1,0 +1,35 @@
+name: all
+columns:
+  - field: name
+    wrap: false
+    _id: 2c0add32-a9b8-4342-8dc0-6657b5cd1759
+  - field: material_coding
+    wrap: false
+    _id: 6a10aa49-b60c-4bfc-a62a-07683c6d96f5
+  - field: amount_demand
+    wrap: false
+    _id: 734e0f92-03ee-47d8-b20b-ea0f3edf8adf
+  - _id: a9924eed-4444-47bf-8504-d4a8e4fc4385
+    field: price_unit
+  - _id: 0d82be58-91b3-4f5a-96b8-2d2e895f6106
+    field: price_subtotal
+  - field: amount_receiverd
+    wrap: false
+    _id: 52df95f6-cc11-42ac-b9c4-e4484aa1c2b3
+  - field: delivery_date
+    wrap: false
+    _id: c3a48614-1fb2-4f96-a219-7b3c698b44db
+  - field: purchase_order
+    wrap: false
+    _id: 8afa85fc-26e6-41b0-abf1-b268d9cd2b87
+  - field: purchase_request
+    wrap: false
+    _id: 96abe70b-c170-4904-969a-fc9dd2635251
+filter_scope: space
+filters: []
+label: 所有采购订单项
+scrolling_mode: standard
+shared: true
+show_count: false
+sort_no: 100
+type: grid

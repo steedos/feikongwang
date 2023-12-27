@@ -1,0 +1,230 @@
+[
+    {
+        "_id": "${space_id}_62610e0532cc250032e1a995",
+        "name": "一般纳税人（17%）",
+        "tax_rate": 0.17,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0732cc250032e1a996",
+        "name": "一般纳税人（13%）",
+        "tax_rate": 0.13,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0732cc250032e1a997",
+        "name": "一般纳税人（11%）",
+        "tax_rate": 0.11,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0732cc250032e1a998",
+        "name": "一般纳税人（6%）",
+        "tax_rate": 0.06,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0832cc250032e1a999",
+        "name": "一般纳税人（5%）",
+        "tax_rate": 0.05,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0932cc250032e1a99b",
+        "name": "零税率税目",
+        "tax_rate": 0,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0932cc250032e1a99c",
+        "name": "简易征税（2%）",
+        "tax_rate": 0.02,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0a32cc250032e1a99f",
+        "name": "一般纳税人（3%）",
+        "tax_rate": 0.03,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0b32cc250032e1a9a0",
+        "name": "一般纳税人（16%）",
+        "tax_rate": 0.16,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0b32cc250032e1a9a1",
+        "name": "一般纳税人（10%）",
+        "tax_rate": 0.1,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0c32cc250032e1a9a3",
+        "name": "一般纳税人9%",
+        "tax_rate": 0.09,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62610e0c32cc250032e1a9a4",
+        "name": "一般纳税人（1%）",
+        "tax_rate": 0.01,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

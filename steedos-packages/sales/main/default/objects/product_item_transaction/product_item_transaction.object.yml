@@ -1,0 +1,6 @@
+name: product_item_transaction
+enable_search: true
+enable_enhanced_lookup: true
+icon: product_item_transaction
+label: 产品项交易
+version: 2
