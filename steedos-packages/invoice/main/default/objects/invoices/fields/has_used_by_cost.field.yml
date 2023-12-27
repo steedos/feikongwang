@@ -1,0 +1,5 @@
+name: has_used_by_cost
+label: 已被费用关联
+type: boolean
+sort_no: 500
+omit: true

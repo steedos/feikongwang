@@ -1,0 +1,6 @@
+name: error_code
+label: 错误代码
+type: number
+scale: 0
+readonly: true
+sort_no: 500

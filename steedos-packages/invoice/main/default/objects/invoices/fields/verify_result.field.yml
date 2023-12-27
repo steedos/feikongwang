@@ -1,0 +1,65 @@
+name: verify_result
+create: true
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 查验结果
+multiple: false
+options:
+  - label: 查验成功
+    value: "0001"
+  - value: "9999"
+    label: 查验失败
+    description: 查验失败，业务出现异常，请提交工单咨询
+  - value: "0002"
+    label: 超过该张票当天查验次数
+    description: 此发票今日查询次数已达上限（5次），请次日查询
+  - label: 请求不合法
+    value: "0005"
+    description: 发票信息有误，请核对后再查询
+  - value: "0006"
+    label: 发票信息不一致
+    description: 发票信息有误，请核对后再查询
+  - value: 0009
+    label: 发票不存在
+    description: 所查发票不存在
+  - value: "1004"
+    label: 已超过最大查验量
+    description: 已超过最大查验量，请提交工单咨询
+  - label: 查询发票不规范
+    value: "1005"
+    description: 信息有误，请核对后再查询
+  - value: "1006"
+    label: 查验异常
+    description: 发票信息有误，请核对后再查询
+  - value: "1008"
+    label: 字段不能为空
+    description: 发票请求参数不能为空
+  - value: "1009"
+    label: 参数长度不正确
+    description: 参数长度不符合规范，确认参数，再次查验
+  - value: "1014"
+    label: 日期当天的不能查验
+    description: 日期当天的不能查验，请隔天再查
+  - value: "1015"
+    label: 超过5年的不能查验
+    description: 超过5年的不能查验
+  - value: "1020"
+    label: 没有查验权限
+    description: 没有查验权限，请提交工单咨询
+  - value: "1021"
+    label: 网络超时
+    description: 税局维护升级，暂时无法查验，请提交工单咨询
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 240
+sortable: false
+type: select
+write_requires_master_read: false
+readonly: true
+visible_on: "{{(global.mode ==='read' && formData.type ==='vat_invoice') ? true : false}}"
+group: 查验

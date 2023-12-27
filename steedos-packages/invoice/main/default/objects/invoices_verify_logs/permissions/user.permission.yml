@@ -1,0 +1,82 @@
+name: 发票验真日志.用户
+allowCreate: true
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowExport: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: false
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: log_id
+    readable: true
+    editable: true
+  - field: words_result_num
+    readable: true
+    editable: true
+  - field: verify_result
+    readable: true
+    editable: true
+  - field: verify_message
+    readable: true
+    editable: true
+  - field: verify_frequency
+    readable: true
+    editable: true
+  - field: invalid_sign
+    readable: true
+    editable: true
+  - field: invoice_type
+    readable: true
+    editable: true
+  - field: invoice_code
+    readable: true
+    editable: true
+  - field: invoice_num
+    readable: true
+    editable: true
+  - field: check_code
+    readable: true
+    editable: true
+  - field: invoice_date
+    readable: true
+    editable: true
+  - field: machine_code
+    readable: true
+    editable: true

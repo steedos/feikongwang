@@ -1,0 +1,5 @@
+name: error_msg
+label: 错误信息
+type: text
+readonly: true
+sort_no: 500

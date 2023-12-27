@@ -1,0 +1,12 @@
+name: all
+columns:
+  - field: log_id
+  - field: pdf_file_size
+  - field: words_result_num
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

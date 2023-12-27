@@ -1,0 +1,5 @@
+name: verify_log
+label: 发票验真日志
+type: lookup
+reference_to: invoices_verify_logs
+omit: true

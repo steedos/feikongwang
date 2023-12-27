@@ -1,0 +1,8 @@
+name: object_invoices
+desktop: true
+icon: lead_list
+label: 发票
+mobile: true
+object: invoices
+permissions: []
+type: object

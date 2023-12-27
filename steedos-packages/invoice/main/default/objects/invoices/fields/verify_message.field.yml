@@ -1,0 +1,20 @@
+name: verify_message
+create: true
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 查验结果说明
+multiple: false
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 240
+sortable: false
+type: text
+write_requires_master_read: false
+readonly: true
+visible_on: "{{(global.mode ==='read' && formData.type ==='vat_invoice') ? true : false}}"
+group: 查验

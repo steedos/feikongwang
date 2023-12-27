@@ -1,4 +1,4 @@
-name: 主数据
+name: 基础数据
 code: master
 icon_slds: metrics
 description: 系统基础对象数据管理应用。
@@ -22,6 +22,7 @@ objects:
   - tax_rates
   - currency
   - accounts
+  - expense_category
   - instance_tasks
 saml_enabled: false
 saml_logout_enabled: false
