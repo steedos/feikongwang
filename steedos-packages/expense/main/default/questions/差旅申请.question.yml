@@ -1,0 +1,48 @@
+name: 差旅申请
+created_at: 2023-12-28T08:12:58.564Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: expense_trips
+    aggregation:
+      - - count
+    breakout:
+      - - field
+        - expense_trips.instance_state
+        - null
+  type: query
+display: bar
+entity_id: 658d2e0a4d47d105bf59776d
+id: 658d2e0a4d47d105bf59776d
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: instance_state
+    name: instance_state
+    unit: null
+    display_name: 申请单审批状态
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/Source
+    source: breakout
+    visibility_type: normal
+    table_id: expense_trips
+    field_ref:
+      - field
+      - expense_trips.instance_state
+      - null
+  - base_type: type/BigInteger
+    display_name: 计数
+    effective_type: type/BigInteger
+    field_ref:
+      - aggregation
+      - 0
+    name: count
+    semantic_type: type/Quantity
+    source: aggregation
+table_id: expense_trips
+updated_at: 2023-12-28T08:12:58.564Z
+visualization_settings: '{"graph.dimensions":["instance_state"],"graph.metrics":["count"]}'

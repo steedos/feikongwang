@@ -1,0 +1,72 @@
+name: 报销单根据费用开始日期统计报销金额和借款金额
+created_at: 2023-12-28T08:42:11.317Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: expense_reports
+    aggregation:
+      - - sum
+        - - field
+          - expense_reports.advance_payment
+          - null
+      - - sum
+        - - field
+          - expense_reports.total_cost
+          - null
+    breakout:
+      - - field
+        - expense_reports.start
+        - temporal-unit: week
+    expressions:
+      支付金额:
+        - field
+        - expense_reports.reimbursed_amount
+        - null
+  type: query
+display: combo
+entity_id: 658d34e34d47d105bf597784
+id: 658d34e34d47d105bf597784
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: start
+    name: start
+    unit: week
+    display_name: 费用发生开始日期
+    base_type: type/Instant
+    effective_type: type/Instant
+    semantic_type: null
+    source: breakout
+    visibility_type: normal
+    table_id: expense_reports
+    field_ref:
+      - field
+      - expense_reports.start
+      - temporal-unit: week
+  - base_type: type/Integer
+    display_name: 借款总金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+  - base_type: type/Integer
+    display_name: 费用总额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 1
+    name: sum_2
+    semantic_type: null
+    source: aggregation
+table_id: expense_reports
+updated_at: 2023-12-28T08:42:11.317Z
+visualization_settings: >-
+  {"series_settings":{"sum":{"display":"line"},"sum_2":{"display":"bar"}},"column_settings":{"[\"name\",\"start\"]":{"date_style":"MMMM
+  D,
+  YYYY","date_abbreviate":true}},"graph.dimensions":["start"],"graph.metrics":["sum","sum_2"]}
