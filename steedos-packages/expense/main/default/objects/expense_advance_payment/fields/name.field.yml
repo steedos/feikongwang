@@ -2,7 +2,7 @@ name: name
 create: true
 filterable: true
 index: true
-label: 预支款说明
+label: 借款说明
 required: true
 searchable: true
 sort_no: 100

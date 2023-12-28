@@ -14,6 +14,6 @@ enable_tree: false
 enable_workflow: false
 icon: assignment
 is_enable: true
-label: 预支款
+label: 借款
 locked: false
 version: 2

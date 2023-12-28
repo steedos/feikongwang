@@ -5,7 +5,7 @@ amis_schema: |-
       "body": [
           {
               "type": "button",
-              "label": "报销关联预支款",
+              "label": "报销关联借款",
               "id": "u:associated_advances",
               "editorState": "default"
           }
@@ -24,7 +24,7 @@ amis_schema: |-
       "id": "u:e711b6309a11"
   }
 is_enable: true
-label: 报销关联预支款
+label: 报销关联借款
 locked: false
 'on': list
 type: amis_button

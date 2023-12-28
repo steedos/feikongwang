@@ -74,7 +74,7 @@
                     "className": "p-t p-l-xs"
                 },
                 {
-                    "title": "预支款",
+                    "title": "借款",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
