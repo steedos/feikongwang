@@ -4,7 +4,7 @@ description: 通过客户、潜在客户、业务机会等管理销售流程。
 icon_slds: case
 is_creator: true
 mobile: true
-showSidebar: true
+showSidebar: false
 sort: 30
 tab_groups:
   - group_name: 销售管理
