@@ -18,8 +18,8 @@ searchable: false
 show_as_qr: false
 sort_no: 170
 sortable: false
-summary_field: amount
-summary_object: expense
+summary_field: invoice_amount
+summary_object: invoices
 summary_type: sum
 type: summary
 unique: false

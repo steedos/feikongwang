@@ -53,7 +53,7 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:9eba32ade87a",
-                            "relatedObjectApiName": "expense"
+                            "relatedObjectApiName": "invoices"
                         }
                     ],
                     "id": "u:ce8f96e56f50"

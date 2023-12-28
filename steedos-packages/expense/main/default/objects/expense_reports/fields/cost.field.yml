@@ -18,7 +18,7 @@ searchable: false
 show_as_qr: false
 sort_no: 160
 sortable: false
-summary_object: expense
+summary_object: invoices
 summary_type: count
 type: summary
 unique: false
