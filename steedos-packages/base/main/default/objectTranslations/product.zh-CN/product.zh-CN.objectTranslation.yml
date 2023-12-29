@@ -1,9 +1,9 @@
 name: product
-label: 物料
+label: 产品
 description: 
 fields:
   description:
-    label: 物料描述
+    label: 产品描述
     help: 
     description: 
   display_url:
@@ -19,7 +19,7 @@ fields:
     help: 
     description: 
   family:
-    label: 物料系列
+    label: 产品系列
     help: 
     options:
       - label: 无
@@ -30,7 +30,7 @@ fields:
     help: 指示产品已准备好在价目表、业务机会或报价中使用，以及您是否可以在视图中查看产品。
     description: 
   name:
-    label: 物料名称
+    label: 产品名称
     help: 
     description: 
   number_of_quantity_installments:
@@ -42,7 +42,7 @@ fields:
     help: 
     description: 
   product_code:
-    label: 物料编码
+    label: 产品编码
     help: 
     description: 
   product_currency:
@@ -83,7 +83,7 @@ fields:
     description: 
 listviews:
   all:
-    label: 所有物料
+    label: 所有产品
   recent:
     label: 最近查看
 actions:
