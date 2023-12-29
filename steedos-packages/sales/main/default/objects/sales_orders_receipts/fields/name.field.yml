@@ -1,0 +1,10 @@
+name: name
+hidden: true
+is_wide: true
+label: 款项条件
+required: false
+searchable: true
+sort_no: 290
+type: text
+is_name: false
+filterable: true

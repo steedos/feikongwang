@@ -1,0 +1,10 @@
+name: contract
+create: false
+filterable: true
+label: 应收合同
+reference_to: sales_orders
+required: true
+sort_no: 160
+sortable: true
+type: master_detail
+write_requires_master_read: true

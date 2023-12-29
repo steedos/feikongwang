@@ -1,0 +1,16 @@
+name: all
+columns:
+  - field: receipts_name
+  - field: amount
+  - field: receipts_proportion
+  - field: due_date
+  - field: amount_description
+  - field: contract
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+shared: true
+sort:
+  - field_name: undefined
+    order: asc
