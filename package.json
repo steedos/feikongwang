@@ -10,13 +10,7 @@
     "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js steedos-packages/*/src/index.{js,ts} --config steedos.config.js --hot --repl",
     "repl": "moleculer-runner --repl --config steedos.config.js",
     "bootstrap": "lerna clean --yes && lerna bootstrap",
-    "build": "lerna run build",
-    "npm:login": "npm login --registry https://registry.npmjs.org",
-    "version:latest": "yarn build && lerna version --force-publish --exact",
-    "publish:latest": "lerna publish from-package --registry https://registry.npmjs.org",
-    "version:beta": "yarn build && lerna version prerelease --preid beta --force-publish --exact",
-    "publish:beta": "lerna publish from-package --registry https://registry.npmjs.org --dist-tag beta",
-    "sync_to_npmmirror": "lerna exec --no-private  -- npx cnpm sync \\$LERNA_PACKAGE_NAME"
+    "build": "lerna run build"
   },
   "dependencies": {
     "@steedos/service-package-loader": "^2.6.2-beta.26",

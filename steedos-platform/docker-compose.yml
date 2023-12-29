@@ -11,7 +11,6 @@ services:
       - .env.local
     volumes:
       - "./steedos-storage:/steedos-storage"
-      # - "./.steedos:/app/.steedos"
     depends_on:
       mongodb:
         condition: service_healthy

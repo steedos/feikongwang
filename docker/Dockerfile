@@ -12,9 +12,7 @@ WORKDIR /app
 COPY ../package.json .
 COPY ../lerna.json .
 COPY ../steedos.config.js .
-COPY ../steedos-packages-hr ./steedos-packages-hr
-COPY ../steedos-packages-oa ./steedos-packages-oa
-COPY ../steedos-packages-pm ./steedos-packages-pm
+COPY ../steedos-packages ./steedos-packages
 
 RUN yarn --production && yarn cache clean
 

@@ -20,7 +20,7 @@ services:
     depends_on:
       redis:
         condition: service_started
-  steedos-apps:
+  steedos-feikongwang:
     build: 
       context: ../
       dockerfile: ./docker/Dockerfile

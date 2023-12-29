@@ -1,7 +1,7 @@
 #!/bin/bash
-export APPS_VERSION=2.6.0
+export FEIKONGWANG_VERSION=2.6.0
 echo "#########################################################################"
-echo "steedos apps version: ${APPS_VERSION}"
+echo "feikongwang version: ${FEIKONGWANG_VERSION}"
 echo "#########################################################################"
 
 docker-compose build --no-cache \
@@ -10,4 +10,4 @@ docker-compose build --no-cache \
     --build-arg OS=alpine3.12 \
     --build-arg BUILD_DATE="$(date +"%Y-%m-%dT%H:%M:%SZ")"
 
-docker tag steedos/steedos-apps:latest steedos/steedos-apps:${APPS_VERSION}
+docker tag steedos/feikongwang:latest steedos/feikongwang:${FEIKONGWANG_VERSION}
