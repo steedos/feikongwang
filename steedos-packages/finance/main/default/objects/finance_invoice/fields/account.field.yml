@@ -4,7 +4,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 付款方名称
+label: 客户
 multiple: false
 omit: false
 readonly: false
@@ -15,3 +15,7 @@ sort_no: 140
 sortable: false
 type: lookup
 create: false
+filtersFunction:  |-
+  function(filters,values) {
+    return ["is_customer","=",true];
+  }

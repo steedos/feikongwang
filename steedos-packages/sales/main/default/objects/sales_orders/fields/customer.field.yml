@@ -4,3 +4,7 @@ reference_to: accounts
 sort_no: 15
 type: lookup
 required: true
+filtersFunction:  |-
+  function(filters,values) {
+    return ["is_customer","=",true];
+  }
