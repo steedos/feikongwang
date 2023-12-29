@@ -28,4 +28,4 @@ label: 报销关联借款
 locked: false
 'on': list
 type: amis_button
-visible: true
+visible: false
