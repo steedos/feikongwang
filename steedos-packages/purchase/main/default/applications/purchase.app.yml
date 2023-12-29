@@ -15,7 +15,7 @@ tab_groups:
   - group_name: 设置
     default_open: true
 tabs:
-  - supplier
+  - object_accounts
   - object_purchase_orders
   - object_invoices
   - object_finance_payment
