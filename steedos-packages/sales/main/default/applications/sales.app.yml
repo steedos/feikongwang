@@ -1,6 +1,6 @@
-name: 销售
+name: 应收
 code: sales
-description: 通过客户、潜在客户、业务机会等管理销售流程。
+description: 精确追踪与分析每一笔收入
 icon_slds: opportunity
 is_creator: true
 mobile: true

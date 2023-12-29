@@ -1,8 +1,8 @@
 name: 应付
 code: purchase
-description: 应付。
+description: 全面而精确的支出监控
 enable_nav_schema: false
-icon_slds: store
+icon_slds: orders
 is_creator: true
 is_new_window: false
 is_use_ie: false
