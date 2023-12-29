@@ -1,0 +1,8 @@
+name: customer
+is_active: true
+label: 客户
+locked: false
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

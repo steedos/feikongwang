@@ -1,0 +1,26 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "steedos-object-listview",
+            "label": "列表视图",
+            "objectApiName": "accounts",
+            "listName": "customer",
+            "showHeader": false,
+            "className": "sm:border sm:rounded sm:border-gray-300 mb-4",
+            "id": "u:ea51d39bfa4c",
+            "crudMode": "table"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:267530c9b370"
+}
