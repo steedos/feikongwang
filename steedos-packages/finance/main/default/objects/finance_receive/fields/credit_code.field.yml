@@ -7,7 +7,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 付款方纳税人识别号
+label: 纳税人识别号
 omit: false
 readonly: false
 required: false

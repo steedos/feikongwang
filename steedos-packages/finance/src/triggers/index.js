@@ -10,5 +10,4 @@ module.exports = {
     finance_payment_trigger_check_amount: require('./finance_payment_trigger_check_amount'),
     finance_payment_trigger_set_default_value: require('./finance_payment_trigger_set_default_value'),
     finance_payment_triggers: require('./finance_payment_triggers'),
-    finance_receive_trigger_set_default_value: require('./finance_receive_trigger_set_default_value'),
 }

@@ -7,7 +7,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 付款方开户行
+label: 开户行
 omit: false
 readonly: false
 required: false
