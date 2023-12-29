@@ -6,4 +6,4 @@ reference_to: accounts
 required: false
 sort_no: 120
 sortable: true
-type: master_detail
+type: lookup

@@ -3,3 +3,4 @@ extend: accounts
 enable_instances: true
 enable_workflow: true
 enable_enhanced_lookup: true
+enable_tasks: false
