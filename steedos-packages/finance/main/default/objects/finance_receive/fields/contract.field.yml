@@ -9,7 +9,7 @@ create: false
 omit: false
 readonly: false
 reference_to: sales_orders
-required: false
+required: true
 searchable: false
 sort_no: 80
 sortable: true
