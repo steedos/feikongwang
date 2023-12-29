@@ -1,0 +1,7 @@
+name: object_material_group
+desktop: true
+label: 产品分组
+mobile: true
+object: material_group
+permissions: []
+type: object

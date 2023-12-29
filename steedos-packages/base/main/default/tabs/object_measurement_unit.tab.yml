@@ -1,0 +1,7 @@
+name: object_measurement_unit
+desktop: true
+label: 计量单位
+mobile: true
+object: measurement_unit
+permissions: []
+type: object
