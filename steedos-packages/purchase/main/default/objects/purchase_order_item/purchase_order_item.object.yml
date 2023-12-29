@@ -13,19 +13,6 @@ enable_search: true
 enable_share: false
 enable_tasks: false
 enable_workflow: false
-form:
-  onValuesChange: !<tag:yaml.org,2002:js/function> |-
-    function(args
-    ) {      
-      const material_coding = args.changedValues.material_coding
-     
-      if(material_coding != undefined){
-        const unit_id = Creator.getObjectRecord("product", material_coding, ["unit"]).unit;  
-        if(unit_id != undefined){
-          args.form.setFieldsValue({unit: unit_id});
-        }
-      }
-    }
 actions:
   standard_edit: 
     label: Edit
