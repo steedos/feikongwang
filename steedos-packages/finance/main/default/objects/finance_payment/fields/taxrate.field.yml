@@ -1,6 +1,6 @@
 name: taxrate
 filterable: false
-hidden: false
+hidden: true
 index: false
 is_name: false
 is_wide: false
@@ -14,3 +14,4 @@ searchable: false
 sort_no: 170
 sortable: false
 type: lookup
+visible_on: false

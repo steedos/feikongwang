@@ -1,7 +1,7 @@
 name: ticket_information
 defaultValue: 先票后款
 filterable: false
-hidden: false
+hidden: true
 index: false
 is_name: false
 is_wide: false
@@ -14,8 +14,9 @@ options:
   - label: 先款后票
     value: 先款后票
 readonly: false
-required: true
+required: false
 searchable: false
 sort_no: 160
 sortable: false
 type: select
+visible_on: false
