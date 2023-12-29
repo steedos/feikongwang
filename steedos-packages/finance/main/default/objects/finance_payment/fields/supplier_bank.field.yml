@@ -8,17 +8,6 @@ label: 收款方银行账号
 create: false
 multiple: false
 omit: false
-depend_on:
-  - supplier
-filtersFunction: !!js/function |
-  function (filters, values) {
-      const supplier = values.supplier;
-      if (!supplier) {
-        return ['_id', '=', 'none'];
-      } else {
-        return [["account", "=", supplier], ["enablestate", "=", "enable"]];
-      }
-  }
 readonly: false
 reference_to: account_banks
 required: true
