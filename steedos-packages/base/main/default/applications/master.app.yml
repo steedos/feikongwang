@@ -1,6 +1,6 @@
 name: 基础数据
 code: master
-icon_slds: metrics
+icon_slds: all
 description: 系统基础对象数据管理应用。
 is_creator: true
 is_new_window: false

@@ -5,7 +5,7 @@ icon_slds: opportunity
 is_creator: true
 mobile: true
 showSidebar: false
-sort: 30
+sort: 10
 tab_groups:
   - group_name: 销售管理
     default_open: true

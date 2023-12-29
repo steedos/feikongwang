@@ -2,7 +2,7 @@ name: 应付
 code: purchase
 description: 全面而精确的支出监控
 enable_nav_schema: false
-icon_slds: orders
+icon_slds: maintenance_work_rule
 is_creator: true
 is_new_window: false
 is_use_ie: false
@@ -10,7 +10,7 @@ is_use_iframe: false
 locked: falsea
 mobile: true
 showSidebar: false
-sort: 100
+sort: 20
 tab_groups:
   - group_name: 设置
     default_open: true

@@ -2,7 +2,7 @@ name: 报销
 code: expense
 description: 在线费控管理系统，通过处理费用、审批和报销来帮助您进行在线费用管理。
 enable_nav_schema: false
-icon_slds: case
+icon_slds: expense_report_entry
 is_creator: true
 is_new_window: false
 is_use_ie: false
