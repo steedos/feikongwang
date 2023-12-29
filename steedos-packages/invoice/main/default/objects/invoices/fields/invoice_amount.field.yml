@@ -13,7 +13,7 @@ required: true
 scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 160
+sort_no: 132
 sortable: false
 type: currency
 write_requires_master_read: false

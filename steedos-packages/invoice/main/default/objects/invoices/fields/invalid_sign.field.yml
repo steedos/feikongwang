@@ -9,6 +9,7 @@ label: 是否作废（冲红）
 multiple: false
 precision: 18
 primary: false
+readonly: true
 required: false
 scale: 2
 searchable: false

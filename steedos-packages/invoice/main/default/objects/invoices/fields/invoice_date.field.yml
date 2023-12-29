@@ -5,7 +5,7 @@ generated: false
 index: false
 is_name: false
 is_wide: false
-label: 开票日期
+label: 发票日期
 multiple: false
 primary: false
 required: true

@@ -1,0 +1,17 @@
+name: purchase_order
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 应付合同
+omit: false
+readonly: false
+reference_to: purchase_orders
+required: false
+searchable: false
+sort_no: 145
+sortable: true
+type: master_detail
+create: false
+write_requires_master_read: true

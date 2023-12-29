@@ -18,7 +18,7 @@ omit: false
 #         return [["contract","=",values.contract]]
 #       }
 #     }
-filters: [ [[["type", "=", "vat_invoice"],['verify_status', '=', 'passed']], 'or', ["type", "!=", "vat_invoice"]], ['has_used_by_cost', '!=', true] ]
+# filters: [ [[["type", "=", "vat_invoice"],['verify_status', '=', 'passed']], 'or', ["type", "!=", "vat_invoice"]], ['has_used_by_cost', '!=', true] ]
 readonly: false
 reference_to: invoices
 required: false

@@ -8,6 +8,7 @@ is_wide: false
 label: 购方纳税人识别号
 multiple: false
 primary: false
+readonly: true
 required: false
 searchable: false
 show_as_qr: false
