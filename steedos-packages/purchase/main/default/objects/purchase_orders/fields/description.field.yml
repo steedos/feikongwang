@@ -1,0 +1,5 @@
+name: description
+label: 备注
+is_wide: true
+type: textarea
+sort_no: 110

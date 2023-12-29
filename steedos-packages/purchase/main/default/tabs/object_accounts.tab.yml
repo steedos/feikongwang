@@ -1,0 +1,7 @@
+name: object_accounts
+desktop: true
+label: 供应商
+mobile: true
+object: accounts
+permissions: []
+type: object

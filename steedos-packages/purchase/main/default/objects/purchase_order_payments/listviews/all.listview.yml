@@ -1,0 +1,15 @@
+name: all
+columns:
+  - field: name
+    width: '300'
+    wrap: true
+  - field: payment_name
+  - field: purchase_order
+  - field: amount
+  - field: due_date
+filter_scope: space
+label: 所有
+shared: true
+sort:
+  - - due_date
+    - desc

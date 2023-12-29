@@ -1,0 +1,10 @@
+name: purchase_order
+label: 应付合同
+create: false
+filterable: true
+reference_to: purchase_orders
+required: true
+sort_no: 110
+sortable: true
+type: master_detail
+write_requires_master_read: true

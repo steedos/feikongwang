@@ -1,0 +1,7 @@
+name: object_purchase_orders
+desktop: true
+label: 应付合同
+mobile: true
+object: purchase_orders
+permissions: []
+type: object

@@ -1,5 +1,0 @@
-name: department
-label: 采购部门
-reference_to: organizations
-sort_no: 180
-type: lookup

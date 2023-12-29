@@ -1,6 +1,0 @@
-name: pr
-label: 相关采购申请单
-multiple: true
-reference_to: purchase_request
-sort_no: 240
-type: lookup

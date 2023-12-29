@@ -1,6 +1,0 @@
-name: vendor
-group: 供应商信息
-label: 供应商
-reference_to: accounts
-sort_no: 170
-type: lookup

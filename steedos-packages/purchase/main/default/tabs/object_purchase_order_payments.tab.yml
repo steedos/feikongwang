@@ -1,0 +1,7 @@
+name: object_purchase_order_payments
+desktop: true
+label: 付款计划
+mobile: true
+object: purchase_order_payments
+permissions: []
+type: object

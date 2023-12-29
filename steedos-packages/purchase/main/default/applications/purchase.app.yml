@@ -1,0 +1,21 @@
+name: 应付
+code: purchase
+description: 应付。
+enable_nav_schema: false
+icon_slds: store
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+locked: falsea
+mobile: true
+showSidebar: false
+sort: 100
+tab_groups:
+  - group_name: 设置
+    default_open: true
+tabs:
+  - object_accounts
+  - object_purchase_orders
+  - object_purchase_order_payments
+visible: true

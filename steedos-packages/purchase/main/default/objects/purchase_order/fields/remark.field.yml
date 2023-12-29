@@ -1,6 +1,0 @@
-name: remark
-is_wide: true
-label: 备注
-rows: 3
-sort_no: 290
-type: textarea

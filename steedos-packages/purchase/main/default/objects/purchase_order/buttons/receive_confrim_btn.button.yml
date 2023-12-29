@@ -1,5 +1,0 @@
-name: receive_confrim_btn
-is_enable: true
-label: 产品接收
-'on': record_only
-type: script
