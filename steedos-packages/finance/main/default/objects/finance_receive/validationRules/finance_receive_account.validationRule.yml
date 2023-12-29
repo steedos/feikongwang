@@ -1,0 +1,6 @@
+name: finance_receive_account
+active: true
+description: 收款-客户字段校验
+error_condition_formula: account._id <> contract.customer._id
+error_message: 请保证填写的客户字段和合同签订的客户一致
+locked: false

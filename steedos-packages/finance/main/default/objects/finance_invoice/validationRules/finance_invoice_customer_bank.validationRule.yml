@@ -1,0 +1,6 @@
+name: finance_invoice_customer_bank
+active: true
+description: 开票申请-付款方银行账号字段校验
+error_condition_formula: customer_bank.account._id <> account._id
+error_message: 请保证付款方银行账号字段为所选择的客户的银行账号。
+locked: false
