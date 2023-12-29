@@ -1,0 +1,411 @@
+name: accounts
+label: Business Partner
+description: 
+fields:
+  name:
+    label: Business Partner Name
+    help: 
+    description: 
+  owner:
+    label: Our Account Manager
+    help: 
+    description: 
+  is_supplier:
+    label: Supplier
+    help: 
+    description: 
+  is_customer:
+    label: Customer
+    help: 
+    description: 
+  type:
+    label: Type
+    help: 
+    options:
+      - label: Analyst
+        value: Analyst
+      - label: Competitor
+        value: Competitor
+      - label: Customer
+        value: Customer
+      - label: Integrator
+        value: Integrator
+      - label: Investor
+        value: Investor
+      - label: Partner
+        value: Partner
+      - label: Press
+        value: Press
+      - label: Prospect
+        value: Prospect
+      - label: Reseller
+        value: Reseller
+      - label: Other
+        value: Other
+    description: 
+  parent_id:
+    label: Parent Company
+    help: As the parent company of a subsidiary of a large company or organization. The parent business partner name must be an existing business partner name in Huayan Rubik's Cube. You can enter a business partner name or use the search icon to select (or create) a business partner name.
+    description: 
+  credit_code:
+    label: Taxpayer Identification Number (ID card/Other)
+    help: 
+    description: 
+  website:
+    label: Website
+    help: 
+    description: 
+  phone:
+    label: Phone
+    help: 
+    description: 
+  fax:
+    label: Fax
+    help: 
+    description: 
+  description:
+    label: Description
+    help: 
+    description: 
+  industry:
+    label: Industry
+    help: 
+    options:
+      - label: Agriculture
+        value: Agriculture
+      - label: Apparel
+        value: Apparel
+      - label: Banking
+        value: Banking
+      - label: Biotechnology
+        value: Biotechnology
+      - label: Chemicals
+        value: Chemicals
+      - label: Communications
+        value: Communications
+      - label: Construction
+        value: Construction
+      - label: Consulting
+        value: Consulting
+      - label: Education
+        value: Education
+      - label: Electronics
+        value: Electronics
+      - label: Energy
+        value: Energy
+      - label: Engineering
+        value: Engineering
+      - label: Entertainment
+        value: Entertainment
+      - label: Environmental
+        value: Environmental
+      - label: Finance
+        value: Finance
+      - label: Food and Beverage
+        value: Food_&_Beverage
+      - label: Government
+        value: Government
+      - label: Healthcare
+        value: Healthcare
+      - label: Hospitality
+        value: Hospitality
+      - label: Insurance
+        value: Insurance
+      - label: Machinery
+        value: Machinery
+      - label: Manufacturing
+        value: Manufacturing
+      - label: Media
+        value: Media
+      - label: Non Profit Organizations
+        value: Not_For_Profit
+      - label: Other
+        value: Other
+      - label: Recreation
+        value: Recreation
+      - label: Retail
+        value: Retail
+      - label: Shipping
+        value: Shipping
+      - label: Technology
+        value: Technology
+      - label: Telecommunications
+        value: Telecommunications
+      - label: Transportation
+        value: Transportation
+      - label: Utilities
+        value: Utilities
+    description: 
+  number_of_employees:
+    label: Number of Employees
+    help: 
+    description: 
+  state:
+    label: region
+    help: The area to which the business partner is assigned.
+    options:
+      - label: Beijing
+        value: BJ
+      - label: Shanghai
+        value: SH
+      - label: Chongqing
+        value: CQ
+      - label: Tianjin
+        value: TJ
+      - label: Hebei
+        value: HB
+      - label: Shanxi
+        value: SX
+      - label: Liaoning
+        value: LN
+      - label: Jilin
+        value: GL
+      - label: Heilongjiang
+        value: HLJ
+      - label: Jiangsu
+        value: JS
+      - label: Zhejiang
+        value: ZJ
+      - label: Anhui
+        value: AH
+      - label: Fujian
+        value: FJ
+      - label: Jiangxi
+        value: JX
+      - label: Shandong
+        value: SD
+      - label: Henan
+        value: HN
+      - label: Hubei
+        value: HUB
+      - label: Hunan
+        value: HUN
+      - label: Guangdong
+        value: GD
+      - label: Hainan
+        value: HAN
+      - label: Sichuan
+        value: SC
+      - label: Guizhou
+        value: GZ
+      - label: Yunnan
+        value: YN
+      - label: Shaanxi
+        value: SHX
+      - label: Gansu
+        value: GS
+      - label: Qinghai
+        value: QH
+      - label: Inner Mongolia
+        value: NMG
+      - label: Guangxi
+        value: GX
+      - label: Tibet
+        value: XZ
+      - label: Ningxia
+        value: NX
+      - label: Xinjiang
+        value: XJ
+      - label: Hong Kong
+        value: HK
+      - label: Macau
+        value: AM
+      - label: Taiwan
+        value: TW
+    description: 
+  billing_address:
+    label: Billing Address
+    help: 
+    description: 
+  shipping_address:
+    label: Shipping Address
+    help: 
+    description: 
+  account_number:
+    label: Business Partner Number
+    help: 
+    description: 
+  rating:
+    label: Grade
+    help: How do you classify this business partner level, such as Normal and Important.
+    options:
+      - label: Very Important
+        value: Hot
+      - label: Important
+        value: Warm
+      - label: Ordinary
+        value: Cold
+    description: 
+  invoice_address:
+    label: Invoice Address
+    help: 
+    description: 
+  invoice_phone:
+    label: Invoice Phone
+    help: 
+    description: 
+  invoice_bank:
+    label: Bank of Account
+    help: 
+    description: 
+  invoice_combinenum:
+    label: Account Number
+    help: 
+    description: 
+  account_source:
+    label: Business Partner Source
+    help: 
+    description: 
+  site:
+    label: Business Partner Location
+    help: The Business Partner Location field can be used to specify different locations within the same company. For example, suppose Baidu has offices in both Beijing and Shanghai. Create two business partners named Baidu, but the values for the location of the business partners are Beijing and Shanghai, respectively.
+    description: 
+  annual_revenue:
+    label: Annual Revenue
+    help: 
+    description: 
+  ownership:
+    label: Ownership
+    help: Ownership of a company, for example, public or private.
+    options:
+      - label: National
+        value: National
+      - label: Private
+        value: Private
+      - label: Subcompany
+        value: Subcompany
+      - label: Others
+        value: Others
+    description: 
+  account_division:
+    label: Business Partner Division
+    help: 
+    description: 
+  partner_account:
+    label: Partners
+    help: 
+    description: 
+  assistant:
+    label: Assistant
+    help: 
+    description: 
+  asst_phone:
+    label: Assistant Phone
+    help: 
+    description: 
+  birthdate:
+    label: Birthday
+    help: 
+    description: 
+  department:
+    label: Department
+    help: 
+    description: 
+  email:
+    label: E-mail
+    help: 
+    description: 
+  do_not_call:
+    label: Do Not Call
+    help: Do you want to contact the contact person by phone.
+    description: 
+  has_opted_out_of_email:
+    label: Exit Mailing List
+    help: Include contacts in the group mailing list.
+    description: 
+  fax_opt_out:
+    label: Exit Fax List
+    help: Include contacts in the fax.
+    description: 
+  home_phone:
+    label: Home Phone
+    help: 
+    description: 
+  lead_source:
+    label: Lead Source
+    help: The source of the potential business partner, such as Advertisement, Customer Event, Employee Referral, Baidu AdWords, Other, Partner, Purchased List, Trade Show, Webinar, Website.
+    options:
+      - label: Advertisement
+        value: Advertisement
+      - label: Customer Event
+        value: Customer_Event
+      - label: Employee Referral
+        value: Employee_Referral
+      - label: Baidu AdWords
+        value: Baidu_AdWords
+      - label: Other
+        value: Other
+      - label: Partner
+        value: Partner
+      - label: Purchased List
+        value: Purchased_List
+      - label: Trade Show
+        value: Trade_Show
+      - label: Webinar
+        value: Webinar
+      - label: Website
+        value: Website
+    description:
+  mailing_city:
+    label: Mailing Address - City
+    help:
+    description:
+  mailing_street:
+    label: Mailing Address - Street
+    help:
+    description:
+  mailing_zip:
+    label: Mailing Address - ZIP Code
+    help:
+    description:
+  other_city:
+    label: Other Address - City
+    help:
+    description:
+  other_street:
+    label: Other Address - Street
+    help:
+    description:
+  other_zip:
+    label: Other Address - ZIP Code
+    help:
+    description:
+  mobile:
+    label: Mobile
+    help:
+    description:
+  salutation:
+    label: Salutation
+    help:
+    options:
+      - label: Male
+        value: Male
+      - label: Female
+        value: Female
+    description:
+  other_phone:
+    label: Other Phone
+    help:
+    description:
+groups:
+  地址信息: Address Information
+  开票信息: Billing Information
+  其他地址信息: Other Address Information
+listviews:
+  recent:
+    label: Recently Viewed
+  all:
+    label: All Business Partners
+  hotRating:
+    label: Highly Important Business Partners
+  mine:
+    label: My Business Partners
+actions:
+  enableSupplier:
+    label: Enable as Supplier
+  disableSupplier:
+    label: Disable Supplier Account
+  enableCustomer:
+    label: Enable as Business Partner
+  disableCustomer:
+    label: Disable Business Partner Account
