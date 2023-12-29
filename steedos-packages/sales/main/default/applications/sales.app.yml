@@ -5,34 +5,23 @@ icon_slds: opportunity
 is_creator: true
 mobile: true
 showSidebar: false
-sort: 10
+sort: 30
 tab_groups:
   - group_name: 销售管理
     default_open: true
+    id: 销售管理
 tab_items:
-  object_opportunity:
-    group: 销售管理
-    index: 1
-  object_leads:
-    group: 销售管理
-    index: 2
   object_accounts:
-    group: 销售管理
+    index: 1
+  object_sales_orders:
+    index: 2
+  object_invoices:
     index: 3
-  object_contacts:
-    group: 销售管理
+  object_finance_receive:
     index: 4
-  object_product:
-    group: 销售管理
-    index: 5
-  object_campaign:
-    group: 销售管理
-    index: 6
 tabs:
-  - object_opportunity
-  - object_leads
   - object_accounts
-  - object_contacts
-  - object_product
-  - object_campaign
+  - object_sales_orders
+  - object_invoices
+  - object_finance_receive
 visible: true

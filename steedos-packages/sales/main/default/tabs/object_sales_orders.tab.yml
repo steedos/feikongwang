@@ -1,0 +1,7 @@
+name: object_sales_orders
+desktop: true
+label: 应收合同
+mobile: true
+object: sales_orders
+permissions: []
+type: object

@@ -1,0 +1,6 @@
+name: customer
+label: 客户
+reference_to: accounts
+sort_no: 15
+type: lookup
+required: true
