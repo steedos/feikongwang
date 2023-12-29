@@ -1,0 +1,11 @@
+name: supplier
+desktop: true
+icon: client
+is_new_window: false
+is_use_iframe: false
+label: 供应商
+locked: false
+mobile: true
+page: customer
+permissions: []
+type: page
