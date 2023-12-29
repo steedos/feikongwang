@@ -17,5 +17,6 @@ tab_groups:
 tabs:
   - object_accounts
   - object_purchase_orders
-  - object_purchase_order_payments
+  - object_invoices
+  - object_finance_payment
 visible: true
