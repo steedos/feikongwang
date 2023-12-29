@@ -3,7 +3,7 @@ label: 客商
 description: 
 fields:
   name:
-    label: 业务伙伴名称
+    label: 客商名称
     help: 
     description: 
   owner:
@@ -395,13 +395,13 @@ listviews:
   recent:
     label: 最近查看
   all:
-    label: 所有业务伙伴
+    label: 所有客商
   # allCustomers:
   #   label: 所有顾客
   hotRating:
-    label: 非常重要的业务伙伴
+    label: 非常重要的客商
   mine:
-    label: 我的业务伙伴
+    label: 我的客商
 actions:
   enableSupplier:
     label: 作为供应商启用
