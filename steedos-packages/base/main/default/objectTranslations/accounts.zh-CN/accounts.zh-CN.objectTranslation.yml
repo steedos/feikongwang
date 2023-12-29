@@ -1,5 +1,5 @@
 name: accounts
-label: 业务伙伴
+label: 客商
 description: 
 fields:
   name:
@@ -48,7 +48,7 @@ fields:
     help: 作为大公司或组织的子公司的母公司。父级业务伙伴必须是华炎魔方中的现有业务伙伴。您可输入业务伙伴名称，或使用查找图标选择（或创建）业务伙伴。
     description: 
   credit_code:
-    label: 纳税人识别号（身份证/其他）
+    label: 纳税人识别号
     help: 
     description: 
   website:
@@ -56,7 +56,7 @@ fields:
     help: 
     description: 
   phone:
-    label: 电话
+    label: 公司电话
     help: 
     description: 
   fax:
@@ -245,11 +245,11 @@ fields:
     help: 
     description: 
   invoice_bank:
-    label: 开户行
+    label: 开户银行
     help: 
     description: 
   invoice_combinenum:
-    label: 账号
+    label: 银行账号
     help: 
     description: 
   account_source:

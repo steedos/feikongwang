@@ -1,0 +1,5 @@
+name: number
+label: 客商编号
+required: false
+sort_no: 21
+type: text

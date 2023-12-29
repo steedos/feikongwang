@@ -1,0 +1,7 @@
+name: invoice
+defaultValue: ''
+label: 发票抬头
+required: false
+sort_no: 80
+type: text
+group: 开票信息

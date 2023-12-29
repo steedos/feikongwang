@@ -1,4 +1,7 @@
 name: credit_code
 type: text
-sort_no: 20
-required: true
+sort_no: 90
+required: false
+group: 开票信息
+
+

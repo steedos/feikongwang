@@ -1,5 +1,7 @@
 name: legal_representative
 label: 法定代表人
 scale: 2
-sort_no: 29
+sort_no: 810
 type: text
+group: 其他信息
+hidden: true

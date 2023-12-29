@@ -10,3 +10,4 @@ required: false
 sort_no: 21
 sortable: false
 type: text
+hidden: true

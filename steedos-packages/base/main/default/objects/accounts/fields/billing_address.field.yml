@@ -1,3 +1,4 @@
 name: billing_address
+label: 邮寄地址
 type: textarea
 hidden: true
