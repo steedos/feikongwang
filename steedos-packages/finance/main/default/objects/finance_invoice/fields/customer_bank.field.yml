@@ -10,15 +10,6 @@ create: false
 omit: false
 depend_on:
   - account
-filtersFunction: !!js/function |
-  function (filters, values) {
-      const account = values.account;
-      if (!account) {
-        return ['_id', '=', 'none'];
-      } else {
-        return ["account", "=", account];
-      }
-  }
 readonly: false
 reference_to: account_banks
 required: true
