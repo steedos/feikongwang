@@ -12,6 +12,6 @@ readonly: false
 reference_to: account_banks
 required: true
 searchable: false
-sort_no: 140
+sort_no: 165
 sortable: false
 type: lookup

@@ -1,5 +1,6 @@
 name: project
 filterable: true
+hidden: true
 generated: false
 index: false
 is_name: false

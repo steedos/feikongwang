@@ -14,7 +14,7 @@ enable_share: false
 enable_tasks: false
 enable_tree: false
 enable_workflow: false
-icon: account
+icon: maintenance_work_rule
 is_enable: true
 label: 应付合同
 version: 2
