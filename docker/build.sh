@@ -1,5 +1,5 @@
 #!/bin/bash
-export FEIKONGWANG_VERSION=0.0.1
+export FEIKONGWANG_VERSION=0.0.2
 echo "#########################################################################"
 echo "feikongwang version: ${FEIKONGWANG_VERSION}"
 echo "#########################################################################"
