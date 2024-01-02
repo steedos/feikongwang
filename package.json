@@ -6,6 +6,7 @@
     "steedos-packages/*"
   ],
   "scripts": {
+    "start:platform": "docker-compose -f steedos-platform/docker-compose.yml up",
     "start": "./node_modules/moleculer/bin/moleculer-runner.js steedos-packages/*/package.service.js --config steedos.config.js",
     "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js steedos-packages/*/src/index.{js,ts} --config steedos.config.js --hot --repl",
     "repl": "moleculer-runner --repl --config steedos.config.js",

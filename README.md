@@ -1,5 +1,64 @@
-# Expense
+# 费控王 - SAP Concur云服务开源替代方案
 
-Steedos Expense Management App is designed to simplify the process of managing expenses for businesses of all sizes. 
+费控王是一个开源的费控管理云服务，专为企业提供高效、易用的费用控制和报销管理解决方案。本项目基于Steedos低代码平台开发，目的是提供一个灵活、可扩展的费用管理平台。
 
-With Steedos Expense, you can easily track and categorize expenses, create and submit expense reports, and manage approvals and reimbursements. Steedos Expense also includes powerful analytics and reporting features, allowing you to gain insights into your company's spending habits and identify areas for cost-saving. With our user-friendly interface and mobile app, managing expenses has never been easier. Whether you're a small business owner or part of a large organization, Steedos Expense is the perfect solution to help you streamline your expense management process and save time and money.
+## 特点
+
+- **开源与自由**：项目的大部分是开源的，可以自由修改和分发。
+- **易于使用**：直观的用户界面，简化费用报销流程。
+- **高度可定制**：基于Steedos低代码平台，易于定制和扩展。
+- **安全可靠**：采用先进的安全措施保护数据安全。
+
+## 企业版特性
+
+文件夹 `ee/` 下的内容是费控王的企业版特性，使用这些特性需要购买企业版许可证。这包括但不限于：
+
+- 高级数据分析和报告
+- 增强的安全性和合规性特性
+- 优先级技术支持
+
+如需获取企业版的更多信息和购买许可，请访问我们的[官方网站](https://feikongwang.com)。
+
+## 快速开始
+
+```bash
+# 克隆仓库
+git clone https://github.com/steedos-labs/feikongwang
+cd feikongwang
+
+# 安装依赖
+yarn install
+
+# 运行 Steedos 
+yarn start:platform
+
+# 运行费控王
+yarn start
+```
+
+## 文档
+
+费控王基于 Steedos 低代码平台开发，更多关于安装、配置和使用的详细信息，请参阅[文档链接](https://docs.steedos.com)。
+
+## 功能
+
+- 电子发票扫描与识别
+- 发票查重与验真
+- 费用报告生成与提交
+- 收入管理
+- 支出管理
+- 审批流程管理
+- 数据分析和报告
+- 集成企业现有系统
+
+## 在线试用
+
+请访问[费控王云服务](https://feikongwang.com/)，点击右上角登录可以在线试用。
+
+## 支持
+
+如果您遇到任何问题或需要帮助，请通过[Issues](https://github.com/steedos-labs/feikongwang/issues)提交。
+
+## 许可证
+
+本项目根据[MIT 许可证](LICENSE.md)授权。企业版特性受单独的许可证协议约束。
