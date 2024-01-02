@@ -1,0 +1,10 @@
+name: name
+hidden: false
+is_wide: true
+label: 备注
+required: false
+searchable: true
+sort_no: 290
+type: text
+is_name: true
+filterable: true

@@ -1,0 +1,8 @@
+name: purchase_prepayment
+custom: true
+enable_follow: false
+enable_share: true
+icon: currency
+is_enable: true
+label: 预付款
+version: 2

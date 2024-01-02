@@ -1,0 +1,9 @@
+name: recent
+columns:
+  - name
+  - payment_name
+  - amount
+  - due_date
+filter_scope: space
+label: 最近查看
+shared: true

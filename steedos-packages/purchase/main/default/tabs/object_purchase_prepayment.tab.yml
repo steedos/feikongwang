@@ -1,0 +1,7 @@
+name: object_purchase_prepayment
+desktop: true
+label: 预付款
+mobile: true
+object: purchase_prepayment
+permissions: []
+type: object

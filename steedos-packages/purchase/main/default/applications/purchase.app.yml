@@ -19,4 +19,5 @@ tabs:
   - object_purchase_orders
   - object_invoices
   - object_finance_payment
+  - object_purchase_prepayment
 visible: true
