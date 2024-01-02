@@ -1,5 +1,5 @@
 name: description
-label: 描述
+label: 备注
 type: textarea
 is_wide: true
-sort_no: 999
+sort_no: 260

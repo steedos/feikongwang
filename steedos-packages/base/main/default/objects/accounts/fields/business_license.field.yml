@@ -1,8 +1,0 @@
-name: business_license
-label: 营业执照
-required: false
-searchable: true
-sort_no: 999
-type: image
-group: 其他信息
-hidden: true

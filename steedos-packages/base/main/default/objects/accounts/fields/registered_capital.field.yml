@@ -1,7 +1,0 @@
-name: registered_capital
-label: 注册资金
-scale: 2
-sort_no: 820
-type: currency
-group: 其他信息
-hidden: true

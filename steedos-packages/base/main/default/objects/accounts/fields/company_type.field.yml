@@ -17,7 +17,7 @@ options:
   - label: 集体企业
     value: 集体企业
 primary: false
-required: true
-sort_no: 22
+required: false
+sort_no: 220
 sortable: false
 type: select

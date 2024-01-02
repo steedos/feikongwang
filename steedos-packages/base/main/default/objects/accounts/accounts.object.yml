@@ -1,6 +1,14 @@
 name: accounts
-extend: accounts
+label: 客商
+icon: account
+enable_files: true
+enable_search: true
+enable_events: true
+enable_tasks: false
+enable_api: true
+enable_share: false
+enable_audit: true
+enable_enhanced_lookup: true
 enable_instances: true
 enable_workflow: true
-enable_enhanced_lookup: true
-enable_tasks: false
+version: 2
