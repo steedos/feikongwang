@@ -1,6 +1,7 @@
 name: finished
 hidden: true
 label: 已完成
+required: false
 sort_no: 320
 type: boolean
 filterable: true
