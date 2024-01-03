@@ -1,7 +1,7 @@
 name: contract_amount
 data_type: currency
 filterable: false
-formula: contract.amount
+formula: purchase_order.amount
 formula_blank_value: zeroes
 hidden: false
 index: false

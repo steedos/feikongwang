@@ -1,7 +1,7 @@
 name: payment_sacle
 data_type: percent
 filterable: false
-formula: amount / contract_amount
+formula: amount / purchase_order.amount
 formula_blank_value: zeroes
 hidden: true
 index: false

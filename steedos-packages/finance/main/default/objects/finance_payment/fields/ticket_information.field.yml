@@ -1,5 +1,5 @@
 name: ticket_information
-defaultValue: 先票后款
+# defaultValue: 先票后款
 filterable: false
 hidden: true
 index: false
