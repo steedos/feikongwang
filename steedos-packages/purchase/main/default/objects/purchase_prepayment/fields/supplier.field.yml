@@ -1,6 +1,7 @@
 name: supplier
 label: 供应商
 reference_to: accounts
+required: true
 sort_no: 15
 type: lookup
 filtersFunction:  |-

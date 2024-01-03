@@ -1,5 +1,5 @@
 name: due_date
-label: 计划付款时间
+label: 计划付款日期
 sort_no: 130
 sortable: true
 type: date
