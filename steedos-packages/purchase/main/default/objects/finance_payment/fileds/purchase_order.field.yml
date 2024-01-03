@@ -15,3 +15,15 @@ sortable: true
 type: master_detail
 create: false
 write_requires_master_read: true
+amis:
+  autoFill:
+    fillMapping:
+      "supplier": "${supplier}"
+    api:
+      url: "${context.rootUrl}/graphql?a=2"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:purchase_orders(filters: [[\"_id\", \"=\", \"${purchase_order}\"]], top: 1){name,supplier}}"
+      adaptor: "console.log('11==> ', payload);payload.data.supplier=payload.data.rows[0].supplier; return payload; "

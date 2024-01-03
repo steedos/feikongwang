@@ -1,6 +1,7 @@
 name: contract_code
 label: 合同编号
-type: text
 sort_no: 20
 filterable: true
 searchable: true
+formula: 'YF-{00000}'
+type: autonumber
