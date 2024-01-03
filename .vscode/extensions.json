@@ -1,0 +1,5 @@
+{
+    "recommendations": [
+        "redhat.vscode-yaml", "gruntfuggly.todo-tree", "eamodio.gitlens", "OBKoro1.korofileheader", "hediet.vscode-drawio"
+    ]
+}
