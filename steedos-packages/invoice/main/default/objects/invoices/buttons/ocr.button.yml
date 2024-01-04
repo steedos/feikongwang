@@ -71,6 +71,10 @@ amis_schema: |-
                               "Authorization": "Bearer ${context.tenantId},${context.authToken}"
                             }
                           },
+                           "data": {
+                              "recordId": "${_master && _master.recordId}",
+                              "objectName": "${_master && _master.objectName}"
+                            },
                           "id": "u:f31d12f16a18",
                           "onEvent": {
                             "submitSucc": {
@@ -115,6 +119,6 @@ amis_schema: |-
   }
 is_enable: true
 label: 识别发票文件
-'on': list
+"on": list
 type: amis_button
 visible: true

@@ -19,18 +19,21 @@ module.exports = {
     params: {
         file: { type: 'string' }, // 文件内容，示例："data:image/jpeg;base64,/9j/4AAQSkZJRgABAQA....."
         filename: { type: 'string' }, // 文件名
+        recordId: { type: 'string' }, //关联主表id
+        objectName: { type: 'string' }
     },
     async handler(ctx) {
+        console.log("===========", ctx)
         const userSession = ctx.meta.user
         const { spaceId, userId } = userSession
-        const { file: fileBase64, filename } = ctx.params
+        const { file: fileBase64, filename, recordId, objectName } = ctx.params
+        console.log("aaa", ctx.params)
         const fileInfo = this.getFileInfoFromBase64(fileBase64)
         const mimetype = fileInfo.mime
         const fileData = fileInfo.data
 
         const invoiceObj = this.getObject('invoices')
         const invoiceLogObj = this.getObject('invoices_ocr_logs')
-
         let insertedInvoiceCount = 0 // 成功录入发票数
         let existedInvoiceNums = [] // 已存在的发票发票号码
 
@@ -97,13 +100,37 @@ module.exports = {
                     const fileDoc = await this.uploadInvoiceFile(filename, fileData, userId)
 
                     if (!_.isEmpty(fileDoc)) {
+                        var newDoc = ""
                         // 新增发票台账
-                        const newDoc = await invoiceObj.insert({
-                            ...doc,
-                            file: fileDoc._id,
-                            ocr_log: logDoc._id,
-                            ocr_result: item.result
-                        }, userSession)
+                        if (objectName && objectName == "purchase_orders") {
+                            // 判断该recordId，是应付合同的id还是报销单的id
+                            newDoc = await invoiceObj.insert({
+                                ...doc,
+                                file: fileDoc._id,
+                                ocr_log: logDoc._id,
+                                ocr_result: item.result,
+                                purchase_order: recordId ? recordId : null
+
+                            }, userSession)
+
+                        } else if (objectName && objectName == "expense_reports") {
+                            newDoc = await invoiceObj.insert({
+                                ...doc,
+                                file: fileDoc._id,
+                                ocr_log: logDoc._id,
+                                ocr_result: item.result,
+                                expense_reports: recordId ? recordId : null
+
+                            }, userSession)
+                        } else {
+                            newDoc = await invoiceObj.insert({
+                                ...doc,
+                                file: fileDoc._id,
+                                ocr_log: logDoc._id,
+                                ocr_result: item.result
+
+                            }, userSession)
+                        }
 
                         insertedInvoiceCount++
 
