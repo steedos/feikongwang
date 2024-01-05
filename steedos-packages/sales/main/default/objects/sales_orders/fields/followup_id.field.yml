@@ -1,0 +1,7 @@
+name: followup_id
+label: 跟进人
+sort_no: 50
+type: lookup
+required: true
+reference_to: users
+

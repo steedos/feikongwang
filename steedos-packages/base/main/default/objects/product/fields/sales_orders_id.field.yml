@@ -1,0 +1,6 @@
+name: sales_orders_id
+label: 所属应收合同
+reference_to: sales_orders
+required: false
+sort_no: 300
+type: master_detail

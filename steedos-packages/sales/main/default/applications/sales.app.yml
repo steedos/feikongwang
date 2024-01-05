@@ -11,17 +11,17 @@ tab_groups:
     default_open: true
     id: 销售管理
 tab_items:
-  object_accounts:
-    index: 1
   object_sales_orders:
+    index: 1
+  object_accounts:
     index: 2
   object_finance_invoice:
     index: 3
   object_finance_receive:
     index: 4
 tabs:
-  - object_accounts
   - object_sales_orders
+  - object_accounts
   - object_finance_invoice
   - object_finance_receive
 visible: true

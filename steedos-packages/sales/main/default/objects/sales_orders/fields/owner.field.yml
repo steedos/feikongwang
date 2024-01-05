@@ -1,6 +1,8 @@
 name: owner
-label: 负责人
-hidden: false
+label: 跟进人
+hidden: true
 readonly: false
-sort_no: 50
+sort_no: 55
 type: lookup
+required: true
+

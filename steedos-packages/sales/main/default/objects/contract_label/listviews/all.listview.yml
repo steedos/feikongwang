@@ -1,0 +1,13 @@
+name: all
+columns:
+  - field: name
+filter_scope: space
+filters: []
+is_enable: true
+label: 所有
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

@@ -3,14 +3,14 @@ filterable: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
-label: 含税总价
+is_wide: true
+label: 合同金额
 omit: false
 precision: 18
 readonly: false
 required: true
 scale: 2
 searchable: false
-sort_no: 70
+sort_no: 40
 sortable: true
 type: number

@@ -3,10 +3,12 @@ columns:
   - field: name
   - field: contract_code
   - field: customer
+  - field: signed_date
   - field: amount
+  - field: amount_receive
 filter_scope: space
 filters: []
-label: 所有
+label: 全部合同
 scrolling_mode: standard
 shared: true
 sort_no: 100

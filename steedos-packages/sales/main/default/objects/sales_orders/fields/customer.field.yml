@@ -1,6 +1,7 @@
 name: customer
-label: 客户
+label: 客户名称
 reference_to: accounts
-sort_no: 15
+sort_no: 10
 type: lookup
 required: true
+is_wide: true

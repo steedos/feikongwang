@@ -1,5 +1,7 @@
 name: buyer
-label: 经办人
-reference_to: users
-sort_no: 190
-type: lookup
+label: 联系人
+sort_no: 45
+type: text
+sortable: true
+searchable: true
+filterable: true

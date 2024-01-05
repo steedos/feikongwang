@@ -1,5 +1,6 @@
 name: department
-label: 经办部门
+label: 部门
 reference_to: organizations
-sort_no: 180
+sort_no: 55
 type: lookup
+required: true

@@ -1,14 +1,14 @@
-name: signed_date
+name: maturity_date
 filterable: true
 hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 合同日期
+label: 到期日期
 omit: false
 readonly: false
 required: false
 searchable: false
-sort_no: 27
+sort_no: 30
 sortable: true
 type: date
