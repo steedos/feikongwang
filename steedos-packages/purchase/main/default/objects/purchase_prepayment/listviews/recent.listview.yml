@@ -1,9 +1,9 @@
 name: recent
 columns:
+  - supplier
   - name
-  - payment_name
   - amount
-  - due_date
+  - payment_date
 filter_scope: space
 label: 最近查看
 shared: true
