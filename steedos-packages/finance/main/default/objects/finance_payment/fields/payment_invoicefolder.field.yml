@@ -23,6 +23,6 @@ readonly: false
 reference_to: invoices
 required: false
 searchable: false
-sort_no: 188
+sort_no: 290
 sortable: false
 type: lookup

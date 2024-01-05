@@ -4,7 +4,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 收款方
+label: 供应商
 multiple: false
 omit: false
 readonly: false

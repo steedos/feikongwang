@@ -1,5 +1,6 @@
 name: payment_method
 label: 付款方式
+hidden: true
 type: select
 multiple: false
 options:
@@ -11,4 +12,4 @@ options:
     value: 现金
   - label: 其他
     value: 其他
-sort_no: 58
+sort_no: 558

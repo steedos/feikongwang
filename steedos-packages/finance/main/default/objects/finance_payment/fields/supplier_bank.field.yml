@@ -4,13 +4,13 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 收款方银行账号
+label: 供应商收款账户
 create: false
 multiple: false
 omit: false
 readonly: false
 reference_to: account_banks
-required: true
+required: false
 searchable: false
 sort_no: 165
 sortable: false

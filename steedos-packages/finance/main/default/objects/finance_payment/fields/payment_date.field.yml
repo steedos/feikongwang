@@ -1,6 +1,5 @@
 name: payment_date
 filterable: true
-group: 付款信息
 hidden: false
 index: false
 is_name: false
@@ -8,8 +7,8 @@ is_wide: false
 label: 付款日期
 omit: false
 readonly: false
-required: false
+required: true
 searchable: false
-sort_no: 420
+sort_no: 130
 sortable: false
 type: date

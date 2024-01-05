@@ -4,13 +4,13 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 应付合同
+label: 合同
 omit: false
 readonly: false
 reference_to: purchase_orders
-required: false
+required: true
 searchable: false
-sort_no: 50
+sort_no: 70
 sortable: true
 type: master_detail
 create: false

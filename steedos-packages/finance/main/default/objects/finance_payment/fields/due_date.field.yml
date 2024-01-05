@@ -1,6 +1,6 @@
 name: due_date
 filterable: false
-hidden: false
+hidden: true
 index: false
 is_name: false
 is_wide: false
