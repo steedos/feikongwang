@@ -2,20 +2,26 @@ name: all
 columns:
   - field: name
   - field: travel_number
+  - field: applicant
+  - field: application_time
   - field: business_purpose
+  - field: instance_state
   - field: created_by
   - field: created
-  - field: instance_state
 filter_scope: space
 filters: []
+from_code_id: expense_trips.all
 is_enable: true
 label: 所有
 mobile_columns:
   - field: name
-  - field: business_purpose
-  - field: created
-  - field: instance_state
   - field: travel_number
+  - field: application_time
+  - field: applicant
+  - field: business_purpose
+  - field: instance_state
+  - field: created
+  - field: created_by
 scrolling_mode: standard
 searchable_fields:
   - field: name
