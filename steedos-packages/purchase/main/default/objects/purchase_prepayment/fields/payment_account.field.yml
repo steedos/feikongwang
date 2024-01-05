@@ -1,0 +1,6 @@
+name: payment_account
+label: 付款账户
+reference_to: company_account
+required: true
+sort_no: 135
+type: lookup
