@@ -10,6 +10,7 @@ mobile: false
 oauth2_enabled: false
 oauth2_logout_enabled: false
 objects:
+  - company_account
   - measurement_unit
   - material_group
   - product

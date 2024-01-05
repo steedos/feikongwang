@@ -1,0 +1,5 @@
+name: pk_bankname
+label: 开户支行
+sort_no: 130
+type: text
+filterable: true

@@ -3,6 +3,7 @@ columns:
   - field: name
   - field: contract_code
   - field: supplier
+  - field: signed_date
   - field: amount
 filter_scope: space
 filters: []

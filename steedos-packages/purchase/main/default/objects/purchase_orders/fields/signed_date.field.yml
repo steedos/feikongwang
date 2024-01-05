@@ -4,7 +4,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 签订日期
+label: 合同日期
 omit: false
 readonly: false
 required: false

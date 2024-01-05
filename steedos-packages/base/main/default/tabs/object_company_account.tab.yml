@@ -1,0 +1,7 @@
+name: object_company_account
+desktop: true
+label: 结算账户
+mobile: true
+object: company_account
+permissions: []
+type: object

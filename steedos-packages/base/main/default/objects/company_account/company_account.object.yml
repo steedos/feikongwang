@@ -1,0 +1,8 @@
+name: company_account
+custom: true
+enable_api: true
+enable_share: true
+enable_enhanced_lookup: true
+icon: account
+label: 结算账户
+version: 2

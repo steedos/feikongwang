@@ -1,0 +1,8 @@
+name: pk_banktype
+label: 开户银行
+required: true
+reference_to: bank_type
+sort_no: 120
+type: master_detail
+write_requires_master_read: true
+filterable: true
