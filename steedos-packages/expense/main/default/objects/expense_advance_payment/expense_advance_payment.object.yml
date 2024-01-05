@@ -7,11 +7,11 @@ enable_enhanced_lookup: true
 enable_events: false
 enable_files: false
 enable_inline_edit: true
-enable_instances: false
+enable_instances: true
 enable_notes: false
 enable_tasks: false
 enable_tree: false
-enable_workflow: false
+enable_workflow: true
 icon: assignment
 is_enable: true
 label: 借款
