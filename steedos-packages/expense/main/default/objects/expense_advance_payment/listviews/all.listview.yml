@@ -4,6 +4,7 @@ columns:
   - field: amount
   - field: date
   - field: expense_trips
+  - field: instance_state
   - field: created_by
   - field: created
 filter_scope: space
