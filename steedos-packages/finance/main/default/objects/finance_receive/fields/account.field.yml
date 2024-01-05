@@ -14,7 +14,3 @@ sort_no: 120
 sortable: true
 type: lookup
 create: false
-filtersFunction:  |-
-  function(filters,values) {
-    return ["is_customer","=",true];
-  }

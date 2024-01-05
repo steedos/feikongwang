@@ -4,7 +4,3 @@ reference_to: accounts
 required: true
 sort_no: 15
 type: lookup
-filtersFunction:  |-
-  function(filters,values) {
-    return ["is_supplier","=",true];
-  }

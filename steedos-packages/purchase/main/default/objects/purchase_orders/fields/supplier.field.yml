@@ -3,7 +3,3 @@ label: 供应商
 reference_to: accounts
 sort_no: 15
 type: lookup
-filtersFunction:  |-
-  function(filters,values) {
-    return ["is_supplier","=",true];
-  }
