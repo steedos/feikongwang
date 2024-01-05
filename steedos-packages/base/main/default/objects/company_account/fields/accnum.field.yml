@@ -1,6 +1,5 @@
 name: accnum
 index: true
-is_name: true
 label: 开户账号
 required: true
 sort_no: 110
