@@ -1,0 +1,12 @@
+name: application_time
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 申请时间
+primary: false
+required: true
+sort_no: 107
+sortable: false
+type: datetime
