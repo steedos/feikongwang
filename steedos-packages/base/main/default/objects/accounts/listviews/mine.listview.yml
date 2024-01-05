@@ -6,10 +6,6 @@ columns:
     wrap: false
   - field: address
     wrap: false
-  - field: is_customer
-    wrap: false
-  - field: is_supplier
-    wrap: false
   - field: credit_code
     wrap: false
   - field: company_type

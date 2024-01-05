@@ -1,5 +1,0 @@
-name: is_customer
-type: boolean
-label: 客户
-omit: false
-sort_no: 30
