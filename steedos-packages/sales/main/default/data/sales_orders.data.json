@@ -1,0 +1,64 @@
+[
+    {
+        "_id": "${space_id}_65977e370ace2505ccf58212",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "搅拌机制造合同",
+        "customer": "${space_id}__o2sunJ3vuz3uSKN4z",
+        "amount": 20000000,
+        "signed_date": "2024-01-01T00:00:00.000Z",
+        "buyer": "${space_owner_id}",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T03:57:43.395Z",
+        "modified": "2024-01-05T03:57:43.395Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "YS-00001"
+    },
+    {
+        "_id": "${space_id}_6597bf52d411ad05be86b13f",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "家居买卖合同",
+        "customer": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount": 2000,
+        "signed_date": "2024-01-05T00:00:00.000Z",
+        "department": "65976f1e0ace2505ccf58189",
+        "buyer": "${space_owner_id}",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T08:35:30.372Z",
+        "modified": "2024-01-05T08:35:52.723Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "contract_code": "YS-00002"
+    },
+    {
+        "_id": "${space_id}_6597bf85d411ad05be86b140",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "房屋租赁合同",
+        "customer": "${space_id}__ZkwHr3jeZQFMKAwQ2",
+        "amount": 2000,
+        "signed_date": "2024-01-05T00:00:00.000Z",
+        "department": "65976f1e0ace2505ccf58189",
+        "buyer": "${space_owner_id}",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T08:36:21.375Z",
+        "modified": "2024-01-05T08:36:21.375Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "contract_code": "YS-00003"
+    }
+]

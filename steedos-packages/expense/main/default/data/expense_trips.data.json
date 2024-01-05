@@ -1,0 +1,40 @@
+[
+    {
+        "_id": "${space_id}_6597a26f0ace2505ccf58220",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "去宣城考察",
+        "business_purpose": "项目考察",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T06:32:15.121Z",
+        "modified": "2024-01-05T06:32:15.121Z",
+        "application_time": "2024-01-05T09:06:32.357Z",
+        "applicant": "${space_owner_id}",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "travel_number": "TRIP-00004"
+    },
+    {
+        "_id": "${space_id}_6597a50e0ace2505ccf58221",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "出差江西",
+        "business_purpose": "项目沟通",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T06:43:26.664Z",
+        "modified": "2024-01-05T06:43:26.664Z",
+        "application_time": "2024-01-05T09:06:32.357Z",
+        "applicant": "${space_owner_id}",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "travel_number": "TRIP-00005"
+    }
+]

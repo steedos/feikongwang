@@ -1,0 +1,43 @@
+[
+    {
+        "_id": "${space_id}_65976fc90ace2505ccf5818b",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "铁矿采购合同",
+        "amount": 8000000,
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "signed_date": "2024-01-05T00:00:00.000Z",
+        "department": null,
+        "buyer": "${space_owner_id}",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T02:56:09.937Z",
+        "modified": "2024-01-05T02:56:09.937Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "YF-00001"
+    },
+    {
+        "_id": "659779eb0ace2505ccf581ef",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "supplier": "${space_id}_ua7esWTyhgNaspC94",
+        "name": "煤采购",
+        "amount": 800000,
+        "signed_date": "2024-01-05T00:00:00.000Z",
+        "buyer": "${space_owner_id}",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T03:39:23.682Z",
+        "modified": "2024-01-05T03:39:23.682Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "YF-00002"
+    }
+]

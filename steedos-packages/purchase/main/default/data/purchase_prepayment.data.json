@@ -1,0 +1,43 @@
+[
+    {
+        "_id": "${space_id}_659778730ace2505ccf581ec",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "amount": 20000,
+        "supplier_bank": "${space_id}_62f5fe453a99bfb696152453",
+        "due_date": "2024-01-01T00:00:00.000Z",
+        "payment_status": "paid",
+        "payment_date": "2024-01-02T00:00:00.000Z",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T03:33:07.293Z",
+        "modified": "2024-01-05T03:33:41.605Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "name": "订金"
+    },
+    {
+        "_id": "${space_id}_65977bb70ace2505ccf58211",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "supplier": "${space_id}_ua7esWTyhgNaspC94",
+        "supplier_bank": "${space_id}_62fefe07f63a8f27ae6a0264",
+        "amount": 50000,
+        "payment_status": "paid",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T03:47:03.692Z",
+        "modified": "2024-01-05T03:47:26.355Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "due_date": "2024-01-08T00:00:00.000Z",
+        "name": "订金"
+    }
+]

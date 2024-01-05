@@ -1,0 +1,512 @@
+[
+    {
+        "_id": "${space_id}_6597700f0ace2505ccf5818e",
+        "service_type": "交通",
+        "invoice_num": "149Z058272",
+        "invoice_date": "2023-07-05T00:00:00.000Z",
+        "invoice_amount": 90.5,
+        "type": "train_ticket",
+        "file": "${space_id}_6597700f0ace2505ccf5818d",
+        "ocr_log": "${space_id}_6597700f0ace2505ccf5818c",
+        "ocr_result": {
+            "date": [
+                {
+                    "word": "2023年07月05日"
+                }
+            ],
+            "starting_station": [
+                {
+                    "word": "上海虹桥站"
+                }
+            ],
+            "Waiting_area": [
+                {
+                    "word": "检票:2B"
+                }
+            ],
+            "ticket_num": [
+                {
+                    "word": "149Z058272"
+                }
+            ],
+            "train_num": [
+                {
+                    "word": "G7635"
+                }
+            ],
+            "ticket_rates": [
+                {
+                    "word": "￥91.5元"
+                }
+            ],
+            "serial_number": [
+                {
+                    "word": "66100011130706Z058272"
+                }
+            ],
+            "ID_card": [
+                {
+                    "word": "3418022012****5614"
+                }
+            ],
+            "seat_category": [
+                {
+                    "word": "二等座"
+                }
+            ],
+            "ServiceType": [
+                {
+                    "word": "交通"
+                }
+            ],
+            "destination_station": [
+                {
+                    "word": "宣城站"
+                }
+            ],
+            "name": [
+                {
+                    "word": "陶立方"
+                }
+            ],
+            "sales_station": [
+                {
+                    "word": "JM"
+                }
+            ],
+            "time": [
+                {
+                    "word": "18:13"
+                }
+            ],
+            "seat_num": [
+                {
+                    "word": "04车07F号"
+                }
+            ]
+        },
+        "purchase_order": "${space_id}_65976fc90ace2505ccf5818b",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T02:57:19.377Z",
+        "modified": "2024-01-05T03:15:18.566Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ]
+    },
+    {
+        "_id": "${space_id}_659770780ace2505ccf58198",
+        "service_type": "电器设备",
+        "invoice_type": "电子发票(普通发票)",
+        "invoice_num": "23332000000043694668",
+        "invoice_date": "2023-11-07T00:00:00.000Z",
+        "purchaser_name": "上海华炎软件科技有限公司",
+        "purchaser_register_num": "91310112703255042R",
+        "seller_name": "杭州萧山简行数码商行",
+        "seller_register_num": "92330109MACY26533N",
+        "notax_amount": 4949.5,
+        "tax_amount": 49.5,
+        "invoice_amount": 4999,
+        "type": "vat_invoice",
+        "file": "${space_id}_659770780ace2505ccf58197",
+        "ocr_log": "${space_id}_659770780ace2505ccf58196",
+        "ocr_result": {
+            "AmountInWords": [
+                {
+                    "word": "肆仟玖佰玖拾玖圆整"
+                }
+            ],
+            "InvoiceNumConfirm": [
+                {
+                    "word": "23332000000043694668"
+                }
+            ],
+            "CommodityEndDate": [],
+            "CommodityVehicleType": [],
+            "CommodityStartDate": [],
+            "CommodityPrice": [
+                {
+                    "row": "1",
+                    "word": "4949.50495049505"
+                }
+            ],
+            "InvoiceTag": [
+                {
+                    "word": "其他"
+                }
+            ],
+            "NoteDrawer": [
+                {
+                    "word": "何秀龙"
+                }
+            ],
+            "SellerAddress": [],
+            "CommodityNum": [
+                {
+                    "row": "1",
+                    "word": "1"
+                }
+            ],
+            "SellerRegisterNum": [
+                {
+                    "word": "92330109MACY26533N"
+                }
+            ],
+            "Remarks": [],
+            "SellerBank": [],
+            "MachineCode": [],
+            "CommodityTaxRate": [
+                {
+                    "row": "1",
+                    "word": "15"
+                }
+            ],
+            "ServiceType": [
+                {
+                    "word": "电器设备"
+                }
+            ],
+            "TotalTax": [
+                {
+                    "word": "49.50"
+                }
+            ],
+            "InvoiceCodeConfirm": [],
+            "CheckCode": [],
+            "InvoiceCode": [],
+            "InvoiceDate": [
+                {
+                    "word": "2023年11月07日"
+                }
+            ],
+            "PurchaserRegisterNum": [
+                {
+                    "word": "91310112703255042R"
+                }
+            ],
+            "InvoiceTypeOrg": [
+                {
+                    "word": "电子发票(普通发票)"
+                }
+            ],
+            "Password": [],
+            "OnlinePay": [],
+            "Agent": [
+                {
+                    "word": "否"
+                }
+            ],
+            "AmountInFiguers": [
+                {
+                    "word": "4999.00"
+                }
+            ],
+            "PurchaserBank": [],
+            "Checker": [],
+            "City": [],
+            "TotalAmount": [
+                {
+                    "word": "4949.50"
+                }
+            ],
+            "CommodityAmount": [
+                {
+                    "row": "1",
+                    "word": "4949.50"
+                }
+            ],
+            "PurchaserName": [
+                {
+                    "word": "上海华炎软件科技有限公司"
+                }
+            ],
+            "CommodityType": [],
+            "Province": [],
+            "InvoiceType": [
+                {
+                    "word": "电子发票(普通发票)"
+                }
+            ],
+            "SheetNum": [],
+            "PurchaserAddress": [],
+            "InvoiceNumDigit": [],
+            "CommodityTax": [
+                {
+                    "row": "1",
+                    "word": "49.50"
+                }
+            ],
+            "CommodityPlateNum": [],
+            "CommodityUnit": [
+                {
+                    "row": "1",
+                    "word": "台"
+                }
+            ],
+            "Payee": [],
+            "CommodityName": [
+                {
+                    "row": "1",
+                    "word": "*电子计算机*苹果电脑MacBookAir13.3英寸8核8+256灰"
+                }
+            ],
+            "SellerName": [
+                {
+                    "word": "杭州萧山简行数码商行"
+                }
+            ],
+            "InvoiceNum": [
+                {
+                    "word": "23332000000043694668"
+                }
+            ]
+        },
+        "purchase_order": "${space_id}_65976fc90ace2505ccf5818b",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T02:59:04.733Z",
+        "modified": "2024-01-05T03:18:04.580Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "invalid_sign": "N",
+        "locked": true,
+        "verify_log": "6597707a0ace2505ccf5819a",
+        "verify_message": "查验成功发票一致",
+        "verify_result": "0001",
+        "verify_status": "passed"
+    },
+    {
+        "_id": "${space_id}_65977a990ace2505ccf58201",
+        "service_type": "电器设备",
+        "invoice_type": "专用发票",
+        "invoice_code": "3100224130",
+        "invoice_num": "13314188",
+        "invoice_date": "2023-08-15T00:00:00.000Z",
+        "purchaser_name": "上海华炎软件科技有限公司",
+        "purchaser_register_num": "91310112703255042R",
+        "seller_name": "上海讯导信息科技有限公司",
+        "seller_register_num": "91310118768356629B",
+        "notax_amount": 1547.79,
+        "tax_amount": 201.21,
+        "invoice_amount": 1749,
+        "type": "vat_invoice",
+        "file": "${space_id}_65977a990ace2505ccf58200",
+        "ocr_log": "${space_id}_65977a990ace2505ccf581ff",
+        "ocr_result": {
+            "AmountInWords": [
+                {
+                    "word": "壹仟柒佰肆拾玖圆整"
+                }
+            ],
+            "InvoiceNumConfirm": [
+                {
+                    "word": "13314188"
+                }
+            ],
+            "CommodityEndDate": [],
+            "CommodityVehicleType": [],
+            "CommodityStartDate": [],
+            "CommodityPrice": [
+                {
+                    "row": "1",
+                    "word": "1547.7876106"
+                }
+            ],
+            "InvoiceTag": [
+                {
+                    "word": "其他"
+                }
+            ],
+            "NoteDrawer": [
+                {
+                    "word": "曲炜"
+                }
+            ],
+            "SellerAddress": [
+                {
+                    "word": "上海市青浦区沪青平公路9565号1幢2层I区263室51170667"
+                }
+            ],
+            "CommodityNum": [
+                {
+                    "row": "1",
+                    "word": "1"
+                }
+            ],
+            "SellerRegisterNum": [
+                {
+                    "word": "91310118768356629B"
+                }
+            ],
+            "Remarks": [],
+            "SellerBank": [
+                {
+                    "word": "工行上海市延长中路支行1001295109300081907"
+                }
+            ],
+            "MachineCode": [],
+            "CommodityTaxRate": [
+                {
+                    "row": "1",
+                    "word": "13%"
+                }
+            ],
+            "ServiceType": [
+                {
+                    "word": "电器设备"
+                }
+            ],
+            "TotalTax": [
+                {
+                    "word": "201.21"
+                }
+            ],
+            "InvoiceCodeConfirm": [
+                {
+                    "word": "3100224130"
+                }
+            ],
+            "CheckCode": [],
+            "InvoiceCode": [
+                {
+                    "word": "3100224130"
+                }
+            ],
+            "InvoiceDate": [
+                {
+                    "word": "2023年08月15日"
+                }
+            ],
+            "PurchaserRegisterNum": [
+                {
+                    "word": "91310112703255042R"
+                }
+            ],
+            "InvoiceTypeOrg": [
+                {
+                    "word": "上海增值税专用发票"
+                }
+            ],
+            "Password": [
+                {
+                    "word": "/4+3+586*31-+<5+64-069+<<967>0/82625-4+->3<+03*524245*>6790118814-2/068<//<5-*<**><1+</2/02115-*<<>2>+*1+*82"
+                }
+            ],
+            "OnlinePay": [],
+            "Agent": [
+                {
+                    "word": "否"
+                }
+            ],
+            "AmountInFiguers": [
+                {
+                    "word": "1749.00"
+                }
+            ],
+            "PurchaserBank": [
+                {
+                    "word": "招商银行股份有限公司上海徐家汇支行212885212310001"
+                }
+            ],
+            "Checker": [],
+            "City": [],
+            "TotalAmount": [
+                {
+                    "word": "1547.79"
+                }
+            ],
+            "CommodityAmount": [
+                {
+                    "row": "1",
+                    "word": "1547.79"
+                }
+            ],
+            "PurchaserName": [
+                {
+                    "word": "上海华炎软件科技有限公司"
+                }
+            ],
+            "CommodityType": [
+                {
+                    "row": "1",
+                    "word": "WH-1000XM4"
+                }
+            ],
+            "Province": [
+                {
+                    "word": "上海"
+                }
+            ],
+            "InvoiceType": [
+                {
+                    "word": "专用发票"
+                }
+            ],
+            "SheetNum": [
+                {
+                    "word": "第二联：抵扣联"
+                }
+            ],
+            "PurchaserAddress": [
+                {
+                    "word": "上海市松江区九新公路76号505室37693151"
+                }
+            ],
+            "InvoiceNumDigit": [],
+            "CommodityTax": [
+                {
+                    "row": "1",
+                    "word": "201.21"
+                }
+            ],
+            "CommodityPlateNum": [],
+            "CommodityUnit": [
+                {
+                    "row": "1",
+                    "word": "副"
+                }
+            ],
+            "Payee": [],
+            "CommodityName": [
+                {
+                    "row": "1",
+                    "word": ":电子元件*素尼耳机"
+                }
+            ],
+            "SellerName": [
+                {
+                    "word": "上海讯导信息科技有限公司"
+                }
+            ],
+            "InvoiceNum": [
+                {
+                    "word": "13314188"
+                }
+            ]
+        },
+        "purchase_order": "${space_id}_659779eb0ace2505ccf581ef",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T03:42:17.505Z",
+        "modified": "2024-01-05T03:42:19.616Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "invalid_sign": "N",
+        "locked": true,
+        "verify_log": "65977a9b0ace2505ccf58203",
+        "verify_message": "查验成功发票一致",
+        "verify_result": "0001",
+        "verify_status": "passed"
+    }
+]

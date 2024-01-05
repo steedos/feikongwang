@@ -23,11 +23,9 @@ module.exports = {
         objectName: { type: 'string' }
     },
     async handler(ctx) {
-        console.log("===========", ctx)
         const userSession = ctx.meta.user
         const { spaceId, userId } = userSession
         const { file: fileBase64, filename, recordId, objectName } = ctx.params
-        console.log("aaa", ctx.params)
         const fileInfo = this.getFileInfoFromBase64(fileBase64)
         const mimetype = fileInfo.mime
         const fileData = fileInfo.data

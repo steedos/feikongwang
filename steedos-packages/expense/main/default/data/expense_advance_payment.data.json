@@ -1,0 +1,21 @@
+[
+    {
+        "_id": "${space_id}_65979fb60ace2505ccf5821d",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "expense_reports": "${space_id}_65979f6d0ace2505ccf5821b",
+        "name": "采矿项目出差款预支",
+        "date": "2024-01-05T00:00:00.000Z",
+        "amount": 20000,
+        "displayAs": null,
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T06:20:38.225Z",
+        "modified": "2024-01-05T06:20:54.028Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+    }
+]

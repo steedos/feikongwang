@@ -1,0 +1,25 @@
+[
+    {
+        "_id": "${space_id}_65979f6d0ace2505ccf5821b",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
+        "company_ids": [
+            "65976f1e0ace2505ccf58189"
+        ],
+        "name": "高铁票",
+        "business_purpose": "出差考察",
+        "start": "2024-01-05T00:00:00.000Z",
+        "displayAs": null,
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T06:19:25.933Z",
+        "modified": "2024-01-05T06:19:25.933Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "reports_number": "ER-00001",
+        "reimbursed_amount": -20000,
+        "advance_payment": 20000,
+        "cost": 0,
+        "total_cost": 0
+    } 
+]

@@ -1,262 +1,105 @@
 [
     {
         "_id": "${space_id}_6262539487e5c50032d9be0d",
-        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6262243287e5c50032d9bda5",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62b56ec98aee24003d08efd3",
-        "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
+        "account": "${space_id}__o2sunJ3vuz3uSKN4z",
+        "company_id": "65976f1e0ace2505ccf58189",
+        "contract": "6597bf85d411ad05be86b140",
+        "currency": "65976f1e0ace2505ccf58189_6261092232cc250032e1a973",
+        "customer_bank": "${space_id}__62b56ec98aee24003d08efd3",
+        "invoice_type": "${space_id}__6262538187e5c50032d9be0c",
         "is_active": true,
         "money": 150000,
         "name": "首付款",
-        "tax": "${space_id}_62610e0732cc250032e1a998",
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:57:09.176Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
+        "tax": "${space_id}__62610e0732cc250032e1a998",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T02:53:18.964Z",
+        "modified": "2024-01-05T08:51:48.291Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
+            "65976f1e0ace2505ccf58189"
         ],
         "id": "KP-2021-0005",
-        "address": "",
-        "bank": "",
         "credit_code": "62310115MJ5209999Z",
         "excluding_tax_amount": 141000,
-        "phone": "",
         "count": 2,
         "sumprice": 150000,
         "amount_type": "immobilization",
         "ticket_information": "先票后款",
         "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "actual_date": {
-            "$date": "2022-07-22T00:00:00Z"
-        },
-        "due_date": {
-            "$date": "2022-07-14T00:00:00Z"
-        }
+        "actual_date": "2022-07-22T00:00:00.000Z",
+        "due_date": "2022-07-14T00:00:00.000Z",
+        "address": "",
+        "bank": "",
+        "phone": ""
     },
     {
-        "_id": "${space_id}_62aad9082c7a71003fe03eb9",
-        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "contract": "${space_id}_6262243287e5c50032d9bda5",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62b56ec98aee24003d08efd3",
+        "_id": "${space_id}__62aad9082c7a71003fe03eb9",
+        "account": "${space_id}__o2sunJ3vuz3uSKN4z",
+        "contract": "6597bf52d411ad05be86b13f",
+        "currency": "65976f1e0ace2505ccf58189_6261092232cc250032e1a973",
+        "customer_bank": "${space_id}__62b56ec98aee24003d08efd3",
         "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
         "is_active": true,
         "money": 250000,
         "name": "技术服务",
-        "tax": "${space_id}_62610e0732cc250032e1a998",
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:56:56.602Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_id": "dn5aRN3dsWKAK73dZ",
+        "tax": "${space_id}__62610e0732cc250032e1a998",
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T02:53:18.964Z",
+        "modified": "2024-01-05T08:51:36.997Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "company_id": "65976f1e0ace2505ccf58189",
         "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
+            "65976f1e0ace2505ccf58189"
         ],
         "instance_state": null,
         "id": "KP-2021-0006",
-        "address": "",
-        "bank": "",
         "credit_code": "62310115MJ5209999Z",
         "excluding_tax_amount": 235000,
-        "phone": "",
         "count": 1,
         "sumprice": 10000,
         "amount_type": "immobilization",
         "ticket_information": "先票后款",
         "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "actual_date": {
-            "$date": "2022-06-24T00:00:00Z"
-        },
-        "due_date": {
-            "$date": "2022-06-29T00:00:00Z"
-        }
-    },
-    {
-        "_id": "${space_id}_62fb0069cb9c8306a51b2ae4",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
-        "contract": "${space_id}_6262289287e5c50032d9bda7",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62f5fd7e3a99bfb696152445",
-        "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
-        "is_active": true,
-        "money": 300000,
-        "name": "首付款开票",
-        "tax": "${space_id}_62610e0732cc250032e1a998",
-        "ticket_information": "先票后款",
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:56:41.428Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "amount_type": "immobilization",
-        "instance_state": "draft",
-        "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "KP-2021-0001",
+        "actual_date": "2022-06-24T00:00:00.000Z",
+        "due_date": "2022-06-29T00:00:00.000Z",
         "address": "",
         "bank": "",
-        "credit_code": "91430000183786683Q",
-        "excluding_tax_amount": 282000,
-        "phone": "",
-        "count": 0,
-        "sumprice": 0,
-        "actual_date": {
-            "$date": "2022-05-01T00:00:00Z"
-        },
-        "due_date": {
-            "$date": "2022-04-18T00:00:00Z"
-        }
+        "phone": ""
     },
     {
-        "_id": "${space_id}_62fb00a2cb9c8306a51b2ae6",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
-        "contract": "${space_id}_6262289287e5c50032d9bda7",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62f5fd7e3a99bfb696152445",
-        "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
-        "is_active": true,
-        "money": 1000000,
-        "name": "第一笔进度款开票",
-        "tax": "${space_id}_62610e0732cc250032e1a998",
-        "ticket_information": "先票后款",
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:56:22.955Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_id": "dn5aRN3dsWKAK73dZ",
+        "_id": "${space_id}_65977f1d0ace2505ccf58218",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65976f1e0ace2505ccf58189",
         "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
+            "65976f1e0ace2505ccf58189"
         ],
-        "amount_type": "immobilization",
+        "contract": "${space_id}_65977e370ace2505ccf58212",
+        "account": "${space_id}__o2sunJ3vuz3uSKN4z",
+        "name": "工程首付款",
+        "money": 5000000,
+        "tax": "${space_id}__62610e0732cc250032e1a996",
+        "customer_bank": "${space_id}__62f5fd7e3a99bfb696152445",
+        "invoice_type": "${space_id}__6262538187e5c50032d9be0c",
+        "actual_date": "2024-01-03T00:00:00.000Z",
+        "displayAs": null,
+        "space": "65976f1e0ace2505ccf58189",
+        "created": "2024-01-05T04:01:33.746Z",
+        "modified": "2024-01-05T04:01:33.746Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "instance_state": "draft",
-        "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "KP-2021-0002",
+        "id": "KP-2024-0001",
         "address": "",
         "bank": "",
-        "credit_code": "91430000183786683Q",
-        "excluding_tax_amount": 940000,
+        "credit_code": "62310115MJ5209999Z",
+        "excluding_tax_amount": 4350000,
         "phone": "",
         "count": 0,
-        "sumprice": 0,
-        "actual_date": {
-            "$date": "2022-03-18T00:00:00Z"
-        },
-        "due_date": {
-            "$date": "2022-03-24T00:00:00Z"
-        }
-    },
-    {
-        "_id": "${space_id}_62fb011ecb9c8306a51b2ae7",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
-        "contract": "${space_id}_6262289287e5c50032d9bda7",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62f5fd7e3a99bfb696152445",
-        "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
-        "is_active": true,
-        "money": 1200000,
-        "name": "第二笔进度款开票",
-        "tax": "${space_id}_62610e0732cc250032e1a998",
-        "ticket_information": "先票后款",
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:56:06.765Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "amount_type": "immobilization",
-        "instance_state": "draft",
-        "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "KP-2021-0003",
-        "address": "",
-        "bank": "",
-        "credit_code": "91430000183786683Q",
-        "excluding_tax_amount": 1128000,
-        "phone": "",
-        "count": 0,
-        "sumprice": 0,
-        "actual_date": {
-            "$date": "2022-02-03T00:00:00Z"
-        },
-        "due_date": {
-            "$date": "2022-02-01T00:00:00Z"
-        }
-    },
-    {
-        "_id": "${space_id}_62fb4edacb9c8306a51b2bc1",
-        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
-        "contract": "${space_id}_62fa1540cb9c8306a51b2a9a",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62fefe07f63a8f27ae6a0264",
-        "invoice_type": "${space_id}_62b140670aa493003e5328f6",
-        "is_active": false,
-        "money": 54000,
-        "name": "开票",
-        "tax": "${space_id}_62610e0b32cc250032e1a9a0",
-        "ticket_information": "先票后款",
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:55:50.752Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "amount_type": "immobilization",
-        "instance_state": "draft",
-        "id": "KP-2021-0004",
-        "address": "",
-        "bank": "",
-        "credit_code": "26548997636564656R",
-        "excluding_tax_amount": 45360,
-        "phone": "",
-        "count": 0,
-        "sumprice": 0,
-        "project": "${space_id}_62fefd49f63a8f27ae6a025f",
-        "due_date": {
-            "$date": "2022-10-01T00:00:00Z"
-        }
+        "sumprice": 0
     }
 ]
