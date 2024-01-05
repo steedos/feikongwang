@@ -8,7 +8,7 @@
             "65976f1e0ace2505ccf58189"
         ],
         "name": "搅拌机制造合同",
-        "customer": "${space_id}__o2sunJ3vuz3uSKN4z",
+        "customer": "${space_id}_o2sunJ3vuz3uSKN4z",
         "amount": 20000000,
         "signed_date": "2024-01-01T00:00:00.000Z",
         "buyer": "${space_owner_id}",
@@ -49,7 +49,7 @@
             "65976f1e0ace2505ccf58189"
         ],
         "name": "房屋租赁合同",
-        "customer": "${space_id}__ZkwHr3jeZQFMKAwQ2",
+        "customer": "${space_id}_ZkwHr3jeZQFMKAwQ2",
         "amount": 2000,
         "signed_date": "2024-01-05T00:00:00.000Z",
         "department": "65976f1e0ace2505ccf58189",
