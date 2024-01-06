@@ -4,13 +4,13 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 发票种类
+label: 发票类型
 multiple: false
 omit: false
 readonly: false
 reference_to: invoice_type
 required: true
 searchable: false
-sort_no: 170
+sort_no: 25
 sortable: false
 type: lookup

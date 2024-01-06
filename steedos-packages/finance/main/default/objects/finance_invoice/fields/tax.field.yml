@@ -11,6 +11,6 @@ readonly: false
 reference_to: tax_rates
 required: true
 searchable: false
-sort_no: 165
+sort_no: 30
 sortable: false
 type: lookup
