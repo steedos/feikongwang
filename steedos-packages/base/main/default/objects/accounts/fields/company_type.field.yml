@@ -5,19 +5,17 @@ generated: false
 index: false
 is_name: false
 is_wide: false
-label: 企业性质
+label: 客户性质
 multiple: false
 options:
-  - label: 国企
-    value: 国企
-  - label: 民企
-    value: 民企
-  - label: 外企
-    value: 外企
-  - label: 集体企业
-    value: 集体企业
+  - label: 企业
+    value: 企业
+  - label: 个人
+    value: 个人
+  - label: 政府事业单位
+    value: 政府事业单位
 primary: false
 required: false
-sort_no: 220
+sort_no: 22
 sortable: false
 type: select

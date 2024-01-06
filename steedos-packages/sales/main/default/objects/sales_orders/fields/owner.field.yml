@@ -1,8 +1,0 @@
-name: owner
-label: 跟进人
-hidden: true
-readonly: false
-sort_no: 55
-type: lookup
-required: true
-

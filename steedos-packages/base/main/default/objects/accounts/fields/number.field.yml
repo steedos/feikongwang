@@ -1,5 +1,5 @@
 name: number
-label: 客商编号
+label: 客户编号
 required: false
 sort_no: 21
 formula: 'KS-{00000}'

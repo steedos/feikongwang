@@ -1,74 +1,48 @@
 name: industry
 type: select
-label: 行业
+label: 所属行业
 searchable: true
 sortable: true
 options:
-  - label: 农业
-    value: Agriculture
-  - label: 服饰
-    value: Apparel
-  - label: 银行
-    value: Banking
-  - label: 生物科技
-    value: Biotechnology
-  - label: 化工
-    value: Chemicals
-  - label: 通信
-    value: Communications
-  - label: 建筑
-    value: Construction
-  - label: 咨询
-    value: Consulting
-  - label: 教育
-    value: Education
-  - label: 电子
-    value: Electronics
-  - label: 能源
-    value: Energy
-  - label: 工程
-    value: Engineering
-  - label: 娱乐
-    value: Entertainment
-  - label: 环保
-    value: Environmental
-  - label: 金融
-    value: Finance
-  - label: 食品饮料
-    value: Food_&_Beverage
-  - label: 政府组织
-    value: Government
-  - label: 医疗保健
-    value: Healthcare
-  - label: 服务
-    value: Hospitality
-  - label: 保险
-    value: Insurance
-  - label: 机械
-    value: Machinery
-  - label: 制造
-    value: Manufacturing
-  - label: 媒体
-    value: Media
-  - label: 非牟利组织
-    value: Not_For_Profit
+  - label: 互联网/信息技术
+    value: 互联网/信息技术
+  - label: 房地产业
+    value: 房地产业
+  - label: 建筑行业
+    value: 建筑行业
+  - label: 生产制造
+    value: 生产制造
+  - label: 金融行业
+    value: 金融行业
+  - label: 商业服务/租赁
+    value: 商业服务/租赁
+  - label: 供应链/物流/仓储
+    value: 供应链/物流/仓储
+  - label: 教育/培训/咨询
+    value: 教育/培训/咨询
+  - label: 文体/娱乐/传媒
+    value: 文体/娱乐/传媒
+  - label: 医疗健康
+    value: 医疗健康
+  - label: 政府/事业单位
+    value: 政府/事业单位
+  - label: 新能源
+    value: 新能源
+  - label: 电/热/燃气/水供应
+    value: 电/热/燃气/水供应
+  - label: 科研服务
+    value: 科研服务
+  - label: 贸易/批发/零售
+    value: 贸易/批发/零售
+  - label: 公共组织/非盈利组织
+    value: 公共组织/非盈利组织
+  - label: 农/林/牧/渔
+    value: 农/林/牧/渔
+  - label: 开采行业
+    value: 开采行业
+  - label: 环保行业
+    value: 环保行业
   - label: 其他
-    value: Other
-  - label: 休闲
-    value: Recreation
-  - label: 零售
-    value: Retail
-  - label: 航运
-    value: Shipping
-  - label: 科技
-    value: Technology
-  - label: 电讯
-    value: Telecommunications
-  - label: 交通运输
-    value: Transportation
-  - label: 公用事业
-    value: Utilities
-  - label: 软件
-    value: Software
+    value: 其他
 filterable: true
-sort_no: 210
+sort_no: 23

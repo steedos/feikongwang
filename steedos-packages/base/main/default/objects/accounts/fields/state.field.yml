@@ -73,4 +73,4 @@ options:
     value: TW
 filterable: true
 inlineHelpText: 业务伙伴被分配至的区域。
-sort_no: 79
+sort_no: 25

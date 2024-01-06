@@ -2,20 +2,17 @@ name: recent
 columns:
   - field: name
     wrap: false
-  - field: phone
+  - field: number
     wrap: false
-  - field: address
+  - field: charge
     wrap: false
-  - field: credit_code
+  - field: industry
     wrap: false
   - field: company_type
     wrap: false
-  - field: status
-    wrap: false
 filter_fields:
-  - address
+  - number
   - name
-  - status
 filter_scope: space
 label: 最近查看
 shared: true

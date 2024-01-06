@@ -1,0 +1,7 @@
+name: charge
+label: 负责人
+readonly: false
+sort_no: 40
+type: lookup
+required: true
+reference_to: users

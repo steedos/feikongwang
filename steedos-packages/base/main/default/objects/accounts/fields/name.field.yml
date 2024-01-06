@@ -1,5 +1,5 @@
 name: name
-label: 客商名称
+label: 客户名称
 type: text
 searchable: true
 required: true

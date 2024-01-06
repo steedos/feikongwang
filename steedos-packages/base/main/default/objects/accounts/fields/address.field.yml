@@ -1,6 +1,7 @@
 name: address
 defaultValue: ''
-label: 公司地址
+label: 办公地址
 required: false
-sort_no: 80
-type: text
+sort_no: 30
+type: textarea
+is_wide: true

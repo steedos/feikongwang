@@ -1,0 +1,15 @@
+name: credit_limit
+filterable: false
+hidden: false
+index: false
+is_name: false
+label: 赊销额度
+omit: false
+precision: 18
+readonly: false
+required: false
+scale: 2
+searchable: false
+sort_no: 45
+sortable: true
+type: number
