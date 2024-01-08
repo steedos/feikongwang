@@ -41,3 +41,4 @@ options:
     value: 二手车销售发票
 readonly: false
 visible_on: "{{formData.type ==='vat_invoice' ? true : false}}"
+group: 发票信息

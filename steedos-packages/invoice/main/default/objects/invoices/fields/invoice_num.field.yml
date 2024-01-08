@@ -11,7 +11,8 @@ primary: false
 required: true
 searchable: false
 show_as_qr: false
-sort_no: 120
+sort_no: 35
 sortable: false
 type: text
 write_requires_master_read: false
+group: 发票信息

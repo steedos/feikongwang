@@ -12,7 +12,7 @@ readonly: true
 required: false
 searchable: false
 show_as_qr: false
-sort_no: 160
+sort_no: 50
 sortable: false
 type: text
 write_requires_master_read: false

@@ -18,3 +18,4 @@ sort_no: 138
 sortable: false
 type: currency
 write_requires_master_read: false
+group: 发票信息

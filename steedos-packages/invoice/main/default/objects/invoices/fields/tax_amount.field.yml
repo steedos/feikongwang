@@ -13,7 +13,8 @@ required: false
 scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 136
+sort_no: 45
 sortable: false
 type: currency
 write_requires_master_read: false
+group: 发票信息

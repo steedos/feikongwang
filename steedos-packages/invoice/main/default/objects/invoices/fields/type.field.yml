@@ -48,8 +48,9 @@ primary: false
 required: true
 searchable: false
 show_as_qr: false
-sort_no: 110
+sort_no: 10
 sortable: false
 # type: lookup
 type: select
+group: 发票信息
 write_requires_master_read: false
