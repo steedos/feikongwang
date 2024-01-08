@@ -1,5 +1,5 @@
 name: name
-hidden: false
+hidden: true
 is_wide: true
 label: 款项条件
 required: false

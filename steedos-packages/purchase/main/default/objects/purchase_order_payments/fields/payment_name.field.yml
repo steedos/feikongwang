@@ -1,7 +1,7 @@
 name: payment_name
 hidden: false
 is_name: true
-label: 款项名称
+label: 计划类型
 omit: false
 options:
   - label: 首付款

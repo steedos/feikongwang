@@ -4,7 +4,9 @@ columns:
   - payment_name
   - purchase_order
   - amount
+  - payment_proportion
   - due_date
+  - amount_description
 filter_scope: space
 label: 最近查看
 shared: true

@@ -6,7 +6,9 @@ columns:
   - field: payment_name
   - field: purchase_order
   - field: amount
+  - field: payment_proportion
   - field: due_date
+  - field: amount_description
 filter_scope: space
 label: 所有
 shared: true
