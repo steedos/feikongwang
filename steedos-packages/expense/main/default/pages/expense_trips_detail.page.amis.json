@@ -30,36 +30,22 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:ff93303ff815",
-                            "relatedObjectApiName": "cms_files"
+                            "relatedObjectApiName": "expense_trips_itinerary"
                         },
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:0745183267f1",
-                            "relatedObjectApiName": "instances"
+                            "id": "u:8c014eec9b86",
+                            "relatedObjectApiName": "cms_files"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "行程",
-                    "className": "p-t p-l-xs",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:9f41c431b1a9",
-                            "relatedObjectApiName": "expense_trips_itinerary"
-                        }
-                    ],
-                    "id": "u:70b11d7fa2b1"
-                },
-                {
                     "title": "报销",
+                    "className": "p-t p-l-xs",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -70,23 +56,36 @@
                             "relatedObjectApiName": "expense_reports"
                         }
                     ],
-                    "id": "u:70b11d7fa2b1",
-                    "className": "p-t p-l-xs"
+                    "id": "u:70b11d7fa2b1"
                 },
                 {
                     "title": "借款",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
-                            "id": "u:9f41c431b1a9",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
+                            "id": "u:9f41c431b1a9",
                             "relatedObjectApiName": "expense_advance_payment"
                         }
                     ],
                     "id": "u:70b11d7fa2b1",
                     "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "审批",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:72ea1ab4d8df",
+                            "relatedObjectApiName": "instances"
+                        }
+                    ],
+                    "id": "u:ee4270a41586"
                 }
             ],
             "id": "u:5d9cad914f72"
