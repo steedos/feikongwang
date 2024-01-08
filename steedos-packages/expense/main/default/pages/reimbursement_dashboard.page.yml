@@ -1,0 +1,8 @@
+name: reimbursement_dashboard
+is_active: true
+label: 报销看板
+locked: false
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

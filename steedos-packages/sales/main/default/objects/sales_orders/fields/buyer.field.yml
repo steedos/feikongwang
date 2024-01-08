@@ -1,7 +1,6 @@
 name: buyer
 label: 联系人
 sort_no: 45
-type: text
-sortable: true
-searchable: true
-filterable: true
+type: lookup
+required: true
+reference_to: users
