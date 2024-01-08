@@ -10,29 +10,32 @@ is_use_iframe: false
 locked: false
 mobile: true
 showSidebar: false
-sort: 100
+sort: 10
 tab_groups:
   - group_name: 设置
     default_open: true
+    id: 设置
 tab_items:
-  object_expense_trips:
+  reimbursement_homepage:
     index: 1
+  object_expense_trips:
+    index: 2
   object_expense:
-    index: 2
-  object_invoices:
-    index: 2
-  object_expense_reports:
     index: 3
-  object_expense_advance_payment:
+  object_invoices:
     index: 4
-  object_instance_tasks:
+  object_expense_reports:
     index: 5
+  object_expense_advance_payment:
+    index: 6
+  object_instance_tasks:
+    index: 7
 tabs:
+  - reimbursement_homepage
   - object_expense_trips
   - object_expense
+  - object_invoices
   - object_expense_reports
   - object_expense_advance_payment
-  - object_expense_category
   - object_instance_tasks
-  - object_invoices
 visible: true

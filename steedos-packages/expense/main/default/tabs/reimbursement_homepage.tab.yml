@@ -1,0 +1,12 @@
+name: reimbursement_homepage
+desktop: true
+icon: calculated_insights
+is_new_window: false
+is_use_iframe: false
+label: 报销首页
+locked: false
+mobile: true
+page: reimbursement_dashboard
+permissions: []
+type: page
+url: /app/analytics
