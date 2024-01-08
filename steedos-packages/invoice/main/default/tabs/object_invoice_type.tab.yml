@@ -1,0 +1,7 @@
+name: object_invoice_type
+desktop: true
+label: 发票类型
+mobile: true
+object: invoice_type
+permissions: []
+type: object
