@@ -107,7 +107,8 @@ module.exports = {
                                 file: fileDoc._id,
                                 ocr_log: logDoc._id,
                                 ocr_result: item.result,
-                                purchase_order: recordId ? recordId : null
+                                purchase_order: recordId ? recordId : null,
+                                state: "unsubmitted"
 
                             }, userSession)
 
@@ -117,15 +118,16 @@ module.exports = {
                                 file: fileDoc._id,
                                 ocr_log: logDoc._id,
                                 ocr_result: item.result,
-                                expense_reports: recordId ? recordId : null
-
+                                expense_reports: recordId ? recordId : null,
+                                state: "unsubmitted"
                             }, userSession)
                         } else {
                             newDoc = await invoiceObj.insert({
                                 ...doc,
                                 file: fileDoc._id,
                                 ocr_log: logDoc._id,
-                                ocr_result: item.result
+                                ocr_result: item.result,
+                                state: "unassociated"
 
                             }, userSession)
                         }

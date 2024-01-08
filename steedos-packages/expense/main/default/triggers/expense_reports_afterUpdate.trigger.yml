@@ -1,0 +1,35 @@
+name: expense_reports_afterUpdate
+listenTo: expense_reports
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, previousDoc } = ctx.params;
+
+  //根据报销单id，查询发票信息
+
+  const invoicesObj = this.getObject('invoices');
+
+  const invoicesDoc = await invoicesObj.find({ filters: ['expense_reports', '=',
+  doc._id] })
+
+  if (previousDoc.instance_state != 'approved' && doc.instance_state
+  =='approved') {
+      if (invoicesDoc && invoicesDoc.length) {
+          for (let invoices of invoicesDoc) {
+              await invoicesObj.directUpdate(invoices._id, {
+                  state: "approved"
+              })
+          }
+      }
+  } else if (previousDoc.instance_state != 'approval' && doc.instance_state ==
+  'approval') {
+      if (invoicesDoc && invoicesDoc.length) {
+          for (let invoices of invoicesDoc) {
+              await invoicesObj.directUpdate(invoices._id, {
+                  state: "approval"
+              })
+          }
+      }
+  }
+locked: false
