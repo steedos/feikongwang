@@ -1,0 +1,20 @@
+name: amount_unpaid
+data_type: number
+filterable: false
+formula: amount - amount_paid
+formula_blank_value: zeroes
+group: 数据概览
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 应付金额
+omit: false
+precision: 18
+readonly: true
+required: false
+scale: 2
+searchable: false
+sort_no: 310
+sortable: true
+type: formula
