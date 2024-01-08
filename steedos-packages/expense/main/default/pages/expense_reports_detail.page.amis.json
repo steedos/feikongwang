@@ -30,7 +30,7 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:01ea21d5a7e2",
-                            "relatedObjectApiName": "cms_files"
+                            "relatedObjectApiName": "invoices"
                         },
                         {
                             "type": "steedos-object-related-listview",
@@ -38,13 +38,21 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:b2e7f364e24c",
-                            "relatedObjectApiName": "instances"
+                            "relatedObjectApiName": "expense_advance_payment"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:e1d3b08319a1",
+                            "relatedObjectApiName": "cms_files"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "发票",
+                    "title": "审批",
                     "className": "p-t p-l-xs",
                     "body": [
                         {
@@ -52,26 +60,11 @@
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:9eba32ade87a",
-                            "relatedObjectApiName": "invoices"
+                            "id": "u:9e9980164f07",
+                            "relatedObjectApiName": "instances"
                         }
                     ],
-                    "id": "u:ce8f96e56f50"
-                },
-                {
-                    "title": "借款",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:9eba32ade87a",
-                            "relatedObjectApiName": "expense_advance_payment"
-                        }
-                    ],
-                    "id": "u:ce8f96e56f50",
-                    "className": "p-t p-l-xs"
+                    "id": "u:90a62caf002e"
                 }
             ],
             "id": "u:b2f0d1aabfed"
