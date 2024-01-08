@@ -4,7 +4,7 @@ created_at: 2024-01-08T06:19:25.242Z
 creator_id: 5e370697-d1f4-4cea-98b6-6d2c821b5ee9
 database_id: '1'
 dataset_query:
-  database: '1'
+  type: query
   query:
     aggregation:
       - - sum
@@ -18,9 +18,9 @@ dataset_query:
     breakout:
       - - field
         - expense_reports.start
-        - temporal-unit: day
+        - temporal-unit: month
     source-table: expense_reports
-  type: query
+  database: '1'
 description: 报销单费用详情
 display: combo
 enable_embedding: false
@@ -32,7 +32,7 @@ query_type: query
 result_metadata:
   - id: start
     name: start
-    unit: day
+    unit: month
     display_name: 费用发生开始日期
     base_type: type/Instant
     effective_type: type/Instant
@@ -43,7 +43,7 @@ result_metadata:
     field_ref:
       - field
       - expense_reports.start
-      - temporal-unit: day
+      - temporal-unit: month
   - base_type: type/Integer
     display_name: 费用总额合计
     effective_type: type/Integer

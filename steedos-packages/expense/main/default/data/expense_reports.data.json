@@ -1,25 +1,81 @@
 [
     {
         "_id": "${space_id}_65979f6d0ace2505ccf5821b",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
+        "company_id": "659bb6247db12e05be8790ce",
         "company_ids": [
-            "65976f1e0ace2505ccf58189"
+            "659bb6247db12e05be8790ce"
         ],
         "name": "高铁票",
         "business_purpose": "出差考察",
-        "start": "2024-01-05T00:00:00.000Z",
+        "start": {
+            "$date": "2023-11-14T08:35:37.509Z"
+        },
         "displayAs": null,
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T06:19:25.933Z",
-        "modified": "2024-01-05T06:19:25.933Z",
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "space": "659bb6247db12e05be8790ce",
+        "created": "2024-01-08T08:45:24.368Z",
+        "modified": "2024-01-08T08:57:19.775Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "reports_number": "ER-00001",
-        "reimbursed_amount": -20000,
+        "reimbursed_amount": -17000,
         "advance_payment": 20000,
-        "cost": 0,
-        "total_cost": 0
+        "cost": 1,
+        "total_cost": 3000,
+        "instance_state": "draft",
+        "end": "2024-01-04T00:00:00.000Z"
+    },
+    {
+        "_id": "${space_id}_65979f6d0ace2505ccf58221b",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "659bb6247db12e05be8790ce",
+        "company_ids": [
+            "659bb6247db12e05be8790ce"
+        ],
+        "name": "高铁票2",
+        "business_purpose": "出差考察",
+        "start": {
+            "$date": "2024-01-05T00:00:00.000Z"
+        },
+        "displayAs": null,
+        "space": "659bb6247db12e05be8790ce",
+        "created": "2024-01-08T08:45:24.368Z",
+        "modified": "2024-01-08T08:57:07.582Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "reports_number": "ER-00001",
+        "reimbursed_amount": 1000,
+        "advance_payment": 1000,
+        "cost": 1,
+        "total_cost": 2000,
+        "instance_state": "approved",
+        "end": "2024-01-08T00:00:00.000Z"
+    },
+    {
+        "_id": "${space_id}_659bb6b57db12e05be8790d2",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "659bb6247db12e05be8790ce",
+        "company_ids": [
+            "659bb6247db12e05be8790ce"
+        ],
+        "name": "出差住宿",
+        "start": {
+            "$date": "2023-12-06T00:00:00.000Z"
+        },
+        "end": "2023-12-13T00:00:00.000Z",
+        "space": "659bb6247db12e05be8790ce",
+        "created": "2024-01-08T08:47:49.716Z",
+        "modified": "2024-01-08T08:49:05.010Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "reports_number": "ER-00001",
+        "reimbursed_amount": 20000,
+        "advance_payment": 0,
+        "cost": 1,
+        "total_cost": 20000,
+        "instance_state": "pending"
     } 
 ]
