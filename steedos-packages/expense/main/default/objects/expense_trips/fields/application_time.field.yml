@@ -1,5 +1,6 @@
 name: application_time
 filterable: false
+defaultValue: '${NOW()}'
 generated: false
 index: false
 is_name: false
