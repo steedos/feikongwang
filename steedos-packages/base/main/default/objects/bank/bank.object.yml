@@ -4,5 +4,5 @@ enable_api: true
 enable_share: true
 enable_enhanced_lookup: true
 icon: account
-label: 银行
+label: 银行（作废）
 version: 2

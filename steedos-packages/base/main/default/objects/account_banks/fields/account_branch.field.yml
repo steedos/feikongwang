@@ -1,0 +1,5 @@
+name: account_branch
+label: 开户支行
+required: true
+sort_no: 162
+type: text

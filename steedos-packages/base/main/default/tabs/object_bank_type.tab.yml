@@ -1,6 +1,6 @@
 name: object_bank_type
 desktop: true
-label: 银行类别
+label: 银行
 mobile: true
 object: bank_type
 permissions: []

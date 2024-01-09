@@ -38,9 +38,6 @@ tab_items:
   object_currency:
     group: 财务设置
     index: 5
-  object_bank:
-    group: 财务设置
-    index: 6
   object_bank_type:
     group: 财务设置
     index: 7
@@ -62,7 +59,6 @@ tabs:
   - object_tax_rates
   - object_invoice_type
   - object_currency
-  - object_bank
   - object_bank_type
   - object_company_account
   - object_product

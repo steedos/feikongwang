@@ -1,6 +1,6 @@
 name: object_bank
 desktop: true
-label: 银行
+label: 银行（作废）
 mobile: true
 object: bank
 permissions: []

@@ -1,6 +1,5 @@
 name: pk_bankdoc
 filterable: false
-filters: [["enablestate", "=", "enable"]]
 hidden: false
 index: false
 is_name: false
@@ -9,7 +8,7 @@ label: 开户银行
 multiple: false
 omit: false
 readonly: false
-reference_to: bank
+reference_to: bank_type
 required: true
 searchable: false
 sort_no: 110

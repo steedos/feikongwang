@@ -6,6 +6,7 @@ columns:
     wrap: false
   - field: pk_bankdoc
     wrap: false
+  - field: account_branch
   - field: account
   - field: accountproperty
   - field: accstate
