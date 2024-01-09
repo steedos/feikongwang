@@ -34,7 +34,6 @@
         ],
         "quantity_scheduling_enabled": false,
         "revenue_scheduling_enabled": false,
-        "material_group": "${space_id}_627497fc40f71f0031853acb",
         "unit": "${space_id}_6274983b40f71f0031853acd",
         "separate_accounting": false
     },
@@ -73,7 +72,6 @@
         "company_ids": [
             "xu68SZ8mgJ9J7EmJE"
         ],
-        "material_group": "${space_id}_627497fc40f71f0031853acb",
         "separate_accounting": false
     },
     {
@@ -104,7 +102,6 @@
         "company_ids": [
             "xu68SZ8mgJ9J7EmJE"
         ],
-        "material_group": "${space_id}_627497fc40f71f0031853acb",
         "product_code": "mac-001",
         "specification": "macbookair",
         "separate_accounting": false,

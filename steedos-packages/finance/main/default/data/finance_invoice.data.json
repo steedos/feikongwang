@@ -28,8 +28,12 @@
         "amount_type": "immobilization",
         "ticket_information": "先票后款",
         "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "actual_date": "2022-07-22T00:00:00.000Z",
-        "due_date": "2022-07-14T00:00:00.000Z",
+        "actual_date": {
+            "$date": "2022-07-22T00:00:00.000Z"
+        },
+        "due_date": {
+            "$date": "2022-07-14T00:00:00.000Z"
+        },
         "address": "",
         "bank": "",
         "phone": ""
@@ -44,7 +48,7 @@
         "is_active": true,
         "money": 250000,
         "name": "技术服务",
-        "tax": "${space_id}__62610e0732cc250032e1a998",
+        "tax": "${space_id}_62610e0732cc250032e1a998",
         "space": "65976f1e0ace2505ccf58189",
         "created": "2024-01-05T02:53:18.964Z",
         "modified": "2024-01-05T08:51:36.997Z",
@@ -64,8 +68,12 @@
         "amount_type": "immobilization",
         "ticket_information": "先票后款",
         "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "actual_date": "2022-06-24T00:00:00.000Z",
-        "due_date": "2022-06-29T00:00:00.000Z",
+        "actual_date": {
+            "$date": "2022-06-24T00:00:00.000Z"
+        },
+        "due_date": {
+            "$date": "2022-06-29T00:00:00.000Z"
+        },
         "address": "",
         "bank": "",
         "phone": ""
@@ -85,7 +93,12 @@
         "tax": "${space_id}_62610e0732cc250032e1a996",
         "customer_bank": "${space_id}_62f5fd7e3a99bfb696152445",
         "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
-        "actual_date": "2024-01-03T00:00:00.000Z",
+        "actual_date": {
+            "$date": "2024-01-03T00:00:00.000Z"
+        },
+        "due_date": {
+            "$date": "2024-01-07T00:00:00.000Z"
+        },
         "displayAs": null,
         "space": "65976f1e0ace2505ccf58189",
         "created": "2024-01-05T04:01:33.746Z",
