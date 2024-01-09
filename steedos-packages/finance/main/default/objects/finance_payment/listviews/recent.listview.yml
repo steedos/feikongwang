@@ -6,9 +6,9 @@ columns:
     wrap: false
   - field: amount
     wrap: false
-  - field: supplier
+  - field: purchase_order
     wrap: false
-  - field: supplier_bank
+  - field: report_id
     wrap: false
   - field: billno
     wrap: false

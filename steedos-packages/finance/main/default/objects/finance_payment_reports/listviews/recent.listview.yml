@@ -1,4 +1,4 @@
-name: all
+name: recent
 columns:
   - field: id
     wrap: false
@@ -6,9 +6,9 @@ columns:
     wrap: false
   - field: amount
     wrap: false
-  - field: purchase_order
+  - field: supplier
     wrap: false
-  - field: report_id
+  - field: supplier_bank
     wrap: false
   - field: billno
     wrap: false
@@ -19,9 +19,6 @@ filter_fields:
   - payment_date
   - supplier
 filter_scope: space
-label: 所有付款记录
+label: 最近查看
 shared: true
 show_count: false
-sort:
-  - field_name: id
-    order: desc

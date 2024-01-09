@@ -1,6 +1,6 @@
 name: object_finance_payment
 desktop: true
-label: 付款
+label: 付款明细
 mobile: true
 object: finance_payment
 permissions: []

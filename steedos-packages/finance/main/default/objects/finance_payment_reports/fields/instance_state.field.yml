@@ -20,6 +20,6 @@ options:
   - label: 已取消
     value: terminated
 searchable: true
-sort_no: 400
+sort_no: 200
 sortable: true
 type: select

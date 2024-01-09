@@ -1,0 +1,7 @@
+name: object_finance_payment_reports
+desktop: true
+label: 付款单
+mobile: true
+object: finance_payment_reports
+permissions: []
+type: object

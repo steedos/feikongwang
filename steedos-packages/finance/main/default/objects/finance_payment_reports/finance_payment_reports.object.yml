@@ -1,4 +1,4 @@
-name: finance_payment
+name: finance_payment_reports
 custom: true
 enable_api: true
 enable_audit: true
@@ -15,7 +15,7 @@ enable_tasks: false
 enable_workflow: true
 icon: orders
 is_enable: true
-label: 付款记录
+label: 付款单
 version: 2
 form:
   initialValues: !!js/function |

@@ -3,7 +3,7 @@ data_type: percent
 filterable: false
 formula: amount / purchase_order.amount
 formula_blank_value: zeroes
-hidden: true
+hidden: false
 index: false
 is_name: false
 is_wide: false
@@ -12,6 +12,6 @@ omit: false
 readonly: false
 required: false
 searchable: false
-sort_no: 213
+sort_no: 640
 sortable: false
 type: formula

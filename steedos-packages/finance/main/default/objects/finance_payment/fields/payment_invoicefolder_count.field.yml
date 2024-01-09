@@ -10,7 +10,7 @@ omit: false
 readonly: true
 required: false
 searchable: false
-sort_no: 188
+sort_no: 320
 sortable: false
 type: number
 scale: 0

@@ -18,6 +18,6 @@ tabs:
   - object_purchase_orders
   - object_accounts
   - object_invoices
-  - object_finance_payment
+  - object_finance_payment_reports
   - object_purchase_prepayment
 visible: true

@@ -1,0 +1,18 @@
+name: report_id
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 付款单
+omit: false
+readonly: false
+reference_to: finance_payment_reports
+required: true
+searchable: false
+sort_no: 10
+sortable: true
+type: master_detail
+create: false
+write_requires_master_read: true
+
