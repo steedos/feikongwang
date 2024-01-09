@@ -12,32 +12,32 @@ options:
     value: vat_invoice
   - label: 出租车票
     value: taxi_receipt
+  - label: 网约车行程单
+    value: taxi_online_ticket
   - label: 火车票
     value: train_ticket
-  - label: 定额发票
-    value: quota_invoice
   - label: 飞机行程单
     value: air_ticket
-  - label: 卷票
-    value: roll_normal_invoice
-  - label: 机打发票
-    value: printed_invoice
   - label: 汽车票
     value: bus_ticket
-  - label: 过路过桥费发票
-    value: toll_invoice
   - label: 船票
     value: ferry_ticket
+  - label: 定额发票
+    value: quota_invoice
+  - label: 机打发票
+    value: printed_invoice
   - label: 机动车销售发票
     value: motor_vehicle_invoice
   - label: 二手车发票
     value: used_vehicle_invoice
-  - label: 网约车行程单
-    value: taxi_online_ticket
   - label: 限额发票
     value: limit_invoice
   - label: 购物小票
     value: shopping_receipt
+  - label: 过路过桥费发票
+    value: toll_invoice
+  - label: 卷票
+    value: roll_normal_invoice
   - label: POS小票
     value: pos_invoice
   - label: 其他
