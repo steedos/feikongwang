@@ -3,7 +3,6 @@ columns:
   - field: name
   - field: travel_number
   - field: applicant
-  - field: application_time
   - field: business_purpose
   - field: instance_state
   - field: created_by
@@ -16,7 +15,6 @@ label: 所有
 mobile_columns:
   - field: name
   - field: travel_number
-  - field: application_time
   - field: applicant
   - field: business_purpose
   - field: instance_state
