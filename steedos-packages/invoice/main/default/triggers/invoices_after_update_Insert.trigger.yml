@@ -1,0 +1,21 @@
+name: invoices_after_update_Insert
+listenTo: invoices
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: |-
+  // 创建记录时，不填写”报销“或“应付合同”字段，状态默认为“未关联记录”；
+  // 创建记录时，填写”报销“或“应付合同”字段，状态默认为“未提交审批”；
+  const { doc, previousDoc } = ctx.params;
+  const invoicesObj = this.getObject('invoices');
+  if (doc.purchase_order || doc.expense_reports) {
+      await invoicesObj.directUpdate(doc._id, {
+          state: "unsubmitted"
+      })
+  } else if (!doc.state){
+      await invoicesObj.directUpdate(doc._id, {
+          state: "unassociated"
+      })
+  }
+locked: false
