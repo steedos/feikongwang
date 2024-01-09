@@ -4,4 +4,4 @@ reference_to: accounts
 sort_no: 10
 type: lookup
 required: true
-is_wide: true
+is_wide: false

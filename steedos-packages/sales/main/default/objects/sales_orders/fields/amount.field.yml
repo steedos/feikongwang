@@ -3,7 +3,7 @@ filterable: false
 hidden: false
 index: false
 is_name: false
-is_wide: true
+is_wide: false
 label: 合同金额
 omit: false
 precision: 18
