@@ -1,0 +1,43 @@
+name: 本月借款
+archived: false
+created_at: 2024-01-09T07:39:39.349Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: expense_advance_payment
+    filter:
+      - time-interval
+      - - field
+        - expense_advance_payment.date
+        - null
+      - current
+      - month
+    aggregation:
+      - - sum
+        - - field
+          - expense_advance_payment.amount
+          - null
+  type: query
+display: scalar
+enable_embedding: false
+entity_id: 659cf83bd7782305bf974f17
+id: 659cf83bd7782305bf974f17
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: expense_advance_payment
+updated_at: 2024-01-09T07:39:39.349Z
+visualization_settings: >-
+  {"table.cell_column":"sum","column_settings":{"[\"name\",\"sum\"]":{"prefix":"¥"}}}

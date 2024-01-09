@@ -1,0 +1,89 @@
+name: 费用趋势
+created_at: 2024-01-09T07:15:52.965Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: invoices
+    aggregation:
+      - - sum
+        - - field
+          - invoices.invoice_amount
+          - null
+    breakout:
+      - - field
+        - invoices.category
+        - null
+      - - field
+        - invoices.invoice_date
+        - temporal-unit: month
+  type: query
+display: line
+entity_id: 659cf2a8d7782305bf974f0b
+id: 659cf2a8d7782305bf974f0b
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: category
+    name: category
+    unit: null
+    display_name: 类别
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    source: breakout
+    visibility_type: normal
+    table_id: invoices
+    field_ref:
+      - field
+      - invoices.category
+      - null
+    remapped_to: external_category
+  - id: invoice_date
+    name: invoice_date
+    unit: month
+    display_name: 发票日期
+    base_type: type/Instant
+    effective_type: type/Instant
+    semantic_type: null
+    source: breakout
+    visibility_type: normal
+    table_id: invoices
+    field_ref:
+      - field
+      - invoices.invoice_date
+      - temporal-unit: month
+  - base_type: type/Integer
+    display_name: 发票含税金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+  - description: null
+    semantic_type: type/Name
+    table_id: expense_category
+    coercion_strategy: null
+    name: external_category
+    settings: null
+    source: fields
+    remapped_from: category
+    fk_field_id: category
+    field_ref:
+      - field
+      - expense_category.name
+      - source-field: invoices.category
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: expense_category.name
+    visibility_type: normal
+    display_name: 类别
+table_id: invoices
+updated_at: 2024-01-09T07:15:52.965Z
+visualization_settings: >-
+  {"column_settings":{"[\"name\",\"invoice_date\"]":{"date_style":"YYYY/M/D","date_separator":"/"},"[\"name\",\"sum\"]":{"prefix":"¥"}},"graph.x_axis.labels_enabled":false,"graph.y_axis.labels_enabled":false,"graph.dimensions":["invoice_date","category"],"graph.metrics":["sum"]}

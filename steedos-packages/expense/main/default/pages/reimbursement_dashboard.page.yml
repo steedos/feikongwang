@@ -1,4 +1,6 @@
 name: reimbursement_dashboard
+__filename: >-
+  /workspace/feikongwang/steedos-packages/expense/main/default/pages/reimbursement_dashboard.page.yml
 is_active: true
 label: 报销看板
 locked: false

@@ -1,0 +1,42 @@
+name: 本月审批中报销
+archived: false
+created_at: 2024-01-09T07:31:24.315Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  type: query
+  query:
+    source-table: expense_reports
+    aggregation:
+      - - sum
+        - - field
+          - expense_reports.reimbursed_amount
+          - null
+    filter:
+      - '='
+      - - field
+        - expense_reports.instance_state
+        - null
+      - pending
+  database: '1'
+display: scalar
+enable_embedding: false
+entity_id: 659cf64cd7782305bf974f11
+id: 659cf64cd7782305bf974f11
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 需要报销的金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: expense_reports
+updated_at: 2024-01-09T07:31:24.315Z
+visualization_settings: >-
+  {"funnel.rows":[{"key":"草稿","name":"草稿","enabled":true},{"key":"进行中","name":"进行中","enabled":true},{"key":"已核准","name":"已核准","enabled":true}],"funnel.order_dimension":"instance_state","pivot_table.column_split":{"rows":[["field","expense_reports.instance_state",null]],"columns":[],"values":[["aggregation",0]]},"table.cell_column":"sum","column_settings":{"[\"name\",\"sum\"]":{"number_style":"decimal","prefix":"¥"}}}
