@@ -72,5 +72,5 @@ options:
   - label: 台湾
     value: TW
 filterable: true
-inlineHelpText: 业务伙伴被分配至的区域。
+inlineHelpText: 客商被分配至的区域。
 sort_no: 25
