@@ -14,7 +14,7 @@
     "build": "lerna run build"
   },
   "dependencies": {
-    "@steedos/service-package-loader": "^2.6.2-beta.32",
+    "@steedos/service-package-loader": "^2.6.2-beta.35",
     "dotenv-flow": "^3.2.0",
     "moleculer": "^0.14.31",
     "ts-node": "^10.9.1",
