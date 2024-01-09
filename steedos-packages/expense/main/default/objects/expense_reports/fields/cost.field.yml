@@ -8,7 +8,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 费用
+label: 发票数
 multiple: false
 precision: 18
 primary: false
