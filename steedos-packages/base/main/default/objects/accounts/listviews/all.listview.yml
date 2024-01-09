@@ -14,7 +14,7 @@ filter_fields:
   - number
   - name
 filter_scope: space
-label: 所有客户
+label: 所有客商
 shared: true
 show_count: false
 sort_no: 90

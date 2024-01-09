@@ -14,6 +14,6 @@ filter_fields:
   - number
   - name
 filter_scope: mine
-label: 我的客户
+label: 我的客商
 shared: true
 show_count: false
