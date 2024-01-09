@@ -1,5 +1,5 @@
 name: customer
-label: 客户名称
+label: 客户
 reference_to: accounts
 sort_no: 10
 type: lookup
