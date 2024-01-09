@@ -1,0 +1,16 @@
+name: contract_label
+label: 合同标签
+sort_no: 75
+hidden: false
+index: false
+is_name: false
+is_wide: false
+multiple: true
+omit: false
+readonly: false
+reference_to: purchase_label
+required: false
+searchable: false
+sortable: false
+type: lookup
+filterable: true
