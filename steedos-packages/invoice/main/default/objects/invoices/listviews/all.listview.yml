@@ -1,8 +1,8 @@
 name: all
 columns:
+  - field: invoice_num
   - field: type
   - field: invoice_date
-  - field: invoice_num
   - field: invoice_amount
   - field: seller_name
   - field: owner

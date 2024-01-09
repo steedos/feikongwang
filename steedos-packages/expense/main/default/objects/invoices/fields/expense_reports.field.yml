@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 报销
+label: 报销单
 multiple: false
 primary: false
 readonly: false

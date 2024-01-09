@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 类别
+label: 费用类别
 multiple: false
 primary: false
 readonly: false

@@ -1,5 +1,6 @@
 name: supplier
 label: 供应商
+hidden: true
 reference_to: accounts
 sort_no: 143
 type: lookup
