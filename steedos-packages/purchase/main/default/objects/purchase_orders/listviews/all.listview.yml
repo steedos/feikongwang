@@ -6,6 +6,7 @@ columns:
   - field: signed_date
   - field: amount
   - field: amount_unpaid
+  - field: instance_state
 filter_scope: space
 filters: []
 label: 所有
