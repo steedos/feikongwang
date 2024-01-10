@@ -116,9 +116,11 @@ amis_schema: |-
                                                 }
                                                 }
                                             },
-                                             {
-                                                  "actionType": "refresh"
-                                             }
+                                            {
+                                            "componentId": "listview_invoices",
+                                            "actionType": "reload",
+                                            "dataMergeMode": "merge"
+                                            }
                                                
                                           ]
                                       }
