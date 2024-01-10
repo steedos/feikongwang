@@ -5,6 +5,9 @@ columns:
   - field: business_purpose
   - field: start
   - field: end
+  - field: reimbursed_amount
+  - field: advance_payment
+  - field: total_cost
   - field: expense_trips
   - field: instance_state
 filter_scope: space

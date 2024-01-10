@@ -8,7 +8,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 借款总金额
+label: 借款抵扣金额
 multiple: false
 precision: 18
 primary: false
