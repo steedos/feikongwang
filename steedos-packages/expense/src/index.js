@@ -4,6 +4,7 @@ const project = require('../package.json');
 const packageName = project.name;
 const packageLoader = require('@steedos/service-package-loader');
 
+const rests = require('./rests')
 /**
  * @typedef {import('moleculer').Context} Context Moleculer's Context
  * 软件包服务启动后也需要抛出事件。
@@ -34,7 +35,7 @@ module.exports = {
 	 * Actions
 	 */
 	actions: {
-
+		...rests,
 	},
 
 	/**

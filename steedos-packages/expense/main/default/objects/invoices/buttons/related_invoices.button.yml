@@ -1,0 +1,154 @@
+name: related_invoices
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "关联发票",
+              "id": "u:related_invoices",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "弹框标题",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-table",
+                                          "id": "u:54c8fa31172c",
+                                          "label": "对象表格",
+                                          "objectApiName": "invoices",
+                                          "fields": [
+                                              "type",
+                                              "category",
+                                              "invoice_num",
+                                              "invoice_code",
+                                              "invoice_amount",
+                                              "tax_amount",
+                                              "notax_amount",
+                                              "check_code",
+                                              "invoice_date",
+                                              "supplier",
+                                              "purchase_order",
+                                              "expense_reports",
+                                              "expense_trips",
+                                              "invalid_sign",
+                                              "purchaser_name",
+                                              "purchaser_register_num",
+                                              "seller_name",
+                                              "seller_register_num",
+                                              "state",
+                                              "receipt",
+                                              "verify_message",
+                                              "verify_result",
+                                              "verify_status",
+                                              "file",
+                                              "service_type",
+                                              "invoice_type",
+                                              "instance_state"
+                                          ],
+                                          "className": "sm:border sm:rounded sm:border-gray-300",
+                                          "crudMode": "table",
+                                          "amisCondition": {
+                                              "id": "5e3be12fbb59",
+                                              "conjunction": "and",
+                                              "children": [
+                                                  {
+                                                      "id": "25b44ae44a61",
+                                                      "left": {
+                                                          "type": "field",
+                                                          "field": "state"
+                                                      },
+                                                      "op": "equal",
+                                                      "right": "unassociated"
+                                                  }
+                                              ]
+                                          },
+                                          "crud": {
+                                              "autoFillHeight": false,
+                                              "id": "livew_invoices_add"
+                                          },
+                                          "debug": true
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:b7552ae1833c",
+                                  "data": {
+                                      "additionalFilters": [],
+                                      "uiSchema": "${uiSchema}",
+                                       "expenseReportsId": "${_master.recordId}"
+
+                                  },
+                                  "closeOnEsc": false,
+                                  "onEvent": {
+                                      "confirm": {
+                                          "weight": 0,
+                                          "actions": [
+                                              {
+                                                  "actionType": "custom",
+                                                  "script": "//获取单选框勾选信息\nconst uiSchema = event.data.uiSchema;\nconsole.log(\"=====\", uiSchema)\nconst listViewRef = event.context.scoped.getComponentById(\"livew_invoices_add\");\nconsole.log(\"listViewRef\", listViewRef)\n//勾选信息\nconst selectedItems = listViewRef.props.store.toJSON().selectedItems;\nconsole.log(\"selectedItems\", selectedItems);\nevent.data.item = JSON.stringify(selectedItems)\nconsole.log(\"===item\", event.data.item)\n\n\n"
+                                              },
+                                              {
+                                                "actionType": "ajax",
+                                                "outputVar": "responseResult",
+                                                "args": {
+                                                "options": {},
+                                                "api": {
+                                                    "url": "${context.rootUrl}/api/expense/expense_reports/add/invoices",
+                                                    "method": "get",
+                                                    "requestAdaptor": "",
+                                                    "adaptor": "",
+                                                    "messages": {},
+                                                    "headers": {
+                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                    },
+                                                    "data": {
+                                                    "invoices": "${item}",
+                                                    "expenseReportsId": "${expenseReportsId}"
+                                                    }
+                                                }
+                                                }
+                                            },
+                                             {
+                                                  "actionType": "refresh"
+                                             }
+                                               
+                                          ]
+                                      }
+                                  },
+                                  "size": "lg"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "visibleOn": "${_isRelated}",
+              "editorState": "default"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:da671f66bad4"
+  }
+is_enable: true
+label: 关联发票
+locked: false
+'on': list
+type: amis_button
+visible: true
