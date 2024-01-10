@@ -3,7 +3,7 @@ create: true
 filterable: false
 generated: false
 index: true
-is_name: true
+is_name: false
 is_wide: false
 label: 发票号码
 multiple: false

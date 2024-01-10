@@ -1,0 +1,7 @@
+name: name
+label: 发票编号
+required: false
+sort_no: 171
+formula: 'FP-{00000}'
+type: autonumber
+is_name: true
