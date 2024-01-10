@@ -5,7 +5,8 @@ amis_schema: |-
       "body": [
         {
             "type": "button",
-            "label": "识别发票文件",
+            "label": "智能识票",
+            "level": "primary",
             "id": "u:ocr",
             "onEvent": {
               "click": {
@@ -15,7 +16,7 @@ amis_schema: |-
                     "actionType": "dialog",
                     "dialog": {
                       "type": "dialog",
-                      "title": "识别发票文件",
+                      "title": "智能识票",
                       "body": [
                         {
                           "type": "form",
@@ -118,7 +119,7 @@ amis_schema: |-
       "bodyClassName": "p-0"
   }
 is_enable: true
-label: 识别发票文件
+label: 智能识票
 "on": list
 type: amis_button
 visible: true
