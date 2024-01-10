@@ -10,7 +10,7 @@
         "accstate": "normal",
         "enablestate": "enable",
         "isdefault": false,
-        "pk_bankdoc": "${space_id}_6261147c32cc250032e1aa0a",
+        "pk_bankdoc": "${space_id}_6261101332cc250032e1a9ae",
         "pk_currtype": "${space_id}_6261092232cc250032e1a973",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
@@ -36,7 +36,7 @@
         "accstate": "normal",
         "enablestate": "enable",
         "isdefault": true,
-        "pk_bankdoc": "${space_id}_6261148f32cc250032e1aa29",
+        "pk_bankdoc": "${space_id}_6261101332cc250032e1a9ac",
         "pk_currtype": "${space_id}_6261092232cc250032e1a973",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
@@ -62,7 +62,7 @@
         "accstate": "normal",
         "enablestate": "enable",
         "isdefault": true,
-        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_bankdoc": "${space_id}_6261101232cc250032e1a9aa",
         "pk_currtype": "${space_id}_6261092232cc250032e1a973",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
@@ -88,7 +88,7 @@
         "accstate": "normal",
         "enablestate": "enable",
         "isdefault": false,
-        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_bankdoc": "${space_id}_6261101332cc250032e1a9ad",
         "pk_currtype": "${space_id}_6261092e32cc250032e1a979",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
@@ -114,7 +114,7 @@
         "accstate": "normal",
         "enablestate": "enable",
         "isdefault": false,
-        "pk_bankdoc": "${space_id}_6261147232cc250032e1a9fa",
+        "pk_bankdoc": "${space_id}_6261101232cc250032e1a9ab",
         "pk_currtype": "${space_id}_6261092a32cc250032e1a977",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
@@ -140,7 +140,7 @@
         "accstate": "normal",
         "enablestate": "enable",
         "isdefault": false,
-        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_bankdoc": "${space_id}_6261101432cc250032e1a9af",
         "pk_currtype": "${space_id}_6261092232cc250032e1a973",
         "space": "JnBnMTjGB8c6xeCtA",
         "created": {
