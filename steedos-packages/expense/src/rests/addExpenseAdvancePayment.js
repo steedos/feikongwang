@@ -13,11 +13,19 @@ module.exports = {
          */
         const {expenseAdvancePayment,expenseReportsId} = ctx.params;
         const expenseAdvancePaymentObj = this.getObject('expense_advance_payment');
+        const expenseReportsObj = this.getObject('expense_reports');
         let expenseAdvancePayments = JSON.parse(expenseAdvancePayment)
         for(let expense_advance_payment of expenseAdvancePayments){
             await expenseAdvancePaymentObj.update(expense_advance_payment._id, {
                 expense_reports:expenseReportsId
             })
+          const expenseReportsDoc =   await expenseReportsObj.findOne(expenseReportsId);
+          //报销单如果报销关联了差旅，则同时应该更新借款单中的“应用到差旅
+          if(expenseReportsDoc.expense_trips){
+            await expenseAdvancePaymentObj.update(expense_advance_payment._id, {
+                expense_trips:expenseReportsDoc.expense_trips
+            })
+          }
         }
 
     }
