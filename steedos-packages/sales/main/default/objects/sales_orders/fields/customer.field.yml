@@ -5,3 +5,15 @@ sort_no: 10
 type: lookup
 required: true
 is_wide: false
+amis:
+  autoFill:
+    fillMapping:
+      "buyer": "${charge}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:accounts(filters: [[\"_id\", \"=\", \"${customer}\"]], top: 1){name,charge}}"
+      adaptor: "console.log('11==> ', payload);payload.data.buyer=payload.data.rows[0].charge; return payload; "
