@@ -7,7 +7,7 @@ is_creator: true
 is_new_window: false
 is_use_ie: false
 is_use_iframe: false
-locked: falsea
+locked: false
 mobile: true
 showSidebar: false
 sort: 20
