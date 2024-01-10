@@ -22,7 +22,13 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "appId": "${appId}",
-                            "id": "u:bb949f3fa2c1"
+                            "id": "u:bb949f3fa2c1",
+                            "mode": "read",
+                            "className": "mb-4",
+                            "excludedFields": [
+                                "modified",
+                                "modified_by"
+                            ]
                         },
                         {
                             "type": "steedos-object-related-listview",
