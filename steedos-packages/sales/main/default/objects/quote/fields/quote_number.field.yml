@@ -1,5 +1,5 @@
 name: quote_number
-formula: '{0000000}'
+formula: 'BJ-{00000}'
 label: 报价编号
 omit: true
 readonly: true

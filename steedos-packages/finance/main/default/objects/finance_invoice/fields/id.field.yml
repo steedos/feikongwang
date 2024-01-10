@@ -1,6 +1,6 @@
 name: id
 filterable: true
-formula: 'KP-{YYYY}-{0000}'
+formula: 'KP-{00000}'
 hidden: false
 index: false
 is_name: true

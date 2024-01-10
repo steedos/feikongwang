@@ -1,5 +1,5 @@
 name: order_item_number
-formula: '{YYYY}{MM}{00000}'
+formula: 'POP-{00000}'
 index: true
 inlineHelpText: 识别订单产品记录的自动生成的编号。（只读）
 is_name: true

@@ -1,6 +1,6 @@
 name: 'no'
 filterable: false
-formula: 'KPMX-{YYYY}-{0000}'
+formula: 'KPMX-{00000}'
 hidden: false
 index: false
 is_name: true

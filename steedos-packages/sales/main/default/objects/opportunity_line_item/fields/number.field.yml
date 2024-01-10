@@ -1,5 +1,5 @@
 name: number
-formula: '{00000}'
+formula: 'SJMX-{00000}'
 hidden: false
 is_name: true
 label: 序号

@@ -1,5 +1,5 @@
 name: order_number
-formula: '{YYYY}{MM}{0000}'
+formula: 'PO-{00000}'
 index: true
 is_name: true
 label: 订单编号

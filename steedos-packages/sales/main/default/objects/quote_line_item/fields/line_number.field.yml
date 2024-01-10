@@ -1,5 +1,5 @@
 name: line_number
-formula: '{0000000}'
+formula: 'BJMX-{00000}'
 index: true
 is_name: true
 label: 行项目编号
