@@ -14,10 +14,11 @@ reference_to: expense_category
 required: true
 searchable: false
 show_as_qr: false
-sort_no: 120
+sort_no: 5
 sortable: false
 type: lookup
 unique: false
+group: 发票信息
 write_requires_master_read: false
 filtersFunction:  |-
   function(filters,values) {
