@@ -19,6 +19,7 @@ sortable: false
 type: lookup
 unique: false
 write_requires_master_read: false
+inlineHelpText: 请选择审批通过的差旅申请单。
 filtersFunction:  |-
   function(filters,values) {
     return [["instance_state","=","approved"]];

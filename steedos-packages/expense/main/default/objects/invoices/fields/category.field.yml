@@ -19,6 +19,7 @@ sortable: false
 type: lookup
 unique: false
 group: 发票信息
+inlineHelpText: 请选择启用的费用类别。
 write_requires_master_read: false
 filtersFunction:  |-
   function(filters,values) {
