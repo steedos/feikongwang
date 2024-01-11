@@ -1,4 +1,4 @@
-name: expense_reports_afterUpdate
+name: expense_reports_reports_afterUpdate
 listenTo: expense_reports
 when:
   - afterUpdate
@@ -13,13 +13,13 @@ handler: >-
   const invoicesDoc = await invoicesObj.find({ filters: ['expense_reports', '=',
   doc._id] })
 
-  if (previousDoc.instance_state != 'approved' && doc.instance_state
-  =='approved') {
+  if (previousDoc.instance_state != 'approved' && doc.instance_state ==
+  'approved') {
       if (invoicesDoc && invoicesDoc.length) {
           for (let invoices of invoicesDoc) {
               await invoicesObj.directUpdate(invoices._id, {
                   state: "approved"
-              })
+             })
           }
       }
   } else if (previousDoc.instance_state != 'approval' && doc.instance_state ==

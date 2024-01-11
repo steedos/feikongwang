@@ -9,13 +9,23 @@ handler: |-
   // 创建记录时，填写”报销“或“应付合同”字段，状态默认为“未提交审批”；
   const { doc, previousDoc } = ctx.params;
   const invoicesObj = this.getObject('invoices');
-  if (doc.purchase_order || doc.expense_reports) {
-      await invoicesObj.directUpdate(doc._id, {
-          state: "unsubmitted"
-      })
-  } else if (!doc.state){
-      await invoicesObj.directUpdate(doc._id, {
-          state: "unassociated"
-      })
+  // 新增发票
+  if (!doc.state) {
+      if (doc.purchase_order || doc.expense_reports) {
+          await invoicesObj.directUpdate(doc._id, {
+              state: "unsubmitted"
+          })
+      } else {
+          await invoicesObj.directUpdate(doc._id, {
+              state: "unassociated"
+          })
+      }
+  } else if (doc.state == "unassociated"){
+      if ((!previousDoc.purchase_order && doc.purchase_order) || (!previousDoc.expense_reports && doc.expense_reports)) {
+          // 修改发票
+          await invoicesObj.directUpdate(doc._id, {
+              state: "unsubmitted"
+          })
+      }
   }
 locked: false
