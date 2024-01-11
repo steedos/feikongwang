@@ -21,7 +21,7 @@
         "company_ids": [
             "z86R5s8DCv7wQydKo"
         ],
-        "id": "SP-2021-0003",
+        "id": "Demo-SP-2021-0003",
         "verified": "done",
         "project": "${space_id}_630486ce9cc40f03d6e7cb60",
         "due_date": {
@@ -51,7 +51,7 @@
             "z86R5s8DCv7wQydKo"
         ],
         "project": "${space_id}_630486ce9cc40f03d6e7cb60",
-        "id": "SP-2021-0001",
+        "id": "Demo-SP-2021-0001",
         "count": 2,
         "actual_date": {
             "$date": "2022-08-03T00:00:00Z"

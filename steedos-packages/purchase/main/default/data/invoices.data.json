@@ -113,6 +113,7 @@
         "type": "vat_invoice",
         "file": "${space_id}_659770780ace2505ccf58197",
         "ocr_log": "${space_id}_659770780ace2505ccf58196",
+        "category": "${space_id}_659cb44972192405bf82216b",
         "ocr_result": {
             "AmountInWords": [
                 {

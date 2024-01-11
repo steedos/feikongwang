@@ -18,7 +18,7 @@
         "modified": "2024-01-05T02:56:09.937Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "contract_code": "YF-00001"
+        "contract_code": "Demo-YF-00001"
     },
     {
         "_id": "659779eb0ace2505ccf581ef",
@@ -38,6 +38,6 @@
         "modified": "2024-01-05T03:39:23.682Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "contract_code": "YF-00002"
+        "contract_code": "Demo-YF-00002"
     }
 ]

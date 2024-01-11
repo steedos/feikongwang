@@ -28,7 +28,7 @@
         "company_ids": [
             "h4zSCDAYLtnZCu8kx"
         ],
-        "id": "FK-2021-0005",
+        "id": "Demo-FK-2021-0005",
         "account_banks": "中国银行股份有限公司上海市紫薇路支行",
         "contract_amount": 200000,
         "contract_types_name": "买卖合同",
@@ -72,7 +72,7 @@
         "company_ids": [
             "h4zSCDAYLtnZCu8kx"
         ],
-        "id": "FK-2021-0001",
+        "id": "Demo-FK-2021-0001",
         "account_banks": "中国银行股份有限公司上海市紫薇路支行",
         "contract_amount": 200000,
         "contract_types_name": "买卖合同",
@@ -114,7 +114,7 @@
         "instance_state": "draft",
         "payment_status": "paid",
         "project": "${space_id}_62fefd49f63a8f27ae6a025f",
-        "id": "FK-2021-0002",
+        "id": "Demo-FK-2021-0002",
         "account_banks": "中国银行股份有限公司上海市紫薇路支行",
         "contract_amount": 900000,
         "contract_types_name": "买卖合同",
@@ -158,7 +158,7 @@
         "instance_state": "draft",
         "payment_status": "unpaid",
         "project": "${space_id}_62fefd49f63a8f27ae6a025f",
-        "id": "FK-2021-0003",
+        "id": "Demo-FK-2021-0003",
         "account_banks": "中国银行股份有限公司上海市紫薇路支行",
         "contract_amount": 900000,
         "contract_types_name": "买卖合同",
@@ -198,7 +198,7 @@
         "amount_type": "immobilization",
         "instance_state": "draft",
         "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "id": "FK-2021-0004",
+        "id": "Demo-FK-2021-0004",
         "account_banks": "中国农业银行股份有限公司上海陆家嘴支行",
         "contract_amount": 500000,
         "contract_types_name": "买卖合同",

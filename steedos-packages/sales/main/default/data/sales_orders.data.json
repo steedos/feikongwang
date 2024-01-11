@@ -17,7 +17,7 @@
         "modified": "2024-01-05T03:57:43.395Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "contract_code": "YS-00001"
+        "contract_code": "Demo-YS-00001"
     },
     {
         "_id": "${space_id}_6597bf52d411ad05be86b13f",
@@ -38,7 +38,7 @@
         "modified": "2024-01-05T08:35:52.723Z",
         "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "contract_code": "YS-00002"
+        "contract_code": "Demo-YS-00002"
     },
     {
         "_id": "${space_id}_6597bf85d411ad05be86b140",
@@ -59,6 +59,6 @@
         "modified": "2024-01-05T08:36:21.375Z",
         "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "contract_code": "YS-00003"
+        "contract_code": "Demo-YS-00003"
     }
 ]

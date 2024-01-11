@@ -15,7 +15,7 @@
         "applicant": "${space_owner_id}",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "travel_number": "TRIP-00004"
+        "travel_number": "Demo-TRIP-00004"
     },
     {
         "_id": "${space_id}_6597a50e0ace2505ccf58221",
@@ -33,6 +33,6 @@
         "applicant": "${space_owner_id}",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "travel_number": "TRIP-00005"
+        "travel_number": "Demo-TRIP-00005"
     }
 ]

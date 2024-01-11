@@ -20,7 +20,7 @@
         "company_ids": [
             "65976f1e0ace2505ccf58189"
         ],
-        "id": "KP-2021-0005",
+        "id": "Demo-KP-2021-0005",
         "credit_code": "62310115MJ5209999Z",
         "excluding_tax_amount": 141000,
         "count": 2,
@@ -60,7 +60,7 @@
             "65976f1e0ace2505ccf58189"
         ],
         "instance_state": null,
-        "id": "KP-2021-0006",
+        "id": "Demo-KP-2021-0006",
         "credit_code": "62310115MJ5209999Z",
         "excluding_tax_amount": 235000,
         "count": 1,
@@ -106,7 +106,7 @@
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "instance_state": "draft",
-        "id": "KP-2024-0001",
+        "id": "Demo-KP-2024-0001",
         "address": "",
         "bank": "",
         "credit_code": "62310115MJ5209999Z",

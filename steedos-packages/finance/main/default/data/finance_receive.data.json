@@ -27,7 +27,7 @@
         "company_ids": [
             "dn5aRN3dsWKAK73dZ"
         ],
-        "id": "SK-2021-0004",
+        "id": "Demo-SK-2021-0004",
         "account_banks": "中国农业银行股份有限公司上海陆家嘴支行",
         "credit_code": "62310115MJ5209999Z",
         "billno": "OPT-20220416-6690",
@@ -62,7 +62,7 @@
         "company_ids": [
             "dn5aRN3dsWKAK73dZ"
         ],
-        "id": "SK-2021-0001",
+        "id": "Demo-SK-2021-0001",
         "account_banks": "中国农业银行股份有限公司上海陆家嘴支行",
         "credit_code": "62310115MJ5209999Z",
         "contract_receipts_state": "received",
@@ -99,7 +99,7 @@
         ],
         "contract_receipts_state": "received",
         "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "SK-2021-0002",
+        "id": "Demo-SK-2021-0002",
         "account_banks": "",
         "credit_code": "91430000183786683Q",
         "receipt_date": {
@@ -134,7 +134,7 @@
         ],
         "contract_receipts_state": "received",
         "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "SK-2021-0003",
+        "id": "Demo-SK-2021-0003",
         "account_banks": "",
         "credit_code": "91430000183786683Q",
         "receipt_date": {
@@ -174,7 +174,7 @@
             "dn5aRN3dsWKAK73dZ"
         ],
         "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "id": "SK-2021-0005",
+        "id": "Demo-SK-2021-0005",
         "account_banks": "",
         "credit_code": "62310115MJ5209999Z",
         "amount_description": "首付款"
@@ -207,7 +207,7 @@
         "company_ids": [
             "dn5aRN3dsWKAK73dZ"
         ],
-        "id": "SK-2021-0007",
+        "id": "Demo-SK-2021-0007",
         "account_banks": "",
         "credit_code": "26548997636564656R",
         "amount_description": "项目启动费",
@@ -243,7 +243,7 @@
         "company_ids": [
             "dn5aRN3dsWKAK73dZ"
         ],
-        "id": "SK-2021-0008",
+        "id": "Demo-SK-2021-0008",
         "account_banks": "",
         "credit_code": "26548997636564656R",
         "project": "${space_id}_62fefd49f63a8f27ae6a025f"
@@ -278,7 +278,7 @@
         "company_ids": [
             "dn5aRN3dsWKAK73dZ"
         ],
-        "id": "SK-2021-0009",
+        "id": "Demo-SK-2021-0009",
         "account_banks": "",
         "credit_code": "26548997636564656R",
         "project": "${space_id}_62fefd49f63a8f27ae6a025f"
@@ -310,7 +310,7 @@
             "dn5aRN3dsWKAK73dZ"
         ],
         "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "SK-2021-0006",
+        "id": "Demo-SK-2021-0006",
         "account_banks": "中国工商银行股份有限公司上海市正大广场支行",
         "credit_code": "91430000183786683Q",
         "due_date": {

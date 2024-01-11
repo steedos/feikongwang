@@ -51,7 +51,7 @@
         "company_ids": [
             "xu68SZ8mgJ9J7EmJE"
         ],
-        "name": "mac-001",
+        "name": "Demo-mac-001",
         "price_subtotal__c": 139980,
         "amount_receiverd": 5
     },
@@ -109,7 +109,7 @@
         "company_ids": [
             "xu68SZ8mgJ9J7EmJE"
         ],
-        "name": "mac-001",
+        "name": "Demo-mac-001",
         "price_subtotal__c": 44995,
         "amount_receiverd": 5
     }

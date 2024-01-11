@@ -285,7 +285,8 @@
         "verify_log": "6597707a0ace2505ccf5819a",
         "verify_message": "查验成功发票一致",
         "verify_result": "0001",
-        "verify_status": "passed"
+        "verify_status": "passed",
+        "category": "${space_id}_659cb44972192405bf82216b"
     },
     {
         "_id": "${space_id}_65977a990ace2505ccf58201",
