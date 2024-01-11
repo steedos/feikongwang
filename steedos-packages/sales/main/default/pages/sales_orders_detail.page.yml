@@ -1,0 +1,13 @@
+name: sales_orders_detail
+is_active: true
+label: 应收合同记录页
+locked: false
+object_name: sales_orders
+pageAssignments:
+  - type: orgDefault
+    page: sales_orders_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []
