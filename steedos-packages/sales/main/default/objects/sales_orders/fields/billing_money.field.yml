@@ -1,17 +1,17 @@
-name: amount_receive
+name: billing_money
 filterable: false
 hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 合同应收
+label: 开票金额
 omit: false
 precision: 200
 readonly: false
 required: false
 scale: 2
 searchable: false
-sort_no: 75
+sort_no: 85
 sortable: true
 type: number
 visible_on: "{{global.mode ==='read' ? true : false}}"

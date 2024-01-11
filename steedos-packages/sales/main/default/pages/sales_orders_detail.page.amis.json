@@ -44,7 +44,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "收款计划",
+                    "title": "合同收款",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -53,25 +53,18 @@
                             "recordId": "${recordId}",
                             "id": "u:de6de07e28d6",
                             "relatedObjectApiName": "sales_orders_receipts"
-                        }
-                    ],
-                    "id": "u:33cf5d9b0026",
-                    "className": "p-l-xs p-t"
-                },
-                {
-                    "title": "收款记录",
-                    "body": [
+                        },
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:59dbe3c87fd2",
+                            "id": "u:c7a35e3745f9",
                             "relatedObjectApiName": "finance_receive"
                         }
                     ],
-                    "className": "p-l-xs p-t",
-                    "id": "u:98613522ffcc"
+                    "id": "u:33cf5d9b0026",
+                    "className": "p-l-xs p-t"
                 },
                 {
                     "title": "开票记录",
@@ -85,8 +78,8 @@
                             "relatedObjectApiName": "finance_invoice"
                         }
                     ],
-                    "id": "u:ac27617bf430",
-                    "className": "p-t p-l-xs"
+                    "className": "p-t p-l-xs",
+                    "id": "u:ac27617bf430"
                 }
             ],
             "id": "u:c3478c2cbdba"

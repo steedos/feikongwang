@@ -1,0 +1,6 @@
+name: buyer_mobile
+label: 联系电话
+sort_no: 46
+type: text
+required: false
+visible_on: "{{global.mode ==='read' ? true : false}}"

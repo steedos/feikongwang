@@ -14,3 +14,4 @@ searchable: false
 sort_no: 40
 sortable: true
 type: number
+group: 数据概览

@@ -15,5 +15,5 @@ enable_tasks: false
 enable_workflow: true
 icon: metrics
 is_enable: true
-label: 收款
+label: 收款记录
 version: 2
