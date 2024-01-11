@@ -3,7 +3,7 @@ columns:
   - field: name
   - field: amount
   - field: date
-  - field: expense_trips
+  - field: expense_reports
   - field: instance_state
   - field: created_by
   - field: created
