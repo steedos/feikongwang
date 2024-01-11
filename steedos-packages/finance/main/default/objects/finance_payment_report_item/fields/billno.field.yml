@@ -1,0 +1,15 @@
+name: billno
+data_type: text
+filterable: true
+formula: report_id.billno
+formula_blank_value: zeroes
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 单据编号
+omit: false
+searchable: false
+sort_no: 20
+sortable: false
+type: formula

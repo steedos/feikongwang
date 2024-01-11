@@ -1,0 +1,17 @@
+name: currency
+filterable: false
+hidden: true
+index: false
+is_name: false
+is_wide: false
+label: 币种
+multiple: false
+omit: false
+readonly: false
+reference_to: currency
+required: false
+searchable: false
+sort_no: 810
+sortable: false
+type: lookup
+visible_on: false

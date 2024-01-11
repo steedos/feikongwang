@@ -12,5 +12,7 @@ required: true
 searchable: false
 sort_no: 10
 sortable: true
-type: lookup
+type: master_detail
 create: false
+write_requires_master_read: true
+

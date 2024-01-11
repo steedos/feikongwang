@@ -18,7 +18,7 @@ show_as_qr: false
 sort_no: 130
 sortable: false
 summary_field: amount
-summary_object: finance_payment
+summary_object: finance_payment_report_item
 summary_type: sum
 type: summary
 unique: false
