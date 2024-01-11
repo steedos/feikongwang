@@ -30,7 +30,8 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:01ea21d5a7e2",
-                            "relatedObjectApiName": "invoices"
+                            "relatedObjectApiName": "invoices",
+                            "visibleOn": "${_master && _master.record.instance_state==\"approved\"}"
                         },
                         {
                             "type": "steedos-object-related-listview",
@@ -38,7 +39,8 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:b2e7f364e24c",
-                            "relatedObjectApiName": "expense_advance_payment"
+                            "relatedObjectApiName": "expense_advance_payment",
+                            "visibleOn": "${_master && _master.record.instance_state==\"approved\"}"
                         },
                         {
                             "type": "steedos-object-related-listview",
