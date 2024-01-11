@@ -14,9 +14,25 @@ sort: 20
 tab_groups:
   - group_name: 设置
     default_open: true
+    id: 设置
+tab_items:
+  purchase_dashboard:
+    index: 1
+  object_purchase_orders:
+    index: 2
+  object_accounts:
+    index: 3
+  object_invoices:
+    index: 4
+  object_finance_payment_reports:
+    index: 5
+  object_instance_tasks:
+    index: 6
 tabs:
+  - purchase_dashboard
   - object_purchase_orders
   - object_accounts
   - object_invoices
   - object_finance_payment_reports
+  - object_instance_tasks
 visible: true
