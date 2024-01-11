@@ -5,7 +5,7 @@ generated: false
 index: false
 is_name: false
 is_wide: false
-label: 客户性质
+label: 客商性质
 multiple: false
 options:
   - label: 企业
