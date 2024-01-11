@@ -12,8 +12,6 @@ columns:
     wrap: false
   - field: billno
     wrap: false
-  - field: instance_state
-    wrap: false
   - field: amount_description
     wrap: false
 filter_fields:
