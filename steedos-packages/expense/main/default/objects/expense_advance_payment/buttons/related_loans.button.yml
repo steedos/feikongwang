@@ -1,124 +1,119 @@
 name: related_loans
 amis_schema: |-
-  {
-      "type": "service",
-      "body": [
-          {
-              "type": "button",
-              "label": "关联借款",
-              "id": "u:related_loans",
-              "editorState": "default",
-              "onEvent": {
-                  "click": {
-                      "weight": 0,
-                      "actions": [
-                          {
-                              "actionType": "dialog",
-                              "dialog": {
-                                  "type": "dialog",
-                                  "title": "弹框标题",
-                                  "body": [
-                                      {
-                                          "type": "steedos-object-table",
-                                          "label": "对象表格",
-                                          "objectApiName": "expense_advance_payment",
-                                          "fields": [
-                                              "name",
-                                              "amount",
-                                              "date",
-                                              "expense_trips",
-                                              "expense_reports",
-                                              "instance_state"
-                                          ],
-                                          "className": "sm:border sm:rounded sm:border-gray-300",
-                                          "id": "u:9e0bfaa9f7b9",
-                                          "crudMode": "table",
-                                          "crud": {
-                                              "autoFillHeight": false,
-                                              "id": "livew_expense_advance_payment_add"
-                                          },
-                                          "amisCondition": {
-                                              "id": "538f4481d940",
-                                              "conjunction": "and",
-                                              "children": []
-                                          },
-                                          "requestAdaptor": "\nconst query = `{rows:expense_advance_payment(filters: [[[\"instance_state\",\"=\",\"approved\"],\"and\",[\"expense_reports\",\"=\",null]],\"and\",[[]]], top: 20, skip: 0, sort: \"\"){_id,name,amount,date,expense_trips,expense_reports,instance_state,,_display:_ui{amount,date,expense_trips,expense_reports,instance_state}},count:expense_advance_payment__count(filters:[[[\"instance_state\",\"=\",\"approved\"],\"and\",[\"expense_reports\",\"=\",\"null\"]],\"and\",[[]]])}`\napi.data.query = query;\nreturn api;",
-                                            "adaptor": "let expense_trips = api.body.self.__super._master.record.expense_trips\nlet datas = payload.data.rows\nlet list = []\nif (expense_trips) {\n  if (datas && datas.length) {\n    for (let i = 0; i < datas.length; i++) {\n      if (datas[i].expense_trips) {\n        if (datas[i].expense_trips == expense_trips) {\n          list.push(datas[i])\n        }\n      } else {\n        list.push(datas[i])\n      }\n     \n    }\n  }\n  payload.data.rows = list\n}\nconsole.log(\"payload\",payload)\nconsole.log(\"===111\", expense_trips)\nreturn payload\n\n"
-                                      }
-                                  ],
-                                  "showCloseButton": true,
-                                  "showErrorMsg": true,
-                                  "showLoading": true,
-                                  "className": "app-popover",
-                                  "id": "u:21176532f14b",
-                                  "closeOnEsc": false,
-                                  "size": "lg",
-                                  "data": {
-                                      "additionalFilters": [],
-                                      "uiSchema": "${uiSchema}",
-                                      "expenseReportsId": "${_master.recordId}",
-                                      "expense_trips": "${_master && _master.expense_trips}",
-                                      "&": "$$"
-                                  },
-                                  "onEvent": {
-                                      "confirm": {
-                                          "weight": 0,
-                                          "actions": [
-                                              {
-                                                  "actionType": "custom",
-                                                  "script": "//获取单选框勾选信息\nconst uiSchema = event.data.uiSchema;\nconsole.log(\"=====\", uiSchema)\nconst listViewRef = event.context.scoped.getComponentById(\"livew_expense_advance_payment_add\");\nconsole.log(\"listViewRef\", listViewRef)\n//勾选信息\nconst selectedItems = listViewRef.props.store.toJSON().selectedItems;\nconsole.log(\"selectedItems\", selectedItems);\nevent.data.item = JSON.stringify(selectedItems)\nconsole.log(\"===item\", event.data.item)\n\n\n"
-                                              },
-                                              {
-                                                  "actionType": "ajax",
-                                                  "outputVar": "responseResult",
-                                                  "args": {
-                                                      "options": {},
-                                                      "api": {
-                                                          "url": "/api/expense/expense_reports/add/expense_advance_payment",
-                                                          "method": "get",
-                                                          "adaptor": "",
-                                                          "requestAdaptor": "",
-                                                          "messages": {},
-                                                          "headers": {
-                                                              "Authorization": "Bearer ${context.tenantId},${context.authToken}"
-                                                          },
-                                                          "data": {
-                                                              "expenseReportsId": "${expenseReportsId}",
-                                                              "expenseAdvancePayment": "${item}",
-                                                               "&": "$$"
-                                                          }
-                                                      }
-                                                  }
-                                              },
-                                              {
-                                                  "componentId": "listview_expense_advance_payment",
-                                                  "actionType": "reload",
-                                                  "dataMergeMode": "merge"
-                                              }
-                                          ]
-                                      }
-                                  }
-                              }
-                          }
-                      ]
+ {
+  "type": "service",
+  "id": "u:007ac3ac5452",
+  "body": [
+    {
+      "type": "button",
+      "label": "关联借款",
+      "id": "u:related_loans",
+      "onEvent": {
+        "click": {
+          "weight": 0,
+          "actions": [
+            {
+              "actionType": "dialog",
+              "dialog": {
+                "type": "dialog",
+                "title": "请选择未关联报销的借款",
+                "body": [
+                  {
+                    "type": "steedos-object-table",
+                    "label": "对象表格",
+                    "objectApiName": "expense_advance_payment",
+                    "fields": [
+                      "name",
+                      "amount",
+                      "date",
+                      "expense_reports"
+                    ],
+                    "className": "sm:border sm:rounded sm:border-gray-300",
+                    "id": "u:9e0bfaa9f7b9",
+                    "crudMode": "table",
+                    "crud": {
+                      "autoFillHeight": false,
+                      "id": "livew_expense_advance_payment_add"
+                    },
+                    "amisCondition": {
+                      "id": "538f4481d940",
+                      "conjunction": "and",
+                      "children": []
+                    },
+                    "requestAdaptor": "\nconst query = `{rows:expense_advance_payment(filters: [[[\"instance_state\",\"=\",\"approved\"],\"and\",[\"expense_reports\",\"=\",null]],\"and\",[[]]], top: 20, skip: 0, sort: \"\"){_id,name,amount,date,expense_reports,instance_state,,_display:_ui{amount,date,expense_reports,instance_state}},count:expense_advance_payment__count(filters:[[[\"instance_state\",\"=\",\"approved\"],\"and\",[\"expense_reports\",\"=\",\"null\"]],\"and\",[[]]])}`\napi.data.query = query;\nreturn api;",
+                    "adaptor": "\n\n"
                   }
-              },
-              "visibleOn": "${_isRelated}"
-          }
-      ],
-      "regions": [
-          "body"
-      ],
-      "data": {
-          "context": {},
-          "dataComponentId": "",
-          "record_id": "",
-          "record": {},
-          "permissions": {}
+                ],
+                "showCloseButton": true,
+                "showErrorMsg": true,
+                "showLoading": true,
+                "className": "app-popover",
+                "id": "u:21176532f14b",
+                "closeOnEsc": false,
+                "size": "lg",
+                "data": {
+                  "additionalFilters": [],
+                  "uiSchema": "${uiSchema}",
+                  "expenseReportsId": "${_master.recordId}",
+                  "expense_trips": "${_master && _master.expense_trips}",
+                  "&": "$$"
+                },
+                "onEvent": {
+                  "confirm": {
+                    "weight": 0,
+                    "actions": [
+                      {
+                        "actionType": "custom",
+                        "script": "//获取单选框勾选信息\nconst uiSchema = event.data.uiSchema;\nconsole.log(\"=====\", uiSchema)\nconst listViewRef = event.context.scoped.getComponentById(\"livew_expense_advance_payment_add\");\nconsole.log(\"listViewRef\", listViewRef)\n//勾选信息\nconst selectedItems = listViewRef.props.store.toJSON().selectedItems;\nconsole.log(\"selectedItems\", selectedItems);\nevent.data.item = JSON.stringify(selectedItems)\nconsole.log(\"===item\", event.data.item)\n\n\n"
+                      },
+                      {
+                        "actionType": "ajax",
+                        "outputVar": "responseResult",
+                        "args": {
+                          "options": {},
+                          "api": {
+                            "url": "/api/expense/expense_reports/add/expense_advance_payment",
+                            "method": "get",
+                            "adaptor": "",
+                            "requestAdaptor": "",
+                            "messages": {},
+                            "headers": {
+                              "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                            },
+                            "data": {
+                              "expenseReportsId": "${expenseReportsId}",
+                              "expenseAdvancePayment": "${item}",
+                              "&": "$$"
+                            }
+                          }
+                        }
+                      },
+                       {
+                         "actionType": "refresh"
+                        }
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
       },
-      "bodyClassName": "p-0",
-      "id": "u:007ac3ac5452"
-  }
+      "visibleOn": "${_isRelated}"
+    }
+  ],
+  "regions": [
+    "body"
+  ],
+  "data": {
+    "context": {},
+    "dataComponentId": "",
+    "record_id": "",
+    "record": {},
+    "permissions": {}
+  },
+  "bodyClassName": "p-0"
+ }
 is_enable: true
 label: 关联借款
 locked: false
