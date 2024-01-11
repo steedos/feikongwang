@@ -1,0 +1,13 @@
+name: purchase_order_detail
+is_active: true
+label: 应付合同详情页
+locked: false
+object_name: purchase_orders
+pageAssignments:
+  - type: orgDefault
+    page: purchase_order_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []
