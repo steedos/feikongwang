@@ -19,9 +19,12 @@ tab_items:
     index: 3
   object_finance_receive:
     index: 4
+  object_instance_tasks:
+    index: 5
 tabs:
   - object_sales_orders
   - object_accounts
   - object_finance_invoice
   - object_finance_receive
+  - object_instance_tasks
 visible: true
