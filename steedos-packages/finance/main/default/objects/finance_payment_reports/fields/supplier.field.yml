@@ -14,4 +14,3 @@ searchable: true
 sort_no: 60
 sortable: false
 type: lookup
-create: false
