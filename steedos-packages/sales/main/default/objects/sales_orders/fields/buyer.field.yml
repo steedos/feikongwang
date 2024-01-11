@@ -3,4 +3,5 @@ label: 联系人
 sort_no: 45
 type: lookup
 required: true
-reference_to: users
+reference_to: contacts
+multiple: false

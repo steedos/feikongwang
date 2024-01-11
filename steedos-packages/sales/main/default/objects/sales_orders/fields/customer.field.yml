@@ -8,12 +8,12 @@ is_wide: false
 amis:
   autoFill:
     fillMapping:
-      "buyer": "${charge}"
+      "buyer": "${buyer}"
     api:
       url: "${context.rootUrl}/graphql"
       method: post
       headers: 
         Authorization: "Bearer ${context.tenantId},${context.authToken}"
       data:
-        query: "{rows:accounts(filters: [[\"_id\", \"=\", \"${customer}\"]], top: 1){name,charge}}"
-      adaptor: "console.log('11==> ', payload);payload.data.buyer=payload.data.rows[0].charge; return payload; "
+        query: "{rows:contacts(filters: [[\"account\", \"=\", \"${customer}\"]], top: 10){name,_id}}"
+      adaptor: "console.log('11==> ', payload);var rows = payload.data.rows; if(rows && rows.length){ payload.data.buyer=rows[0]._id; } return payload;"
