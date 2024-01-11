@@ -10,6 +10,7 @@ columns:
   - field: total_cost
   - field: expense_trips
   - field: instance_state
+  - field: created
 filter_scope: space
 filters: []
 is_enable: true
@@ -27,7 +28,7 @@ searchable_fields:
   - field: created
 shared: true
 sort:
-  - field_name: start
+  - field_name: created
     order: desc
 sort_no: 100
 type: grid
