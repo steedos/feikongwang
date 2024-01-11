@@ -1,0 +1,8 @@
+name: purchase_dashboard
+is_active: true
+label: 应付看板
+locked: false
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

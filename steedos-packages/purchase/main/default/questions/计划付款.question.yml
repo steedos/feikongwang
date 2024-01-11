@@ -1,0 +1,54 @@
+name: 计划付款
+archived: false
+created_at: 2024-01-10T03:09:58.006Z
+creator_id: 0958b2e7-61cf-4778-b9b7-cc1378811cd3
+database_id: '1'
+dataset_query:
+  query:
+    source-table: purchase_order_payments
+    breakout:
+      - - field
+        - purchase_order_payments.due_date
+        - temporal-unit: month
+    aggregation:
+      - - sum
+        - - field
+          - purchase_order_payments.amount
+          - null
+  type: query
+  database: '1'
+display: bar
+enable_embedding: false
+entity_id: 659e0a8658bef705bed40b30
+id: 659e0a8658bef705bed40b30
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: due_date
+    name: due_date
+    unit: month
+    display_name: 计划付款时间
+    base_type: type/Instant
+    effective_type: type/Instant
+    semantic_type: null
+    source: breakout
+    visibility_type: normal
+    table_id: purchase_order_payments
+    field_ref:
+      - field
+      - purchase_order_payments.due_date
+      - temporal-unit: month
+  - base_type: type/Integer
+    display_name: 付款金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: purchase_order_payments
+updated_at: 2024-01-10T03:09:58.006Z
+visualization_settings: >-
+  {"graph.dimensions":["due_date"],"graph.metrics":["sum"],"series_settings":{"sum":{"color":"#F7CBA9"}},"graph.x_axis.labels_enabled":false,"graph.y_axis.labels_enabled":false,"column_settings":{"[\"name\",\"due_date\"]":{"date_style":"YYYY/M/D"}}}

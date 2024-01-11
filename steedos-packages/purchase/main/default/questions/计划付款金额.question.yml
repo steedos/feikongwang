@@ -1,0 +1,33 @@
+name: 计划付款金额
+created_at: 2024-01-10T02:44:59.836Z
+creator_id: 0958b2e7-61cf-4778-b9b7-cc1378811cd3
+database_id: '1'
+dataset_query:
+  query:
+    source-table: purchase_order_payments
+    aggregation:
+      - - sum
+        - - field
+          - purchase_order_payments.amount
+          - null
+  type: query
+  database: '1'
+display: scalar
+entity_id: 659e04ab58bef705bed40b2b
+id: 659e04ab58bef705bed40b2b
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 付款金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: purchase_order_payments
+updated_at: 2024-01-10T02:44:59.836Z
+visualization_settings: '{}'

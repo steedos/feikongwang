@@ -1,0 +1,22 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "analytics-dashboard",
+            "className": " h-72",
+            "dashboardId": "659dff7e58bef705bed40b25",
+            "id": "u:f59d508874fb"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:e2ef21233fa5"
+}
