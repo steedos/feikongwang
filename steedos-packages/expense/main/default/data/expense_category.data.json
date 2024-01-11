@@ -1,7 +1,7 @@
 [
     {
         "_id": "${space_id}_659cb44972192405bf82216b",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -17,7 +17,7 @@
     },
     {
         "_id": "${space_id}_659cb45c72192405bf82216c",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -33,7 +33,7 @@
     },
     {
         "_id": "${space_id}_659cb47472192405bf82216d",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -49,7 +49,7 @@
     },
     {
         "_id": "${space_id}_659cb48472192405bf82216e",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -65,7 +65,7 @@
     },
     {
         "_id": "${space_id}_659cb49872192405bf82216f",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -81,7 +81,7 @@
     },
     {
         "_id": "${space_id}_659cb4a972192405bf822170",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -97,7 +97,7 @@
     },
     {
         "_id": "${space_id}_659cb4c172192405bf822171",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
@@ -113,7 +113,7 @@
     },
     {
         "_id": "${space_id}_659cb4d972192405bf822172",
-        "open": false,
+        "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "locked": false,
         "company_id": "659cafb872192405bf822167",
