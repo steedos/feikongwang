@@ -1,9 +1,9 @@
 name: account_banks
 data_type: text
 filterable: false
-formula: supplier_bank.pk_bankdoc.name
+formula: supplier_bank.account_branch
 formula_blank_value: blanks
-hidden: false
+hidden: true
 index: false
 is_name: false
 is_wide: false

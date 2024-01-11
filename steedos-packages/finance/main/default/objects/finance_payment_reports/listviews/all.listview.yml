@@ -14,6 +14,8 @@ columns:
     wrap: false
   - field: instance_state
     wrap: false
+  - field: payment_status
+    wrap: false
   - field: amount_description
     wrap: false
 filter_fields:
