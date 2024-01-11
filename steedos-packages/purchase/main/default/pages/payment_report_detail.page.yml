@@ -1,0 +1,13 @@
+name: payment_report_detail
+is_active: true
+label: 付款单详情页
+locked: false
+object_name: finance_payment_reports
+pageAssignments:
+  - type: orgDefault
+    page: payment_report_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []
