@@ -191,7 +191,7 @@
     },
     {
         "_id": "${space_id}_62610e0c32cc250032e1a9a3",
-        "name": "一般纳税人9%",
+        "name": "一般纳税人（9%）",
         "tax_rate": 0.09,
         "space": "JnBnMTjGB8c6xeCtA",
         "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",

@@ -10,7 +10,7 @@ is_wide: false
 label: 状态
 multiple: false
 options:
-  - label: 未关联报销
+  - label: 未关联记录
     value: unassociated
     color: 167bc1
   - label: 未提交审批
@@ -23,7 +23,7 @@ options:
     value: approved
     color: 78d190
 primary: false
-readonly: false
+readonly: true
 required: false
 searchable: false
 show_as_qr: false
