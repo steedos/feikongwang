@@ -1,0 +1,78 @@
+name: 应付账款Top5
+created_at: 2024-01-10T03:38:02.493Z
+creator_id: 0958b2e7-61cf-4778-b9b7-cc1378811cd3
+database_id: '1'
+dataset_query:
+  query:
+    source-table: purchase_orders
+    breakout:
+      - - field
+        - purchase_orders.supplier
+        - null
+    aggregation:
+      - - sum
+        - - field
+          - purchase_orders.amount
+          - null
+    order-by:
+      - - desc
+        - - aggregation
+          - 0
+          - null
+  type: query
+  database: '1'
+display: row
+enable_embedding: false
+entity_id: 659e111a58bef705bed40b3f
+id: 659e111a58bef705bed40b3f
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: supplier
+    name: supplier
+    unit: null
+    display_name: 供应商
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    source: breakout
+    visibility_type: normal
+    table_id: purchase_orders
+    field_ref:
+      - field
+      - purchase_orders.supplier
+      - null
+    remapped_to: external_supplier
+  - base_type: type/Integer
+    display_name: 合同金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+  - description: null
+    semantic_type: type/Name
+    table_id: accounts
+    coercion_strategy: null
+    name: external_supplier
+    settings: null
+    source: fields
+    remapped_from: supplier
+    fk_field_id: supplier
+    field_ref:
+      - field
+      - accounts.name
+      - source-field: purchase_orders.supplier
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: accounts.name
+    visibility_type: normal
+    display_name: 供应商
+table_id: purchase_orders
+updated_at: 2024-01-10T03:38:02.493Z
+visualization_settings: >-
+  {"table.pivot":false,"table.pivot_column":"supplier","table.cell_column":"sum","stackable.stack_type":null,"graph.dimensions":["supplier"],"graph.metrics":["sum"]}
