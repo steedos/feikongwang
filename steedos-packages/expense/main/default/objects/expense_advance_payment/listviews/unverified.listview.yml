@@ -1,0 +1,26 @@
+name: unverified
+columns:
+  - field: name
+  - field: amount
+  - field: date
+  - field: expense_reports
+  - field: instance_state
+  - field: created_by
+  - field: created
+crud_mode: table
+enable_amis_schema: false
+filter_scope: space
+filters:
+  - - write_off_status
+    - '='
+    - false
+is_enable: true
+label: 未核销
+locked: false
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+show_count: false
+sort: []
+sort_no: 100
+type: grid
