@@ -1,0 +1,30 @@
+name: unpaid
+columns:
+  - field: reports_number
+  - field: name
+  - field: business_purpose
+  - field: start
+  - field: end
+  - field: reimbursed_amount
+  - field: advance_payment
+  - field: total_cost
+  - field: expense_trips
+  - field: instance_state
+  - field: created
+crud_mode: table
+enable_amis_schema: false
+filter_scope: space
+filters:
+  - - state
+    - '='
+    - Unpaid
+is_enable: true
+label: 待支付
+locked: false
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+show_count: false
+sort: []
+sort_no: 100
+type: grid

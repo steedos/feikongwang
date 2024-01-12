@@ -1,4 +1,4 @@
-name: expense_reports_reports_afterUpdate
+name: expense_reports_afterUpdate
 listenTo: expense_reports
 when:
   - afterUpdate
@@ -10,11 +10,14 @@ handler: >-
 
   const invoicesObj = this.getObject('invoices');
 
+  const expenseReportsObj = this.getObject('expense_reports');
+
   const invoicesDoc = await invoicesObj.find({ filters: ['expense_reports', '=',
   doc._id] })
 
   if (previousDoc.instance_state != 'approved' && doc.instance_state ==
   'approved') {
+      // 修改发票状态
       if (invoicesDoc && invoicesDoc.length) {
           for (let invoices of invoicesDoc) {
               await invoicesObj.directUpdate(invoices._id, {
@@ -22,8 +25,13 @@ handler: >-
              })
           }
       }
+      // 修改报销单状态
+      await expenseReportsObj.directUpdate(doc._id, {
+          state: "Unpaid"
+      })
   } else if (previousDoc.instance_state != 'approval' && doc.instance_state ==
   'approval') {
+      // 修改发票状态
       if (invoicesDoc && invoicesDoc.length) {
           for (let invoices of invoicesDoc) {
               await invoicesObj.directUpdate(invoices._id, {
