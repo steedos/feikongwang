@@ -99,7 +99,7 @@ amis_schema: |-
           ]
         }
       },
-      "visibleOn": "${_isRelated}"
+       "visibleOn": "${_isRelated && _master.record.instance_state !='approved'}"
     }
   ],
   "regions": [

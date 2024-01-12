@@ -102,7 +102,8 @@ amis_schema: |-
                   }
                 ]
               }
-            }
+            },
+            "visibleOn": "${_master.record.instance_state !='approved'}"
           }
       ],
       "regions": [
