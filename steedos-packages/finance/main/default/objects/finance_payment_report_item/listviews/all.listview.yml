@@ -2,8 +2,6 @@ name: all
 columns:
   - field: id
     wrap: false
-  - field: payment_date
-    wrap: false
   - field: amount
     wrap: false
   - field: purchase_order
@@ -19,9 +17,9 @@ filter_fields:
   - payment_date
   - supplier
 filter_scope: space
-label: 所有付款记录
+label: 所有付款单明细记录
 shared: true
 show_count: false
 sort:
   - field_name: id
-    order: desc
+    order: asc

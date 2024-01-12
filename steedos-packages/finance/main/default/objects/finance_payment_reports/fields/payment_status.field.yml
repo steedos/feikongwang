@@ -1,5 +1,6 @@
 name: payment_status
 filterable: true
+group: 付款信息
 hidden: false
 index: false
 is_name: false
@@ -15,6 +16,6 @@ options:
     value: unpaid
 required: false
 searchable: false
-sort_no: 190
+sort_no: 410
 sortable: false
 type: select

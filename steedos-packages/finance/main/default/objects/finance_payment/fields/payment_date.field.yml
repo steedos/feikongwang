@@ -2,7 +2,7 @@ name: payment_date
 data_type: date
 filterable: true
 formula: report_id.payment_date
-formula_blank_value: zeroes
+formula_blank_value: blanks
 hidden: false
 index: false
 is_name: false
