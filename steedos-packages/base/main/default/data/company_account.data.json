@@ -1,0 +1,61 @@
+[
+    {
+        "_id": "${space_id}_659f53c01acefd05be1b8d1d",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "A公司",
+        "accnum": "45678913365",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9af",
+        "pk_bankname": "招商银行上海市松江区支行",
+        "init_amount": 90000000,
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T02:34:40.880Z",
+        "modified": "2024-01-11T02:34:40.880Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+    },
+    {
+        "_id": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "上海昌盛王集团（合同）",
+        "accnum": "99999999999",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9b0",
+        "pk_bankname": "中国建设银行股份有限公司浦东新区碧波路支行",
+        "init_amount": 90000000,
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T03:22:52.355Z",
+        "modified": "2024-01-12T03:24:50.793Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "description": "用于合同款支付"
+    },
+    {
+        "_id": "${space_id}_65a0b0d26c2c9805bf0c458e",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "上海昌盛王集团采购账户（报销）",
+        "accnum": "88888888888",
+        "pk_banktype": "${space_id}_6261101432cc250032e1a9af",
+        "pk_bankname": "招商银行浦东碧波路分行",
+        "init_amount": 60000000,
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T03:24:02.282Z",
+        "modified": "2024-01-12T03:25:02.546Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "description": "用于报销款支付"
+    }
+]

@@ -7,19 +7,15 @@
         "registered_capital": 10000000,
         "credit_code": "91310112703255042R",
         "status": "enable",
-        "space": "FCLaRczEXGKAjwvnn",
+        "space": "659e696217ca9105be5d1f05",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "created": {
-            "$date": "2022-09-07T05:48:47.321Z"
-        },
-        "modified": {
-            "$date": "2022-09-07T07:56:14.104Z"
-        },
+        "created": "2024-01-10T09:54:43.038Z",
+        "modified": "2024-01-10T09:54:43.038Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "company_id": "z86R5s8DCv7wQydKo",
+        "company_id": "659e696217ca9105be5d1f05",
         "company_ids": [
-            "z86R5s8DCv7wQydKo"
+            "659e696217ca9105be5d1f05"
         ],
         "annual_revenue": null,
         "do_not_call": false,
@@ -34,41 +30,15 @@
         "legal_representative": "宋大宝",
         "rating": "Warm",
         "register_date": {
-            "$date": "2010-08-01T00:00:00Z"
+            "$date": "2010-08-01T00:00:00.000Z"
         },
         "state": "HUN",
         "business_license": null
     },
     {
-        "_id": "${space_id}_rp6f28g9xszJRGjwN",
-        "name": "江苏大仲集团有限公司",
-        "phone": "021-8566667",
-        "address": "上海市松江区区民胜路158号",
-        "registered_capital": 2E+10,
-        "credit_code": "91430000183786683Q",
-        "status": "enable",
-        "space": "FCLaRczEXGKAjwvnn",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "created": {
-            "$date": "2022-09-07T05:48:47.321Z"
-        },
-        "modified": {
-            "$date": "2022-09-07T05:48:47.321Z"
-        },
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "company_id": "z86R5s8DCv7wQydKo",
-        "company_ids": [
-            "z86R5s8DCv7wQydKo"
-        ],
-        "company_type": "国企",
-        "is_customer": true,
-        "nickname": "DZ集团"
-    },
-    {
         "_id": "${space_id}_o2sunJ3vuz3uSKN4z",
         "address": "无锡市润州区",
-        "company_id": "z86R5s8DCv7wQydKo",
+        "company_id": "659e696217ca9105be5d1f05",
         "credit_code": "62310115MJ5209999Z",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "status": "enable",
@@ -76,74 +46,32 @@
         "is_supplier": false,
         "is_customer": true,
         "phone": "051-9837624",
-        "space": "FCLaRczEXGKAjwvnn",
-        "created": {
-            "$date": "2022-09-07T05:48:47.321Z"
-        },
-        "modified": {
-            "$date": "2022-09-07T05:48:47.321Z"
-        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-10T09:54:43.038Z",
+        "modified": "2024-01-10T09:54:43.038Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "company_ids": [
-            "z86R5s8DCv7wQydKo"
+            "659e696217ca9105be5d1f05"
         ],
         "company_type": "民企",
         "rating": "Hot",
         "due_date": {
-            "$date": "2031-08-27T00:00:00Z"
+            "$date": "2031-08-27T00:00:00.000Z"
         },
         "industry": "Construction",
         "legal_representative": "刘力亮",
         "number_of_employees": 1000,
         "register_date": {
-            "$date": "2008-08-01T00:00:00Z"
+            "$date": "2008-08-01T00:00:00.000Z"
         },
         "registered_capital": 1000000,
         "state": "JS"
     },
     {
-        "_id": "${space_id}_ZkwHr3jeZQFMKAwQ2",
-        "address": "上海市闵行区七莘路56号",
-        "company_id": "z86R5s8DCv7wQydKo",
-        "company_type": "民企",
-        "credit_code": "26548997636564656R",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "status": "enable",
-        "name": "剑牌商贸有限公司",
-        "is_supplier": false,
-        "is_customer": true,
-        "phone": "021-9826770",
-        "space": "FCLaRczEXGKAjwvnn",
-        "created": {
-            "$date": "2022-09-07T05:48:47.321Z"
-        },
-        "modified": {
-            "$date": "2022-09-07T07:23:26.351Z"
-        },
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "company_ids": [
-            "z86R5s8DCv7wQydKo"
-        ],
-        "due_date": {
-            "$date": "2026-08-07T00:00:00Z"
-        },
-        "industry": "Apparel",
-        "legal_representative": "李伟",
-        "nickname": "上海优思",
-        "number_of_employees": 10000,
-        "rating": "Hot",
-        "register_date": {
-            "$date": "2018-07-30T00:00:00Z"
-        },
-        "registered_capital": 2000000,
-        "state": "SH"
-    },
-    {
         "_id": "${space_id}_ua7esWTyhgNaspC94",
         "address": null,
-        "company_id": "BPYdLkGZKFX2nrALu",
+        "company_id": "659e696217ca9105be5d1f05",
         "company_type": "民企",
         "credit_code": "459326499564646467989Q",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
@@ -152,17 +80,83 @@
         "is_supplier": false,
         "is_customer": false,
         "phone": null,
-        "space": "FCLaRczEXGKAjwvnn",
-        "created": {
-            "$date": "2022-09-07T07:43:48.879Z"
-        },
-        "modified": {
-            "$date": "2022-09-07T08:17:03.931Z"
-        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-10T09:54:43.038Z",
+        "modified": "2024-01-10T09:54:43.038Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "company_ids": [
-            "BPYdLkGZKFX2nrALu"
+            "659e696217ca9105be5d1f05"
         ]
+    },
+    {
+        "_id": "${space_id}_659f48ba1acefd05be1b8d0a",
+        "invoice": "贵州速圣铝合金总厂",
+        "address": "贵州省贵阳市开阳县速圣铝合金总厂",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "贵州速圣铝合金总厂",
+        "company_type": "企业",
+        "industry": "开采行业",
+        "state": "GZ",
+        "charge": "${space_owner_id}",
+        "credit_code": "65855AE4563266666AI",
+        "invoice_address": "贵州省贵阳市开阳县速圣铝合金总厂",
+        "invoice_phone": "065836456445",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T01:47:38.129Z",
+        "modified": "2024-01-11T02:31:51.230Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "number": "Demo-KS-00001"
+    },
+    {
+        "_id": "${space_id}_659f4bba1acefd05be1b8d12",
+        "invoice": null,
+        "address": "山西省大同市灵丘县开元建筑安装工程有限责任公司",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "山西开元建筑安装工程有限责任公司",
+        "company_type": "企业",
+        "industry": "建筑行业",
+        "state": "SX",
+        "charge": "${space_owner_id}",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T02:00:26.669Z",
+        "modified": "2024-01-11T02:00:26.669Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "number": "Demo-KS-00002"
+    },
+    {
+        "_id": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "invoice": null,
+        "address": "江苏无锡宝石工业园4幢301",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "无锡亚麻纺织厂",
+        "company_type": "企业",
+        "industry": "生产制造",
+        "charge": "${space_owner_id}",
+        "state": "JS",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T01:44:12.753Z",
+        "modified": "2024-01-12T01:44:12.753Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "number": "Demo-KS-00003"
     }
+    
 ]

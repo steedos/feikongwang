@@ -17,7 +17,7 @@
         "modified": "2024-01-12T06:07:29.353Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00004",
+        "id": "Demo-FKMX-00004",
         "contract_amount": 100000,
         "payment_date": {
             "$date": "2023-10-09T00:00:00.000Z"
@@ -31,7 +31,7 @@
     },
     {
         "_id": "${space_id}_65a0d3a76c2c9805bf0c45ae",
-        "company_id": "659e696217ca9105be5d1f05",
+        "company_id": "${space_id}_659e696217ca9105be5d1f05",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_ids": [
@@ -47,7 +47,7 @@
         "modified": "2024-01-12T08:07:32.620Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00005",
+        "id": "Demo-FKMX-00005",
         "contract_amount": 800000,
         "due_date": {
             "$date": "2023-10-20T00:00:00.000Z"
@@ -78,7 +78,7 @@
         "modified": "2024-01-12T06:10:28.890Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00006",
+        "id": "Demo-FKMX-00006",
         "contract_amount": 100000,
         "due_date": {
             "$date": "2023-10-18T00:00:00.000Z"
@@ -91,7 +91,7 @@
     },
     {
         "_id": "${space_id}_65a0d83a6c2c9805bf0c45ca",
-        "company_id": "659e696217ca9105be5d1f05",
+        "company_id": "${space_id}_659e696217ca9105be5d1f05",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_ids": [
@@ -107,7 +107,7 @@
         "modified": "2024-01-12T06:12:24.445Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00007",
+        "id": "Demo-FKMX-00007",
         "contract_amount": 100000,
         "due_date": {
             "$date": "2024-01-29T00:00:00.000Z"
@@ -121,8 +121,8 @@
     },
     {
         "_id": "${space_id}_65a0d9d06c2c9805bf0c45de",
-        "company_id": "${space_id}_659e696217ca9105be5d1f05",
-        "owner": "${space_id}_72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_ids": [
             "659e696217ca9105be5d1f05"
@@ -135,10 +135,10 @@
         "displayAs": null,
         "space": "659e696217ca9105be5d1f05",
         "created": "2024-01-12T06:18:56.687Z",
-        "modified": "2024-01-12T08:25:57.795Z",
+        "modified": "2024-01-12T08:25:35.699Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00008",
+        "id": "Demo-FKMX-00008",
         "contract_amount": 800000,
         "due_date": {
             "$date": "2023-11-18T00:00:00.000Z"
@@ -165,23 +165,20 @@
         "displayAs": null,
         "space": "659e696217ca9105be5d1f05",
         "created": "2024-01-12T06:21:13.891Z",
-        "modified": "2024-01-12T08:44:01.407Z",
+        "modified": "2024-01-12T06:21:13.891Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00009",
+        "id": "Demo-FKMX-00009",
+        "billno": "",
         "contract_amount": 200000,
-        "due_date": {
-            "$date": "2023-11-07T00:00:00.000Z"
-        },
         "payment_date": {
             "$date": "2023-11-07T00:00:00.000Z"
         },
-        "payment_sacle": 0.25,
-        "billno": ""
+        "payment_sacle": 0.25
     },
     {
         "_id": "${space_id}_65a0db046c2c9805bf0c45e6",
-        "company_id": "659e696217ca9105be5d1f05",
+        "company_id": "${space_id}_659e696217ca9105be5d1f05",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_ids": [
@@ -198,7 +195,7 @@
         "modified": "2024-01-12T06:24:04.489Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00010",
+        "id": "Demo-FKMX-00010",
         "billno": "",
         "contract_amount": 200000,
         "due_date": {
@@ -228,7 +225,7 @@
         "modified": "2024-01-12T06:25:26.629Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00011",
+        "id": "Demo-FKMX-00011",
         "billno": "",
         "contract_amount": 200000,
         "due_date": {
@@ -255,10 +252,11 @@
         "displayAs": null,
         "space": "659e696217ca9105be5d1f05",
         "created": "2024-01-12T06:29:15.083Z",
-        "modified": "2024-01-12T08:45:03.217Z",
+        "modified": "2024-01-12T06:29:15.083Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00012",
+        "id": "Demo-FKMX-00012",
+        "billno": "",
         "contract_amount": 250000,
         "due_date": {
             "$date": "2023-11-28T00:00:00.000Z"
@@ -266,12 +264,11 @@
         "payment_date": {
             "$date": "2023-12-01T00:00:00.000Z"
         },
-        "payment_sacle": 0.2,
-        "billno": ""
+        "payment_sacle": 0.2
     },
     {
         "_id": "${space_id}_65a0dc9d6c2c9805bf0c45f6",
-        "company_id": "659e696217ca9105be5d1f05",
+        "company_id": "${space_id}_659e696217ca9105be5d1f05",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_ids": [
@@ -288,7 +285,7 @@
         "modified": "2024-01-12T06:30:53.155Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00013",
+        "id": "Demo-FKMX-00013",
         "billno": "",
         "contract_amount": 250000,
         "due_date": {
@@ -301,7 +298,7 @@
     },
     {
         "_id": "${space_id}_65a0dcf36c2c9805bf0c45fa",
-        "company_id": "659e696217ca9105be5d1f05",
+        "company_id": "${space_id}_659e696217ca9105be5d1f05",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_ids": [
@@ -318,7 +315,7 @@
         "modified": "2024-01-12T06:32:19.874Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00014",
+        "id": "Demo-FKMX-00014",
         "billno": "",
         "contract_amount": 250000,
         "due_date": {
@@ -348,7 +345,7 @@
         "modified": "2024-01-12T06:33:43.367Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00015",
+        "id": "Demo-FKMX-00015",
         "billno": "",
         "contract_amount": 250000,
         "due_date": {
@@ -378,7 +375,7 @@
         "modified": "2024-01-12T06:35:47.067Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00016",
+        "id": "Demo-FKMX-00016",
         "billno": "",
         "contract_amount": 800000,
         "due_date": {
@@ -388,6 +385,64 @@
             "$date": "2024-01-03T00:00:00.000Z"
         },
         "payment_sacle": 0.1875
+    },
+    {
+        "_id": "${space_id}_65a0de176c2c9805bf0c4606",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "report_id": "${space_id}_65a0ddf76c2c9805bf0c4604",
+        "amount": 300000,
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "purchase_order": "${space_id}_65a09e836c2c9805bf0c4572",
+        "amount_description": "支付合同进度款",
+        "displayAs": null,
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:37:11.959Z",
+        "modified": "2024-01-12T08:22:11.226Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKMX-00017",
+        "contract_amount": 800000,
+        "due_date": {
+            "$date": "2024-02-02T00:00:00.000Z"
+        },
+        "payment_date": {
+            "$date": "2024-02-02T00:00:00.000Z"
+        },
+        "payment_sacle": 0.375,
+        "billno": ""
+    },
+    {
+        "_id": "${space_id}_65a0de666c2c9805bf0c460a",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "report_id": "${space_id}_65a0de4f6c2c9805bf0c4608",
+        "amount": 350000,
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "purchase_order": "${space_id}_65a09e836c2c9805bf0c4572",
+        "amount_description": "支付合同尾款",
+        "displayAs": null,
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:38:30.915Z",
+        "modified": "2024-01-12T08:23:05.782Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKMX-00018",
+        "contract_amount": 800000,
+        "due_date": {
+            "$date": "2024-03-06T00:00:00.000Z"
+        },
+        "payment_date": null,
+        "payment_sacle": 0.4375,
+        "billno": ""
     },
     {
         "_id": "${space_id}_65a0df7f6c2c9805bf0c460e",
@@ -408,7 +463,7 @@
         "modified": "2024-01-12T06:43:11.700Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "id": "Demo-FKJL-00019",
+        "id": "Demo-FKMX-00019",
         "billno": "",
         "contract_amount": 200000,
         "due_date": {
@@ -418,5 +473,33 @@
             "$date": "2024-01-10T00:00:00.000Z"
         },
         "payment_sacle": 0.4
+    },
+    {
+        "_id": "${space_id}_65a0dfc46c2c9805bf0c4612",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "report_id": "${space_id}_65a0dfaf6c2c9805bf0c4610",
+        "amount": 120000,
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "purchase_order": "${space_id}_65a09f2b6c2c9805bf0c4573",
+        "amount_description": "支付合同尾款",
+        "displayAs": null,
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:44:20.850Z",
+        "modified": "2024-01-12T06:44:20.850Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKMX-00020",
+        "billno": "",
+        "contract_amount": 200000,
+        "due_date": {
+            "$date": "2024-02-29T00:00:00.000Z"
+        },
+        "payment_date": null,
+        "payment_sacle": 0.6
     }
 ]

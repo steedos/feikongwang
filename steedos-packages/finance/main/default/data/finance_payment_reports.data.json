@@ -1,0 +1,478 @@
+[
+    {
+        "_id": "${space_id}_659f53c71acefd05be1b8d1e",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_659f48ba1acefd05be1b8d0a",
+        "payment_date": {
+            "$date": "2023-10-09T00:00:00.000Z"
+        },
+        "supplier_bank": "${space_id}_659f494e1acefd05be1b8d0c",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T02:34:47.156Z",
+        "modified": "2024-01-12T09:22:34.140Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00001",
+        "account_banks": "中国建设银行贵州支行",
+        "amount": 20000,
+        "amount_description": "合同首付款",
+        "payment_status": "paid",
+        "due_date": {
+            "$date": "2023-09-20T00:00:00.000Z"
+        },
+        "instance_state": "draft",
+        "instances": [
+            {
+                "_id": "KqXpypnHTNdFzMeg5",
+                "state": "draft"
+            }
+        ]
+    },
+    {
+        "_id": "${space_id}_659f5ad31acefd05be1b8d60",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "supplier": "${space_id}_ua7esWTyhgNaspC94",
+        "payment_date": {
+            "$date": "2023-10-20T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T03:04:51.916Z",
+        "modified": "2024-01-12T06:16:46.034Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00002",
+        "account_banks": "宁波银行山西支行",
+        "amount": 200000,
+        "due_date": {
+            "$date": "2023-10-20T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "amount_description": "合同首付款",
+        "supplier_bank": "${space_id}_65a0d93c6c2c9805bf0c45d4"
+    },
+    {
+        "_id": "${space_id}_659fa210eff6f105bfc3bc3b",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_659f48ba1acefd05be1b8d0a",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "payment_date": {
+            "$date": "2023-10-18T00:00:00.000Z"
+        },
+        "supplier_bank": "659f494e1acefd05be1b8d0c",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T08:08:48.602Z",
+        "modified": "2024-01-12T06:09:21.641Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00003",
+        "account_banks": "中国建设银行贵州支行",
+        "amount": 50000,
+        "amount_description": "进度款",
+        "due_date": {
+            "$date": "2023-10-18T00:00:00.000Z"
+        },
+        "payment_status": "paid"
+    },
+    {
+        "_id": "${space_id}_65a0d8216c2c9805bf0c45c8",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_659f48ba1acefd05be1b8d0a",
+        "due_date": {
+            "$date": "2024-01-29T00:00:00.000Z"
+        },
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "supplier_bank": "${space_id}_659f494e1acefd05be1b8d0c",
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2024-01-29T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:11:45.548Z",
+        "modified": "2024-01-12T08:42:00.539Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00007",
+        "account_banks": "中国建设银行贵州支行",
+        "amount": 30000,
+        "amount_description": "合同尾款"
+    },
+    {
+        "_id": "${space_id}_65a0d9b56c2c9805bf0c45dc",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_ua7esWTyhgNaspC94",
+        "supplier_bank": "${space_id}_65a0d93c6c2c9805bf0c45d4",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "due_date": {
+            "$date": "2023-11-18T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2023-11-18T00:00:00.000Z"
+        },
+        "amount_description": "合同尾款",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:18:29.640Z",
+        "modified": "2024-01-12T06:18:29.640Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00008",
+        "account_banks": "宁波银行山西支行",
+        "amount": 600000
+    },
+    {
+        "_id": "${space_id}_65a0da3f6c2c9805bf0c45e0",
+        "company_id": "${space_id}_659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "supplier_bank": "${space_id}_65a09b686c2c9805bf0c4555",
+        "due_date": {
+            "$date": "2023-11-07T00:00:00.000Z"
+        },
+        "payment_date": {
+            "$date": "2023-11-07T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "amount_description": "合同首付款",
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:20:47.105Z",
+        "modified": "2024-01-12T06:20:47.105Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00009",
+        "account_banks": "杭州银行无锡分行",
+        "amount": 50000
+    },
+    {
+        "_id": "${space_id}_65a0dae16c2c9805bf0c45e4",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "supplier_bank": "${space_id}_65a09b686c2c9805bf0c4555",
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "amount_description": "进度款",
+        "due_date": {
+            "$date": "2023-12-06T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2023-12-06T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:23:29.957Z",
+        "modified": "2024-01-12T06:23:29.957Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00010",
+        "account_banks": "杭州银行无锡分行",
+        "amount": 100000
+    },
+    {
+        "_id": "${space_id}_65a0db426c2c9805bf0c45e8",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "supplier_bank": "${space_id}_65a09b686c2c9805bf0c4555",
+        "amount_description": "合同尾款",
+        "payment_date": {
+            "$date": "2023-10-20T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "due_date": {
+            "$date": "2024-01-09T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:25:06.226Z",
+        "modified": "2024-01-12T06:25:06.226Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00011",
+        "account_banks": "杭州银行无锡分行",
+        "amount": 50000
+    },
+    {
+        "_id": "${space_id}_65a0dc216c2c9805bf0c45f0",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "due_date": {
+            "$date": "2023-11-28T00:00:00.000Z"
+        },
+        "amount_description": "合同首付款",
+        "supplier_bank": "${space_id}_65a0dbf06c2c9805bf0c45ee",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:28:48.992Z",
+        "modified": "2024-01-12T08:27:13.466Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00012",
+        "account_banks": "中国招商银行有限公司无锡分行",
+        "amount": 50000
+    },
+    {
+        "_id": "${space_id}_65a0dc806c2c9805bf0c45f4",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "supplier_bank": "${space_id}_65a0dbf06c2c9805bf0c45ee",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "amount_description": "第一批次进度款",
+        "due_date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "payment_date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:30:24.757Z",
+        "modified": "2024-01-12T06:30:24.757Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00013",
+        "account_banks": "中国招商银行有限公司无锡分行",
+        "amount": 100000
+    },
+    {
+        "_id": "${space_id}_65a0dcd76c2c9805bf0c45f8",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "due_date": {
+            "$date": "2023-12-28T00:00:00.000Z"
+        },
+        "supplier": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "supplier_bank": "${space_id}_65a0dbf06c2c9805bf0c45ee",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "amount_description": "第二批次进度款",
+        "payment_date": {
+            "$date": "2023-12-28T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:31:51.986Z",
+        "modified": "2024-01-12T06:31:51.986Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00014",
+        "account_banks": "中国招商银行有限公司无锡分行",
+        "amount": 50000
+    },
+    {
+        "_id": "${space_id}_65a0dd2e6c2c9805bf0c45fc",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "supplier_bank": "${space_id}_65a0dbf06c2c9805bf0c45ee",
+        "payment_account": "${space_id}_659f53c01acefd05be1b8d1d",
+        "amount_description": "合同尾款",
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2024-01-18T00:00:00.000Z"
+        },
+        "due_date": {
+            "$date": "2024-01-18T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:33:18.899Z",
+        "modified": "2024-01-12T08:41:51.728Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00015",
+        "account_banks": "中国招商银行有限公司无锡分行",
+        "amount": 50000
+    },
+    {
+        "_id": "${space_id}_65a0dda06c2c9805bf0c4600",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_65a0a0276c2c9805bf0c4577",
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2024-01-03T00:00:00.000Z"
+        },
+        "due_date": {
+            "$date": "2024-01-03T00:00:00.000Z"
+        },
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "amount_description": "合同首付款",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:35:12.413Z",
+        "modified": "2024-01-12T06:35:12.413Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00016",
+        "account_banks": "中国建设银行湖南花县支行",
+        "amount": 150000
+    },
+    {
+        "_id": "${space_id}_65a0ddf76c2c9805bf0c4604",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_65a0a0276c2c9805bf0c4577",
+        "amount_description": "合同时度款",
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "due_date": {
+            "$date": "2024-02-02T00:00:00.000Z"
+        },
+        "payment_date": {
+            "$date": "2024-02-02T00:00:00.000Z"
+        },
+        "payment_status": "paid",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:36:39.299Z",
+        "modified": "2024-01-12T08:41:35.664Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00017",
+        "account_banks": "中国建设银行湖南花县支行",
+        "amount": 300000
+    },
+    {
+        "_id": "${space_id}_65a0de4f6c2c9805bf0c4608",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "amount_description": "合同尾款",
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_65a0a0276c2c9805bf0c4577",
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "due_date": {
+            "$date": "2024-03-06T00:00:00.000Z"
+        },
+        "payment_status": "unpaid",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:38:07.318Z",
+        "modified": "2024-01-12T08:32:37.980Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00018",
+        "account_banks": "中国建设银行湖南花县支行",
+        "amount": 350000
+    },
+    {
+        "_id": "${space_id}_65a0df5c6c2c9805bf0c460c",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_65a0a0276c2c9805bf0c4577",
+        "due_date": {
+            "$date": "2024-01-10T00:00:00.000Z"
+        },
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "payment_status": "paid",
+        "payment_date": {
+            "$date": "2024-01-10T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:42:36.951Z",
+        "modified": "2024-01-12T06:42:36.951Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00019",
+        "account_banks": "中国建设银行湖南花县支行",
+        "amount": 80000
+    },
+    {
+        "_id": "${space_id}_65a0dfaf6c2c9805bf0c4610",
+        "company_id": "659e696217ca9105be5d1f05",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "supplier_bank": "${space_id}_65a0a0276c2c9805bf0c4577",
+        "payment_account": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "amount_description": "合同尾款",
+        "payment_status": "unpaid",
+        "due_date": {
+            "$date": "2024-02-29T00:00:00.000Z"
+        },
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T06:43:59.159Z",
+        "modified": "2024-01-12T08:36:33.780Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "id": "Demo-FKD-00020",
+        "account_banks": "中国建设银行湖南花县支行",
+        "amount": 120000
+    }
+]

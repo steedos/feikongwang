@@ -1,43 +1,199 @@
 [
     {
-        "_id": "${space_id}_65976fc90ace2505ccf5818b",
+        "_id": "${space_id}_659f500a1acefd05be1b8d18",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
+        "company_id": "659e696217ca9105be5d1f05",
         "company_ids": [
-            "65976f1e0ace2505ccf58189"
+            "659e696217ca9105be5d1f05"
         ],
-        "name": "铁矿采购合同",
-        "amount": 8000000,
-        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
-        "signed_date": "2024-01-05T00:00:00.000Z",
-        "department": null,
+        "supplier": "${space_id}_659f48ba1acefd05be1b8d0a",
+        "amount": 100000,
+        "name": "铝合金采购合同",
+        "signed_date": {
+            "$date": "2023-09-15T00:00:00.000Z"
+        },
         "buyer": "${space_owner_id}",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T02:56:09.937Z",
-        "modified": "2024-01-05T02:56:09.937Z",
+        "department": "${space_id}_659e696217ca9105be5d1f05",
+        "description": "首次采购",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T02:18:50.108Z",
+        "modified": "2024-01-12T05:18:50.421Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "contract_code": "Demo-YF-00001"
+        "contract_code": "Demo-YF-00001",
+        "amount_unpaid": 0,
+        "amount_paid": 100000,
+        "amount_received_invoice": 107,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "vwQCHysFWMh7ym6Pm",
+                "state": "approved"
+            }
+        ],
+        "maturity_date": null
     },
     {
-        "_id": "659779eb0ace2505ccf581ef",
+        "_id": "${space_id}_659f5a651acefd05be1b8d5e",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
+        "company_id": "659e696217ca9105be5d1f05",
         "company_ids": [
-            "65976f1e0ace2505ccf58189"
+            "659e696217ca9105be5d1f05"
         ],
         "supplier": "${space_id}_ua7esWTyhgNaspC94",
-        "name": "煤采购",
         "amount": 800000,
-        "signed_date": "2024-01-05T00:00:00.000Z",
+        "name": "燃料采购合同",
+        "signed_date": {
+            "$date": "2023-10-12T00:00:00.000Z"
+        },
+        "department": "659e696217ca9105be5d1f05",
         "buyer": "${space_owner_id}",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T03:39:23.682Z",
-        "modified": "2024-01-05T03:39:23.682Z",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-11T03:03:01.112Z",
+        "modified": "2024-01-12T05:19:28.859Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "contract_code": "Demo-YF-00002"
+        "contract_code": "Demo-YF-00002",
+        "amount_unpaid": 0,
+        "amount_paid": 800000,
+        "amount_received_invoice": 0,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "wsMdFbpAv2uWhs6T9",
+                "state": "approved"
+            }
+        ],
+        "maturity_date": null
+    },
+    {
+        "_id": "${space_id}_65a099f76c2c9805bf0c453e",
+        "buyer": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "亚麻采购合同",
+        "supplier": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "amount": 200000,
+        "signed_date": {
+            "$date": "2023-11-10T00:00:00.000Z"
+        },
+        "department": "659e696217ca9105be5d1f05",
+        "description": "工厂面料采购",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T01:46:31.050Z",
+        "modified": "2024-01-12T08:43:45.160Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "Demo-YF-00004",
+        "amount_unpaid": 0,
+        "amount_paid": 200000,
+        "amount_received_invoice": 50000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "CNnmhR47aZtYGmhWG",
+                "state": "approved"
+            }
+        ],
+        "locked": false
+    },
+    {
+        "_id": "${space_id}_65a09c866c2c9805bf0c4557",
+        "buyer": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "supplier": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "name": "包装箱采购合同",
+        "amount": 250000,
+        "signed_date": {
+            "$date": "2023-11-22T00:00:00.000Z"
+        },
+        "department": "659e696217ca9105be5d1f05",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T01:57:26.362Z",
+        "modified": "2024-01-12T05:20:04.958Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "Demo-YF-00005",
+        "amount_unpaid": 0,
+        "amount_paid": 250000,
+        "amount_received_invoice": 50000,
+        "instance_state": "pending",
+        "instances": [
+            {
+                "_id": "aqTixBx9vbAcMAgW5",
+                "state": "pending"
+            }
+        ]
+    },
+    {
+        "_id": "${space_id}_65a09e836c2c9805bf0c4572",
+        "buyer": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "铁合金采购合同",
+        "amount": 800000,
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "signed_date": {
+            "$date": "2023-12-15T00:00:00.000Z"
+        },
+        "department": "659e696217ca9105be5d1f05",
+        "description": "铁合金采购合同",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T02:05:55.703Z",
+        "modified": "2024-01-12T05:20:19.286Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "Demo-YF-00006",
+        "amount_unpaid": 650000,
+        "amount_paid": 150000,
+        "amount_received_invoice": 150000
+    },
+    {
+        "_id": "${space_id}_65a09f2b6c2c9805bf0c4573",
+        "buyer": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "659e696217ca9105be5d1f05",
+        "company_ids": [
+            "659e696217ca9105be5d1f05"
+        ],
+        "name": "铁合金开采设备合同",
+        "supplier": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "amount": 200000,
+        "signed_date": {
+            "$date": "2024-01-08T00:00:00.000Z"
+        },
+        "department": "659e696217ca9105be5d1f05",
+        "description": "铁合同采购合同子合同--设备配置合同",
+        "space": "659e696217ca9105be5d1f05",
+        "created": "2024-01-12T02:08:43.135Z",
+        "modified": "2024-01-12T09:08:22.311Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_code": "Demo-YF-00007",
+        "amount_unpaid": 120000,
+        "amount_paid": 80000,
+        "amount_received_invoice": 0,
+        "instance_state": "draft",
+        "instances": [
+            {
+                "_id": "xGTgici9cbGtCfzYA",
+                "state": "draft"
+            }
+        ],
+        "locked": true
     }
 ]
