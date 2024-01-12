@@ -30,8 +30,7 @@ amis_schema: |-
                       "invoice_amount",
                       "seller_name",
                       "purchaser_name",
-                      "verify_status",
-                      "created"
+                      "verify_status"
                     ],
                     "className": "sm:border sm:rounded sm:border-gray-300",
                     "crudMode": "table",
