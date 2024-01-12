@@ -1,8 +1,4 @@
 module.exports = {
-
-    upload: function(object_name, record_id) {
-
-    },
     uploadVisible: function(object_name, record_id, record_permissions, record) {
         const status = record.__super.__super._master.record.instance_state;
         const sizeUp = true;
