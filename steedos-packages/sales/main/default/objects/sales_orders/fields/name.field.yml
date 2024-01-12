@@ -1,9 +1,9 @@
 name: name
 type: text
 label: 合同名称
-is_wide: false
+is_wide: true
 required: true
-sort_no: 15
+sort_no: 9
 sortable: true
 searchable: true
 filterable: true

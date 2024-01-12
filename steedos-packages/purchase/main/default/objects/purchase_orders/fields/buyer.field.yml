@@ -6,3 +6,6 @@ required: true
 sort_no: 190
 type: lookup
 defaultValue: '{{global.userId}}'
+amis:
+  autoFill:
+    "department": "${organization}"
