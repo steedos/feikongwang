@@ -65,7 +65,8 @@ amis_schema: |-
                 "data": {
                   "additionalFilters": [],
                   "uiSchema": "${uiSchema}",
-                  "expenseReportsId": "${_master.recordId}"
+                  "expenseReportsId": "${_master.recordId}",
+                  "objectName": "${_master && _master.objectName}"
                 },
                 "closeOnEsc": false,
                 "onEvent": {
@@ -84,7 +85,7 @@ amis_schema: |-
                           "api": {
                             "url": "${context.rootUrl}/api/expense/expense_reports/add/invoices",
                             "method": "get",
-                            "requestAdaptor": "",
+                            "requestAdaptor": "console.log(\"objectName\", api.context.__super.objectName);\nconsole.log(\"api\",api)\nconst objectName = api.context.__super.objectName;\nif (objectName == \"purchase_orders\") {\n  api.url = \"/api/purchase/purchase_orders/add/invoices\";\n  api.data = {\n    invoices: api.query.invoices,\n    purchaseOrdersId: api.query.expenseReportsId\n  }\n}\nreturn api;",
                             "adaptor": "",
                             "messages": {},
                             "headers": {
@@ -124,7 +125,7 @@ amis_schema: |-
   },
   "bodyClassName": "p-0",
   "id": "u:da671f66bad4"
-    }
+ }
 is_enable: true
 label: 关联发票
 locked: false

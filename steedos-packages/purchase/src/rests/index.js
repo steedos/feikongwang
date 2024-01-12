@@ -7,4 +7,5 @@
  * @Description: 
  */
 module.exports = {
+    purchaseOrdersAddInvoices: require('./purchaseOrdersAddInvoices'),
 }
