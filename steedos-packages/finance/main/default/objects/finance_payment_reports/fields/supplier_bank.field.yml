@@ -8,6 +8,8 @@ label: 供应商收款账户
 create: false
 multiple: false
 omit: false
+depend_on:
+  - supplier
 readonly: false
 reference_to: account_banks
 required: false
@@ -15,3 +17,10 @@ searchable: false
 sort_no: 70
 sortable: false
 type: lookup
+inlineHelpText: 请选择此供应商的收款账户。
+filtersFunction: |-
+  function(filters,values) {
+    return [
+      ['account','=',values.supplier]
+    ];
+  }
