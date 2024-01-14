@@ -15,6 +15,26 @@ sortable: true
 type: master_detail
 create: false
 write_requires_master_read: true
+inlineHelpText: 请选择此供应商的应付合同。
+filtersFunction: !!js/function |
+  function (filters, values) {
+      const report_id = values.report_id;
+      if (!report_id) {
+        return ['_id', '=', 'none'];
+      } else {
+        const queryResult = Steedos.authRequest(`/graphql`, {
+                              type: 'POST', async: false, 
+                              data: JSON.stringify({
+                                query: `{finance_payment_reports(filters: ["_id","=", `+ JSON.stringify(report_id) + `]){_id, supplier}}`
+                              })
+                            });
+        const supplier = queryResult.data.finance_payment_reports[0].supplier;
+        if (!supplier || supplier == "") {
+          throw new Error('此付款单的供应商信息有误，请补充相应信息！');
+        }
+        return ["supplier", "=", supplier];
+      }
+  }
 amis:
   autoFill:
     "supplier": "${supplier}"
