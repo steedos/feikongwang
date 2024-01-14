@@ -388,7 +388,7 @@
         "payment_date": {
             "$date": "2024-02-02T00:00:00.000Z"
         },
-        "payment_status": "paid",
+        "payment_status": "unpaid",
         "space": "659e696217ca9105be5d1f05",
         "created": "2024-01-12T06:36:39.299Z",
         "modified": "2024-01-12T08:41:35.664Z",
