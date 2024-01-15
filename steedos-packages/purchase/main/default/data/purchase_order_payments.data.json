@@ -8,7 +8,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_659f500a1acefd05be1b8d18",
-        "payment_name": "pending",
+        "payment_name": "${space_id}_65a4d3c9a63cff05bfb6e9da",
         "amount": 20000,
         "due_date": {
             "$date": "2023-09-20T00:00:00.000Z"
@@ -32,7 +32,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_659f500a1acefd05be1b8d18",
-        "payment_name": "approved",
+        "payment_name": "${space_id}_65a4d3d7a63cff05bfb6e9db",
         "amount": 50000,
         "due_date": {
             "$date": "2023-10-18T00:00:00.000Z"
@@ -57,7 +57,7 @@
         ],
         "purchase_order": "${space_id}_659f500a1acefd05be1b8d18",
         "amount": 30000,
-        "payment_name": "rejected",
+        "payment_name": "${space_id}_65a4d3eaa63cff05bfb6e9dc",
         "due_date": {
             "$date": "2024-01-29T00:00:00.000Z"
         },
@@ -80,7 +80,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_659f5a651acefd05be1b8d5e",
-        "payment_name": "pending",
+        "payment_name": "${space_id}_65a4d3c9a63cff05bfb6e9da",
         "amount": 200000,
         "amount_description": "燃料采购定金",
         "due_date": {
@@ -104,7 +104,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_659f5a651acefd05be1b8d5e",
-        "payment_name": "rejected",
+        "payment_name": "${space_id}_65a4d3eaa63cff05bfb6e9dc",
         "amount": 600000,
         "due_date": {
             "$date": "2023-11-18T00:00:00.000Z"
@@ -128,7 +128,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_65a099f76c2c9805bf0c453e",
-        "payment_name": "pending",
+        "payment_name": "${space_id}_65a4d3c9a63cff05bfb6e9da",
         "amount": 50000,
         "due_date": {
             "$date": "2023-11-06T00:00:00.000Z"
@@ -152,7 +152,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_65a099f76c2c9805bf0c453e",
-        "payment_name": "approved",
+        "payment_name": "${space_id}_65a4d3d7a63cff05bfb6e9db",
         "amount": 100000,
         "due_date": {
             "$date": "2023-12-06T00:00:00.000Z"
@@ -180,7 +180,7 @@
             "$date": "2024-01-09T00:00:00.000Z"
         },
         "amount": 50000,
-        "payment_name": "rejected",
+        "payment_name": "${space_id}_65a4d3eaa63cff05bfb6e9dc",
         "amount_description": "面料交付，支付尾款",
         "displayAs": null,
         "space": "659e696217ca9105be5d1f05",
@@ -203,7 +203,7 @@
         "due_date": {
             "$date": "2023-11-28T00:00:00.000Z"
         },
-        "payment_name": "pending",
+        "payment_name": "${space_id}_65a4d3c9a63cff05bfb6e9da",
         "amount": 50000,
         "amount_description": "合同首付款",
         "displayAs": null,
@@ -229,7 +229,7 @@
         },
         "amount_description": "合同第一批次进度款",
         "amount": 100000,
-        "payment_name": "approved",
+        "payment_name": "${space_id}_65a4d3d7a63cff05bfb6e9db",
         "displayAs": null,
         "space": "659e696217ca9105be5d1f05",
         "created": "2024-01-12T01:59:32.324Z",
@@ -249,7 +249,7 @@
         ],
         "purchase_order": "${space_id}_65a09c866c2c9805bf0c4557",
         "amount": 50000,
-        "payment_name": "approved",
+        "payment_name": "${space_id}_65a4d3d7a63cff05bfb6e9db",
         "amount_description": "合同第二批进度款",
         "due_date": {
             "$date": "2023-12-28T00:00:00.000Z"
@@ -272,7 +272,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_65a09c866c2c9805bf0c4557",
-        "payment_name": "rejected",
+        "payment_name": "${space_id}_65a4d3eaa63cff05bfb6e9dc",
         "amount": 50000,
         "amount_description": "货物交付，支付尾款",
         "due_date": {
@@ -296,7 +296,7 @@
             "659e696217ca9105be5d1f05"
         ],
         "purchase_order": "${space_id}_65a09f2b6c2c9805bf0c4573",
-        "payment_name": "pending",
+        "payment_name": "${space_id}_65a4d3c9a63cff05bfb6e9da",
         "amount": 80000,
         "due_date": {
             "$date": "2024-01-10T00:00:00.000Z"
@@ -323,7 +323,7 @@
         "due_date": {
             "$date": "2024-01-03T00:00:00.000Z"
         },
-        "payment_name": "pending",
+        "payment_name": "${space_id}_65a4d3c9a63cff05bfb6e9da",
         "amount": 150000,
         "amount_description": "合同首付款",
         "displayAs": null,
@@ -347,7 +347,7 @@
         "due_date": {
             "$date": "2024-02-02T00:00:00.000Z"
         },
-        "payment_name": "approved",
+        "payment_name": "${space_id}_65a4d3d7a63cff05bfb6e9db",
         "amount": 300000,
         "amount_description": "合同进度款",
         "displayAs": null,
@@ -371,7 +371,7 @@
         "due_date": {
             "$date": "2024-03-06T00:00:00.000Z"
         },
-        "payment_name": "rejected",
+        "payment_name": "${space_id}_65a4d3eaa63cff05bfb6e9dc",
         "amount": 350000,
         "amount_description": "合同尾款",
         "displayAs": null,
@@ -393,7 +393,7 @@
         ],
         "purchase_order": "${space_id}_65a09f2b6c2c9805bf0c4573",
         "amount": 120000,
-        "payment_name": "rejected",
+        "payment_name": "${space_id}_65a4d3eaa63cff05bfb6e9dc",
         "due_date": {
             "$date": "2024-02-29T00:00:00.000Z"
         },
