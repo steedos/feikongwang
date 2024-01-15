@@ -29,7 +29,7 @@
         "instance_state": "draft",
         "instances": [
             {
-                "_id": "KqXpypnHTNdFzMeg5",
+                "_id": "${space_id}_KqXpypnHTNdFzMeg5",
                 "state": "draft"
             }
         ]
@@ -60,7 +60,15 @@
         },
         "payment_status": "paid",
         "amount_description": "合同首付款",
-        "supplier_bank": "${space_id}_65a0d93c6c2c9805bf0c45d4"
+        "supplier_bank": "${space_id}_65a0d93c6c2c9805bf0c45d4",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "fWFjaTfddsi9uAy7C",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 15"
     },
     {
         "_id": "${space_id}_659fa210eff6f105bfc3bc3b",
@@ -88,7 +96,15 @@
         "due_date": {
             "$date": "2023-10-18T00:00:00.000Z"
         },
-        "payment_status": "paid"
+        "payment_status": "paid",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "g6n2ZAEeEBBAuyLLZ",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 14"
     },
     {
         "_id": "${space_id}_65a0d8216c2c9805bf0c45c8",
@@ -116,7 +132,15 @@
         "id": "Demo-FKD-00007",
         "account_banks": "中国建设银行贵州支行",
         "amount": 30000,
-        "amount_description": "合同尾款"
+        "amount_description": "合同尾款",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "5W7m5kRoSmSv9S3Tq",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 16"
     },
     {
         "_id": "${space_id}_65a0d9b56c2c9805bf0c45dc",
@@ -144,7 +168,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00008",
         "account_banks": "宁波银行山西支行",
-        "amount": 600000
+        "amount": 600000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "xBzrpiajp4uAedu8P",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 12"
     },
     {
         "_id": "${space_id}_65a0da3f6c2c9805bf0c45e0",
@@ -172,7 +204,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00009",
         "account_banks": "杭州银行无锡分行",
-        "amount": 50000
+        "amount": 50000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "mZCvJJ5kHDFuogM6D",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 13"
     },
     {
         "_id": "${space_id}_65a0dae16c2c9805bf0c45e4",
@@ -200,7 +240,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00010",
         "account_banks": "杭州银行无锡分行",
-        "amount": 100000
+        "amount": 100000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "7enj7bBkXMPp4vzfk",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 10"
     },
     {
         "_id": "${space_id}_65a0db426c2c9805bf0c45e8",
@@ -228,7 +276,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00011",
         "account_banks": "杭州银行无锡分行",
-        "amount": 50000
+        "amount": 50000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "dcHsLyJNoZAMkADPR",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 11"
     },
     {
         "_id": "${space_id}_65a0dc216c2c9805bf0c45f0",
@@ -256,7 +312,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00012",
         "account_banks": "中国招商银行有限公司无锡分行",
-        "amount": 50000
+        "amount": 50000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "zcnHQ6SzkaMg8iNXi",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 9"
     },
     {
         "_id": "${space_id}_65a0dc806c2c9805bf0c45f4",
@@ -284,7 +348,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00013",
         "account_banks": "中国招商银行有限公司无锡分行",
-        "amount": 100000
+        "amount": 100000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "L9tSqHcKDPk82AFk9",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 7"
     },
     {
         "_id": "${space_id}_65a0dcd76c2c9805bf0c45f8",
@@ -312,7 +384,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00014",
         "account_banks": "中国招商银行有限公司无锡分行",
-        "amount": 50000
+        "amount": 50000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "xojnYR3GjgbGL4axR",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 8"
     },
     {
         "_id": "${space_id}_65a0dd2e6c2c9805bf0c45fc",
@@ -340,7 +420,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00015",
         "account_banks": "中国招商银行有限公司无锡分行",
-        "amount": 50000
+        "amount": 50000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "gFCrqHaZRdzsdtgD7",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 6"
     },
     {
         "_id": "${space_id}_65a0dda06c2c9805bf0c4600",
@@ -368,7 +456,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00016",
         "account_banks": "中国建设银行湖南花县支行",
-        "amount": 150000
+        "amount": 150000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "HDiyoDCjHk8vE4ZJF",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 5"
     },
     {
         "_id": "${space_id}_65a0ddf76c2c9805bf0c4604",
@@ -396,7 +492,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00017",
         "account_banks": "中国建设银行湖南花县支行",
-        "amount": 300000
+        "amount": 300000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "uwSGg7jMrRH3Ey7Hg",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 4"
     },
     {
         "_id": "${space_id}_65a0de4f6c2c9805bf0c4608",
@@ -421,7 +525,15 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00018",
         "account_banks": "中国建设银行湖南花县支行",
-        "amount": 350000
+        "amount": 350000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "Q3TQsi4zSPxDpSxzW",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 3"
     },
     {
         "_id": "${space_id}_65a0df5c6c2c9805bf0c460c",
@@ -448,7 +560,16 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00019",
         "account_banks": "中国建设银行湖南花县支行",
-        "amount": 80000
+        "amount": 80000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "vjTTNbvxSc6D6rGKn",
+                "state": "approved"
+            }
+        ],
+        "amount_description": "合同首付款",
+        "name": "合同付款审批 2"
     },
     {
         "_id": "${space_id}_65a0dfaf6c2c9805bf0c4610",
@@ -473,6 +594,14 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "id": "Demo-FKD-00020",
         "account_banks": "中国建设银行湖南花县支行",
-        "amount": 120000
+        "amount": 120000,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "v8tJXr9jeczGBJhE2",
+                "state": "approved"
+            }
+        ],
+        "name": "合同付款审批 1"
     }
 ]
