@@ -10,8 +10,6 @@ columns:
     wrap: false
   - field: supplier_bank
     wrap: false
-  - field: billno
-    wrap: false
   - field: instance_state
     wrap: false
   - field: payment_status
