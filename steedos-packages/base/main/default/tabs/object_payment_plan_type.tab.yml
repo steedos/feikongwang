@@ -1,0 +1,7 @@
+name: object_payment_plan_type
+desktop: true
+label: 付款计划类型
+mobile: true
+object: payment_plan_type
+permissions: []
+type: object

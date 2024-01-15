@@ -67,4 +67,5 @@ tabs:
   - object_product
   - object_material_group
   - object_measurement_unit
+  - object_payment_plan_type
 visible: true
