@@ -1,0 +1,14 @@
+name: expense_advance_payment_beforeInsertAndUpdate
+listenTo: expense_advance_payment
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  const { doc } = ctx.params
+  // 新建 / 编辑记录时，报销字段有值，则核销状态为true；
+  if (doc.expense_reports) {
+      doc.write_off_status = true
+  }
+  return doc
+locked: false
