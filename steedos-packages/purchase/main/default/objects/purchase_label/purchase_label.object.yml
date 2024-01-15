@@ -14,6 +14,6 @@ enable_tree: false
 enable_workflow: false
 icon: calibration
 is_enable: true
-label: 采购合同标签
+label: 应付合同标签
 locked: false
 version: 2
