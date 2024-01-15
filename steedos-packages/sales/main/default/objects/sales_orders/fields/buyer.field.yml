@@ -5,3 +5,11 @@ type: lookup
 required: true
 reference_to: contacts
 multiple: false
+depend_on:
+  - customer
+filtersFunction: !!js/function |
+  function (filters, values) {
+      return [
+      ['account','=',values.customer]
+    ];
+  }

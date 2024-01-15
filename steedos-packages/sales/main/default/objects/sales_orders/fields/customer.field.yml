@@ -16,4 +16,4 @@ amis:
         Authorization: "Bearer ${context.tenantId},${context.authToken}"
       data:
         query: "{rows:contacts(filters: [[\"account\", \"=\", \"${customer}\"]], top: 10){name,_id}}"
-      adaptor: "console.log('11==> ', payload);var rows = payload.data.rows; if(rows && rows.length){ payload.data.buyer=rows[0]._id; } return payload;"
+      adaptor: "console.log('11==> ', payload);var rows = payload.data.rows; if(rows && rows.length>0){ payload.data={ buyer:rows[0]._id }; }  return payload;"
