@@ -1,0 +1,10 @@
+name: name
+create: true
+filterable: true
+hidden: true
+index: true
+label: 名称
+required: false
+searchable: true
+sort_no: 100
+type: text
