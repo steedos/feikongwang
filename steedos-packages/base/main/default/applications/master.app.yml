@@ -47,15 +47,18 @@ tab_items:
   object_payment_plan_type:
     group: 财务设置
     index: 9
+  object_sales_orders_receipts_type:
+    group: 财务设置
+    index: 10
   object_product:
     group: 产品设置
-    index: 10
+    index: 11
   object_material_group:
     group: 产品设置
-    index: 11
+    index: 12
   object_measurement_unit:
     group: 产品设置
-    index: 12
+    index: 13
 tabs:
   - object_accounts
   - object_expense_category
@@ -68,4 +71,5 @@ tabs:
   - object_material_group
   - object_measurement_unit
   - object_payment_plan_type
+  - object_sales_orders_receipts_type
 visible: true
