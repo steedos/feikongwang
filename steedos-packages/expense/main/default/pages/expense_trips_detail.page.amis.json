@@ -65,21 +65,6 @@
                     "id": "u:70b11d7fa2b1"
                 },
                 {
-                    "title": "借款",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:9f41c431b1a9",
-                            "relatedObjectApiName": "expense_advance_payment"
-                        }
-                    ],
-                    "id": "u:70b11d7fa2b1",
-                    "className": "p-t p-l-xs"
-                },
-                {
                     "title": "审批",
                     "body": [
                         {
