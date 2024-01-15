@@ -4,10 +4,10 @@ module.exports = {
         var status = null
         if(record.__super.__super._master){
             status = record.__super.__super._master.record.instance_state;
-            if (status && status == "approved") {
+            if ((status && status != "approved") ||  !status) {
                 sizeUp = false;
             }
         }
         return sizeUp;
     }
-}
+  }
