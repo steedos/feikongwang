@@ -32,6 +32,8 @@ tasks:
   - name: Steedos Packages
     command: |
       echo "METADATA_SERVER=$(gp url 5000)" >> .env.local
+      npm config set registry=https://registry.npmmirror.com
+      npm install -g steedos-cli
       yarn
       gp await-port 5000
       yarn dev
