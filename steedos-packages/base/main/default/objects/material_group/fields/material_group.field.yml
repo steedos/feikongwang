@@ -4,7 +4,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 上级产品分组
+label: 上级产品分类
 omit: false
 readonly: false
 reference_to: material_group

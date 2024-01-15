@@ -1,6 +1,6 @@
 name: name
 index: true
-label: 产品分组名称
+label: 产品分类名称
 required: true
 searchable: true
 sort_no: 100

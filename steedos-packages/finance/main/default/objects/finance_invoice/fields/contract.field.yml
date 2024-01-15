@@ -14,4 +14,5 @@ searchable: false
 sort_no: 130
 sortable: false
 type: master_detail
+inlineHelpText: 请选择当前客户下的签订的合同。
 write_requires_master_read: true

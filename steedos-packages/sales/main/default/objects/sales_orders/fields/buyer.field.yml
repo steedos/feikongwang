@@ -5,6 +5,7 @@ type: lookup
 required: true
 reference_to: contacts
 multiple: false
+inlineHelpText: 请选择当前客户下的联系人。
 depend_on:
   - customer
 filtersFunction: !!js/function |

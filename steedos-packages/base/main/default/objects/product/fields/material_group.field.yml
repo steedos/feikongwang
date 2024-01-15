@@ -1,5 +1,5 @@
 name: material_group
-label: 产品分组
+label: 产品分类
 reference_to: material_group
 sort_no: 120
 type: lookup

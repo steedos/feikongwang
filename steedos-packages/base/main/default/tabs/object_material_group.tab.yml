@@ -1,6 +1,6 @@
 name: object_material_group
 desktop: true
-label: 产品分组
+label: 产品分类
 mobile: true
 object: material_group
 permissions: []
