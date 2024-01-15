@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "${space_id}_65a4ee733c9c3605bf815499",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a4dcfac1ebbb05be0b6e2f",
+        "company_ids": [
+            "65a4dcfac1ebbb05be0b6e2f"
+        ],
+        "name": "首付款",
+        "space": "65a4dcfac1ebbb05be0b6e2f",
+        "created": "2024-01-15T08:36:03.927Z",
+        "modified": "2024-01-15T08:36:03.927Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    },
+    {
+        "_id": "${space_id}_65a4ee823c9c3605bf81549a",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a4dcfac1ebbb05be0b6e2f",
+        "company_ids": [
+            "65a4dcfac1ebbb05be0b6e2f"
+        ],
+        "name": "进度款",
+        "space": "65a4dcfac1ebbb05be0b6e2f",
+        "created": "2024-01-15T08:36:18.897Z",
+        "modified": "2024-01-15T08:36:18.897Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    },
+    {
+        "_id": "${space_id}_65a4ee8d3c9c3605bf81549b",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a4dcfac1ebbb05be0b6e2f",
+        "company_ids": [
+            "65a4dcfac1ebbb05be0b6e2f"
+        ],
+        "name": "尾款",
+        "space": "65a4dcfac1ebbb05be0b6e2f",
+        "created": "2024-01-15T08:36:29.780Z",
+        "modified": "2024-01-15T08:36:29.780Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    },
+    {
+        "_id": "${space_id}_65a4ee9a3c9c3605bf81549c",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a4dcfac1ebbb05be0b6e2f",
+        "company_ids": [
+            "65a4dcfac1ebbb05be0b6e2f"
+        ],
+        "name": "质保金",
+        "space": "65a4dcfac1ebbb05be0b6e2f",
+        "created": "2024-01-15T08:36:42.575Z",
+        "modified": "2024-01-15T08:36:42.575Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    },
+    {
+        "_id": "${space_id}_65a4eea73c9c3605bf81549d",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a4dcfac1ebbb05be0b6e2f",
+        "company_ids": [
+            "65a4dcfac1ebbb05be0b6e2f"
+        ],
+        "name": "补充款",
+        "space": "65a4dcfac1ebbb05be0b6e2f",
+        "created": "2024-01-15T08:36:55.939Z",
+        "modified": "2024-01-15T08:36:55.939Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    },
+    {
+        "_id": "${space_id}_65a4eeb23c9c3605bf81549e",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a4dcfac1ebbb05be0b6e2f",
+        "company_ids": [
+            "65a4dcfac1ebbb05be0b6e2f"
+        ],
+        "name": "全款",
+        "space": "65a4dcfac1ebbb05be0b6e2f",
+        "created": "2024-01-15T08:37:06.921Z",
+        "modified": "2024-01-15T08:37:06.921Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    } 
+]

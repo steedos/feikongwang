@@ -1,21 +1,94 @@
 [
     {
-        "_id": "${space_id}_65979fb60ace2505ccf5821d",
+        "_id": "${space_id}_65a49f8655d1b305bf065336",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
         "company_ids": [
-            "65976f1e0ace2505ccf58189"
+            "65a49913b79eae05cc12f1f1"
         ],
-        "expense_reports": "${space_id}_65979f6d0ace2505ccf5821b",
-        "name": "采矿项目出差款预支",
-        "date": "2024-01-05T00:00:00.000Z",
-        "amount": 20000,
-        "displayAs": null,
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T06:20:38.225Z",
-        "modified": "2024-01-05T06:20:54.028Z",
+        "name": "湖南出差预支款",
+        "date": {
+            "$date": "2023-06-01T00:00:00.000Z"
+        },
+        "amount": 2000,
+        "expense_reports": "${space_id}_65a49ba8b79eae05cc12f217",
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T02:59:18.426Z",
+        "modified": "2024-01-15T03:05:19.204Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "write_off_status": true,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "449ehRpYDFRPjRzzJ",
+                "state": "approved"
+            }
+        ],
+        "_table": {
+            "_id": "${space_id}_65a49f8655d1b305bf065336",
+            "_code": "expense_advance_payment"
+        }
+    },
+    {
+        "_id": "${space_id}_65a4a5bc55d1b305bf06535f",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "name": "年会费用预支款",
+        "date": {
+            "$date": "2023-02-01T00:00:00.000Z"
+        },
+        "amount": 8000,
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T03:25:48.861Z",
+        "modified": "2024-01-15T05:08:44.134Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "${space_id}_3247uKG4wDuwnutLR",
+                "state": "approved"
+            }
+        ],
+        "expense_reports": "${space_id}_65a4a61f55d1b305bf065360",
+        "write_off_status": true,
+        "_table": {
+            "_id": "${space_id}_65a4a5bc55d1b305bf06535f",
+            "_code": "expense_advance_payment"
+        }
+    },
+    {
+        "_id": "${space_id}_65a4c436c8f17905bfac2c4c",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "name": "出差费用预支",
+        "amount": 5000,
+        "date": {
+            "$date": "2023-03-01T00:00:00.000Z"
+        },
+        "expense_reports": "${space_id}_65a4c060c8f17905bfac2c25",
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:35:50.393Z",
+        "modified": "2024-01-15T07:45:49.911Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "${space_id}_CkksdpvoDhSHkM7LY",
+                "state": "approved"
+            }
+        ],
+        "write_off_status": true
     }
 ]

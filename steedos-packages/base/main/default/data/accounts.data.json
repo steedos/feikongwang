@@ -33,7 +33,8 @@
             "$date": "2010-08-01T00:00:00.000Z"
         },
         "state": "HUN",
-        "business_license": null
+        "business_license": null,
+        "number": "Demo-KS-00001"
     },
     {
         "_id": "${space_id}_o2sunJ3vuz3uSKN4z",
@@ -66,7 +67,8 @@
             "$date": "2008-08-01T00:00:00.000Z"
         },
         "registered_capital": 1000000,
-        "state": "JS"
+        "state": "JS",
+        "number": "Demo-KS-00002"
     },
     {
         "_id": "${space_id}_ua7esWTyhgNaspC94",
@@ -87,7 +89,8 @@
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "company_ids": [
             "659e696217ca9105be5d1f05"
-        ]
+        ],
+        "number": "Demo-KS-00003"
     },
     {
         "_id": "${space_id}_659f48ba1acefd05be1b8d0a",
@@ -112,7 +115,7 @@
         "modified": "2024-01-11T02:31:51.230Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "number": "Demo-KS-00001"
+        "number": "Demo-KS-00004"
     },
     {
         "_id": "${space_id}_659f4bba1acefd05be1b8d12",
@@ -134,7 +137,7 @@
         "modified": "2024-01-11T02:00:26.669Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "number": "Demo-KS-00002"
+        "number": "Demo-KS-00005"
     },
     {
         "_id": "${space_id}_65a0996c6c2c9805bf0c453c",
@@ -156,7 +159,7 @@
         "modified": "2024-01-12T01:44:12.753Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "number": "Demo-KS-00003"
+        "number": "Demo-KS-00006"
     }
     
 ]

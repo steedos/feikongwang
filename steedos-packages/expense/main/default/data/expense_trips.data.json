@@ -1,38 +1,102 @@
 [
     {
-        "_id": "${space_id}_6597a26f0ace2505ccf58220",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
-        "company_ids": [
-            "65976f1e0ace2505ccf58189"
-        ],
-        "name": "去宣城考察",
-        "business_purpose": "项目考察",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T06:32:15.121Z",
-        "modified": "2024-01-05T06:32:15.121Z",
+        "_id": "${space_id}_65a49ac9b79eae05cc12f210",
         "applicant": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "name": "湖南出差",
+        "business_purpose": "业务需要",
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T02:39:05.754Z",
+        "modified": "2024-01-15T03:03:49.109Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "travel_number": "Demo-TRIP-00004"
+        "travel_number": "TRIP-00001",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "pzDnud2H4uYahzAg7",
+                "state": "approved"
+            }
+        ]
     },
     {
-        "_id": "${space_id}_6597a50e0ace2505ccf58221",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
-        "company_ids": [
-            "65976f1e0ace2505ccf58189"
-        ],
-        "name": "出差江西",
-        "business_purpose": "项目沟通",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T06:43:26.664Z",
-        "modified": "2024-01-05T06:43:26.664Z",
+        "_id": "${space_id}_65a4c014c8f17905bfac2c23",
         "applicant": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "name": "宣城出差",
+        "business_purpose": "业务需要",
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:18:12.506Z",
+        "modified": "2024-01-15T05:29:02.867Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "travel_number": "Demo-TRIP-00005"
+        "travel_number": "TRIP-00002",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "nnsSFmLrYYqBTj4Zj",
+                "state": "approved"
+            }
+        ]
+    },
+    {
+        "_id": "${space_id}_65a4c2b3c8f17905bfac2c48",
+        "applicant": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "business_purpose": "业务需要",
+        "name": "贵州出差",
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:29:23.437Z",
+        "modified": "2024-01-15T05:33:02.879Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "travel_number": "TRIP-00003",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "XBewZoisWWX9Q3298",
+                "state": "approved"
+            }
+        ]
+    },
+    {
+        "_id": "${space_id}_65a4c3afc8f17905bfac2c4a",
+        "applicant": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "name": "深圳出差",
+        "business_purpose": "业务需要",
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:33:35.961Z",
+        "modified": "2024-01-15T07:04:28.597Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "travel_number": "TRIP-00004",
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "ZbgxuykCtQFCKQBjq",
+                "state": "approved"
+            }
+        ]
     }
 ]

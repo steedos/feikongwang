@@ -75,7 +75,7 @@
         "payment_date": {
             "$date": "2023-10-18T00:00:00.000Z"
         },
-        "supplier_bank": "659f494e1acefd05be1b8d0c",
+        "supplier_bank": "${space_id}_659f494e1acefd05be1b8d0c",
         "space": "659e696217ca9105be5d1f05",
         "created": "2024-01-11T08:08:48.602Z",
         "modified": "2024-01-12T06:09:21.641Z",
