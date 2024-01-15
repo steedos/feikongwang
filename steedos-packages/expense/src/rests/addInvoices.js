@@ -15,7 +15,7 @@ module.exports = {
         const invoicesObj = this.getObject('invoices');
         let reportsInvoices = JSON.parse(invoices)
         for(let reportsInvoice of reportsInvoices){
-            await invoicesObj.directUpdate(reportsInvoice._id, {
+            await invoicesObj.update(reportsInvoice._id, {
                 expense_reports:expenseReportsId,
                 state: "unsubmitted"
             })
