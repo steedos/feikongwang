@@ -1,4 +1,4 @@
-name: billing_money
+name: amount_invoice
 create: true
 data_type: currency
 filterable: false
@@ -8,7 +8,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 已开票金额
+label: 开票中金额
 multiple: false
 precision: 18
 primary: false
@@ -16,12 +16,12 @@ readonly: false
 scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 200
+sort_no: 220
 sortable: false
 summary_field: amount_invoicing
 summary_filters:
   - field: state
-    operation: '='
+    operation: <>
     value: approved
 summary_object: contract_invoice_detail
 summary_type: sum
