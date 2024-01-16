@@ -1,8 +1,6 @@
 name: phone
 data_type: text
 filterable: false
-formula: account.invoice_phone
-formula_blank_value: blanks
 group: 开票信息
 hidden: false
 index: false

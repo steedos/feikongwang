@@ -1,8 +1,6 @@
 name: credit_code
 data_type: text
 filterable: false
-formula: account.credit_code
-formula_blank_value: blanks
 group: 开票信息
 hidden: false
 index: false
