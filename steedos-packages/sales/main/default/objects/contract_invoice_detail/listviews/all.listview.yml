@@ -3,8 +3,8 @@ columns:
   - field: contract
   - field: date
   - field: amount
-  - field: invoiced_amount
   - field: amount_invoicing
+  - field: state
   - field: finance_invoice
 filter_scope: space
 filters: []
