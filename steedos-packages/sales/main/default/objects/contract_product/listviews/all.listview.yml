@@ -1,6 +1,6 @@
 name: all
 columns:
-  - field: name
+  - field: product
   - field: product_number
   - field: specification
   - field: measurement
@@ -18,7 +18,7 @@ from_code_id: contract_product.all
 is_enable: true
 label: 所有
 mobile_columns:
-  - field: name
+  - field: product
   - field: product_number
   - field: specification
   - field: sales_unit
@@ -26,7 +26,7 @@ mobile_columns:
   - field: amount
 scrolling_mode: standard
 searchable_fields:
-  - field: name
+  - field: product
   - field: product_number
   - field: specification
   - field: product_barcode

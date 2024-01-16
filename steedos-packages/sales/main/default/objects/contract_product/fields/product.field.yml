@@ -1,4 +1,4 @@
-name: name
+name: product
 create: true
 filterable: false
 generated: false
@@ -11,14 +11,14 @@ multiple: false
 primary: false
 readonly: false
 reference_to: product
-required: true
+required: false
 searchable: false
 show_as_qr: false
 sort_no: 100
 sortable: false
 type: master_detail
 unique: false
-write_requires_master_read: true
+write_requires_master_read: false
 amis:
   autoFill:
     fillMapping:
@@ -32,8 +32,5 @@ amis:
       "tax_code": "${tax_code}"
       "product_description": "${product_description}"
     api:
-      url: "${context.rootUrl}/api/v1/product/${name}"
+      url: "${context.rootUrl}/api/v1/product/${product}"
       method: get
-      adaptor: "console.log('11==> ', payload);return payload;"
-     
-       
