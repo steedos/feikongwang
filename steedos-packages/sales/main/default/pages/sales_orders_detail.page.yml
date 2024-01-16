@@ -1,4 +1,6 @@
 name: sales_orders_detail
+__filename: >-
+  /workspace/feikongwang/steedos-packages/sales/main/default/pages/sales_orders_detail.page.yml
 is_active: true
 label: 应收合同记录页
 locked: false

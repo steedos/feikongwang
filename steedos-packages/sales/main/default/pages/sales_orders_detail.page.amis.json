@@ -30,7 +30,7 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:6cdb50e9765a",
-                            "relatedObjectApiName": "product"
+                            "relatedObjectApiName": "contract_product"
                         },
                         {
                             "type": "steedos-object-related-listview",
@@ -75,7 +75,7 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:9360e9d1308c",
-                            "relatedObjectApiName": "finance_invoice"
+                            "relatedObjectApiName": "contract_invoice_detail"
                         }
                     ],
                     "className": "p-t p-l-xs",
