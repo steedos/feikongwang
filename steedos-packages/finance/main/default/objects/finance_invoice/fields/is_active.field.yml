@@ -3,6 +3,5 @@ defaultValue: false
 group: 发票信息
 hidden: false
 label: 已开票
-readonly: true
 sort_no: 200
 type: toggle

@@ -36,7 +36,7 @@ field_permissions:
     editable: true
   - field: is_active
     readable: true
-    editable: false
+    editable: true
   - field: name
     readable: true
     editable: false

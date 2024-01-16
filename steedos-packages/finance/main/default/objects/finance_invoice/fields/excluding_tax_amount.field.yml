@@ -1,5 +1,0 @@
-name: excluding_tax_amount
-label: 不含税金额
-sort_no: 290
-type: formula
-visible_on: '{{false}}'
