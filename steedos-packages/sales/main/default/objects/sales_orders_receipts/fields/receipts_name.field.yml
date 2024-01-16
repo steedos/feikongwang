@@ -1,24 +1,10 @@
 name: receipts_name
-hidden: false
-is_name: true
 label: 计划类型
-omit: false
-options:
-  - label: 首付款
-    value: pending
-  - label: 进度款
-    value: approved
-  - label: 尾款
-    value: rejected
-  - label: 质保金
-    value: terminated
-  - label: 补充款
-    value: signed
-  - label: 全款
-    value: all
+sort_no: 10
+hidden: false
+is_name: false
 readonly: false
 required: true
-searchable: true
-sort_no: 10
-type: select
-filterable: true
+enable_enhanced_lookup: false
+reference_to: sales_orders_receipts_type
+type: lookup

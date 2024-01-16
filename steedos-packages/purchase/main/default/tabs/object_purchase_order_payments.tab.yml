@@ -3,5 +3,6 @@ desktop: true
 label: 付款计划
 mobile: true
 object: purchase_order_payments
+enable_enhanced_lookup: false
 permissions: []
 type: object
