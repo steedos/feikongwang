@@ -1,2 +1,38 @@
 name: all
-hidden: false
+columns:
+  - field: name
+    wrap: true
+  - field: account
+    wrap: false
+  - field: tax
+  - field: invoice_type
+    wrap: false
+  - field: invoice_number
+  - field: actual_date
+    wrap: false
+  - field: amount
+  - field: is_active
+    wrap: false
+filter_scope: space
+filters: []
+is_enable: true
+label: 所有
+scrolling_mode: standard
+searchable_fields:
+  - field: account
+  - field: name
+  - field: invoice_type
+  - field: tax
+  - field: amount
+  - field: detail_amount
+  - field: instance_state
+  - field: is_active
+  - field: invoice_number
+shared: true
+show_count: false
+sort:
+  - field_name: actual_date
+    order: desc
+  - field_name: created
+    order: desc
+type: grid

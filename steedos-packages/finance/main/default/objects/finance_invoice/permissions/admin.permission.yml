@@ -37,9 +37,6 @@ field_permissions:
   - field: is_active
     readable: true
     editable: false
-  - field: !<tag:yaml.org,2002:js/undefined> ''
-    readable: true
-    editable: true
   - field: name
     readable: true
     editable: false
