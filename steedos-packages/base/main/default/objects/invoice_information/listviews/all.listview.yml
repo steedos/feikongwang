@@ -1,12 +1,12 @@
 name: all
 columns:
-  - field: default
   - field: invoice
   - field: credit_code
   - field: invoice_combinenum
   - field: invoice_address
   - field: invoice_phone
   - field: customer
+  - field: default
 filter_scope: space
 filters: []
 from_code_id: invoice_information.all

@@ -1,11 +1,11 @@
 name: all
 columns:
-  - field: default
   - field: name
   - field: phone
   - field: address
   - field: email
   - field: customer
+  - field: default
 filter_scope: space
 filters: []
 from_code_id: mailing_information.all
