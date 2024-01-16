@@ -1,0 +1,39 @@
+{
+    "type": "service",
+    "body": [
+      {
+        "type": "page",
+        "body": [
+          {
+            "type": "steedos-object-form",
+            "label": "对象表单",
+            "objectApiName": "invoices",
+            "recordId": "${recordId}",
+            "className": "",
+            "id": "u:b3d626885b90",
+            "enableTabs": false,
+            "mode": "edit",
+            "layout": "normal",
+            "formDataFilter": "if (!Steedos.isMobile()) {\n  var receiptSchema = {};\n  form.body.forEach(function (fieldSet) {\n    fieldSet.body.forEach(function (field, index) {\n      if (field.className.indexOf(\"col-span-2\") == -1) {\n        fieldSet.body[index].className += \" col-span-2\";\n      }\n      if (field.name == \"receipt\") {\n        receiptSchema = field;\n        delete fieldSet.body[index];\n      }\n    })\n  })\n  receiptSchema = {\n    ...receiptSchema,\n    \"drag\": true,\n    \"className\": \"h-full\",\n    \"inputClassName\": \"h-full\",\n    \"label\": \"\"\n  };\n  form.body = [\n    {\n      \"type\": \"grid\",\n      \"columns\": [\n        {\n          \"columnClassName\": \"left-invoices-input-file\",\n          \"body\": [\n            receiptSchema\n          ]\n        },\n        {\n          \"body\": form.body,\n          \"style\": {\n            \"max-height\": \"calc(100vh - 330px)\",\n            \"overflow\": \"auto\"\n          }\n        }\n      ]\n    }\n  ]\n}\nreturn form;"
+          }
+        ],
+        "css": {
+          ".left-invoices-input-file .antd-FileControl-dropzone": {
+            "height": "calc(100% - 70px)"
+          },
+          ".left-invoices-input-file .antd-FileControl-dropzone .antd-FileControl-acceptTip": {
+            "height": "100%"
+          }
+        },
+        "id": "u:69e0d36d02d9",
+        "bodyClassName": "p-0"
+      }
+    ],
+    "data": {
+      "objectName": "invoices",
+      "context": {
+      }
+    },
+    "name": "page_invoices_form",
+    "id": "u:bd5d1a90496e"
+  }

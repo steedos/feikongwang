@@ -1,0 +1,12 @@
+name: invoices_form
+is_active: true
+label: 发票表单
+object_name: invoices
+pageAssignments:
+  - desktop: true
+    mobile: false
+    page: invoices_form
+    type: orgDefault
+render_engine: amis
+type: form
+widgets: []
