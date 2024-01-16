@@ -8,11 +8,12 @@ enable_files: false
 enable_inline_edit: true
 enable_instances: false
 enable_notes: false
+enable_share: false
 enable_tasks: false
 enable_tree: false
 enable_workflow: false
 icon: contract_line_item
 is_enable: true
+is_system: true
 label: 开票信息
-locked: false
 version: 2

@@ -4,7 +4,7 @@ filterable: false
 generated: false
 hidden: false
 index: false
-is_name: false
+is_name: true
 is_wide: false
 label: 发票抬头
 multiple: false

@@ -1,11 +1,20 @@
 name: all
 columns:
+  - field: default
   - field: name
+  - field: phone
+  - field: address
+  - field: email
+  - field: customer
 filter_scope: space
 filters: []
+from_code_id: mailing_information.all
 is_enable: true
 label: 所有
+mobile_columns: []
 scrolling_mode: standard
+searchable_fields: []
 shared: true
+sort: []
 sort_no: 100
 type: grid
