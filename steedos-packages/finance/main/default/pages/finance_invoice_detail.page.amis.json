@@ -22,24 +22,32 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "appId": "${appId}",
-                            "id": "u:b3f707a816c7"
-                        }
-                    ],
-                    "id": "u:5d4e7e3f6ecc"
-                },
-                {
-                    "title": "开票明细",
-                    "body": [
+                            "id": "u:b3f707a816c7",
+                            "mode": "read",
+                            "className": "mb-4",
+                            "excludedFields": [
+                                "modified",
+                                "modified_by"
+                            ]
+                        },
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:ae05c7022e13",
+                            "id": "u:1d964f6ff860",
+                            "relatedObjectApiName": "contract_invoice_detail"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:f67807a820c5",
                             "relatedObjectApiName": "finance_invoice_detail"
                         }
                     ],
-                    "id": "u:c1ed660b58c6"
+                    "id": "u:5d4e7e3f6ecc"
                 },
                 {
                     "title": "附件",
