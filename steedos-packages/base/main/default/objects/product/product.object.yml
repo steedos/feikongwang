@@ -1,4 +1,14 @@
 name: product
+compactLayouts:
+  - product_number
+  - specification
+  - measurement
+  - material_group
+  - sales_unit
+  - purchase_unit_price
+  - product_description
+  - product_barcode
+  - tax_code
 custom: true
 enable_api: true
 enable_dataloader: true

@@ -13,32 +13,43 @@
             "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
             "tabs": [
                 {
-                    "title": "详细",
-                    "className": "px-0 py-4",
+                    "title": "基础信息",
                     "body": [
                         {
-                            "type": "steedos-object-form",
-                            "label": "对象表单",
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "appId": "${appId}",
-                            "id": "u:3f8d62efad94"
+                            "id": "u:34c2602b17f2",
+                            "relatedObjectApiName": "contacts"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:d2e27910b66b",
+                            "relatedObjectApiName": "account_banks"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:4f1024a991f3",
+                            "relatedObjectApiName": "invoice_information"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:f887c29a3e44",
+                            "relatedObjectApiName": "mailing_information"
                         }
                     ],
-                    "id": "u:5d4e7e3f6ecc"
-                },
-                {
-                    "title": "相关",
-                    "className": "px-0 pt-4",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-lists",
-                            "label": "相关列表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "appId": "${appId}"
-                        }
-                    ]
+                    "id": "u:e3fc1cf2a7d2",
+                    "className": "p-t p-l-xs"
                 },
                 {
                     "title": "合同",
@@ -61,6 +72,74 @@
                         }
                     ],
                     "id": "u:2e205bd53cc2"
+                },
+                {
+                    "title": "表单",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:3f8d62efad94",
+                            "appId": "${appId}"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc",
+                    "className": "px-0 py-4"
+                },
+                {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:dd7e79a3bc1d",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:cfa8cd3573a0",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "日程",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:0f996aaba071",
+                            "relatedObjectApiName": "events"
+                        }
+                    ],
+                    "id": "u:8c7df8c0fa9a",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "其他",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:ff24645a0537",
+                            "relatedObjectApiName": "instances"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:4caf3ec8580a",
+                            "relatedObjectApiName": "audit_records"
+                        }
+                    ],
+                    "id": "u:28043120623d",
+                    "className": "p-t p-l-xs"
                 }
             ],
             "id": "u:f34fbbb51fb0"

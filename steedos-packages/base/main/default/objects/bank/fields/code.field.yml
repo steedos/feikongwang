@@ -1,7 +1,0 @@
-name: code
-label: 银行代码
-sort_no: 110
-type: text
-filterable: true
-searchable: true
-

@@ -1,4 +1,6 @@
 name: account_detail
+__filename: >-
+  /workspace/feikongwang/steedos-packages/base/main/default/pages/account_detail.page.yml
 is_active: true
 label: 客商详情页
 locked: false

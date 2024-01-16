@@ -1,14 +1,24 @@
 name: accounts
-label: 客商
-icon: account
-enable_files: true
-enable_search: true
-enable_events: true
-enable_tasks: false
+compactLayouts:
+  - number
+  - company_type
+  - industry
+  - state
+  - address
+  - charge
+  - credit_limit
+custom: true
 enable_api: true
-enable_share: false
-enable_audit: true
 enable_enhanced_lookup: true
+enable_events: true
+enable_files: true
+enable_inline_edit: true
 enable_instances: true
+enable_search: true
+enable_share: false
+enable_tasks: false
 enable_workflow: true
+icon: account
+is_enable: true
+label: 客商
 version: 2
