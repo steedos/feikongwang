@@ -1,0 +1,7 @@
+name: object_sales_orders_receipts_type
+desktop: true
+label: 收款计划类型
+mobile: true
+object: sales_orders_receipts_type
+permissions: []
+type: object
