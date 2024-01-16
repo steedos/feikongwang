@@ -1,0 +1,9 @@
+name: name
+create: true
+filterable: true
+index: true
+label: 收件人
+required: true
+searchable: true
+sort_no: 100
+type: text
