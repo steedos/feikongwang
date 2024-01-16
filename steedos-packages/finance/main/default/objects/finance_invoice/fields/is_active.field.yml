@@ -1,6 +1,8 @@
 name: is_active
 defaultValue: false
+group: 发票信息
+hidden: false
 label: 已开票
-sort_no: 300
-type: toggle
 readonly: true
+sort_no: 200
+type: toggle

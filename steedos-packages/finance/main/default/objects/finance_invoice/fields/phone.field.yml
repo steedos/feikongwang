@@ -3,6 +3,7 @@ data_type: text
 filterable: false
 formula: account.invoice_phone
 formula_blank_value: blanks
+group: 开票信息
 hidden: false
 index: false
 is_name: false
@@ -12,6 +13,6 @@ omit: false
 readonly: false
 required: false
 searchable: false
-sort_no: 210
+sort_no: 110
 sortable: false
-type: formula
+type: text

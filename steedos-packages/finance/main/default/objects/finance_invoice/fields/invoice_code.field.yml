@@ -1,5 +1,6 @@
 name: invoice_code
 filterable: false
+group: 发票信息
 hidden: false
 index: false
 is_name: false
@@ -9,6 +10,6 @@ omit: false
 readonly: false
 required: false
 searchable: false
-sort_no: 20
+sort_no: 190
 sortable: false
 type: text

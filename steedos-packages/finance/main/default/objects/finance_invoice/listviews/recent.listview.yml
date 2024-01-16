@@ -1,32 +1,38 @@
 name: recent
 columns:
-  - field: id
-    width: '130'
-    wrap: false
   - field: name
     wrap: true
-  - field: money
-    width: '120'
-    wrap: false
-  - field: contract
-    wrap: true
-  - field: invoice_type
-    width: '160'
-    wrap: false
   - field: account
-    width: '230'
     wrap: false
-  - field: customer_bank
+  - field: tax
+  - field: invoice_type
     wrap: false
-  - field: due_date
-    wrap: false 
-  - field: is_active
-    wrap: false 
+  - field: invoice_number
   - field: actual_date
-    wrap: false  
+    wrap: false
+  - field: amount
+  - field: is_active
+    wrap: false
 filter_scope: space
 filters: []
+is_enable: true
 label: 最近查看
 scrolling_mode: standard
+searchable_fields:
+  - field: account
+  - field: name
+  - field: invoice_type
+  - field: tax
+  - field: amount
+  - field: detail_amount
+  - field: instance_state
+  - field: is_active
+  - field: invoice_number
 shared: true
+show_count: false
+sort:
+  - field_name: actual_date
+    order: desc
+  - field_name: created
+    order: desc
 type: grid

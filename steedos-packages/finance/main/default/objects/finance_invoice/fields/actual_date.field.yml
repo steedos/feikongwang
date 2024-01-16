@@ -1,5 +1,6 @@
 name: actual_date
 filterable: true
+group: 发票信息
 hidden: false
 index: false
 is_name: false
@@ -9,6 +10,6 @@ omit: false
 readonly: false
 required: false
 searchable: false
-sort_no: 310
+sort_no: 210
 sortable: false
 type: date

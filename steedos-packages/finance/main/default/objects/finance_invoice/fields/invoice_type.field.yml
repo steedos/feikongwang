@@ -11,6 +11,6 @@ readonly: false
 reference_to: invoice_type
 required: true
 searchable: false
-sort_no: 25
+sort_no: 30
 sortable: false
 type: lookup
