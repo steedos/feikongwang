@@ -5,7 +5,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 收款日期
+label: 实际收款日期
 omit: false
 readonly: false
 required: false

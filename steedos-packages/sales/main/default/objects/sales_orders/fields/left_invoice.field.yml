@@ -1,7 +1,7 @@
 name: left_invoice
 data_type: currency
 filterable: false
-formula: ROUND(amount-amount_invoice-amount_invoice,2)
+formula: ROUND(amount-amount_invoice-billing_money,2)
 formula_blank_value: zeroes
 hidden: false
 index: false

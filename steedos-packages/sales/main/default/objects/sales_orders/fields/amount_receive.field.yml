@@ -1,18 +1,20 @@
 name: amount_receive
+data_type: currency
 filterable: false
+formula: ROUND(amount-arrival_amount-amount_receiving,2)
+formula_blank_value: zeroes
 hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 合同应收
+label: 合同剩余应收
 omit: false
-precision: 200
+precision: 18
 readonly: false
 required: false
 scale: 2
 searchable: false
-sort_no: 75
-sortable: true
-type: number
-visible_on: "{{global.mode ==='read' ? true : false}}"
+sort_no: 84
+sortable: false
+type: formula
 group: 数据概览

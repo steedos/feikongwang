@@ -60,7 +60,7 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:c7a35e3745f9",
-                            "relatedObjectApiName": "finance_receive"
+                            "relatedObjectApiName": "contract_receive_detail"
                         }
                     ],
                     "id": "u:33cf5d9b0026",

@@ -1,0 +1,32 @@
+name: state
+create: true
+data_type: text
+defaultValue: '''unsubmitted'''
+filterable: false
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 状态
+multiple: false
+options:
+  - label: 待收款
+    value: unsubmitted
+    color: d7d9dd
+  - label: 收款中
+    value: approval
+    color: df6825
+  - label: 已收款
+    value: approved
+    color: 78d190
+primary: false
+readonly: true
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 170
+sortable: false
+type: select
+unique: false
+write_requires_master_read: false

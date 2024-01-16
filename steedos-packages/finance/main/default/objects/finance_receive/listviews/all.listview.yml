@@ -1,27 +1,36 @@
 name: all
 columns:
-  - field: id
-    wrap: false
+  - field: name
   - field: account
-    wrap: false
-  - field: due_date
     wrap: false
   - field: amount
     wrap: false
-  - field: contract_receipts_state
+  - field: state
+  - field: customer_bank
+  - field: due_date
     wrap: false
   - field: receipt_date
     wrap: false
   - field: amount_description
     wrap: false
-filter_fields:
-  - contract
-  - due_date
-  - account
+  - field: billno
 filter_scope: space
-label: 所有收款记录
+filters: []
+from_code_id: finance_receive.all
+is_enable: true
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields:
+  - field: account
+  - field: state
+  - field: customer_bank
+  - field: due_date
+  - field: name
 shared: true
 show_count: false
 sort:
-  - field_name: id
-    order: desc
+  - field_name: due_date
+    order: asc
+sort_no: 100
+type: grid
