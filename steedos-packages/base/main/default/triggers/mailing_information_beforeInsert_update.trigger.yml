@@ -1,0 +1,19 @@
+name: mailing_information_beforeInsert_update
+listenTo: mailing_information
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  const { doc } = ctx.params;
+  //同一个客商下，邮寄信息子表只能有一条默认的记录
+  if (doc.customer && doc.default) {
+      const mailingInformationObj = this.getObject("mailing_information")
+      const mailingInformationDoc = await mailingInformationObj.find({ filters: [['customer', '=', doc.customer], ['_id', "!=", doc._id]] });
+      for (let mailingInformation of mailingInformationDoc) {
+          if (mailingInformation.default) {
+              throw new Error("该邮寄信息只允许有一条默认记录")
+          }
+      }
+  }
+locked: false

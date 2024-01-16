@@ -1,0 +1,19 @@
+name: invoice_information_beforeInsert_update
+listenTo: invoice_information
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  const { doc } = ctx.params;
+  //同一个客商下，开票信息子表只能有一条默认的记录
+  if (doc.customer && doc.default) {
+      const invoiceInformationObj =  this.getObject("invoice_information")
+      const invoiceInformationDoc = await invoiceInformationObj.find({ filters: [['customer', '=', doc.customer],['_id',"!=",doc._id]] });
+      for (let invoiceInformation of invoiceInformationDoc) {
+          if (invoiceInformation.default) {
+              throw new Error("该开票信息只允许有一条默认记录")
+          }
+      }
+  }
+locked: false
