@@ -1,13 +1,11 @@
 name: all
 columns:
-  - name
-  - product_code
-  - material_group
-  - specification
-  - amount
-  - separate_accounting
-  - inventory
-  - attributes
+  - field: name
 filter_scope: space
-label: 所有物料
+filters: []
+is_enable: true
+label: 所有
+scrolling_mode: standard
 shared: true
+sort_no: 100
+type: grid
