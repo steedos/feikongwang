@@ -1,11 +1,26 @@
 name: all
 columns:
   - field: name
+  - field: product_number
+  - field: product_barcode
+  - field: specification
+  - field: measurement
+  - field: material_group
 filter_scope: space
 filters: []
+from_code_id: product.all
 is_enable: true
-label: 所有
+label: 所有产品
+mobile_columns: []
 scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: product_number
+  - field: product_barcode
+  - field: specification
+  - field: measurement
+  - field: material_group
 shared: true
+sort: []
 sort_no: 100
 type: grid
