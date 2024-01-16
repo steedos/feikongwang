@@ -1,4 +1,10 @@
 name: expense_trips
+compactLayouts:
+  - travel_number
+  - applicant
+  - business_purpose
+  - created
+  - instance_state
 custom: true
 enable_api: true
 enable_dataloader: true

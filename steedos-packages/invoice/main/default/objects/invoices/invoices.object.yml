@@ -1,4 +1,12 @@
 name: invoices
+compactLayouts:
+  - type
+  - invoice_num
+  - invoice_date
+  - tax
+  - invoice_amount
+  - verify_status
+  - category
 custom: true
 enable_api: true
 enable_audit: true

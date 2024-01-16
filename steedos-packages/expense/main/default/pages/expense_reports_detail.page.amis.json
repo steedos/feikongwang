@@ -13,23 +13,14 @@
             "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
             "tabs": [
                 {
-                    "title": "详细",
-                    "className": "px-0 py-4",
+                    "title": "明细",
                     "body": [
-                        {
-                            "type": "steedos-object-form",
-                            "label": "对象表单",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "appId": "${appId}",
-                            "id": "u:bd91e43a9080"
-                        },
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:01ea21d5a7e2",
+                            "id": "u:a12279e412d9",
                             "relatedObjectApiName": "invoices",
                             "visibleOn": ""
                         },
@@ -38,7 +29,7 @@
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:b2e7f364e24c",
+                            "id": "u:3a8de9d15d51",
                             "relatedObjectApiName": "expense_advance_payment",
                             "visibleOn": ""
                         },
@@ -47,15 +38,30 @@
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:e1d3b08319a1",
+                            "id": "u:78a220ecf4af",
                             "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:e53d9fa91df9",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:bd91e43a9080",
+                            "appId": "${appId}"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
                     "title": "审批",
-                    "className": "p-t p-l-xs",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -66,6 +72,7 @@
                             "relatedObjectApiName": "instances"
                         }
                     ],
+                    "className": "p-t p-l-xs",
                     "id": "u:90a62caf002e"
                 }
             ],

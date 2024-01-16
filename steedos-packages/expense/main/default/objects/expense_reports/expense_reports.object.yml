@@ -1,7 +1,17 @@
 name: expense_reports
+compactLayouts:
+  - reports_number
+  - applicant
+  - business_purpose
+  - start
+  - end
+  - expense_trips
+  - total_cost
+  - reimbursed_amount
+  - advance_payment
+  - cost
 custom: true
 enable_api: true
-enable_audit: false
 enable_dataloader: true
 enable_enhanced_lookup: true
 enable_events: false
@@ -15,5 +25,4 @@ enable_workflow: true
 icon: medication_statement
 is_enable: true
 label: 报销单
-locked: false
 version: 2
