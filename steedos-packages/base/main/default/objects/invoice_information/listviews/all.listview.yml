@@ -14,7 +14,13 @@ is_enable: true
 label: 所有
 mobile_columns: []
 scrolling_mode: standard
-searchable_fields: []
+searchable_fields:
+  - field: invoice
+  - field: credit_code
+  - field: invoice_combinenum
+  - field: invoice_address
+  - field: invoice_phone
+  - field: customer
 shared: true
 sort: []
 sort_no: 100

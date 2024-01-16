@@ -13,7 +13,12 @@ is_enable: true
 label: 所有
 mobile_columns: []
 scrolling_mode: standard
-searchable_fields: []
+searchable_fields:
+  - field: name
+  - field: phone
+  - field: address
+  - field: email
+  - field: customer
 shared: true
 sort: []
 sort_no: 100
