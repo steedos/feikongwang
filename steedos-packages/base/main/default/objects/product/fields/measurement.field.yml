@@ -10,11 +10,12 @@ label: 计量单位
 multiple: false
 primary: false
 readonly: false
+reference_to: measurement_unit
 required: false
 searchable: false
 show_as_qr: false
 sort_no: 140
 sortable: false
-type: text
+type: lookup
 unique: false
 write_requires_master_read: false

@@ -5,7 +5,7 @@ generated: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 产品说明
 multiple: false
 primary: false
