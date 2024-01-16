@@ -9,3 +9,7 @@ mobile: true
 page: purchase_dashboard
 permissions: []
 type: page
+license:
+  - platform-professional
+  - platform-enterprise
+

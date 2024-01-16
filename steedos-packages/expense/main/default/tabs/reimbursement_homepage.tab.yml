@@ -10,3 +10,6 @@ page: reimbursement_dashboard
 permissions: []
 type: page
 url: /app/analytics
+license:
+  - platform-professional
+  - platform-enterprise

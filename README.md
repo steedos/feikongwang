@@ -11,24 +11,38 @@
 
 ## 快速开始
 
-```bash
+```shell
 # 克隆仓库
 git clone https://github.com/steedos-labs/feikongwang
 cd feikongwang
 
-# 安装依赖
-yarn install
+# 运行 Steedos 社区版
+docker-compose -f steedos-platform/docker-compose.yml up
 
-# 运行 Steedos 
-yarn start:platform
+# 安装依赖
+yarn
 
 # 运行费控王
 yarn start
 ```
 
+## 运行企业版平台（可选）
+
+企业版用户可以运行企业版平台。注意，需要先停止社区版。
+
+配置环境变量 .env.local
+
+```shell
+STEEDOS_LICENSE=...
+```
+
+```shell
+docker-compose -f steedos-platform/docker-compose-ee.yml up
+```
+
 ## 文档
 
-费控王基于 Steedos 低代码平台开发，更多关于安装、配置和使用的详细信息，请参阅[文档链接](https://docs.steedos.com)。
+费控王基于 Steedos 低代码平台开发，更多关于安装、配置和使用的详细信息，请参阅[文档链接](https://docs.steedos.cn)。
 
 ## 功能
 
