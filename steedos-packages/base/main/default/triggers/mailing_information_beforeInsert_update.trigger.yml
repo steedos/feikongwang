@@ -12,7 +12,7 @@ handler: |-
       const mailingInformationDoc = await mailingInformationObj.find({ filters: [['customer', '=', doc.customer], ['_id', "!=", doc._id]] });
       for (let mailingInformation of mailingInformationDoc) {
           if (mailingInformation.default) {
-              throw new Error("该邮寄信息只允许有一条默认记录")
+              throw new Error("客商邮寄信息只允许创建一条默认记录")
           }
       }
   }
