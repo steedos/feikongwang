@@ -7,7 +7,7 @@ is_wide: false
 label: 计量单位 
 omit: false
 readonly: false
-required: true
+required: false
 searchable: false
 sort_no: 140
 sortable: false

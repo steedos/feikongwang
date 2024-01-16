@@ -16,8 +16,8 @@ viewAllFiles: true
 viewAllRecords: true
 field_permissions:
   - field: name
-    readable: true
-    editable: true
+    readable: false
+    editable: false
   - field: owner
     readable: true
     editable: true

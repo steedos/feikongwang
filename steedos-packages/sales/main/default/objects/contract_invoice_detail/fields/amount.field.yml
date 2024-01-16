@@ -9,7 +9,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 合同金额(选择合同后，amis自动带出只读)
+label: 合同金额
 multiple: false
 precision: 18
 primary: false

@@ -1,13 +1,13 @@
 name: detail_amount
 create: true
-data_type: number
+data_type: currency
 filterable: false
 generated: false
 hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 开票明细金额
+label: 开票金额
 multiple: false
 precision: 18
 primary: false

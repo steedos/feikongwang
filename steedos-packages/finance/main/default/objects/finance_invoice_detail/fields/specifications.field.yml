@@ -3,12 +3,12 @@ filterable: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 规格 
 omit: false
 readonly: false
-required: true
+required: false
 searchable: false
-sort_no: 130
+sort_no: 120
 sortable: false
 type: text

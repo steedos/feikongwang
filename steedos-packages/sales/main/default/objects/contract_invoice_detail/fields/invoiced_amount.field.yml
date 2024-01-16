@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 已开票金额(选择合同后，amis自动带出只读)
+label: 已开票金额
 multiple: false
 primary: false
 readonly: false
