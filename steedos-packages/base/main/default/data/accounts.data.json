@@ -25,8 +25,8 @@
         "is_supplier": true,
         "number_of_employees": 10000,
         "partner_account": false,
-        "company_type": "民企",
-        "industry": "Chemicals",
+        "company_type": "企业",
+        "industry": "生产制造",
         "legal_representative": "宋大宝",
         "rating": "Warm",
         "register_date": {
@@ -34,7 +34,8 @@
         },
         "state": "HUN",
         "business_license": null,
-        "number": "Demo-KS-00001"
+        "number": "Demo-KS-00001",
+        "charge": "${space_owner_id}"
     },
     {
         "_id": "${space_id}_o2sunJ3vuz3uSKN4z",
@@ -55,12 +56,12 @@
         "company_ids": [
             "659e696217ca9105be5d1f05"
         ],
-        "company_type": "民企",
+        "company_type": "企业",
         "rating": "Hot",
         "due_date": {
             "$date": "2031-08-27T00:00:00.000Z"
         },
-        "industry": "Construction",
+        "industry": "生产制造",
         "legal_representative": "刘力亮",
         "number_of_employees": 1000,
         "register_date": {
@@ -68,13 +69,14 @@
         },
         "registered_capital": 1000000,
         "state": "JS",
-        "number": "Demo-KS-00002"
+        "number": "Demo-KS-00002",
+        "charge": "${space_owner_id}"
     },
     {
         "_id": "${space_id}_ua7esWTyhgNaspC94",
         "address": null,
         "company_id": "659e696217ca9105be5d1f05",
-        "company_type": "民企",
+        "company_type": "企业",
         "credit_code": "459326499564646467989Q",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "status": "enable",
@@ -90,7 +92,9 @@
         "company_ids": [
             "659e696217ca9105be5d1f05"
         ],
-        "number": "Demo-KS-00003"
+        "number": "Demo-KS-00003",
+        "industry": "生产制造",
+        "charge": "${space_owner_id}"
     },
     {
         "_id": "${space_id}_659f48ba1acefd05be1b8d0a",
