@@ -13,3 +13,4 @@ searchable: false
 sort_no: 180
 sortable: false
 type: text
+visible_on: "{{global.mode ==='read' ? true : false}}"

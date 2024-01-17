@@ -13,3 +13,4 @@ searchable: false
 sort_no: 210
 sortable: false
 type: date
+visible_on: "{{global.mode ==='read' ? true : false}}"

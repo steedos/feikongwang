@@ -5,3 +5,4 @@ hidden: false
 label: 已开票
 sort_no: 200
 type: toggle
+visible_on: "{{global.mode ==='read' ? true : false}}"
