@@ -4,7 +4,7 @@ sort_no: 25
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 multiple: true
 omit: false
 readonly: false

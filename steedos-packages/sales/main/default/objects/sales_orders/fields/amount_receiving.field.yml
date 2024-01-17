@@ -3,7 +3,8 @@ create: true
 data_type: currency
 filterable: false
 generated: false
-group: 数据概览
+inlineHelpText: 收款审批中的收款金额
+group: 收款管理
 hidden: false
 index: false
 is_name: false
@@ -16,7 +17,7 @@ readonly: false
 scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 86
+sort_no: 100
 sortable: false
 summary_field: amount_invoicing
 summary_filters:

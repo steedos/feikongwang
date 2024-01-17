@@ -1,13 +1,14 @@
-name: billing_receive
+name: left_receive
 data_type: currency
 filterable: false
-formula: ROUND((amount-amount_receive)/(amount-left_invoice),2)
+formula: ROUND(amount-verification_money,2)
+inlineHelpText: 合同金额-核销金额
 formula_blank_value: zeroes
 hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 收款开票比
+label: 合同应收
 omit: false
 precision: 18
 readonly: false
@@ -17,5 +18,4 @@ searchable: false
 sort_no: 80
 sortable: false
 type: formula
-inlineHelpText: 收款/开票占比。
-group: 数据概览
+group: 收款管理

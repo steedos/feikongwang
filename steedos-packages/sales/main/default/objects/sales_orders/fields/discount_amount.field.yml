@@ -1,10 +1,10 @@
-name: verification_money
+name: discount_amount
 filterable: false
 index: false
 is_name: false
 is_wide: false
-label: 核销金额（公式）
-inlineHelpText: 收款金额+折让金额
+label: 折让金额（累计汇总）
+inlineHelpText: 收款已审核通过的折让金额
 omit: false
 precision: 200
 readonly: false
