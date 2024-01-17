@@ -15,3 +15,24 @@ searchable: false
 sort_no: 10
 sortable: false
 type: lookup
+amis:
+  autoFill:
+    fillMapping:
+      "invoice_name": "${invoice}"
+      "credit_code": "${credit_code}"
+      "address": "${invoice_address}"
+      "phone": "${invoice_phone}"
+      "bank": "${bank}"
+      "bank_account": "${bank_account}"
+      "recipient": "${recipient}"
+      "telephont": "${telephont}"
+      "mail": "${mail}"
+      "mail_address": "${mail_address}"
+    api:
+      url: "${context.rootUrl}/api/finance/finance_invoice/autoFill/finance_invoice"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        "account": '${account}'
+      

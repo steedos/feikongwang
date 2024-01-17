@@ -1,4 +1,4 @@
-name: invoice_combinenum
+name: bank
 create: true
 filterable: false
 generated: false
@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 银行账号
+label: 开户银行
 multiple: false
 primary: false
 readonly: false
