@@ -11,7 +11,7 @@ multiple: false
 primary: false
 readonly: false
 reference_to: product
-required: false
+required: true
 searchable: false
 show_as_qr: false
 sort_no: 100
