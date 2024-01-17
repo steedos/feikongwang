@@ -5,14 +5,34 @@ when:
   - beforeUpdate
 isEnabled: true
 handler: |-
-  const { doc } = ctx.params;
+  var { doc, id, previousDoc,isInsert, isUpdate } = ctx.params;
   //同一个客商下，开票信息子表只能有一条默认的记录
-  if (doc.customer && doc.default) {
-      const invoiceInformationObj =  this.getObject("invoice_information")
-      const invoiceInformationDoc = await invoiceInformationObj.find({ filters: [['customer', '=', doc.customer],['_id',"!=",doc._id]] });
-      for (let invoiceInformation of invoiceInformationDoc) {
-          if (invoiceInformation.default) {
-              throw new Error("客商开票信息只允许创建一条默认记录")
+  const invoiceInformationObj = this.getObject("invoice_information")
+  if (isInsert) {
+      if (doc.customer && doc.default) {
+          const invoiceInformationDoc = await invoiceInformationObj.findOne({ filters: [['default', "=", true], ['customer', '=', doc.customer]] });
+          if (invoiceInformationDoc) {
+              throw new Error("该开票信息只允许有一条默认记录")
+          }
+      }
+  }
+  if (isUpdate) {
+      if (doc.default) {
+          // 单元格编辑时doc里面只有编辑的字段
+          const invoiceInformationPreDoc = await invoiceInformationObj.findOne(id);
+          console.log("编辑记录", invoiceInformationPreDoc);
+          var customer = "";
+          if (doc.customer) {
+              customer = doc.customer
+          } else {
+              customer = invoiceInformationPreDoc.customer
+          }
+          const invoiceInformationDoc = await invoiceInformationObj.find({ filters: [['customer', '=', customer], ['_id', "!=", invoiceInformationPreDoc._id]] });
+          console.log("invoiceInformationDoc", invoiceInformationDoc)
+          for (let invoiceInformation of invoiceInformationDoc) {
+              if (invoiceInformation.default) {
+                  throw new Error("该开票信息只允许有一条默认记录")
+              }
           }
       }
   }

@@ -5,14 +5,32 @@ when:
   - beforeUpdate
 isEnabled: true
 handler: |-
-  const { doc } = ctx.params;
+  var { doc, id, previousDoc, isInsert, isUpdate } = ctx.params;
   //同一个客商下，邮寄信息子表只能有一条默认的记录
-  if (doc.customer && doc.default) {
-      const mailingInformationObj = this.getObject("mailing_information")
-      const mailingInformationDoc = await mailingInformationObj.find({ filters: [['customer', '=', doc.customer], ['_id', "!=", doc._id]] });
-      for (let mailingInformation of mailingInformationDoc) {
-          if (mailingInformation.default) {
-              throw new Error("客商邮寄信息只允许创建一条默认记录")
+  const mailingInformationObj = this.getObject("mailing_information")
+  if (isInsert) {
+      if (doc.customer && doc.default) {
+          const mailingInformationDoc = await mailingInformationObj.findOne({ filters: [['default', "=", true], ['customer', '=', doc.customer]] });
+          if (mailingInformationDoc) {
+              throw new Error("该邮寄信息只允许有一条默认记录")
+          }
+      }
+  }
+  if (isUpdate) {
+      if (doc.default) {
+          // 单元格编辑时doc里面只有编辑的字段
+          const mailingInformationPreDoc = await mailingInformationObj.findOne(id);
+          var customer = "";
+          if (doc.customer) {
+              customer = doc.customer
+          } else {
+              customer = mailingInformationPreDoc.customer
+          }
+          const mailingInformationDoc = await mailingInformationObj.find({ filters: [['customer', '=', customer], ['_id', "!=", mailingInformationPreDoc._id]] });
+          for (let mailingInformation of mailingInformationDoc) {
+              if (mailingInformation.default) {
+                  throw new Error("该邮寄信息只允许有一条默认记录")
+              }
           }
       }
   }
