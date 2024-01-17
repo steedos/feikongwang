@@ -50,6 +50,20 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
+                    "title": "收款核销",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:fcf96694ae9e",
+                            "relatedObjectApiName": "finance_invoice_write_detail"
+                        }
+                    ],
+                    "className": "p-t p-l-xs"
+                },
+                {
                     "title": "附件",
                     "body": [
                         {
