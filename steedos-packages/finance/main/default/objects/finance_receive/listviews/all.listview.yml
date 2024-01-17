@@ -5,7 +5,7 @@ columns:
     wrap: false
   - field: amount
     wrap: false
-  - field: state
+  - field: is_active
   - field: customer_bank
   - field: due_date
     wrap: false

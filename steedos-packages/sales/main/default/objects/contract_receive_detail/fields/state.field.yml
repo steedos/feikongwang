@@ -14,9 +14,6 @@ options:
   - label: 待收款
     value: unsubmitted
     color: d7d9dd
-  - label: 收款中
-    value: approval
-    color: df6825
   - label: 已收款
     value: approved
     color: 78d190

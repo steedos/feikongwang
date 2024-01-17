@@ -14,9 +14,6 @@ options:
   - label: 待开票
     value: unsubmitted
     color: d7d9dd
-  - label: 开票审批中
-    value: approval
-    color: df6825
   - label: 已开票
     value: approved
     color: 78d190
