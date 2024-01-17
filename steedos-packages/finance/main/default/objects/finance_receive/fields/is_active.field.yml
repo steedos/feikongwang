@@ -4,4 +4,5 @@ hidden: false
 label: 已收款
 sort_no: 170
 type: toggle
+group: 收款信息
 visible_on: "{{global.mode ==='read' ? true : false}}"

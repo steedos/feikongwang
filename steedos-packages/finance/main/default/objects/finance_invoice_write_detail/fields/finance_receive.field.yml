@@ -1,0 +1,16 @@
+name: finance_receive
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 收款
+omit: false
+readonly: true
+reference_to: finance_receive
+required: true
+searchable: false
+sort_no: 999
+sortable: true
+type: master_detail
+write_requires_master_read: true

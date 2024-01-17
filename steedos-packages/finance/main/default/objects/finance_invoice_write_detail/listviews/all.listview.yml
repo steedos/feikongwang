@@ -1,0 +1,25 @@
+name: all
+columns:
+  - field: name
+  - field: invoiceapply
+  - field: finance_receive
+  - field: amount_invoicing
+  - field: amount_invoicing_receive
+  - field: amount_discount
+  - field: amount_discount_receive
+  - field: amount_write
+  - field: amount_write_receive
+filter_scope: space
+filters: []
+from_code_id: finance_invoice_write_detail.all
+is_enable: true
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+shared: true
+show_count: false
+sort: []
+sort_no: 100
+type: grid

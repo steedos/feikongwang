@@ -1,0 +1,15 @@
+name: name
+filterable: false
+formula: 'FPHX-{00000}'
+hidden: false
+index: false
+is_name: true
+is_wide: false
+label: 核销编号
+omit: false
+readonly: true
+required: false
+searchable: false
+sort_no: 335
+sortable: true
+type: autonumber

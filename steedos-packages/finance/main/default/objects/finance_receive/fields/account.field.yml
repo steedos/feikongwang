@@ -3,7 +3,7 @@ filterable: true
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 客户
 multiple: false
 readonly: false
