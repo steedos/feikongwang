@@ -17,7 +17,7 @@ readonly: false
 scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 100
+sort_no: 105
 sortable: false
 summary_field: amount_invoicing
 summary_filters:

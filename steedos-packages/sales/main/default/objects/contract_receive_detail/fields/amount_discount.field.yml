@@ -1,4 +1,4 @@
-name: amount
+name: amount_discount
 create: true
 filterable: false
 generated: false
@@ -6,16 +6,18 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 合同金额
+label: 折让金额
+defaultValue: 0
 multiple: false
+precision: 18
 primary: false
 readonly: false
 required: false
+scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 115
+sort_no: 141
 sortable: false
-type: text
+type: currency
 unique: false
 write_requires_master_read: false
-

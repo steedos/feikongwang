@@ -1,17 +1,31 @@
 name: verification_being_money
+group: 收款管理
+label: 核销中金额
+inlineHelpText: 收款中金额+折让中金额
+create: true
+data_type: currency
 filterable: false
+generated: false
+hidden: false
 index: false
 is_name: false
 is_wide: false
-omit: false
-precision: 200
+multiple: false
+precision: 18
+primary: false
 readonly: false
-required: false
 scale: 2
 searchable: false
-sort_no: 87
-sortable: true
-type: number
-group: 收款管理
-label: 核销中金额（公式）
-inlineHelpText: 收款中金额+折让中金额
+show_as_qr: false
+sort_no: 95
+sortable: false
+summary_field: amount_write
+summary_filters:
+  - field: state
+    operation: <>
+    value: approved
+summary_object: contract_receive_detail
+summary_type: sum
+type: summary
+unique: false
+write_requires_master_read: false

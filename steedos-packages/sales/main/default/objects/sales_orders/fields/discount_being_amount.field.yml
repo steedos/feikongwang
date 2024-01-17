@@ -1,17 +1,31 @@
 name: discount_being_amount
+group: 收款管理
+label: 折让中金额
+inlineHelpText: 收款审批中的折让金额
+create: true
+data_type: currency
 filterable: false
+generated: false
+hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 折让中金额（累计汇总）
-inlineHelpText: 收款审批中的折让金额
-omit: false
-precision: 200
+multiple: false
+precision: 18
+primary: false
 readonly: false
-required: false
 scale: 2
 searchable: false
-sort_no: 86
-sortable: true
-type: number
-group: 收款管理
+show_as_qr: false
+sort_no: 115
+sortable: false
+summary_field: amount_discount
+summary_filters:
+  - field: state
+    operation: <>
+    value: approved
+summary_object: contract_receive_detail
+summary_type: sum
+type: summary
+unique: false
+write_requires_master_read: false

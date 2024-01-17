@@ -1,11 +1,11 @@
 name: recent
 columns:
   - field: contract
-  - field: date
-  - field: amount
   - field: contract_receive_amount
   - field: invoice_amount
   - field: amount_invoicing
+  - field: amount_discount
+  - field: amount_write
   - field: state
   - field: finance_receive
 filter_scope: space
