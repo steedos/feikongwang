@@ -70,6 +70,7 @@ module.exports = {
                         invoice_num: result.InvoiceNum[0].word,    // 发票号码
                         // TaxiNum 车牌号
                         invoice_date: result.Date[0].word,         // 日期
+                        verify_status: "no_inspection",           // 查验状态默认不查验
                         // Time 上下车时间
                         // PickupTime 上车时间
                         // DropoffTime 下车时间
@@ -88,6 +89,7 @@ module.exports = {
                     doc = {
                         service_type: result.ServiceType[0].word,    // 发票消费类型。火车票此字段固定输出：交通
                         invoice_num: result.ticket_num[0].word,      // 车票号
+                        verify_status: "no_inspection",           // 查验状态默认不查验
                         // starting_station 始发站
                         // train_num 车次号
                         // destination_station 到达站
@@ -110,6 +112,7 @@ module.exports = {
                         invoice_num: result.invoice_number[0].word,            // 发票号码
                         // invoice_rate 金额
                         invoice_amount: result.invoice_rate_in_figure[0].word, // invoice_rate_in_figure 金额小写
+                        verify_status: "no_inspection",           // 查验状态默认不查验
                         // invoice_rate_in_word 金额大写
                         // Province 省
                         // City 市

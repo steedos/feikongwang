@@ -14,6 +14,8 @@ options:
     value: "passed"
   - label: 查验未通过
     value: "failed"
+  - label: 不查验
+    value: "no_inspection"
 primary: false
 required: false
 searchable: false

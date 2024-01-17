@@ -1,0 +1,106 @@
+[
+    {
+        "_id": "${space_id}_65a4c3d2c8f17905bfac2c4b",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "expense_trips": "${space_id}_65a4c3afc8f17905bfac2c4a",
+        "name": "南京",
+        "arrived": "深圳",
+        "departure_date": {
+            "$date": "2023-03-01T00:00:00.000Z"
+        },
+        "displayAs": null,
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:34:10.254Z",
+        "modified": "2024-01-15T07:04:28.624Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "_table": {
+            "_id": "${space_id}_65a4c3d2c8f17905bfac2c4b",
+            "_code": "expense_trips_itinerary"
+        },
+        "remark": null
+    },
+    {
+        "_id": "${space_id}_65a4c34cc8f17905bfac2c49",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "expense_trips": "${space_id}_65a4c2b3c8f17905bfac2c48",
+        "name": "无锡",
+        "arrived": "开阳",
+        "departure_date": {
+            "$date": "2024-01-04T00:00:00.000Z"
+        },
+        "displayAs": null,
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:31:56.624Z",
+        "modified": "2024-01-15T05:33:02.906Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "_table": {
+            "_id": "${space_id}_65a4c34cc8f17905bfac2c49",
+            "_code": "expense_trips_itinerary"
+        },
+        "remark": null
+    },
+    {
+        "_id": "${space_id}_65a4c033c8f17905bfac2c24",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "expense_trips": "${space_id}_65a4c014c8f17905bfac2c23",
+        "name": "上海",
+        "arrived": "宣城",
+        "departure_date": {
+            "$date": "2023-09-01T00:00:00.000Z"
+        },
+        "displayAs": null,
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T05:18:43.243Z",
+        "modified": "2024-01-15T05:29:02.900Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "_table": {
+            "_id": "${space_id}_65a4c033c8f17905bfac2c24",
+            "_code": "expense_trips_itinerary"
+        },
+        "remark": null
+    },
+    {
+        "_id": "${space_id}_65a49b05b79eae05cc12f211",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a49913b79eae05cc12f1f1",
+        "company_ids": [
+            "65a49913b79eae05cc12f1f1"
+        ],
+        "expense_trips": "${space_id}_65a49ac9b79eae05cc12f210",
+        "name": "上海",
+        "arrived": "花垣",
+        "departure_date": {
+            "$date": "2023-06-01T00:00:00.000Z"
+        },
+        "remark": "项目需求沟通",
+        "displayAs": null,
+        "space": "65a49913b79eae05cc12f1f1",
+        "created": "2024-01-15T02:40:05.589Z",
+        "modified": "2024-01-15T03:03:49.140Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "_table": {
+            "_id": "${space_id}_65a49b05b79eae05cc12f211",
+            "_code": "expense_trips_itinerary"
+        }
+    }
+]

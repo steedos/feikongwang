@@ -10,6 +10,7 @@
     "type": "train_ticket",
     "file": "65a49dca55d1b305bf065323",
     "ocr_log": "65a49dca55d1b305bf065322",
+    "verify_status": "no_inspection",
     "ocr_result": {
         "date": [
             {
@@ -116,6 +117,7 @@
     "type": "taxi_receipt",
     "file": "65a49e1f55d1b305bf065329",
     "ocr_log": "65a49e1f55d1b305bf065328",
+    "verify_status": "no_inspection",
     "ocr_result": {
         "PickupTime": [
             {

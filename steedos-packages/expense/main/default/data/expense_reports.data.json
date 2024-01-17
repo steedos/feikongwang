@@ -31,7 +31,7 @@
         "instance_state": "approved",
         "instances": [
             {
-                "_id": "${space_id}_eJHiTJjQxHRxNtQ27",
+                "_id": "eJHiTJjQxHRxNtQ27",
                 "state": "approved"
             }
         ],
