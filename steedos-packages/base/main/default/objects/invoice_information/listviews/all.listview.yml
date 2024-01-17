@@ -2,7 +2,8 @@ name: all
 columns:
   - field: invoice
   - field: credit_code
-  - field: invoice_combinenum
+  - field: bank
+  - field: bank_account
   - field: invoice_address
   - field: invoice_phone
   - field: customer
