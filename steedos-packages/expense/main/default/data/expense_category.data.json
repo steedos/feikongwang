@@ -32,6 +32,22 @@
         "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
     },
     {
+        "_id": "${space_id}_659cb45c72192405bf822112",
+        "open": true,
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "659cafb872192405bf822167",
+        "company_ids": [
+            "659cafb872192405bf822167"
+        ],
+        "name": "住宿费",
+        "space": "659cafb872192405bf822167",
+        "created": "2024-01-09T02:50:04.136Z",
+        "modified": "2024-01-09T02:50:04.136Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9"
+    },
+    {
         "_id": "${space_id}_659cb47472192405bf82216d",
         "open": true,
         "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
