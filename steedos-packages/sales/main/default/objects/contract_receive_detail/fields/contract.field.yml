@@ -6,7 +6,7 @@ hidden: false
 index: false
 inlineHelpText: 只能选择收款中选择的客户关联的合同。
 is_name: false
-is_wide: false
+is_wide: true
 label: 合同
 multiple: false
 primary: false

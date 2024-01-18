@@ -14,7 +14,7 @@ reference_to: finance_receive
 required: true
 searchable: false
 show_as_qr: false
-sort_no: 110
+sort_no: 999
 sortable: false
 type: master_detail
 unique: false

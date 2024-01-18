@@ -1,4 +1,10 @@
 name: account_banks
+compactLayouts:
+  - pk_bankdoc
+  - pk_currtype
+  - accname
+  - account_branch
+  - accountproperty
 custom: true
 enable_api: true
 enable_audit: true

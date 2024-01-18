@@ -1,4 +1,10 @@
 name: contacts
+compactLayouts:
+  - email
+  - phone
+  - title
+  - salutation
+  - department
 label: 联系人
 icon: contact
 enable_files: true

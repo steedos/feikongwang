@@ -1,4 +1,8 @@
 name: company_account
+compactLayouts:
+  - accnum
+  - pk_banktype
+  - pk_bankname
 custom: true
 enable_api: true
 enable_share: true
