@@ -1,7 +1,7 @@
 [
     {
         "_id": "${space_id}_65a8dc0dc06cbb0647557f76",
-        "followup_id": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "followup_id": "${space_owner_id}",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": true,
         "company_id": "65a8d376c06cbb0647557f64",
@@ -46,7 +46,7 @@
     },
     {
         "_id": "${space_id}_65a8eb5bc06cbb0647557fa2",
-        "followup_id": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "followup_id": "${space_owner_id}",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
         "company_id": "65a8d376c06cbb0647557f64",
