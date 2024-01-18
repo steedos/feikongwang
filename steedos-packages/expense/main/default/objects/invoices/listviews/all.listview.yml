@@ -8,6 +8,7 @@ columns:
   - field: seller_name
   - field: purchaser_name
   - field: verify_status
+  - field: category
   - field: created
 filter_scope: space
 filters: []

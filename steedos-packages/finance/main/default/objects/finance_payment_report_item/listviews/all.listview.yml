@@ -8,8 +8,6 @@ columns:
     wrap: false
   - field: report_id
     wrap: false
-  - field: billno
-    wrap: false
   - field: amount_description
     wrap: false
 filter_fields:
