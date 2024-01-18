@@ -9,7 +9,8 @@ mobile: true
 page: purchase_dashboard
 permissions: []
 type: url
-url: /analytics/amis/dashboard/659dff7e58bef705bed40b25
+url: /analytics/embed/dashboard/659dff7e58bef705bed40b25
 license:
   - platform-professional
   - platform-enterprise
+
