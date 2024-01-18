@@ -1,0 +1,33 @@
+name: contract_receive_detail_beforeInsert_update
+listenTo: contract_receive_detail
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  let { doc, previousDoc, isInsert, isUpdate, id } = ctx.params;
+  const contractReceiveDetailObj = this.getObject("contract_receive_detail")
+  if (isInsert) {
+      let amount = doc.amount_invoicing + doc.amount_discount
+      if (doc.contract_receive_amount < amount) {
+          throw new Error("收款金额+折让金额不得大于合同应收金额");
+      }
+  }
+  if (isUpdate) {
+      if (doc.contract_receive_amount && doc.contract) {
+          let amount = doc.amount_invoicing + doc.amount_discount
+          if (doc.contract_receive_amount < amount) {
+              throw new Error("收款金额+折让金额不得大于合同应收金额");
+          }
+      } else if (doc.contract == undefined) {
+          var contractReceiveDetailDoc = await contractReceiveDetailObj.findOne(id);
+          let amount_invoicing = doc.amount_invoicing ? doc.amount_invoicing : contractReceiveDetailDoc.amount_invoicing;
+          let amount_discount = doc.amount_discount ? doc.amount_discount : contractReceiveDetailDoc.amount_discount;
+          let amount = amount_invoicing + amount_discount
+          if (contractReceiveDetailDoc.contract_receive_amount < amount) {
+              throw new Error("收款金额+折让金额不得大于合同应收金额");
+          }
+      }
+  }
+  return doc
+locked: false
