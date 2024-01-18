@@ -1,64 +1,84 @@
 [
     {
-        "_id": "${space_id}_65977e370ace2505ccf58212",
+        "_id": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "followup_id": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": true,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "department": "${space_id}",
+        "name": "绞手架销售合同",
+        "customer": "${space_id}_659f4bba1acefd05be1b8d12",
+        "buyer": "${space_id}_65a8dbc7c06cbb0647557f74",
+        "amount": 200000,
+        "signed_date": {
+            "$date": "2023-11-01T00:00:00.000Z"
+        },
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:06:37.761Z",
+        "modified": "2024-01-18T08:45:56.273Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "65a8e479c06cbb0647557f93",
+        "buyer_mobile": "13589687442",
+        "contract_code": "Demo-YS-00001",
+        "left_invoice": 0,
+        "left_receive": 200000,
+        "amount_invoice": 200000,
+        "amount_receiving": 200000,
+        "arrival_amount": 0,
+        "billing_money": 0,
+        "billing_money_receive": 0,
+        "discount_amount": 0,
+        "discount_being_amount": 0,
+        "product_amount": 100000,
+        "verification_being_money": 200000,
+        "verification_money": 0,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "FrmH5tb8SsC6cEAjW",
+                "state": "approved"
+            }
+        ],
+        "contract_label": []
+    },
+    {
+        "_id": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "followup_id": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
+        "company_id": "65a8d376c06cbb0647557f64",
         "company_ids": [
-            "65976f1e0ace2505ccf58189"
+            "65a8d376c06cbb0647557f64"
         ],
-        "name": "搅拌机制造合同",
-        "customer": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "amount": 20000000,
-        "signed_date": "2024-01-01T00:00:00.000Z",
-        "buyer": "${space_owner_id}",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T03:57:43.395Z",
-        "modified": "2024-01-05T03:57:43.395Z",
+        "department": "${space_id}",
+        "name": "纺织品原材料销售合同",
+        "customer": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "buyer": "${space_id}_65a8e2a6c06cbb0647557f8e",
+        "amount": 1000000,
+        "signed_date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:11:55.738Z",
+        "modified": "2024-01-18T09:11:55.738Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "contract_code": "Demo-YS-00001"
-    },
-    {
-        "_id": "${space_id}_6597bf52d411ad05be86b13f",
-        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
-        "company_ids": [
-            "65976f1e0ace2505ccf58189"
-        ],
-        "name": "家居买卖合同",
-        "customer": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "amount": 2000,
-        "signed_date": "2024-01-05T00:00:00.000Z",
-        "department": "${space_id}",
-        "buyer": "${space_owner_id}",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T08:35:30.372Z",
-        "modified": "2024-01-05T08:35:52.723Z",
-        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "contract_code": "Demo-YS-00002"
-    },
-    {
-        "_id": "${space_id}_6597bf85d411ad05be86b140",
-        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "locked": false,
-        "company_id": "65976f1e0ace2505ccf58189",
-        "company_ids": [
-            "65976f1e0ace2505ccf58189"
-        ],
-        "name": "房屋租赁合同",
-        "customer": "${space_id}_ua7esWTyhgNaspC94",
-        "amount": 2000,
-        "signed_date": "2024-01-05T00:00:00.000Z",
-        "department": "${space_id}",
-        "buyer": "${space_owner_id}",
-        "space": "65976f1e0ace2505ccf58189",
-        "created": "2024-01-05T08:36:21.375Z",
-        "modified": "2024-01-05T08:36:21.375Z",
-        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "contract_code": "Demo-YS-00003"
+        "buyer_mobile": "13756983252",
+        "contract_code": "Demo-YS-00006",
+        "left_invoice": 0,
+        "left_receive": 1000000,
+        "amount_invoice": 1000000,
+        "amount_receiving": 1000000,
+        "arrival_amount": 0,
+        "billing_money": 0,
+        "billing_money_receive": 0,
+        "discount_amount": 0,
+        "discount_being_amount": 0,
+        "product_amount": 1000000,
+        "verification_being_money": 1000000,
+        "verification_money": 0
     }
 ]

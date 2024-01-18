@@ -1,0 +1,64 @@
+[
+    {
+        "_id": "${space_id}_65a8dc4ac06cbb0647557f78",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "product": "${space_id}_65a8dc34c06cbb0647557f77",
+        "purchase_unit_price": 10000,
+        "sales_unit": 10000,
+        "product_number": "Demo-cp-00001",
+        "product_barcode": "123456",
+        "specification": "AS",
+        "measurement": "${space_id}_6274cc1f40f71f0031853add",
+        "material_group": "${space_id}_65a8dd51c06cbb0647557f7a",
+        "tax_code": "123654",
+        "product_description": "用于建筑施工",
+        "quantity": 10,
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:07:38.717Z",
+        "modified": "2024-01-18T08:14:53.414Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "amount": 100000,
+        "name": "A-001",
+        "_table": {
+            "_id": "65a8dc4ac06cbb0647557f78",
+            "_code": "contract_product"
+        }
+    },
+    {
+        "_id": "${space_id}_65a8ebcdc06cbb0647557fa3",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "product": "${space_id}_65a8e2d2c06cbb0647557f91",
+        "purchase_unit_price": 100,
+        "sales_unit": 100,
+        "product_number": "Demo-cp-00002",
+        "product_barcode": "335659856",
+        "specification": "56AB",
+        "measurement": "${space_id}_6511468659b73a04f4a26be8",
+        "material_group": "${space_id}_65a8dd51c06cbb0647557f7a",
+        "tax_code": null,
+        "product_description": null,
+        "quantity": 10000,
+        "name": "粉桔亚麻",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:13:49.760Z",
+        "modified": "2024-01-18T09:13:49.760Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "amount": 1000000
+    }
+]

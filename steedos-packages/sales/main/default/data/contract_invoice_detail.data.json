@@ -1,0 +1,107 @@
+[
+    {
+        "_id": "${space_id}_65a8e023c06cbb0647557f86",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
+        "amount_invoicing": 50000,
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:24:03.188Z",
+        "modified": "2024-01-18T08:24:03.188Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "state": "unsubmitted"
+    },
+    {
+        "_id": "${space_id}_65a8e04bc06cbb0647557f87",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
+        "amount_invoicing": 100000,
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:24:43.065Z",
+        "modified": "2024-01-18T08:24:43.065Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "state": "unsubmitted"
+    },
+    {
+        "_id": "${space_id}_65a8e05cc06cbb0647557f88",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
+        "amount_invoicing": 50000,
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:25:00.695Z",
+        "modified": "2024-01-18T08:25:00.695Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "state": "unsubmitted"
+    },
+    {
+        "_id": "${space_id}_65a8ecaac06cbb0647557fad",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "amount_invoicing": 200000,
+        "finance_invoice": "${space_id}_65a8eca4c06cbb0647557fac",
+        "invoice_name": null,
+        "credit_code": null,
+        "address": null,
+        "phone": null,
+        "bank": null,
+        "bank_account": null,
+        "recipient": null,
+        "telephont": null,
+        "mail": null,
+        "mail_address": null,
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:17:30.336Z",
+        "modified": "2024-01-18T09:17:30.336Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "state": "unsubmitted"
+    },
+    {
+        "_id": "${space_id}_65a8ecc0c06cbb0647557fae",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "finance_invoice": "${space_id}_65a8eca4c06cbb0647557fac",
+        "amount_invoicing": 800000,
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:17:52.091Z",
+        "modified": "2024-01-18T09:17:52.091Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "state": "unsubmitted"
+    }
+]

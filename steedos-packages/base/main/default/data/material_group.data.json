@@ -1,0 +1,73 @@
+[
+    {
+        "_id": "${space_id}_65a8dd3fc06cbb0647557f79",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "name": "AS",
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:11:43.381Z",
+        "modified": "2024-01-18T08:12:03.929Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "material_group": "${space_id}_65a8dd51c06cbb0647557f7a"
+    },
+    {
+        "_id": "${space_id}_65a8dd51c06cbb0647557f7a",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "name": "A",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:12:01.188Z",
+        "modified": "2024-01-18T08:12:01.188Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "children": [
+            "${space_id}_65a8dd3fc06cbb0647557f79"
+        ]
+    },
+    {
+        "_id": "${space_id}_65a8f07ac06cbb0647557fb2",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "name": "dg",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:33:46.256Z",
+        "modified": "2024-01-18T09:33:46.256Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "children": [
+            "${space_id}_65a8f07ec06cbb0647557fb3"
+        ]
+    },
+    {
+        "_id": "${space_id}_65a8f07ec06cbb0647557fb3",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "name": "dg",
+        "material_group": "${space_id}_65a8f07ac06cbb0647557fb2",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:33:50.024Z",
+        "modified": "2024-01-18T09:33:50.024Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+    }
+]
