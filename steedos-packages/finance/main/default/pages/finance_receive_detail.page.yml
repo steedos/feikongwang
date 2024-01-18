@@ -1,0 +1,13 @@
+name: finance_receive_detail
+is_active: true
+label: 收款记录页
+locked: false
+object_name: finance_receive
+pageAssignments:
+  - type: orgDefault
+    page: finance_receive_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

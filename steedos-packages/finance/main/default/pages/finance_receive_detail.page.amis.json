@@ -6,7 +6,7 @@
             "label": "标题面板",
             "objectApiName": "${objectName}",
             "recordId": "${recordId}",
-            "id": "u:d7776fc03e64"
+            "id": "u:1cfc630cd062"
         },
         {
             "type": "tabs",
@@ -20,18 +20,26 @@
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:2482a342cbea",
-                            "relatedObjectApiName": "contract_invoice_detail"
-                        },
+                            "id": "u:0088ca15442f",
+                            "relatedObjectApiName": "contract_receive_detail"
+                        }
+                    ],
+                    "className": "p-t p-l-xs",
+                    "id": "u:c110449640a0"
+                },
+                {
+                    "title": "发票核销",
+                    "body": [
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:ae2cb56c5fd5",
-                            "relatedObjectApiName": "finance_invoice_detail"
+                            "id": "u:9dd0c70b4895",
+                            "relatedObjectApiName": "finance_invoice_write_detail"
                         }
                     ],
+                    "id": "u:30d8c32e7e30",
                     "className": "p-t p-l-xs"
                 },
                 {
@@ -42,33 +50,12 @@
                             "label": "对象表单",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:b3f707a816c7",
                             "appId": "${appId}",
-                            "mode": "read",
-                            "className": "mb-4",
-                            "excludedFields": [
-                                "modified",
-                                "modified_by"
-                            ]
+                            "id": "u:19887d7b79dc"
                         }
                     ],
                     "className": "px-0 py-4",
                     "id": "u:5d4e7e3f6ecc"
-                },
-                {
-                    "title": "收款核销",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:fcf96694ae9e",
-                            "relatedObjectApiName": "finance_invoice_write_detail"
-                        }
-                    ],
-                    "className": "p-t p-l-xs",
-                    "id": "u:fdccbe9f7c81"
                 },
                 {
                     "title": "附件",
@@ -78,28 +65,37 @@
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:87eb69e8cd6e",
+                            "id": "u:b30d0a979839",
                             "relatedObjectApiName": "cms_files"
                         }
                     ],
-                    "id": "u:f065d000aecf"
+                    "id": "u:fbb0ce9f5c80"
                 },
                 {
-                    "title": "审批",
+                    "title": "其他",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:221351783348",
+                            "id": "u:c1534ffeb85b",
                             "relatedObjectApiName": "instances"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:18e25a27c4f8",
+                            "relatedObjectApiName": "audit_records"
                         }
                     ],
-                    "id": "u:22ea81af5b27"
+                    "id": "u:7cbfb0cc3055",
+                    "className": "p-t p-l-xs"
                 }
             ],
-            "id": "u:34118bd124b6"
+            "id": "u:e1b286fcaa02"
         }
     ],
     "regions": [
@@ -108,8 +104,8 @@
     "data": {
         "context": {}
     },
-    "id": "page_finance_invoice_record_detail",
-    "name": "page_finance_invoice_record_detail",
+    "id": "page_finance_receive_record_detail",
+    "name": "page_finance_receive_record_detail",
     "objectApiName": "${objectName}",
     "bodyClassName": "",
     "className": "object-detail-page"
