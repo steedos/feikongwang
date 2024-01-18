@@ -1,4 +1,5 @@
 name: contract_receive_amount
+defaultValue: 0
 create: true
 filterable: false
 generated: false
@@ -15,6 +16,9 @@ searchable: false
 show_as_qr: false
 sort_no: 130
 sortable: false
-type: text
 unique: false
 write_requires_master_read: false
+type: currency
+scale: 2
+amis:
+  "disabled": true

@@ -6,7 +6,7 @@ enable_dataloader: true
 enable_enhanced_lookup: true
 enable_events: false
 enable_files: false
-enable_inline_edit: true
+enable_inline_edit: false
 enable_instances: false
 enable_notes: false
 enable_tasks: false

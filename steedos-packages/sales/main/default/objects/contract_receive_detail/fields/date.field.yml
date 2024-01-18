@@ -15,6 +15,8 @@ searchable: false
 show_as_qr: false
 sort_no: 115
 sortable: false
-type: text
 unique: false
 write_requires_master_read: false
+type: date
+amis:
+  "disabled": true
