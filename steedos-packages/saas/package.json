@@ -1,0 +1,19 @@
+{
+    "name": "@steedos-labs/saas",
+    "version": "2.5.6",
+    "description": "设置",
+    "main": "package.service.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "build:watch": "webpack --config webpack.config.js --watch"
+    },
+    "devDependencies": {
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}
