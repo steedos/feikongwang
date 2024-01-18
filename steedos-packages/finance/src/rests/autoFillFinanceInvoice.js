@@ -29,9 +29,6 @@ module.exports = {
         } else if (!invoiceInformationDoc && mailingInformationDoc) {
             data = mailingInformationDoc
         }
-        console.log("data", data)
-        console.log("====开票", invoiceInformationDoc);
-        console.log("======>", mailingInformationDoc);
         return {
             data:data,
             msg:"",
