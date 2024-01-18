@@ -2,14 +2,14 @@ name: purchase_dashboard
 desktop: true
 icon: case
 is_new_window: false
-is_use_iframe: false
+is_use_iframe: true
 label: 首页
 locked: false
 mobile: true
 page: purchase_dashboard
 permissions: []
-type: page
+type: url
+url: /analytics/amis/dashboard/659dff7e58bef705bed40b25
 license:
   - platform-professional
   - platform-enterprise
-

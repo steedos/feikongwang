@@ -2,14 +2,14 @@ name: reimbursement_homepage
 desktop: true
 icon: calculated_insights
 is_new_window: false
-is_use_iframe: false
+is_use_iframe: true
 label: 首页
 locked: false
 mobile: true
 page: reimbursement_dashboard
 permissions: []
-type: page
-url: /app/analytics
+type: url
+url: /analytics/amis/dashboard/659cf47ad7782305bf974f0d
 license:
   - platform-professional
   - platform-enterprise
