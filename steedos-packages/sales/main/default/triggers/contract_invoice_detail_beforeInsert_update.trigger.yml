@@ -1,0 +1,34 @@
+name: contract_invoice_detail_beforeInsert_update
+listenTo: contract_invoice_detail
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  let { doc, previousDoc, isInsert, isUpdate, id } = ctx.params;
+  const contractInvoiceDetailObj = this.getObject("contract_invoice_detail")
+  if (isInsert) {
+      if (doc.amount_invoicing > doc.left_invoice) {
+          throw new Error("本次开票金额不得大于合同剩余开票金额，请修改开票金额");
+      }
+  }
+  if (isUpdate) {
+      if (doc.amount_invoicing && doc.contract) {
+          if (!doc.left_invoice) {
+              doc.left_invoice = 0;
+          }
+          if (doc.amount_invoicing > doc.left_invoice) {
+              throw new Error("本次开票金额不得大于合同剩余开票金额，请修改开票金额");
+          }
+      }else if (doc.amount_invoicing && doc.contract == undefined) {
+          var contractInvoiceDetailDoc = await contractInvoiceDetailObj.findOne(id);
+          if (!contractInvoiceDetailDoc.left_invoice) {
+              contractInvoiceDetailDoc.left_invoice = 0
+          }
+          if (doc.amount_invoicing > contractInvoiceDetailDoc.left_invoice) {
+              throw new Error("本次开票金额不得大于合同剩余开票金额，请修改开票金额");
+          }
+      }
+  }
+  return doc
+locked: false
