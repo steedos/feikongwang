@@ -1,4 +1,4 @@
-name: amount_write_invoice
+name: amount_discount_invoice
 create: true
 data_type: currency
 filterable: false
@@ -7,7 +7,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 核销金额（发票核销）
+label: 折让金额
 multiple: false
 precision: 18
 primary: false
@@ -15,12 +15,13 @@ readonly: false
 scale: 2
 searchable: false
 show_as_qr: false
-sort_no: 134
+sort_no: 132
 sortable: false
-summary_field: amount_write
+summary_field: amount_discount
 summary_filters: []
 summary_object: finance_invoice_write_detail
 summary_type: sum
 type: summary
 unique: false
 write_requires_master_read: false
+group: 发票核销
