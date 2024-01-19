@@ -2,18 +2,14 @@ name: recent
 columns:
   - field: name
   - field: account
-    wrap: false
   - field: amount
-    wrap: false
-  - field: state
   - field: customer_bank
   - field: due_date
-    wrap: false
-  - field: receipt_date
-    wrap: false
   - field: amount_description
-    wrap: false
+  - field: is_active
+  - field: receipt_date
   - field: billno
+  - field: instance_state
 filter_scope: space
 filters: []
 from_code_id: finance_receive.all

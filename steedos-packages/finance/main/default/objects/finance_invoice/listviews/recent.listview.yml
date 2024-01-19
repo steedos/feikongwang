@@ -1,18 +1,14 @@
 name: recent
 columns:
   - field: name
-    wrap: true
   - field: account
-    wrap: false
   - field: tax
   - field: invoice_type
-    wrap: false
-  - field: invoice_number
-  - field: actual_date
-    wrap: false
   - field: amount
   - field: is_active
-    wrap: false
+  - field: actual_date
+  - field: invoice_number
+  - field: instance_state
 filter_scope: space
 filters: []
 is_enable: true
