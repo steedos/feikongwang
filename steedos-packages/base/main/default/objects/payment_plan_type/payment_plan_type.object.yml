@@ -14,6 +14,6 @@ enable_tree: false
 enable_workflow: false
 icon: action_list_component
 is_enable: true
-label: 付款计划类型
+label: 付款类型
 locked: false
 version: 2

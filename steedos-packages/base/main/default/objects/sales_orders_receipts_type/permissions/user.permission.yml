@@ -1,4 +1,4 @@
-name: 收款计划类型.用户
+name: 收款类型.用户
 allowCreate: true
 allowCreateFiles: true
 allowCreateListViews: true

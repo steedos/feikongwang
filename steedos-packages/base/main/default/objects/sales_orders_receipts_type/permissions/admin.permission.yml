@@ -1,4 +1,4 @@
-name: 收款计划类型.管理员
+name: 收款类型.管理员
 allowCreate: true
 allowCreateFiles: true
 allowCreateListViews: true
