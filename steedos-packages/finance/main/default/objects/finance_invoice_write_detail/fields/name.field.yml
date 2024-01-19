@@ -1,6 +1,6 @@
 name: name
 filterable: false
-formula: 'FPHX-{00000}'
+formula: 'HX-{00000}'
 hidden: false
 index: false
 is_name: true
@@ -10,6 +10,6 @@ omit: false
 readonly: true
 required: false
 searchable: false
-sort_no: 335
+sort_no: 999
 sortable: true
 type: autonumber

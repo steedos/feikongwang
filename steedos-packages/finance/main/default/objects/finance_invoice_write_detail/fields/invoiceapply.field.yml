@@ -3,14 +3,14 @@ filterable: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 开票
 omit: false
 readonly: true
 reference_to: finance_invoice
 required: true
 searchable: false
-sort_no: 999
+sort_no: 100
 sortable: true
 type: master_detail
 write_requires_master_read: true

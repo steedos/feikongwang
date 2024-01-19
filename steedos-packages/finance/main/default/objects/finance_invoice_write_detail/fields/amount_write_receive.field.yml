@@ -1,5 +1,5 @@
 name: amount_write_receive
-label: 核销金额（收款）
+label: 核销金额
 inlineHelpText: 收款金额+折让金额
 data_type: currency
 filterable: false
@@ -8,7 +8,7 @@ formula_blank_value: zeroes
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 omit: false
 precision: 18
 readonly: false
