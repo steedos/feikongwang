@@ -13,10 +13,13 @@ columns:
   - field: amount
   - field: is_active
     wrap: false
+  - field: instance_state
 filter_scope: space
 filters: []
+from_code_id: finance_invoice.all
 is_enable: true
 label: 所有
+mobile_columns: []
 scrolling_mode: standard
 searchable_fields:
   - field: account
@@ -35,4 +38,5 @@ sort:
     order: desc
   - field_name: created
     order: desc
+sort_no: 100
 type: grid

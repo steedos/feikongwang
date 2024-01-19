@@ -1,0 +1,19 @@
+name: finance_invoice_afterUpdate
+listenTo: finance_invoice
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { id, doc } = ctx.params;
+  const contractInvoiceDetailObj = this.getObject("contract_invoice_detail");
+  if (doc.is_active) {
+      const contractInvoiceDetailDoc = await contractInvoiceDetailObj.find({ filters: [['finance_invoice', '=', id]] });
+      if (contractInvoiceDetailDoc && contractInvoiceDetailDoc.length) {
+          for (let contractInvoiceDetail of contractInvoiceDetailDoc) {
+              contractInvoiceDetailObj.update(contractInvoiceDetail._id, {
+                  state:"approved"
+              })
+          }
+      }
+  }
+locked: false

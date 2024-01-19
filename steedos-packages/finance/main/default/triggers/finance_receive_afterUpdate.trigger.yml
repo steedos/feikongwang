@@ -1,0 +1,21 @@
+name: finance_receive_afterUpdate
+listenTo: finance_receive
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { id, doc } = ctx.params;
+  // 合同收款明细
+  const contractReceiveDetailObj = this.getObject("contract_receive_detail");
+  if (doc.is_active) {
+      //根据收款id查询合同收款明细
+      const contractReceiveDetailDoc = await contractReceiveDetailObj.find({ filters: [['finance_receive', '=', id]] })
+      if (contractReceiveDetailDoc && contractReceiveDetailDoc.length) {
+          for (let contractReceiveDetail of contractReceiveDetailDoc) {
+              contractReceiveDetailObj.update(contractReceiveDetail._id, {
+                  state:"approved"
+              })
+          }
+      }
+  }
+locked: false

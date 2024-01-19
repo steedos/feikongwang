@@ -1,0 +1,93 @@
+name: confirm_receipt
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "确认收款",
+              "id": "u:confirm_receipt",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "确认收款",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-form",
+                                          "id": "u:b30d94f752b7",
+                                          "label": "对象表单",
+                                          "objectApiName": "finance_receive",
+                                          "recordId": "${recordId}",
+                                          "className": "sm:border sm:rounded sm:border-gray-300 bg-white p-4",
+                                          "mode": "edit",
+                                          "fields": [
+                                              "amount",
+                                              "customer_bank",
+                                              "receipt_date",
+                                              "billno",
+                                              "test"
+                                          ],
+                                          "fieldsExtend": {
+                                              "billno": {
+                                                  "visible_on": "{{true}}",
+                                                  "create": true,
+                                                  "readonly": false
+                                              },
+                                              "receipt_date": {
+                                                  "visible_on": "{{true}}",
+                                                  "amis": {
+                                                      "value": "today"
+                                                  },
+                                                  "create": true,
+                                                  "readonly": false
+                                              },
+                                              "amount": {
+                                                  "visible_on": "{{true}}",
+                                                  "hidden": false,
+                                                  "type": "currency",
+                                                  "readonly": true
+                                              }
+                                          },
+                                          "apiRequestAdaptor": "console.log(\"收款api\", api);\nconst id = api.body.recordId;\nconst customer_bank = api.body.$.customer_bank;\nconsole.log(\"===customer_bank\", customer_bank);\nconst receipt_date = api.body.$.receipt_date;\nconsole.log(\"===receipt_date\", receipt_date)\nconst billno = api.body.$.billno\nconsole.log(\"billno\", billno)\napi.data = {\n  query: `mutation{record: finance_receive__update(id: ` + JSON.stringify(id) + `, doc: {receipt_date:` + JSON.stringify(receipt_date) + `,customer_bank:` + JSON.stringify(customer_bank) + `,billno:` + JSON.stringify(billno) +`,is_active:true}){_id}}`\n}\nreturn api"
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:fdc60ccfec88",
+                                  "closeOnEsc": false,
+                                  "size": "lg"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "visibleOn": "${_master && _master.record.instance_state =='approved' && _master.record.is_active == false}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:f49108dba0c3"
+  }
+is_enable: true
+label: 确认收款
+locked: false
+'on': record
+type: amis_button
+visible: false

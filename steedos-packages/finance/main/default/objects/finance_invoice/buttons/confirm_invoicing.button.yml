@@ -1,0 +1,92 @@
+name: confirm_invoicing
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "确认开票",
+              "id": "u:confirm_invoicing",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "确认开票",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-form",
+                                          "id": "u:a75e830fae66",
+                                          "label": "对象表单",
+                                          "objectApiName": "finance_invoice",
+                                          "recordId": "${recordId}",
+                                          "className": "sm:border sm:rounded sm:border-gray-300 bg-white p-4",
+                                          "mode": "edit",
+                                          "fields": [
+                                              "actual_date",
+                                              "invoice_code",
+                                              "invoice_number",
+                                              "is_active"
+                                          ],
+                                          "fieldsExtend": {
+                                              "invoice_code": {
+                                                  "visible_on": "{{true}}"
+                                              },
+                                              "invoice_number": {
+                                                  "visible_on": "{{true}}",
+                                                  "required": true
+                                              },
+                                              "actual_date": {
+                                                  "visible_on": "{{true}}",
+                                                  "required": true,
+                                                  "amis": {
+                                                      "value": "today"
+                                                  }
+                                              },
+                                              "is_active": {
+                                                  "defaultValue": true
+                                              }
+                                          },
+                                          "formDataFilter": "",
+                                          "apiRequestAdaptor": "console.log(\"=====api开票\", api);\nconst id = api.body.recordId;\nconst actual_date = api.body.$.actual_date;\nconst invoice_number = api.body.$.invoice_number;\nconst invoice_code = api.body.$.invoice_code;\napi.data = {\n  query: `mutation{record: finance_invoice__update(id:  ` + JSON.stringify(id) + `, doc: {actual_date:` + JSON.stringify(actual_date) + `,invoice_code:` + JSON.stringify(invoice_code) + `,invoice_number:` + JSON.stringify(invoice_number)+`,is_active:true}){ _id }}`\n}\nreturn api;",
+                                          "apiAdaptor": "console.log(\"=====开票\", payload);\nreturn payload"
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:22713ac13537",
+                                  "closeOnEsc": false,
+                                  "size": "lg"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "visibleOn": "${_master && _master.record.instance_state =='approved' && _master.record.is_active == false}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:5f730dd39ca1"
+  }
+is_enable: true
+label: 确认开票
+locked: false
+'on': record
+type: amis_button
+visible: false

@@ -1,13 +1,6 @@
 name: finance_receive
-compactLayouts:
-  - account
-  - customer_bank
-  - amount
-  - due_date
-  - is_active
 custom: true
 enable_api: true
-enable_audit: true
 enable_chatter: false
 enable_enhanced_lookup: true
 enable_events: false
@@ -21,5 +14,6 @@ enable_tasks: false
 enable_workflow: true
 icon: metrics
 is_enable: true
+is_system: true
 label: 收款
 version: 2
