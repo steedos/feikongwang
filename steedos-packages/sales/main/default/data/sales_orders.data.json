@@ -36,12 +36,6 @@
         "verification_being_money": 200000,
         "verification_money": 0,
         "instance_state": "approved",
-        "instances": [
-            {
-                "_id": "FrmH5tb8SsC6cEAjW",
-                "state": "approved"
-            }
-        ],
         "contract_label": []
     },
     {
@@ -79,6 +73,43 @@
         "discount_being_amount": 0,
         "product_amount": 1000000,
         "verification_being_money": 1000000,
+        "verification_money": 0
+    },
+    {
+        "_id": "${space_id}_65aa27dc6b010c05be900897",
+        "followup_id": "${space_owner_id}",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "department": "${space_id}",
+        "name": "集装箱销售合同",
+        "customer": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "buyer": "${space_id}_65aa27886b010c05be900894",
+        "amount": 800000,
+        "signed_date": {
+            "$date": "2024-01-04T00:00:00.000Z"
+        },
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:42:20.393Z",
+        "modified": "2024-01-19T07:42:20.393Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "buyer_mobile": "1369587455",
+        "contract_code": "Demo-YS-00003",
+        "left_invoice": 780000,
+        "left_receive": 800000,
+        "amount_invoice": 20000,
+        "amount_receiving": 0,
+        "arrival_amount": 0,
+        "billing_money": 0,
+        "billing_money_receive": 0,
+        "discount_amount": 0,
+        "discount_being_amount": 0,
+        "product_amount": 80000,
+        "verification_being_money": 0,
         "verification_money": 0
     }
 ]

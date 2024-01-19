@@ -4,56 +4,58 @@
         "amount_discount": 0,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
         "finance_receive": "${space_id}_65a8df16c06cbb0647557f80",
         "amount_invoicing": 50000,
         "invoice_amount": "50000",
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:19:51.305Z",
-        "modified": "2024-01-18T08:21:44.408Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T01:34:05.487Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "state": "unsubmitted",
         "amount_write": 50000,
         "amount": "200000",
-        "contract_receive_amount": "50000"
+        "contract_receive_amount": "50000",
+        "name": "SKMX-00001"
     },
     {
         "_id": "65a8df41c06cbb0647557f83",
         "amount_discount": 0,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
         "amount_invoicing": 100000,
         "finance_receive": "${space_id}_65a8df16c06cbb0647557f80",
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:20:17.225Z",
-        "modified": "2024-01-18T08:21:32.281Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T01:34:05.487Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "state": "unsubmitted",
         "amount_write": 100000,
         "contract_receive_amount": "100000",
-        "invoice_amount": "100000"
+        "invoice_amount": "100000",
+        "name": "SKMX-00002"
     },
     {
         "_id": "${space_id}_65a8dfb4c06cbb0647557f84",
         "amount_discount": 0,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
         "finance_receive": "${space_id}_65a8df16c06cbb0647557f80",
@@ -62,54 +64,74 @@
         "invoice_amount": "50000",
         "amount": "20000",
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:22:12.872Z",
-        "modified": "2024-01-18T08:22:12.872Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T01:34:05.487Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "state": "unsubmitted",
-        "amount_write": 50000
+        "amount_write": 50000,
+        "name": "SKMX-00003"
     },
     {
         "_id": "${space_id}_65a8ec4ac06cbb0647557fa9",
         "amount_discount": 0,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
         "finance_receive": "${space_id}_65a8ec3ec06cbb0647557fa7",
         "amount_invoicing": 200000,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T09:15:54.644Z",
-        "modified": "2024-01-18T09:15:54.644Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:49:33.572Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "state": "unsubmitted",
-        "amount_write": 200000
+        "amount_write": 200000,
+        "amount": 1020000,
+        "contract_receive_amount": 1020000,
+        "date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "amount_discount_invoice_left": 0,
+        "amount_invoice_left": 200000,
+        "amount_write_invoice_left": 200000,
+        "name": "SKMX-00004"
     },
     {
         "_id": "${space_id}_65a8ec7dc06cbb0647557fab",
         "amount_discount": 0,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
         "finance_receive": "${space_id}_65a8ec3ec06cbb0647557fa7",
-        "amount_invoicing": 800000,
+        "amount_invoicing": 2000,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T09:16:45.777Z",
-        "modified": "2024-01-18T09:16:45.777Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:50:02.859Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "state": "unsubmitted",
-        "amount_write": 800000
+        "amount_write": 2000,
+        "amount_discount_invoice_left": 0,
+        "amount_invoice_left": 2000,
+        "amount_write_invoice_left": 2000,
+        "amount": 1020000,
+        "contract_receive_amount": 1020000,
+        "date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "name": "SKMX-00005"
+        
     }
 ]

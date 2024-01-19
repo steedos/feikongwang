@@ -1,0 +1,194 @@
+[
+    {
+        "_id": "${space_id}_65aa22046b010c05be900884",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "receipts_name": "${space_id}_65a4ee733c9c3605bf815499",
+        "due_date": {
+            "$date": "2023-11-02T00:00:00.000Z"
+        },
+        "amount_description": "首付款",
+        "amount": 50000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:17:24.644Z",
+        "modified": "2024-01-19T07:17:24.644Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 200000,
+        "receipts_proportion": 0.25
+    },
+    {
+        "_id": "${space_id}_65aa221c6b010c05be900885",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "receipts_name": "${space_id}_65a4ee823c9c3605bf81549a",
+        "due_date": {
+            "$date": "2023-11-18T00:00:00.000Z"
+        },
+        "amount": 100000,
+        "amount_description": "合同进度款",
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:17:48.379Z",
+        "modified": "2024-01-19T07:18:46.986Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 200000,
+        "receipts_proportion": 0.5
+    },
+    {
+        "_id": "${space_id}_65aa22426b010c05be900886",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "receipts_name": "${space_id}_65a4ee8d3c9c3605bf81549b",
+        "due_date": {
+            "$date": "2023-11-28T00:00:00.000Z"
+        },
+        "amount_description": "合同尾款",
+        "amount": 50000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:18:26.015Z",
+        "modified": "2024-01-19T07:18:26.015Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 200000,
+        "receipts_proportion": 0.25
+    },
+    {
+        "_id": "${space_id}_65aa248c6b010c05be90088b",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "receipts_name": "${space_id}_65a4ee733c9c3605bf815499",
+        "due_date": {
+            "$date": "2023-12-04T00:00:00.000Z"
+        },
+        "amount": 200000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:28:12.014Z",
+        "modified": "2024-01-19T07:29:13.487Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 1000000,
+        "receipts_proportion": 0.2,
+        "amount_description": "合同首付款"
+    },
+    {
+        "_id": "${space_id}_65aa24be6b010c05be90088c",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "receipts_name": "${space_id}_65a4ee8d3c9c3605bf81549b",
+        "amount": 800000,
+        "due_date": {
+            "$date": "2023-12-28T00:00:00.000Z"
+        },
+        "amount_description": "合同尾款",
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:29:02.328Z",
+        "modified": "2024-01-19T07:29:02.328Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 1000000,
+        "receipts_proportion": 0.8
+    },
+    {
+        "_id": "${space_id}_65aa28706b010c05be90089b",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65aa27dc6b010c05be900897",
+        "receipts_name": "${space_id}_65a4ee733c9c3605bf815499",
+        "due_date": {
+            "$date": "2024-01-05T00:00:00.000Z"
+        },
+        "amount_description": "合同收付款",
+        "amount": 20000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:44:48.586Z",
+        "modified": "2024-01-19T07:45:19.467Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 800000,
+        "receipts_proportion": 0.025
+    },
+    {
+        "_id": "${space_id}_65aa28ab6b010c05be90089c",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65aa27dc6b010c05be900897",
+        "receipts_name": "${space_id}_65a4ee823c9c3605bf81549a",
+        "amount": 30000,
+        "due_date": {
+            "$date": "2024-01-18T00:00:00.000Z"
+        },
+        "amount_description": "合同进度款",
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:45:47.779Z",
+        "modified": "2024-01-19T07:45:47.779Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 800000,
+        "receipts_proportion": 0.0375
+    },
+    {
+        "_id": "${space_id}_65aa28c76b010c05be90089d",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65aa27dc6b010c05be900897",
+        "receipts_name": "${space_id}_65a4ee8d3c9c3605bf81549b",
+        "amount_description": "合同尾款",
+        "due_date": {
+            "$date": "2024-01-29T00:00:00.000Z"
+        },
+        "amount": 30000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:46:15.914Z",
+        "modified": "2024-01-19T07:46:15.914Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "contract_amount": 800000,
+        "receipts_proportion": 0.0375
+    }
+]

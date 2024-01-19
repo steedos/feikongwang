@@ -3,9 +3,9 @@
         "_id": "${space_id}_65a8df16c06cbb0647557f80",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "account": "${space_id}_659f4bba1acefd05be1b8d12",
         "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
@@ -14,9 +14,9 @@
         },
         "amount_description": "合同首付款",
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:19:34.587Z",
-        "modified": "2024-01-18T08:19:34.587Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.493Z",
+        "modified": "2024-01-19T01:34:05.493Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "name": "Demo-SK-00001",
@@ -31,9 +31,9 @@
         "_id": "${space_id}_65a8ec3ec06cbb0647557fa7",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "account": "${space_id}_65a0996c6c2c9805bf0c453c",
         "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
@@ -42,17 +42,45 @@
         },
         "amount_description": "合同首付款",
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T09:15:42.956Z",
-        "modified": "2024-01-18T09:15:42.956Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.493Z",
+        "modified": "2024-01-19T01:34:05.493Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "name": "Demo-SK-00003",
         "amount": 1000000,
         "amount_discount": 0,
         "amount_discount_invoice": 0,
-        "amount_invoice": 0,
+        "amount_invoice": 200000,
         "amount_write": 1000000,
+        "amount_write_invoice": 200000
+    },
+    {
+        "_id": "${space_id}_65aa290d6b010c05be9008a0",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "due_date": {
+            "$date": "2024-01-02T00:00:00.000Z"
+        },
+        "amount_description": "合同首付款",
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:47:25.662Z",
+        "modified": "2024-01-19T07:47:25.662Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "name": "Demo-SK-00004",
+        "amount": 0,
+        "amount_discount": 0,
+        "amount_discount_invoice": 0,
+        "amount_invoice": 0,
+        "amount_write": 0,
         "amount_write_invoice": 0
     }
 ]

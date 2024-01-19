@@ -3,69 +3,87 @@
         "_id": "${space_id}_65a8e023c06cbb0647557f86",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
         "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
-        "amount_invoicing": 50000,
+        "amount_invoicing": 1000,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:24:03.188Z",
-        "modified": "2024-01-18T08:24:03.188Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:09:16.553Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "state": "unsubmitted"
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "state": "unsubmitted",
+        "amount": 200000,
+        "date": {
+            "$date": "2023-11-01T00:00:00.000Z"
+        },
+        "invoiced_amount": 0,
+        "left_invoice": 50000
     },
     {
         "_id": "${space_id}_65a8e04bc06cbb0647557f87",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
         "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
-        "amount_invoicing": 100000,
+        "amount_invoicing": 2000,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:24:43.065Z",
-        "modified": "2024-01-18T08:24:43.065Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:09:37.073Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "state": "unsubmitted"
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "state": "unsubmitted",
+        "amount": 200000,
+        "date": {
+            "$date": "2023-11-01T00:00:00.000Z"
+        },
+        "invoiced_amount": 0,
+        "left_invoice": 99000
     },
     {
         "_id": "${space_id}_65a8e05cc06cbb0647557f88",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
         "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
-        "amount_invoicing": 50000,
+        "amount_invoicing": 2000,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T08:25:00.695Z",
-        "modified": "2024-01-18T08:25:00.695Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:09:56.131Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "state": "unsubmitted"
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "state": "unsubmitted",
+        "amount": 200000,
+        "date": {
+            "$date": "2023-11-01T00:00:00.000Z"
+        },
+        "invoiced_amount": 0,
+        "left_invoice": 197000
     },
     {
         "_id": "${space_id}_65a8ecaac06cbb0647557fad",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
-        "amount_invoicing": 200000,
+        "amount_invoicing": 200,
         "finance_invoice": "${space_id}_65a8eca4c06cbb0647557fac",
         "invoice_name": null,
         "credit_code": null,
@@ -78,30 +96,102 @@
         "mail": null,
         "mail_address": null,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T09:17:30.336Z",
-        "modified": "2024-01-18T09:17:30.336Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:13:50.681Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "state": "unsubmitted"
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "state": "unsubmitted",
+        "amount": 1020000,
+        "date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "invoiced_amount": 0,
+        "left_invoice": 220000
     },
     {
         "_id": "${space_id}_65a8ecc0c06cbb0647557fae",
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a8d376c06cbb0647557f64",
+        "company_id": "65a9d18d686e3a05bdd06762",
         "company_ids": [
-            "65a8d376c06cbb0647557f64"
+            "65a9d18d686e3a05bdd06762"
         ],
         "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
         "finance_invoice": "${space_id}_65a8eca4c06cbb0647557fac",
-        "amount_invoicing": 800000,
+        "amount_invoicing": 200000,
         "displayAs": null,
-        "space": "65a8d376c06cbb0647557f64",
-        "created": "2024-01-18T09:17:52.091Z",
-        "modified": "2024-01-18T09:17:52.091Z",
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T01:34:05.487Z",
+        "modified": "2024-01-19T09:14:10.592Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "state": "unsubmitted",
+        "amount": 1020000,
+        "date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "invoiced_amount": 0,
+        "left_invoice": 219800
+    },
+    {
+        "_id": "${space_id}_65aa296b6b010c05be9008a3",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "contract": "${space_id}_65aa27dc6b010c05be900897",
+        "finance_invoice": "${space_id}_65aa29616b010c05be9008a2",
+        "invoice_name": null,
+        "credit_code": null,
+        "address": null,
+        "phone": null,
+        "bank": null,
+        "bank_account": null,
+        "recipient": null,
+        "telephont": null,
+        "mail": null,
+        "mail_address": null,
+        "amount_invoicing": 20000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T07:48:59.625Z",
+        "modified": "2024-01-19T09:08:34.291Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "state": "unsubmitted",
+        "amount": 800000,
+        "date": {
+            "$date": "2024-01-04T00:00:00.000Z"
+        },
+        "invoiced_amount": 0,
+        "left_invoice": 780000
+    },
+    {
+        "_id": "${space_id}_65aa3ab39540b805bebc84fd",
+        "owner": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "locked": false,
+        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_ids": [
+            "65a9d18d686e3a05bdd06762"
+        ],
+        "finance_invoice": "${space_id}_65a8e00cc06cbb0647557f85",
+        "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+        "date": {
+            "$date": "2023-11-01T00:00:00.000Z"
+        },
+        "amount": 200000,
+        "invoiced_amount": 0,
+        "left_invoice": 195000,
+        "amount_invoicing": 2000,
+        "displayAs": null,
+        "space": "65a9d18d686e3a05bdd06762",
+        "created": "2024-01-19T09:02:43.893Z",
+        "modified": "2024-01-19T09:10:25.288Z",
+        "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "state": "unsubmitted"
     }
 ]
