@@ -1,4 +1,6 @@
 name: finance_receive_detail
+__filename: >-
+  /workspace/feikongwang/steedos-packages/finance/main/default/pages/finance_receive_detail.page.yml
 is_active: true
 label: 收款记录页
 locked: false

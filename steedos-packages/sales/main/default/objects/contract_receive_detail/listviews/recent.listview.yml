@@ -1,5 +1,7 @@
 name: recent
 columns:
+  - field: name
+  - field: finance_receive
   - field: contract
   - field: contract_receive_amount
   - field: invoice_amount

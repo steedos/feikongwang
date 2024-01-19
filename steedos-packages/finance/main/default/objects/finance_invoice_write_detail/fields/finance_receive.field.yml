@@ -4,10 +4,10 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 收款
+label: 合同收款明细
 omit: false
 readonly: true
-reference_to: finance_receive
+reference_to: contract_receive_detail
 required: true
 searchable: false
 sort_no: 999

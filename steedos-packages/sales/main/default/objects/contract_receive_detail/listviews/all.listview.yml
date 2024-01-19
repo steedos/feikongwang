@@ -1,5 +1,7 @@
 name: all
 columns:
+  - field: name
+  - field: finance_receive
   - field: contract
   - field: contract_receive_amount
   - field: invoice_amount
@@ -7,12 +9,12 @@ columns:
   - field: amount_discount
   - field: amount_write
   - field: state
-  - field: finance_receive
 filter_scope: space
 filters: []
 is_enable: true
 label: 所有
 mobile_columns:
+  - field: finance_receive
   - field: contract
   - field: date
   - field: amount
@@ -20,7 +22,6 @@ mobile_columns:
   - field: invoice_amount
   - field: amount_invoicing
   - field: state
-  - field: finance_receive
 scrolling_mode: standard
 searchable_fields: []
 shared: true
