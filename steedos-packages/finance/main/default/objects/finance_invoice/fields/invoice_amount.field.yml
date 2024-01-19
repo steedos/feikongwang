@@ -7,7 +7,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 发票核销金额
+label: 发票已收金额
 inlineHelpText: 核销收款中的金额
 multiple: false
 precision: 18

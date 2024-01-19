@@ -1,6 +1,6 @@
 name: invoice_left_amount
-label: 发票剩余核销金额
-inlineHelpText: 开票金额-核销金额
+label: 发票应收金额
+inlineHelpText: 开票金额-发票已收金额
 data_type: currency
 filterable: false
 formula: ROUND(detail_amount-invoice_amount,2)
