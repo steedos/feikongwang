@@ -112,16 +112,8 @@
                     "id": "u:ac27617bf430"
                 },
                 {
-                    "title": "其他",
+                    "title": "审计日志",
                     "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:f3785b156859",
-                            "relatedObjectApiName": "cms_files"
-                        },
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
