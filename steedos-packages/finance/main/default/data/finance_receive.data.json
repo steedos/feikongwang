@@ -1,321 +1,58 @@
 [
     {
-        "_id": "${space_id}_626253d587e5c50032d9be0f",
-        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "amount": 300000,
-        "amount_description": "预付款",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_65977e370ace2505ccf58212",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62b56ec98aee24003d08efd3",
-        "due_date": {
-            "$date": "2022-04-15T00:00:00Z"
-        },
-        "invoiceapply": [
-            "6262539487e5c50032d9be0d"
-        ],
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
+        "_id": "${space_id}_65a8df16c06cbb0647557f80",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
         "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
+            "65a8d376c06cbb0647557f64"
         ],
-        "id": "Demo-SK-2021-0004",
-        "account_banks": "中国农业银行股份有限公司上海陆家嘴支行",
-        "credit_code": "62310115MJ5209999Z",
-        "billno": "OPT-20220416-6690",
-        "contract_receipts_state": "received",
-        "receipt_date": {
-            "$date": "2022-04-18T00:00:00Z"
+        "account": "${space_id}_659f4bba1acefd05be1b8d12",
+        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "due_date": {
+            "$date": "2023-11-06T00:00:00.000Z"
         },
-        "project": "${space_id}_62620e5787e5c50032d9bd39"
+        "amount_description": "合同首付款",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:19:34.587Z",
+        "modified": "2024-01-18T08:19:34.587Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "name": "Demo-SK-00001",
+        "amount": 200000,
+        "amount_discount": 0,
+        "amount_discount_invoice": 0,
+        "amount_invoice": 0,
+        "amount_write": 200000,
+        "amount_write_invoice": 0
     },
     {
-        "_id": "${space_id}_6267bbfe40f71f0031853ab8",
-        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "amount": 100000,
-        "amount_description": "报告初稿，支付第二笔",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_65977e370ace2505ccf58212",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62b56ec98aee24003d08efd3",
-        "due_date": {
-            "$date": "2022-03-01T00:00:00Z"
-        },
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
+        "_id": "${space_id}_65a8ec3ec06cbb0647557fa7",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
         "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
+            "65a8d376c06cbb0647557f64"
         ],
-        "id": "Demo-SK-2021-0001",
-        "account_banks": "中国农业银行股份有限公司上海陆家嘴支行",
-        "credit_code": "62310115MJ5209999Z",
-        "contract_receipts_state": "received",
-        "billno": "123456",
-        "receipt_date": {
-            "$date": "2022-06-29T00:00:00Z"
+        "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "due_date": {
+            "$date": "2023-12-04T00:00:00.000Z"
         },
-        "invoiceapply": [
-            "62aad9082c7a71003fe03eb9"
-        ],
-        "project": "${space_id}_62620e5787e5c50032d9bd39"
-    },
-    {
-        "_id": "${space_id}_62fafb7ecb9c8306a51b2ad3",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount_description": "合同首付款",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T09:15:42.956Z",
+        "modified": "2024-01-18T09:15:42.956Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "name": "Demo-SK-00003",
         "amount": 1000000,
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6597bf85d411ad05be86b140",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": null,
-        "invoiceapply": [],
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "contract_receipts_state": "received",
-        "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "Demo-SK-2021-0002",
-        "account_banks": "",
-        "credit_code": "91430000183786683Q",
-        "receipt_date": {
-            "$date": "2022-03-01T00:00:00Z"
-        },
-        "amount_description": "第一笔进度款",
-        "due_date": {
-            "$date": "2022-03-01T00:00:00Z"
-        }
-    },
-    {
-        "_id": "${space_id}_62fafbd2cb9c8306a51b2ad5",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
-        "amount": 300000,
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6597bf85d411ad05be86b140",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": null,
-        "invoiceapply": [],
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "contract_receipts_state": "received",
-        "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "Demo-SK-2021-0003",
-        "account_banks": "",
-        "credit_code": "91430000183786683Q",
-        "receipt_date": {
-            "$date": "2022-08-07T00:00:00Z"
-        },
-        "amount_description": "项目启动费",
-        "due_date": {
-            "$date": "2022-01-31T00:00:00Z"
-        }
-    },
-    {
-        "_id": "${space_id}_63046f449cc40f03d6e7ca05",
-        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "amount": 100000,
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_65977e370ace2505ccf58212",
-        "contract_receipts_state": "received",
-        "customer_bank": null,
-        "due_date": {
-            "$date": "2022-07-31T00:00:00Z"
-        },
-        "invoiceapply": [],
-        "receipt_date": {
-            "$date": "2022-08-01T00:00:00Z"
-        },
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T07:53:58.199Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "project": "${space_id}_62620e5787e5c50032d9bd39",
-        "id": "Demo-SK-2021-0005",
-        "account_banks": "",
-        "credit_code": "62310115MJ5209999Z",
-        "amount_description": "首付款"
-    },
-    {
-        "_id": "${space_id}_630470d39cc40f03d6e7ca1c",
-        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
-        "amount": 380000,
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6597bf52d411ad05be86b13f",
-        "contract_receipts_state": "received",
-        "customer_bank": null,
-        "due_date": {
-            "$date": "2022-05-18T00:00:00Z"
-        },
-        "invoiceapply": [],
-        "receipt_date": {
-            "$date": "2022-05-18T00:00:00Z"
-        },
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "id": "Demo-SK-2021-0007",
-        "account_banks": "",
-        "credit_code": "26548997636564656R",
-        "amount_description": "项目启动费",
-        "project": "${space_id}_62fefd49f63a8f27ae6a025f"
-    },
-    {
-        "_id": "${space_id}_630471429cc40f03d6e7ca1e",
-        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
-        "amount": 200000,
-        "amount_description": "尾款",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6597bf52d411ad05be86b13f",
-        "contract_receipts_state": "received",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": null,
-        "due_date": {
-            "$date": "2022-06-10T00:00:00Z"
-        },
-        "invoiceapply": [],
-        "receipt_date": {
-            "$date": "2022-10-10T00:00:00Z"
-        },
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "id": "Demo-SK-2021-0008",
-        "account_banks": "",
-        "credit_code": "26548997636564656R",
-        "project": "${space_id}_62fefd49f63a8f27ae6a025f"
-    },
-    {
-        "_id": "${space_id}_630471d89cc40f03d6e7ca26",
-        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
-        "amount": 200000,
-        "amount_description": "进度款",
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6597bf52d411ad05be86b13f",
-        "contract_receipts_state": "received",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": null,
-        "due_date": {
-            "$date": "2022-07-05T00:00:00Z"
-        },
-        "invoiceapply": [],
-        "receipt_date": {
-            "$date": "2022-07-19T00:00:00Z"
-        },
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "id": "Demo-SK-2021-0009",
-        "account_banks": "",
-        "credit_code": "26548997636564656R",
-        "project": "${space_id}_62fefd49f63a8f27ae6a025f"
-    },
-    {
-        "_id": "${space_id}_630489229cc40f03d6e7cb71",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
-        "amount": 2000000,
-        "company_id": "dn5aRN3dsWKAK73dZ",
-        "contract": "${space_id}_6597bf85d411ad05be86b140",
-        "contract_receipts_state": "received",
-        "currency": "${space_id}_6261092232cc250032e1a973",
-        "customer_bank": "${space_id}_62f5fd7e3a99bfb696152445",
-        "invoiceapply": [],
-        "receipt_date": {
-            "$date": "2022-08-23T00:00:00Z"
-        },
-        "space": "yt37ZrzLBMwteXCuH",
-        "created": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "modified": {
-            "$date": "2022-08-25T06:04:16.549Z"
-        },
-        "owner": "630710c9a778f10a2f85fdb0",
-        "created_by": "630710c9a778f10a2f85fdb0",
-        "modified_by": "630710c9a778f10a2f85fdb0",
-        "company_ids": [
-            "dn5aRN3dsWKAK73dZ"
-        ],
-        "project": "${space_id}_62620e4d87e5c50032d9bd25",
-        "id": "Demo-SK-2021-0006",
-        "account_banks": "中国工商银行股份有限公司上海市正大广场支行",
-        "credit_code": "91430000183786683Q",
-        "due_date": {
-            "$date": "2022-09-14T00:00:00Z"
-        },
-        "amount_description": "补充款"
+        "amount_discount": 0,
+        "amount_discount_invoice": 0,
+        "amount_invoice": 0,
+        "amount_write": 1000000,
+        "amount_write_invoice": 0
     }
 ]

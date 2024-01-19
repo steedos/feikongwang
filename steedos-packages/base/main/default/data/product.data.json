@@ -9,7 +9,7 @@
         "net_weight": null,
         "number_of_quantity_installments": null,
         "number_of_revenue_installments": null,
-        "product_code": "Dell-908",
+        "product_code": "Demo-Dell-908",
         "product_currency": "${space_id}_6261092232cc250032e1a973",
         "width": null,
         "space": "JnBnMTjGB8c6xeCtA",
@@ -48,7 +48,7 @@
         "net_weight": null,
         "number_of_quantity_installments": null,
         "number_of_revenue_installments": null,
-        "product_code": "Dell-908",
+        "product_code": "Demo-Dell-908",
         "product_currency": "${space_id}_6261092232cc250032e1a973",
         "purpose": [
             "purchase",
@@ -107,5 +107,39 @@
         "separate_accounting": false,
         "amount": 9888,
         "inventory": true
+    },
+    {
+        "_id": "${space_id}_65a8dc34c06cbb0647557f77",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "name": "绞手架",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:07:16.486Z",
+        "modified": "2024-01-18T08:07:16.486Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "product_number": "Demo-cp-00002"
+    },
+    {
+        "_id": "${space_id}_65a8e2d2c06cbb0647557f91",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65a8d376c06cbb0647557f64",
+        "company_ids": [
+            "65a8d376c06cbb0647557f64"
+        ],
+        "name": "麻布",
+        "displayAs": null,
+        "space": "65a8d376c06cbb0647557f64",
+        "created": "2024-01-18T08:35:30.453Z",
+        "modified": "2024-01-18T08:35:30.453Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "product_number": "Demo-cp-00002"
     }
 ]
