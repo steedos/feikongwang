@@ -1,0 +1,15 @@
+name: amount_description
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: true
+label: 退款原因
+omit: false
+readonly: false
+required: true
+rows: 0
+searchable: false
+sort_no: 340
+sortable: false
+type: textarea

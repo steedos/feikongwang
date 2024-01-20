@@ -4,7 +4,7 @@ label: 预收款余额
 sort_no: 130
 data_type: currency
 filterable: false
-formula: ROUND(amount-amount_write,2)
+formula: ROUND(amount-amount_write-amount_refund,2)
 formula_blank_value: zeroes
 hidden: false
 index: false

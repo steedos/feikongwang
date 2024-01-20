@@ -1,0 +1,16 @@
+name: amount
+label: 退款金额
+sort_no: 210
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+omit: false
+precision: 18
+readonly: false
+required: true
+scale: 2
+searchable: false
+sortable: true
+type: number

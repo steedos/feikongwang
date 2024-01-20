@@ -1,0 +1,16 @@
+name: account
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: true
+label: 客户（只读，根据主表预收款余额自动带出）
+multiple: false
+readonly: false
+reference_to: accounts
+required: true
+searchable: false
+sort_no: 120
+sortable: true
+type: lookup
+create: false

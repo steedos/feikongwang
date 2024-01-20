@@ -1,0 +1,28 @@
+name: all
+columns:
+  - field: name
+  - field: account
+  - field: customer_bank
+  - field: due_date
+  - field: amount
+  - field: amount_description
+filter_scope: space
+filters: []
+from_code_id: finance_refund.all
+is_enable: true
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields:
+  - field: account
+  - field: state
+  - field: customer_bank
+  - field: due_date
+  - field: name
+shared: true
+show_count: false
+sort:
+  - field_name: due_date
+    order: asc
+sort_no: 100
+type: grid
