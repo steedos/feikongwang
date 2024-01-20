@@ -1,0 +1,11 @@
+name: sales_dashboard
+desktop: true
+icon: agent_home
+is_new_window: false
+is_use_iframe: true
+label: 首页
+locked: false
+mobile: true
+permissions: []
+type: url
+url: /analytics/embed/dashboard/65ab3adf4bab3305be0caa8c

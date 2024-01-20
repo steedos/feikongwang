@@ -1,0 +1,51 @@
+name: 计划收款
+created_at: 2024-01-20T03:34:37.402Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  database: '1'
+  type: query
+  query:
+    source-table: sales_orders_receipts
+    aggregation:
+      - - sum
+        - - field
+          - sales_orders_receipts.amount
+          - null
+    breakout:
+      - - field
+        - sales_orders_receipts.due_date
+        - temporal-unit: month
+display: line
+entity_id: 65ab3f4dd75df605beb5d2b5
+id: 65ab3f4dd75df605beb5d2b5
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: due_date
+    name: due_date
+    unit: month
+    display_name: 计划收款时间
+    base_type: type/Instant
+    effective_type: type/Instant
+    semantic_type: null
+    source: breakout
+    visibility_type: normal
+    table_id: sales_orders_receipts
+    field_ref:
+      - field
+      - sales_orders_receipts.due_date
+      - temporal-unit: month
+  - base_type: type/Integer
+    display_name: 收款金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: sales_orders_receipts
+updated_at: 2024-01-20T03:34:37.402Z
+visualization_settings: '{"graph.dimensions":["due_date"],"graph.metrics":["sum"]}'

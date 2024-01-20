@@ -11,6 +11,8 @@ tab_groups:
     default_open: true
     id: 销售管理
 tab_items:
+  sales_dashboard:
+    index: 0
   object_sales_orders:
     index: 1
   object_accounts:
@@ -22,6 +24,7 @@ tab_items:
   object_instance_tasks:
     index: 5
 tabs:
+  - sales_dashboard
   - object_sales_orders
   - object_accounts
   - object_finance_invoice

@@ -1,0 +1,33 @@
+name: 开票金额
+created_at: 2024-01-20T03:17:54.523Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: '1'
+dataset_query:
+  query:
+    source-table: sales_orders
+    aggregation:
+      - - sum
+        - - field
+          - sales_orders.billing_money
+          - null
+  type: query
+  database: '1'
+display: scalar
+entity_id: 65ab3b624bab3305be0caa91
+id: 65ab3b624bab3305be0caa91
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 开票金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: sales_orders
+updated_at: 2024-01-20T03:17:54.523Z
+visualization_settings: '{}'
