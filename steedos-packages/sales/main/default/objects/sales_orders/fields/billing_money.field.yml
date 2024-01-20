@@ -8,7 +8,7 @@ inlineHelpText: 已开票状态合同开票明细记录的汇总金额。
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 开票金额
 multiple: false
 precision: 18
