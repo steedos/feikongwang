@@ -8,7 +8,6 @@ index: false
 is_name: false
 is_wide: false
 label: 发票已收金额
-group: 开票管理
 multiple: false
 precision: 18
 primary: false
