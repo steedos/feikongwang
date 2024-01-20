@@ -1,0 +1,68 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:0312323536f8"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "tabs": [
+                {
+                    "title": "核销明细",
+                    "className": "px-0 pt-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-lists",
+                            "label": "相关列表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:83480852454c"
+                        }
+                    ],
+                    "id": "u:0cd50f1f7b6f"
+                },
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:f165ab452843",
+                            "mode": "read",
+                            "className": "mb-4",
+                            "excludedFields": [
+                                "created_by",
+                                "created",
+                                "modified",
+                                "modified_by"
+                            ]
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                }
+            ],
+            "id": "u:48f09164b749"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_finance_pre_receive_record_detail",
+    "name": "page_finance_pre_receive_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

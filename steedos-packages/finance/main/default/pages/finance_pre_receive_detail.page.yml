@@ -1,0 +1,13 @@
+name: finance_pre_receive_detail
+is_active: true
+label: 预收款记录详情页
+locked: false
+object_name: finance_pre_receive
+pageAssignments:
+  - type: orgDefault
+    page: finance_pre_receive_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

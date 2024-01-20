@@ -1,0 +1,13 @@
+name: billno
+group: 收款信息
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 财务单据号
+readonly: false
+required: false
+
+sort_no: 460
+type: text
+visible_on: "{{global.mode ==='read' ? true : false}}"

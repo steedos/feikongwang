@@ -1,0 +1,30 @@
+name: all
+columns:
+  - field: name
+  - field: finance_receive
+  - field: contract
+  - field: contract_receive_amount
+  - field: invoice_amount
+  - field: amount_invoicing
+  - field: amount_discount
+  - field: amount_write
+  - field: state
+filter_scope: space
+filters: []
+is_enable: true
+label: 所有
+mobile_columns:
+  - field: finance_receive
+  - field: contract
+  - field: date
+  - field: amount
+  - field: contract_receive_amount
+  - field: invoice_amount
+  - field: amount_invoicing
+  - field: state
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

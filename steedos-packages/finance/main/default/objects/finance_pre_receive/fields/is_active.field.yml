@@ -1,0 +1,23 @@
+name: is_active
+defaultValue: false
+label: 已收款
+group: 收款信息
+visible_on: "{{global.mode ==='read' ? true : false}}"
+sort_no: 170
+create: true
+filterable: false
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+multiple: false
+primary: false
+readonly: true
+required: false
+searchable: false
+show_as_qr: false
+sortable: false
+type: boolean
+unique: false
+write_requires_master_read: false

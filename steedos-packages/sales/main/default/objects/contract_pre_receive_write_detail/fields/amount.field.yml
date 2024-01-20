@@ -1,0 +1,24 @@
+name: amount
+create: true
+defaultValue: 0
+filterable: false
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 合同金额
+multiple: false
+primary: false
+readonly: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 115
+sortable: false
+unique: false
+write_requires_master_read: false
+type: currency
+scale: 2
+amis:
+  "disabled": true

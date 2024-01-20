@@ -1,0 +1,15 @@
+name: name
+filterable: true
+formula: 'YSKHX-{00000}'
+hidden: false
+index: true
+is_wide: false
+label: 预收款核销明细编号
+omit: false
+readonly: false
+required: true
+searchable: false
+sort_no: 335
+sortable: true
+create: true
+type: autonumber
