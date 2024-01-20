@@ -13,21 +13,6 @@
             "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
             "tabs": [
                 {
-                    "title": "核销明细",
-                    "className": "px-0 pt-4",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-lists",
-                            "label": "相关列表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "appId": "${appId}",
-                            "id": "u:83480852454c"
-                        }
-                    ],
-                    "id": "u:0cd50f1f7b6f"
-                },
-                {
                     "title": "详细",
                     "className": "px-0 py-4",
                     "body": [
@@ -49,6 +34,46 @@
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "核销",
+                    "className": "px-0 pt-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:1cebe466b967",
+                            "relatedObjectApiName": "contract_pre_receive_write_detail"
+                        }
+                    ],
+                    "id": "u:0cd50f1f7b6f"
+                },
+                {
+                    "title": "退款",
+                    "body": {
+                        "type": "tpl",
+                        "tpl": "内容",
+                        "inline": false,
+                        "id": "u:9b035bdc944e"
+                    },
+                    "id": "u:7bcf2980eb98"
+                },
+                {
+                    "title": "审批",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:126213ab2b27",
+                            "relatedObjectApiName": "instances"
+                        }
+                    ],
+                    "id": "u:beadf383cb44",
+                    "className": "p-t p-l-xs"
                 }
             ],
             "id": "u:48f09164b749"
