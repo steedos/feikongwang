@@ -1,9 +1,9 @@
 name: amount_write
 label: 核销金额
-inlineHelpText: 收款金额+折让金额
+inlineHelpText: 收款金额+折让金额+预收款抵扣金额
 data_type: currency
 filterable: false
-formula: ROUND(amount_invoicing+amount_discount,2)
+formula: ROUND(amount_invoicing+amount_discount+amount_pre_receive,2)
 formula_blank_value: zeroes
 hidden: false
 index: false

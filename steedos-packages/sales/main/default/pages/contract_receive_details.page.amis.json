@@ -39,6 +39,14 @@
                             "recordId": "${recordId}",
                             "id": "u:f96d1b59ab7f",
                             "relatedObjectApiName": "finance_invoice_write_detail"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:e922ef874365",
+                            "relatedObjectApiName": "contract_pre_receive_write_detail"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"

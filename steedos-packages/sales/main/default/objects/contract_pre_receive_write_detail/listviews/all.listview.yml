@@ -8,7 +8,7 @@ columns:
   - field: amount_invoicing
   - field: amount_discount
   - field: amount_write
-  - field: state
+  - field: contract_receive_detail
 filter_scope: space
 filters: []
 is_enable: true

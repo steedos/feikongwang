@@ -7,6 +7,7 @@ columns:
   - field: invoice_amount
   - field: amount_invoicing
   - field: amount_discount
+  - field: amount_pre_receive
   - field: amount_write
   - field: state
 filter_scope: space
