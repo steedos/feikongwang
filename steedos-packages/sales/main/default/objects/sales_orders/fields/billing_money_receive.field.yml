@@ -18,7 +18,7 @@ searchable: false
 show_as_qr: false
 sort_no: 82
 sortable: false
-summary_field: amount_invoicing
+summary_field: invoice_left_amount
 summary_filters:
   - field: state
     operation: '='
