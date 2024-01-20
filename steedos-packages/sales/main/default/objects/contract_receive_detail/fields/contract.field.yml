@@ -42,6 +42,7 @@ amis:
       "date": "${signed_date}"
       "amount": "${amount}"
       "contract_receive_amount": "${left_receive}"
+      "invoice_amount": "${billing_money_receive}"
     api:
       url: "${context.rootUrl}/api/v1/sales_orders/${contract}"
       method: get
