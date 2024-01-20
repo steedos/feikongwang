@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 本次核销折让金额--用户填写
+label: 本次核销折让金额
 defaultValue: 0
 multiple: false
 precision: 18

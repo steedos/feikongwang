@@ -1,8 +1,8 @@
 name: invoice_left_amount
-label: 发票应收金额--根据发票应收金额自动带出
+label: 发票应收金额
 required: true
 is_wide: true
-sort_no: 150
+sort_no: 139
 create: true
 filterable: false
 generated: false
