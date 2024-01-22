@@ -23,6 +23,14 @@
                             "recordId": "${recordId}",
                             "appId": "${appId}",
                             "id": "u:e2c20fa9d0fe"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:6c0de2dd40fc",
+                            "relatedObjectApiName": "purchase_contract_product"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"

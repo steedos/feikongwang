@@ -1,0 +1,47 @@
+name: all
+columns:
+  - field: product
+  - field: product_number
+  - field: specification
+  - field: measurement
+  - field: material_group
+  - field: purchase_unit_price
+  - field: sales_unit
+  - field: quantity
+  - field: amount
+  - field: product_description
+  - field: product_barcode
+  - field: tax_code
+filter_scope: space
+filters: []
+from_code_id: contract_product.all
+is_enable: true
+label: 所有
+mobile_columns:
+  - field: product
+  - field: product_number
+  - field: specification
+  - field: sales_unit
+  - field: quantity
+  - field: amount
+scrolling_mode: standard
+searchable_fields:
+  - field: product
+  - field: product_number
+  - field: specification
+  - field: product_barcode
+  - field: measurement
+  - field: material_group
+  - field: quantity
+  - field: sales_unit
+  - field: purchase_unit_price
+  - field: tax_code
+  - field: amount
+  - field: product_description
+  - field: contract
+shared: true
+sort:
+  - field_name: product_number
+    order: asc
+sort_no: 100
+type: grid

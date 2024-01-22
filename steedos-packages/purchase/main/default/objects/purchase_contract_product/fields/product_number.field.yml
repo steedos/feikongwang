@@ -1,0 +1,14 @@
+name: name
+index: true
+label: 产品编号
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 110
+sortable: false
+type: text
+unique: false
+write_requires_master_read: false
+group: 产品详情
+create: true
+filterable: true

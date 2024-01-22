@@ -1,0 +1,36 @@
+name: product
+create: true
+filterable: false
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 产品名称
+multiple: false
+primary: false
+readonly: false
+reference_to: product
+required: true
+searchable: false
+show_as_qr: false
+sort_no: 100
+sortable: false
+type: master_detail
+unique: false
+write_requires_master_read: false
+amis:
+  autoFill:
+    fillMapping:
+      "purchase_unit_price": "${purchase_unit_price}"
+      "sales_unit": "${sales_unit}"
+      "product_number": "${product_number}"
+      "product_barcode": "${product_barcode}"
+      "specification": "${specification}"
+      "measurement": "${measurement}"
+      "material_group": "${material_group}"
+      "tax_code": "${tax_code}"
+      "product_description": "${product_description}"
+    api:
+      url: "${context.rootUrl}/api/v1/product/${product}"
+      method: get

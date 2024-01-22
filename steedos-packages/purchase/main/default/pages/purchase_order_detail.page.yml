@@ -1,4 +1,6 @@
 name: purchase_order_detail
+__filename: >-
+  /workspace/feikongwang/steedos-packages/purchase/main/default/pages/purchase_order_detail.page.yml
 is_active: true
 label: 应付合同详情页
 locked: false
