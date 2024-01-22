@@ -15,8 +15,8 @@ handler: |-
   if (isUpdate) {
        var contractInvoiceDetailDoc = await contractInvoiceDetailObj.findOne(id);
       if (doc.amount_invoicing && doc.contract) {
-          if (!doc.left_invoice) {
-              doc.left_invoice = 0;
+          if (!contractInvoiceDetailDoc.left_invoice) {
+              contractInvoiceDetailDoc.left_invoice = 0;
           }
           if (doc.amount_invoicing > contractInvoiceDetailDoc.left_invoice) {
               throw new Error("本次开票金额不得大于合同剩余开票金额，请修改开票金额");
@@ -31,5 +31,4 @@ handler: |-
           }
       }
   }
-  return doc
 locked: false
