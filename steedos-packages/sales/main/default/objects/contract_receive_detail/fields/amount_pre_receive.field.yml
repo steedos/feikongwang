@@ -8,6 +8,7 @@ index: false
 is_name: false
 is_wide: false
 label: 预收款抵扣金额
+defaultValue: 0
 multiple: false
 precision: 18
 primary: false
