@@ -62,7 +62,18 @@ amis_schema: |-
                                   "className": "app-popover",
                                   "id": "u:22713ac13537",
                                   "closeOnEsc": false,
-                                  "size": "lg"
+                                  "size": "lg",
+                                    "onEvent": {
+                                    "confirm": {
+                                        "weight": 0,
+                                        "actions": [
+                                        {
+                                            "actionType": "custom",
+                                            "script": "setTimeout(function () {\n  doAction({\n    componentId: \"listview_contract_invoice_detail\",\n    actionType: \"reload\",\n    dataMergeMode: \"merge\"\n  });\n}, 1000);\n\n\n"
+                                            }
+                                        ]
+                                    }
+                                    }
                               }
                           }
                       ]

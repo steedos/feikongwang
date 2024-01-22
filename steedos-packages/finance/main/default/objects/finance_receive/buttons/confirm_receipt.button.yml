@@ -53,7 +53,8 @@ amis_schema: |-
                         "readonly": true
                       }
                     },
-                    "apiRequestAdaptor": "console.log(\"收款api\", api);\nconst id = api.body.recordId;\nconst customer_bank = api.body.$.customer_bank;\nconsole.log(\"===customer_bank\", customer_bank);\nconst receipt_date = api.body.$.receipt_date;\nconsole.log(\"===receipt_date\", receipt_date)\nconst billno = api.body.$.billno\nconsole.log(\"billno\", billno)\napi.data = {\n  query: `mutation{record: finance_receive__update(id: ` + JSON.stringify(id) + `, doc: {receipt_date:` + JSON.stringify(receipt_date) + `,customer_bank:` + JSON.stringify(customer_bank) + `,billno:` + JSON.stringify(billno) +`,is_active:true}){_id}}`\n}\nreturn api"
+                    "apiRequestAdaptor": "console.log(\"收款api\", api);\nconst id = api.body.recordId;\nconst customer_bank = api.body.$.customer_bank;\nconsole.log(\"===customer_bank\", customer_bank);\nconst receipt_date = api.body.$.receipt_date;\nconsole.log(\"===receipt_date\", receipt_date)\nconst billno = api.body.$.billno\nconsole.log(\"billno\", billno)\napi.data = {\n  query: `mutation{record: finance_receive__update(id: ` + JSON.stringify(id) + `, doc: {receipt_date:` + JSON.stringify(receipt_date) + `,customer_bank:` + JSON.stringify(customer_bank) + `,billno:` + JSON.stringify(billno) +`,is_active:true}){_id}}`\n}\nreturn api",
+                     "close": true
                   }
                 ],
                 "showCloseButton": true,
@@ -67,9 +68,10 @@ amis_schema: |-
                   "confirm": {
                     "weight": 0,
                     "actions": [
-                      {
-                        "actionType": "refresh"
-                      }
+                       {
+                          "actionType": "custom",
+                          "script": "setTimeout(function () {\n  doAction({\n    componentId: \"listview_contract_receive_detail\",\n    actionType: \"reload\",\n    dataMergeMode: \"merge\"\n  });\n}, 1000);\n\n\n"
+                        }
                     ]
                   }
                 }
@@ -99,4 +101,4 @@ label: 确认收款
 locked: false
 'on': record
 type: amis_button
-visible: true
+visible: false
