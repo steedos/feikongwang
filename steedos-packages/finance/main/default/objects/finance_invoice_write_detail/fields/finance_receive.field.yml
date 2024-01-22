@@ -14,3 +14,8 @@ sort_no: 100
 sortable: true
 type: master_detail
 write_requires_master_read: true
+depend_on:
+  - finance_receive
+amis:
+  autoFill:
+    "contract": "${contract}"

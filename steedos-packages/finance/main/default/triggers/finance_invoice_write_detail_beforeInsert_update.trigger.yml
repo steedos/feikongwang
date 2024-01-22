@@ -1,0 +1,24 @@
+name: finance_invoice_write_detail_beforeInsert_update
+listenTo: finance_invoice_write_detail
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  const { doc, id, isInsert, isUpdate } = ctx.params;
+  if (isInsert) {
+      if (doc.amount_invoicing > doc.amount_invoicing_receive) {
+          throw new Error("本次核销收款金额超过剩余核销收款金额，请调整本次核销收款金额")
+      }
+      if (doc.amount_discount > doc.amount_discount_receive) {
+          throw new Error("本次核销折让金额超过剩余核销折让金额，请调整本次核销折让金额")
+      }
+  } else if (isUpdate) {
+      if (doc.amount_invoicing > doc.amount_invoicing_receive) {
+          throw new Error("本次核销收款金额超过剩余核销收款金额，请调整本次核销收款金额")
+      }
+      if (doc.amount_discount > doc.amount_discount_receive) {
+          throw new Error("本次核销折让金额超过剩余核销折让金额，请调整本次核销折让金额")
+      }
+  }
+locked: false

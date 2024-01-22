@@ -20,3 +20,5 @@ sortable: false
 type: currency
 unique: false
 write_requires_master_read: false
+amis:
+  "disabled": true

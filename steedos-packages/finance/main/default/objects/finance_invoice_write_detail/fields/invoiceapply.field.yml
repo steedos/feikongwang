@@ -14,3 +14,25 @@ sort_no: 100
 sortable: true
 type: master_detail
 write_requires_master_read: true
+depend_on:
+  - contract
+filtersFunction: !!js/function |
+  function (filters, values) {
+    const queryResult = Steedos.authRequest(`/graphql`, {
+                              type: 'POST', async: false, 
+                              data: JSON.stringify({
+                                query: `{sales_orders(filters: ["_id","=", `+ JSON.stringify(values.contract) + `]){_id, customer }}`
+                              })
+                            });
+          let sales_orders = queryResult.data.sales_orders;
+      if(sales_orders && sales_orders.length){
+          return ["account","=",sales_orders[0].customer]
+      }                    
+  }
+amis:
+  autoFill:
+    fillMapping:
+      "invoice_left_amount": "${invoice_left_amount}"
+    api:
+      url: "${context.rootUrl}/api/v1/finance_invoice/${invoiceapply}"
+      method: get 

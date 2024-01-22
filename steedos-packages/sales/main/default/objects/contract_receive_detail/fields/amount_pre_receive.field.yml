@@ -1,6 +1,6 @@
 name: amount_pre_receive
 create: true
-data_type: number
+data_type: currency
 filterable: false
 generated: false
 hidden: false
