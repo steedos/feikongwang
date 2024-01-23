@@ -21,4 +21,5 @@ type: currency
 unique: false
 write_requires_master_read: false
 amis:
+  "value": ${_master && _master.record.amount_invoice_left}
   "disabled": true
