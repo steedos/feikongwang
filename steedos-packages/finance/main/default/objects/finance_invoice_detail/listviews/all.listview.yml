@@ -10,6 +10,7 @@ columns:
     wrap: false
   - field: tax
   - field: tax_amount
+  - field: remark
 filter_scope: space
 filters: []
 from_code_id: finance_invoice_detail.all

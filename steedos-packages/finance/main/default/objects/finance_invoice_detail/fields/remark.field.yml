@@ -1,0 +1,15 @@
+name: remark
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: true
+label: 商品说明 
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 999
+sortable: false
+type: textarea
+rows: 2
