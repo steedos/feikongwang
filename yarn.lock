@@ -1263,7 +1263,7 @@
   resolved "https://registry.npmmirror.com/@steedos/service-object-mixin/-/service-object-mixin-2.6.4-beta.15.tgz#7b8cc5e02dc547276f26ba3fc9645a431c850f31"
   integrity sha512-d9nFUEo73kZNbgO3qHSeGoUXycAtlFB3QxXjHdLePYepO8Z30jJKFXQ0pvHOYbPv4cDkmNTG+vfB9GuRH2Prfg==
 
-"@steedos/service-package-loader@^2.6.4-beta.14":
+"@steedos/service-package-loader@^2.6.4-beta.15":
   version "2.6.4-beta.15"
   resolved "https://registry.npmmirror.com/@steedos/service-package-loader/-/service-package-loader-2.6.4-beta.15.tgz#7eeb2f776198ba37d6b82bdfe3966b2f5425ae5b"
   integrity sha512-P9Dw47PmFvZWiO7AywR4q5f/j789zA2PVwZe4gUG9yADwysKMArc4AvY6RfcAHHZhmxeGRSizOP2EEwKn608OQ==
