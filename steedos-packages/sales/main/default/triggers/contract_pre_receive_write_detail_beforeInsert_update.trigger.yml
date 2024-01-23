@@ -1,0 +1,28 @@
+name: contract_pre_receive_write_detail_beforeInsert_update
+listenTo: contract_pre_receive_write_detail
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: >-
+  /**
+   * 核销收款金额不得大于合同应收金额
+   * 核销收款金额不得大于主表预收款对象预收款余额字段金额
+   */
+  const { doc, id, isInsert, isUpdate } = ctx.params;
+
+  // 预收款
+  const financePreReceiveObj = this.getObject('finance_pre_receive');
+
+
+  if (doc.amount_invoicing > doc.contract_receive_amount) {
+      throw new Error("核销收款金额不得超过合同应收金额，请修改核销收款金额")
+  }
+   // 查询预收款信息
+  const financePreReceiveDoc = await
+  financePreReceiveObj.findOne(doc.finance_pre_receive);
+
+  if (doc.amount_invoicing > financePreReceiveDoc.amount_left) {
+      throw new Error("核销收款金额已经超过预收款余额可核销金额，请修改核销收款金额")
+  }
+locked: false
