@@ -1,0 +1,62 @@
+name: contract_pre_receive_write_detail_afterInsert_update
+listenTo: contract_pre_receive_write_detail
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: >-
+  /**
+   *  生成收款对象记录：客户自动带出、已收款状态为true、实际收款日期为当前日期；收款说明默认值为“预收款核销”；
+   *  生成收款对象子表合同收款明细一条记录：合同为当前合同、收款金额=核销收款金额；
+   *  并将生成的合同收款明细对象记录回写到"预收款核销明细"对象的“合同收款明细”字段
+   */
+  const { id, doc, isInsert, isUpdate, spaceId, userId } = ctx.params;
+
+  // 收款
+
+  const financeReceiveObj = this.getObject("finance_receive");
+
+  // 合同收款明细
+
+  const contractReceiveDetailObj = this.getObject("contract_receive_detail");
+
+  // 预收款核销
+
+  const contractPreReceiveWriteDetailObj =
+  this.getObject("contract_pre_receive_write_detail");
+
+  // 预收款
+
+  const financePreReceiveObj = this.getObject("finance_pre_receive");
+
+
+  let account = ""
+
+  let customer_bank = ""
+
+  if (doc.finance_pre_receive) {
+      const financePreReceiveDoc = await financePreReceiveObj.findOne(doc.finance_pre_receive);
+      account = financePreReceiveDoc.account
+      customer_bank = financePreReceiveDoc.customer_bank
+  }
+
+  const baseInfo = {
+      created: new Date(),
+      modified: new Date(),
+      space: spaceId,
+      owner:userId
+  }
+
+  if (isInsert) {
+      //创建收款记录
+      await financeReceiveObj.insert({
+          ...baseInfo,
+          account: account,
+          is_active: true,
+          due_date: new Date(),
+          customer_bank: customer_bank,
+          amount_description: "预收款核销"
+      })
+      // 创建合同收款明细
+  }
+locked: false
