@@ -6,7 +6,7 @@ generated: false
 hidden: false
 index: false
 is_name: false
-is_wide: true
+is_wide: false
 label: 合同开票金额
 multiple: false
 precision: 18

@@ -7,7 +7,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 开票税额
+label: 开票明细税额
 multiple: false
 precision: 18
 primary: false
@@ -23,3 +23,4 @@ summary_type: sum
 type: summary
 unique: false
 write_requires_master_read: false
+visible_on: "{{detail ==='yes' ? true : false}}"

@@ -29,10 +29,12 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:ae2cb56c5fd5",
-                            "relatedObjectApiName": "finance_invoice_detail"
+                            "relatedObjectApiName": "finance_invoice_detail",
+                            "visibleOn": "${_master.record.detail == 'yes'}"
                         }
                     ],
-                    "className": "p-t p-l-xs"
+                    "className": "p-t p-l-xs",
+                    "id": "u:995edcca8159"
                 },
                 {
                     "title": "表单",

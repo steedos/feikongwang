@@ -1,0 +1,29 @@
+name: detail
+create: true
+data_type: text
+filterable: false
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: true
+label: 有无开票明细
+inlineHelpText: 无开票明细：税率可选（单税率），税额默认；有开票明细：税率可多选（可多税率），税额由开票明细决定。
+multiple: false
+options:
+  - label: 无开票明细
+    value: no
+    color: d7d9dd
+  - label: 有开票明细
+    value: yes
+    color: 78d190
+primary: false
+readonly: true
+required: true
+searchable: false
+show_as_qr: false
+sort_no: 42
+sortable: false
+type: select
+unique: false
+write_requires_master_read: false

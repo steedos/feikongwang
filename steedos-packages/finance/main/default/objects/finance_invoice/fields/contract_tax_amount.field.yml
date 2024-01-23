@@ -1,20 +1,19 @@
-name: invoice_left_amount
-label: 发票应收金额
-inlineHelpText: 开票金额-发票已收金额
+name: contract_tax_amount
 data_type: currency
 filterable: false
-formula: ROUND(IF(ISPICKVAL( detail , "yes"),detail_amount, amount ) - invoice_amount,2)
+formula: ROUND(tax.tax_rate*amount/(1+tax.tax_rate),2)
 formula_blank_value: zeroes
 hidden: false
 index: false
 is_name: false
 is_wide: false
+label: 合同开票税额
 omit: false
 precision: 18
 readonly: false
 required: false
 scale: 2
 searchable: false
-sort_no: 58
+sort_no: 52
 sortable: false
 type: formula
