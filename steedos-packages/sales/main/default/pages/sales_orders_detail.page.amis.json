@@ -13,7 +13,7 @@
             "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
             "tabs": [
                 {
-                    "title": "明细",
+                    "title": "产品信息",
                     "className": "p-t p-l-xs",
                     "body": [
                         {
@@ -23,20 +23,12 @@
                             "recordId": "${recordId}",
                             "id": "u:d35c86de02e7",
                             "relatedObjectApiName": "contract_product"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:27c9afba81c3",
-                            "relatedObjectApiName": "sales_orders_receipts"
                         }
                     ],
                     "id": "u:4c7d77e18bb7"
                 },
                 {
-                    "title": "表单",
+                    "title": "详情",
                     "body": [
                         {
                             "type": "steedos-object-form",
@@ -45,41 +37,10 @@
                             "recordId": "${recordId}",
                             "id": "u:094a23c456de",
                             "appId": "${appId}"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:6cdb50e9765a",
-                            "relatedObjectApiName": "contract_product"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:0b1fd85a8f2b",
-                            "relatedObjectApiName": "cms_files"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc",
                     "className": "px-0 py-4"
-                },
-                {
-                    "title": "附件",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:8e310e503075",
-                            "relatedObjectApiName": "cms_files"
-                        }
-                    ],
-                    "id": "u:aade61e15c26",
-                    "className": "p-t p-l-xs"
                 },
                 {
                     "title": "收款记录",
@@ -89,12 +50,20 @@
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
+                            "id": "u:a6c46cb7e258",
+                            "relatedObjectApiName": "sales_orders_receipts"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
                             "id": "u:c7a35e3745f9",
                             "relatedObjectApiName": "contract_receive_detail"
                         }
                     ],
-                    "className": "p-l-xs p-t",
-                    "id": "u:33cf5d9b0026"
+                    "id": "u:33cf5d9b0026",
+                    "className": "p-l-xs p-t"
                 },
                 {
                     "title": "开票记录",
@@ -110,6 +79,21 @@
                     ],
                     "className": "p-t p-l-xs",
                     "id": "u:ac27617bf430"
+                },
+                {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:8e310e503075",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "className": "p-t p-l-xs",
+                    "id": "u:aade61e15c26"
                 },
                 {
                     "title": "审计日志",
