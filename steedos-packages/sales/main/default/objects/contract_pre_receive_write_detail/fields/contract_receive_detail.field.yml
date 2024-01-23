@@ -9,7 +9,7 @@ is_wide: false
 label: 合同收款明细（只读）
 multiple: false
 primary: false
-readonly: false
+readonly: true
 reference_to: contract_receive_detail
 required: false
 searchable: false

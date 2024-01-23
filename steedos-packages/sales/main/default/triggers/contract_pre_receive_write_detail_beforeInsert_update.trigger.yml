@@ -11,7 +11,8 @@ handler: >-
    */
   const { doc, id, isInsert, isUpdate } = ctx.params;
 
-  // 预收款
+  // 预收款 
+
   const financePreReceiveObj = this.getObject('finance_pre_receive');
 
 
