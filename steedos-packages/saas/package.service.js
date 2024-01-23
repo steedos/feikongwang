@@ -1,3 +1,2 @@
-
-const service = require("./dist/index.js.js");
+const service = require("./dist/index.js");
 module.exports = service;
