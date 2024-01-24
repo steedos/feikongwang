@@ -6,19 +6,17 @@ when:
 isEnabled: true
 handler: |-
   const { doc, id, isInsert, isUpdate } = ctx.params;
-  if (isInsert) {
-      if (doc.amount_invoicing > doc.amount_invoicing_receive) {
-          throw new Error("本次核销收款金额超过剩余核销收款金额，请调整本次核销收款金额")
-      }
-      if (doc.amount_discount > doc.amount_discount_receive) {
-          throw new Error("本次核销折让金额超过剩余核销折让金额，请调整本次核销折让金额")
-      }
-  } else if (isUpdate) {
-      if (doc.amount_invoicing > doc.amount_invoicing_receive) {
-          throw new Error("本次核销收款金额超过剩余核销收款金额，请调整本次核销收款金额")
-      }
-      if (doc.amount_discount > doc.amount_discount_receive) {
-          throw new Error("本次核销折让金额超过剩余核销折让金额，请调整本次核销折让金额")
-      }
+  let totalAmount = doc.amount_invoicing + doc.amount_discount;
+
+  if (doc.amount_invoicing > doc.amount_invoicing_receive) {
+      throw new Error("本次核销收款金额超过剩余核销收款金额，请调整本次核销收款金额")
+  }
+
+  if (doc.amount_discount > doc.amount_discount_receive) {
+      throw new Error("本次核销折让金额超过剩余核销折让金额，请调整本次核销折让金额")
+  }
+
+  if (totalAmount > doc.invoice_left_amount) {
+      throw new Error("本次核销折让金额与本次核销收款金额总额不得超过发票应收金额，请调整本次核销折让金额与本次核销收款金额")
   }
 locked: false
