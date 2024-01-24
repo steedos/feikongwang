@@ -30,14 +30,38 @@ handler: >-
   const financePreReceiveObj = this.getObject("finance_pre_receive");
 
 
+  // 应收合同
+
+  const salesOrdersObj = this.getObject("sales_orders");
+
+
   let account = ""
 
   let customer_bank = ""
+
+  let amount = 0
+
+  let signed_date = null
+
+  let contract_receive_amount = 0
+
+  let invoice_amount = 0
+
+  let amount_discount = 0
 
   if (doc.finance_pre_receive) {
       const financePreReceiveDoc = await financePreReceiveObj.findOne(doc.finance_pre_receive);
       account = financePreReceiveDoc.account
       customer_bank = financePreReceiveDoc.customer_bank
+  }
+
+  if (doc.contract) {
+      const salesOrdersDoc = await salesOrdersObj.findOne(doc.contract);
+      amount = salesOrdersDoc.amount,
+      signed_date = salesOrdersDoc.signed_date,
+      contract_receive_amount = salesOrdersDoc.left_receive,
+      invoice_amount = salesOrdersDoc.billing_money_receive  
+      
   }
 
   const baseInfo = {
@@ -49,7 +73,7 @@ handler: >-
 
   if (isInsert) {
       //创建收款记录
-      await financeReceiveObj.insert({
+      const financeReceiveDoc =  await financeReceiveObj.insert({
           ...baseInfo,
           account: account,
           is_active: true,
@@ -58,5 +82,20 @@ handler: >-
           amount_description: "预收款核销"
       })
       // 创建合同收款明细
+      const contractReceiveDetailDoc = await contractReceiveDetailObj.insert({
+          contract: doc.contract,
+          finance_receive: financeReceiveDoc._id,
+          amount_invoicing: doc.amount_invoicing,
+          date: signed_date,
+          amount: amount,
+          contract_receive_amount: contract_receive_amount,
+          invoice_amount: invoice_amount,
+          amount_discount: amount_discount,
+          ...baseInfo
+      })
+      // 回写"预收款核销明细"对象的“合同收款明细”字段
+      contractPreReceiveWriteDetailObj.directUpdate(id, {
+          contract_receive_detail: contractReceiveDetailDoc._id
+      })
   }
 locked: false
