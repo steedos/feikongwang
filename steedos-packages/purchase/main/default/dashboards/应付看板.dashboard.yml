@@ -96,21 +96,8 @@ cards:
                 - - field
                   - finance_payment_reports.amount
                   - null
-        visualization_settings:
-          series_settings:
-            sum:
-              color: '#C7EAEA'
-          graph.dimensions:
-            - payment_date
-          graph.metrics:
-            - sum
-          graph.x_axis.labels_enabled: false
-          graph.y_axis.labels_enabled: false
-          graph.y_axis.auto_range: false
-          graph.x_axis.scale: timeseries
-          column_settings:
-            '["name","payment_date"]':
-              date_style: YYYY/M/D
+        visualization_settings: >-
+          {"series_settings":{"sum":{"color":"#C7EAEA"}},"graph.dimensions":["payment_date"],"graph.metrics":["sum"],"graph.x_axis.labels_enabled":false,"graph.y_axis.labels_enabled":false,"graph.y_axis.auto_range":false,"graph.x_axis.scale":"timeseries","column_settings":{"[\"name\",\"payment_date\"]":{"date_style":"YYYY/M/D"}}}
         creator_id: 0958b2e7-61cf-4778-b9b7-cc1378811cd3
         database_id: 1
         table_id: finance_payment_reports

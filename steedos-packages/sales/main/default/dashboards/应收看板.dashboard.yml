@@ -101,11 +101,8 @@ cards:
                 - temporal-unit: month
           type: query
           database: '1'
-        visualization_settings:
-          graph.dimensions:
-            - receipt_date
-          graph.metrics:
-            - sum
+        visualization_settings: >-
+          {"graph.dimensions":["receipt_date"],"graph.metrics":["sum"]}
         creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
         database_id: '1'
         table_id: finance_receive
