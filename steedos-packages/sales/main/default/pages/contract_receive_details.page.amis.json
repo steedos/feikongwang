@@ -38,7 +38,8 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:f96d1b59ab7f",
-                            "relatedObjectApiName": "finance_invoice_write_detail"
+                            "relatedObjectApiName": "finance_invoice_write_detail",
+                            "visibleOn": "${_master.record.state == 'approved'}"
                         },
                         {
                             "type": "steedos-object-related-listview",

@@ -1,4 +1,6 @@
 name: contract_receive_details
+__filename: >-
+  /workspace/feikongwang/steedos-packages/sales/main/default/pages/contract_receive_details.page.yml
 is_active: true
 label: 合同收款明细记录页
 locked: false
