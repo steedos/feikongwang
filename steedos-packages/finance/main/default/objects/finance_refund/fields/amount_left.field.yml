@@ -1,5 +1,9 @@
 name: amount_left
 is_wide: false
-label: 预收款余额（只读，根据主表预收款余额自动带出）
+label: 预收款余额
 sort_no: 130
-type: number
+type: currency
+readonly: false
+amis:
+  "value": ${_master && _master.record.amount_left}
+  "disabled": true

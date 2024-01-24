@@ -1,5 +1,5 @@
 name: pre_amount
-label: 预收款金额（只读，根据主表预收款余额自动带出）
+label: 预收款金额
 sort_no: 130
 filterable: false
 hidden: false
@@ -9,8 +9,11 @@ is_wide: false
 omit: false
 precision: 18
 readonly: false
-required: true
+required: false
 scale: 2
 searchable: false
 sortable: true
 type: number
+amis:
+  "value": ${_master && _master.record.amount}
+  "disabled": true

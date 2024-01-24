@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 合同收款明细（只读）
+label: 合同收款明细
 multiple: false
 primary: false
 readonly: true

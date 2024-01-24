@@ -4,7 +4,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: true
-label: 客户（只读，根据主表预收款余额自动带出）
+label: 客户
 multiple: false
 readonly: false
 reference_to: accounts
@@ -14,3 +14,6 @@ sort_no: 120
 sortable: true
 type: lookup
 create: false
+amis:
+  "value": ${_master && _master.record.account}
+  "disabled": true

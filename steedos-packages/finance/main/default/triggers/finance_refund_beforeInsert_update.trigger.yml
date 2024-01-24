@@ -1,0 +1,12 @@
+name: finance_refund_beforeInsert_update
+listenTo: finance_refund
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  const { doc, id } = ctx.params;
+  if (doc.amount > doc.amount_left) {
+      throw new Error("退款金额不得大于预收款余额,请调整退款金额再提交单据")
+  }
+locked: false
