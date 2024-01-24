@@ -67,7 +67,7 @@ amis_schema: |-
                       ]
                   }
               },
-              "visibleOn": "${_master && _master.record.instance_state =='approved' && _master.record.is_active == false}"
+              "visibleOn": "${_master && _master.record.instance_state =='approved' && !_master.record.is_active}"
           }
       ],
       "regions": [
