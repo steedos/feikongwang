@@ -32,7 +32,7 @@ filtersFunction: !!js/function |
                             });
           let finance_invoice = queryResult.data.finance_invoice
       if(finance_invoice && finance_invoice.length){
-          return ["customer","=",finance_invoice[0].account]
+          return [["customer","=",finance_invoice[0].account],["left_invoice",">",0]]
       }                    
   }
 amis:
