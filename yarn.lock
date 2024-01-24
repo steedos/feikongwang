@@ -1190,29 +1190,29 @@
   resolved "https://registry.npmmirror.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@steedos/client@2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/client/-/client-2.6.4-beta.15.tgz#98e2c3a4a10bef877c1ce4fc09ce1205f6a0278e"
-  integrity sha512-5fvqsSxPCqGvYIzwn2Cvg0HlD1BHt/PfdL8jIbjYjUT75x9F98mC+UdfCsOlb/4UiIvcoC+w2LZ+jacM0jouSg==
+"@steedos/client@2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/client/-/client-2.6.4-beta.17.tgz#42fc607ca60ad2dc94eeccdfca7d90feb525ed98"
+  integrity sha512-q2Lm7pD3IsHgDk3AL0sNHstz20Gy2sW/Ebr88syQHOP337OgrGB/4TZIn48aTYYnLY4pFlWk/zN2jACre1+pDQ==
   dependencies:
-    "@steedos/filters" "2.6.4-beta.15"
+    "@steedos/filters" "2.6.4-beta.17"
     node-fetch "^2.6.7"
 
-"@steedos/filters@2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/filters/-/filters-2.6.4-beta.15.tgz#87d18e2def1cf7ef40555bb2ce45261e401adfc8"
-  integrity sha512-2rDirvbB+zKgvfboaNQ0sZr6kaTk1Ywo0+z2yyExpSNKPloo+l3mRhiO+a468m7BOCZzwE17GH4IOM2GfrG0LQ==
+"@steedos/filters@2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/filters/-/filters-2.6.4-beta.17.tgz#90b7755f4c9dc5d992df3b0ea86df9f7e1c348c3"
+  integrity sha512-5S1IZQltrS0PmtpFLhGFNpMdK7R0gjd+REyeKV2YstOIK5ZNB8j5kRqT86ZaoVzzZhNhTySfCLxXcZYFH4pvzA==
   dependencies:
     "@babel/runtime" "7.12.18"
     lodash "4.17.21"
     moment "^2.24.0"
 
-"@steedos/metadata-core@2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/metadata-core/-/metadata-core-2.6.4-beta.15.tgz#5ee6e6618e2601a59a028851aa2d7063059d4a17"
-  integrity sha512-LuVUnr2gcOmWs+yNW98PVTbjKx91xk3/sSaf3ZBrmaqLhvHuiBxSwegSxrEf3xCbgWQCujCMYCjQyFZiWwDYtg==
+"@steedos/metadata-core@2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/metadata-core/-/metadata-core-2.6.4-beta.17.tgz#21b37a2b0b2efe81f92e10caa754ee5a145fa8d8"
+  integrity sha512-bxVvU9dUYjQsBIzP5z03MEHLTQWrSbhQ1y3YAd6rQwf4buEHcCDeCZeFg73W0zQh3xIMwmN+Ot0slhWd+rNktw==
   dependencies:
-    "@steedos/client" "2.6.4-beta.15"
+    "@steedos/client" "2.6.4-beta.17"
     archiver "^5.1.0"
     chalk "^4.1.0"
     clone "^2.1.2"
@@ -1228,14 +1228,14 @@
     mkdirp "^1.0.4"
     underscore "^1.11.0"
 
-"@steedos/metadata-registrar@2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/metadata-registrar/-/metadata-registrar-2.6.4-beta.15.tgz#420baf81a35b1ee58958206c36aa2fa77db1bbfd"
-  integrity sha512-FhUoWUaBGadVxhqXnphAj0zy81miRtePvyfzZeVkixJwdFr8Mr6rZUZIsv9T3QSabC/60vOnRWbpKgNUPhebjg==
+"@steedos/metadata-registrar@2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/metadata-registrar/-/metadata-registrar-2.6.4-beta.17.tgz#bdf15ac9578ab2ff91d13f58e09449aca8752231"
+  integrity sha512-7b7/MSRpigMtiiqE/icAsQLCk/5QHbKfSfwN8y2VJLnnb3LG+wpENX/LHYC4seEPL6CbBfphRA95WPig1iytuw==
   dependencies:
     "@salesforce/ts-types" "1.1.2"
-    "@steedos/client" "2.6.4-beta.15"
-    "@steedos/metadata-core" "2.6.4-beta.15"
+    "@steedos/client" "2.6.4-beta.17"
+    "@steedos/metadata-core" "2.6.4-beta.17"
     archiver "^5.1.0"
     chalk "^4.1.0"
     clone "^2.1.2"
@@ -1250,28 +1250,28 @@
     tslib "^2.4.0"
     underscore "^1.11.0"
 
-"@steedos/router@2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/router/-/router-2.6.4-beta.15.tgz#8ee4a80d5708f341f466a56b34db64b2fe28d4f5"
-  integrity sha512-IXtf/cJq5viwstDh8Hlzj8R8Tkh/hfd+HYvNxaD7cQZiEDcKHeYygpxmCHNQ5vpPSJTwUcD496l+CD4OFI1CUw==
+"@steedos/router@2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/router/-/router-2.6.4-beta.17.tgz#31fd1e5673efaa4f144c60c8813ba0d59ce6e6dd"
+  integrity sha512-qd7N0ey/HHpNPQkbEtbERFcGS24vwOg65ZhVxBliU1fGPI6OMFmOpMgOGAciMlIW2KLoMzPyhkVnzRKKR581IQ==
   dependencies:
     compression "1.7.4"
     cors "2.8.5"
 
-"@steedos/service-object-mixin@2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/service-object-mixin/-/service-object-mixin-2.6.4-beta.15.tgz#7b8cc5e02dc547276f26ba3fc9645a431c850f31"
-  integrity sha512-d9nFUEo73kZNbgO3qHSeGoUXycAtlFB3QxXjHdLePYepO8Z30jJKFXQ0pvHOYbPv4cDkmNTG+vfB9GuRH2Prfg==
+"@steedos/service-object-mixin@2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/service-object-mixin/-/service-object-mixin-2.6.4-beta.17.tgz#42caf38950b6d1510643f1ce55f99f9f0906edd0"
+  integrity sha512-kIJzcN8FKfAxubHpBOMt8LVqjxvlZjntfD5HBcvi+GvSa7fi2mi0z66Z1djqBXWlMhFAqywPeiL19Ebb6M/PdQ==
 
-"@steedos/service-package-loader@^2.6.4-beta.15":
-  version "2.6.4-beta.15"
-  resolved "https://registry.npmmirror.com/@steedos/service-package-loader/-/service-package-loader-2.6.4-beta.15.tgz#7eeb2f776198ba37d6b82bdfe3966b2f5425ae5b"
-  integrity sha512-P9Dw47PmFvZWiO7AywR4q5f/j789zA2PVwZe4gUG9yADwysKMArc4AvY6RfcAHHZhmxeGRSizOP2EEwKn608OQ==
+"@steedos/service-package-loader@^2.6.4-beta.17":
+  version "2.6.4-beta.17"
+  resolved "https://registry.npmmirror.com/@steedos/service-package-loader/-/service-package-loader-2.6.4-beta.17.tgz#ccfb4f9e986d5eb848d87fad88266f90a2e44f4f"
+  integrity sha512-DZHqNB0AOdZVa/dt1r+RG0ZnAvxE/UcwbqqCxw2MK0el5eMqoSb6WA9jEn2o4K6hECFsygyHA7AAkyuiPRCE+w==
   dependencies:
-    "@steedos/metadata-core" "2.6.4-beta.15"
-    "@steedos/metadata-registrar" "2.6.4-beta.15"
-    "@steedos/router" "2.6.4-beta.15"
-    "@steedos/service-object-mixin" "2.6.4-beta.15"
+    "@steedos/metadata-core" "2.6.4-beta.17"
+    "@steedos/metadata-registrar" "2.6.4-beta.17"
+    "@steedos/router" "2.6.4-beta.17"
+    "@steedos/service-object-mixin" "2.6.4-beta.17"
     clone "^2.1.2"
     csvtojson "~2.0.10"
     moleculer "^0.14.25"
