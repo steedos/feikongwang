@@ -1,0 +1,82 @@
+name: write_off
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "核销",
+              "id": "u:write_off",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "核销单据",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-form",
+                                          "id": "u:ddf785b4fdec",
+                                          "label": "对象表单",
+                                          "objectApiName": "contract_pre_receive_write_detail",
+                                          "recordId": "",
+                                          "className": "sm:border sm:rounded sm:border-gray-300 bg-white p-4",
+                                          "mode": "edit",
+                                          "fieldsExtend": {
+                                              "finance_pre_receive": {
+                                                  "amis": {
+                                                      "value": "${_master && _master.record._id}",
+                                                      "id": "u:87c051894ad8",
+                                                      "hidden": true
+                                                  }
+                                              }
+                                          },
+                                          "fields": [
+                                              "contract",
+                                              "amount",
+                                              "date",
+                                              "contract_receive_amount",
+                                              "invoice_amount",
+                                              "amount_invoicing",
+                                              "finance_pre_receive"
+                                          ]
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:23c54bb88e2f",
+                                  "closeOnEsc": false,
+                                  "size": "lg"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "visibleOn": "${_master && _master.record.is_active && _master.record.amount_left>0}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:5b40c5a4353e"
+  }
+is_enable: true
+label: 核销
+locked: false
+'on': record_only
+type: amis_button
+visible: true

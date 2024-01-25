@@ -1,0 +1,82 @@
+name: refund
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "退款",
+              "id": "u:refund",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "退款单据",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-form",
+                                          "label": "对象表单",
+                                          "objectApiName": "finance_refund",
+                                          "recordId": "",
+                                          "className": "sm:border sm:rounded sm:border-gray-300 bg-white p-4",
+                                          "id": "u:661df04630ce",
+                                          "mode": "edit",
+                                          "fields": [
+                                              "account",
+                                              "amount_left",
+                                              "pre_amount",
+                                              "customer_bank",
+                                              "amount",
+                                              "due_date",
+                                              "amount_description",
+                                              "finance_pre_receive"
+                                          ],
+                                          "fieldsExtend": {
+                                              "finance_pre_receive": {
+                                                  "amis": {
+                                                      "value": "${_master && _master.record._id}",
+                                                      "hidden": true
+                                                  }
+                                              }
+                                          }
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:fc9b1bb2fe2a",
+                                  "closeOnEsc": false,
+                                  "size": "lg"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "visibleOn": "${_master && _master.record.is_active && _master.record.amount_left>0}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:db9ca682c014"
+  }
+is_enable: true
+label: 退款
+locked: false
+'on': record_only
+type: amis_button
+visible: true
