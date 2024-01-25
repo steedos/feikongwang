@@ -2,6 +2,7 @@ name: all
 columns:
   - field: name
   - field: reports_number
+  - field: applicant
   - field: business_purpose
   - field: start
   - field: end
