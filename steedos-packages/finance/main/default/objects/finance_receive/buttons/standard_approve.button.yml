@@ -1,0 +1,4 @@
+name: standard_approve
+is_enable: true
+label: 发起审批
+'on': record

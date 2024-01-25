@@ -49,13 +49,18 @@ handler: >-
 
   let amount_discount = 0
 
+  let billno = ""
+
   if (doc.finance_pre_receive) {
+      // 查询预收款
       const financePreReceiveDoc = await financePreReceiveObj.findOne(doc.finance_pre_receive);
       account = financePreReceiveDoc.account
       customer_bank = financePreReceiveDoc.customer_bank
+      billno = financePreReceiveDoc.billno
   }
 
   if (doc.contract) {
+      // 查询应收合同
       const salesOrdersDoc = await salesOrdersObj.findOne(doc.contract);
       amount = salesOrdersDoc.amount,
       signed_date = salesOrdersDoc.signed_date,
@@ -79,6 +84,8 @@ handler: >-
           is_active: true,
           due_date: new Date(),
           customer_bank: customer_bank,
+          receipt_date: new Date(),
+          billno: billno,
           amount_description: "预收款核销"
       })
       // 创建合同收款明细
@@ -91,6 +98,7 @@ handler: >-
           contract_receive_amount: contract_receive_amount,
           invoice_amount: invoice_amount,
           amount_discount: amount_discount,
+          state: "approved",
           ...baseInfo
       })
       // 回写"预收款核销明细"对象的“合同收款明细”字段
