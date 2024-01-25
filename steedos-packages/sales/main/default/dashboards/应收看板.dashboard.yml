@@ -4,14 +4,26 @@ auto_apply_filters: true
 enable_embedding: false
 entity_id: 65ab3adf4bab3305be0caa8c
 id: 65ab3adf4bab3305be0caa8c
-parameters: []
+parameters:
+  - name: 日期范围
+    slug: '%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4'
+    id: 72516fa9
+    type: date/range
+    sectionId: date
 show_in_getting_started: false
 cards:
   - card_id: 65ab3ac64bab3305be0caa8b
     col: 9
     entity_id: 65ab3aee4bab3305be0caa8d
     id: 65ab3aee4bab3305be0caa8d
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab3ac64bab3305be0caa8b
+        target:
+          - dimension
+          - - field
+            - finance_receive.due_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -21,7 +33,14 @@ cards:
     col: 6
     entity_id: 65ab3aee4bab3305be0caa8e
     id: 65ab3aee4bab3305be0caa8e
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab3a834bab3305be0caa8a
+        target:
+          - dimension
+          - - field
+            - sales_orders.signed_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -31,7 +50,14 @@ cards:
     col: 0
     entity_id: 65ab3aee4bab3305be0caa8f
     id: 65ab3aee4bab3305be0caa8f
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab39f74bab3305be0caa88
+        target:
+          - dimension
+          - - field
+            - sales_orders.signed_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -41,7 +67,14 @@ cards:
     col: 3
     entity_id: 65ab3aee4bab3305be0caa90
     id: 65ab3aee4bab3305be0caa90
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab3a3f4bab3305be0caa89
+        target:
+          - dimension
+          - - field
+            - sales_orders.signed_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -51,7 +84,14 @@ cards:
     col: 12
     entity_id: 65ab3b6a4bab3305be0caa92
     id: 65ab3b6a4bab3305be0caa92
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab3b624bab3305be0caa91
+        target:
+          - dimension
+          - - field
+            - sales_orders.signed_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -61,7 +101,14 @@ cards:
     col: 15
     entity_id: 65ab3bc24bab3305be0caa94
     id: 65ab3bc24bab3305be0caa94
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab3bb74bab3305be0caa93
+        target:
+          - dimension
+          - - field
+            - sales_orders.signed_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -71,7 +118,21 @@ cards:
     col: 0
     entity_id: 65ab41acd75df605beb5d2bd
     id: 65ab41acd75df605beb5d2bd
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab3f4dd75df605beb5d2b5
+        target:
+          - dimension
+          - - field
+            - sales_orders_receipts.due_date
+            - null
+      - parameter_id: 72516fa9
+        card_id: 65ab4018d75df605beb5d2b6
+        target:
+          - dimension
+          - - field
+            - finance_receive.receipt_date
+            - null
     row: 3
     series:
       - _id: 65ab4018d75df605beb5d2b6
@@ -101,8 +162,7 @@ cards:
                 - temporal-unit: month
           type: query
           database: '1'
-        visualization_settings: >-
-          {"graph.dimensions":["receipt_date"],"graph.metrics":["sum"]}
+        visualization_settings: '{"graph.dimensions":["receipt_date"],"graph.metrics":["sum"]}'
         creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
         database_id: '1'
         table_id: finance_receive
@@ -157,7 +217,14 @@ cards:
     col: 11
     entity_id: 65ab429ed75df605beb5d2bf
     id: 65ab429ed75df605beb5d2bf
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 72516fa9
+        card_id: 65ab4296d75df605beb5d2be
+        target:
+          - dimension
+          - - field
+            - finance_receive.due_date
+            - null
     row: 3
     series: []
     size_x: 7
