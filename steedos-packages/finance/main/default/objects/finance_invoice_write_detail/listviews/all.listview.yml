@@ -1,12 +1,11 @@
 name: all
 columns:
   - field: name
-  - field: invoiceapply
-  - field: invoice_left_amount
   - field: finance_receive
   - field: amount_invoicing
   - field: amount_discount
   - field: amount_write
+  - field: invoiceapply
 filter_scope: space
 filters: []
 from_code_id: finance_invoice_write_detail.all

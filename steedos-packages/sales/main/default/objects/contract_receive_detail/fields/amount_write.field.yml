@@ -1,5 +1,5 @@
 name: amount_write
-label: 核销金额
+label: 本次核销金额
 inlineHelpText: 收款金额+折让金额+预收款抵扣金额
 data_type: currency
 filterable: false
@@ -8,7 +8,7 @@ formula_blank_value: zeroes
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 omit: false
 precision: 18
 readonly: false

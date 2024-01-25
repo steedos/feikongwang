@@ -7,7 +7,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 开票应收金额
+label: 合同开票应收金额
 multiple: false
 primary: false
 readonly: false

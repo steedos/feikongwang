@@ -3,8 +3,6 @@ columns:
   - field: name
   - field: finance_receive
   - field: contract
-  - field: contract_receive_amount
-  - field: invoice_amount
   - field: amount_invoicing
   - field: amount_discount
   - field: amount_pre_receive

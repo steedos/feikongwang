@@ -5,8 +5,8 @@ generated: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
-label: 收款金额
+is_wide: true
+label: 本次收款金额
 multiple: false
 precision: 18
 primary: false

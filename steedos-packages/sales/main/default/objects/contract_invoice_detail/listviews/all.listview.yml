@@ -1,8 +1,7 @@
 name: all
 columns:
+  - field: name
   - field: contract
-  - field: date
-  - field: amount
   - field: amount_invoicing
   - field: state
   - field: finance_invoice

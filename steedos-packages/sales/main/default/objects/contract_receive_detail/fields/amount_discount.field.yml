@@ -5,8 +5,8 @@ generated: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
-label: 折让金额
+is_wide: true
+label: 本次折让金额
 defaultValue: 0
 multiple: false
 precision: 18

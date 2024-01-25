@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 已开票金额
+label: 合同已开票金额
 multiple: false
 primary: false
 readonly: false

@@ -5,7 +5,7 @@ data_type: currency
 filterable: false
 formula: ROUND(amount_invoicing+amount_discount,2)
 formula_blank_value: zeroes
-hidden: false
+hidden: true
 index: false
 is_name: false
 is_wide: true

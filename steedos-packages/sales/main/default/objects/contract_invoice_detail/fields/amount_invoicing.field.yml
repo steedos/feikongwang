@@ -5,7 +5,7 @@ generated: false
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 本次开票金额
 multiple: false
 precision: 18

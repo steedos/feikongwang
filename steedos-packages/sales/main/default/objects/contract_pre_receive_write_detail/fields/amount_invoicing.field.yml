@@ -6,7 +6,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 核销收款金额
+label: 本次核销收款金额
 multiple: false
 precision: 18
 primary: false
