@@ -31,9 +31,24 @@ filtersFunction: !!js/function |
                               })
                             });
           let finance_receive = queryResult.data.finance_receive
-          console.log("========123",finance_receive)
       if(finance_receive && finance_receive.length){
-          return ["customer","=",finance_receive[0].account]
+        let salesOrdersId = []
+        const salesOrderDocs = Steedos.authRequest(`/graphql`, {
+                              type: 'POST', async: false, 
+                              data: JSON.stringify({
+                                query: `{sales_orders(filters: ["customer","=", `+ JSON.stringify(finance_receive[0].account) + `]){_id, amount,verification_money,verification_being_money}}`
+                              })
+                            });
+              console.log("=====应收合同",salesOrderDocs);
+              let salesOrderDoc = salesOrderDocs.data.sales_orders
+              if(salesOrderDoc && salesOrderDoc.length){
+                 for(let salesOrder of salesOrderDoc){
+                    if(salesOrder.amount-salesOrder.verification_money-salesOrder.verification_being_money>0){
+                        salesOrdersId.push(salesOrder._id)
+                    }
+                 }
+              }       
+          return ["_id","in",salesOrdersId]
       }                    
   }
 amis:
