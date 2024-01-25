@@ -92,7 +92,7 @@ handler: >-
       const contractReceiveDetailDoc = await contractReceiveDetailObj.insert({
           contract: doc.contract,
           finance_receive: financeReceiveDoc._id,
-          amount_invoicing: doc.amount_invoicing,
+          amount_invoicing: 0,
           date: signed_date,
           amount: amount,
           contract_receive_amount: contract_receive_amount,
