@@ -82,5 +82,27 @@
         "amount_invoice": 0,
         "amount_write": 0,
         "amount_write_invoice": 0
+    },
+    {
+        "_id": "${space_id}_65b314e46529df06461827be",
+        "created": "2024-01-26T02:11:48.822Z",
+        "modified": "2024-01-26T02:11:48.822Z",
+        "space": "65b30c886529df06461827b9",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "is_active": true,
+        "due_date": {
+            "$date": "2024-01-26T02:11:48.821Z"
+        },
+        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "receipt_date": {
+            "$date": "2024-01-26T02:11:48.821Z"
+        },
+        "billno": "A2563",
+        "amount_description": "预收款核销",
+        "name": "Demo-SK-00005",
+        "amount": 0,
+        "amount_discount": 0,
+        "amount_write": 5000
     }
 ]
