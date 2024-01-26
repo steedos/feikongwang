@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "${space_id}_65b314e46529df06461827bd",
+        "amount": 1000000,
+        "contract_receive_amount": 1000000,
+        "invoice_amount": 0,
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65b30c886529df06461827b9",
+        "company_ids": [
+            "65b30c886529df06461827b9"
+        ],
+        "finance_pre_receive": "${space_id}_65b30e536529df06461827ba",
+        "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+        "date": {
+            "$date": "2023-12-01T00:00:00.000Z"
+        },
+        "amount_invoicing": 5000,
+        "dataComponentId": null,
+        "record_id": null,
+        "space": "65b30c886529df06461827b9",
+        "created": "2024-01-26T02:11:48.762Z",
+        "modified": "2024-01-26T02:11:48.762Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "name": "Demo-YSKHX-00001",
+        "contract_receive_detail": "${space_id}_65b314e46529df06461827c0"
+    }
+]

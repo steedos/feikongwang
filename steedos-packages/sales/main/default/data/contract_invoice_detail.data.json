@@ -22,7 +22,8 @@
             "$date": "2023-11-01T00:00:00.000Z"
         },
         "invoiced_amount": 0,
-        "left_invoice": 50000
+        "left_invoice": 50000,
+        "name": "Demo-KPMX-00001"
     },
     {
         "_id": "${space_id}_65a8e04bc06cbb0647557f87",
@@ -47,7 +48,8 @@
             "$date": "2023-11-01T00:00:00.000Z"
         },
         "invoiced_amount": 0,
-        "left_invoice": 99000
+        "left_invoice": 99000,
+        "name": "Demo-KPMX-00002"
     },
     {
         "_id": "${space_id}_65a8e05cc06cbb0647557f88",
@@ -72,7 +74,8 @@
             "$date": "2023-11-01T00:00:00.000Z"
         },
         "invoiced_amount": 0,
-        "left_invoice": 197000
+        "left_invoice": 197000,
+        "name": "Demo-KPMX-00003"
     },
     {
         "_id": "${space_id}_65a8ecaac06cbb0647557fad",
@@ -107,7 +110,8 @@
             "$date": "2023-12-01T00:00:00.000Z"
         },
         "invoiced_amount": 0,
-        "left_invoice": 220000
+        "left_invoice": 220000,
+        "name": "Demo-KPMX-00004"
     },
     {
         "_id": "${space_id}_65a8ecc0c06cbb0647557fae",
@@ -132,7 +136,8 @@
             "$date": "2023-12-01T00:00:00.000Z"
         },
         "invoiced_amount": 0,
-        "left_invoice": 219800
+        "left_invoice": 219800,
+        "name": "Demo-KPMX-00005"
     },
     {
         "_id": "${space_id}_65aa296b6b010c05be9008a3",
@@ -167,7 +172,8 @@
             "$date": "2024-01-04T00:00:00.000Z"
         },
         "invoiced_amount": 0,
-        "left_invoice": 780000
+        "left_invoice": 780000,
+        "name": "Demo-KPMX-00006"
     },
     {
         "_id": "${space_id}_65aa3ab39540b805bebc84fd",
@@ -192,6 +198,7 @@
         "modified": "2024-01-19T09:10:25.288Z",
         "created_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
         "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
-        "state": "unsubmitted"
+        "state": "unsubmitted",
+        "name": "Demo-KPMX-00007"
     }
 ]

@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "${space_id}_65b3120f6529df06461827bb",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "locked": false,
+        "company_id": "65b30c886529df06461827b9",
+        "company_ids": [
+            "65b30c886529df06461827b9"
+        ],
+        "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+        "amount_left": 10000,
+        "pre_amount": 10000,
+        "finance_pre_receive": "${space_id}_65b30e536529df06461827ba",
+        "amount": 5000,
+        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+        "due_date": {
+            "$date": "2024-01-25T00:00:00.000Z"
+        },
+        "amount_description": "合同已支付，退部分预付款",
+        "dataComponentId": null,
+        "record_id": null,
+        "space": "65b30c886529df06461827b9",
+        "created": "2024-01-26T01:59:42.992Z",
+        "modified": "2024-01-26T01:59:42.992Z",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "name": "Demo-TK-00001"
+    }
+]
