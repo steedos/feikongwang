@@ -26,7 +26,7 @@ filtersFunction: !!js/function |
                             });
           let sales_orders = queryResult.data.sales_orders;
       if(sales_orders && sales_orders.length){
-          return ["account","=",sales_orders[0].customer]
+          return [["account","=",sales_orders[0].customer],["invoice_left_amount",">",0],["is_active","=",true]]
       }                    
   }
 amis:
