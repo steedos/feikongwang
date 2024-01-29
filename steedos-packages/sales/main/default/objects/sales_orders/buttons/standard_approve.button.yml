@@ -1,0 +1,71 @@
+name: standard_approve
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "发起审批",
+              "id": "u:6887f3ab860a",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "确认金额",
+                                  "body": [
+                                      {
+                                          "type": "tpl",
+                                          "tpl": "合同金额与产品金额不一致，是否确认审批",
+                                          "wrapperComponent": "",
+                                          "inline": false,
+                                          "id": "u:00960725a1f3"
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:3fd0f773079f",
+                                  "closeOnEsc": false,
+                                  "onEvent": {
+                                      "confirm": {
+                                          "weight": 0,
+                                          "actions": [
+                                              {
+                                                  "actionType": "steedos_actions_standard_approve"
+                                              }
+                                          ]
+                                      }
+                                  }
+                              },
+                              "expression": "${_master && _master.record.amount != _master.record.product_amount}"
+                          }
+                      ]
+                  }
+              },
+              "hiddenOn": "${_master && _master.record.instance_state}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "record": {},
+          "permissions": {},
+          "dataComponentId": "",
+          "record_id": ""
+      },
+      "id": "u:5dd49d3a508c",
+      "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 发起审批
+'on': record_only
+type: amis_button
+visible: true

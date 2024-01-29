@@ -7,7 +7,6 @@ compactLayouts:
   - billing_money_receive
 custom: true
 enable_api: true
-enable_audit: true
 enable_chatter: false
 enable_enhanced_lookup: true
 enable_events: false
@@ -22,6 +21,6 @@ enable_tree: false
 enable_workflow: true
 icon: drafts
 is_enable: true
+is_system: true
 label: 应收合同
 version: 2
-actions:
