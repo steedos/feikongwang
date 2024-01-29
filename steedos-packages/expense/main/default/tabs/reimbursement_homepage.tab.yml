@@ -9,7 +9,7 @@ mobile: true
 page: reimbursement_dashboard
 permissions: []
 type: url
-url: /analytics/embed/dashboard/659cf47ad7782305bf974f0d
+url: /analytics/embed/dashboard/659cf47ad7782305bf974f0d#titled=false
 license:
   - platform-professional
   - platform-enterprise
