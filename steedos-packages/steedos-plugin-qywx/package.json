@@ -1,0 +1,32 @@
+{
+    "name": "@steedos/plugin-qywx",
+    "version": "2.5.30",
+    "private": false,
+    "description": "企业微信集成插件",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "author": "Jack Zhuang",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/steedos/steedos-plugin-qywx.git"
+    },
+    "main": "package.service.js",
+    "scripts": {
+        "debug": "tsc && nodemon server.js",
+        "start": "node server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "cookies": "^0.8.0",
+        "dotenv-flow": "^3.1.0",
+        "jsdom": "^16.2.2",
+        "jshashes": "^1.0.8",
+        "wechat-crypto": "^0.0.2",
+        "wx-ding-aes": "^0.0.10"
+    },
+    "homepage": "https://github.com/steedos/steedos-plugin-qywx#readme",
+    "gitHead": "7c0772a9e55ca16dad27d5569fbb56d892d1f8c8"
+}

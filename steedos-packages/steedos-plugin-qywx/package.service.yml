@@ -1,0 +1,6 @@
+label: 企业微信集成插件
+description: Steedos可以集成企业微信，实现单点登录、消息推送和组织机构同步。
+icon: feedback
+license:
+  - platform-professional
+  - platform-enterprise

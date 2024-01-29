@@ -24,6 +24,11 @@
   "devDependencies": {
     "lerna": "^5.4.0",
     "moleculer-repl": "^0.7.4",
-    "ts-jest": "^29.0.3"
+    "ts-jest": "^29.0.3",
+    "cookies": "^0.8.0",
+    "jsdom": "^16.2.2",
+    "jshashes": "^1.0.8",
+    "wechat-crypto": "^0.0.2",
+    "wx-ding-aes": "^0.0.10"
   }
 }
