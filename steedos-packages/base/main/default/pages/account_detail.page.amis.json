@@ -10,7 +10,7 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
                     "title": "基础信息",
@@ -52,6 +52,29 @@
                     "className": "p-t p-l-xs"
                 },
                 {
+                    "title": "详细",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:3f8d62efad94",
+                            "appId": "${appId}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:be1209efa66f",
+                            "relatedObjectApiName": "audit_records"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc",
+                    "className": "px-0 py-4 p-t p-l-xs"
+                },
+                {
                     "title": "合同",
                     "body": [
                         {
@@ -72,21 +95,6 @@
                         }
                     ],
                     "id": "u:2e205bd53cc2"
-                },
-                {
-                    "title": "表单",
-                    "body": [
-                        {
-                            "type": "steedos-object-form",
-                            "label": "对象表单",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:3f8d62efad94",
-                            "appId": "${appId}"
-                        }
-                    ],
-                    "id": "u:5d4e7e3f6ecc",
-                    "className": "px-0 py-4"
                 },
                 {
                     "title": "附件",
@@ -116,29 +124,6 @@
                         }
                     ],
                     "id": "u:8c7df8c0fa9a",
-                    "className": "p-t p-l-xs"
-                },
-                {
-                    "title": "其他",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:ff24645a0537",
-                            "relatedObjectApiName": "instances"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:4caf3ec8580a",
-                            "relatedObjectApiName": "audit_records"
-                        }
-                    ],
-                    "id": "u:28043120623d",
                     "className": "p-t p-l-xs"
                 }
             ],
