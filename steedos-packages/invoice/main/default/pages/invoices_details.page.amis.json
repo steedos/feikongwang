@@ -1,0 +1,61 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:233c79794f76"
+        },
+        {
+            "type": "tabs",
+            "className": "bg-white border-y sm:mt-3 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4 p-t p-l-xs",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:d6fb0af607f7",
+                            "mode": "read",
+                            "className": "mb-4",
+                            "excludedFields": [
+                                "created",
+                                "created_by",
+                                "modified",
+                                "modified_by"
+                            ]
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:e922ef874365",
+                            "relatedObjectApiName": "audit_records"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                }
+            ],
+            "id": "u:4733208d924c"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_contract_receive_detail_record_detail",
+    "name": "page_contract_receive_detail_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

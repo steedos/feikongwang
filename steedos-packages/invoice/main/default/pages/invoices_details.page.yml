@@ -1,0 +1,13 @@
+name: invoices_details
+is_active: true
+label: 发票记录详情页
+locked: false
+object_name: invoices
+pageAssignments:
+  - type: orgDefault
+    page: invoices_details
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []
