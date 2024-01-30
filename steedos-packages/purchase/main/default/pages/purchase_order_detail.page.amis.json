@@ -38,12 +38,35 @@
                             "recordId": "${recordId}",
                             "id": "u:e2c20fa9d0fe",
                             "appId": "${appId}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:14df0000b976",
+                            "relatedObjectApiName": "audit_records"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "付款信息",
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:e5dc20f2c96c",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:66f84d8dba43",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "付款",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -66,7 +89,7 @@
                     "className": "px-0 pt-4"
                 },
                 {
-                    "title": "收票记录",
+                    "title": "收票",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

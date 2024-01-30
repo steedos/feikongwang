@@ -19,6 +19,7 @@ enable_share: false
 enable_tasks: false
 enable_tree: false
 enable_workflow: true
+enable_audit: true
 icon: drafts
 is_enable: true
 is_system: true
