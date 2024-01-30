@@ -1,4 +1,6 @@
 name: payment_report_detail
+__filename: >-
+  /workspace/feikongwang/steedos-packages/purchase/main/default/pages/payment_report_detail.page.yml
 is_active: true
 label: 付款单详情页
 locked: false

@@ -10,10 +10,25 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
-                    "title": "合同信息",
+                    "title": "产品信息",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:a56c7a89d6a4",
+                            "relatedObjectApiName": "purchase_contract_product"
+                        }
+                    ],
+                    "className": "p-t p-l-xs",
+                    "id": "u:64d20a69b489"
+                },
+                {
+                    "title": "详细",
                     "className": "px-0 py-4",
                     "body": [
                         {
@@ -21,23 +36,14 @@
                             "label": "对象表单",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "appId": "${appId}",
-                            "id": "u:e2c20fa9d0fe"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:6c0de2dd40fc",
-                            "relatedObjectApiName": "purchase_contract_product"
+                            "id": "u:e2c20fa9d0fe",
+                            "appId": "${appId}"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "合同付款",
-                    "className": "px-0 pt-4",
+                    "title": "付款信息",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -56,7 +62,8 @@
                             "relatedObjectApiName": "finance_payment"
                         }
                     ],
-                    "id": "u:54c297f20e5e"
+                    "id": "u:54c297f20e5e",
+                    "className": "px-0 pt-4"
                 },
                 {
                     "title": "收票记录",
