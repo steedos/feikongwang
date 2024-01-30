@@ -5,12 +5,12 @@ enable_embedding: false
 entity_id: 659cf47ad7782305bf974f0d
 id: 659cf47ad7782305bf974f0d
 parameters:
-  - name: 选择日期
-    slug: '%E9%80%89%E6%8B%A9%E6%97%A5%E6%9C%9F'
-    id: 10d2b96c
+  - name: 日期范围
+    slug: '%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4'
+    id: 25746b57
     type: date/all-options
     sectionId: date
-    default: null
+    default: past12months
 show_in_getting_started: false
 cards:
   - card_id: 659cf1dad7782305bf974f07
@@ -18,7 +18,7 @@ cards:
     entity_id: 659cf4bdd7782305bf974f0e
     id: 659cf4bdd7782305bf974f0e
     parameter_mappings:
-      - parameter_id: 10d2b96c
+      - parameter_id: 25746b57
         card_id: 659cf1dad7782305bf974f07
         target:
           - dimension
@@ -35,7 +35,7 @@ cards:
     entity_id: 659cf4bdd7782305bf974f0f
     id: 659cf4bdd7782305bf974f0f
     parameter_mappings:
-      - parameter_id: 10d2b96c
+      - parameter_id: 25746b57
         card_id: 659cf3b8d7782305bf974f0c
         target:
           - dimension
@@ -53,7 +53,7 @@ cards:
     entity_id: 659cf4bdd7782305bf974f10
     id: 659cf4bdd7782305bf974f10
     parameter_mappings:
-      - parameter_id: 10d2b96c
+      - parameter_id: 25746b57
         card_id: 659cf2a8d7782305bf974f0b
         target:
           - dimension

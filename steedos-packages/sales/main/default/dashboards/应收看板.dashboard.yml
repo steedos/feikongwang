@@ -7,9 +7,10 @@ id: 65ab3adf4bab3305be0caa8c
 parameters:
   - name: 日期范围
     slug: '%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4'
-    id: 72516fa9
-    type: date/range
+    id: 1b622080
+    type: date/all-options
     sectionId: date
+    default: past12months
 show_in_getting_started: false
 cards:
   - card_id: 65ab3ac64bab3305be0caa8b
@@ -17,7 +18,7 @@ cards:
     entity_id: 65ab3aee4bab3305be0caa8d
     id: 65ab3aee4bab3305be0caa8d
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab3ac64bab3305be0caa8b
         target:
           - dimension
@@ -34,7 +35,7 @@ cards:
     entity_id: 65ab3aee4bab3305be0caa8e
     id: 65ab3aee4bab3305be0caa8e
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab3a834bab3305be0caa8a
         target:
           - dimension
@@ -51,7 +52,7 @@ cards:
     entity_id: 65ab3aee4bab3305be0caa8f
     id: 65ab3aee4bab3305be0caa8f
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab39f74bab3305be0caa88
         target:
           - dimension
@@ -68,7 +69,7 @@ cards:
     entity_id: 65ab3aee4bab3305be0caa90
     id: 65ab3aee4bab3305be0caa90
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab3a3f4bab3305be0caa89
         target:
           - dimension
@@ -85,7 +86,7 @@ cards:
     entity_id: 65ab3b6a4bab3305be0caa92
     id: 65ab3b6a4bab3305be0caa92
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab3b624bab3305be0caa91
         target:
           - dimension
@@ -102,7 +103,7 @@ cards:
     entity_id: 65ab3bc24bab3305be0caa94
     id: 65ab3bc24bab3305be0caa94
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab3bb74bab3305be0caa93
         target:
           - dimension
@@ -119,14 +120,14 @@ cards:
     entity_id: 65ab41acd75df605beb5d2bd
     id: 65ab41acd75df605beb5d2bd
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab3f4dd75df605beb5d2b5
         target:
           - dimension
           - - field
             - sales_orders_receipts.due_date
             - null
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab4018d75df605beb5d2b6
         target:
           - dimension
@@ -218,7 +219,7 @@ cards:
     entity_id: 65ab429ed75df605beb5d2bf
     id: 65ab429ed75df605beb5d2bf
     parameter_mappings:
-      - parameter_id: 72516fa9
+      - parameter_id: 1b622080
         card_id: 65ab4296d75df605beb5d2be
         target:
           - dimension

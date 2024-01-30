@@ -7,9 +7,10 @@ id: 659dff7e58bef705bed40b25
 parameters:
   - name: 日期范围
     slug: '%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4'
-    id: 5023004b
-    type: date/range
+    id: d2d2455e
+    type: date/all-options
     sectionId: date
+    default: past12months
 show_in_getting_started: false
 cards:
   - card_id: 659dff6258bef705bed40b24
@@ -18,6 +19,13 @@ cards:
     id: 659e002458bef705bed40b26
     parameter_mappings:
       - parameter_id: 5023004b
+        card_id: 659dff6258bef705bed40b24
+        target:
+          - dimension
+          - - field
+            - purchase_orders.signed_date
+            - null
+      - parameter_id: d2d2455e
         card_id: 659dff6258bef705bed40b24
         target:
           - dimension
@@ -41,6 +49,13 @@ cards:
           - - field
             - purchase_orders.signed_date
             - null
+      - parameter_id: d2d2455e
+        card_id: 659e03e358bef705bed40b27
+        target:
+          - dimension
+          - - field
+            - purchase_orders.signed_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -52,6 +67,13 @@ cards:
     id: 659e047058bef705bed40b2a
     parameter_mappings:
       - parameter_id: 5023004b
+        card_id: 659e046158bef705bed40b29
+        target:
+          - dimension
+          - - field
+            - finance_payment_reports.payment_date
+            - null
+      - parameter_id: d2d2455e
         card_id: 659e046158bef705bed40b29
         target:
           - dimension
@@ -75,6 +97,13 @@ cards:
           - - field
             - purchase_order_payments.due_date
             - null
+      - parameter_id: d2d2455e
+        card_id: 659e04ab58bef705bed40b2b
+        target:
+          - dimension
+          - - field
+            - purchase_order_payments.due_date
+            - null
     row: 0
     series: []
     size_x: 3
@@ -86,6 +115,13 @@ cards:
     id: 659e071a58bef705bed40b2e
     parameter_mappings:
       - parameter_id: 5023004b
+        card_id: 659e067058bef705bed40b2d
+        target:
+          - dimension
+          - - field
+            - purchase_orders.signed_date
+            - null
+      - parameter_id: d2d2455e
         card_id: 659e067058bef705bed40b2d
         target:
           - dimension
@@ -104,6 +140,13 @@ cards:
     id: 659e115b58bef705bed40b40
     parameter_mappings:
       - parameter_id: 5023004b
+        card_id: 659e111a58bef705bed40b3f
+        target:
+          - dimension
+          - - field
+            - purchase_orders.signed_date
+            - null
+      - parameter_id: d2d2455e
         card_id: 659e111a58bef705bed40b3f
         target:
           - dimension
@@ -129,6 +172,20 @@ cards:
             - purchase_order_payments.due_date
             - null
       - parameter_id: 5023004b
+        card_id: 659e0e7f58bef705bed40b36
+        target:
+          - dimension
+          - - field
+            - finance_payment_reports.payment_date
+            - null
+      - parameter_id: d2d2455e
+        card_id: 659e0a8658bef705bed40b30
+        target:
+          - dimension
+          - - field
+            - purchase_order_payments.due_date
+            - null
+      - parameter_id: d2d2455e
         card_id: 659e0e7f58bef705bed40b36
         target:
           - dimension
