@@ -8,7 +8,7 @@ locked: false
 mobile: true
 permissions: []
 type: url
-url: /analytics/embed/dashboard/65ab3adf4bab3305be0caa8c#titled=false
+url: /analytics/embed/dashboard/65ab3adf4bab3305be0caa8c#titled=false&bordered=false
 license:
   - platform-professional
   - platform-enterprise
