@@ -10,10 +10,10 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
-                    "title": "明细",
+                    "title": "行程明细",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -22,14 +22,6 @@
                             "recordId": "${recordId}",
                             "id": "u:25239a9bc344",
                             "relatedObjectApiName": "expense_trips_itinerary"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:d7abdf6ab019",
-                            "relatedObjectApiName": "cms_files"
                         }
                     ],
                     "id": "u:fe88a8c15c56",
@@ -57,6 +49,21 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:72ea1ab4d8df",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:ee4270a41586",
+                    "className": "p-t p-l-xs"
+                },
+                {
                     "title": "报销",
                     "body": [
                         {
@@ -69,21 +76,6 @@
                         }
                     ],
                     "id": "u:70b11d7fa2b1",
-                    "className": "p-t p-l-xs"
-                },
-                {
-                    "title": "审批",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:72ea1ab4d8df",
-                            "relatedObjectApiName": "instances"
-                        }
-                    ],
-                    "id": "u:ee4270a41586",
                     "className": "p-t p-l-xs"
                 }
             ],

@@ -10,7 +10,7 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
                     "title": "明细",
@@ -32,14 +32,6 @@
                             "id": "u:3a8de9d15d51",
                             "relatedObjectApiName": "expense_advance_payment",
                             "visibleOn": ""
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:78a220ecf4af",
-                            "relatedObjectApiName": "cms_files"
                         }
                     ],
                     "id": "u:e53d9fa91df9",
@@ -61,7 +53,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "审批",
+                    "title": "附件",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -69,7 +61,7 @@
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
                             "id": "u:9e9980164f07",
-                            "relatedObjectApiName": "instances"
+                            "relatedObjectApiName": "cms_files"
                         }
                     ],
                     "className": "p-t p-l-xs",
