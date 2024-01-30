@@ -8,4 +8,5 @@
  */
 module.exports = {
     api_crm_leads_id_convert: require('./api_crm_leads_id_convert'),
+    autoFillFinanceInvoice: require('./autoFillFinanceInvoice'),
 }

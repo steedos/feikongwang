@@ -1,9 +1,8 @@
 /*
- * @Author: 孙浩林 sunhaolin@steedos.com
- * @Date: 2023-10-20 13:27:06
+ * @Author: sunhaolin@hotoa.com
+ * @Date: 2022-03-04 17:02:52
  * @LastEditors: 孙浩林 sunhaolin@steedos.com
- * @LastEditTime: 2023-10-28 11:07:01
- * @FilePath: /steedos-ee-gitlab/steedos-packages-pm/crm/src/index.js
+ * @LastEditTime: 2023-10-28 11:07:07
  * @Description: 
  */
 "use strict";
@@ -43,7 +42,7 @@ module.exports = {
 	/**
 	 * Dependencies
 	 */
-	dependencies: [],
+	 dependencies: ["@steedos-labs/base"],
 
 	/**
 	 * Actions

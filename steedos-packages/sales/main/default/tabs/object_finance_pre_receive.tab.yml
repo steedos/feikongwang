@@ -1,6 +1,6 @@
 name: object_finance_pre_receive
 desktop: true
-label: 预售款
+label: 预收款
 mobile: true
 object: finance_pre_receive
 permissions: []
