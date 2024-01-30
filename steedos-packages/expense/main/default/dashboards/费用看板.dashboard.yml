@@ -4,14 +4,27 @@ auto_apply_filters: true
 enable_embedding: false
 entity_id: 659cf47ad7782305bf974f0d
 id: 659cf47ad7782305bf974f0d
-parameters: []
+parameters:
+  - name: 选择日期
+    slug: '%E9%80%89%E6%8B%A9%E6%97%A5%E6%9C%9F'
+    id: 10d2b96c
+    type: date/all-options
+    sectionId: date
+    default: null
 show_in_getting_started: false
 cards:
   - card_id: 659cf1dad7782305bf974f07
     col: 13
     entity_id: 659cf4bdd7782305bf974f0e
     id: 659cf4bdd7782305bf974f0e
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 10d2b96c
+        card_id: 659cf1dad7782305bf974f07
+        target:
+          - dimension
+          - - field
+            - invoices.invoice_date
+            - null
     row: 4
     series: []
     size_x: 5
@@ -21,7 +34,14 @@ cards:
     col: 6
     entity_id: 659cf4bdd7782305bf974f0f
     id: 659cf4bdd7782305bf974f0f
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 10d2b96c
+        card_id: 659cf3b8d7782305bf974f0c
+        target:
+          - dimension
+          - - field
+            - expense_reports.start
+            - null
     row: 0
     series: []
     size_x: 12
@@ -32,7 +52,14 @@ cards:
     col: 0
     entity_id: 659cf4bdd7782305bf974f10
     id: 659cf4bdd7782305bf974f10
-    parameter_mappings: []
+    parameter_mappings:
+      - parameter_id: 10d2b96c
+        card_id: 659cf2a8d7782305bf974f0b
+        target:
+          - dimension
+          - - field
+            - invoices.invoice_date
+            - null
     row: 4
     series: []
     size_x: 13

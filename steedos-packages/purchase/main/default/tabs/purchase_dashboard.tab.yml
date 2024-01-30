@@ -9,7 +9,7 @@ mobile: true
 page: purchase_dashboard
 permissions: []
 type: url
-url: /analytics/embed/dashboard/659dff7e58bef705bed40b25#titled=false&bordered=false
+url: /analytics/embed/dashboard/659dff7e58bef705bed40b25%23titled=false&bordered=false
 license:
   - platform-professional
   - platform-enterprise
