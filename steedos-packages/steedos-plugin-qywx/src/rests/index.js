@@ -11,4 +11,5 @@ module.exports = {
     push: require('./push'),
     stockData: require('./stockData'),
     listen: require('./listen'),
+    callback: require('./callback'),
 }

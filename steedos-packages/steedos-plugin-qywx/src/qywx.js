@@ -4,7 +4,8 @@ const SHA1 = new Hashes.SHA1;
 const fetch = require('node-fetch');
 const _ = require('underscore');
 const WXBizMsgCrypt = require('wechat-crypto');
-
+const axios = require('axios');
+const { json } = require("express");
 // 获取登录信息
 exports.getLoginInfo = function (access_token, auth_code) {
     console.log('getLoginInfo access_token: ', access_token);
@@ -17,7 +18,7 @@ exports.getLoginInfo = function (access_token, auth_code) {
         data = {
             auth_code: auth_code
         };
-        response = HTTP.post(qyapi + "?access_token=" + access_token, {
+        response = axios.post(qyapi + "?access_token=" + access_token, {
             data: data,
             headers: {
                 "Content-Type": "application/json"
@@ -47,7 +48,7 @@ exports.getProviderToken = function (corpid, provider_secret) {
             corpid: corpid,
             provider_secret: provider_secret
         };
-        response = HTTP.post(qyapi, {
+        response = axios.post(qyapi, {
             data: data,
             headers: {
                 "Content-Type": "application/json"
@@ -66,7 +67,7 @@ exports.getProviderToken = function (corpid, provider_secret) {
 };
 
 // 获取suite_access_token:OK
-exports.getSuiteAccessToken = function (suite_id, suite_secret, suite_ticket) {
+exports.getSuiteAccessToken = async function (suite_id, suite_secret, suite_ticket) {
     var data, qyapi, response, _ref, _ref2;
     try {
         qyapi = qywx_api.getSuiteAccessToken;
@@ -78,8 +79,9 @@ exports.getSuiteAccessToken = function (suite_id, suite_secret, suite_ticket) {
             suite_secret: suite_secret,
             suite_ticket: suite_ticket
         };
-        response = HTTP.post(qyapi, {
-            data: data,
+         
+        response = await axios.post(qyapi, {
+            data: JSON.stringify(data),
             headers: {
                 "Content-Type": "application/json"
             }
@@ -107,7 +109,7 @@ exports.getPreAuthCode = function (suite_id, suite_access_token) {
         data = {
             suite_id: suite_id
         };
-        response = HTTP.post(qyapi + "?suite_access_token=" + suite_access_token, {
+        response = axios.post(qyapi + "?suite_access_token=" + suite_access_token, {
             data: data,
             headers: {
                 "Content-Type": "application/json"
@@ -137,7 +139,7 @@ exports.getPermanentCode = function (suite_id, auth_code, suite_access_token) {
             suite_id: suite_id,
             auth_code: auth_code
         };
-        response = HTTP.post(qyapi + "?suite_access_token=" + suite_access_token, {
+        response = axios.post(qyapi + "?suite_access_token=" + suite_access_token, {
             data: data,
             headers: {
                 "Content-Type": "application/json"
@@ -167,7 +169,7 @@ exports.getCorpToken = function (auth_corpid, permanent_code, suite_access_token
             auth_corpid: auth_corpid,
             permanent_code: permanent_code
         };
-        response = HTTP.post(qyapi + "?suite_access_token=" + suite_access_token, {
+        response = axios.post(qyapi + "?suite_access_token=" + suite_access_token, {
             data: data,
             headers: {
                 "Content-Type": "application/json"
@@ -200,7 +202,7 @@ exports.getAdminList = function (auth_corpid, agentid) {
             auth_corpid: auth_corpid,
             agentid: agentid
         };
-        response = HTTP.post(qyapi + "?suite_access_token=" + (o != null ? (_ref3 = o.secret) != null ? _ref3.suite_access_token : void 0 : void 0), {
+        response = axios.post(qyapi + "?suite_access_token=" + (o != null ? (_ref3 = o.secret) != null ? _ref3.suite_access_token : void 0 : void 0), {
             data: data,
             headers: {
                 "Content-Type": "application/json"
@@ -231,7 +233,7 @@ exports.getUserInfo3rd = function (code) {
 
         getUserInfo3rdUrl = qyapi + "?access_token=" + o.suite_access_token + "&code=" + code;
         // console.log("getUserInfo3rdUrl: ",getUserInfo3rdUrl);
-        response = HTTP.get(getUserInfo3rdUrl);
+        response = axios.get(getUserInfo3rdUrl);
         if (response.error_code) {
             throw response.msg;
         }
@@ -256,7 +258,7 @@ exports.getUserList = function (access_token, department_id) {
             return;
 
         getUserListUrl = qyapi + "?access_token=" + access_token + "&department_id=" + department_id + "&fetch_child=0";
-        response = HTTP.get(getUserListUrl);
+        response = axios.get(getUserListUrl);
         if (response.error_code) {
             console.error(response.error_code);
             throw response.msg;
@@ -282,7 +284,7 @@ exports.getAllUserList = function (access_token) {
             return;
 
         getAllUserListUrl = qyapi + "?access_token=" + access_token + "&department_id=1&fetch_child=1";
-        response = HTTP.get(getAllUserListUrl);
+        response = axios.get(getAllUserListUrl);
         if (response.error_code) {
             console.error(response.error_code);
             throw response.msg;
@@ -309,7 +311,7 @@ exports.getDepartmentList = function (access_token) {
             return;
 
         getDepartmentListUrl = qyapi + "?access_token=" + access_token;
-        response = HTTP.get(getDepartmentListUrl);
+        response = axios.get(getDepartmentListUrl);
         if (response.error_code) {
             console.error(response.error_code);
             throw response.msg;

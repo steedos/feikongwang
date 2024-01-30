@@ -1,3 +1,4 @@
+const Qiyeweixin = require("../qywx");
 module.exports = {
     rest: {
         method: "GET",
@@ -8,6 +9,7 @@ module.exports = {
     async handler(ctx) {
         //第三方服务商回调验证
         var query = ctx.params;
+        console.log("====>",query)
         var newCrypt = await Qiyeweixin.newCrypt();
         var result = newCrypt.decrypt(query["echostr"]);
         ctx.meta.$statusCode = 200;

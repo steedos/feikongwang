@@ -7,9 +7,9 @@ const rests = require('./rests')
 const packageLoader = require('@steedos/service-package-loader');
 const methods = require('./methods')
 const actions = require('./actions')
-
+const packageName = project.name;
 module.exports = {
-    name: "qywx",
+    name: packageName,
     mixins: [packageLoader],
     /**
      * Settings

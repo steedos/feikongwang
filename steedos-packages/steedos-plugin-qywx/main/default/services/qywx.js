@@ -1,6 +1,6 @@
-// const Hashes = require("jshashes");
+ const Hashes = require("jshashes");
 const qywx_api = require('./router.js');
-// const SHA1 = new Hashes.SHA1;
+ const SHA1 = new Hashes.SHA1;
 const fetch = require('node-fetch');
 const _ = require('underscore');
 const WXBizMsgCrypt = require('wechat-crypto');
