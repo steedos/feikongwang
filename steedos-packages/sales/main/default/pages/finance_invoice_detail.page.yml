@@ -1,6 +1,6 @@
 name: finance_invoice_detail
 __filename: >-
-  /workspace/feikongwang/steedos-packages/finance/main/default/pages/finance_invoice_detail.page.yml
+  /workspace/feikongwang/steedos-packages/sales/main/default/pages/finance_invoice_detail.page.yml
 is_active: true
 label: 开票详情页
 object_name: finance_invoice

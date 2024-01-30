@@ -10,7 +10,7 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
                     "title": "详细",
@@ -63,21 +63,6 @@
                         }
                     ],
                     "id": "u:7bcf2980eb98",
-                    "className": "p-t p-l-xs"
-                },
-                {
-                    "title": "审批",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:126213ab2b27",
-                            "relatedObjectApiName": "instances"
-                        }
-                    ],
-                    "id": "u:beadf383cb44",
                     "className": "p-t p-l-xs"
                 }
             ],

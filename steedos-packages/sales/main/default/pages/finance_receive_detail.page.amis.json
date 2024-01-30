@@ -10,7 +10,7 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
                     "title": "明细",
@@ -28,7 +28,7 @@
                     "id": "u:c110449640a0"
                 },
                 {
-                    "title": "表单",
+                    "title": "详细",
                     "body": [
                         {
                             "type": "steedos-object-form",
@@ -37,10 +37,18 @@
                             "recordId": "${recordId}",
                             "id": "u:19887d7b79dc",
                             "appId": "${appId}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:278958bc0fcd",
+                            "relatedObjectApiName": "audit_records"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc",
-                    "className": "px-0 py-4"
+                    "className": "px-0 py-4 p-t p-l-xs"
                 },
                 {
                     "title": "附件",
@@ -55,29 +63,6 @@
                         }
                     ],
                     "id": "u:fbb0ce9f5c80"
-                },
-                {
-                    "title": "其他",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:c1534ffeb85b",
-                            "relatedObjectApiName": "instances"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:18e25a27c4f8",
-                            "relatedObjectApiName": "audit_records"
-                        }
-                    ],
-                    "id": "u:7cbfb0cc3055",
-                    "className": "p-t p-l-xs"
                 }
             ],
             "id": "u:e1b286fcaa02"

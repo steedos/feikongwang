@@ -10,7 +10,7 @@
         },
         {
             "type": "tabs",
-            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
                     "title": "产品信息",
@@ -28,7 +28,7 @@
                     "id": "u:4c7d77e18bb7"
                 },
                 {
-                    "title": "详情",
+                    "title": "详细",
                     "body": [
                         {
                             "type": "steedos-object-form",
@@ -37,13 +37,36 @@
                             "recordId": "${recordId}",
                             "id": "u:094a23c456de",
                             "appId": "${appId}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:ede9003f8c4b",
+                            "relatedObjectApiName": "audit_records"
                         }
                     ],
                     "id": "u:5d4e7e3f6ecc",
-                    "className": "px-0 py-4"
+                    "className": "px-0 py-4 p-t p-l-xs"
                 },
                 {
-                    "title": "收款记录",
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:8e310e503075",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:aade61e15c26",
+                    "className": "p-t p-l-xs"
+                },
+                {
+                    "title": "收款",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -62,11 +85,11 @@
                             "relatedObjectApiName": "contract_receive_detail"
                         }
                     ],
-                    "id": "u:33cf5d9b0026",
-                    "className": "p-l-xs p-t"
+                    "className": "p-l-xs p-t",
+                    "id": "u:33cf5d9b0026"
                 },
                 {
-                    "title": "开票记录",
+                    "title": "开票",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -79,36 +102,6 @@
                     ],
                     "className": "p-t p-l-xs",
                     "id": "u:ac27617bf430"
-                },
-                {
-                    "title": "附件",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:8e310e503075",
-                            "relatedObjectApiName": "cms_files"
-                        }
-                    ],
-                    "className": "p-t p-l-xs",
-                    "id": "u:aade61e15c26"
-                },
-                {
-                    "title": "审计日志",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:65a59e7a0729",
-                            "relatedObjectApiName": "audit_records"
-                        }
-                    ],
-                    "id": "u:7522c6b7c576",
-                    "className": "p-t p-l-xs"
                 }
             ],
             "id": "u:c3478c2cbdba"

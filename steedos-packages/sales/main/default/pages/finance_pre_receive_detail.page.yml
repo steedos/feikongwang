@@ -1,6 +1,6 @@
 name: finance_pre_receive_detail
 __filename: >-
-  /workspace/feikongwang/steedos-packages/finance/main/default/pages/finance_pre_receive_detail.page.yml
+  /workspace/feikongwang/steedos-packages/sales/main/default/pages/finance_pre_receive_detail.page.yml
 is_active: true
 label: 预收款记录详情页
 locked: false
