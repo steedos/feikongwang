@@ -21,7 +21,9 @@ dataset_query:
         - - aggregation
           - 0
           - null
+    limit: 5
 display: row
+enable_embedding: false
 entity_id: 65b9f197dd062c0646e95539
 id: 65b9f197dd062c0646e95539
 parameter_mappings: []

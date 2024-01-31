@@ -19,6 +19,7 @@ dataset_query:
         - - aggregation
           - 0
           - null
+    limit: 5
   type: query
   database: '1'
 display: row
@@ -75,4 +76,4 @@ result_metadata:
 table_id: purchase_orders
 updated_at: 2024-01-10T03:38:02.493Z
 visualization_settings: >-
-  {"table.pivot":false,"table.pivot_column":"supplier","table.cell_column":"sum","stackable.stack_type":null,"graph.dimensions":["supplier"],"graph.metrics":["sum"]}
+  {"graph.metrics":["sum"],"graph.dimensions":["supplier"],"stackable.stack_type":null,"table.cell_column":"sum","table.pivot_column":"supplier","table.pivot":false,"series_settings":{"sum":{"color":"#509EE3"}}}
