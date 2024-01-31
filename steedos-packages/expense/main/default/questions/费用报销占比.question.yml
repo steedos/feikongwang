@@ -17,6 +17,7 @@ dataset_query:
         - null
   type: query
 display: pie
+enable_embedding: false
 entity_id: 659cf1dad7782305bf974f07
 id: 659cf1dad7782305bf974f07
 parameter_mappings: []
@@ -26,7 +27,7 @@ result_metadata:
   - id: category
     name: category
     unit: null
-    display_name: 类别
+    display_name: 费用类别
     base_type: type/Text
     effective_type: type/Text
     semantic_type: type/FK
@@ -65,8 +66,8 @@ result_metadata:
     parent_id: null
     id: expense_category.name
     visibility_type: normal
-    display_name: 类别
+    display_name: 费用类别
 table_id: invoices
 updated_at: 2024-01-09T07:12:26.452Z
 visualization_settings: >-
-  {"column_settings":{"[\"name\",\"sum\"]":{"prefix":"¥"}},"pie.show_legend":true,"pie.percent_visibility":"inside"}
+  {"column_settings":{"[\"name\",\"sum\"]":{"prefix":"¥"}},"pie.show_legend":true,"pie.percent_visibility":"inside","pie.colors":{"65b9e78edd062c0646e95538_659cb44972192405bf82216b":"#EF8C8C","65b9e78edd062c0646e95538_659cb45c72192405bf82216c":"#88BF4D","65b9e78edd062c0646e95538_659cb47472192405bf82216d":"#F9D45C","65b9e78edd062c0646e95538_659cb4a972192405bf822170":"#F2A86F","65b9e78edd062c0646e95538_659cb48472192405bf82216e":"#509EE3","65b9e78edd062c0646e95538_659cb49872192405bf82216f":"#A989C5"}}

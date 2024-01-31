@@ -1,10 +1,9 @@
 name: 收款逾期趋势
+archived: false
 created_at: 2024-01-20T03:48:38.961Z
 creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
 database_id: '1'
 dataset_query:
-  database: '1'
-  type: query
   query:
     source-table: finance_receive
     filter:
@@ -21,7 +20,9 @@ dataset_query:
     breakout:
       - - field
         - finance_receive.due_date
-        - temporal-unit: week
+        - temporal-unit: month
+  type: query
+  database: '1'
 display: area
 enable_embedding: false
 entity_id: 65ab4296d75df605beb5d2be
@@ -32,7 +33,7 @@ query_type: query
 result_metadata:
   - id: due_date
     name: due_date
-    unit: week
+    unit: month
     display_name: 计划收款日期
     base_type: type/Instant
     effective_type: type/Instant
@@ -43,7 +44,7 @@ result_metadata:
     field_ref:
       - field
       - finance_receive.due_date
-      - temporal-unit: week
+      - temporal-unit: month
   - base_type: type/Integer
     display_name: 收款金额合计
     effective_type: type/Integer
@@ -56,4 +57,4 @@ result_metadata:
 table_id: finance_receive
 updated_at: 2024-01-20T03:48:38.961Z
 visualization_settings: >-
-  {"graph.metrics":["sum"],"graph.dimensions":["due_date"],"series_settings":{"sum":{"color":"#EF8C8C"}},"column_settings":{"[\"name\",\"due_date\"]":{"date_style":"YYYY/M/D","date_separator":"-"}},"graph.x_axis.labels_enabled":false,"graph.y_axis.labels_enabled":false}
+  {"graph.y_axis.labels_enabled":false,"graph.x_axis.labels_enabled":false,"column_settings":{"[\"name\",\"due_date\"]":{"date_style":"YYYY/M/D","date_separator":"-"}},"series_settings":{"sum":{"display":"area","line.interpolate":"cardinal","color":"#F7C4C4"}},"graph.dimensions":["due_date"],"graph.metrics":["sum"]}

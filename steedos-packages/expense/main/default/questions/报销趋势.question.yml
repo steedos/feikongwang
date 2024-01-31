@@ -40,7 +40,7 @@ result_metadata:
       - expense_reports.start
       - temporal-unit: month
   - base_type: type/Integer
-    display_name: 费用总额合计
+    display_name: 费用总金额合计
     effective_type: type/Integer
     field_ref:
       - aggregation
@@ -51,4 +51,4 @@ result_metadata:
 table_id: expense_reports
 updated_at: 2024-01-09T07:20:24.713Z
 visualization_settings: >-
-  {"graph.metrics":["sum"],"graph.dimensions":["start"],"series_settings":{"sum":{"color":"#227FD2","title":"金额","axis":"left","show_series_values":true},"count":{"show_series_values":true,"axis":null,"title":"笔数","color":"#F7C41F"}},"column_settings":{"[\"name\",\"start\"]":{"date_style":"YYYY/M/D"}},"graph.y_axis.labels_enabled":true,"graph.x_axis.labels_enabled":false}
+  {"graph.x_axis.labels_enabled":false,"graph.y_axis.labels_enabled":true,"column_settings":{"[\"name\",\"start\"]":{"date_style":"YYYY/M/D"}},"series_settings":{"count":{"show_series_values":true,"axis":null,"title":"笔数","color":"#F7C41F"},"sum":{"show_series_values":true,"axis":"left","title":"金额","color":"#509EE3"}},"graph.dimensions":["start"],"graph.metrics":["sum"]}
