@@ -12,4 +12,5 @@ module.exports = {
     stockData: require('./stockData'),
     listen: require('./listen'),
     callback: require('./callback'),
+    getAuthLogin: require('./getAuthLogin'),
 }

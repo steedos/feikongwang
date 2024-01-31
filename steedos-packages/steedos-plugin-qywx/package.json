@@ -26,6 +26,7 @@
         "express": "^4.18.2",
         "jsdom": "^16.2.2",
         "jshashes": "^1.0.8",
+        "url": "^0.11.3",
         "wechat-crypto": "^0.0.2",
         "wx-ding-aes": "^0.0.10"
     },

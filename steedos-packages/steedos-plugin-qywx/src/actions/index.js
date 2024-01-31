@@ -25,4 +25,8 @@ module.exports = {
     getSpaceByDingtalk: require('./getSpaceByDingtalk'),
     getSpaceById: require('./getSpaceById'),
     getSpaceTop1: require('./getSpaceTop1'),
+    getUserInfo3rd: require('./getUserInfo3rd'),
+    getSuiteAccessToken: require('./getSuiteAccessToken'),
+    getUserDetailInfo3rd: require('./getUserDetailInfo3rd'),
+    createUser: require('./createUser'),
 }
