@@ -3,12 +3,12 @@ create: true
 data_type: currency
 filterable: false
 generated: false
-group: 费用汇总
+group: 费用情况
 hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 费用总金额
+label: 发票总金额
 multiple: false
 precision: 18
 primary: false

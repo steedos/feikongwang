@@ -3,7 +3,7 @@ create: true
 data_type: currency
 filterable: false
 generated: false
-group: 费用汇总
+group: 费用情况
 hidden: false
 index: false
 is_name: false

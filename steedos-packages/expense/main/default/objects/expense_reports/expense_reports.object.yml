@@ -3,7 +3,7 @@ compactLayouts:
   - reports_number
   - applicant
   - business_purpose
-  - total_cost
+  - amount
   - expense_trips
 custom: true
 enable_api: true

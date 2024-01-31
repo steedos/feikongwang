@@ -2,14 +2,14 @@ name: reimbursed_amount
 create: true
 data_type: currency
 filterable: false
-formula: total_cost-advance_payment
+formula: amount-advance_payment
 formula_blank_value: zeroes
 generated: false
-group: 费用汇总
+group: 费用情况
 hidden: false
 index: false
 is_name: false
-is_wide: false
+is_wide: true
 label: 报销支付金额
 multiple: false
 precision: 18

@@ -16,7 +16,11 @@ filter_scope: space
 filters: []
 is_enable: true
 label: 所有
-mobile_columns: []
+mobile_columns: 
+  - field: name
+  - field: reports_number
+  - field: applicant
+  - field: amount
 scrolling_mode: standard
 searchable_fields:
   - field: name

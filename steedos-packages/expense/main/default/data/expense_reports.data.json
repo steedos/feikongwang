@@ -28,6 +28,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 26,
+        "amount": 26,
         "instance_state": "approved",
         "instances": [
             {
@@ -66,6 +67,7 @@
         "advance_payment": 2000,
         "cost": 1,
         "total_cost": 91.5,
+        "amount": 91.5,
         "instance_state": "approved",
         "instances": [
             {
@@ -103,6 +105,7 @@
         "advance_payment": 0,
         "cost": 2,
         "total_cost": 949,
+        "amount": 949,
         "instance_state": "pending",
         "instances": [
             {
@@ -138,6 +141,7 @@
         "advance_payment": 8000,
         "cost": 1,
         "total_cost": 4300,
+        "amount": 4300,
         "instance_state": "approved",
         "instances": [
             {
@@ -175,7 +179,8 @@
         "reimbursed_amount": -78,
         "advance_payment": 5000,
         "cost": 2,
-        "total_cost": 4922
+        "total_cost": 4922,
+        "amount": 4922
     },
     {
         "_id": "${space_id}_65a4c4c9c8f17905bfac2c4d",
@@ -205,6 +210,7 @@
         "advance_payment": 0,
         "cost": 4,
         "total_cost": 10027.83,
+        "amount": 10027.83,
         "instance_state": "approved",
         "instances": [
             {
@@ -241,6 +247,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 4999,
+        "amount": 4999,
         "instance_state": "approved",
         "instances": [
             {
@@ -277,7 +284,8 @@
         "reimbursed_amount": 0,
         "advance_payment": 0,
         "cost": 0,
-        "total_cost": 0
+        "total_cost": 0,
+        "amount": 0
     },
     {
         "_id": "${space_id}_65a4c8d7c8f17905bfac2ca3",
@@ -306,6 +314,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 1400,
+        "amount": 1400,
         "instance_state": "approved",
         "instances": [
             {
@@ -343,6 +352,7 @@
         "advance_payment": 0,
         "cost": 3,
         "total_cost": 362.9,
+        "amount": 362.9,
         "instance_state": "approved",
         "instances": [
             {
@@ -380,6 +390,7 @@
         "advance_payment": 0,
         "cost": 2,
         "total_cost": 3000,
+        "amount": 3000,
         "instance_state": "approved",
         "instances": [
             {
@@ -417,6 +428,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 5500,
+        "amount": 5500,
         "instance_state": "approved",
         "instances": [
             {
@@ -454,6 +466,7 @@
         "advance_payment": 0,
         "cost": 3,
         "total_cost": 1904.54,
+        "amount": 1904.54,
         "instance_state": "approved",
         "instances": [
             {
@@ -491,6 +504,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 1749,
+        "amount": 1749,
         "instance_state": "approved",
         "instances": [
             {
@@ -528,6 +542,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 168,
+        "amount": 168,
         "instance_state": "approved",
         "instances": [
             {
@@ -565,6 +580,7 @@
         "advance_payment": 0,
         "cost": 1,
         "total_cost": 13211.7,
+        "amount": 13211.7,
         "instance_state": "approved",
         "instances": [
             {
