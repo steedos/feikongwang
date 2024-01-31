@@ -1,0 +1,53 @@
+name: 新增销售
+created_at: 2024-01-31T07:08:56.905Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: 1
+dataset_query:
+  database: 1
+  type: query
+  query:
+    source-table: sales_orders
+    aggregation:
+      - - sum
+        - - field
+          - sales_orders.amount
+          - null
+    breakout:
+      - - field
+        - sales_orders.signed_date
+        - temporal-unit: month
+display: line
+enable_embedding: false
+entity_id: 65b9f208dd062c0646e9553b
+id: 65b9f208dd062c0646e9553b
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: signed_date
+    name: signed_date
+    unit: month
+    display_name: 合同日期
+    base_type: type/Instant
+    effective_type: type/Instant
+    semantic_type: null
+    source: breakout
+    visibility_type: normal
+    table_id: sales_orders
+    field_ref:
+      - field
+      - sales_orders.signed_date
+      - temporal-unit: month
+  - base_type: type/Integer
+    display_name: 合同金额合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: sales_orders
+updated_at: 2024-01-31T07:08:56.905Z
+visualization_settings: >-
+  {"graph.metrics":["sum"],"graph.dimensions":["signed_date"],"graph.y_axis.labels_enabled":false,"graph.x_axis.labels_enabled":false,"column_settings":{"[\"name\",\"signed_date\"]":{"date_style":"YYYY/M/D"}},"series_settings":{"sum":{"line.interpolate":"cardinal","color":"#F9D45C"}}}

@@ -1,0 +1,77 @@
+name: 应收账款Top5
+created_at: 2024-01-31T07:07:03.645Z
+creator_id: bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4
+database_id: 1
+dataset_query:
+  database: 1
+  type: query
+  query:
+    source-table: sales_orders
+    aggregation:
+      - - sum
+        - - field
+          - sales_orders.left_receive
+          - null
+    breakout:
+      - - field
+        - sales_orders.customer
+        - null
+    order-by:
+      - - desc
+        - - aggregation
+          - 0
+          - null
+display: row
+entity_id: 65b9f197dd062c0646e95539
+id: 65b9f197dd062c0646e95539
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: customer
+    name: customer
+    unit: null
+    display_name: 客户
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    source: breakout
+    visibility_type: normal
+    table_id: sales_orders
+    field_ref:
+      - field
+      - sales_orders.customer
+      - null
+    remapped_to: external_customer
+  - base_type: type/Integer
+    display_name: 合同应收合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+  - description: null
+    semantic_type: type/Name
+    table_id: accounts
+    coercion_strategy: null
+    name: external_customer
+    settings: null
+    source: fields
+    remapped_from: customer
+    fk_field_id: customer
+    field_ref:
+      - field
+      - accounts.name
+      - source-field: sales_orders.customer
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: accounts.name
+    visibility_type: normal
+    display_name: 客户
+table_id: sales_orders
+updated_at: 2024-01-31T07:07:03.645Z
+visualization_settings: >-
+  {"series_settings":{"sum":{"color":"#509EE3"}},"graph.x_axis.labels_enabled":false,"graph.y_axis.auto_range":true,"graph.y_axis.labels_enabled":false,"graph.dimensions":["customer"],"graph.metrics":["sum"]}
