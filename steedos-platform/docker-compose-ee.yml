@@ -14,3 +14,5 @@ services:
       - .env.local
     volumes:
       - "./steedos-storage:/steedos-storage"
+      - "./scripts/routers:/app/node_modules/@steedos/service-ancillary/main/default/routers"
+      - "../public:/app/public"
