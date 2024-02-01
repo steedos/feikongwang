@@ -28,5 +28,6 @@ module.exports = {
     getUserInfo3rd: require('./getUserInfo3rd'),
     getSuiteAccessToken: require('./getSuiteAccessToken'),
     getUserDetailInfo3rd: require('./getUserDetailInfo3rd'),
-    createUser: require('./createUser'),
+    storeSuiteTicket: require('./storeSuiteTicket'),
+    // createUser: require('./createUser'),
 }
