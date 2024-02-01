@@ -51,11 +51,11 @@ module.exports = {
             // 2、创建space
             const newSpaces = await spaceObj.directInsert({
                 name: "1111111", 
-                //admins: [newUser._id],
-                //owner: newUser._id, 
-                //created_by: newUser._id,
+                admins: [newUser._id],
+                owner: newUser._id, 
+                created_by: newUser._id,
                 created: new Date(),
-               // modified_by: newUser._id,
+                modified_by: newUser._id,
                 modified: new Date(),
                 qywx_corp_id: user.corpid
               })
