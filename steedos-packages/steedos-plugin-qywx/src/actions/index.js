@@ -29,5 +29,7 @@ module.exports = {
     getSuiteAccessToken: require('./getSuiteAccessToken'),
     getUserDetailInfo3rd: require('./getUserDetailInfo3rd'),
     storeSuiteTicket: require('./storeSuiteTicket'),
-    // createUser: require('./createUser'),
+    getPermanentCode: require('./getPermanentCode'),
+    createSpaces_users: require('./createSpaces_users'),
+    getConfigurations: require('./getConfigurations'),
 }
