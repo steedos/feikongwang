@@ -1,0 +1,81 @@
+[{
+    "_id": "${space_id}_65bafd75ef89c005be8c9c2b",
+    "amount_discount": 0,
+    "amount_invoicing": 200,
+    "invoice_left_amount": 200,
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "finance_receive": "${space_id}_65a8ec4ac06cbb0647557fa9",
+    "contract": "${space_id}_65a8eb5bc06cbb0647557fa2",
+
+
+    "amount_invoicing_receive": 200000,
+    "amount_discount_receive": 0,
+    "invoiceapply": "${space_id}_65a8eca4c06cbb0647557fac",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-02-01T02:09:57.147Z",
+    "modified": "2024-02-01T02:09:57.147Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-HX-00001",
+    "amount_write": 200,
+    "amount_write_receive": 200
+},
+{
+    "_id": "${space_id}_65bafd9aef89c005be8c9c2c",
+    "amount_discount": 0,
+    "amount_invoicing": 5000,
+    "invoice_left_amount": 7000,
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "finance_receive": "${space_id}_65a8df27c06cbb0647557f82",
+    "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+    "amount_invoicing_receive": 50000,
+    "amount_discount_receive": 0,
+    "invoiceapply": "${space_id}_65a8e00cc06cbb0647557f85",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-02-01T02:10:34.058Z",
+    "modified": "2024-02-01T02:10:34.058Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-HX-00002",
+    "amount_write": 5000,
+    "amount_write_receive": 5000
+},
+{
+    "_id": "${space_id}_65bafdc6ef89c005be8c9c2d",
+    "amount_discount": 0,
+    "amount_invoicing": 2000,
+    "invoice_left_amount": 2000,
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "finance_receive": "${space_id}_65a8df27c06cbb0647557f82",
+    "contract": "${space_id}_65a8dc0dc06cbb0647557f76",
+    "amount_invoicing_receive": 45000,
+    "amount_discount_receive": 0,
+    "invoiceapply": "${space_id}_65a8e00cc06cbb0647557f85",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-02-01T02:11:18.041Z",
+    "modified": "2024-02-01T02:11:18.041Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-HX-00003",
+    "amount_write": 2000,
+    "amount_write_receive": 2000
+}
+]

@@ -1,12 +1,12 @@
 [
     {
         "_id": "${space_id}_65a8e00cc06cbb0647557f85",
-        "is_active": false,
+        "is_active": true,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65a9d18d686e3a05bdd06762",
+        "locked": true,
+        "company_id": "${space_id}",
         "company_ids": [
-            "65a9d18d686e3a05bdd06762"
+            "${space_id}"
         ],
         "account": "${space_id}_659f4bba1acefd05be1b8d12",
         "invoice_name": null,
@@ -22,26 +22,37 @@
         "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
         "tax": "${space_id}_62610e0732cc250032e1a996",
         "displayAs": null,
-        "space": "65a9d18d686e3a05bdd06762",
-        "created": "2024-01-19T01:34:05.493Z",
-        "modified": "2024-01-19T01:34:05.493Z",
+        "space": "${space_id}",
+        "created": "2024-01-31T02:19:20.735Z",
+        "modified": "2024-02-01T01:22:46.360Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "name": "Demo-KP-00001",
         "invoice_left_amount": 0,
         "amount": 7000,
-        "detail_amount": 0,
-        "invoice_amount": 0,
-        "tax_amount": 0
+        "detail_amount": 7000,
+        "invoice_amount": 7000,
+        "tax_amount": 805.31,
+        "detail": "yes",
+        "contract_tax_amount": 805.31,
+        "instance_state": "approved",
+        "instances": [{
+            "_id": "FfWQEpXvTciTfHm7i",
+            "state": "approved"
+        }],
+        "remark": null,
+        "actual_date": "2024-02-01T00:00:00.000Z",
+        "invoice_code": "1092001",
+        "invoice_number": "100235"
     },
     {
         "_id": "${space_id}_65a8eca4c06cbb0647557fac",
-        "is_active": false,
+        "is_active": true,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65a9d18d686e3a05bdd06762",
+        "locked": true,
+        "company_id": "${space_id}",
         "company_ids": [
-            "65a9d18d686e3a05bdd06762"
+            "${space_id}"
         ],
         "account": "${space_id}_65a0996c6c2c9805bf0c453c",
         "invoice_name": null,
@@ -57,26 +68,37 @@
         "tax": "${space_id}_62610e0732cc250032e1a996",
         "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
         "displayAs": null,
-        "space": "65a9d18d686e3a05bdd06762",
-        "created": "2024-01-19T01:34:05.493Z",
-        "modified": "2024-01-19T09:11:16.985Z",
+        "space": "${space_id}",
+        "created": "2024-01-31T02:19:20.735Z",
+        "modified": "2024-02-01T01:25:56.387Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "name": "Demo-KP-00002",
-        "invoice_left_amount": 659800000,
+        "invoice_left_amount": 200000,
         "amount": 200200,
         "detail_amount": 660000000,
-        "invoice_amount": 200000,
-        "tax_amount": 75929203.53999999
+        "invoice_amount": 200,
+        "tax_amount": 75929203.54,
+        "detail": "no",
+        "contract_tax_amount": 23031.86,
+        "instance_state": "approved",
+        "instances": [{
+            "_id": "pYKMhux5uH9ucxoE7",
+            "state": "approved"
+        }],
+        "remark": null,
+        "actual_date": "2024-02-01T00:00:00.000Z",
+        "invoice_code": "7482392",
+        "invoice_number": "51637213"
     },
     {
         "_id": "${space_id}_65aa29616b010c05be9008a2",
         "is_active": false,
         "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "locked": false,
-        "company_id": "65a9d18d686e3a05bdd06762",
+        "company_id": "${space_id}",
         "company_ids": [
-            "65a9d18d686e3a05bdd06762"
+            "${space_id}"
         ],
         "account": "${space_id}_o2sunJ3vuz3uSKN4z",
         "invoice_name": null,
@@ -92,11 +114,11 @@
         "tax": "${space_id}_62610e0732cc250032e1a996",
         "invoice_type": "${space_id}_6262538187e5c50032d9be0c",
         "displayAs": null,
-        "space": "65a9d18d686e3a05bdd06762",
-        "created": "2024-01-19T07:48:49.696Z",
-        "modified": "2024-01-19T09:04:25.528Z",
+        "space": "${space_id}",
+        "created": "2024-01-31T02:19:20.735Z",
+        "modified": "2024-01-31T02:19:20.735Z",
         "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "5e370697-d1f4-4cea-98b6-6d2c821b5ee9",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
         "invoice_left_amount": 0,
         "amount": 20000,
         "detail_amount": 0,

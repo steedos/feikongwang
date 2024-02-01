@@ -1,108 +1,441 @@
 [
     {
-        "_id": "${space_id}_65a8df16c06cbb0647557f80",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65a9d18d686e3a05bdd06762",
-        "company_ids": [
-            "65a9d18d686e3a05bdd06762"
-        ],
-        "account": "${space_id}_659f4bba1acefd05be1b8d12",
-        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
-        "due_date": {
-            "$date": "2023-11-06T00:00:00.000Z"
-        },
-        "amount_description": "合同首付款",
-        "displayAs": null,
-        "space": "65a9d18d686e3a05bdd06762",
-        "created": "2024-01-19T01:34:05.493Z",
-        "modified": "2024-01-19T01:34:05.493Z",
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "name": "Demo-SK-00001",
-        "amount": 200000,
-        "amount_discount": 0,
-        "amount_discount_invoice": 0,
-        "amount_invoice": 0,
-        "amount_write": 200000,
-        "amount_write_invoice": 0
+    "_id": "${space_id}_65a8df16c06cbb0647557f80",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_659f4bba1acefd05be1b8d12",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-11-06T00:00:00.000Z"
     },
-    {
-        "_id": "${space_id}_65a8ec3ec06cbb0647557fa7",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65a9d18d686e3a05bdd06762",
-        "company_ids": [
-            "65a9d18d686e3a05bdd06762"
-        ],
-        "account": "${space_id}_65a0996c6c2c9805bf0c453c",
-        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
-        "due_date": {
-            "$date": "2023-12-04T00:00:00.000Z"
-        },
-        "amount_description": "合同首付款",
-        "displayAs": null,
-        "space": "65a9d18d686e3a05bdd06762",
-        "created": "2024-01-19T01:34:05.493Z",
-        "modified": "2024-01-19T01:34:05.493Z",
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "name": "Demo-SK-00003",
-        "amount": 1000000,
-        "amount_discount": 0,
-        "amount_discount_invoice": 0,
-        "amount_invoice": 200000,
-        "amount_write": 1000000,
-        "amount_write_invoice": 200000
-    },
-    {
-        "_id": "${space_id}_65aa290d6b010c05be9008a0",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": false,
-        "company_id": "65a9d18d686e3a05bdd06762",
-        "company_ids": [
-            "65a9d18d686e3a05bdd06762"
-        ],
-        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
-        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
-        "due_date": {
-            "$date": "2024-01-02T00:00:00.000Z"
-        },
-        "amount_description": "合同首付款",
-        "displayAs": null,
-        "space": "65a9d18d686e3a05bdd06762",
-        "created": "2024-01-19T07:47:25.662Z",
-        "modified": "2024-01-19T07:47:25.662Z",
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "name": "Demo-SK-00004",
-        "amount": 0,
-        "amount_discount": 0,
-        "amount_discount_invoice": 0,
-        "amount_invoice": 0,
-        "amount_write": 0,
-        "amount_write_invoice": 0
-    },
-    {
-        "_id": "${space_id}_65b314e46529df06461827be",
-        "created": "2024-01-26T02:11:48.822Z",
-        "modified": "2024-01-26T02:11:48.822Z",
-        "space": "65b30c886529df06461827b9",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "account": "${space_id}_65a0996c6c2c9805bf0c453c",
-        "is_active": true,
-        "due_date": {
-            "$date": "2024-01-26T02:11:48.821Z"
-        },
-        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
-        "receipt_date": {
-            "$date": "2024-01-26T02:11:48.821Z"
-        },
-        "billno": "A2563",
-        "amount_description": "预收款核销",
-        "name": "Demo-SK-00005",
-        "amount": 0,
-        "amount_discount": 0,
-        "amount_write": 5000
+    "amount_description": "合同首付款",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-01-31T02:19:20.735Z",
+    "modified": "2024-02-01T01:28:18.695Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00001",
+    "amount": 200000,
+    "amount_discount": 0,
+    "amount_discount_invoice": 0,
+    "amount_invoice": 0,
+    "amount_write": 200000,
+    "amount_write_invoice": 0,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "X553gYwTPEQAsHoWy",
+        "state": "approved"
+    }],
+    "billno": "345245",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2024-01-10T00:00:00.000Z"
     }
+},
+{
+    "_id": "${space_id}_65a8ec3ec06cbb0647557fa7",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-12-04T00:00:00.000Z"
+    },
+    "amount_description": "合同首付款",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-01-31T02:19:20.735Z",
+    "modified": "2024-02-01T01:27:03.810Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00002",
+    "amount": 202000,
+    "amount_discount": 0,
+    "amount_discount_invoice": 0,
+    "amount_invoice": 200000,
+    "amount_write": 202000,
+    "amount_write_invoice": 200000,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "T5JH8NwPWZdEDgDYk",
+        "state": "approved"
+    }],
+    "billno": "123",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2024-02-01T00:00:00.000Z"
+    }
+},
+{
+    "_id": "${space_id}_65aa290d6b010c05be9008a0",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+    "due_date": {
+        "$date": "2024-01-02T00:00:00.000Z"
+    },
+    "amount_description": "合同首付款",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-01-31T02:19:20.735Z",
+    "modified": "2024-02-01T01:29:59.036Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00003",
+    "amount": 100000,
+    "amount_discount": 0,
+    "amount_discount_invoice": 0,
+    "amount_invoice": 0,
+    "amount_write": 100000,
+    "amount_write_invoice": 0,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "HQCR5ffJgrPhJ8YYm",
+        "state": "approved"
+    }],
+    "billno": "234552",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2023-10-11T00:00:00.000Z"
+    }
+},
+{
+    "_id": "${space_id}_65b314e46529df06461827be",
+    "created": "2024-01-31T02:19:20.735Z",
+    "modified": "2024-01-31T02:19:20.735Z",
+    "space": "${space_id}",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+    "is_active": true,
+    "due_date": {
+        "$date": "2024-01-26T02:11:48.821Z"
+    },
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "receipt_date": {
+        "$date": "2024-01-26T02:11:48.821Z"
+    },
+    "billno": "A2563",
+    "amount_description": "预收款核销",
+    "name": "Demo-SK-00004",
+    "amount": 0,
+    "amount_discount": 0,
+    "amount_write": 5000,
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ]
+},
+{
+    "_id": "${space_id}_65ba088a73be6605bd555b0d",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba05c373be6605bd555afd",
+    "due_date": {
+        "$date": "2023-10-09T00:00:00.000Z"
+    },
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "amount_description": "收取合同款",
+    "space": "${space_id}",
+    "created": "2024-01-31T08:44:58.289Z",
+    "modified": "2024-02-01T01:32:34.274Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00005",
+    "amount": 75000,
+    "amount_discount": 0,
+    "amount_write": 75000,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "ySbKukHmqfygmvAZX",
+        "state": "approved"
+    }],
+    "billno": "4563567743",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2023-08-23T00:00:00.000Z"
+    }
+},
+{
+    "_id": "${space_id}_65ba0cc573be6605bd555b29",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0ae973be6605bd555b1b",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-09-02T00:00:00.000Z"
+    },
+    "amount_description": "轴承合同款",
+    "space": "${space_id}",
+    "created": "2024-01-31T09:03:01.230Z",
+    "modified": "2024-02-01T01:54:32.019Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00006",
+    "amount": 57000,
+    "amount_discount": 0,
+    "amount_write": 57000,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "bJAneJ9H4ZQiivgKA",
+        "state": "approved"
+    }],
+    "billno": "4534",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2023-09-21T00:00:00.000Z"
+    }
+},
+{
+    "_id": "${space_id}_65ba0f8573be6605bd555b3f",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0deb73be6605bd555b32",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-08-03T00:00:00.000Z"
+    },
+    "amount_description": "挖机兜合同款",
+    "space": "${space_id}",
+    "created": "2024-01-31T09:14:45.379Z",
+    "modified": "2024-02-01T01:56:11.179Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00007",
+    "amount": 92000,
+    "amount_discount": 0,
+    "amount_write": 92000,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "DixSLK8hWLRtDkQHE",
+        "state": "approved"
+    }],
+    "billno": "12313",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2023-12-21T00:00:00.000Z"
+    }
+},
+{
+    "_id": "${space_id}_65bafa6aef89c005be8c9bfa",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0ae973be6605bd555b1b",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-11-15T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T01:56:58.357Z",
+    "modified": "2024-02-01T01:58:11.855Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00008",
+    "amount": 10000,
+    "amount_discount": 0,
+    "amount_write": 10000,
+    "instance_state": "approved",
+    "instances": [{
+        "_id": "Q5isyvJ4ySc25o6oB",
+        "state": "approved"
+    }],
+    "amount_description": "",
+    "billno": "34255",
+    "is_active": true,
+    "receipt_date": {
+        "$date": "2023-11-13T00:00:00.000Z"
+    }
+},
+{
+    "_id": "${space_id}_65bafb15ef89c005be8c9c0e",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0deb73be6605bd555b32",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-08-22T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T01:59:49.967Z",
+    "modified": "2024-02-01T01:59:49.967Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00009",
+    "amount": 10000,
+    "amount_discount": 0,
+    "amount_write": 10000
+},
+{
+    "_id": "${space_id}_65bafb3def89c005be8c9c11",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0ae973be6605bd555b1b",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-09-21T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T02:00:29.256Z",
+    "modified": "2024-02-01T02:00:29.256Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00010",
+    "amount": 58000,
+    "amount_discount": 0,
+    "amount_write": 58000
+},
+{
+    "_id": "${space_id}_65bafb62ef89c005be8c9c14",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba05c373be6605bd555afd",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-10-18T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T02:01:06.696Z",
+    "modified": "2024-02-01T02:01:06.696Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00011",
+    "amount": 23800,
+    "amount_discount": 0,
+    "amount_write": 23800
+},
+{
+    "_id": "${space_id}_65bafbcbef89c005be8c9c17",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-11-22T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T02:02:51.736Z",
+    "modified": "2024-02-01T02:02:51.736Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00012",
+    "amount": 32000,
+    "amount_discount": 0,
+    "amount_write": 32000
+},
+{
+    "_id": "${space_id}_65bafbfbef89c005be8c9c1a",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-12-13T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T02:03:39.192Z",
+    "modified": "2024-02-01T02:03:51.479Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00013",
+    "amount": 55000,
+    "amount_discount": 0,
+    "amount_write": 55000
+},
+{
+    "_id": "${space_id}_65bafc21ef89c005be8c9c1f",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0ae973be6605bd555b1b",
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2024-01-10T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-02-01T02:04:17.749Z",
+    "modified": "2024-02-01T02:04:17.749Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00014",
+    "amount": 56700,
+    "amount_discount": 0,
+    "amount_write": 56700
+},
+{
+    "_id": "${space_id}_65bafc53ef89c005be8c9c22",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba0deb73be6605bd555b32",
+    "due_date": {
+        "$date": "2024-02-13T00:00:00.000Z"
+    },
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "space": "${space_id}",
+    "created": "2024-02-01T02:05:07.107Z",
+    "modified": "2024-02-01T02:05:07.107Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "name": "Demo-SK-00015",
+    "amount": 68200,
+    "amount_discount": 0,
+    "amount_write": 68200
+}
 ]

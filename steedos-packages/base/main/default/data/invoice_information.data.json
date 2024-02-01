@@ -1,0 +1,58 @@
+[{
+    "_id": "${space_id}_65ba065573be6605bd555b03",
+    "default": false,
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "customer": "${space_id}_65ba05c373be6605bd555afd",
+    "invoice": "潮升电梯设备有限公司",
+    "credit_code": "56456487A456544XX",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-01-31T08:35:33.544Z",
+    "modified": "2024-01-31T08:35:33.544Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+},
+{
+    "_id": "${space_id}_65ba0b6d73be6605bd555b21",
+    "default": false,
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "customer": "${space_id}_65ba0ae973be6605bd555b1b",
+    "invoice": "天津唯他轴承有限公司",
+    "credit_code": "XX565845645654S",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-01-31T08:57:17.962Z",
+    "modified": "2024-01-31T08:57:17.962Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+},
+{
+    "_id": "${space_id}_65ba0e9073be6605bd555b38",
+    "default": false,
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "customer": "${space_id}_65ba0deb73be6605bd555b32",
+    "invoice": "长天机械工程有限公司",
+    "credit_code": "656554646846465F464F",
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-01-31T09:10:40.130Z",
+    "modified": "2024-01-31T09:10:40.130Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83"
+}
+]

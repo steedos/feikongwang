@@ -1,31 +1,56 @@
-[
-    {
-        "_id": "${space_id}_62bbaea92a914502650a2c84",
-        "account": "${space_id}_rp6f28g9xszJRGjwN",
-        "amount": 10000,
-        "bill_date": {
-            "$date": "2022-06-10T00:00:00Z"
-        },
-        "invoice_number": "839127A",
-        "invoiceapply": "${space_id}_62aad9082c7a71003fe03eb9",
-        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
-        "tax": "${space_id}_62610e0732cc250032e1a998",
-        "space": "fM7StbzNByQbR8J8A",
-        "created": {
-            "$date": "2022-08-12T05:58:39.072Z"
-        },
-        "modified": {
-            "$date": "2022-08-12T05:58:39.072Z"
-        },
-        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
-        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
-        "company_id": "xGNTCDDCSmYaWavyL",
-        "company_ids": [
-            "xGNTCDDCSmYaWavyL"
-        ],
-        "contract": "${space_id}_6262243287e5c50032d9bda5",
-        "no": "Demo-CRI-00001",
-        "excluding_tax": 9433.962264150943,
-        "tax_amount": 566.04
-    }
+[{
+    "_id": "${space_id}_62bbaea92a914502650a2c84",
+    "account": "${space_id}_rp6f28g9xszJRGjwN",
+    "amount": 10000,
+    "bill_date": {
+        "$date": "2022-06-10T00:00:00.000Z"
+    },
+    "invoice_number": "839127A",
+    "invoiceapply": "${space_id}_62aad9082c7a71003fe03eb9",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "tax": "${space_id}_62610e0732cc250032e1a998",
+    "space": "${space_id}",
+    "created": "2024-01-31T02:19:20.735Z",
+    "modified": "2024-01-31T02:19:20.735Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "contract": "${space_id}_6262243287e5c50032d9bda5",
+    "no": "Demo-CRI-00001",
+    "excluding_tax": 9433.962264150943,
+    "tax_amount": 566.04
+},
+{
+    "_id": "${space_id}_65baf1eaef89c005be8c9ba4",
+    "owner": "65ba078473be6605bd555b08",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "invoiceapply": "${space_id}_65a8e00cc06cbb0647557f85",
+    "name": "产品开发",
+    "code": "10029301",
+    "tax": "${space_id}_62610e0732cc250032e1a996",
+    "no": "Demo-CRI-00002",
+    "quantity": 1,
+    "price": 7000,
+    "displayAs": null,
+    "space": "${space_id}",
+    "created": "2024-02-01T01:20:42.664Z",
+    "modified": "2024-02-01T01:22:11.121Z",
+    "created_by": "65ba078473be6605bd555b08",
+    "modified_by": "65ba078473be6605bd555b08",
+    "amount": 7000,
+    "excluding_tax": 6194.690265486726,
+    "tax_amount": 805.31,
+    "_table": {
+        "_id": "65baf1eaef89c005be8c9ba4",
+        "_code": "finance_invoice_detail"
+    },
+    "specifications": null
+}
 ]

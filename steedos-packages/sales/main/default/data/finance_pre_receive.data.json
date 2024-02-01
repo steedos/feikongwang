@@ -1,33 +1,54 @@
-[
-    {
-        "_id": "${space_id}_65b30e536529df06461827ba",
-        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "locked": true,
-        "company_id": "65b30c886529df06461827b9",
-        "company_ids": [
-            "65b30c886529df06461827b9"
-        ],
-        "amount": 10000,
-        "due_date": {
-            "$date": "2023-12-01T00:00:00.000Z"
-        },
-        "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
-        "account": "${space_id}_65a0996c6c2c9805bf0c453c",
-        "amount_description": "合同意向金",
-        "space": "65b30c886529df06461827b9",
-        "created": "2024-01-26T01:43:47.879Z",
-        "modified": "2024-01-26T01:58:26.063Z",
-        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
-        "name": "Demo-YSK-00001",
-        "amount_left": 0,
-        "amount_refund": 5000,
-        "amount_write": 5000,
-        "instance_state": "approved",
-        "billno": "A2563",
-        "is_active": true,
-        "receipt_date": {
-            "$date": "2024-01-26T00:00:00.000Z"
-        }
-    }
+[{
+    "_id": "${space_id}_65b30e536529df06461827ba",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": true,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "amount": 10000,
+    "due_date": {
+        "$date": "2023-12-01T00:00:00.000Z"
+    },
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "account": "${space_id}_65a0996c6c2c9805bf0c453c",
+    "amount_description": "合同意向金",
+    "space": "${space_id}",
+    "created": "2024-01-31T02:19:20.735Z",
+    "modified": "2024-01-31T02:19:20.735Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "name": "Demo-YSK-00001",
+    "amount_left": 0,
+    "amount_refund": 5000,
+    "amount_write": 5000,
+    "instance_state": "approved",
+    "billno": "A2563",
+    "is_active": true,
+    "receipt_date": "2024-01-26T00:00:00.000Z"
+},
+{
+    "_id": "${space_id}_65ba09cb73be6605bd555b1a",
+    "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "locked": false,
+    "company_id": "${space_id}",
+    "company_ids": [
+        "${space_id}"
+    ],
+    "account": "${space_id}_65ba05c373be6605bd555afd",
+    "amount": 500000,
+    "customer_bank": "${space_id}_65a0b08c6c2c9805bf0c458d",
+    "due_date": {
+        "$date": "2023-10-10T00:00:00.000Z"
+    },
+    "space": "${space_id}",
+    "created": "2024-01-31T08:50:19.167Z",
+    "modified": "2024-01-31T08:50:19.167Z",
+    "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+    "name": "Demo-YSK-00002",
+    "amount_left": 500000,
+    "amount_refund": 0,
+    "amount_write": 0
+}
 ]
