@@ -32,4 +32,7 @@ module.exports = {
     getPermanentCode: require('./getPermanentCode'),
     createSpaces_users: require('./createSpaces_users'),
     getConfigurations: require('./getConfigurations'),
+    getAdmiList:require('./getAdmiList'),
+    InitializeSpace:require('./InitializeSpace'),
+    getAdminInfoList:require('./getAdminInfoList'),
 }

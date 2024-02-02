@@ -16,3 +16,4 @@ exports.sendMessage = "https://qyapi.weixin.qq.com/cgi-bin/message/send";
 exports.getToken = "https://qyapi.weixin.qq.com/cgi-bin/gettoken";
 exports.getUserDetail = "https://qyapi.weixin.qq.com/cgi-bin/auth/getuserdetail";
 exports.getuserdetail3rd = "https://qyapi.weixin.qq.com/cgi-bin/service/auth/getuserdetail3rd";
+exports.getuser = "https://qyapi.weixin.qq.com/cgi-bin/user/get";
