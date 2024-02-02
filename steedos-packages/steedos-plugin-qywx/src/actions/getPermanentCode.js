@@ -17,7 +17,10 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
-        console.log("企业授权信息",permanentCodeDoc)
+        console.log("企业授权信息",permanentCodeDoc);
+        if(permanentCodeConfig.errcode!=0){
+            throw new Error(permanentCodeConfig.errmsg)
+        }
         return permanentCodeDoc
           
     }

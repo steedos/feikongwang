@@ -17,6 +17,7 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
+        console.log("====访问用户敏感信息",response)
           return response
           
     }
