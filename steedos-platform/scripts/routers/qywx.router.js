@@ -373,7 +373,8 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
     // 配置企业微信第三方应用验证参数
     var AES_KEY = process.env.STEEDOS_QYWX_SAAS_ENCODINGAESKEY || "";
     var TOKEN = process.env.STEEDOS_QYWX_SAAS_TOKEN || "";
-    var SUITEID = process.env.STEEDOS_QYWX_SAAS_SUITEID || "";
+    var suite_id = process.env.STEEDOS_QYWX_SAAS_SUITEID || "";
+    var suite_secret = process.env.STEEDOS_QYWX_SAAS_SUITE_SECRET || "";
 
     var signature = query['msg_signature'];
     var timeStamp = query['timestamp'];
@@ -382,7 +383,7 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
 
     var token = TOKEN;
     var aesKey = AES_KEY;
-    var suiteKey = SUITEID;
+    var suiteKey = suite_id;
 
     data = await broker.call('qywx.decrypt', {
         signature: signature,
@@ -399,46 +400,40 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
 
     console.log("message: ", message);
 
-    if (!message.InfoType) {
-        if (message.Event == "enter_agent") {
+    if (!message.InfoType){
+        if (message.Event == "enter_agent"){
             res.writeHead(200, {
                 "Content-Type": "text/plain"
             });
             res.end("success");
             return res.end("success");
         }
-    } else {
+    }else{
         switch (message != null ? message.InfoType : void 0) {
             case 'suite_ticket':
-                var suite_ticket = message.SuiteTicket
-                console.log("=======suite_ticket", suite_ticket)
-                var suite_id = process.env.STEEDOS_QYWX_SAAS_SUITEID;
-                var suite_secret = process.env.STEEDOS_QYWX_SAAS_SUITE_SECRET;
-                await broker.call('@steedos/plugin-qywx.storeSuiteTicket', { suite_id, suite_secret, message });
+                await broker.call('@steedos/plugin-qywx.storeSuiteTicket', {suite_id, suite_secret, message});
                 res.writeHead(200, {
                     "Content-Type": "text/plain"
                 });
                 return res.end("success");
             case 'create_auth':
-                console.log("message create-auth ", message);
-                // 应用安装时创建space、user、space_users
-                //await broker.call('@steedos/plugin-qywx.InitializeSpace', { "auth_code":message.AuthCode});
+                console.log("message create-auth ",message);
+                
                 res.writeHead(200, {
                     "Content-Type": "text/plain"
                 });
                 res.end("success");
-            // return CreateAuth(message);
-            case 'cancel_auth':
-                res.writeHead(200, {
-                    "Content-Type": "text/plain"
-                });
-                res.end(result != null ? result.message : void 0);
-            // return CancelAuth(message);
+                return await broker.call('@steedos/plugin-qywx.InitializeSpace', { "auth_code": message.AuthCode});
+            // case 'cancel_auth':
+            //     res.writeHead(200, {
+            //         "Content-Type": "text/plain"
+            //     });
+            //     res.end(result != null ? result.message : void 0);
+            //     return CancelAuth(message);
             // case 'change_auth':
             //     return ChangeContact(message.AuthCorpId);
             // case 'change_contact':
             //     return ChangeContact(message.AuthCorpId);
-
         }
     }
 });

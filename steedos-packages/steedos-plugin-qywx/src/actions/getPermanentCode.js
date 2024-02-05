@@ -17,11 +17,11 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
-        console.log("企业授权信息",permanentCodeDoc);
-        if(permanentCodeConfig.errcode!=0){
-            throw new Error(permanentCodeConfig.errmsg)
+        // console.log("企业授权信息",permanentCodeDoc);
+        if(permanentCodeDoc.errcode && (permanentCodeDoc.errcode != 0)){
+            throw new Error(permanentCodeDoc.errmsg)
         }
-        return permanentCodeDoc
+        return permanentCodeDoc;
           
     }
 }

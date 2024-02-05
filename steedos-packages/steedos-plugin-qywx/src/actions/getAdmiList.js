@@ -18,8 +18,8 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
-        console.log("管理员列表",adminList);
-        if(adminList.errcode==0){
+        // console.log("管理员列表",adminList);
+        if(adminList.errcode == 0){
             return adminList.admin
         }else{
             return "";

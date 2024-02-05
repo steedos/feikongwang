@@ -48,4 +48,9 @@ fields:
     type: boolean
     group: 企业微信
     hidden: true
+  qywx_permanent_code:
+    label: 永久授权码
+    type: text
+    group: 企业微信
+    hidden: true
 
