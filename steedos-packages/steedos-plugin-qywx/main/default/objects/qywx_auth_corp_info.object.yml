@@ -1,0 +1,12 @@
+name: qywx_suite_configurations
+label: 企业微信服务商配置
+fields:
+  suite_ticket:
+    label: suite_ticket
+    type: text
+    hidden: true
+  suite_access_token:
+    label: suite_access_token
+    type: text
+    hidden: true
+hidden: true

@@ -12,49 +12,46 @@ module.exports = {
         // 根据corpid 在space查询记录
         const spaceDoc = await spaceObj.findOne({ filters: [['qywx_corp_id', '=', user.corpid]] });
         console.log("spaceDoc",spaceDoc)
-        if (spaceDoc) {
-            // 根据企业微信userid查询user
-            const userDoc = await usersObj.findOne({ filters: [['qywx_id', '=', user.userid]] });
-            const spaceUserDoc = await spaceUsersObj.findOne({ filters: [['user', '=', user._id]] });
-            if (userDoc && spaceUserDoc) {
-                 return {
-                    userId:userDoc._id,
-                    spaceId:spaceDoc._id
-                };
-            } else {
-                // 1、创建user
-                const newUser = await usersObj.directInsert({
-                    name: user.name,
-                    qywx_id: user.userid
-
-                })
-                console.log("newUser", newUser)
-                // 2、创建space_users
-                const newSpaceUser = await spaceUsersObj.directInsert({
-                    name: user.name,
-                    user: newUser._id,
-                    owner: newUser._id,
-                    created_by: newUser._id,
-                    created: new Date(),
-                    modified_by: newUser._id,
-                    modified: new Date(),
-                    qywx_id: user.userid,
-                    space: spaceDoc._id,
-                    profile: "user",
-                    user_accepted: true
-                })
-                console.log("newSpaceUser", newSpaceUser);
-
-                return {
-                    userId:newUser._id,
-                    spaceId:spaceDoc._id
+        try {
+            if (spaceDoc) {
+                // 根据企业微信userid查询user
+                let userDoc = await usersObj.findOne({ filters: [['qywx_id', '=', user.userid]] });
+                let spaceUserDoc = await spaceUsersObj.findOne({ filters: [['qywx_id', '=', user.userid],['space', '=', spaceDoc._id]] });
+                if (userDoc && spaceUserDoc) {
+                    return {
+                        userId:userDoc._id,
+                        spaceId:spaceDoc._id
+                    };
+                } else {
+                    // 获取根部门
+                    let organizationDoc = await organizationsObj.findOne({ filters: [['space', '=', spaceDoc._id],["is_company", '=', true]] })
+                    // 创建space_users
+                    let newSpaceUser = await spaceUsersObj.insert({
+                        name: user.name,
+                        qywx_id: user.userid,
+                        space: spaceDoc._id,
+                        locale: "zh-cn",
+                        organizations: new Array(organizationDoc._id),
+                        organization: organizationDoc._id,
+                        user_accepted: true
+                    })
+                    console.log("newSpaceUser", newSpaceUser);
+    
+                    await usersObj.directUpdate(newSpaceUser.user,{
+                        qywx_id: user.userid
+                    })
+    
+                    return {
+                        userId: newSpaceUser.user,
+                        spaceId: spaceDoc._id
+                    }
+                   
                 }
-               
+    
             }
-
-        } 
-
-
-
+        } catch (error) {
+            console.log("Create sapce_user error: ",error);
+        }   
+        
     }
 }

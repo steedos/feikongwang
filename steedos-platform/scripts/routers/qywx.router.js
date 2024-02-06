@@ -439,67 +439,67 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
 });
 
 
-// 企业微信——费控王单点登陆
-// router.post('/api/qiyeweixin/tofkw/auth_login', async function (req, res, next) {
-//     try {
-//         console.log("企业微信——费控王单点登陆");
-//         var query = req.query
-//         const  {userId,spaceId,redirect_url} = req.body
-//         console.log("=====>user",userId);
-//         console.log("=====>spaceId",spaceId);
-//         let stampedAuthToken = auth.generateStampedLoginToken();
-//         let authtToken = stampedAuthToken.token;
-//         let hashedToken = auth.hashStampedToken(stampedAuthToken);
-//          await auth.insertHashedLoginToken(userId, hashedToken);
-//         auth.setAuthCookies(req, res, userId, authtToken, spaceId);
-//         res.setHeader('X-Space-Token', spaceId + ',' + authtToken);
-//         res.redirect(302, redirect_url || '/');
-//         return res.end('');
-//     } catch (error) {
-//         res.writeHead(200, {
-//             'Content-Type': 'text/html'
-//         });
-//         res.write(
-//             `<!DOCTYPE html>
-//         <html>
-//             <head>
-//                 <meta charset="utf-8">
-//                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-//                 <title>Steedos</title>
-//                 <link rel="stylesheet" type="text/css" href="${getAbsoluteUrl("/assets/styles/steedos-tailwind.min.css")}">
-//                 <script type="text/javascript" src="${getAbsoluteUrl("/lib/jquery/jquery-1.11.2.min.js")}"></script>
-//                 <style>
-//                 </style>
-//             </head>
-//             <body>
-//                 <div class="rounded-md bg-yellow-50 p-6 m-6">
-//                     <div class="flex">
-//                     <div class="flex-shrink-0">
-//                         <!-- Heroicon name: exclamation -->
-//                         <svg class="h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-//                         <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-//                         </svg>
-//                     </div>
-//                     <div class="ml-3">
-//                         <h3 class="text-lg leading-5 font-bold text-yellow-700">
-//                         登录失败
-//                         </h3>
-//                         <div class="mt-2 text-base leading-5 text-yellow-600">
-//                         <p>
-//                         请联系管理员配置企业微信工作区ID和用户ID
-//                         </p>
-//                         </div>
-//                     </div>
-//                     </div>
-//                 </div>
-//             </body>
-//         </html>
-//         `
-//         );
-//         return res.end('');
-//     }
+// 企业微信第三方应用单点登录
+router.post('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, next) {
+    try {
+        console.log("企业微信——费控王单点登陆");
+        var query = req.query
+        const  {userId, spaceId, redirect_url} = req.body
+        console.log("=====>user",userId);
+        console.log("=====>spaceId",spaceId);
+        let stampedAuthToken = auth.generateStampedLoginToken();
+        let authtToken = stampedAuthToken.token;
+        let hashedToken = auth.hashStampedToken(stampedAuthToken);
+        await auth.insertHashedLoginToken(userId, hashedToken);
+        auth.setAuthCookies(req, res, userId, authtToken, spaceId);
+        res.setHeader('X-Space-Token', spaceId + ',' + authtToken);
+        res.redirect(302, redirect_url || '/');
+        return res.end('');
+    } catch (error) {
+        res.writeHead(200, {
+            'Content-Type': 'text/html'
+        });
+        res.write(
+            `<!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+                <title>Steedos</title>
+                <link rel="stylesheet" type="text/css" href="${getAbsoluteUrl("/assets/styles/steedos-tailwind.min.css")}">
+                <script type="text/javascript" src="${getAbsoluteUrl("/lib/jquery/jquery-1.11.2.min.js")}"></script>
+                <style>
+                </style>
+            </head>
+            <body>
+                <div class="rounded-md bg-yellow-50 p-6 m-6">
+                    <div class="flex">
+                    <div class="flex-shrink-0">
+                        <!-- Heroicon name: exclamation -->
+                        <svg class="h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-lg leading-5 font-bold text-yellow-700">
+                        登录失败
+                        </h3>
+                        <div class="mt-2 text-base leading-5 text-yellow-600">
+                        <p>
+                        请联系管理员配置企业微信工作区ID和用户ID
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </body>
+        </html>
+        `
+        );
+        return res.end('');
+    }
 
-// })
+})
 
 // 从企业微信端单点登录:从浏览器后台管理页面"前往服务商后台"进入的网址
 router.get('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, next) {
