@@ -12,5 +12,6 @@ module.exports = {
     stockData: require('./stockData'),
     listen: require('./listen'),
     callback: require('./callback'),
+    syncContact: require('./syncContact'),
     // getAuthLogin: require('./getAuthLogin'),
 }

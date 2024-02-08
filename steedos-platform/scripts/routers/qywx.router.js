@@ -424,6 +424,19 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
                 });
                 res.end("success");
                 return await broker.call('@steedos/plugin-qywx.InitializeSpace', { "auth_code": message.AuthCode});
+            case 'batch_job_result':
+                let corpid = message.ServiceCorpId;
+                let provider_secret = process.env.STEEDOS_QYWX_SAAS_PROVIDER_SECRET;
+                let batchJob = message.BatchJob;
+                let providerTokenInfo = await broker.call('@steedos/plugin-qywx.getProviderToken', {
+                    "corpid": corpid,
+                    "provider_secret": provider_secret
+                }); 
+                let getResultInfo = await broker.call('@steedos/plugin-qywx.getResult', {
+                        "provider_access_token": providerTokenInfo.provider_access_token,
+                        "jobid": batchJob.JobId
+                    });
+                console.log("getResultInfo: ",getResultInfo);
             // case 'cancel_auth':
             //     res.writeHead(200, {
             //         "Content-Type": "text/plain"

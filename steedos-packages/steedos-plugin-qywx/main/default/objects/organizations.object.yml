@@ -10,3 +10,28 @@ fields:
     label: 企业微信工作区
     type: text
     hidden: true
+actions:
+  sync_contacts:
+    label: 同步企业微信通讯录
+    visible: !<tag:yaml.org,2002:js/function> |-
+      function (object_name, record_id, record_permissions) {
+        return true;
+      }
+    'on': list
+    todo: !<tag:yaml.org,2002:js/function> |-
+      function (object_name, record_id, fields) {
+        console.log("sync contact------------")
+        let url = `/api/qiyeweixin/suite/syncContact`;
+        let options = {
+            type: 'post',
+            async: true,
+            data: JSON.stringify({ space_id: Steedos.spaceId() }),
+            success: function (data) {
+              console.log("success---------")
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+              console.log("同步企业微信通讯录失败！")
+            }
+        };
+        Steedos.authRequest(url, options);
+      }

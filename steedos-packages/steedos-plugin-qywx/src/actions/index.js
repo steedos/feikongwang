@@ -35,4 +35,11 @@ module.exports = {
     getAdmiList:require('./getAdmiList'),
     InitializeSpace:require('./InitializeSpace'),
     getAdminInfoList:require('./getAdminInfoList'),
+    getContact:require('./getContact'),
+    getAccessToken: require('./getAccessToken'),
+    getDepartmentList: require('./getDepartmentList'),
+    getAllUserList: require('./getAllUserList'),
+    uploadFile: require('./uploadFile'),
+    getIdTranslate: require('./getIdTranslate'),
+    getResult: require('./getResult'),
 }
