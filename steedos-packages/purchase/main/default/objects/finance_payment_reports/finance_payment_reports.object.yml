@@ -19,6 +19,7 @@ enable_search: true
 enable_share: false
 enable_tasks: false
 enable_workflow: true
+enable_lock_detail: true
 icon: orders
 is_enable: true
 label: 付款单
