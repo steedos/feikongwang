@@ -36,9 +36,13 @@ module.exports = {
                         user_accepted: true
                     })
                     console.log("newSpaceUser", newSpaceUser);
-    
+                    
                     await usersObj.directUpdate(newSpaceUser.user,{
-                        qywx_id: user.userid
+                        qywx_id: user.userid,
+                        user_accepted: true
+                    })
+                    await spaceUsersObj.directUpdate(newSpaceUser._id,{
+                        user_accepted: true
                     })
     
                     return {
