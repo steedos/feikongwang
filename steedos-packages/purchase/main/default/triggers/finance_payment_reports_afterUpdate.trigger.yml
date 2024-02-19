@@ -1,0 +1,45 @@
+name: finance_payment_reports_afterUpdate
+listenTo: finance_payment_reports
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { id, doc, spaceId, userId } = ctx.params;
+
+  const financePaymentReportItemObj = this.getObject("finance_payment_report_item");
+  const financePaymentObj = this.getObject("finance_payment");
+  
+  const baseInfo = {
+      created: new Date(),
+      modified: new Date(),
+      space: spaceId,
+      owner:userId
+  }
+
+  if (doc.finished) {
+      const financePaymentReportItemDoc = await financePaymentReportItemObj.find({ filters: [['report_id', '=', id]] });
+      if (financePaymentReportItemDoc && financePaymentReportItemDoc.length) {
+          for (let financePaymentReportItem of financePaymentReportItemDoc) {
+              //创建付款单明细
+              financePaymentReportItemObj.update(financePaymentReportItem._id, {
+                  payment_status:doc.payment_status,
+                  payment_date:doc.payment_date,
+                  finished:true
+              })
+
+              //创建付款记录
+              const financeReceiveDoc =  await financePaymentObj.insert({
+                  ...baseInfo,
+                  report_id: financePaymentReportItem.report_id,
+                  billno: financePaymentReportItem.billno,
+                  purchase_order: financePaymentReportItem.purchase_order,
+                  amount: financePaymentReportItem.amount,
+                  amount_description: financePaymentReportItem.amount_description,
+                  payment_status:doc.payment_status,
+                  payment_date:doc.payment_date,
+                  finished:true
+              })
+          }
+      }
+  }
+locked: false
