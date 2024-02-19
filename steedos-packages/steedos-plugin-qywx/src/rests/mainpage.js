@@ -19,7 +19,11 @@ module.exports = {
         console.log("=====redirect_uri", redirect_uri);
 
         let appid = process.env.STEEDOS_QYWX_SAAS_SUITEID;
-        let { target = '' } = ctx.params;
+        // 消息推送重定向地址
+        let { target  } = ctx.params;
+        if(!target){
+            target = ''
+        }
         url = authorize_uri + '?appid=' + appid + '&redirect_uri=' + redirect_uri + `&response_type=code&scope=snsapi_privateinfo&state=${target}#wechat_redirect`;
         ctx.meta.$statusCode = 302;
         ctx.meta.$location = url;

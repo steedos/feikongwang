@@ -42,4 +42,5 @@ module.exports = {
     uploadFile: require('./uploadFile'),
     getIdTranslate: require('./getIdTranslate'),
     getResult: require('./getResult'),
+    getAuthInfo: require('./getAuthInfo'),
 }

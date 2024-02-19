@@ -516,8 +516,8 @@ router.post('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, 
 
 // 从企业微信端单点登录:从浏览器后台管理页面"前往服务商后台"进入的网址
 router.get('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, next) {
-    const broker = objectql.getSteedosSchema().broker
-    var { code } = req.query;
+    const broker = objectql.getSteedosSchema().broker;
+    var { code,state } = req.query;
     let suite_id = process.env.STEEDOS_QYWX_SAAS_SUITEID;
     let suite_secret = process.env.STEEDOS_QYWX_SAAS_SUITE_SECRET;
 
@@ -556,7 +556,7 @@ router.get('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, n
     });
     console.log("userInfo======", userInfo);
 
-    let redirect_url = process.env.ROOT_URL
+    //let redirect_url = process.env.ROOT_URL
     // 
     // 设置cookies,重定向
     let stampedAuthToken = auth.generateStampedLoginToken();
@@ -565,7 +565,7 @@ router.get('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, n
     await auth.insertHashedLoginToken(userInfo.userId, hashedToken);
     auth.setAuthCookies(req, res, userInfo.userId, authtToken, userInfo.spaceId);
     res.setHeader('X-Space-Token', userInfo.spaceId + ',' + authtToken);
-    res.redirect(302, redirect_url || '/');
+    res.redirect(302, state || '/');
     return res.end('');
 })
 

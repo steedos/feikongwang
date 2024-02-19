@@ -42,7 +42,8 @@ module.exports = {
                         user_accepted: true
                     })
                     await spaceUsersObj.directUpdate(newSpaceUser._id,{
-                        user_accepted: true
+                        user_accepted: true,
+                        invite_state: "accepted"
                     })
     
                     return {

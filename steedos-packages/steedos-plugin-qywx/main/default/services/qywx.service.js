@@ -2,7 +2,7 @@ const _ = require('lodash');
 // const objectql = require('@steedos/objectql');
 const Qiyeweixin = require("./qywx");
 const qywx_api = require('./router.js');
-const fetch =  require('node-fetch');
+const fetch = require('node-fetch');
 const qywxSync = require('./sync');
 
 module.exports = {
@@ -27,31 +27,31 @@ module.exports = {
         getSpace: {
             async handler(ctx) {
                 const { corpId } = ctx.params;
-                return await Qiyeweixin.getSpace(corpId); 
+                return await Qiyeweixin.getSpace(corpId);
             }
         },
         getToken: {
             async handler(ctx) {
                 const { corpId, secret } = ctx.params;
-                return await Qiyeweixin.getToken(corpId, secret); 
+                return await Qiyeweixin.getToken(corpId, secret);
             }
         },
         getUserInfo: {
             async handler(ctx) {
                 const { accessToken, code } = ctx.params;
-                return await Qiyeweixin.getUserInfo(accessToken, code); 
+                return await Qiyeweixin.getUserInfo(accessToken, code);
             }
         },
         getSpaceUser: {
             async handler(ctx) {
                 const { spaceId, userInfo } = ctx.params;
-                return await Qiyeweixin.getSpaceUser(spaceId, userInfo); 
+                return await Qiyeweixin.getSpaceUser(spaceId, userInfo);
             }
         },
         getProviderToken: {
             async handler(ctx) {
                 const { corpId, providerSecret } = ctx.params;
-                return await Qiyeweixin.getProviderToken(corpId, providerSecret); 
+                return await Qiyeweixin.getProviderToken(corpId, providerSecret);
             }
         },
         getLoginInfo: {
@@ -92,13 +92,13 @@ module.exports = {
         getSpaceUsers: {
             async handler(ctx) {
                 const { spaceId } = ctx.params;
-                return await Qiyeweixin.getSpaceUsers(spaceId); 
+                return await Qiyeweixin.getSpaceUsers(spaceId);
             }
         },
         getUserDetail: {
             async handler(ctx) {
                 const { accessToken, userTicket } = ctx.params;
-                return await Qiyeweixin.getUserDetail(accessToken, userTicket); 
+                return await Qiyeweixin.getUserDetail(accessToken, userTicket);
             }
         },
         updateUserMobile: {
@@ -125,7 +125,7 @@ module.exports = {
             },
             async handler(ctx) {
                 let authorize_uri, o, redirect_uri, url, _ref5, _ref6, _ref7;
-                
+
                 let appid = "";
                 o = await Qiyeweixin.getSpace();
 
@@ -148,10 +148,10 @@ module.exports = {
                     url = authorize_uri + '?appid=' + appid + '&redirect_uri=' + redirect_uri + `&response_type=code&scope=snsapi_privateinfo&state=${target}&agentid=${agentid}#wechat_redirect`;
                     ctx.meta.$statusCode = 302;
                     ctx.meta.$location = url;
-                    return ;
+                    return;
                 }
-                
-                
+
+
             }
         },
         //推送消息
@@ -164,11 +164,13 @@ module.exports = {
             },
             async handler(ctx) {
                 const { qywx_userId, agentId, spaceId, text, url, title } = ctx.params;
-                let space = await this.broker.call('objectql.findOne', {objectName: 'spaces', id: spaceId})
+                let space = await this.broker.call('objectql.findOne', { objectName: 'spaces', id: spaceId })
                 let service = space.services.qiyeweixin;
-                let o = await this.broker.call('serviceConfiguration.findOne', {query: {
-                    service: "qiyeweixin"
-                }})
+                let o = await this.broker.call('serviceConfiguration.findOne', {
+                    query: {
+                        service: "qiyeweixin"
+                    }
+                })
                 at = Qiyeweixin.getCorpToken(service.corp_id, service.permanent_code, o.suite_access_token);
                 if (at && at.access_token) {
                     service.access_token = at.access_token;
@@ -188,10 +190,10 @@ module.exports = {
                     "enable_duplicate_check": 0,
                     "duplicate_check_interval": 1
                 }
-            
+
                 Qiyeweixin.sendMessage(msg, service.access_token);
                 return "success";
-            } 
+            }
         },
         //同步数据
         stockData: {
@@ -205,11 +207,11 @@ module.exports = {
                 let space = await Qiyeweixin.getSpace();
                 let access_token = '';
                 // 获取access_token
-                if (space.qywx_corp_id && space.qywx_secret){
+                if (space.qywx_corp_id && space.qywx_secret) {
                     let response = await Qiyeweixin.getToken(space.qywx_corp_id, space.qywx_secret);
                     access_token = response.access_token
                 }
-                
+
                 qywxSync.write("================存量数据开始===================")
                 qywxSync.write("access_token:" + access_token)
 
@@ -231,10 +233,10 @@ module.exports = {
                     }
                 }
                 return { message: "ok" };
-            } 
+            }
         },
         //订阅事件
-        listen:{
+        listen: {
             rest: {
                 method: "GET",
                 fullPath: "/api/qiyeweixin/listen",
@@ -294,19 +296,19 @@ module.exports = {
             }
         },
         getSpaceByDingtalk: {
-            async handler(ctx){
+            async handler(ctx) {
                 const { corpId } = ctx.params;
                 return await this.getSpaceByDingtalk(corpId);
             }
         },
         getSpaceById: {
-            async handler(ctx){
+            async handler(ctx) {
                 const { spaceId } = ctx.params;
                 return await this.getSpaceById(spaceId);
             }
         },
         getSpaceTop1: {
-            async handler(ctx){
+            async handler(ctx) {
                 return await this.getSpaceTop1();
             }
         }
@@ -316,82 +318,164 @@ module.exports = {
      * Events
      */
     events: {
-        'push.send':{
-            async handler(ctx){
+        'push.send': {
+            async handler(ctx) {
                 const options = ctx.params;
-                let oauthUrl = objectql.absoluteUrl('/api/qiyeweixin/mainpage?target=');
-                try {
-                    // console.log("options:---",options);
-                    if (options.from !== 'workflow')
-                        return;
-    
-                    if (!options.payload)
-                        return;
-    
-                    let space = await this.broker.call('objectql.find', {objectName: 'spaces', query: {filters: [["_id", "=",options.payload.space]]}})
-    
-                    if (!space[0])
-                        return;
-    
-                    if (!space[0].qywx_corp_id || !space[0].qywx_agent_id || !space[0].qywx_secret)
-                        return;
-    
-                    let response = await Qiyeweixin.getToken(space[0].qywx_corp_id, space[0].qywx_secret);
-                    let access_token = response.access_token;
-    
-                    let userId = options.query.userId;
-                    let space_user = await this.broker.call('objectql.find', {objectName: 'space_users', query: {filters: [["space", "=", space[0]._id], ["user", "=", userId]]}})
-                    
-                    if (!space_user[0].qywx_id)
-                        return;
-    
-                    // console.log("Push.send: ",space_user[0]);
-                    let qywx_userId = space_user[0].qywx_id;
-                    let agentId = space[0].qywx_agent_id;
-                    let spaceId = space[0]._id;
-                    let payload = options.payload;
-                    let url = "";
-                    let text = "";
-                    let title = "华炎魔方";
-    
-                    // 审批流程
-                    if (payload.instance) {
-                        let pushInfo = await Qiyeweixin.workflowPush(options, spaceId, oauthUrl);
-                        title = pushInfo.text;
-                        text = pushInfo.title;
-                        url = pushInfo.url;
-                    } else {
-                        title = options.title;
-                        url = oauthUrl + payload.url;
+                console.log("===>options", options)
+                let STEEDOS_TENANT_ENABLE_SAAS = process.env.STEEDOS_TENANT_ENABLE_SAAS
+                if (STEEDOS_TENANT_ENABLE_SAAS) {
+                    try {
+                        console.log("SAAS模式下消息推送");
+                        let oauthUrl = await this.broker.call('objectql.absoluteUrl', { path: '/api/qiyeweixin/feikongwang/mainpage?target=' })
+                        if (options.from !== 'workflow') {
+                            return;
+                        }
+                        if (!options.payload) {
+                            return;
+                        }
+                        let space = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", options.payload.space]] } })
+                        console.log("space信息", space);
+                        if (!space[0] || !space[0].qywx_corp_id) {
+                            return
+                        }
+                        let userId = options.query.userId;
+                        let space_user = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["space", "=", space[0]._id], ["user", "=", userId]] } })
+                        console.log("space_user信息", space_user)
+                        if (!space_user[0].qywx_id) {
+                            return;
+                        }
+                        let qywx_userId = space_user[0].qywx_id;
+                        let suite_id = process.env.STEEDOS_QYWX_SAAS_SUITEID;
+                        // 获取企业AccessToken
+                        const access_token_info = await broker.call('@steedos/plugin-qywx.getAccessToken', {
+                            "suite_id": suite_id,
+                            "auth_corpid": space[0].qywx_corp_id,
+                            "permanent_code": space[0].qywx_permanent_code
+                        });
+                        console.log("access_token_info==>", access_token_info);
+                        const authInfo = await this.broker.call('@steedos/plugin-qywx.getAuthInfo', { suite_id: suite_id, auth_corpid: space[0].qywx_corp_id, permanent_code: space[0].qywx_permanent_code });
+                        console.log("企业认证信息", authInfo)
+                        let payload = options.payload;
+                        let spaceId = space[0]._id;
+                        let url = "";
+                        let text = "";
+                        let title = "华炎魔方";
+                        if (payload.instance) {
+                            let pushInfo = await Qiyeweixin.workflowPush(options, spaceId, oauthUrl);
+                            console.log("======>pushInfo", pushInfo)
+                            title = pushInfo.text;
+                            text = pushInfo.title;
+                            url = pushInfo.url;
+                        } else {
+                            title = options.title;
+                            url = oauthUrl + payload.url;
+                        }
+                        if (payload.related_to) {
+                            text = options.text;
+                        }
+                        let agentid = authInfo.auth_info.agent[0].agentid
+                        console.log("=======>agentid", agentid)
+                        // 替换&#x2F为'/'
+                        let rg = new RegExp("&#x2F;", "g");
+                        let msg = {
+                            "touser": qywx_userId,
+                            "msgtype": "textcard",
+                            "agentid": agentid,
+                            "textcard": {
+                                "title": title.replace(rg, '/'),
+                                "description": text.replace(rg, '/'),
+                                "url": url,
+                                "btntxt": "详情"
+                            },
+                            "safe": 0,
+                            "enable_id_trans": 0,
+                            "enable_duplicate_check": 0,
+                            "duplicate_check_interval": 1
+                        }
+                        console.log("msg", msg);
+                        // 发送推送消息
+                        await Qiyeweixin.sendMessage(msg, access_token_info.access_token);
+                    } catch (Exception) {
+                        console.error("Push error reason: ", Exception);
                     }
-    
-                    if (payload.related_to) {
-                        text = options.text;
+
+
+                } else {
+                    let oauthUrl = objectql.absoluteUrl('/api/qiyeweixin/mainpage?target=');
+                    try {
+                        // console.log("options:---",options);
+                        if (options.from !== 'workflow')
+                            return;
+
+                        if (!options.payload)
+                            return;
+
+                        let space = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", options.payload.space]] } })
+
+                        if (!space[0])
+                            return;
+
+                        if (!space[0].qywx_corp_id || !space[0].qywx_agent_id || !space[0].qywx_secret)
+                            return;
+
+                        let response = await Qiyeweixin.getToken(space[0].qywx_corp_id, space[0].qywx_secret);
+                        let access_token = response.access_token;
+
+                        let userId = options.query.userId;
+                        let space_user = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["space", "=", space[0]._id], ["user", "=", userId]] } })
+
+                        if (!space_user[0].qywx_id)
+                            return;
+
+                        // console.log("Push.send: ",space_user[0]);
+                        let qywx_userId = space_user[0].qywx_id;
+                        let agentId = space[0].qywx_agent_id;
+                        let spaceId = space[0]._id;
+                        let payload = options.payload;
+                        let url = "";
+                        let text = "";
+                        let title = "华炎魔方";
+
+                        // 审批流程
+                        if (payload.instance) {
+                            let pushInfo = await Qiyeweixin.workflowPush(options, spaceId, oauthUrl);
+                            title = pushInfo.text;
+                            text = pushInfo.title;
+                            url = pushInfo.url;
+                        } else {
+                            title = options.title;
+                            url = oauthUrl + payload.url;
+                        }
+
+                        if (payload.related_to) {
+                            text = options.text;
+                        }
+                        // 替换&#x2F为'/'
+                        let rg = new RegExp("&#x2F;", "g")
+
+                        let msg = {
+                            "touser": qywx_userId,
+                            "msgtype": "textcard",
+                            "agentid": agentId,
+                            "textcard": {
+                                "title": title.replace(rg, '/'),
+                                "description": text.replace(rg, '/'),
+                                "url": url,
+                                "btntxt": "详情"
+                            },
+                            "safe": 0,
+                            "enable_id_trans": 0,
+                            "enable_duplicate_check": 0,
+                            "duplicate_check_interval": 1
+                        }
+                        // 发送推送消息
+                        // console.log("msg: ",msg);
+                        await Qiyeweixin.sendMessage(msg, access_token);
+                    } catch (error) {
+                        console.error("Push error reason: ", error);
                     }
-                    // 替换&#x2F为'/'
-                    let rg = new RegExp("&#x2F;","g")
-                    
-                    let msg = {
-                        "touser": qywx_userId,
-                        "msgtype": "textcard",
-                        "agentid": agentId,
-                        "textcard": {
-                            "title": title.replace(rg,'/'),
-                            "description": text.replace(rg,'/'),
-                            "url": url,
-                            "btntxt": "详情"
-                        },
-                        "safe": 0,
-                        "enable_id_trans": 0,
-                        "enable_duplicate_check": 0,
-                        "duplicate_check_interval": 1
-                    }
-                    // 发送推送消息
-                    // console.log("msg: ",msg);
-                    await Qiyeweixin.sendMessage(msg, access_token);
-                } catch (error) {
-                    console.error("Push error reason: ", error);
                 }
+
             }
         }
     },
@@ -401,19 +485,19 @@ module.exports = {
      */
     methods: {
         getSpaceByDingtalk: async function (corpId) {
-            const spaces = await this.broker.call('objectql.find', {objectName: 'spaces', query: {filters: [["dingtalk_corp_id", "=", corpId]]}});
+            const spaces = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["dingtalk_corp_id", "=", corpId]] } });
             return spaces.length > 0 ? spaces[0] : null;
         },
         getSpaceById: async function (spaceId) {
-            const spaces = await this.broker.call('objectql.find', {objectName: 'spaces', query: {filters: [["_id", "=", spaceId]]}});
+            const spaces = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", spaceId]] } });
             return spaces.length > 0 ? spaces[0] : null;
         },
         getSpaceUserByDingtalk: async function (userId) {
-            const records = await this.broker.call('objectql.find', {objectName: 'space_users', query: {filters: [["dingtalk_id", "=", userId]]}});
+            const records = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["dingtalk_id", "=", userId]] } });
             return records.length > 0 ? records[0] : null;
         },
         getSpaceTop1: async function () {
-            const records = await this.broker.call('objectql.find', {objectName: 'spaces', query: {top: 1}});
+            const records = await this.broker.call('objectql.find', { objectName: 'spaces', query: { top: 1 } });
             return records.length > 0 ? records[0] : null;
         },
 
