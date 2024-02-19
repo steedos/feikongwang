@@ -1,0 +1,94 @@
+name: confirm_pay
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "付款",
+              "id": "u:confirm_pay",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "录入付款信息",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-form",
+                                          "id": "u:f2a58807c0cd",
+                                          "label": "对象表单",
+                                          "objectApiName": "finance_payment_reports",
+                                          "recordId": "${recordId}",
+                                          "className": "sm:border sm:rounded sm:border-gray-300 bg-white p-4",
+                                          "mode": "edit",
+                                          "fields": [
+                                              "payment_status",
+                                              "payment_date"
+                                          ],
+                                          "fieldsExtend": {
+                                              "payment_status": {
+                                                  "visible_on": "{{true}}",
+                                                  "amis": {
+                                                      "value": "paid"
+                                                  }
+                                              },
+                                              "payment_date": {
+                                                  "visible_on": "{{true}}",
+                                                  "amis": {
+                                                      "value": "today"
+                                                  }
+                                              }
+                                          },
+                                          "apiRequestAdaptor": "console.log(\"=====api预收款\", api);\nconst id = api.body.recordId;\nconst payment_date = api.body.$.payment_date;\nconst payment_status = api.body.$.payment_status;\napi.data = {\n  query: `mutation{record: finance_payment_reports__update(id:  ` + JSON.stringify(id) + `, doc: {payment_date:` + JSON.stringify(payment_date) + `,payment_status:` + JSON.stringify(payment_status) + `,finished:true}){ _id }}`\n}\nreturn api;"
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:bde21e8c7dea",
+                                  "closeOnEsc": false,
+                                  "size": "lg",
+                                  "onEvent": {
+                                      "confirm": {
+                                          "weight": 0,
+                                          "actions": [
+                                              {
+                                                  "actionType": "custom",
+                                                  "script": "setTimeout(function () {\n  doAction({\n    componentId: \"listview_contract_pre_receive_write_detail\",\n    actionType: \"reload\",\n    dataMergeMode: \"merge\"\n  });\n}, 1000);\n"
+                                              }
+                                          ]
+                                      }
+                                  }
+                              }
+                          }
+                      ]
+                  }
+              },
+              "visibleOn": "${_master && _master.record.instance_state =='approved' && _master.record.payment_status !='paid'}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:4fa3897262b9"
+  }
+is_enable: true
+label: 付款
+locked: false
+'on': record
+type: amis_button
+visible: true
