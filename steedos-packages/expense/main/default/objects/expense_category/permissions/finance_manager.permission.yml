@@ -1,0 +1,56 @@
+name: expense_category.finance_manager
+allowCreate: true
+allowCreateFiles: false
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: false
+allowEdit: true
+allowEditFiles: false
+allowExport: false
+allowRead: true
+allowReadFiles: false
+locked: false
+modifyAllFiles: false
+modifyAllRecords: true
+modifyCompanyRecords: false
+permission_set_id: finance_manager
+viewAllFiles: false
+viewAllRecords: true
+viewCompanyRecords: false
+field_permissions:
+  - field: describe
+    readable: true
+    editable: true
+  - field: name
+    readable: true
+    editable: true
+  - field: open
+    readable: false
+    editable: false
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: true
+    editable: true
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: true
+    editable: true
+  - field: instance_state
+    readable: true
+    editable: false
