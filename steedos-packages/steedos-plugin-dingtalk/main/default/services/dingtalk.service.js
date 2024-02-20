@@ -5,12 +5,12 @@
  * @LastEditTime: 2023-05-26 09:57:44
  * @Description: 
  */
-const objectql = require('@steedos/objectql');
+// const objectql = require('@steedos/objectql');
 const dtApi = require("./dt_api");
 const dtSync = require("./dt_sync");
 // 网页授权url
-const oauthUrl = objectql.absoluteUrl("/sso/dingtalk?corpid=");
-
+// const oauthUrl = objectql.absoluteUrl("/sso/dingtalk?corpid=");
+const oauthUrl =  broker.call('objectql.absoluteUrl', { path: '/sso/dingtalk?corpid=' })
 
 
 module.exports = {

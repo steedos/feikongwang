@@ -5,7 +5,7 @@ const aes = require('wx-ding-aes')
 const fs = require('fs')
 
 const fetch = require('node-fetch');
-const objectql = require('@steedos/objectql');
+// const objectql = require('@steedos/objectql');
 
 const API_KEY = process.env.APIKEY;
 const LOG_PATH = process.env.DING_LOGPATH || './ding_server.log';
@@ -295,7 +295,7 @@ exports.decrypt = function (data) {
 
 
 
-    sortList = [res1, data['token'], timeStamp, nonce]
+   var sortList = [res1, data['token'], timeStamp, nonce]
 
     sortList.sort();
     var msg_signature = '';
