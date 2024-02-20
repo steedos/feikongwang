@@ -33,6 +33,7 @@ amis_schema: |-
                                           "fieldsExtend": {
                                               "payment_status": {
                                                   "visible_on": "{{true}}",
+                                                  "readonly": "{{true}}",
                                                   "amis": {
                                                       "value": "paid"
                                                   }
