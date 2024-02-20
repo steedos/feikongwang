@@ -92,4 +92,4 @@ label: 付款
 locked: false
 'on': record
 type: amis_button
-visible: true
+visible: false
