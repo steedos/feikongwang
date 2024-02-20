@@ -1,0 +1,6 @@
+label: 钉钉集成插件
+description: Steedos可以集成钉钉，实现单点登录、消息推送和组织机构同步。
+icon: custom_notification
+license:
+  - platform-professional
+  - platform-enterprise
