@@ -9,7 +9,6 @@ columns:
   - field: payment_proportion
   - field: due_date
   - field: amount_description
-  - field: instance_state
 filter_scope: space
 label: 所有
 shared: true

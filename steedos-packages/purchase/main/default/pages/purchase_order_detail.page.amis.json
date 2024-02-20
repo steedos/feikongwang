@@ -13,19 +13,27 @@
             "className": "bg-white border-y sm:mt-3 p-4",
             "tabs": [
                 {
-                    "title": "产品信息",
+                    "title": "付款",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
                             "label": "相关表",
                             "objectApiName": "${objectName}",
                             "recordId": "${recordId}",
-                            "id": "u:a56c7a89d6a4",
-                            "relatedObjectApiName": "purchase_contract_product"
+                            "id": "u:70d1dab8f4e4",
+                            "relatedObjectApiName": "purchase_order_payments"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:1c5fe92f6b7e",
+                            "relatedObjectApiName": "finance_payment"
                         }
                     ],
-                    "className": "p-t p-l-xs",
-                    "id": "u:64d20a69b489"
+                    "id": "u:54c297f20e5e",
+                    "className": "px-0 pt-4"
                 },
                 {
                     "title": "详细",
@@ -66,29 +74,6 @@
                     "className": "p-t p-l-xs"
                 },
                 {
-                    "title": "付款",
-                    "body": [
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:70d1dab8f4e4",
-                            "relatedObjectApiName": "purchase_order_payments"
-                        },
-                        {
-                            "type": "steedos-object-related-listview",
-                            "label": "相关表",
-                            "objectApiName": "${objectName}",
-                            "recordId": "${recordId}",
-                            "id": "u:1c5fe92f6b7e",
-                            "relatedObjectApiName": "finance_payment"
-                        }
-                    ],
-                    "id": "u:54c297f20e5e",
-                    "className": "px-0 pt-4"
-                },
-                {
                     "title": "收票",
                     "body": [
                         {
@@ -101,6 +86,21 @@
                         }
                     ],
                     "id": "u:99bace0024ae"
+                },
+                {
+                    "title": "产品信息",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:a56c7a89d6a4",
+                            "relatedObjectApiName": "purchase_contract_product"
+                        }
+                    ],
+                    "className": "p-t p-l-xs",
+                    "id": "u:64d20a69b489"
                 }
             ],
             "id": "u:e8ffc82b0f73"

@@ -1,17 +1,13 @@
 name: all
 columns:
   - field: id
-    wrap: false
-  - field: payment_date
-    wrap: false
+    width: '300'
+    wrap: true
   - field: amount
-    wrap: false
+  - field: payment_sacle
+  - field: payment_date
   - field: purchase_order
-    wrap: false
-  - field: report_id
-    wrap: false
   - field: amount_description
-    wrap: false
 filter_fields:
   - contract
   - payment_date

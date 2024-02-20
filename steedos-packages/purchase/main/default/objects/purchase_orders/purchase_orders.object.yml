@@ -3,7 +3,7 @@ compactLayouts:
   - contract_code
   - supplier
   - amount
-  - buyer
+  - amount_unpaid
   - signed_date
 custom: true
 enable_api: true

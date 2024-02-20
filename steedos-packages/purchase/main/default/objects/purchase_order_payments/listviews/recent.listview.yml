@@ -7,7 +7,6 @@ columns:
   - payment_proportion
   - due_date
   - amount_description
-  - instance_state
 filter_scope: space
 label: 最近查看
 shared: true
