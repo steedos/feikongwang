@@ -3,6 +3,7 @@ data_type: date
 filterable: true
 formula: report_id.payment_date
 formula_blank_value: blanks
+group: 付款信息
 hidden: false
 index: false
 is_name: false
@@ -10,6 +11,6 @@ is_wide: false
 label: 付款日期
 omit: false
 searchable: false
-sort_no: 130
+sort_no: 865
 sortable: false
 type: formula

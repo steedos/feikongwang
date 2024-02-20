@@ -19,3 +19,4 @@ searchable: false
 sort_no: 410
 sortable: false
 type: select
+visible_on: "{{global.mode ==='read' ? true : false}}"

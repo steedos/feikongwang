@@ -1,7 +1,7 @@
 name: payment_status
 filterable: true
 group: 付款信息
-hidden: true
+hidden: false
 index: false
 is_name: false
 is_wide: false

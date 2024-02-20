@@ -1,14 +1,14 @@
 name: payment_status
 filterable: true
 group: 付款信息
-hidden: true
+hidden: false
 index: false
 is_name: false
 is_wide: false
 label: 付款状态
 multiple: false
 omit: false
-readonly: false
+readonly: true
 options:
   - label: 已支付
     value: paid
