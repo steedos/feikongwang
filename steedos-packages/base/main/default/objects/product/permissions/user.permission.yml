@@ -1,18 +1,18 @@
 name: 产品.用户
-allowCreate: true
+allowCreate: false
 allowCreateFiles: true
 allowCreateListViews: true
-allowDelete: true
+allowDelete: false
 allowDeleteFiles: true
-allowEdit: true
+allowEdit: false
 allowEditFiles: true
-allowExport: true
+allowExport: false
 allowRead: true
 allowReadFiles: true
 modifyAllRecords: false
 permission_set_id: user
 viewAllFiles: true
-viewAllRecords: false
+viewAllRecords: true
 field_permissions:
   - field: name
     readable: true

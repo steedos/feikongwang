@@ -1,8 +1,8 @@
 name: 用户
-allowCreate: true
-allowDelete: true
-allowEdit: true
+allowCreate: false
+allowDelete: false
+allowEdit: false
 allowRead: true
 modifyAllRecords: false
 permission_set_id: user
-viewAllRecords: false
+viewAllRecords: true
