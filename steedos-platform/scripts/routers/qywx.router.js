@@ -428,6 +428,8 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
                 let corpid = message.ServiceCorpId;
                 let provider_secret = process.env.STEEDOS_QYWX_SAAS_PROVIDER_SECRET;
                 let batchJob = message.BatchJob;
+                // await broker.call('@steedos/plugin-qywx.contactIdTranslate', { "corpid": message.AuthCode});
+                
                 let providerTokenInfo = await broker.call('@steedos/plugin-qywx.getProviderToken', {
                     "corpid": corpid,
                     "provider_secret": provider_secret
@@ -436,7 +438,17 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
                         "provider_access_token": providerTokenInfo.provider_access_token,
                         "jobid": batchJob.JobId
                     });
+                
                 console.log("getResultInfo: ",getResultInfo);
+                if (getResultInfo.contact_id_translate.url){
+                    console.log("update spaces-----")
+                    let space = await broker.call('objectql.find',{objectName: 'spaces', query: {filters: [["qywx_corp_id", "=",corpid]]}});
+                    console.log("find space: ",space[0]);
+                    await broker.call('objectql.directUpdate', {objectName: "spaces", id: space[0]._id, doc: {"qywx_contact_id_translate_url": getResultInfo.contact_id_translate.url}})
+                    
+                }
+                res.end("success");
+                return;
             // case 'cancel_auth':
             //     res.writeHead(200, {
             //         "Content-Type": "text/plain"

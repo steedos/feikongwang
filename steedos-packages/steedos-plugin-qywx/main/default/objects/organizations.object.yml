@@ -22,16 +22,41 @@ actions:
       function (object_name, record_id, fields) {
         console.log("sync contact------------")
         let url = `/api/qiyeweixin/suite/syncContact`;
+        
         let options = {
             type: 'post',
             async: true,
             data: JSON.stringify({ space_id: Steedos.spaceId() }),
             success: function (data) {
-              console.log("success---------")
+              console.log("success---------: ",data)
+
+              let request = setInterval(function(){
+                
+                try{
+                  let requestUrl = `/api/qiyeweixin/suite/getResult`
+                  let requestOptions = {
+                      type: 'post',
+                      async: false,
+                      data: JSON.stringify({ spaceId: Steedos.spaceId()}),
+                  }
+                  let res = Steedos.authRequest(requestUrl, requestOptions);
+                  console.log("res: ", res);
+                  if (res){
+                    clearInterval(request)
+                    window.open(res)
+                  }
+                }catch(error){
+                  clearInterval(request);
+                  console.log("error:",error)
+                } 
+                
+              },3000)
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
               console.log("同步企业微信通讯录失败！")
             }
         };
+
+        
         Steedos.authRequest(url, options);
       }

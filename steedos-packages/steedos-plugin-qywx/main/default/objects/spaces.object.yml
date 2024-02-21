@@ -53,4 +53,9 @@ fields:
     type: text
     group: 企业微信
     hidden: true
+  qywx_contact_id_translate_url:
+    label: 通讯录转义结果url
+    type: text
+    group: 企业微信
+    hidden: true
 

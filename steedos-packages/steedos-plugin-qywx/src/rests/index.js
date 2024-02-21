@@ -13,5 +13,6 @@ module.exports = {
     listen: require('./listen'),
     callback: require('./callback'),
     syncContact: require('./syncContact'),
+    getContactResult: require('./getContactResult'),
     // getAuthLogin: require('./getAuthLogin'),
 }

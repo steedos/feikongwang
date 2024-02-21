@@ -18,7 +18,7 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
-        console.log("第三方应用凭证", suite_access_token_info)
+        // console.log("第三方应用凭证", suite_access_token_info)
         return suite_access_token_info
 
     }

@@ -86,7 +86,8 @@ module.exports = {
                 "provider_access_token": providerTokenInfo.provider_access_token,
                 "media_id_list": uploadFileInfo.media_id
             });
-
+            
+            idTranslateInfo.ServiceCorpId = authSpace.qywx_corp_id;
             console.log("idTranslateInfo: ", idTranslateInfo);
             
             // await this.broker.call('@steedos/plugin-qywx.getResult', {
@@ -95,7 +96,7 @@ module.exports = {
             // });
 
             // console.log("resultInfo: ", resultInfo);
-
+            return idTranslateInfo;
         } catch (error) {
             console.log("errror: ",error);
         }
