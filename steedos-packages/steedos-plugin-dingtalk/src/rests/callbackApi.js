@@ -42,6 +42,7 @@ module.exports = {
                 return encryptor.getEncryptedMap('success', timeStamp, utils.getRandomStr(8));
             }
             if (data.data.EventType == "SYNC_HTTP_PUSH_HIGH") {
+                console.log("=====>bizData",data.data.bizData)
                 return encryptor.getEncryptedMap('success', timeStamp, utils.getRandomStr(8));
             }
             if (data.data.EventType == "check_update_suite_url") {
