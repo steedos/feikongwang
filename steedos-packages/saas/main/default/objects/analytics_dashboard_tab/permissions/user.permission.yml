@@ -1,0 +1,62 @@
+name: DashboardTab.用户
+allowCreate: false
+allowCreateFiles: false
+allowDelete: false
+allowDeleteFiles: false
+allowEdit: false
+allowEditFiles: false
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: id
+    readable: true
+    editable: true
+  - field: dashboard_id
+    readable: true
+    editable: true
+  - field: position
+    readable: true
+    editable: true
+  - field: entity_id
+    readable: true
+    editable: true
+  - field: created_at
+    readable: true
+    editable: true
+  - field: updated_at
+    readable: true
+    editable: true

@@ -1,8 +1,8 @@
 /*
  * @Author: sunhaolin@hotoa.com
  * @Date: 2022-03-04 17:02:52
- * @LastEditors: 孙浩林 sunhaolin@steedos.com
- * @LastEditTime: 2023-10-28 11:07:13
+ * @LastEditors: baozhoutao@steedos.com
+ * @LastEditTime: 2024-02-21 14:49:29
  * @Description: 
  */
 "use strict";
@@ -36,7 +36,7 @@ module.exports = {
 	/**
 	 * Dependencies
 	 */
-	dependencies: ['~packages-standard-objects'],
+	dependencies: ['~packages-standard-objects', '@steedos-labs/analytics'],
 
 	/**
 	 * Actions

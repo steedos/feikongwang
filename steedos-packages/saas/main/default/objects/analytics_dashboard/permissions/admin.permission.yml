@@ -1,0 +1,14 @@
+name: Dashboard.管理员
+allowCreate: false
+allowCreateFiles: false
+allowDelete: false
+allowDeleteFiles: false
+allowEdit: false
+allowEditFiles: false
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: false
+modifyAllRecords: false
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
