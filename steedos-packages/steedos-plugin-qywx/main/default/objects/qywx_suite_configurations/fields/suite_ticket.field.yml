@@ -1,0 +1,5 @@
+name: suite_ticket
+label: suite_ticket
+type: text
+hidden: true
+sort_no: 100

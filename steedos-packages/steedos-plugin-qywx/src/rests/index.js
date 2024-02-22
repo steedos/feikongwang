@@ -12,7 +12,8 @@ module.exports = {
     stockData: require('./stockData'),
     listen: require('./listen'),
     callback: require('./callback'),
-    syncContact: require('./syncContact'),
+    downloadContact: require('./downloadContact'),
+    uploadContact: require('./uploadContact'),
     getContactResult: require('./getContactResult'),
     // getAuthLogin: require('./getAuthLogin'),
 }

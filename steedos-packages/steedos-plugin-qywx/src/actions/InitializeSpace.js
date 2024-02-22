@@ -22,7 +22,6 @@ module.exports = {
         let agentid = permanentCodeConfig.auth_info.agent[0].agentid
         let permanent_code = permanentCodeConfig.permanent_code;
         let corp_name = permanentCodeConfig.auth_corp_info.corp_name;
-        
         try {
             // 获取管理员列表
             let adminList = await this.broker.call('@steedos/plugin-qywx.getAdmiList', {

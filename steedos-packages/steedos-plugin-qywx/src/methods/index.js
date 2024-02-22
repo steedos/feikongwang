@@ -9,4 +9,5 @@
 module.exports = {
     getSpaceById: require('./getSpaceById'),
     getSpaceTop1: require('./getSpaceTop1'),
+    getFileInfoFromBase64: require('./getFileInfoFromBase64'),
 }

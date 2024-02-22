@@ -1,0 +1,5 @@
+name: suite_access_token
+label: suite_access_token
+type: text
+hidden: true
+sort_no: 110

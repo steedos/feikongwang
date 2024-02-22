@@ -12,7 +12,7 @@ fields:
     hidden: true
 actions:
   sync_contacts:
-    label: 同步企业微信通讯录
+    label: 下载企业微信通讯录
     visible: !<tag:yaml.org,2002:js/function> |-
       function (object_name, record_id, record_permissions) {
         return true;
@@ -21,7 +21,7 @@ actions:
     todo: !<tag:yaml.org,2002:js/function> |-
       function (object_name, record_id, fields) {
         console.log("sync contact------------")
-        let url = `/api/qiyeweixin/suite/syncContact`;
+        let url = `/api/qiyeweixin/suite/downloadContact`;
         
         let options = {
             type: 'post',
@@ -29,10 +29,13 @@ actions:
             data: JSON.stringify({ space_id: Steedos.spaceId() }),
             success: function (data) {
               console.log("success---------: ",data)
-
+              let i = 1;
               let request = setInterval(function(){
                 
                 try{
+                  if (i > 9){
+                    clearInterval(request);
+                  }
                   let requestUrl = `/api/qiyeweixin/suite/getResult`
                   let requestOptions = {
                       type: 'post',
@@ -45,6 +48,7 @@ actions:
                     clearInterval(request)
                     window.open(res)
                   }
+                  i++;
                 }catch(error){
                   clearInterval(request);
                   console.log("error:",error)

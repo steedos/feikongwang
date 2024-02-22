@@ -2871,6 +2871,18 @@ diff@^4.0.1:
   resolved "https://registry.npmmirror.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
+dingtalk-encrypt@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmmirror.com/dingtalk-encrypt/-/dingtalk-encrypt-2.1.1.tgz#4d9efc1fcd837f47f093f205230c1b14dd0a950a"
+  integrity sha512-C+kc/kgBhsGl8vU0Yu1IWxCJ2TKx5XDvgSnMM1z1vgHCFrRSJ60Ad9+yDrM44MiJYYIrjRu0kTVrgUzURg5/UA==
+
+dingtalk-jsapi@^3.0.31:
+  version "3.0.31"
+  resolved "https://registry.npmmirror.com/dingtalk-jsapi/-/dingtalk-jsapi-3.0.31.tgz#649a53b3de36a2ede5ebb0c076f0b7f54bb86a78"
+  integrity sha512-5Z6edW7tNkcPcLpGNrq+xqwfCLCnl1Ax8V0M3JhUeWlx0OzgByhZTkwEgVuF6ytFBKCrNvTNrnFSbKM5uREPoQ==
+  dependencies:
+    promise-polyfill "^7.1.0"
+
 dir-glob@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmmirror.com/dir-glob/-/dir-glob-3.0.1.tgz#56dbf73d992a4a93ba1584f4534063fd2e41717f"
@@ -3219,7 +3231,7 @@ exponential-backoff@^3.1.1:
   resolved "https://registry.npmmirror.com/exponential-backoff/-/exponential-backoff-3.1.1.tgz#64ac7526fe341ab18a39016cd22c787d01e00bf6"
   integrity sha512-dX7e/LHVJ6W3DE1MHWi9S1EYzDESENfLrYohG2G++ovZrYOkm4Knwa0mc1cn84xJOR4KEU0WSchhLbd0UklbHw==
 
-express@^4.18.2:
+express@^4.17.1, express@^4.18.2:
   version "4.18.2"
   resolved "https://registry.npmmirror.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
   integrity sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==
@@ -5055,6 +5067,13 @@ node-xlsx@^0.16.1:
     buffer-from "^1.1.1"
     xlsx "^0.17.0"
 
+node-xlsx@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.npmmirror.com/node-xlsx/-/node-xlsx-0.23.0.tgz#0c4b642f9457712d68f30e1e30351d640cc37e90"
+  integrity sha512-r3KaSZSsSrK92rbPXnX/vDdxURmPPik0rjJ3A+Pybzpjyrk4G6WyGfj8JIz5dMMEpCmWVpmO4qoVPBxnpLv/8Q==
+  dependencies:
+    xlsx "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
+
 nopt@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmmirror.com/nopt/-/nopt-5.0.0.tgz#530942bb58a512fccafe53fe210f13a25355dc88"
@@ -5630,6 +5649,11 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmmirror.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==
+
+promise-polyfill@^7.1.0:
+  version "7.1.2"
+  resolved "https://registry.npmmirror.com/promise-polyfill/-/promise-polyfill-7.1.2.tgz#ab05301d8c28536301622d69227632269a70ca3b"
+  integrity sha512-FuEc12/eKqqoRYIGBrUptCBRhobL19PS2U31vMNTfyck1FxPyMfgsXyW4Mav85y/ZN1hop3hOwRlUDok23oYfQ==
 
 promise-retry@^2.0.1:
   version "2.0.1"
@@ -7217,6 +7241,10 @@ xlsx@^0.17.0:
     ssf "~0.11.2"
     wmf "~1.0.1"
     word "~0.3.0"
+
+"xlsx@https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz":
+  version "0.19.3"
+  resolved "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz#f804c1850e2da5260165db0a059dc2a6099d55f3"
 
 xml-name-validator@^3.0.0:
   version "3.0.0"

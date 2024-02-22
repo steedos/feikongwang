@@ -23,11 +23,11 @@ module.exports = {
             let fileName = "contactInfo-" + authSpace.qywx_corp_id + ".xlsx";
 
             worksheet.columns = [
+                { header: 'type', key: 'type', width: 10 },
                 { header: 'id', key: 'id', width: 10 },
-                { header: 'userId', key: 'userId', width: 20 },
-                { header: 'userName', key: 'userName', width: 10 },
-                { header: 'departmentId', key: 'departmentId', width: 10 },
-                { header: 'departmentName', key: 'departmentName', width: 10 }
+                { header: 'name', key: 'name', width: 20 },
+                { header: 'status', key: 'status', width: 10 },
+                { header: 'department', key: 'department', width: 10 }
             ];
 
             let departmentListObj = await this.broker.call('@steedos/plugin-qywx.getDepartmentList', {
@@ -41,22 +41,22 @@ module.exports = {
             });
             // console.log("userListObj:",userListObj);
 
-            let idIndex = 0;
+            // let idIndex = 0;
 
             for (let org of departmentListObj.department) {
-                idIndex++;
+                // idIndex++;
                 // 将$departmentName=1$替换成部门id为1对应的部门名；
                 let orgName = "$departmentName=" + org.name + "$";
-                worksheet.addRow({ id: idIndex, departmentId: org.id, departmentName: orgName });
+                worksheet.addRow({ type: "department", id: org.id, name: orgName});
             }
 
             for (let user of userListObj.userlist) {
                 // 有效用户
                 if (user.status == 1) {
-                    idIndex++;
+                    // idIndex++;
                     // 将$userName=lisi007$替换成userid为lisi007对应的用户姓名；
                     let userName = "$userName=" + user.name + "$";
-                    worksheet.addRow({ id: idIndex, userId: user.userid, userName: userName });
+                    worksheet.addRow({ type: "user", id: user.userid, name: userName, status: user.status, department: user.department });
                 }
             }
 

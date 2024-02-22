@@ -1,7 +1,7 @@
 module.exports = {
     rest: {
         method: "POST",
-        fullPath: "/api/qiyeweixin/suite/syncContact"
+        fullPath: "/api/qiyeweixin/suite/downloadContact"
     },
     async handler(ctx) {
         //第三方服务商回调验证
