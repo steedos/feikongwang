@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 module.exports = {
     handler: async function (ctx) {
+        // 获取第三方应用授权企业的accessToken
         let {suiteKey,suiteSecret,authCorpId,suiteTicket} = ctx.params;
         let getAccessApi = "https://api.dingtalk.com/v1.0/oauth2/corpAccessToken"
         let data = {

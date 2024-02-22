@@ -1,6 +1,7 @@
 const aes = require('wx-ding-aes')
 const DingTalkEncryptor = require('dingtalk-encrypt');
 const utils = require('dingtalk-encrypt/Utils');
+const crypto = require('crypto');
 module.exports = {
     rest: {
         method: "POST",
@@ -18,7 +19,9 @@ module.exports = {
             var suiteId = process.env.STEEDOS_DD_SAAS_SUITEID;//必填，企业ID
             var token = process.env.STEEDOS_DD_SAAS_TOKEN;    //必须和在注册是一样
             var aesKey = process.env.STEEDOS_DD_SAAS_AESKEY;
-            var key = process.env.STEEDOS_DD_SAAS_SUITEKEY
+            var key = process.env.STEEDOS_DD_SAAS_SUITEKEY;
+            var suiteSecret = process.env.STEEDOS_DD_SAAS_SUITESECRET;
+            var corpId = process.env.STEEDOD_DD_SAAS_CORPID
             var encrypt = callbackInfo.encrypt;
 
             data = await broker.call('dingtalk.decrypt', {
@@ -42,7 +45,26 @@ module.exports = {
                 return encryptor.getEncryptedMap('success', timeStamp, utils.getRandomStr(8));
             }
             if (data.data.EventType == "SYNC_HTTP_PUSH_HIGH") {
-                console.log("=====>bizData",data.data.bizData)
+                console.log("=====>bizData", data.data.bizData)
+                // 当前时间戳
+                let timestamp = new Date().getTime();
+                let biz_data = JSON.parse(data.data.bizData[0].biz_data);
+                console.log("=====>biz_data",biz_data)
+                let signatureString = `${timestamp}\n${biz_data.suiteTicket}`
+                let signingKey = suiteSecret
+                 let signinCode = crypto.createHmac('sha256', signingKey).update(signatureString).digest().toString('base64');
+                 console.log("=====>signinCode",signinCode);
+                 redirect_uri = encodeURIComponent(signinCode)
+                 console.log("========>签名urlEncode",redirect_uri)
+                // 获取企业授权信息
+                let authinfo = await this.broker.call('@steedos/plugin-dingtalk.dingtalkGetAuthinfo', {
+                    "accessKey": key,
+                    "timestamp":timestamp,
+                    "suiteTicket": biz_data.suiteTicket,
+                    "signature": redirect_uri,
+                    "suite_key": key,
+                    "auth_corpid": corpId
+                });
                 return encryptor.getEncryptedMap('success', timeStamp, utils.getRandomStr(8));
             }
             if (data.data.EventType == "check_update_suite_url") {
