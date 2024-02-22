@@ -19,3 +19,7 @@ sortable: false
 type: master_detail
 unique: false
 write_requires_master_read: true
+filtersFunction:  |-
+  function(filters,values) {
+    return [["instance_state","=",undefined]];
+  }
