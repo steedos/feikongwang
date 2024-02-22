@@ -1,0 +1,53 @@
+name: standard_approve
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "发起审批",
+              "id": "u:6887f3ab860a",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "toast",
+                              "stopPropagation": true,
+                              "expression": "${_master && _master.record.total_cost < _master.record.amount}",
+                              "args": {
+                                  "msgType": "error",
+                                  "position": "top-right",
+                                  "closeButton": true,
+                                  "showIcon": true,
+                                  "msg": "本次报销金额超过费用发票金额，请修改后提交审批",
+                                  "className": "theme-toast-action-scope"
+                              }
+                          },
+                          {
+                              "actionType": "steedos_actions_standard_approve"
+                          }
+                      ]
+                  }
+              }
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "record": {},
+          "permissions": {},
+          "dataComponentId": "",
+          "record_id": ""
+      },
+      "bodyClassName": "p-0",
+      "id": "u:5dd49d3a508c"
+  }
+is_enable: true
+label: 发起审批
+'on': record_only
+type: amis_button
+visible: true

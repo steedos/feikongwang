@@ -21,5 +21,6 @@ enable_tree: false
 enable_workflow: true
 icon: medication_statement
 is_enable: true
+is_system: true
 label: 报销单
 version: 2
