@@ -103,7 +103,7 @@ amis_schema: |-
                 ]
               }
             },
-            "visibleOn": "${_master.record.instance_state !='approved'}"
+            "visibleOn": "${!_master.record.locked}"
           }
       ],
       "regions": [

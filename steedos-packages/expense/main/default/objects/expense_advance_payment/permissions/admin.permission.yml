@@ -56,4 +56,4 @@ field_permissions:
     editable: true
   - field: expense_reports
     readable: true
-    editable: true
+    editable: false

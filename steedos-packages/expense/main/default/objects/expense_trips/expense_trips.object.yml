@@ -13,6 +13,7 @@ enable_events: false
 enable_files: true
 enable_inline_edit: true
 enable_instances: true
+enable_lock_detail: true
 enable_notes: false
 enable_share: false
 enable_split: true

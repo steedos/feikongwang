@@ -109,7 +109,7 @@ amis_schema: |-
           ]
         }
       },
-      "visibleOn": "${_isRelated && _master.record.instance_state !='approved'}"
+      "visibleOn": "${_isRelated && !_master.record.locked}"
     }
   ],
   "regions": [
