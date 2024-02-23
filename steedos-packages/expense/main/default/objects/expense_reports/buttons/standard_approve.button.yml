@@ -30,7 +30,8 @@ amis_schema: |-
                           }
                       ]
                   }
-              }
+              },
+              "hiddenOn": "${_master && _master.record.instance_state}"
           }
       ],
       "regions": [
