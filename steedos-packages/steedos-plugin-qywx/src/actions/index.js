@@ -30,7 +30,7 @@ module.exports = {
     getUserDetailInfo3rd: require('./getUserDetailInfo3rd'),
     storeSuiteTicket: require('./storeSuiteTicket'),
     getPermanentCode: require('./getPermanentCode'),
-    createSpaces_users: require('./createSpaces_users'),
+    createSpaceUser: require('./createSpaceUser'),
     getConfigurations: require('./getConfigurations'),
     getAdmiList:require('./getAdmiList'),
     InitializeSpace:require('./InitializeSpace'),

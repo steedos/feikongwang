@@ -63,7 +63,7 @@
 //          * 5、判断是否在同一个工作区：根据space表中的qywx_corp_id区分，若相同则表示在
 //          */
 //         // 创建space_user
-//         const userInfo = await ctx.broker.call('@steedos/plugin-qywx.createSpaces_users', {
+//         const userInfo = await ctx.broker.call('@steedos/plugin-qywx.createSpaceUser', {
 //             "user": userDetailData,
 //             "permanentCodeDoc": permanentCodeDoc,
 //         });

@@ -46,7 +46,7 @@ actions:
                   console.log("res: ", res);
                   if (res){
                     clearInterval(request)
-                    window.open(res)
+                    window.open(res,"_blank")
                   }
                   i++;
                 }catch(error){

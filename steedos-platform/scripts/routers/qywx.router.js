@@ -563,7 +563,7 @@ router.get('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, n
 
 
     // 创建人员信息
-    const userInfo = await broker.call('@steedos/plugin-qywx.createSpaces_users', {
+    const userInfo = await broker.call('@steedos/plugin-qywx.createSpaceUser', {
         "user": userDetailData
     });
     console.log("userInfo======", userInfo);

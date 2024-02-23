@@ -26,6 +26,9 @@ module.exports = {
                 { header: 'type', key: 'type', width: 10 },
                 { header: 'id', key: 'id', width: 10 },
                 { header: 'name', key: 'name', width: 20 },
+                { header: 'corpid', key: 'corpid', width: 20 },
+                { header: 'parentid', key: 'parentid', width: 10 },
+                { header: 'order', key: 'order', width: 10 },
                 { header: 'status', key: 'status', width: 10 },
                 { header: 'department', key: 'department', width: 10 }
             ];
@@ -47,7 +50,9 @@ module.exports = {
                 // idIndex++;
                 // 将$departmentName=1$替换成部门id为1对应的部门名；
                 let orgName = "$departmentName=" + org.name + "$";
-                worksheet.addRow({ type: "department", id: org.id, name: orgName});
+                let orgId = org.id;
+                let parentId = org.parentid;
+                worksheet.addRow({ type: "department", id: orgId.toString(), name: orgName, corpid: authSpace.qywx_corp_id, parentid: parentId.toString(), order: org.order});
             }
 
             for (let user of userListObj.userlist) {
@@ -56,7 +61,8 @@ module.exports = {
                     // idIndex++;
                     // 将$userName=lisi007$替换成userid为lisi007对应的用户姓名；
                     let userName = "$userName=" + user.name + "$";
-                    worksheet.addRow({ type: "user", id: user.userid, name: userName, status: user.status, department: user.department });
+                    let dep = user.department;
+                    worksheet.addRow({ type: "user", id: user.userid, name: userName, corpid: authSpace.qywx_corp_id, status: user.status, department: dep.toString()});
                 }
             }
 
