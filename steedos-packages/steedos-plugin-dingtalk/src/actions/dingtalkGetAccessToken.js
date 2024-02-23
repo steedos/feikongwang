@@ -17,7 +17,6 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
-          console.log("======>accessToken",accessToken);
           return accessToken
     }
 }

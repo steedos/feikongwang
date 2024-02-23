@@ -8,4 +8,8 @@ module.exports = {
     dingtalkGetUserIdByUnionid: require('./dingtalkGetUserIdByUnionid'),
     dingtalkGetUserInfo: require('./dingtalkGetUserInfo'),
     dingtalkGetAuthinfo: require('./dingtalkGetAuthinfo'),
+    dingtalkInitializeSpace: require('./dingtalkInitializeSpace'),
+    createSpacesUsers: require('./createSpacesUsers'),
+    dingtalkStoreSuiteTicket: require('./dingtalkStoreSuiteTicket'),
+    dingtalkgetConfigurations: require('./dingtalkgetConfigurations'),
 }

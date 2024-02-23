@@ -17,6 +17,6 @@ module.exports = {
         if (response.errcode != 0) {
             throw response.errmsg;
         }
-          return response
+          return response.result
     }
 }

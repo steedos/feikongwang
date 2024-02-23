@@ -46,25 +46,55 @@ module.exports = {
             }
             if (data.data.EventType == "SYNC_HTTP_PUSH_HIGH") {
                 console.log("=====>bizData", data.data.bizData)
-                // 当前时间戳
-                let timestamp = new Date().getTime();
-                let biz_data = JSON.parse(data.data.bizData[0].biz_data);
-                console.log("=====>biz_data",biz_data)
-                let signatureString = `${timestamp}\n${biz_data.suiteTicket}`
-                let signingKey = suiteSecret
-                 let signinCode = crypto.createHmac('sha256', signingKey).update(signatureString).digest().toString('base64');
-                 console.log("=====>signinCode",signinCode);
-                 redirect_uri = encodeURIComponent(signinCode)
-                 console.log("========>签名urlEncode",redirect_uri)
-                // 获取企业授权信息
-                let authinfo = await this.broker.call('@steedos/plugin-dingtalk.dingtalkGetAuthinfo', {
-                    "accessKey": key,
-                    "timestamp":timestamp,
-                    "suiteTicket": biz_data.suiteTicket,
-                    "signature": redirect_uri,
-                    "suite_key": key,
-                    "auth_corpid": corpId
-                });
+                const bizData = data.data.bizData;
+                let suiteTicket = ""
+                for (let dataDoc of bizData) {
+                    if (dataDoc.biz_type == 2) {
+                        let biz_data = JSON.parse(dataDoc.biz_data);
+                        suiteTicket = biz_data.suiteTicket;
+                        await this.broker.call('@steedos/plugin-dingtalk.dingtalkStoreSuiteTicket', {
+                            "suiteTicket": suiteTicket
+                        });
+                 
+                        break
+                    }
+                }
+                for (let dataDoc of bizData) {
+                    if (dataDoc.biz_type == 4) {
+                        let biz_data = JSON.parse(dataDoc.biz_data);
+                        // 初始化space
+                        await this.broker.call('@steedos/plugin-dingtalk.dingtalkInitializeSpace', {
+                            "authinfo": biz_data,
+                            "authCorpId": corpId,
+                            "suiteTicket": suiteTicket
+
+                        });
+                        break
+                    }
+                }
+                // // 当前时间戳
+                // let timestamp = new Date().getTime();
+                // let biz_data = JSON.parse(data.data.bizData[0].biz_data);
+                // console.log("=====>biz_data", biz_data)
+                // if (biz_data.auth_user_info) {
+
+                // }
+                // let signatureString = `${timestamp}\n${biz_data.suiteTicket}`
+                // let signingKey = suiteSecret
+                //  let signinCode = crypto.createHmac('sha256', signingKey).update(signatureString).digest().toString('base64');
+                //  console.log("=====>signinCode",signinCode);
+                //  redirect_uri = encodeURIComponent(signinCode)
+                //  console.log("========>签名urlEncode",redirect_uri)
+                // // 获取企业授权信息
+                // let authinfo = await this.broker.call('@steedos/plugin-dingtalk.dingtalkGetAuthinfo', {
+                //     "accessKey": key,
+                //     "timestamp":timestamp,
+                //     "suiteTicket": biz_data.suiteTicket,
+                //     "signature": redirect_uri,
+                //     "suite_key": key,
+                //     "auth_corpid": corpId
+                // });
+
                 return encryptor.getEncryptedMap('success', timeStamp, utils.getRandomStr(8));
             }
             if (data.data.EventType == "check_update_suite_url") {

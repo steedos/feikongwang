@@ -1,0 +1,8 @@
+extend: users
+fields:
+ dingtalk_id:
+    label: 钉钉账号
+    type: text
+    hidden: false
+    sort_no: 400
+    group: 高级

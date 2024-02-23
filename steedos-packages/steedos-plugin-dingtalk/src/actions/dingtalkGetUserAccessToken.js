@@ -19,9 +19,6 @@ module.exports = {
             }
         }).then(res => res.json());
         console.log("======>获取获取用户token",response);
-        if (response.errcode != 0) {
-            throw response.errmsg;
-        }
           return response
     }
 }

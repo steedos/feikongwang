@@ -1,5 +1,5 @@
 // let WXBizMsgCrypt = require('wechat-crypto');
-const router =require('@steedos/router').staticRouter()
+const router = require('@steedos/router').staticRouter()
 const Cookies = require("cookies");
 const objectql = require('@steedos/objectql');
 const fs = require('fs');
@@ -14,7 +14,7 @@ const auth = require("@steedos/auth");
 // let TICKET_EXPIRES_IN = config.ticket_expires_in || 1000 * 60 * 20 //20分钟
 
 
-clearAuthCookies = function(req, res) {
+clearAuthCookies = function (req, res) {
     let cookies, uri;
     cookies = new Cookies(req, res);
     cookies.set("X-User-Id");
@@ -40,7 +40,7 @@ destroyToken = async function (userId, loginToken) {
         let user = await steedosSchema.getObject('users').findOne(userId);
         let tokens = user.services.resume.loginTokens;
         tokens.splice(tokens.findIndex(e => e.hashedToken === loginToken), 1)
-        await steedosSchema.getObject('users').update(userId,{"services.resume.loginTokens": tokens});
+        await steedosSchema.getObject('users').update(userId, { "services.resume.loginTokens": tokens });
     } catch (error) {
         console.error(error);
         console.log("Failed to destroyToken with error: " + error);
@@ -189,16 +189,18 @@ router.post('/api/dingtalk/listen', async function (req, res) {
 
 
 
-    data = await broker.call('dingtalk.decrypt', {data: {
-        signature: signature,
-        nonce: nonce,
-        timeStamp: timeStamp,
-        suiteKey: suiteKey,
-        token: token,
-        aesKey: aesKey,
-        encrypt: encrypt
-    }})
-    
+    data = await broker.call('dingtalk.decrypt', {
+        data: {
+            signature: signature,
+            nonce: nonce,
+            timeStamp: timeStamp,
+            suiteKey: suiteKey,
+            token: token,
+            aesKey: aesKey,
+            encrypt: encrypt
+        }
+    })
+
     try {
         // console.log(data.data.EventType)
         switch (data.data.EventType) {
@@ -284,6 +286,58 @@ router.get('/api/sync/dingtalkId', async function (req, res) {
         Dingtalk.write(error)
     }
 
+});
+
+// 钉钉单点登录费控王
+router.get('/api/dingtalk/feikongwang/auth_login', async function (req, res) {
+    const { code, authCode } = req.query;
+    const broker = objectql.getSteedosSchema().broker;
+    let suiteKey = process.env.STEEDOS_DD_SAAS_SUITEKEY;
+    let suiteSecret = process.env.STEEDOS_DD_SAAS_SUITESECRET;
+    let corpId = process.env.STEEDOD_DD_SAAS_CORPID
+    // 获取获取用户token
+    let userToken = await broker.call('@steedos/plugin-dingtalk.dingtalkGetUserAccessToken', {
+        "clientId": suiteKey,
+        "clientSecret": suiteSecret,
+        "code": authCode,
+        // "refreshToken":"",
+        "grantType": "authorization_code"
+    });
+    // 获取用户通讯录个人信息
+    let user = await broker.call('@steedos/plugin-dingtalk.dingtalkGetContactUser', {
+        "accessToken": userToken.accessToken,
+        "unionId": "me"
+    });
+    // 获取第三方应用授权企业的accessToken
+    let conf = await broker.call('@steedos/plugin-dingtalk.dingtalkgetConfigurations', {
+        "_id":corpId,
+    });
+    // console.log("获取第三方应用授权企业的accessToken", accessTokenInfo)
+    console.log("获取第三方应用授权企业的accessToken",conf)
+    // 根据unionid获取用户userid
+    let userIdDoc = await broker.call('@steedos/plugin-dingtalk.dingtalkGetUserIdByUnionid', {
+        "accessToken": conf.suite_access_token,
+        "unionId": user.unionId
+    });
+    // 查询用户详情
+    let userInfoDoc = await broker.call('@steedos/plugin-dingtalk.dingtalkGetUserInfo', {
+        "access_token": conf.suite_access_token,
+        "userid": userIdDoc.result.userid
+    });
+    console.log("用户详情", userInfoDoc);
+
+    // 创建space_users
+    const userInfo = await broker.call('@steedos/plugin-dingtalk.createSpacesUsers', {
+        "user": userInfoDoc
+    });
+    let stampedAuthToken = auth.generateStampedLoginToken();
+    let authtToken = stampedAuthToken.token;
+    let hashedToken = auth.hashStampedToken(stampedAuthToken);
+    await auth.insertHashedLoginToken(userInfo.userId, hashedToken);
+    auth.setAuthCookies(req, res, userInfo.userId, authtToken, userInfo.spaceId);
+    res.setHeader('X-Space-Token', userInfo.spaceId + ',' + authtToken);
+    res.redirect(302, '/');
+    return res.end('');
 });
 
 exports.default = router;
