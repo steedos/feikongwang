@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 module.exports = {
     handler: async function (ctx) {
         const { authinfo,authCorpId, suiteTicket} = ctx.params;
-        //console.log("初始化space",ctx.params)
+        console.log("初始化space",ctx.params)
         let suiteKey = process.env.STEEDOS_DD_SAAS_SUITEKEY;
         let suiteSecret = process.env.STEEDOS_DD_SAAS_SUITESECRET
         const spaceObj = this.getObject('spaces');
@@ -43,7 +43,8 @@ module.exports = {
                     name: authinfo.auth_corp_info.full_corp_name,
                     modified_by: space.owner,
                     modified: new Date(),
-                    dingtalk_corp_id: authinfo.auth_corp_info.corpid
+                    dingtalk_corp_id: authinfo.auth_corp_info.corpid,
+                    dingtalk_agent_id:authinfo.auth_info.agent.agentid
                 })
             }else {
                 // 创建space
