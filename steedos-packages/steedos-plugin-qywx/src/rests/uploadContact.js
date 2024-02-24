@@ -35,7 +35,7 @@ module.exports = {
             let authSpace = await spaceObj.findOne({filters: [['qywx_corp_id', "=", corpid]] });
             console.log("uploadcontact_spaceObj",authSpace);
             for(let info of excelData){
-                console.log("info: ",info);
+                // console.log("info: ",info);
                 // 更新部门
                 if(info[0] == "department"){
                     let qywxOrgId = info[1].toString();
@@ -69,31 +69,52 @@ module.exports = {
                 if (info[0] == "user"){
                     let qywxUserId = info[1].toString();
                     let userName = info[2];
+                    let orgIds = info[7].split(',');
+                    let orgArray = [];
+                    for (let orgId of orgIds){
+                        let orgInfo = await orgObj.findOne({filters: [['qywx_id', "=", orgId], ['qywx_space', "=", info[3]]] })
+                        if (orgInfo){
+                            orgArray.push(orgInfo._id) 
+                        }
+                    }
                     let spaceUser = await spaceUserObj.findOne({ filters: [['qywx_id', "=", qywxUserId], ['qywx_space', "=", info[3]]] });
                     if (spaceUser){
+                        if (orgArray.length == 0){
+                            orgArray = spaceUser.organizations;
+                        }
                         await spaceUserObj.update(org._id,{
                             name: userName,
+                            organizations: orgArray
                         })
                     }else{
                         let insertObj = {}
                         insertObj.corpid = corpid;
                         insertObj.name = userName;
                         insertObj.userid = qywxUserId;
-                        const userInfo = await broker.call('@steedos/plugin-qywx.createSpaceUser', {
+                        let userInfo = await broker.call('@steedos/plugin-qywx.createSpaceUser', {
                             "user": insertObj
                         });
-                        // console.log("userInfo======", userInfo);
+                        if (orgArray.length > 0){
+                            await spaceUserObj.update(userInfo.id, {
+                                organizations: orgArray
+                            })
+                        }
                     }
                 }
             }
 
             return {
                 "status": 0,
-                "msg": "ok",
+                "msg": "企业微信通讯录同步成功！",
                 "data": {}
             }
         } catch (error) {
             console.log("error: ", error)
+            return {
+                "status": -1,
+                "msg": `企业微信通讯录同步失败：${error}`,
+                "data": {}
+            }
         }
 
     }

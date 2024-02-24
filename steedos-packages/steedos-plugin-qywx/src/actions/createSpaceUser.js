@@ -19,7 +19,9 @@ module.exports = {
                 let spaceUserDoc = await spaceUsersObj.findOne({ filters: [['qywx_id', '=', user.userid],['space', '=', spaceDoc._id]] });
                 if (userDoc && spaceUserDoc) {
                     return {
+                        id: spaceUserDoc._id,
                         userId:userDoc._id,
+                        organizations: spaceUserDoc.organizations,
                         spaceId:spaceDoc._id
                     };
                 } else {
@@ -47,8 +49,10 @@ module.exports = {
                     })
     
                     return {
+                        id: newSpaceUser._id,
                         userId: newSpaceUser.user,
-                        spaceId: spaceDoc._id
+                        organizations: newSpaceUser.organizations,
+                        spaceId: spaceDoc._id,
                     }
                    
                 }

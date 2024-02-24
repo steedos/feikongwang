@@ -19,7 +19,7 @@ module.exports = {
         // 获取永久授权码
         const permanentCodeConfig = await this.broker.call('@steedos/plugin-qywx.getPermanentCode', {auth_code: auth_code, suite_access_token: suite_access_token});
         let auth_corpid = permanentCodeConfig.auth_corp_info.corpid;
-        let agentid = permanentCodeConfig.auth_info.agent[0].agentid
+        let agentid = permanentCodeConfig.auth_info.agent[0].agentid;
         let permanent_code = permanentCodeConfig.permanent_code;
         let corp_name = permanentCodeConfig.auth_corp_info.corp_name;
         try {
