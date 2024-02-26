@@ -14,8 +14,13 @@ actions:
   sync_contacts:
     label: 下载企业微信通讯录
     visible: !<tag:yaml.org,2002:js/function> |-
-      function (object_name, record_id, record_permissions) {
-        return true;
+      function (object_name, record_id, record_permissions ,record) {
+        if(record.__super.__super.__super.__super.global.user.profile=="admin"){
+           return true;
+        }else{
+           return false;
+        }
+       
       }
     'on': list
     todo: !<tag:yaml.org,2002:js/function> |-

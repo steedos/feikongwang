@@ -98,7 +98,8 @@ amis_schema: |-
                   }
                 ]
               }
-            }
+            },
+            "visibleOn": "${global && global.user.profile=='admin'}"
           }
       ],
       "regions": [

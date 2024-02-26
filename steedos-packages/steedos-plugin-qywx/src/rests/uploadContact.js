@@ -72,17 +72,17 @@ module.exports = {
                     let orgIds = info[7].split(',');
                     let orgArray = [];
                     for (let orgId of orgIds){
-                        let orgInfo = await orgObj.findOne({filters: [['qywx_id', "=", orgId], ['qywx_space', "=", info[3]]] })
+                        let orgInfo = await orgObj.findOne({filters: [['qywx_id', "=", orgId], ['space', "=", authSpace._id]] })
                         if (orgInfo){
                             orgArray.push(orgInfo._id) 
                         }
                     }
-                    let spaceUser = await spaceUserObj.findOne({ filters: [['qywx_id', "=", qywxUserId], ['qywx_space', "=", info[3]]] });
+                    let spaceUser = await spaceUserObj.findOne({ filters: [['qywx_id', "=", qywxUserId], ['space', "=", authSpace._id]] });
                     if (spaceUser){
                         if (orgArray.length == 0){
                             orgArray = spaceUser.organizations;
                         }
-                        await spaceUserObj.update(org._id,{
+                        await spaceUserObj.update(spaceUser._id,{
                             name: userName,
                             organizations: orgArray
                         })
