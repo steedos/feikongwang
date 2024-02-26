@@ -19,7 +19,7 @@ const packageLoader = require('@steedos/service-package-loader');
 module.exports = {
 	name: packageName,
 	namespace: "steedos",
-	mixins: process.env.STEEDOS_TENANT_ENABLE_SAAS == 'true' ? [] : [packageLoader],
+	mixins: process.env.STEEDOS_TENANT_ENABLE_SAAS == 'true' ? [packageLoader] : [],
 	/**
 	 * Settings
 	 */
