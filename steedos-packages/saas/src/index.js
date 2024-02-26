@@ -2,7 +2,7 @@
  * @Author: sunhaolin@hotoa.com
  * @Date: 2022-03-04 17:02:52
  * @LastEditors: baozhoutao@steedos.com
- * @LastEditTime: 2024-02-21 14:49:29
+ * @LastEditTime: 2024-02-26 15:58:21
  * @Description: 
  */
 "use strict";
@@ -19,7 +19,7 @@ const packageLoader = require('@steedos/service-package-loader');
 module.exports = {
 	name: packageName,
 	namespace: "steedos",
-	mixins: [packageLoader],
+	mixins: process.env.STEEDOS_TENANT_ENABLE_SAAS == 'true' ? [] : [packageLoader],
 	/**
 	 * Settings
 	 */
