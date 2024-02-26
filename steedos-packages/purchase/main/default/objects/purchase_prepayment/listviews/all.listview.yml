@@ -1,11 +1,13 @@
 name: all
 columns:
-  - field: supplier
   - field: name
-    width: '300'
-    wrap: true
+  - field: supplier
+  - field: due_date
   - field: amount
+  - field: is_active
   - field: payment_date
+  - field: billno
+  - field: instance_state
 filter_scope: space
 label: 所有
 shared: true

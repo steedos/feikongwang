@@ -1,6 +1,6 @@
 name: due_date
 label: 计划付款日期
-hidden: true
+hidden: false
 sort_no: 130
 sortable: true
 type: date

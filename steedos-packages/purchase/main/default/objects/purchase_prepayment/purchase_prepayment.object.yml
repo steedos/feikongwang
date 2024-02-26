@@ -1,7 +1,10 @@
 name: purchase_prepayment
 custom: true
+enable_files: false
 enable_follow: false
+enable_instances: true
 enable_share: true
+enable_workflow: true
 icon: currency
 is_enable: true
 label: 预付款

@@ -1,9 +1,0 @@
-name: recent
-columns:
-  - supplier
-  - name
-  - amount
-  - payment_date
-filter_scope: space
-label: 最近查看
-shared: true
