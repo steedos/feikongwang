@@ -17,9 +17,9 @@ tab_groups:
   - group_name: process_automation
     default_open: false
   - group_name: approval_workflow
-    default_open: false
+    default_open: true
   - group_name: advanced_settings
-    default_open: false
+    default_open: true
 tab_items:
   # admin_space_user_info:
   #   group: 个人设置
