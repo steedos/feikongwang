@@ -11,7 +11,7 @@ module.exports = {
         const corpid = process.env.STEEDOD_DD_SAAS_CORPID;
         // 根据corpid 在space查询记录
         const spaceDoc = await spaceObj.findOne({ filters: [['dingtalk_corp_id', '=', corpid]] });
-        console.log("spaceDoc",spaceDoc)
+        // console.log("spaceDoc",spaceDoc)
         try {
             if (spaceDoc) {
                 // 根据企业微信userid查询user
