@@ -157,179 +157,179 @@ module.exports = {
     },
 
     events: {
-        'push.send': {
-            async handler(ctx) {
-                let options = ctx.params;
-                let STEEDOS_TENANT_ENABLE_SAAS = process.env.STEEDOS_TENANT_ENABLE_SAAS;
-                if (STEEDOS_TENANT_ENABLE_SAAS) {
-                    try {
-                        console.log("SAAS模式下钉钉消息推送");
-                        console.log("====>options", options)
-                        if (options.from !== 'workflow') {
-                            return;
-                        }
-                        if (!options.payload) {
-                            return;
-                        }
-                        const spaces = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", options.payload.space]] } });
-                        console.log("spaces消息推送", spaces);
-                        let space = null;
-                        if (spaces && spaces.length > 0) {
-                            space = spaces[0]
-                        }
-                        if (!space) {
-                            return;
-                        }
-                        if (!space.dingtalk_corp_id) {
-                            return
-                        }
-                        let userId = options.query.userId;
-                        const spaceUsers = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["space", "=", space._id], ["user", "=", userId]] } });
-                        let space_user = null;
-                        if (spaceUsers.length > 0) {
-                            space_user = spaceUsers[0]
-                        }
-                        if (!space_user.dingtalk_id) {
-                            return;
-                        }
+        // 'push.send': {
+        //     async handler(ctx) {
+        //         let options = ctx.params;
+        //         let STEEDOS_TENANT_ENABLE_SAAS = process.env.STEEDOS_TENANT_ENABLE_SAAS;
+        //         if (STEEDOS_TENANT_ENABLE_SAAS) {
+        //             try {
+        //                 console.log("SAAS模式下钉钉消息推送");
+        //                 console.log("====>options", options)
+        //                 if (options.from !== 'workflow') {
+        //                     return;
+        //                 }
+        //                 if (!options.payload) {
+        //                     return;
+        //                 }
+        //                 const spaces = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", options.payload.space]] } });
+        //                 console.log("spaces消息推送", spaces);
+        //                 let space = null;
+        //                 if (spaces && spaces.length > 0) {
+        //                     space = spaces[0]
+        //                 }
+        //                 if (!space) {
+        //                     return;
+        //                 }
+        //                 if (!space.dingtalk_corp_id) {
+        //                     return
+        //                 }
+        //                 let userId = options.query.userId;
+        //                 const spaceUsers = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["space", "=", space._id], ["user", "=", userId]] } });
+        //                 let space_user = null;
+        //                 if (spaceUsers.length > 0) {
+        //                     space_user = spaceUsers[0]
+        //                 }
+        //                 if (!space_user.dingtalk_id) {
+        //                     return;
+        //                 }
                        
-                        let dingtalk_userId = space_user.dingtalk_id;
-                        let agentId = space.dingtalk_agent_id;
-                        let spaceId = space._id;
-                        let corpId = space.dingtalk_corp_id;
-                        let payload = options.payload;
-                        let url = "";
-                        let text = "";
-                        let title = "华炎魔方";
-                        let dingtalk_config = await this.broker.call('@steedos/plugin-dingtalk.dingtalkgetConfigurations', {
-                            "_id":corpId
-                        });
-                        console.log("=====dingtalk_config",dingtalk_config)
-                        if (payload.instance) {
-                            let pushInfo = await this.workflowPush(options, spaceId, corpId);
-                            title = pushInfo.text;
-                            text = pushInfo.title;
-                            url = pushInfo.url;
-                        } else {
-                            title = options.title;
-                            url = oauthUrl + corpId + "&redirect_url=" + payload.url;
-                        }
-                        let dintalk_url = "dingtalk://dingtalkclient/action/openapp?corpid=" + corpId + "&container_type=work_platform&app_id=136546&redirect_type=jump&redirect_url=" + encodeURIComponent(url);
-                        // 通知消息主体
-                        let msg = {
-                            "userid_list": dingtalk_userId,
-                            "agent_id": 2933586143,
-                            "to_all_user": "false",
-                            "msg": {
-                                "msgtype": "oa",
-                                "oa": {
-                                    "message_url": dintalk_url,
-                                    "pc_message_url": dintalk_url,
-                                    "head": {
-                                        "bgcolor": "FFBBBBBB",
-                                        "text": "华炎魔方"
-                                    },
-                                    "body": {
-                                        "title": title,
-                                        "author": text
-                                    }
-                                }
-                            }
-                        }
-                        // 发送推送消息
-                        await dtApi.sendMessage(msg, dingtalk_config.suite_access_token);
-                    } catch (error) {
-                        console.error("Push error reason: ", error);
-                    }
+        //                 let dingtalk_userId = space_user.dingtalk_id;
+        //                 let agentId = space.dingtalk_agent_id;
+        //                 let spaceId = space._id;
+        //                 let corpId = space.dingtalk_corp_id;
+        //                 let payload = options.payload;
+        //                 let url = "";
+        //                 let text = "";
+        //                 let title = "华炎魔方";
+        //                 let dingtalk_config = await this.broker.call('@steedos/plugin-dingtalk.dingtalkgetConfigurations', {
+        //                     "_id":corpId
+        //                 });
+        //                 console.log("=====dingtalk_config",dingtalk_config)
+        //                 if (payload.instance) {
+        //                     let pushInfo = await this.workflowPush(options, spaceId, corpId);
+        //                     title = pushInfo.text;
+        //                     text = pushInfo.title;
+        //                     url = pushInfo.url;
+        //                 } else {
+        //                     title = options.title;
+        //                     url = oauthUrl + corpId + "&redirect_url=" + payload.url;
+        //                 }
+        //                 let dintalk_url = "dingtalk://dingtalkclient/action/openapp?corpid=" + corpId + "&container_type=work_platform&app_id=136546&redirect_type=jump&redirect_url=" + encodeURIComponent(url);
+        //                 // 通知消息主体
+        //                 let msg = {
+        //                     "userid_list": dingtalk_userId,
+        //                     "agent_id": 2933586143,
+        //                     "to_all_user": "false",
+        //                     "msg": {
+        //                         "msgtype": "oa",
+        //                         "oa": {
+        //                             "message_url": dintalk_url,
+        //                             "pc_message_url": dintalk_url,
+        //                             "head": {
+        //                                 "bgcolor": "FFBBBBBB",
+        //                                 "text": "华炎魔方"
+        //                             },
+        //                             "body": {
+        //                                 "title": title,
+        //                                 "author": text
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //                 // 发送推送消息
+        //                 await dtApi.sendMessage(msg, dingtalk_config.suite_access_token);
+        //             } catch (error) {
+        //                 console.error("Push error reason: ", error);
+        //             }
 
-                } else {
-                    try {
-                        if (options.from !== 'workflow')
-                            return;
+        //         } else {
+        //             try {
+        //                 if (options.from !== 'workflow')
+        //                     return;
 
-                        if (!options.payload)
-                            return;
+        //                 if (!options.payload)
+        //                     return;
 
-                        const spaces = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", options.payload.space]] } });
+        //                 const spaces = await this.broker.call('objectql.find', { objectName: 'spaces', query: { filters: [["_id", "=", options.payload.space]] } });
 
-                        let space = null;
+        //                 let space = null;
 
-                        if (spaces && spaces.length > 0) {
-                            space = spaces[0]
-                        }
+        //                 if (spaces && spaces.length > 0) {
+        //                     space = spaces[0]
+        //                 }
 
-                        if (!space)
-                            return;
+        //                 if (!space)
+        //                     return;
 
-                        if (!space.dingtalk_corp_id || !space.dingtalk_agent_id || !space.dingtalk_key || !space.dingtalk_secret)
-                            return;
-                        let token = await dtApi.accessTokenGet(space.dingtalk_key, space.dingtalk_secret);
+        //                 if (!space.dingtalk_corp_id || !space.dingtalk_agent_id || !space.dingtalk_key || !space.dingtalk_secret)
+        //                     return;
+        //                 let token = await dtApi.accessTokenGet(space.dingtalk_key, space.dingtalk_secret);
 
-                        let userId = options.query.userId;
-                        const spaceUsers = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["space", "=", space._id], ["user", "=", userId]] } });
-                        let space_user = null;
-                        if (spaceUsers.length > 0) {
-                            space_user = spaceUsers[0]
-                        }
-                        if (!space_user.dingtalk_id)
-                            return;
+        //                 let userId = options.query.userId;
+        //                 const spaceUsers = await this.broker.call('objectql.find', { objectName: 'space_users', query: { filters: [["space", "=", space._id], ["user", "=", userId]] } });
+        //                 let space_user = null;
+        //                 if (spaceUsers.length > 0) {
+        //                     space_user = spaceUsers[0]
+        //                 }
+        //                 if (!space_user.dingtalk_id)
+        //                     return;
 
-                        let dingtalk_userId = space_user.dingtalk_id;
-                        let agentId = space.dingtalk_agent_id;
-                        let spaceId = space._id;
-                        let corpId = space.dingtalk_corp_id;
-                        let payload = options.payload;
-                        let url = "";
-                        let text = "";
-                        let title = "华炎魔方";
+        //                 let dingtalk_userId = space_user.dingtalk_id;
+        //                 let agentId = space.dingtalk_agent_id;
+        //                 let spaceId = space._id;
+        //                 let corpId = space.dingtalk_corp_id;
+        //                 let payload = options.payload;
+        //                 let url = "";
+        //                 let text = "";
+        //                 let title = "华炎魔方";
 
-                        // 审批流程
-                        if (payload.instance) {
-                            let pushInfo = await this.workflowPush(options, spaceId, corpId);
-                            title = pushInfo.text;
-                            text = pushInfo.title;
-                            url = pushInfo.url;
-                        } else {
-                            title = options.title;
-                            url = oauthUrl + corpId + "&redirect_url=" + payload.url;
-                        }
+        //                 // 审批流程
+        //                 if (payload.instance) {
+        //                     let pushInfo = await this.workflowPush(options, spaceId, corpId);
+        //                     title = pushInfo.text;
+        //                     text = pushInfo.title;
+        //                     url = pushInfo.url;
+        //                 } else {
+        //                     title = options.title;
+        //                     url = oauthUrl + corpId + "&redirect_url=" + payload.url;
+        //                 }
 
-                        if (payload.related_to) {
-                            text = options.text;
-                        }
-                        // url: dingtalk://dingtalkclient/action/openapp?corpid=免登企业corpId&container_type=work_platform&app_id=0_{应用agentid}&redirect_type=jump&redirect_url=跳转url
-                        let dintalk_url = "dingtalk://dingtalkclient/action/openapp?corpid=" + corpId + "&container_type=work_platform&app_id=0_" + space.dingtalk_agent_id + "&redirect_type=jump&redirect_url=" + encodeURIComponent(url);
+        //                 if (payload.related_to) {
+        //                     text = options.text;
+        //                 }
+        //                 // url: dingtalk://dingtalkclient/action/openapp?corpid=免登企业corpId&container_type=work_platform&app_id=0_{应用agentid}&redirect_type=jump&redirect_url=跳转url
+        //                 let dintalk_url = "dingtalk://dingtalkclient/action/openapp?corpid=" + corpId + "&container_type=work_platform&app_id=0_" + space.dingtalk_agent_id + "&redirect_type=jump&redirect_url=" + encodeURIComponent(url);
 
-                        // 通知消息主体
-                        let msg = {
-                            "userid_list": dingtalk_userId,
-                            "agent_id": agentId,
-                            "to_all_user": "false",
-                            "msg": {
-                                "msgtype": "oa",
-                                "oa": {
-                                    "message_url": dintalk_url,
-                                    "pc_message_url": dintalk_url,
-                                    "head": {
-                                        "bgcolor": "FFBBBBBB",
-                                        "text": "华炎魔方"
-                                    },
-                                    "body": {
-                                        "title": title,
-                                        "author": text
-                                    }
-                                }
-                            }
-                        }
-                        // 发送推送消息
-                        await dtApi.sendMessage(msg, token.access_token);
-                    } catch (error) {
-                        console.error("Push error reason: ", error);
-                    }
-                }
+        //                 // 通知消息主体
+        //                 let msg = {
+        //                     "userid_list": dingtalk_userId,
+        //                     "agent_id": agentId,
+        //                     "to_all_user": "false",
+        //                     "msg": {
+        //                         "msgtype": "oa",
+        //                         "oa": {
+        //                             "message_url": dintalk_url,
+        //                             "pc_message_url": dintalk_url,
+        //                             "head": {
+        //                                 "bgcolor": "FFBBBBBB",
+        //                                 "text": "华炎魔方"
+        //                             },
+        //                             "body": {
+        //                                 "title": title,
+        //                                 "author": text
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //                 // 发送推送消息
+        //                 await dtApi.sendMessage(msg, token.access_token);
+        //             } catch (error) {
+        //                 console.error("Push error reason: ", error);
+        //             }
+        //         }
 
-            }
-        }
+        //     }
+        // }
     },
 
     methods: {

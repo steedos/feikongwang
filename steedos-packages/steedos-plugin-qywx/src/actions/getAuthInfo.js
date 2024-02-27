@@ -24,7 +24,7 @@ module.exports = {
                 'Content-Type': 'application/json'
             }
         }).then(res => res.json());
-        console.log("企业授权信息", authInfo)
+        // console.log("企业授权信息", authInfo)
         return authInfo;
     }
 }

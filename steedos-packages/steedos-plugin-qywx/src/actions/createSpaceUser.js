@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 module.exports = {
     handler: async function (ctx) {
         const { user } = ctx.params
-        console.log("创建==user", user)
+        console.log("单点登录", user)
         const spaceObj = this.getObject('spaces');
         const usersObj = this.getObject('users');
         const spaceUsersObj = this.getObject("space_users");

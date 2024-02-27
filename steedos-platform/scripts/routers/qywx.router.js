@@ -468,6 +468,7 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
 router.get('/api/qiyeweixin/feikongwang/auth_login', async function (req, res, next) {
     const broker = objectql.getSteedosSchema().broker;
     var { code,state } = req.query;
+    console.log("企业微信第三方应用单点登录",req.query)
     let suite_id = process.env.STEEDOS_QYWX_SAAS_SUITEID;
     let suite_secret = process.env.STEEDOS_QYWX_SAAS_SUITE_SECRET;
 

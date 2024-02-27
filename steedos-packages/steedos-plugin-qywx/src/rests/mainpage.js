@@ -21,6 +21,7 @@ module.exports = {
         let appid = process.env.STEEDOS_QYWX_SAAS_SUITEID;
         // 消息推送重定向地址
         let { target  } = ctx.params;
+        console.log("消息推送重定向地址-----",target)
         if(!target){
             target = ''
         }

@@ -47,6 +47,9 @@ module.exports = {
                     user_accepted: true,
                     qywx_id: admin.userid
                 })
+                 await usersObj.directUpdate(user._id,{
+                    steedos_id: user._id
+                })
                 let adminInfo = {
                     "userId": user._id,
                     "qywx_admin_user": admin
@@ -96,7 +99,7 @@ module.exports = {
                 for (let userInfo of adminInfos) {
                     if (userInfo.userId == adminId[0]) {
                         let admin = await spaceUsersObj.findOne({ filters: [["user", "=", userInfo.userId], ["space", "=", space._id]] })
-                        if (admin){
+                        if (admin) {
                             await spaceUsersObj.directUpdate(admin._id, {
                                 qywx_id: userInfo.qywx_admin_user.userid,
                             })
