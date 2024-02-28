@@ -52,6 +52,7 @@ module.exports = {
                 for (let dataDoc of bizData) {
                     if (dataDoc.biz_type == 2) {
                         let biz_data = JSON.parse(dataDoc.biz_data);
+                        console.log("1111111",biz_data)
                         suiteTicket = biz_data.suiteTicket;
                         await this.broker.call('@steedos/plugin-dingtalk.dingtalkStoreSuiteTicket', {
                             "suiteTicket": suiteTicket
@@ -63,6 +64,8 @@ module.exports = {
                 for (let dataDoc of bizData) {
                     if (dataDoc.biz_type == 4) {
                         let biz_data = JSON.parse(dataDoc.biz_data);
+                        console.log("222222",biz_data);
+                        console.log("222222auth_info:",biz_data.auth_info)
                         // if (biz_data.syncAction && biz_data.syncAction == "org_suite_change") {
                         //     // 初始化space
                         //     await this.broker.call('@steedos/plugin-dingtalk.dingtalkInitializeSpace', {
@@ -78,6 +81,7 @@ module.exports = {
                                 "authinfo": biz_data,
                                 "authCorpId": corpId,
                                 "suiteTicket": suiteTicket
+                                // "agentid":biz_data.auth_info[0].agentid
                             });
                             break
                         }

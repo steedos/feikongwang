@@ -225,3 +225,31 @@ exports.sendMessage = async function(data, access_token){
     }
 }
 
+// 使用消息模版发送工作通知
+exports.sendTemplateMessage = async function(data, access_token){
+    console.log("====使用消息模版发送工作通知",access_token)
+    try {
+        let url = "https://oapi.dingtalk.com/topapi/message/corpconversation/sendbytemplate";
+        if (!url)
+            return;
+        
+        let response = await fetch(url + "?access_token=" + access_token, {
+            method: 'post',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(res => res.json());
+        
+        if (response.errcode > 0) {
+            throw response.errmsg;
+        }
+        return response.errmsg;
+    } catch (err) {
+        console.error(err);
+        throw _.extend(new Error("Failed to send message with error: " + err), {
+            response: err
+        });
+    }
+}
+

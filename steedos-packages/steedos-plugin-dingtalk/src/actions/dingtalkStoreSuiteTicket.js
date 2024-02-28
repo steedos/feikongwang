@@ -1,7 +1,7 @@
 
 module.exports = {
     handler: async function (ctx) {
-        const { suiteTicket } = ctx.params;
+        const { suiteTicket,agent_id } = ctx.params;
         let suiteKey = process.env.STEEDOS_DD_SAAS_SUITEKEY;
         let suiteSecret = process.env.STEEDOS_DD_SAAS_SUITESECRET;
         let corpId = process.env.STEEDOD_DD_SAAS_CORPID
@@ -18,7 +18,8 @@ module.exports = {
                 await this.getObject('dingtalk_suite_configurations').update(corpId,
                     {
                         "suite_ticket": suiteTicket,
-                        "suite_access_token": accessTokenInfo.accessToken
+                        "suite_access_token": accessTokenInfo.accessToken,
+                        "agent_id":agent_id
                     },
                 );
             }else{
