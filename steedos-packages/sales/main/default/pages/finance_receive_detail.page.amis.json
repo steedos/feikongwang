@@ -10,7 +10,7 @@
         },
         {
             "type": "tabs",
-            "className": "bg-white border-y sm:mt-3 p-4",
+            "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
                     "title": "明细",
