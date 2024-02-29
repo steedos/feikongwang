@@ -22,3 +22,4 @@ exports.uploadFile = "https://qyapi.weixin.qq.com/cgi-bin/service/media/upload";
 exports.idTranslate = "https://qyapi.weixin.qq.com/cgi-bin/service/contact/id_translate";
 exports.getResult = "https://qyapi.weixin.qq.com/cgi-bin/service/batch/getresult";
 exports.getAuthInfo = "https://qyapi.weixin.qq.com/cgi-bin/service/get_auth_info";
+exports.getJsapiTicket = "https://qyapi.weixin.qq.com/cgi-bin/get_jsapi_ticket";

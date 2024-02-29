@@ -5,7 +5,7 @@ amis_schema: |-
       "body": [
           {
               "type": "button",
-              "label": "同步企业微信通讯录向导",
+              "label": "同步企业微信通讯录",
               "id": "u:wizard_contacts",
               "onEvent": {
                   "click": {
@@ -87,7 +87,7 @@ amis_schema: |-
                                                   "mode": "normal"
                                               },
                                               {
-                                                  "title": "同步企业微信通讯录",
+                                                  "title": "上传企业微信通讯录",
                                                   "body": [
                                                       {
                                                           "type": "form",

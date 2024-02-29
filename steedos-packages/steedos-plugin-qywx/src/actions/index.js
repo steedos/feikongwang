@@ -44,4 +44,5 @@ module.exports = {
     getResult: require('./getResult'),
     getAuthInfo: require('./getAuthInfo'),
     changeContact: require('./changeContact'),
+    getJsapiTicket: require('./getJsapiTicket'),
 }

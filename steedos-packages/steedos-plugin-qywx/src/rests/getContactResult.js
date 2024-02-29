@@ -20,6 +20,9 @@ module.exports = {
                 qywx_contact_id_translate_url: null
             })
         }
+        // 获取企业的jsapi_ticket
+        const jsapiTicket = await ctx.broker.call('@steedos/plugin-qywx.getJsapiTicket',{});
+       console.log("========>jsapiTicket",jsapiTicket)
         let data = {}
         console.log("====第二个接口",url)
         if(url){
