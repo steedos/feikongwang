@@ -1,0 +1,232 @@
+name: sync_contact_wizard
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "同步企业微信通讯录向导",
+              "id": "u:wizard_contacts",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "同步企业微信通讯录",
+                                  "body": [
+                                      {
+                                          "type": "wizard",
+                                          "id": "u:4c9e7fb6c585",
+                                          "initApi": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/mock2/form/saveForm?waitSeconds=2",
+                                          "steps": [
+                                              {
+                                                  "title": "下载企业微信通讯录",
+                                                  "jumpableOn111": "false",
+                                                  "body": [
+                                                      {
+                                                          "type": "form",
+                                                          "resetAfterSubmit": false,
+                                                          "api": {
+                                                              "method": "post",
+                                                              "url": "/api/qiyeweixin/suite/downloadContact",
+                                                              "headers": {
+                                                                  "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                              },
+                                                              "data": {
+                                                                  "space_id": "${global.spaceId}"
+                                                              }
+                                                          },
+                                                          "title": "",
+                                                          "body": [
+                                                              {
+                                                                  "type": "button",
+                                                                  "actionType": "submit",
+                                                                  "label": "下载企业微信通讯录excel",
+                                                                  "id": "u:14f8a88957ef"
+                                                              }
+                                                          ],
+                                                          "id": "u:13720f979069",
+                                                          "initApi": {
+                                                              "url": "/api/qiyeweixin/suite/getResult",
+                                                              "method": "post",
+                                                              "requestAdaptor": "",
+                                                              "messages": {},
+                                                              "headers": {
+                                                                  "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                              },
+                                                              "data": {
+                                                                  "space_id": "${global.spaceId}"
+                                                              },
+                                                              "sendOn": "this.errcode==0 & !this.url",
+                                                              "trackExpression": "${errcode},${url}",
+                                                              "adaptor": "console.log(\"=======>第二个接口\", payload);\nif (payload && payload.status === 0) {\n  console.log(\"第二个接口ok\")\n  window.open(payload.data.url, \"_blank\")\n}\nreturn payload;"
+                                                          },
+                                                          "onEvent1111": {
+                                                              "inited": {
+                                                                  "weight": 0,
+                                                                  "actions": [
+                                                                      {
+                                                                          "actionType": "closeDialog",
+                                                                          "expression": "!!this.url"
+                                                                      }
+                                                                  ]
+                                                              }
+                                                          },
+                                                          "closeDialogOnSubmit": false,
+                                                          "debug": false,
+                                                          "interval": 4000,
+                                                          "initFetch": false,
+                                                          "stopAutoRefreshWhen": "!!this.url",
+                                                          "wrapWithPanel": false
+                                                      }
+                                                  ],
+                                                  "id": "u:127c377f0a21",
+                                                  "mode": "normal"
+                                              },
+                                              {
+                                                  "title": "同步企业微信通讯录",
+                                                  "body": [
+                                                      {
+                                                          "type": "form",
+                                                          "title": "表单",
+                                                          "body": [
+                                                              {
+                                                                  "type": "input-text",
+                                                                  "label": "文本",
+                                                                  "name": "filename",
+                                                                  "id": "u:35e301fb6b2c",
+                                                                  "className": "hidden"
+                                                              },
+                                                              {
+                                                                  "type": "input-file",
+                                                                  "description": "",
+                                                                  "autoUpload": true,
+                                                                  "proxy": true,
+                                                                  "uploadType": "asForm",
+                                                                  "name": "file",
+                                                                  "id": "u:95d037212db1",
+                                                                  "maxSize": 8388608,
+                                                                  "multiple": false,
+                                                                  "useChunk": false,
+                                                                  "accept": ".xlsx",
+                                                                  "drag": true,
+                                                                  "asBlob": false,
+                                                                  "formType": "asBase64",
+                                                                  "asBase64": true,
+                                                                  "autoFill": {},
+                                                                  "onEvent": {
+                                                                      "change": {
+                                                                          "weight": 0,
+                                                                          "actions": [
+                                                                              {
+                                                                                  "componentId": "u:35e301fb6b2c",
+                                                                                  "actionType": "setValue",
+                                                                                  "args": {
+                                                                                      "value": "${event.data.file.name}"
+                                                                                  }
+                                                                              }
+                                                                          ]
+                                                                      }
+                                                                  }
+                                                              }
+                                                          ],
+                                                          "api": {
+                                                              "url": "${context.rootUrl}/api/qiyeweixin/suite/uploadContact",
+                                                              "method": "post",
+                                                              "requestAdaptor": "",
+                                                              "adaptor": "",
+                                                              "messages": {},
+                                                              "headers": {
+                                                                  "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                              }
+                                                          },
+                                                          "id": "upload_qywx_contacts",
+                                                          "onEvent": {
+                                                              "submitSucc": {
+                                                                  "weight": 0,
+                                                                  "actions": [
+                                                                      {
+                                                                          "componentId": "listview_invoices",
+                                                                          "actionType": "reload",
+                                                                          "dataMergeMode": "merge"
+                                                                      },
+                                                                      {
+                                                                          "actionType": "closeDialog"
+                                                                      }
+                                                                  ]
+                                                              }
+                                                          },
+                                                          "debug": false,
+                                                          "mode": "normal",
+                                                          "wrapWithPanel": false
+                                                      }
+                                                  ],
+                                                  "mode": "normal",
+                                                  "actions": [
+                                                      {
+                                                          "label": "上一步",
+                                                          "type": "button",
+                                                          "actionType": "prev"
+                                                      },
+                                                      {
+                                                          "label": "完成",
+                                                          "type": "button",
+                                                          "actionType": "next"
+                                                      }
+                                                  ]
+                                              }
+                                          ],
+                                          "mode": "horizontal",
+                                          "onEvent": {
+                                              "finished": {
+                                                  "weight": 0,
+                                                  "actions": [
+                                                      {
+                                                          "actionType": "submit",
+                                                          "componentId": "upload_qywx_contacts"
+                                                      }
+                                                  ]
+                                              }
+                                          },
+                                          "closeDialogOnSubmit": false
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "upload_qywx_contacts_dialog",
+                                  "closeOnEsc": false,
+                                  "size": "lg",
+                                  "actions": [],
+                                  "closeDialogOnSubmit": false
+                              }
+                          }
+                      ]
+                  }
+              },
+              "editorState": "default"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "id": "u:2b7336ac1314",
+      "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 同步企业微信通讯向导
+locked: false
+'on': list
+type: amis_button
+visible: true

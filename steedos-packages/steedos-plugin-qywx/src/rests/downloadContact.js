@@ -17,6 +17,20 @@ module.exports = {
             suite_id: suite_id
         });
         console.log("=======resultInfo", resultInfo)
-        return resultInfo;
+        let data = {}
+        if(resultInfo && resultInfo.errcode==0){
+            data = {
+                "status": 0,
+                "msg": "正在连接企业微信",
+                "data": resultInfo
+              }
+        }else{
+            data = {
+                "status": 1,
+                "msg": "连接企业微信失败",
+                "data": resultInfo
+              } 
+        }
+        return data;
     }
 }

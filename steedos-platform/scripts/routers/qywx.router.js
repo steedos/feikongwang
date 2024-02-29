@@ -442,7 +442,7 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
                 console.log("getResultInfo: ",getResultInfo);
                 if (getResultInfo.contact_id_translate.url){
                     console.log("update spaces-----")
-                    let space = await broker.call('objectql.find',{objectName: 'spaces', query: {filters: [["qywx_corp_id", "=",corpid]]}});
+                    let space = await broker.call('objectql.find',{objectName: 'spaces', query: {filters: [["qywx_corp_id", "=",message.AuthCorpId]]}});
                     console.log("find space: ",space[0]);
                     await broker.call('objectql.directUpdate', {objectName: "spaces", id: space[0]._id, doc: {"qywx_contact_id_translate_url": getResultInfo.contact_id_translate.url}})
                     
@@ -457,8 +457,10 @@ router.post('/api/qiyeweixin/callback', xmlparser({ trim: false, explicitArray: 
             //     return CancelAuth(message);
             // case 'change_auth':
             //     return ChangeContact(message.AuthCorpId);
-            // case 'change_contact':
-            //     return ChangeContact(message.AuthCorpId);
+            case 'change_contact':
+                await broker.call('@steedos/plugin-qywx.changeContact', { "message": message });
+                res.end("success");
+                return;
         }
     }
 });
