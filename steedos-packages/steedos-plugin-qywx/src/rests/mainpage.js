@@ -12,7 +12,7 @@ module.exports = {
         authentication: false
     },
     async handler(ctx) {
-        let authorize_uri, o, redirect_uri, url, _ref5, _ref6, _ref7;
+        let authorize_uri, o, redirect_uri, url;
         authorize_uri = qywx_api.authorize_uri;
         // 网页授权登陆
         redirect_uri = encodeURIComponent(await this.broker.call('objectql.absoluteUrl', { path: 'api/qiyeweixin/feikongwang/auth_login' }));

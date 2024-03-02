@@ -1,4 +1,3 @@
-
 exports.authorize_uri = "https://open.weixin.qq.com/connect/oauth2/authorize";
 exports.getLoginInfo = "https://qyapi.weixin.qq.com/cgi-bin/service/get_login_info";
 exports.getProviderToken = "https://qyapi.weixin.qq.com/cgi-bin/service/get_provider_token";
@@ -23,3 +22,4 @@ exports.idTranslate = "https://qyapi.weixin.qq.com/cgi-bin/service/contact/id_tr
 exports.getResult = "https://qyapi.weixin.qq.com/cgi-bin/service/batch/getresult";
 exports.getAuthInfo = "https://qyapi.weixin.qq.com/cgi-bin/service/get_auth_info";
 exports.getJsapiTicket = "https://qyapi.weixin.qq.com/cgi-bin/get_jsapi_ticket";
+exports.getUerIdByMobile = "https://qyapi.weixin.qq.com/cgi-bin/user/getuserid";

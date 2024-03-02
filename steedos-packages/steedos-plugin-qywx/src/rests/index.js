@@ -15,5 +15,6 @@ module.exports = {
     downloadContact: require('./downloadContact'),
     uploadContact: require('./uploadContact'),
     getContactResult: require('./getContactResult'),
+    syncQywxId: require('./syncQywxId'),
     // getAuthLogin: require('./getAuthLogin'),
 }
