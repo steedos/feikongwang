@@ -29,34 +29,11 @@ module.exports = {
                 agentid: agentid,
                 suite_access_token: suite_access_token
             });
-            console.log("管理员列表", adminList)
-            // let admin = adminList[0];
-
-
             // 获取管理员信息
             let adminId = []
             let adminInfos = []
-            for (let admin of adminList) {
-                // 创建user
-                const user = await usersObj.directInsert({
-                    name: admin.userid,
-                    qywx_id: admin.userid,
-                    created: new Date(),
-                    modified: new Date(),
-                    locale: "zh-cn",
-                    user_accepted: true,
-                    qywx_id: admin.userid
-                })
-                 await usersObj.directUpdate(user._id,{
-                    steedos_id: user._id
-                })
-                let adminInfo = {
-                    "userId": user._id,
-                    "qywx_admin_user": admin
-                }
-                adminInfos.push(adminInfo);
-                adminId.push(user._id)
-            }
+            // console.log("管理员列表", adminList)
+            // let admin = adminList[0];
             // 初始化工作区
             let space = await spaceObj.findOne({ filters: [['qywx_corp_id', '=', auth_corpid]] })
             if (space) {
@@ -67,10 +44,33 @@ module.exports = {
                     modified: new Date(),
                     qywx_corp_id: auth_corpid,
                     qywx_permanent_code: permanent_code,
-                    admins: adminId
+                    // admins: adminId
 
                 })
             } else {
+                
+                for (let admin of adminList) {
+                    // 创建user
+                    const user = await usersObj.directInsert({
+                        name: admin.userid,
+                        qywx_id: admin.userid,
+                        created: new Date(),
+                        modified: new Date(),
+                        locale: "zh-cn",
+                        user_accepted: true,
+                        qywx_id: admin.userid
+                    })
+                    await usersObj.directUpdate(user._id, {
+                        steedos_id: user._id
+                    })
+                    let adminInfo = {
+                        "userId": user._id,
+                        "qywx_admin_user": admin
+                    }
+                    adminInfos.push(adminInfo);
+                    adminId.push(user._id)
+                }
+
                 // 创建space
                 space = await spaceObj.insert({
                     name: corp_name,
@@ -140,9 +140,6 @@ module.exports = {
                     })
                 }
             }
-
-
-
 
         } catch (error) {
             console.log("InitializeSpace error: ", error);
