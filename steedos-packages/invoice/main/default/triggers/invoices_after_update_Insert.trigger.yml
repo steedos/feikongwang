@@ -7,7 +7,7 @@ isEnabled: true
 handler: |-
   // 创建记录时，不填写”报销“或“应付合同”字段，状态默认为“未关联记录”；
   // 创建记录时，填写”报销“或“应付合同”字段，状态默认为“未提交审批”；
-  const { doc, previousDoc } = ctx.params;
+  const { doc, previousDoc, isInsert,isUpdate } = ctx.params;
   const invoicesObj = this.getObject('invoices');
   // 新增发票
   if (!doc.state) {
@@ -20,12 +20,15 @@ handler: |-
               state: "unassociated"
           })
       }
-  } else if (doc.state == "unassociated"){
-      if ((!previousDoc.purchase_order && doc.purchase_order) || (!previousDoc.expense_reports && doc.expense_reports)) {
-          // 修改发票
-          await invoicesObj.directUpdate(doc._id, {
-              state: "unsubmitted"
-          })
+  } else if (doc.state == "unassociated") {
+      if (isUpdate) {
+          if ((!previousDoc.purchase_order && doc.purchase_order) || (!previousDoc.expense_reports && doc.expense_reports)) {
+              // 修改发票
+              await invoicesObj.directUpdate(doc._id, {
+                  state: "unsubmitted"
+              })
+          }
       }
+      
   }
 locked: false
