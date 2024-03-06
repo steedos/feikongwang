@@ -1,0 +1,13 @@
+name: project_record_detail
+is_active: true
+label: project_record_detail
+locked: false
+object_name: project
+pageAssignments:
+  - type: orgDefault
+    page: project_record_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

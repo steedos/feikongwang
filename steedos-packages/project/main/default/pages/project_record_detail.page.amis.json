@@ -1,0 +1,79 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:869e8dad35d8"
+        },
+        {
+            "type": "tabs",
+            "className": "steedos-record-tabs bg-white p-4 mt-3 border-y",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:95ef530c13c2",
+                            "appId": "${appId}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:dc481ea6197a",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc",
+                    "className": "px-0 py-4"
+                },
+                {
+                    "title": "收入",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "id": "u:d418801dc744",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "relatedObjectApiName": "sales_orders"
+                        }
+                    ],
+                    "id": "u:cd26b96626bf"
+                },
+                {
+                    "title": "支出",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:b7785e6659a3",
+                            "relatedObjectApiName": "purchase_orders"
+                        }
+                    ],
+                    "id": "u:ea28bbabbb80"
+                }
+            ],
+            "id": "u:f4e67502c99b"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {},
+    "id": "page_project_record_detail",
+    "name": "page_project_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}
