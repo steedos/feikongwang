@@ -13,7 +13,6 @@ enable_split: false
 enable_tasks: false
 enable_tree: false
 enable_workflow: false
-extend: project
 field_groups:
   - group_name: 系统信息
     collapsed: true
