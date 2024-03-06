@@ -1,0 +1,28 @@
+name: sales_orders
+compactLayouts:
+  - customer
+  - buyer
+  - amount
+  - left_receive
+  - billing_money_receive
+custom: true
+enable_api: true
+enable_chatter: false
+enable_enhanced_lookup: true
+enable_events: false
+enable_files: true
+enable_inline_edit: true
+enable_instances: true
+enable_notes: false
+enable_search: true
+enable_share: false
+enable_tasks: false
+enable_tree: false
+enable_workflow: true
+enable_audit: true
+extend: sales_orders
+icon: drafts
+is_enable: true
+is_system: true
+label: 应收合同
+version: 2

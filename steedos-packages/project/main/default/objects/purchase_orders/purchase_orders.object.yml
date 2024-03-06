@@ -1,0 +1,29 @@
+name: purchase_orders
+compactLayouts:
+  - contract_code
+  - supplier
+  - amount
+  - amount_unpaid
+  - signed_date
+custom: true
+enable_api: true
+enable_audit: true
+enable_chatter: false
+enable_enhanced_lookup: true
+enable_events: false
+enable_files: true
+enable_inline_edit: true
+enable_instances: true
+enable_notes: false
+enable_search: true
+enable_share: false
+enable_tasks: false
+enable_tree: false
+enable_workflow: true
+extend: purchase_orders
+icon: maintenance_work_rule
+is_enable: true
+label: 应付合同
+version: 2
+actions:
+
