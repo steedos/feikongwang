@@ -1,0 +1,35 @@
+name: project_status
+create: true
+enable_thousands: true
+filterable: false
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 项目状态
+multiple: false
+options:
+  - label: 立项中
+    value: starting
+    color: '#cac3ad'
+  - label: 执行中
+    value: excuting
+    color: '#9ee691'
+  - label: 已验收
+    value: accepted
+    color: '#386d99'
+  - label: 已完成
+    value: completed
+    color: '#e0bbda'
+primary: false
+readonly: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 150
+sortable: false
+static: false
+type: select
+unique: false
+write_requires_master_read: false

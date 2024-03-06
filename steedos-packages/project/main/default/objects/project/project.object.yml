@@ -1,0 +1,24 @@
+name: project
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_enhanced_lookup: true
+enable_events: false
+enable_files: true
+enable_inline_edit: true
+enable_instances: false
+enable_notes: false
+enable_share: false
+enable_split: false
+enable_tasks: false
+enable_tree: false
+enable_workflow: false
+extend: project
+field_groups:
+  - group_name: 系统信息
+    collapsed: true
+icon: goals
+is_enable: true
+is_system: true
+label: 项目
+version: 2

@@ -1,0 +1,19 @@
+name: 项目
+code: project
+description: 项目管理
+enable_nav_schema: false
+icon_slds: goals
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+locked: false
+mobile: true
+showSidebar: false
+sort: 40
+tab_items:
+  object_project:
+    index: 1
+tabs:
+  - object_project
+visible: true
