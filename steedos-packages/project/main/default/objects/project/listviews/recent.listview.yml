@@ -1,6 +1,7 @@
 name: recent
 columns:
   - field: name
+  - field: project_number
   - field: project_status
 crud_mode: table
 filter_scope: space
