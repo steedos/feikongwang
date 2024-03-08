@@ -7,10 +7,6 @@
         "build": "webpack --config webpack.config.js",
         "build:watch": "webpack --config webpack.config.js --watch"
     },
-    "dependencies": {
-        "@steedos-labs/crm": "2.5.6",
-        "@steedos-labs/purchase": "2.2.9-beta.3"
-    },
     "devDependencies": {
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4",
