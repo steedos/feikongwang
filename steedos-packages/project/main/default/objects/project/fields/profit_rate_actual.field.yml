@@ -1,0 +1,27 @@
+name: profit_rate_actual
+create: true
+data_type: percent
+enable_thousands: true
+filterable: false
+formula: profit_actual / income_all_actual
+formula_blank_value: zeroes
+generated: false
+group: 项目核算
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 实际利润率
+multiple: false
+precision: 18
+primary: false
+readonly: false
+scale: 2
+searchable: false
+show_as_qr: false
+sort_no: 375
+sortable: false
+static: false
+type: formula
+unique: false
+write_requires_master_read: false
