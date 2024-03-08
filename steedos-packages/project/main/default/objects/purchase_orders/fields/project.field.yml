@@ -2,5 +2,6 @@ name: project
 label: 所属项目
 reference_to: project
 sort_no: 78
-type: lookup
+type: master_detail
 required: false
+write_requires_master_read: false
