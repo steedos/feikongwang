@@ -1,4 +1,11 @@
 name: project
+compactLayouts:
+  - name
+  - project_status
+  - income_all_expected
+  - income_all_actual
+  - expense_all_actual
+  - profit_actual
 custom: true
 enable_api: true
 enable_dataloader: true
