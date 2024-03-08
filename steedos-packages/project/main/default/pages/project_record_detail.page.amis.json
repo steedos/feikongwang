@@ -59,6 +59,22 @@
                             "recordId": "${recordId}",
                             "id": "u:b7785e6659a3",
                             "relatedObjectApiName": "purchase_orders"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:539cee9f0f3a",
+                            "relatedObjectApiName": "expense_reports"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:9085fa320c37",
+                            "relatedObjectApiName": "expense_advance_payment"
                         }
                     ],
                     "id": "u:ea28bbabbb80"

@@ -1,4 +1,6 @@
 name: project_record_detail
+__filename: >-
+  /workspace/feikongwang/steedos-packages/project/main/default/pages/project_record_detail.page.yml
 is_active: true
 label: project_record_detail
 locked: false

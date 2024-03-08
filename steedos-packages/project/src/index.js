@@ -36,7 +36,7 @@ module.exports = {
 	/**
 	 * Dependencies
 	 */
-	dependencies: ['~packages-standard-objects', '@steedos-labs/crm', '@steedos-labs/purchase'],
+	dependencies: ['~packages-standard-objects', '@steedos-labs/crm', '@steedos-labs/purchase', '@steedos-labs/expense'],
 
 	/**
 	 * Actions
