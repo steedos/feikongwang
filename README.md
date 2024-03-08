@@ -23,7 +23,7 @@ docker-compose -f steedos-platform/docker-compose.yml up
 yarn
 
 # 运行费控王
-yarn start
+yarn dev
 ```
 
 ## 运行企业版平台（可选）
