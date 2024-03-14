@@ -1,6 +1,6 @@
 name: 报销
 code: expense
-description: 在线费控管理系统，通过处理费用、审批和报销来帮助您进行在线费用管理。
+description: 差旅申请、发票识别与验真、费用报销
 enable_nav_schema: false
 icon_slds: expense_report_entry
 is_creator: true

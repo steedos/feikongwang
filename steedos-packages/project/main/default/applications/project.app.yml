@@ -1,6 +1,6 @@
 name: 项目
 code: project
-description: 项目管理
+description: 全程数字化的项目管理
 enable_nav_schema: false
 icon_slds: goals
 is_creator: true
@@ -14,6 +14,18 @@ sort: 40
 tab_items:
   object_project:
     index: 1
+  object_purchase_orders:
+    index: 2
+  object_sales_orders:
+    index: 3
+  object_tasks:
+    index: 4
+  object_events:
+    index: 5
 tabs:
   - object_project
+  - object_purchase_orders
+  - object_sales_orders
+  - object_tasks
+  - object_events
 visible: true
