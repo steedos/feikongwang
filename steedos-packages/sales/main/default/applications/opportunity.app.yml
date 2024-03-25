@@ -1,0 +1,26 @@
+name: 销售
+code: opportunity
+description: 管理线索与商机
+icon_slds: opportunity
+is_creator: true
+mobile: true
+showSidebar: false
+sort: 20
+tab_items:
+  object_accounts:
+    index: 1
+  object_opportunity:
+    index: 2
+  object_quote:
+    index: 3
+  object_leads:
+    index: 4
+  object_campaign:
+    index: 6
+  object_contacts:
+    index: 7
+  object_tasks:
+    index: 8
+  object_events:
+    index: 9
+visible: true

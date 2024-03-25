@@ -1,26 +1,24 @@
-name: 销售
+name: 应收
 code: sales
-description: 管理线索与商机
-icon_slds: opportunity
+description: 精确追踪与分析每一笔收入
+icon_slds: reward
 is_creator: true
 mobile: true
 showSidebar: false
-sort: 20
+sort: 30
 tab_items:
-  object_leads:
+  sales_dashboard:
+    index: 0
+  object_sales_orders:
     index: 1
   object_accounts:
     index: 2
-  object_opportunity:
+  object_finance_invoice:
+    index: 3
+  object_finance_receive:
     index: 4
-  object_quote:
+  object_finance_pre_receive:
     index: 5
-  object_campaign:
+  object_instance_tasks:
     index: 6
-  object_contacts:
-    index: 7
-  object_tasks:
-    index: 8
-  object_events:
-    index: 9
 visible: true
