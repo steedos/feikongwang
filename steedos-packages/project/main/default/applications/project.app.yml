@@ -10,7 +10,7 @@ is_use_iframe: false
 locked: false
 mobile: true
 showSidebar: false
-sort: 40
+sort: 50
 tab_items:
   object_project:
     index: 1

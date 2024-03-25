@@ -1,36 +1,31 @@
-name: 应收
+name: 销售
 code: sales
-description: 精确追踪与分析每一笔收入
+description: 管理潜在客户与业务机会
 icon_slds: opportunity
 is_creator: true
 mobile: true
 showSidebar: false
-sort: 30
-tab_groups:
-  - group_name: 销售管理
-    default_open: true
-    id: 销售管理
+sort: 20
 tab_items:
-  sales_dashboard:
-    index: 0
-  object_sales_orders:
+  object_leads:
     index: 1
   object_accounts:
     index: 2
-  object_finance_invoice:
-    index: 3
-  object_finance_receive:
+  object_opportunity:
     index: 4
-  object_finance_pre_receive:
+  object_quote:
     index: 5
-  object_instance_tasks:
+  object_contacts:
+    index: 3
+  object_tasks:
     index: 6
+  object_events:
+    index: 7
 tabs:
-  - sales_dashboard
-  - object_sales_orders
+  - object_leads
   - object_accounts
-  - object_finance_invoice
-  - object_finance_receive
-  - object_instance_tasks
-  - object_finance_pre_receive
+  - object_opportunity
+  - object_quote
+  - object_tasks
+  - object_events
 visible: true

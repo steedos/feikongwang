@@ -1,0 +1,32 @@
+name: 应收
+code: sales-orders
+description: 精确追踪与分析每一笔收入
+icon_slds: reward
+is_creator: true
+mobile: true
+showSidebar: false
+sort: 30
+tab_items:
+  sales_dashboard:
+    index: 0
+  object_sales_orders:
+    index: 1
+  object_accounts:
+    index: 2
+  object_finance_invoice:
+    index: 3
+  object_finance_receive:
+    index: 4
+  object_finance_pre_receive:
+    index: 5
+  object_instance_tasks:
+    index: 6
+tabs:
+  - sales_dashboard
+  - object_sales_orders
+  - object_accounts
+  - object_finance_invoice
+  - object_finance_receive
+  - object_instance_tasks
+  - object_finance_pre_receive
+visible: true

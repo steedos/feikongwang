@@ -1,0 +1,7 @@
+name: object_quote
+desktop: true
+label: 潜在客户
+mobile: true
+object: quote
+permissions: []
+type: object

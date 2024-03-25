@@ -10,7 +10,7 @@ is_use_iframe: false
 locked: false
 mobile: true
 showSidebar: false
-sort: 20
+sort: 40
 tab_groups:
   - group_name: 设置
     default_open: true
