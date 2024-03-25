@@ -21,12 +21,4 @@ tab_items:
     index: 5
   object_instance_tasks:
     index: 6
-tabs:
-  - sales_dashboard
-  - object_sales_orders
-  - object_accounts
-  - object_finance_invoice
-  - object_finance_receive
-  - object_instance_tasks
-  - object_finance_pre_receive
 visible: true

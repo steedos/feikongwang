@@ -15,17 +15,12 @@ tab_items:
     index: 4
   object_quote:
     index: 5
-  object_contacts:
-    index: 3
-  object_tasks:
+  object_campaign:
     index: 6
-  object_events:
+  object_contacts:
     index: 7
-tabs:
-  - object_leads
-  - object_accounts
-  - object_opportunity
-  - object_quote
-  - object_tasks
-  - object_events
+  object_tasks:
+    index: 8
+  object_events:
+    index: 9
 visible: true
