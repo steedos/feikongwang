@@ -22,5 +22,5 @@ filters:
   - - stage
     - '='
     - Closed_Lost
-label: 已失败的业务机会
+label: 已失败的商机
 shared: true

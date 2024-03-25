@@ -59,7 +59,7 @@ fields:
     help: 
     description: 
   opportunity_id:
-    label: 业务机会
+    label: 商机
     help: 
     description: 
   order_number:

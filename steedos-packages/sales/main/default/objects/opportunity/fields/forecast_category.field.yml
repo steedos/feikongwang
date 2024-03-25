@@ -1,6 +1,6 @@
 name: forecast_category
 hidden: true
-inlineHelpText: 在报表、业务机会详细信息和编辑页面、业务机会搜索和业务机会列表视图中显示的预测类别名称。业务机会的设置绑定到其阶段。
+inlineHelpText: 在报表、商机详细信息和编辑页面、商机搜索和商机列表视图中显示的预测类别名称。商机的设置绑定到其阶段。
 label: 预测类别
 options:
   - label: 忽略

@@ -1,5 +1,5 @@
 name: iq_score
 hidden: true
-label: 业务机会得分
+label: 商机得分
 sort_no: 290
 type: number

@@ -7,12 +7,12 @@
  * @Description: 
  */
 module.exports = {
-    // 计算是否要新建业务机会联系人角色，以及是否是新建主要角色
+    // 计算是否要新建商机联系人角色，以及是否是新建主要角色
     async handler(isLookupOpportunity, isLookupContact, recordOpportunity, recordContact, objOpportunityContactRole) {
         let needAddOpportunityContactRole = false;
         let isPrimaryRole = false;
         if (isLookupOpportunity && isLookupContact) {
-            // 业务机会和联系人都不是新建的
+            // 商机和联系人都不是新建的
             const roleRecords = await objOpportunityContactRole.find({
                 filters: [["opportunity_id", "=", recordOpportunity._id]]
             });
@@ -34,7 +34,7 @@ module.exports = {
             }
         }
         else if (isLookupOpportunity) {
-            // 是新建的联系人，但是不是新建的业务机会
+            // 是新建的联系人，但是不是新建的商机
             needAddOpportunityContactRole = true;
             const primaryCount = await objOpportunityContactRole.count({
                 filters: [["opportunity_id", "=", recordOpportunity._id], ["is_primary", "=", true]]
@@ -45,12 +45,12 @@ module.exports = {
             }
         }
         else if (isLookupContact) {
-            // 是新建的业务机会，但是不是新建的联系人
+            // 是新建的商机，但是不是新建的联系人
             needAddOpportunityContactRole = true;
             isPrimaryRole = true;
         }
         else {
-            // 是新建的业务机会和联系人
+            // 是新建的商机和联系人
             needAddOpportunityContactRole = true;
             isPrimaryRole = true;
         }

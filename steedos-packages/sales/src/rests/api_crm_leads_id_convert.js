@@ -65,7 +65,7 @@ module.exports = {
                 // 包括所属客户在内，所有字段属性都是为空才同步更新
                 let docContactEmptyConverts = this.getDocEmptyConverts(Object.assign({}, docContactConverts, { account: recordAccount._id }), recordContact);
                 if (params.force_update_contact_lead_source && !docContactEmptyConverts.lead_source && docContactConverts.lead_source) {
-                    // 如果界面上勾选了“更新潜在客户来源”，则应该强行更新联系人的潜在客户来源
+                    // 如果界面上勾选了“更新线索来源”，则应该强行更新联系人的线索来源
                     docContactEmptyConverts.lead_source = docContactConverts.lead_source;
                 }
                 if (!_.isEmpty(docContactEmptyConverts)) {

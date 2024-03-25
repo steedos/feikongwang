@@ -2,7 +2,7 @@ Steedos.CRM = {};
 
 Steedos.CRM.showLeadConvertForm = function (fields, formId, doc, onConfirm, title) {
     var schema = Creator.getObjectSchema({ fields: fields });
-    Modal.show("quickFormModal", { formId: formId, title: title || "转换潜在客户", confirmBtnText: `转换`, schema: schema, autoExpandGroup: true, doc: doc, onConfirm: onConfirm }, {
+    Modal.show("quickFormModal", { formId: formId, title: title || "转换线索", confirmBtnText: `转换`, schema: schema, autoExpandGroup: true, doc: doc, onConfirm: onConfirm }, {
         backdrop: 'static',
         keyboard: true
     });
@@ -10,7 +10,7 @@ Steedos.CRM.showLeadConvertForm = function (fields, formId, doc, onConfirm, titl
 
 Steedos.CRM.convertLead = function (record) {
     if (record.converted) {
-        toastr.error(t("该潜在客户已经转换过了，不能重复转换！"));
+        toastr.error(t("该线索已经转换过了，不能重复转换！"));
         return;
     }
     const record_id = record._id;
@@ -84,23 +84,23 @@ Steedos.CRM.convertLead = function (record) {
             group: "联系人"
         },
         force_update_contact_lead_source: {
-            label: "更新潜在客户来源",
+            label: "更新线索来源",
             type: 'toggle',
             group: "联系人"
         },
         new_opportunity_name: {
-            label: "新建业务机会名称",
+            label: "新建商机名称",
             type: 'text',
             is_wide: true,
-            group: "业务机会"
+            group: "商机"
         },
         is_lookup_opportunity: {
             label: "选择现有",
             type: 'toggle',
-            group: "业务机会"
+            group: "商机"
         },
         lookup_opportunity: {
-            label: "现有业务机会",
+            label: "现有商机",
             type: 'lookup',
             reference_to: 'opportunity',
             depend_on: ["is_lookup_opportunity", "is_lookup_account", "lookup_account"],
@@ -129,12 +129,12 @@ Steedos.CRM.convertLead = function (record) {
                 });
                 return result;
             },
-            group: "业务机会"
+            group: "商机"
         },
         omit_new_opportunity: {
-            label: "请勿在转换时创建业务机会",
+            label: "请勿在转换时创建商机",
             type: 'toggle',
-            group: "业务机会"
+            group: "商机"
         },
         record_owner_id: {
             label: "记录所有人",
@@ -187,13 +187,13 @@ Steedos.CRM.alertLeadConvertedRecords = function (record) {
             </div>
             <div class="flex items-start">
                 <div class="ml-4">
-                    <p class="text-gray-900"><span>业务机会：<span><a href="${doc.opportunity_url}" target="_blank">${doc.opportunity_name ? doc.opportunity_name : ""}</a></p>
+                    <p class="text-gray-900"><span>商机：<span><a href="${doc.opportunity_url}" target="_blank">${doc.opportunity_name ? doc.opportunity_name : ""}</a></p>
                 </div>
             </div>
         </div>
     `;
     swal({
-        title: "潜在客户已转换",
+        title: "线索已转换",
         text: html,
         html: true,
         type: "success",

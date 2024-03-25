@@ -30,7 +30,7 @@ filters:
   - - converted
     - <>
     - true
-label: 所有潜在客户
+label: 所有线索
 shared: true
 sort:
   - field_name: created

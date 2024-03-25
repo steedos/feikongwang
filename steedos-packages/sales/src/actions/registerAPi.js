@@ -25,7 +25,7 @@ module.exports = {
             email:user.email,
             mobilephone:user.mobilephone, 
         }
-        //新增潜在客户
+        //新增线索
       const a =  await leadsObj.insert(leadsDoc);
       console.log("=======>",a)
         

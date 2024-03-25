@@ -1,6 +1,6 @@
 name: partner_account
 hidden: true
-inlineHelpText: 表示该业务机会属于某合作伙伴（只读）
+inlineHelpText: 表示该商机属于某合作伙伴（只读）
 label: 合作伙伴客户
 readonly: true
 sort_no: 360

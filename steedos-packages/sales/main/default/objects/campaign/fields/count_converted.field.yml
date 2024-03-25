@@ -5,7 +5,7 @@ hidden: false
 index: false
 is_name: false
 is_wide: false
-label: 已转换潜在客户数
+label: 已转换线索数
 omit: true
 precision: 18
 readonly: false

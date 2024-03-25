@@ -22,5 +22,5 @@ filter_fields:
   - account
   - name
 filter_scope: space
-label: 全部业务机会
+label: 全部商机
 shared: true

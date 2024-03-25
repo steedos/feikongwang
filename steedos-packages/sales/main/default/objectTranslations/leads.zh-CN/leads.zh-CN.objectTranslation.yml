@@ -1,5 +1,5 @@
 name: leads
-label: 潜在客户
+label: 线索
 description: 
 fields:
   address:
@@ -31,7 +31,7 @@ fields:
     help: 
     description: 
   converted_opportunity:
-    label: 已转换的业务机会
+    label: 已转换的商机
     help: 
     description: 
   description:
@@ -138,7 +138,7 @@ fields:
     help: 
     description: 
   lead_source:
-    label: 潜在客户来源
+    label: 线索来源
     help: 
     options:
       - label: 广告
@@ -255,15 +255,15 @@ groups:
   地址信息: 地址信息
 listviews:
   all:
-    label: 所有潜在客户
+    label: 所有线索
   hot:
-    label: 非常重要的潜在客户
+    label: 非常重要的线索
   mine:
-    label: 我的潜在客户
+    label: 我的线索
   recent:
     label: 最近查看
   today:
-    label: 新的潜在客户
+    label: 新的线索
 actions:
   alertConvertedRecords:
     label: 显示转换状态

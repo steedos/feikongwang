@@ -22,5 +22,5 @@ filter_fields:
   - account
   - name
 filter_scope: mine
-label: 我的业务机会
+label: 我的商机
 shared: true

@@ -1,6 +1,6 @@
 name: opportunity_id
-inlineHelpText: 与报价关联的业务机会名。
-label: 业务机会名
+inlineHelpText: 与报价关联的商机名。
+label: 商机名
 reference_to: opportunity
 required: true
 searchable: true

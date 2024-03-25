@@ -1,6 +1,6 @@
 name: name
 index: true
-label: 业务机会名
+label: 商机名
 required: true
 searchable: true
 sort_no: 100

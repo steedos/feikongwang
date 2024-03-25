@@ -1,6 +1,6 @@
 name: object_opportunity
 desktop: true
-label: 业务机会
+label: 商机
 mobile: true
 object: opportunity
 permissions: []

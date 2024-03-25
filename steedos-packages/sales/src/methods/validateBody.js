@@ -23,10 +23,10 @@ module.exports = {
         }
         else if (!body.omit_new_opportunity) {
             if (body.is_lookup_opportunity && !body.lookup_opportunity) {
-                validateResult.error = "请选择“现有业务机会”或勾选“请勿在转换时创建业务机会”项!";
+                validateResult.error = "请选择“现有商机”或勾选“请勿在转换时创建商机”项!";
             }
             else if (!body.is_lookup_opportunity && !body.new_opportunity_name) {
-                validateResult.error = "请输入“新建业务机会名称”或勾选“请勿在转换时创建业务机会”项!";
+                validateResult.error = "请输入“新建商机名称”或勾选“请勿在转换时创建商机”项!";
             }
         }
         if (!validateResult.error && recordAccount) {
@@ -34,7 +34,7 @@ module.exports = {
                 validateResult.error = "现有联系人必须是现有客户下的联系人!";
             }
             else if (recordOpportunity && recordOpportunity.account && recordOpportunity.account !== recordAccount._id) {
-                validateResult.error = "现有业务机会必须是现有客户下的业务机会!";
+                validateResult.error = "现有商机必须是现有客户下的商机!";
             }
         }
         return validateResult;

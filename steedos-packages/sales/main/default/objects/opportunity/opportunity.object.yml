@@ -10,5 +10,5 @@ enable_share: true
 enable_tasks: true
 enable_enhanced_lookup: true
 icon: opportunity
-label: 业务机会
+label: 商机
 version: 2

@@ -1,7 +1,7 @@
 name: lead_source
 filterable: true
-inlineHelpText: 潜在客户来源，例如，广告、合作伙伴或 Web。
-label: 潜在客户来源
+inlineHelpText: 线索来源，例如，广告、合作伙伴或 Web。
+label: 线索来源
 options:
   - label: 广告
     value: Advertisement

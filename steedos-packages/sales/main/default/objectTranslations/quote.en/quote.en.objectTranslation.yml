@@ -4,7 +4,7 @@ description:
 fields:
   account_id:
     label: 客户
-    help: 报价的业务机会所链接的客户名。
+    help: 报价的商机所链接的客户名。
     description: 
   billing_address:
     label: 收票人地址
@@ -44,7 +44,7 @@ fields:
     description: 
   is_syncing:
     label: 正在同步
-    help: 报价是否与关联的业务机会同步。(只读)
+    help: 报价是否与关联的商机同步。(只读)
     description: 
   line_items:
     label: 行项目
@@ -55,8 +55,8 @@ fields:
     help: 
     description: 
   opportunity_id:
-    label: 业务机会名
-    help: 与报价关联的业务机会名。
+    label: 商机名
+    help: 与报价关联的商机名。
     description: 
   owner:
     label: 所有人姓名

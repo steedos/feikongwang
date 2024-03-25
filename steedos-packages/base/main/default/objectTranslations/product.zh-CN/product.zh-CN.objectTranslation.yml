@@ -27,7 +27,7 @@ fields:
     description: 
   is_active:
     label: 已启用
-    help: 指示产品已准备好在价目表、业务机会或报价中使用，以及您是否可以在视图中查看产品。
+    help: 指示产品已准备好在价目表、商机或报价中使用，以及您是否可以在视图中查看产品。
     description: 
   name:
     label: 产品名称

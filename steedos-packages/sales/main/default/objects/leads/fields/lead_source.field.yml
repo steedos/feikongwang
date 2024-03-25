@@ -1,6 +1,6 @@
 name: lead_source
 filterable: true
-label: 潜在客户来源
+label: 线索来源
 options:
   - label: 广告
     value: Advertisement

@@ -1,6 +1,6 @@
 name: 销售
 code: sales
-description: 管理潜在客户与业务机会
+description: 管理线索与商机
 icon_slds: opportunity
 is_creator: true
 mobile: true

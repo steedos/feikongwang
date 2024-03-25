@@ -1,6 +1,6 @@
 name: object_leads
 desktop: true
-label: 潜在客户
+label: 线索
 mobile: true
 object: leads
 permissions: []

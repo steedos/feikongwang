@@ -29,5 +29,5 @@ filters:
   - - stage
     - '!='
     - Closed_Lost
-label: 进行中的业务机会
+label: 进行中的商机
 shared: true

@@ -1,5 +1,5 @@
 name: unit_price
-inlineHelpText: 业务机会产品中产品的价格。对于没有相关计划的业务机会产品，销售价格可以编辑。当计划与业务机会产品相关时，销售价格变为只读。
+inlineHelpText: 商机产品中产品的价格。对于没有相关计划的商机产品，销售价格可以编辑。当计划与商机产品相关时，销售价格变为只读。
 label: 销售价格
 required: true
 sort_no: 130
