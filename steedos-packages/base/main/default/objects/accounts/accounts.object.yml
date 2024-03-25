@@ -12,9 +12,10 @@ enable_events: true
 enable_files: true
 enable_inline_edit: true
 enable_instances: true
+enable_notes: true
 enable_search: true
 enable_share: false
-enable_tasks: false
+enable_tasks: true
 enable_workflow: true
 enable_audit: true
 icon: account

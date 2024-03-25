@@ -4,7 +4,7 @@ enable_audit: true
 enable_chatter: true
 enable_events: true
 enable_files: true
-enable_notes: false
+enable_notes: true
 enable_search: true
 enable_share: true
 enable_tasks: true

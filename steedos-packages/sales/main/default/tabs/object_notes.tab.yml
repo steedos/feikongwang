@@ -1,0 +1,7 @@
+name: object_notes
+desktop: true
+label: 备注
+mobile: true
+object: notes
+permissions: []
+type: object

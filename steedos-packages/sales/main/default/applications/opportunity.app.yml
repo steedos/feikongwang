@@ -1,4 +1,4 @@
-name: 销售
+name: 商机
 code: opportunity
 description: 管理线索与商机
 icon_slds: opportunity
@@ -23,4 +23,6 @@ tab_items:
     index: 8
   object_events:
     index: 9
+  object_notes:
+    index: 10
 visible: true
