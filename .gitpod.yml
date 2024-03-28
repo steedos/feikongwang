@@ -20,6 +20,9 @@ ports:
   - port: 1880 # node-red-app
     onOpen: ignore
     visibility: public
+  - port: 9001 # docker
+    onOpen: ignore
+    visibility: public
   - port: 80
     onOpen: ignore
     visibility: public
