@@ -1,0 +1,7 @@
+name: object_announcements
+desktop: true
+label: 公告
+mobile: true
+object: announcements
+permissions: []
+type: object

@@ -1,0 +1,7 @@
+name: object_space_users
+desktop: true
+label: 人员
+mobile: true
+object: space_users
+permissions: []
+type: object

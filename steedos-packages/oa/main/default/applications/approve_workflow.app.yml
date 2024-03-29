@@ -1,0 +1,17 @@
+name: OA
+description: 管理审批、公告、通讯录、任务、日程。
+code: approve_workflow
+visible: true
+icon_slds: approval
+is_creator: true
+mobile: true
+sort: 5
+tab_items:
+  object_instance_tasks:
+    index: 1
+  object_announcements:
+    index: 2
+  object_events:
+    index: 4
+  object_tasks:
+    index: 5

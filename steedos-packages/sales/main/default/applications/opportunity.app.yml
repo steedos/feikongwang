@@ -1,6 +1,6 @@
-name: 商机
+name: 客户
 code: opportunity
-description: 管理线索与商机
+description: 管理客户、线索与商机
 icon_slds: opportunity
 is_creator: true
 mobile: true
