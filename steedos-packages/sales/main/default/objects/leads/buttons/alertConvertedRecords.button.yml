@@ -1,5 +1,5 @@
 name: alertConvertedRecords
-is_enable: true
+is_enable: false
 label: 显示转换状态
 'on': record
 visible: |-

@@ -5,7 +5,7 @@ module.exports = {
     },
     convertVisible: function(object_name, record_id, permissions, record) {
         if (record && !record.converted) {
-            return true
+            return false
         }
     }
 
