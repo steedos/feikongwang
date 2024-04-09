@@ -1,5 +1,5 @@
-name: OA
-description: 管理审批、公告、通讯录、任务、日程。
+name: 审批王
+description: 管理审批、公告、任务、日程。
 code: approve_workflow
 visible: true
 icon_slds: approval
