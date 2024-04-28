@@ -40,43 +40,48 @@ tab_items:
   object_invoice_type:
     group: 发票设置
     index: 4
+  object_account_banks:
+    group: 财务设置
+    _id: ffa87b28-978a-4fb0-a661-bd8aa18a345e
+    index: 5
   object_currency:
     group: 财务设置
-    index: 5
+    index: 6
   object_bank_type:
     group: 财务设置
-    index: 6
+    index: 7
   object_company_account:
     group: 财务设置
-    index: 7
+    index: 8
   object_payment_plan_type:
     group: 财务设置
-    index: 8
+    index: 9
   object_sales_orders_receipts_type:
     group: 财务设置
-    index: 9
+    index: 10
   object_asset_type:
     group: 产品设置
     _id: 4dca7830-454a-4faa-aa7d-c608dbaa7f46
-    index: 10
+    index: 11
   object_material_group:
     group: 产品设置
-    index: 11
+    index: 12
   object_product:
     group: 产品设置
-    index: 12
+    index: 13
   object_warehouse:
     group: 产品设置
     _id: a7a7cdd6-a808-4776-bbe2-09001d4e1718
-    index: 13
+    index: 14
   object_measurement_unit:
     group: 产品设置
-    index: 14
+    index: 15
 tabs:
   - object_accounts
   - object_expense_category
   - object_tax_rates
   - object_invoice_type
+  - object_account_banks
   - object_currency
   - object_bank_type
   - object_company_account

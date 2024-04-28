@@ -2,7 +2,7 @@
     {
         "_id": "${space_id}_rn7v8j67Qj26M9hrc",
         "name": "张国强",
-        "username": "${space_id}_zhangguoqiang",
+        "username": "zhangguoqiang",
         "mobile": "18902576722",
         "organizations": [
             "${space_id}_wYdW3rLotPofktany"
@@ -42,7 +42,7 @@
     {
         "_id": "${space_id}_zgahuynzvxfwYFSae",
         "name": "尹翼飞",
-        "username": "${space_id}_yinyifei",
+        "username": "yinyifei",
         "mobile": "16783452261",
         "organizations": [
             "${space_id}_aQZRY5qEzZN9GuSku"
@@ -82,7 +82,7 @@
     {
         "_id": "${space_id}_8qQ5TwdoY8fqo7tga",
         "name": "杨田",
-        "username": "${space_id}_yangtian",
+        "username": "yangtian",
         "mobile": "16277360901",
         "organizations": [
             "${space_id}_fwozpNYKxP86maExN"
@@ -121,7 +121,7 @@
     {
         "_id": "${space_id}_9ZQcWvzsbqkbMyGdb",
         "name": "刘静",
-        "username": "${space_id}_liujing",
+        "username": "liujing",
         "mobile": "13145237780",
         "organizations": [
             "${space_id}_3NiKjvRoha7RgGcxx"
@@ -160,7 +160,7 @@
     {
         "_id": "${space_id}_SNZ2qzqzpu4K7pkE8",
         "name": "张莉莉",
-        "username": "${space_id}_zhanglili",
+        "username": "zhanglili",
         "mobile": "16377829145",
         "organizations": [
             "${space_id}_XS7nMqRyJSNMiyz9Q"
@@ -199,7 +199,7 @@
     {
         "_id": "${space_id}_TzudkPm4KRCDN3gTP",
         "name": "魏涛",
-        "username": "${space_id}_weitao",
+        "username": "weitao",
         "mobile": "19088245281",
         "organizations": [
             "${space_id}_6jJafbSSHxnCuvhEM"
@@ -238,7 +238,7 @@
     {
         "_id": "${space_id}_Gj4J9xYqciQq5FFgz",
         "name": "孙明博",
-        "username": "${space_id}_sunmingbo",
+        "username": "sunmingbo",
         "mobile": "17622893611",
         "organizations": [
             "${space_id}_nkT6Wkk3bGtMYXXNf"
