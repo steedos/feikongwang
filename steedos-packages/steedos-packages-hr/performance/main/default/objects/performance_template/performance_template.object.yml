@@ -1,0 +1,10 @@
+name: performance_template
+custom: true
+enable_api: true
+enable_inline_edit: true
+enable_instances: true
+enable_workflow: true
+icon: template
+is_enable: true
+label: 考核模版
+version: 2

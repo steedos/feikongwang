@@ -1,0 +1,12 @@
+name: bidding_detail
+is_active: true
+label: 招标详情页
+object_name: bidding
+pageAssignments:
+  - type: orgDefault
+    page: bidding_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

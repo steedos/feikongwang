@@ -1,0 +1,37 @@
+name: 印章
+code: seal
+description: 企业印章管理模块
+icon_slds: survey
+is_creator: true
+mobile: true
+showSidebar: false
+sort: 9100
+tab_groups:
+  - group_name: 印章管理
+    default_open: true
+    id: 印章管理
+  - group_name: 流程审批
+    default_open: true
+    id: 流程审批
+tab_items:
+  object_seal:
+    group: ''
+    index: 0
+  object_instance_tasks:
+    group: ''
+    index: 1
+  object_seal_management:
+    index: 2
+  object_seal_usage_details:
+    group: ''
+    index: 3
+  object_seal_lending_details:
+    group: ''
+    index: 4
+tabs:
+  - object_seal
+  - object_seal_management
+  - object_seal_usage_details
+  - object_seal_lending_details
+  - object_instance_tasks
+visible: true

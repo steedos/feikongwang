@@ -1,0 +1,5 @@
+name: name
+label: 招标项目名称
+type: text
+sort_no: 110
+filterable: true

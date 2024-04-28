@@ -1,0 +1,20 @@
+name: business_out
+create: false
+filterable: false
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters, values){
+    return [["instance_state","=","approved"]];
+  }
+generated: false
+group: 出差信息
+index: false
+is_name: false
+is_wide: false
+label: 出差申请单
+multiple: false
+primary: false
+reference_to: attendance_business_out
+required: true
+sort_no: 146
+sortable: false
+type: lookup

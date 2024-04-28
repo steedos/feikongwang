@@ -1,0 +1,8 @@
+name: greater_than
+label: 大于（分钟）
+precision: 18
+scale: 0
+sort_no: 120
+type: number
+required: "{{['late','early'].indexOf(formData.type)>-1 ? true: false}}"
+visible_on: "{{['late','early'].indexOf(formData.type)>-1 ? true: false}}"

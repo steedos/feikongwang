@@ -1,0 +1,12 @@
+name: meeting_detail_page
+is_active: true
+label: 会议详情页微页面
+object_name: meeting
+pageAssignments:
+  - type: orgDefault
+    page: meeting_detail_page
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

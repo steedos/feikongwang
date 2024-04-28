@@ -1,0 +1,7 @@
+name: bidding_status
+label: 立项状态
+sort_no: 170
+type: lookup
+reference_to: bidding_status 
+visible_on: "{{ global.mode === 'read' ? true : false }}"
+filterable: true

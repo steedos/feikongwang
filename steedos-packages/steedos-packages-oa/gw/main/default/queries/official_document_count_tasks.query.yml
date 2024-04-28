@@ -1,0 +1,108 @@
+name: official_document_count_tasks
+datasource: default
+description: |-
+  查询对象：tasks 任务
+  查询条件：任务未删除、分派给(assignees) 为当前用户、状态为未完成和已完成、查询时间为：到期日期（due_date）范围“上月/本月/本年”。
+  查询结果：当前用户任务中总记录多少条、待办记录多少条、已办记录多少条。
+label: 公文-任务统计
+options:
+  parameters:
+    - title: userId
+      name: userId
+      type: text
+      global: false
+      locals: []
+      value: null
+    - title: datetime
+      name: datetime
+      type: datetime-range-with-seconds
+      global: false
+      locals: []
+      value: null
+  apply_auto_limit: false
+query: |-
+  {
+    "collection": "tasks",
+    "aggregate": [
+        {
+            "$project": {
+                "is_deleted": "$is_deleted",
+                "name": "$name",
+                "assignees": "$assignees",
+                "state": "$state",
+                "due_date": {
+                    "$dateToString": {
+                        "format": "%Y-%m-%d",
+                        "date": "$due_date",
+                        "timezone": "+00"
+                    }
+                }
+            }
+        },
+        {
+            "$facet": {
+                "inbox": [
+                    {
+                        "$match": {
+                            "is_deleted": {
+                                "$ne": true
+                            },
+                            "state": { "$ne":"completed"},
+                            "assignees": {
+                                "$eq": "{{ userId }}"
+                            },
+                            "$and": [
+                                {
+                                    "due_date": {
+                                        "$gte": "{{ datetime.start }}"
+                                    }
+                                },
+                                {
+                                    "due_date": {
+                                        "$lte": "{{ datetime.end }}"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "$count": "inboxCount"
+                    }
+                ],
+                "outbox": [
+                    {
+                        "$match": {
+                            "is_deleted": {
+                                "$ne": true
+                            },
+                            "state": "completed",
+                            "assignees": {
+                                "$eq": "{{ userId }}"
+                            },
+                            "$and": [
+                                {
+                                    "due_date": {
+                                        "$gte": "{{ datetime.start }}"
+                                    }
+                                },
+                                {
+                                    "due_date": {
+                                        "$lte": "{{ datetime.end }}"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "$count": "outboxCount"
+                    }
+                ]
+            }
+        }
+    ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

@@ -1,0 +1,12 @@
+name: start
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 入职日期
+primary: false
+required: true
+sort_no: 120
+sortable: false
+type: date

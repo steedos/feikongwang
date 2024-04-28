@@ -1,0 +1,84 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:9b0a2a6f1deb"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:shadow sm:rounded sm:border border-slate-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:0b15696f4d9b"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "相关",
+                    "className": "px-0 pt-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "bidding",
+                            "recordId": "${recordId}",
+                            "id": "u:c86140a382f0",
+                            "relatedObjectApiName": "supplier_shortlisting"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "bidding",
+                            "recordId": "${recordId}",
+                            "id": "u:6bdb322c87dd",
+                            "relatedObjectApiName": "bidding_document"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "bidding",
+                            "recordId": "${recordId}",
+                            "id": "u:3ce776661fb8",
+                            "relatedObjectApiName": "bidding_confirmation"
+                        },
+                        {
+                            "type": "steedos-object-related-lists",
+                            "label": "相关列表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:94a6a879f410"
+                        }
+                    ],
+                    "id": "u:45df3da4516c"
+                }
+            ],
+            "id": "u:9f94821d5766"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_bidding_record_detail",
+    "name": "page_bidding_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

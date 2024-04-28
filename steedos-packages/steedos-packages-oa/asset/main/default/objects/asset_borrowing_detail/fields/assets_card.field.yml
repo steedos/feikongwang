@@ -1,0 +1,25 @@
+name: assets_card
+label: 借用资产
+reference_to: assets_card
+searchable: true
+sort_no: 120
+required: true
+type: lookup
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function() {
+    let type = []
+    var queryResult = Steedos.authRequest(`/graphql`, {
+        type: 'POST', async: false, 
+        data: JSON.stringify({
+          query: `{ asset_type(filters: ["separate_accounting","=", true]){ _id, name } }`
+        })
+    });
+    type = queryResult && queryResult.data && queryResult.data.asset_type;
+    let typeIds = []
+    for(var typeId of type){
+      typeIds.push(typeId._id)
+    }
+    console.log('type: ', type)
+    console.log("typeIds",typeIds)
+    return [['asset_type', 'contains', typeIds], ['status', 'in', ['在库']],,['is_active','=',true],['quantity','>',0]]
+  }

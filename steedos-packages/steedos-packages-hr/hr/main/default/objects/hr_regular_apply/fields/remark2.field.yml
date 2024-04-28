@@ -1,0 +1,13 @@
+name: remark2
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 试用期在那些方面有了成长
+primary: false
+required: true
+rows: 3
+sort_no: 310
+sortable: false
+type: textarea

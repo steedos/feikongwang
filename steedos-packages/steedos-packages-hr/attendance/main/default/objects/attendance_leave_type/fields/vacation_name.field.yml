@@ -1,0 +1,13 @@
+name: vacation_name
+data_type: text
+label: 假期类别
+options:
+  - label: 全薪
+    value: full_salary
+  - label: 部分薪
+    value: partial_salary
+  - label: 无薪
+    value: unpaid
+required: false
+sort_no: 200
+type: select

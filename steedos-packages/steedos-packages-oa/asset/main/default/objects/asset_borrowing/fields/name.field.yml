@@ -1,0 +1,9 @@
+name: name
+filterable: true
+index: true
+label: 标题
+required: true
+searchable: true
+sort_no: 100
+type: text
+

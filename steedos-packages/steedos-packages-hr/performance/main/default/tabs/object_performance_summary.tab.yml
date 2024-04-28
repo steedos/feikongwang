@@ -1,0 +1,7 @@
+name: object_performance_summary
+desktop: true
+label: 考核汇总
+mobile: true
+object: performance_summary
+permissions: []
+type: object

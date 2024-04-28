@@ -1,0 +1,14 @@
+name: host_department
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 主办部门
+multiple: false
+primary: false
+reference_to: organizations
+required: false
+sort_no: 120
+sortable: false
+type: lookup

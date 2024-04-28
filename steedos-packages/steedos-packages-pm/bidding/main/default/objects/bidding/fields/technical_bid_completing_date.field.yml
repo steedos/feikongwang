@@ -1,0 +1,4 @@
+name: technical_bid_completing_date
+label: 技术标完成时间
+type: date
+sort_no: 190

@@ -1,0 +1,32 @@
+name: all
+columns:
+  - field: name
+    wrap: false
+  - field: objective
+    wrap: false
+  - field: owner
+    wrap: false
+  - field: weight
+    wrap: false
+  - field: starting_value
+    wrap: false
+  - field: target
+    wrap: false
+  - field: most_recent_progress_made
+    wrap: false
+  - field: progress
+    wrap: false
+  - field: calculated_objective_progress
+    wrap: false
+  - field: confidence
+    wrap: false
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+show_count: false
+sort:
+  - field_name: name
+    order: asc
+type: grid

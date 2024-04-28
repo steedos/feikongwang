@@ -1,0 +1,33 @@
+name: 预计人天
+created_at: 2023-11-24T02:48:53.490Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  type: query
+  query:
+    source-table: project
+    aggregation:
+      - - sum
+        - - field
+          - project.workload_days
+          - null
+  database: '1'
+display: scalar
+entity_id: 65600f15f084ab05cc5731ea
+id: 65600f15f084ab05cc5731ea
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 工作量(人时)合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: project
+updated_at: 2023-11-24T02:48:53.490Z
+visualization_settings: '{}'

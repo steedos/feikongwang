@@ -1,0 +1,10 @@
+name: overtime_count
+data_type: number
+label: 加班时数总计
+precision: 18
+scale: 2
+sort_no: 130
+summary_field: overtime_hour
+summary_object: driver_overtime_count
+summary_type: sum
+type: summary

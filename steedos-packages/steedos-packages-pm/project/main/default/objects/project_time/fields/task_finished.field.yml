@@ -1,0 +1,14 @@
+name: task_finished
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 任务已完成
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 130
+sortable: false
+type: boolean

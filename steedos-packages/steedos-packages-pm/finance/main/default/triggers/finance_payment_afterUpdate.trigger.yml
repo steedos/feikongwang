@@ -1,0 +1,23 @@
+name: finance_payment_afterUpdate
+listenTo: finance_payment
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { previousDoc, doc } = ctx.params;
+  // 如果付款中有发票，修改其发票状态
+  if (doc.payment_invoicefolder && doc.payment_invoicefolder.length) {
+      const invoicesObj = this.getObject('invoices');
+      for (let invoicesId of doc.payment_invoicefolder) {
+          if (previousDoc.instance_state != 'pending' && doc.instance_state == 'pending') {
+              await invoicesObj.directUpdate(invoicesId, {
+                  status: "approving"
+              })
+          } else if (previousDoc.instance_state != 'approved' && doc.instance_state == 'approved') {
+              await invoicesObj.directUpdate(invoicesId, {
+                  status: "complete"
+              })
+          }
+      }
+  }
+locked: false

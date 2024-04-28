@@ -1,0 +1,29 @@
+name: all
+columns:
+  - field: staff
+  - field: company
+  - field: department
+  - field: date_time
+  - field: site
+  - field: data_source
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns:
+  - field: staff
+  - field: date_time
+  - field: department
+  - field: site
+scrolling_mode: standard
+searchable_fields:
+  - field: staff
+  - field: company
+  - field: department
+  - field: date_time
+  - field: data_source
+shared: true
+sort:
+  - field_name: date_time
+    order: desc
+sort_no: 100
+type: grid

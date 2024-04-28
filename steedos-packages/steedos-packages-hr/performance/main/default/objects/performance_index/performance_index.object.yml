@@ -1,0 +1,8 @@
+name: performance_index
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: section
+is_enable: true
+label: 考核指标
+version: 2

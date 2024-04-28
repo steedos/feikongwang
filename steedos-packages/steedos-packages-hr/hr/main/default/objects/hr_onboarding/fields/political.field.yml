@@ -1,0 +1,15 @@
+name: political
+data_type: text
+group: 其他信息
+label: 政治面貌
+options:
+  - label: 团员
+    value: members
+  - label: 党员
+    value: party
+  - label: 群众
+    value: masses
+  - label: 其他
+    value: others
+sort_no: 350
+type: select

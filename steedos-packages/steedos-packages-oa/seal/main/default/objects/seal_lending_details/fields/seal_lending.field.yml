@@ -1,0 +1,5 @@
+name: seal_lending
+label: 印章外借
+reference_to: administration_stamp_lend
+sort_no: 200
+type: master_detail

@@ -1,0 +1,7 @@
+name: object_cost_reimburse_detail
+desktop: true
+label: 我的费用
+mobile: true
+object: cost_reimburse_detail
+permissions: []
+type: object

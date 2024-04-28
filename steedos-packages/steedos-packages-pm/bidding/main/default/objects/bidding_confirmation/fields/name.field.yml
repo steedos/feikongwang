@@ -1,0 +1,8 @@
+name: name
+label: 编号
+filterable: true
+formula: 'DB-{000}'
+visible_on: "{{global.mode ==='read' ? true : false}}"
+searchable: true
+sort_no: 90
+type: autonumber

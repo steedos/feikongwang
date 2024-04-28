@@ -1,0 +1,6 @@
+name: model
+label: 规格型号
+sort_no: 110
+type: text
+filterable: true
+searchable: true

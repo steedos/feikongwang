@@ -1,0 +1,7 @@
+name: meeting_home
+is_active: true
+label: 会议首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

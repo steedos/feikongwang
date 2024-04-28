@@ -1,0 +1,25 @@
+name: status
+is_wide: false
+label: 考勤状态
+multiple: true
+options:
+  - label: 正常
+    value: normal
+  - label: 迟到
+    value: late
+  - label: 早退
+    value: early
+  - label: 旷工
+    value: absent
+  - label: 缺卡
+    value: lack
+  - label: 请假
+    value: leave
+  - label: 外出
+    value: out
+  - label: 出差
+    value: business
+  - label: 加班
+    value: overtime
+sort_no: 120
+type: select

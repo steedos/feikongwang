@@ -1,0 +1,9 @@
+name: lateness
+group: 弹性考勤
+label: 允许迟到（分钟）
+precision: 18
+scale: 0
+sort_no: 240
+type: number
+required: "{{true === formData.enable_flexible_commuting ? true: false}}"
+visible_on: "{{true === formData.enable_flexible_commuting ? true: false}}"

@@ -1,0 +1,40 @@
+name: recent
+columns:
+  - field: name
+    wrap: false
+  - field: head_spaceuser
+    width: '100'
+    wrap: false
+  - field: has_collection
+    width: '80'
+    wrap: false
+  - field: completed
+    width: '80'
+    wrap: false
+  - field: project
+    wrap: false
+  - field: kickoff
+    width: '140'
+    wrap: false
+  - field: deadline
+    width: '140'
+    wrap: false
+  - field: completed_date
+    width: '140'
+    wrap: false
+filter_fields:
+  - name
+  - project
+  - deadline
+  - completed
+  - owner
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+show_count: false
+sort:
+  - field_name: deadline
+    order: asc
+type: grid

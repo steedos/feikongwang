@@ -1,0 +1,14 @@
+name: attendance_going_out_afterInsert
+listenTo: attendance_going_out
+when:
+  - afterInsert
+isEnabled: true
+handler: >-
+  // 外出记录创建之后，计算外出时长
+
+  const { doc } = ctx.params;
+
+  await
+  ctx.broker.call('@steedos-labs/attendance.afterInsertCountGoingOutTimes', {
+      "doc": doc
+  })

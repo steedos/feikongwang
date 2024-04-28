@@ -1,0 +1,94 @@
+name: 考勤
+code: attendance
+description: 企业员工假期、加班管理。
+icon_slds: channel_program_members
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: false
+mobile_objects:
+  - attendance_leave
+  - attendance_overtime
+  - cost_going_out_application
+  - cost_business_out_application
+  - attendance_balance
+  - attendance
+  - attendance_leave_type
+  - instance_tasks
+showSidebar: true
+sort: 90
+tab_groups:
+  - group_name: 考勤信息
+    default_open: true
+  # - group_name: 假期信息
+  #   default_open: true
+  - group_name: 考勤流程
+    default_open: true
+  - group_name: 考勤设置
+    default_open: true
+  - group_name: 流程审批
+    default_open: true
+tab_items:
+  attendance_home:
+    group: 考勤信息
+    index: 0
+  object_attendance:
+    group: 考勤信息
+    index: 1
+  object_attendance_daily:
+    group: 考勤信息
+    index: 2
+  object_attendance_month:
+    group: 考勤信息
+    index: 3
+  object_attendance_rule_settings:
+    group: 考勤设置
+    index: 4
+  object_attendance_site:
+    group: 考勤设置
+    index: 5
+  admin_holidays:
+    group: 考勤设置
+    index: 6
+  object_attendance_leave_type:
+    group: 考勤设置
+    index: 7
+  object_attendance_balance:
+    group: 考勤信息
+    index: 8
+  object_attendance_leave:
+    group: 考勤流程
+    index: 9
+  object_attendance_overtime:
+    group: 考勤流程
+    index: 10
+  object_attendance_business_out:
+    group: 考勤流程
+    index: 11
+  object_attendance_going_out:
+    group: 考勤流程
+    index: 12
+  object_attendance_retroactive:
+    group: 考勤流程
+    index: 13
+  object_instance_tasks:
+    group: 流程审批
+    index: 14
+tabs:
+  - attendance_home
+  - object_attendance
+  - object_attendance_daily
+  - object_attendance_month
+  - object_attendance_rule_settings
+  - object_attendance_site
+  - object_attendance_leave_type
+  - object_attendance_balance
+  - admin_holidays
+  - object_attendance_leave
+  - object_attendance_overtime
+  - object_attendance_business_out
+  - object_attendance_going_out
+  - object_attendance_retroactive
+  - object_instance_tasks
+visible: true

@@ -1,0 +1,14 @@
+name: job_title
+data_type: text
+filterable: true
+formula: staff.job_title
+formula_blank_value: zeroes
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 职位
+primary: false
+sort_no: 116
+sortable: false
+type: formula

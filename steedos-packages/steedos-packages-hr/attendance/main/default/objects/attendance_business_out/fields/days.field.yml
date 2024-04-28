@@ -1,0 +1,15 @@
+name: days
+data_type: number
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label:  出差时长（天）
+precision: 18
+primary: false
+scale: 1
+sort_no: 800
+sortable: false
+type: number
+visible_on: "{{global.mode ==='read' ? true : false}}"

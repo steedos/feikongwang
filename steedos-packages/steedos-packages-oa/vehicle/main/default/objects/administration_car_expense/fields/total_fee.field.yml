@@ -1,0 +1,9 @@
+name: total_fee
+label: 合计
+sort_no: 1000
+type: formula
+formula: fuel_fee + parking_fee + maintenance_fee + insurance_fee + accessory_fee 
+formula_blank_value: zeros
+data_type: number
+scale: 2
+precision: 18

@@ -1,0 +1,16 @@
+name: parent_objective
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 父目标
+multiple: false
+omit: false
+readonly: false
+reference_to: okr_objective
+required: false
+searchable: false
+sort_no: 102
+sortable: false
+type: lookup

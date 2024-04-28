@@ -1,0 +1,24 @@
+name: all
+columns:
+  - field: assets_card
+    wrap: false
+    width: '150'
+  - field: asset_number
+    wrap: false
+    width: '120'
+  - field: model
+    wrap: false
+    width: '150'
+  - field: quantity
+    wrap: false
+    width: '100'
+  - field: asset_return
+    wrap: false
+filter_scope: space
+filters: []
+label: 所有资产归还明细
+scrolling_mode: standard
+shared: true
+show_count: false
+sort_no: 100
+type: grid

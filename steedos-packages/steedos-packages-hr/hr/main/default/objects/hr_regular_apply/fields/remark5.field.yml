@@ -1,0 +1,13 @@
+name: remark5
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 对公司的建议和意见
+primary: false
+required: true
+rows: 3
+sort_no: 340
+sortable: false
+type: textarea

@@ -1,0 +1,12 @@
+name: arrive_city
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 目的地
+primary: false
+required: true
+sort_no: 150
+sortable: false
+type: text

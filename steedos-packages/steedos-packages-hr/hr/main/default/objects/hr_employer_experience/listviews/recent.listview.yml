@@ -1,0 +1,13 @@
+name: recent
+columns:
+  - field: name
+  - field: start
+  - field: end
+  - field: position
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

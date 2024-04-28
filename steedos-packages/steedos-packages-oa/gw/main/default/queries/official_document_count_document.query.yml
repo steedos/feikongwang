@@ -1,0 +1,118 @@
+name: official_document_count_document
+datasource: default
+description: >-
+  查询对象：instances 审批
+
+  查询条件：审批记录未删除、流程分类为"公文管理"、流程名为“公司发文流程”、待办处理人(inbox_users) 或
+  已办处理人（outbox_users）为当前用户、查询时间为：提交日期范围“上月/本月/本年”。
+
+  查询结果：当前用户发文审批中总记录多少条、待办记录多少条、已办记录多少条。
+label: 公文-发文统计
+options:
+  parameters:
+    - title: userId
+      name: userId
+      type: text
+      global: false
+      locals: []
+      value: 620da7b6-6918-473e-90a7-f9b98425b09a
+    - title: datetime
+      name: datetime
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_month
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "instances",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "inbox_users": "$inbox_users",
+                  "outbox_users": "$outbox_users",
+                  "name": "$name",
+                  "flow_name": "$flow_name",
+                  "category_name": "$category_name",
+                  "submit_date": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d %H:%M:%S",
+                          "date": "$submit_date",
+                          "timezone": "+08"
+                      }
+                  }
+              }
+          },
+          {
+              "$facet": {
+                  "inbox": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "flow_name": "公司发文流程",
+                              "category_name": "公文管理",
+                              "inbox_users": {
+                                  "$eq": "{{ userId }}"
+                              },
+                              "$and": [
+                                  {
+                                      "submit_date": {
+                                          "$gte": "{{ datetime.start }}"
+                                      }
+                                  },
+                                  {
+                                      "submit_date": {
+                                          "$lte": "{{ datetime.end }}"
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "$count": "inboxCount"
+                      }
+                  ],
+                  "outbox": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "flow_name": "公司发文流程",
+                              "category_name": "公文管理",
+                              "inbox_users": {
+                                "$ne": "{{ userId }}"
+                              },
+                              "outbox_users": {
+                                  "$eq": "{{ userId }}"
+                              },
+                              "$and": [
+                                  {
+                                      "submit_date": {
+                                          "$gte": "{{ datetime.start }}"
+                                      }
+                                  },
+                                  {
+                                      "submit_date": {
+                                          "$lte": "{{ datetime.end }}"
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "$count": "outboxCount"
+                      }
+                  ]
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

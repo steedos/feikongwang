@@ -1,0 +1,96 @@
+[
+    {
+      "_id": "${space_id}_650167f7eef6ae1472649376",
+      "status": "finished",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "2023年7月份考核计划",
+      "max_score": 100,
+      "type": "accessment",
+      "notes": "7月份绩效考核",
+      "start_date": "2023-07-01T00:00:00.000Z",
+      "end_date": "2023-07-30T00:00:00.000Z",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:42:47.812Z",
+      "modified": "2023-09-13T10:37:12.809Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "quarter": "third_quarter",
+      "year": "2023",
+      "_display": {
+        "status": "进行中"
+      }
+    },
+    {
+      "_id": "${space_id}_6501683ceef6ae1472649377",
+      "status": "finished",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "2023年8月份考核计划",
+      "max_score": 100,
+      "type": "accessment",
+      "notes": "8月份绩效考核",
+      "start_date": "2023-08-01T00:00:00.000Z",
+      "end_date": "2023-08-31T00:00:00.000Z",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:43:56.697Z",
+      "modified": "2023-09-13T10:37:20.072Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "quarter": "third_quarter",
+      "year": "2023",
+      "_display": {
+        "status": "已结束"
+      }
+    },
+    {
+      "_id": "${space_id}_65016864eef6ae1472649378",
+      "status": "finished",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "2023年9月份考核计划",
+      "max_score": 100,
+      "type": "accessment",
+      "start_date": "2023-09-01T00:00:00.000Z",
+      "notes": "9月份绩效计划",
+      "end_date": "2023-09-30T00:00:00.000Z",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:44:36.658Z",
+      "modified": "2023-09-13T10:37:26.863Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "quarter": "third_quarter",
+      "year": "2023"
+    },
+    {
+      "_id": "${space_id}_6501898da0a18a323b1e026a",
+      "status": "finished",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "2023年第三季度个人评分",
+      "max_score": 30,
+      "type": "personal",
+      "notes": "第三季度个人评分",
+      "start_date": "2023-09-01T00:00:00.000Z",
+      "end_date": "2023-09-30T00:00:00.000Z",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T10:06:05.605Z",
+      "modified": "2023-09-13T11:39:05.947Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "quarter": "third_quarter",
+      "year": "2023"
+    }
+  ]

@@ -1,0 +1,13 @@
+name: job_title
+filterable: true
+generated: false
+group: 在职信息
+index: false
+is_name: false
+is_wide: false
+label: 职位
+primary: false
+required: true
+sort_no: 190
+sortable: false
+type: text

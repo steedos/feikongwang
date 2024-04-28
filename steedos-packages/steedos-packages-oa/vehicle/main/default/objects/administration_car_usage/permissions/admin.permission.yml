@@ -1,0 +1,69 @@
+name: 车辆使用记录.admin
+allowCreate: true
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: car_no
+    readable: true
+    editable: true
+  - field: application
+    readable: true
+    editable: true
+  - field: user
+    readable: true
+    editable: true
+  - field: start_place
+    readable: true
+    editable: true
+  - field: destination
+    readable: true
+    editable: true
+  - field: start_time
+    readable: true
+    editable: true
+  - field: end_time
+    readable: true
+    editable: true
+  - field: driver
+    readable: true
+    editable: true

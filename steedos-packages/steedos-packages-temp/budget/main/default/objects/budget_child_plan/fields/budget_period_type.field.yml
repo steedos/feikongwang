@@ -1,0 +1,21 @@
+name: budget_period_type
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算周期类型
+multiple: false
+options:
+  - label: 月度预算
+    value: 月度预算
+  - label: 季度预算
+    value: 季度预算
+  - label: 年度预算
+    value: 年度预算
+primary: false
+required: true
+sort_no: 170
+sortable: false
+type: select

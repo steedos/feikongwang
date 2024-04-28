@@ -1,0 +1,7 @@
+name: parent
+label: 上级名称
+type: lookup
+reference_to: accounts_type
+sort_no: 200
+create: false
+filterable: true

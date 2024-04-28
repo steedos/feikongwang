@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "${space_id}_62fb28cbcb9c8306a51b2b64",
+        "checker": "${space_owner_id}",
+        "end": {
+            "$date": "2022-08-23T11:00:56.013Z"
+        },
+        "meeting": "${space_id}_62fb2768cb9c8306a51b2b57",
+        "name": "前端列表视图页面改造",
+        "staff": "${space_owner_id}",
+        "start": {
+            "$date": "2022-08-16T01:00:41.253Z"
+        },
+        "status": "进行中",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:19:07.678Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:51:24.994Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

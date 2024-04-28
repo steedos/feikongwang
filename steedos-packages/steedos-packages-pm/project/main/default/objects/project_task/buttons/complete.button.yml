@@ -1,0 +1,61 @@
+name: complete
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "标记完成",
+              "id": "u:complete",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "ajax",
+                              "args": {
+                                  "options": {},
+                                  "api": {
+                                      "url": "/service/api/@steedos-labs/project/projects_ee/project_task",
+                                      "method": "get",
+                                      "requestAdaptor": "",
+                                      "adaptor": "",
+                                      "messages": {},
+                                      "headers": {
+                                          "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                      },
+                                      "data": {
+                                          "projectTaskId": "${_id}"
+                                      }
+                                  }
+                              },
+                              "outputVar": "responseResult"
+                          },
+                          {
+                              "actionType": "refresh"
+                          }
+                      ]
+                  }
+              },
+              "hiddenOn": "${has_complete}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:523e590e742c"
+  }
+is_enable: true
+label: 标记完成
+'on': record
+type: amis_button
+visible: true

@@ -1,0 +1,7 @@
+name: latitude
+label: 模版维度
+required: true
+sort_no: 110
+type: lookup
+reference_to: performance_template_latitude
+filterable: true

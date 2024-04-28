@@ -1,0 +1,21 @@
+name: all
+columns:
+  - field: name
+  - field: site
+  - field: valid_range
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns:
+  - field: name
+  - field: site
+  - field: valid_range
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: site
+  - field: valid_range
+shared: true
+sort: []
+sort_no: 100
+type: grid

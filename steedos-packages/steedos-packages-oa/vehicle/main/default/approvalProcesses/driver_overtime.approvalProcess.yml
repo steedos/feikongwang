@@ -1,0 +1,26 @@
+record_editability: admin_only
+final_approval_record_lock: lock
+final_rejection_record_lock: unlock
+name: driver_overtime
+label: 驾驶员加班批准
+object_name: driver_overtime
+order: 1
+entry_criteria: 1=1
+initial_submission_record_lock: lock
+recall_record_lock: unlock
+active: true
+final_approval_updates_field_actions:
+  - driver_overtime_to_approved
+final_rejection_updates_field_actions:
+  - driver_overtime_to_reject
+initial_submission_updates_field_actions:
+  - driver_overtime_to_pending
+process_nodes:
+  - reject_behavior: reject_request
+    name: stepxx
+    label: stepxxx
+    order: 1
+    filtrad: true
+    approver: submitter_choose
+    approval_updates_field_actions:
+      - driver_overtime_approval

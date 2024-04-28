@@ -1,0 +1,7 @@
+name: month
+label: 月份
+type: number
+precision: 18
+scale: 0
+hidden: true
+sort_no: 100

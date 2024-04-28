@@ -1,0 +1,7 @@
+name: asset_return
+label: 资产归还
+reference_to: asset_return
+searchable: true
+sort_no: 170
+type: master_detail
+write_requires_master_read: true

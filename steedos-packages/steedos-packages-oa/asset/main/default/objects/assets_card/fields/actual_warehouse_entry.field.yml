@@ -1,0 +1,7 @@
+name: actual_warehouse_entry
+label: 实际入库单
+type: lookup
+reference_to: actual_warehouse_entry
+group: 管理信息
+required: false
+hidden: true

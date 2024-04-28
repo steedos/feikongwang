@@ -1,0 +1,17 @@
+name: invoice_date
+create: true
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 开票日期
+multiple: false
+primary: false
+required: true
+searchable: false
+show_as_qr: false
+sort_no: 140
+sortable: false
+type: date
+write_requires_master_read: false

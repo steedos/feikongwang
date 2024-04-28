@@ -1,0 +1,13 @@
+name: name
+index: true
+label: 编号
+required: false
+sort_no: 100
+filterable: false
+formula: '{00000}'
+generated: false
+is_name: false
+is_wide: false
+primary: false
+sortable: false
+type: autonumber

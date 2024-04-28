@@ -1,0 +1,7 @@
+name: leave_ref
+label: 请假记录
+sort_no: 340
+type: lookup
+reference_to: attendance_leave
+multiple: true
+group: 相关流程

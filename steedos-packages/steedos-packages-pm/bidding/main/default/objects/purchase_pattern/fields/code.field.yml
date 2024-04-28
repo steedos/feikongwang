@@ -1,0 +1,5 @@
+name: code
+label: 采购类型编码
+type: text
+sort_no: 110
+filterable: true

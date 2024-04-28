@@ -1,0 +1,9 @@
+name: clock_in
+__filename: >-
+  /workspace/steedos-ee/steedos-packages-hr/attendance/main/default/pages/clock_in.page.yml
+is_active: true
+label: 每日打卡
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

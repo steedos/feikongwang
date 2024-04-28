@@ -1,0 +1,24 @@
+name: inventory
+columns:
+  - name
+  - field: asset_number
+    width: '120'
+  - material_group
+  - asset_type
+  - field: warehouse
+    width: '120'
+  - dept
+  - field: status
+    width: '100'
+  - field: attributes
+    width: '100'
+  - model
+  - field: quantity
+    width: '90'
+  - field: measurement_unit
+    width: '100'
+  - field: is_active
+    width: '120'
+filters: [["inventory", "=", true]]
+label: 盘点资产卡片
+shared: true

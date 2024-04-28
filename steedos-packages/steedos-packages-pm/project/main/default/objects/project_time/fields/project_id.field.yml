@@ -1,0 +1,16 @@
+name: project_id
+filterable: true
+hidden: false
+index: true
+is_name: false
+is_wide: false
+label: 项目
+omit: false
+readonly: false
+reference_to: project
+required: true
+searchable: true
+sort_no: 120
+sortable: true
+type: master_detail
+write_requires_master_read: true

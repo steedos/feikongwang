@@ -1,0 +1,8 @@
+name: cms_posts_preview
+allow_anonymous: true
+is_active: true
+label: 知识预览
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

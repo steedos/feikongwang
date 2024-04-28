@@ -1,0 +1,7 @@
+name: years_used
+label: 已用年限（年）
+type: formula
+data_type: number
+formula: (YEAR(TODAY())-YEAR(DATEVALUE(use_date)))
+group: 报废信息
+sort_no: 440

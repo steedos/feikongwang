@@ -1,0 +1,6 @@
+name: late_count
+label: 迟到次数
+precision: 18
+scale: 0
+sort_no: 250
+type: number

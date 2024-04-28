@@ -1,0 +1,14 @@
+name: all
+label: 所有评估模版
+columns:
+  - field: name
+  - field: organization
+  - field: enable
+  - field: created_by
+  - field: created
+filter_scope: space
+filters: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

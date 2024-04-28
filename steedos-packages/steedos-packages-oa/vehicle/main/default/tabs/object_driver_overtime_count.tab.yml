@@ -1,0 +1,8 @@
+name: object_driver_overtime_count
+desktop: true
+icon: buyer_account
+label: 驾驶员加班统计明细
+mobile: true
+object: driver_overtime_count
+permissions: []
+type: object

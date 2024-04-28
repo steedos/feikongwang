@@ -1,0 +1,7 @@
+name: object_performance_plan
+desktop: true
+label: 考核计划
+mobile: true
+object: performance_plan
+permissions: []
+type: object

@@ -1,0 +1,19 @@
+name: room
+label: 会议室
+type: lookup
+reference_to: meetingroom
+is_wide: false
+required: true
+reference_sort:
+  name: 1
+reference_limit: 20
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function (){
+    if(Steedos.isSpaceAdmin()){
+      return null;
+    }
+    return [['enable_open','=',true], 'or',['admins','=',Meteor.userId()]]
+  }
+sortable: true
+filterable: true
+sort_no: 100

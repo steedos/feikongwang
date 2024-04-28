@@ -1,0 +1,6 @@
+name: children
+label: 子项目
+multiple: true
+reference_to: accounts_type
+type: lookup
+visible_on: '{{false}}'

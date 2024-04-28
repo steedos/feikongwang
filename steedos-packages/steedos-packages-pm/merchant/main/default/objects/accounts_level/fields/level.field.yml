@@ -1,0 +1,6 @@
+name: level
+label: 供应商等级类别
+type: text
+required: true
+sort_no: 110
+filterable: true

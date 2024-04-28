@@ -1,0 +1,11 @@
+name: bidding_confirmation
+filterable: true
+label: 定标编号
+reference_to: bidding_confirmation
+sort_no: 110
+type: master_detail
+amis:
+  autoFill:
+    "project_program": "${project_program}"
+    "bidding": "${bidding}"
+    "simple_bidding": "${simple_bidding}"

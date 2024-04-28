@@ -1,0 +1,82 @@
+name: supplier_shortlisting_afterUpdate
+listenTo: supplier_shortlisting
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  /**
+   *  供应商入围审批完成后，
+   *  TODO:
+   *  1、将供应商标记为合格供应商，同时修正供应商入围次数
+   *  2、发起审批时“立项状态”修正为“供应商入围”，审批通过后改为“标书制作”
+   *  3、添加入围信息，关联在业务伙伴下
+   */
+  const { doc, previousDoc, userId, spaceId } = ctx.params;
+
+  const userSession = await ctx.getUser(userId, doc.space);
+
+
+  if (doc.instance_state === 'pending' && doc.instance_state !==
+  previousDoc.instance_state) {
+      const bidding_status = await ctx.broker.call('@steedos-labs/bidding.getBiddingStatusByCode', { 'code': 'LX002' });
+      await ctx.broker.call('objectql.update',
+          {
+              'objectName': 'bidding',
+              'doc': { 'bidding_status': bidding_status },
+              'id': doc.bidding
+          }
+      );
+  }
+
+
+  if (doc.instance_state === 'approved' && doc.instance_state !==
+  previousDoc.instance_state) {
+      console.log('------------approved do something -----------------------')
+      const accounts = await ctx.broker.call(
+          'objectql.find',
+          {
+              'objectName': 'recommand_supplier',
+              'query': {
+                  'fields': ['_id', 'account', 'tender_number', 'bidding_number'],
+                  'filters': [['supplier_shortlisting', '=', doc._id], ['status', '=', 'already_shortlisted']]
+              }
+          }
+      )
+      // 根据供应商id数据去重，防止出现重复数据
+      const uniqueArr = global._.uniqBy(accounts, 'account');
+      // 更新供应商信息
+      for (const item of uniqueArr) {
+          let updateDoc = {
+              'is_qualified': true,
+              'tender_number': item.tender_number + 1
+          }
+          await ctx.broker.call(
+              'objectql.directUpdate',
+              {
+                  'objectName': 'accounts',
+                  'id': item.account,
+                  'doc': updateDoc
+              }
+          )
+      }
+
+      // 修正招标信息
+      const bidding_status = await ctx.broker.call('@steedos-labs/bidding.getBiddingStatusByCode', { 'code': 'LX003' });
+      await ctx.broker.call('objectql.update',
+          {
+              'objectName': 'bidding',
+              'doc': { 'bidding_status': bidding_status },
+              'id': doc.bidding
+          }
+      );
+
+      // 添加入围信息
+      await ctx.broker.call('@steedos-labs/bidding.addShortlisting',
+          {
+              'project_program': doc.project_program,
+              'bidding': doc.bidding,
+              'accounts': uniqueArr
+          },
+          { 'meta': { 'user': userSession } }
+      )
+  }

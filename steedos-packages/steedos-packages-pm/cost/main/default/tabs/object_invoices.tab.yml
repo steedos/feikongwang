@@ -1,0 +1,7 @@
+name: object_invoices
+desktop: true
+label: 发票台账
+mobile: true
+object: invoices
+permissions: []
+type: object

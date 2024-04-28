@@ -1,0 +1,33 @@
+name: vacation_type
+data_type: text
+label: 假期类型
+options:
+  - label: 带薪年休假
+    value: paid_annual_leave
+  - label: 带薪病假
+    value: paid_sick_leave
+  - label: 病假
+    value: sick_leave
+  - label: 调休假
+    value: transfer_leave
+  - label: 事假
+    value: leave
+  - label: 探亲假
+    value: family_leave
+  - label: 婚假
+    value: marriage_leave
+  - label: 产假
+    value: maternity_leave
+  - label: 生育假
+    value: birth_leave
+  - label: 哺乳假
+    value: breastfeeding_leave
+  - label: 陪产假
+    value: paternity_leave
+  - label: 流产假
+    value: abortion_leave
+  - label: 丧假
+    value: bereavement_leave
+required: true
+sort_no: 100
+type: select

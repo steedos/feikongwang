@@ -1,0 +1,168 @@
+[
+    {
+        "_id": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "name": "湖南省花县铁合金总厂",
+        "phone": null,
+        "address": "湖南省吉首市花县铁合金总厂",
+        "registered_capital": 10000000,
+        "credit_code": "91310112703255042R",
+        "status": "enable",
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T07:56:14.104Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "annual_revenue": null,
+        "do_not_call": false,
+        "fax_opt_out": false,
+        "has_opted_out_of_email": false,
+        "is_customer": false,
+        "is_supplier": true,
+        "number_of_employees": 10000,
+        "partner_account": false,
+        "company_type": "民企",
+        "industry": "Chemicals",
+        "legal_representative": "宋大宝",
+        "rating": "Warm",
+        "register_date": {
+            "$date": "2010-08-01T00:00:00Z"
+        },
+        "state": "HUN",
+        "business_license": null
+    },
+    {
+        "_id": "${space_id}_rp6f28g9xszJRGjwN",
+        "name": "江苏大仲集团有限公司",
+        "phone": "021-8566667",
+        "address": "上海市松江区区民胜路158号",
+        "registered_capital": 2E+10,
+        "credit_code": "91430000183786683Q",
+        "status": "enable",
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "company_type": "国企",
+        "is_customer": true,
+        "nickname": "DZ集团"
+    },
+    {
+        "_id": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "address": "无锡市润州区",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "credit_code": "62310115MJ5209999Z",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "status": "enable",
+        "name": "致力无锡有限公司",
+        "is_supplier": false,
+        "is_customer": true,
+        "phone": "051-9837624",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "company_type": "民企",
+        "rating": "Hot",
+        "due_date": {
+            "$date": "2031-08-27T00:00:00Z"
+        },
+        "industry": "Construction",
+        "legal_representative": "刘力亮",
+        "number_of_employees": 1000,
+        "register_date": {
+            "$date": "2008-08-01T00:00:00Z"
+        },
+        "registered_capital": 1000000,
+        "state": "JS"
+    },
+    {
+        "_id": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "address": "上海市闵行区七莘路56号",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_type": "民企",
+        "credit_code": "26548997636564656R",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "status": "enable",
+        "name": "剑牌商贸有限公司",
+        "is_supplier": false,
+        "is_customer": true,
+        "phone": "021-9826770",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T07:23:26.351Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "due_date": {
+            "$date": "2026-08-07T00:00:00Z"
+        },
+        "industry": "Apparel",
+        "legal_representative": "李伟",
+        "nickname": "上海优思",
+        "number_of_employees": 10000,
+        "rating": "Hot",
+        "register_date": {
+            "$date": "2018-07-30T00:00:00Z"
+        },
+        "registered_capital": 2000000,
+        "state": "SH"
+    },
+    {
+        "_id": "${space_id}_ua7esWTyhgNaspC94",
+        "address": null,
+        "company_id": "BPYdLkGZKFX2nrALu",
+        "company_type": "民企",
+        "credit_code": "459326499564646467989Q",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "status": "enable",
+        "name": "山西青山煤矿有限公司",
+        "is_supplier": false,
+        "is_customer": false,
+        "phone": null,
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T07:43:48.879Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:17:03.931Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "BPYdLkGZKFX2nrALu"
+        ]
+    }
+]

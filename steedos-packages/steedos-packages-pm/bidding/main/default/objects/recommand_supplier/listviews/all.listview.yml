@@ -1,0 +1,17 @@
+name: all
+label: 所有
+columns:
+  - field: account
+  - field: contact
+  - field: phone
+  - field: level
+  - field: tender_number
+  - field: bidding_number
+  - field: status
+  - field: origin
+filter_scope: space
+filters: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

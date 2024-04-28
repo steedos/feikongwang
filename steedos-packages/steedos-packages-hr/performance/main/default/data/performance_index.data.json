@@ -1,0 +1,76 @@
+[
+    {
+      "_id": "${space_id}_6501670feef6ae1472649372",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "完成销售收款日报、租赁明细表、欠费表等各项报表；完成物业公司各项收费，收缴率、欠费报表",
+      "description": "销售报表每日根据业务发生情况及时更新，下班前报送；物业公司报表每月5日前报送上个月的报表，每延迟1天扣1分；不进行检查，扣1分；发现问题不上报，核实，调查，扣1分/项",
+      "weight": 0.4,
+      "performance_template": "${space_id}_65016459eef6ae147264936f",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:38:55.745Z",
+      "modified": "2023-09-13T07:38:55.745Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_65016731eef6ae1472649373",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_template": "${space_id}_65016459eef6ae147264936f",
+      "name": "完成各项目公司合同台账，与相关部门核对合同支付情况。",
+      "description": "每月20日之前完成上月各项目公司台账。每延迟1天，扣1分。",
+      "weight": 0.5,
+      "displayAs": null,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:39:29.861Z",
+      "modified": "2023-09-13T07:39:29.861Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_6501674feef6ae1472649374",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_template": "${space_id}_65016459eef6ae147264936f",
+      "name": "准确支付各类款项及员工报销",
+      "description": "投诉一次扣1分",
+      "weight": 0.1,
+      "displayAs": null,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:39:59.606Z",
+      "modified": "2023-09-13T07:39:59.606Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_6501677deef6ae1472649375",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_template": "${space_id}_650164d9eef6ae1472649371",
+      "name": "个人评分",
+      "description": "按要求完成其他交办的工作",
+      "weight": 1,
+      "displayAs": null,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:40:45.313Z",
+      "modified": "2023-09-13T07:41:32.477Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "_display": {
+        "weight": "100.00%"
+      }
+    }
+  ]

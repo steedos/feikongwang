@@ -1,0 +1,10 @@
+name: attendance_group
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_audit: true
+icon: avatar
+is_enable: true
+label: 考勤组
+version: 2

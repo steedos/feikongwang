@@ -1,0 +1,5 @@
+name: performance_plan_item
+label: 考核计划明细
+type: lookup
+reference_to: performance_plan_item
+sort_no: 100

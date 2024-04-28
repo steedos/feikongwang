@@ -1,0 +1,14 @@
+name: attend
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 参会人员
+multiple: true
+primary: false
+reference_to: users
+required: false
+sort_no: 9999
+sortable: false
+type: lookup

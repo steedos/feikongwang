@@ -1,0 +1,23 @@
+name: calendar
+label: 日历
+columns:
+  - name
+  - start
+  - end
+filter_scope: space
+type: calendar
+options:
+  startDateExpr: start
+  endDateExpr: end
+  textExpr: name
+  groups:
+    - room
+  title:
+    - name
+    - start
+    - end
+  currentView: week
+  views:
+    - day
+    - week
+    - month

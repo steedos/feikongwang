@@ -1,0 +1,24 @@
+name: simple_bidding
+label: 简易招投标
+type: master_detail
+reference_to: simple_bidding
+sort_no: 100
+visible_on: "{{ formData.bidding ? false : true }}"
+depend_on: 
+  - project_program
+filtersFunction: |-
+  function(filters,values) {
+    return ['project_program', '=', values.project_program]
+  }
+amis:
+  autoFill:
+    fillMapping:
+      "purchase_method": "${purchase_method}"
+      "purchase_type": "${purchase_type}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:simple_bidding(filters: [[\"_id\", \"=\", \"${simple_bidding || _master.record._id}\"]], top: 1){purchase_method, purchase_type}}"

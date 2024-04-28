@@ -1,0 +1,65 @@
+name: project_milestone
+label: Milestone
+description: 
+fields:
+  children:
+    label: Sub-milestone
+    help: 
+    description: 
+  completed:
+    label: Completed
+    help: 
+    description: 
+  completed_date:
+    label: Actual Complated Date
+    help: 
+    description: 
+  deadline:
+    label: Deadline
+    help: 
+    description: 
+  description:
+    label: Description
+    help: 
+    description: 
+  has_collection:
+    label: Received Payment
+    help: 
+    description: 
+  head:
+    label: Header
+    help: 
+    description: 
+  head_spaceuser:
+    label: Person In Charge.
+    help: 
+    description: 
+  kickoff:
+    label: Start Date
+    help: 
+    description: 
+  name:
+    label: Milestone Name
+    help: 
+    description: 
+  owner:
+    label: Owner
+    help: 
+    description: 
+  project:
+    label: Project
+    help: Project Affiliation
+    description: 
+  project_milestone:
+    label: Parent Milestone
+    help: Superior Milestone
+    description: 
+listviews:
+  all:
+    label: All Milestone List
+  mine:
+    label: My Milestone List
+  recent:
+    label: Recently Viewed
+  to_be_completed:
+    label: To Be Completed

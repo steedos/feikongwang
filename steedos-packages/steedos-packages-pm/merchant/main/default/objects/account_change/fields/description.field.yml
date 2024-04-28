@@ -1,0 +1,5 @@
+name: description
+type: textarea
+label: 描述
+sort_no: 320
+defaultValue: "${_master.record.description || ''}"

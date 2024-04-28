@@ -1,0 +1,392 @@
+[
+    {
+        "_id": "${space_id}_6262190e87e5c50032d9bd5f",
+        "name": "城南2辆工程车辆中途损坏，需紧急加调增缓",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Scope",
+        "priority": "Medium",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T06:27:09.066Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191187e5c50032d9bd60",
+        "name": "施工中遇易积水路段，面临疏通路道，原管道材料基础上加防水涂材",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Scope",
+        "priority": "Low",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T06:25:29.132Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191287e5c50032d9bd61",
+        "name": "路况原因致运输中途改道，收货时间沟通确认",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60",
+        "type": "Scope",
+        "priority": "High",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:08:00.961Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191287e5c50032d9bd62",
+        "name": "燃料等级不匹配，协商解决办法",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60",
+        "type": "Scope",
+        "priority": "High",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:09:15.771Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191387e5c50032d9bd63",
+        "name": "燃料停放地点整改",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60",
+        "type": "Scope",
+        "priority": "High",
+        "status": "In-Process",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:09:52.111Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191487e5c50032d9bd64",
+        "name": "建筑用料可以在系统中查看对应库存及损耗",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Others",
+        "priority": "High",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-04-13T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-04-11T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T06:32:24.621Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191487e5c50032d9bd65",
+        "name": "劣质燃料退回处理及索赔",
+        "project": "${space_id}_630486ce9cc40f03d6e7cb60",
+        "type": "Quality",
+        "priority": "Medium",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-02-17T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-02-17T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:11:08.191Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191587e5c50032d9bd66",
+        "name": "项目风险讨论",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Quality",
+        "priority": "Medium",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-01-28T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-01-26T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:47:28Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191587e5c50032d9bd67",
+        "name": "整体设计方案研讨",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Quality",
+        "priority": "High",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-01-17T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-01-17T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:47:50.321Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191687e5c50032d9bd68",
+        "name": "问题处理流程落后",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Quality",
+        "priority": "Medium",
+        "status": "Open",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-01-21T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-01-17T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:48:34.206Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191787e5c50032d9bd69",
+        "name": "施工进度落后，项目跟进沟通",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "type": "Quality",
+        "priority": "Medium",
+        "status": "Closed",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-01-13T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-01-13T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:48:20.536Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191987e5c50032d9bd6d",
+        "name": "设计方案修改",
+        "project": "${space_id}_62620e5787e5c50032d9bd39",
+        "type": "Others",
+        "priority": "Medium",
+        "status": "Closed",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2022-01-12T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2022-01-12T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:47:04.481Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6262191a87e5c50032d9bd6e",
+        "name": "工作规划是否符合业务需求？",
+        "project": "${space_id}_62620e5787e5c50032d9bd39",
+        "type": "Schedule",
+        "priority": "Low",
+        "status": "Resolved",
+        "assigned_to": "${space_owner_id}",
+        "planned_resolution": {
+            "$date": "2021-09-10T00:00:00Z"
+        },
+        "request_date": {
+            "$date": "2021-09-06T00:00:00Z"
+        },
+        "space": "FCLaRczEXGKAjwvnn",
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "requester": "${space_owner_id}"
+    }
+]

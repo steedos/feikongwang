@@ -1,0 +1,20 @@
+name: finance_payment
+create: false
+filterable: false
+generated: false
+index: true
+is_name: false
+is_wide: false
+label: 关联付款记录
+multiple: false
+primary: false
+reference_to: finance_payment
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 400
+sortable: false
+type: lookup
+write_requires_master_read: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

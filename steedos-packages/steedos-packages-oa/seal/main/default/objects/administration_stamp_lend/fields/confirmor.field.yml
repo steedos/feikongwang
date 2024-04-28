@@ -1,0 +1,6 @@
+name: confirmor
+label: 归还确认人
+reference_to: space_users
+reference_to_field: user
+sort_no: 110
+type: lookup

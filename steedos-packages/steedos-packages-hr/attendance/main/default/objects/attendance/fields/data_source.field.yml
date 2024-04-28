@@ -1,0 +1,13 @@
+name: data_source
+data_type: text
+label: 数据来源
+options:
+  - label: 移动打卡
+    value: mobile
+  - label: 考勤机
+    value: machine
+  - label: 数据导入
+    value: import
+sort_no: 150
+type: select
+required: false

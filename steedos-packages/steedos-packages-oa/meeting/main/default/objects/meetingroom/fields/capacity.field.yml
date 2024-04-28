@@ -1,0 +1,5 @@
+name: capacity
+label: 容纳人数
+type: number
+sort_no: 110
+required: true

@@ -1,0 +1,15 @@
+name: all
+columns:
+  - field: name
+  - field: applicant
+  - field: return_date
+  - field: dept
+  - field: instance_state
+filter_scope: space
+filters: []
+label: 所有资产归还
+scrolling_mode: standard
+shared: true
+show_count: false
+sort_no: 100
+type: grid

@@ -1,0 +1,131 @@
+name: add_cost
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "添加费用",
+              "id": "u:add_cost",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "我的费用",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-table",
+                                          "label": "对象表格",
+                                          "objectApiName": "cost_reimburse_detail",
+                                          "className": "sm:border sm:rounded sm:border-gray-300",
+                                          "id": "u:52ee95a09a5b",
+                                          "fields": [
+                                              "autonumber",
+                                              "expend_type",
+                                              "amount",
+                                              "date",
+                                              "remark",
+                                              "instance",
+                                              "instance_state",
+                                              "status",
+                                              "applicant",
+                                              "department"
+                                          ],
+                                          "amisCondition": {
+                                              "id": "8298a2d1205d",
+                                              "conjunction": "and",
+                                              "children": [
+                                                  {
+                                                      "id": "0e279b32dc0f",
+                                                      "left": {
+                                                          "type": "field",
+                                                          "field": "status"
+                                                      },
+                                                      "op": "select_equals",
+                                                      "right": "before"
+                                                  }
+                                              ]
+                                          }
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:886910e8c265",
+                                  "closeOnEsc": false,
+                                  "onEvent": {
+                                      "confirm": {
+                                          "weight": 0,
+                                          "actions": [
+                                              {
+                                                  "actionType": "custom",
+                                                  "script": "const listViewRef = event.context.scoped.getComponentById(`listview_cost_reimburse_detail`);\nconst selectedItems = listViewRef.props.store.toJSON().selectedItems;\nconsole.log(\"====>\",event)\nconst uiSchema = event.data.uiSchema;\nevent.data.items = selectedItems;\nevent.data.targetObj = event.data.__super.objectName;\nevent.data.masterRecordId = event.data.__super.recordId;\nevent.data.preTargetOb = Creator.getObject().name\n"
+                                              },
+                                              {
+                                                  "actionType": "ajax",
+                                                  "outputVar": "responseResult",
+                                                  "args": {
+                                                      "options": {},
+                                                      "api": {
+                                                          "url": "/api/add/reimbures",
+                                                          "method": "post",
+                                                          "requestAdaptor": "",
+                                                          "adaptor": "",
+                                                          "messages": {},
+                                                          "headers": {
+                                                              "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                          },
+                                                          "data": {
+                                                              "targetObj": "${targetObj}",
+                                                              "masterRecordId": "${masterRecordId}",
+                                                              "records": "${items}",
+                                                              "preTargetOb": "${preTargetOb}"
+                                                          }
+                                                      }
+                                                  }
+                                              },
+                                              {
+                                                  "actionType": "refresh"
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "size": "lg",
+                                  "data": {
+                                      "additionalFilters": [],
+                                      "objectName": "${objectName}",
+                                      "recordId": "${recordId}",
+                                      "masterRecordId": "${masterRecordId}"
+                                  }
+                              }
+                          }
+                      ]
+                  }
+              },
+              "hiddenOn": "${_master.record.instance_state != null}"
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "id": "u:c4c6f961ce7a",
+      "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 添加费用
+'on': list
+type: amis_button
+visible: true

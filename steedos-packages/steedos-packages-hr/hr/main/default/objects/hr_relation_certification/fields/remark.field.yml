@@ -1,0 +1,13 @@
+name: remark
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 申请原因
+primary: false
+required: true
+rows: 3
+sort_no: 200
+sortable: false
+type: textarea

@@ -1,0 +1,5 @@
+name: template_item
+label: 评审指标
+type: lookup
+reference_to: assess_template_item
+sort_no: 100

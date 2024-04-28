@@ -1,0 +1,14 @@
+name: kickoff
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 计划开始
+omit: false
+readonly: false
+required: true
+searchable: false
+sort_no: 109
+sortable: false
+type: date

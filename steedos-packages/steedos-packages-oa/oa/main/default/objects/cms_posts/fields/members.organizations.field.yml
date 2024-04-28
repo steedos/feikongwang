@@ -1,0 +1,8 @@
+name: members.organizations
+type: lookup
+label: Organization Members
+reference_to: organizations
+multiple: true
+filterable: true
+sort_no: 90
+visible_on: "{{formData.enable_post_permissions}}"

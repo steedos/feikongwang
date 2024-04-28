@@ -1,0 +1,20 @@
+name: urgency
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 紧急程度
+multiple: false
+options:
+  - label: 普通
+    value: 普通
+  - label: 紧急
+    value: 紧急
+  - label: 特急
+    value: 特急
+primary: false
+required: false
+sort_no: 140
+sortable: false
+type: select

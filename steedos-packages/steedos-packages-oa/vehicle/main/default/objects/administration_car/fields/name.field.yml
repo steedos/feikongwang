@@ -1,0 +1,8 @@
+name: name
+label: 车牌号
+sort_no: 100
+type: text
+index: true
+required: true
+sortable: true
+searchable: true

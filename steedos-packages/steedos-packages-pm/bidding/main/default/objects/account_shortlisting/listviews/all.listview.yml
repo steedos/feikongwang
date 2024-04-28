@@ -1,0 +1,15 @@
+name: all
+columns:
+  - field: account
+  - field: project_program
+  - field: bidding
+  - field: shortlisting_date
+  - field: outbid
+  - field: reject_bid
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

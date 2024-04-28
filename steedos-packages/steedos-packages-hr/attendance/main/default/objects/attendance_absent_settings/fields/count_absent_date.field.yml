@@ -1,0 +1,7 @@
+name: count_absent_date
+label: 计旷工天数
+precision: 18
+required: true
+scale: 1
+sort_no: 150
+type: number

@@ -1,0 +1,43 @@
+name: designer
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "设计器",
+              "id": "u:designer",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "url",
+                              "args": {
+                                  "url": "${context.rootUrl}/analytics/dashboard/${recordId}"
+                              }
+                          }
+                      ]
+                  }
+              }
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:a9e2722d243e"
+  }
+is_enable: true
+label: 设计器
+'on': record_only
+type: amis_button
+visible: true

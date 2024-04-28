@@ -1,0 +1,15 @@
+name: daily_cost_budget
+filterable: false
+generated: false
+group: 预算与执行
+index: false
+is_name: false
+is_wide: false
+label: 日常费用预算
+precision: 18
+primary: false
+required: false
+scale: 0
+sort_no: 9999
+sortable: false
+type: currency

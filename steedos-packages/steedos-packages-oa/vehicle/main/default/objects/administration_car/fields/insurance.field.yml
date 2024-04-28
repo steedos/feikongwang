@@ -1,0 +1,12 @@
+name: insurance
+data_type: text
+label: 保单情况
+options:
+  - label: 有保单
+    value: 有保单
+  - label: 有保单复印件
+    value: 有保单复印件
+  - label: 无保单
+    value: 无保单
+sort_no: 110
+type: select

@@ -1,0 +1,26 @@
+name: applicant
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 申请人
+multiple: false
+primary: false
+reference_to: users
+required: true
+sort_no: 150
+sortable: false
+type: lookup
+defaultValue: '{userId}'
+amis:
+  autoFill:
+    fillMapping:
+      "department": "${organization}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers:
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: '{rows:space_users(filters: [["_id", "=", "${applicant}"]], top: 1){organization} }'

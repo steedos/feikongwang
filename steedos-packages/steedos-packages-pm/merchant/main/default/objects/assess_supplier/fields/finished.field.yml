@@ -1,0 +1,5 @@
+name: finished
+label: 已完成
+type: boolean
+visible_on: "{{ global.mode === 'read' ? true : false }}"
+sort_no: 150

@@ -1,0 +1,70 @@
+name: verify
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "查验",
+              "id": "u:verify",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "ajax",
+                              "outputVar": "responseResult",
+                              "args": {
+                                  "options": {},
+                                  "api": {
+                                      "url": "${context.rootUrl}/api/invoice/verify",
+                                      "method": "post",
+                                      "requestAdaptor": "",
+                                      "adaptor": "",
+                                      "messages": {},
+                                      "dataType": "json",
+                                      "headers": {
+                                          "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                      },
+                                      "data": {
+                                          "invoiceId": "${record._id}"
+                                      }
+                                  }
+                              },
+                              "expression": ""
+                          },
+                          {
+                              "actionType": "broadcast",
+                              "args": {
+                                  "eventName": "@data.changed.invoices"
+                              },
+                              "data": {
+                                  "objectName": "invoices"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "hiddenOn": "${record.type != 'vat_invoice' || record.verify_status == 'passed'}",
+              "disabled": false
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "id": "u:da76981e938c",
+      "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 查验
+'on': record_only
+type: amis_button
+visible: true

@@ -1,0 +1,6 @@
+name: tender_number
+label: 入围次数
+type: number
+precision: 18
+scale: 0
+sort_no: 150

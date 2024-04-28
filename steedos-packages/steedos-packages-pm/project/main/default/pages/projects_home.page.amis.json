@@ -1,0 +1,378 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "panel",
+            "title": "项目概览",
+            "body": [
+                {
+                    "type": "grid",
+                    "columns": [
+                        {
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "id": "u:a9edd3e43c0d",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_count_working_project/results",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nvar row = { count: 0 };\nif (rows && rows.length) {\n  row = rows[0];\n}\n\npayload.data = {\n  count: row.count\n};\n\nreturn payload;",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>在建项目</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">${count} 个</span></p>",
+                                            "inline": false,
+                                            "id": "u:ae58a1da0146",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "u:27de789ab014"
+                        },
+                        {
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "id": "u:a9edd3e43c0d",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_count_uncompleted_project_issue/results",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nvar row = { count: 0 };\nif (rows && rows.length) {\n  row = rows[0];\n}\n\npayload.data = {\n  count: row.count\n};\n\nreturn payload;",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>待完成任务</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">${count} 个</span></p>",
+                                            "inline": false,
+                                            "id": "u:ae58a1da0146",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "u:89ccaf36d1d8"
+                        },
+                        {
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "id": "u:a9edd3e43c0d",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_count_uncompleted_project_task/results",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nvar row = { count: 0 };\nif (rows && rows.length) {\n  row = rows[0];\n}\n\npayload.data = {\n  count: row.count\n};\n\nreturn payload;",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>待处理问题</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">${count} 个</span></p>",
+                                            "inline": false,
+                                            "id": "u:ae58a1da0146",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "u:4b3789a43425"
+                        },
+                        {
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "id": "u:a9edd3e43c0d",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_sum_project_time/results",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nvar row = { hours: 0 };\nif (rows && rows.length) {\n  row = rows[0];\n}\n\npayload.data = {\n  hours: row.hours\n};\n\nreturn payload;",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>已花费工时</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">${hours} 小时</span></p>",
+                                            "inline": false,
+                                            "id": "u:ae58a1da0146",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "u:b53468531826"
+                        }
+                    ],
+                    "id": "u:214b11a7ec33"
+                }
+            ],
+            "id": "u:1de3385ef0b5",
+            "affixFooter": false,
+            "inline": false,
+            "actions": [],
+            "className": "border-gray-300",
+            "bodyClassName": "",
+            "headerClassName": "font-bold p-sm text-md"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "待完成的任务",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "任务名称",
+                                                    "type": "link",
+                                                    "id": "u:69db1f47edf5",
+                                                    "placeholder": "-",
+                                                    "body": "${name}",
+                                                    "href": "/app/-/project_task/view/${_id}",
+                                                    "blank": false
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "项目",
+                                                    "name": "_display.project",
+                                                    "placeholder": "-",
+                                                    "id": "u:78b8d16be35f"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "优先级",
+                                                    "name": "_display.priority",
+                                                    "placeholder": "-",
+                                                    "id": "u:ea662e48393f"
+                                                },
+                                                {
+                                                    "type": "date",
+                                                    "label": "到期日期",
+                                                    "name": "_display.due_date",
+                                                    "placeholder": "-",
+                                                    "id": "u:260df790da67"
+                                                }
+                                            ],
+                                            "id": "u:933acd399b31",
+                                            "className": "",
+                                            "source": "${rows}",
+                                            "affixFooter": false,
+                                            "title": "",
+                                            "tableClassName": "border-t"
+                                        }
+                                    ],
+                                    "id": "u:5be71e100dd2",
+                                    "affixFooter": false,
+                                    "inline": false,
+                                    "bodyClassName": "p-0",
+                                    "className": "border-gray-300",
+                                    "actions": [],
+                                    "footerClassName": "",
+                                    "headerClassName": "font-bold p-sm text-md"
+                                }
+                            ],
+                            "id": "u:931e622f8191",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql",
+                                "data": {
+                                    "query": "{ rows: project_task(top: 5,filters:[[\"state\",\"in\",[\"in_progress\", \"waiting\", \"deferred\"]]], sort: \"due_date desc\") { _id, name, project,priority,due_date,_display{ project,priority,due_date }} }"
+                                },
+                                "adaptor": "",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                }
+                            },
+                            "affixFooter": false
+                        },
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "处理中的问题",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "问题名称",
+                                                    "type": "link",
+                                                    "id": "u:69db1f47edf5",
+                                                    "placeholder": "-",
+                                                    "body": "${name}",
+                                                    "href": "/app/-/project_issue/view/${_id}",
+                                                    "blank": false
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "项目",
+                                                    "name": "_display.project",
+                                                    "placeholder": "-",
+                                                    "id": "u:78b8d16be35f"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "优先级",
+                                                    "name": "_display.priority",
+                                                    "placeholder": "-",
+                                                    "id": "u:ea662e48393f"
+                                                },
+                                                {
+                                                    "type": "date",
+                                                    "label": "计划解决日期",
+                                                    "name": "_display.planned_resolution",
+                                                    "placeholder": "-",
+                                                    "id": "u:260df790da67"
+                                                }
+                                            ],
+                                            "id": "u:933acd399b31",
+                                            "className": "",
+                                            "source": "${rows}",
+                                            "affixFooter": false,
+                                            "title": "",
+                                            "tableClassName": "border-t"
+                                        }
+                                    ],
+                                    "id": "u:e6c6e3fe5bc4",
+                                    "affixFooter": false,
+                                    "inline": false,
+                                    "bodyClassName": "p-0",
+                                    "className": "border-gray-300",
+                                    "actions": [],
+                                    "footerClassName": "",
+                                    "headerClassName": "font-bold p-sm text-md"
+                                }
+                            ],
+                            "id": "u:ffa1d4056741",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql",
+                                "data": {
+                                    "query": "{ rows: project_issue(top: 5,filters:[[\"status\",\"in\",[\"Open\", \"In-Process\", \"Escalated\"]]], sort: \"planned_resolution desc\") { _id, name, project, priority, planned_resolution, _display{ project,priority,planned_resolution }} }"
+                                },
+                                "adaptor": "",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                }
+                            },
+                            "affixFooter": false
+                        }
+                    ],
+                    "md": 8,
+                    "id": "u:20d95542c35d"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "问题类型分布",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {},
+                                    "replaceChartOption": true,
+                                    "id": "u:6be6bbcbda48",
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_chart_type_project_issue/results",
+                                        "adaptor": "var defaultSeriesData = [{\n    name: \"预算\",\n    value: 0,\n    key: \"Budget\"\n  }, {\n    name: \"资源\",\n    value: 0,\n    key: \"Resource\"\n  }, {\n    name: \"范围\",\n    value: 0,\n    key: \"Scope\"\n  }, {\n    name: \"计划\",\n    value: 0,\n    key: \"Schedule\"\n  }, {\n    name: \"质量\",\n    value: 0,\n    key: \"Quality\"\n  }, {\n    name: \"风险\",\n    value: 0,\n    key: \"Risk\"\n  }, {\n    name: \"其他\",\n    value: 0,\n    key: \"Others\"\n  }];\n\nvar rows = payload?.query_result?.data?.rows;\nvar seriesData = defaultSeriesData;\nif (rows && rows.length) {\n  var mapedRows = _.mapKeys(rows, \"_id\");\n  seriesData = defaultSeriesData.map((item) => {\n    var mapedRow = mapedRows[item.key];\n    return Object.assign({}, item, {\n      value: mapedRow && mapedRow.count || 0\n    });\n  })\n}\n\npayload.data = {\n  seriesData: seriesData\n};\n\nreturn payload;\n",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "dataFilter": "\n// formatter为字符串模板时，如果所有数据为0，百分比显示为undefined。\nconst seriesData = data.seriesData;\nconfig = {\n  \"title\": {\n    \"text\": \"\"\n  },\n  \"tooltip\": {\n    \"trigger\": \"item\"\n  },\n  \"legend\": {\n    \"left\": \"center\",\n    \"bottom\": 10\n  },\n  \"series\": [\n    {\n      \"type\": \"pie\",\n      \"data\": seriesData,\n      \"radius\": [\n        \"30%\",\n        \"55%\"\n      ],\n      \"emphasis\": {\n        \"itemStyle\": {\n          \"shadowBlur\": 10,\n          \"shadowOffsetX\": 0,\n          \"shadowColor\": \"rgba(0, 0, 0, 0.5)\"\n        }\n      },\n      \"label\": {\n        \"formatter\": function (params) {\n          const { name, value, percent = 0 } = params;\n          const text = name + \":\" + value + \" (\" + percent + \")\" + \"%\";\n          return text;\n        }\n      }\n    }\n  ]\n}\nreturn config;",
+                                    "className": "h-72"
+                                }
+                            ],
+                            "id": "u:148f185289a1",
+                            "inline": false,
+                            "affixFooter": false,
+                            "headerClassName": "font-bold p-sm text-md",
+                            "bodyClassName": "",
+                            "className": "border-gray-300"
+                        },
+                        {
+                            "type": "panel",
+                            "title": "任务状态分布",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {},
+                                    "replaceChartOption": true,
+                                    "id": "u:6be6bbcbda48",
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_chart_state_project_task/results",
+                                        "adaptor": "var defaultSeriesData = [{\n    name: \"未开始\",\n    value: 0,\n    key: \"not_started\"\n  }, {\n    name: \"进行中\",\n    value: 0,\n    key: \"in_progress\"\n  }, {\n    name: \"已完成\",\n    value: 0,\n    key: \"completed\"\n  }, {\n    name: \"等待其他人\",\n    value: 0,\n    key: \"waiting\"\n  }, {\n    name: \"延期\",\n    value: 0,\n    key: \"deferred\"\n  }];\n\nvar rows = payload?.query_result?.data?.rows;\nvar seriesData = defaultSeriesData;\nif (rows && rows.length) {\n  var mapedRows = _.mapKeys(rows, \"_id\");\n  seriesData = defaultSeriesData.map((item) => {\n    var mapedRow = mapedRows[item.key];\n    return Object.assign({}, item, {\n      value: mapedRow && mapedRow.count || 0\n    });\n  })\n}\npayload.data = {\n  seriesData: seriesData\n};\n\nreturn payload;\n",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "dataFilter": "\n// formatter为字符串模板时，如果所有数据为0，百分比显示为undefined。\nconst seriesData = data.seriesData;\nconfig = {\n  \"title\": {\n    \"text\": \"\"\n  },\n  \"tooltip\": {\n    \"trigger\": \"item\"\n  },\n  \"legend\": {\n    \"left\": \"center\",\n      \"bottom\": 10\n  },\n  \"series\": [\n    {\n      \"type\": \"pie\",\n      \"data\": seriesData,\n      \"radius\": \"50%\",\n      \"emphasis\": {\n        \"itemStyle\": {\n          \"shadowBlur\": 10,\n          \"shadowOffsetX\": 0,\n          \"shadowColor\": \"rgba(0, 0, 0, 0.5)\"\n        }\n      },\n      \"label\": {\n        \"formatter\": function (params) {\n          const { name, value, percent = 0 } = params;\n          const text = name + \":\" + value + \" (\" + percent + \")\" + \"%\";\n          return text;\n        }\n      }\n    }\n  ]\n}\nreturn config;",
+                                    "className": "h-72"
+                                }
+                            ],
+                            "id": "u:2c18d31d885a",
+                            "inline": false,
+                            "affixFooter": false,
+                            "headerClassName": "font-bold p-sm text-md",
+                            "className": "border-gray-300",
+                            "bodyClassName": ""
+                        }
+                    ],
+                    "md": 4,
+                    "id": "u:01b6ea725473"
+                }
+            ],
+            "id": "u:09b064219082"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "title": "",
+        "context": {}
+    },
+    "id": "u:3f5576df4e49",
+    "messages": {},
+    "style": {}
+}

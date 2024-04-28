@@ -1,0 +1,14 @@
+name: budget_subject
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算科目
+multiple: false
+primary: false
+reference_to: budget_subject
+required: true
+sort_no: 110
+sortable: false
+type: lookup

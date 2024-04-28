@@ -1,0 +1,69 @@
+name: 假期类型.用户
+allowCreate: false
+allowCreateFiles: false
+allowCreateListViews: false
+allowDelete: false
+allowDeleteFiles: false
+allowEdit: false
+allowEditFiles: false
+allowRead: true
+allowReadFiles: false
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: false
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: false
+    editable: false
+  - field: sort
+    readable: true
+    editable: true
+  - field: vacation_type
+    readable: true
+    editable: true
+  - field: vacation_name
+    readable: true
+    editable: true
+  - field: minimum_unit
+    readable: true
+    editable: true
+  - field: maximum_request
+    readable: true
+    editable: true
+  - field: gender_restrictions
+    readable: true
+    editable: true
+  - field: minimum_request
+    readable: true
+    editable: true
+  - field: remark
+    readable: true
+    editable: true

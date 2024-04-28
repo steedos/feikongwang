@@ -1,0 +1,87 @@
+name: 考勤规则.用户
+allowCreate: false
+allowCreateFiles: false
+allowCreateListViews: false
+allowDelete: false
+allowDeleteFiles: false
+allowEdit: false
+allowEditFiles: false
+allowRead: true
+allowReadFiles: false
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: false
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: rule_type
+    readable: true
+    editable: true
+  - field: work_start
+    readable: true
+    editable: true
+  - field: work_end
+    readable: true
+    editable: true
+  - field: begins_work_clock
+    readable: true
+    editable: true
+  - field: end_work_clock
+    readable: true
+    editable: true
+  - field: begins_quit_clock
+    readable: true
+    editable: true
+  - field: end_quit_clock
+    readable: true
+    editable: true
+  - field: enable_flexible_commuting
+    readable: true
+    editable: true
+  - field: lateness
+    readable: true
+    editable: true
+  - field: early
+    readable: true
+    editable: true
+  - field: daily_hours
+    readable: true
+    editable: true
+  - field: rest_end
+    readable: true
+    editable: true
+  - field: rest_start
+    readable: true
+    editable: true
+  - field: status
+    readable: true
+    editable: true

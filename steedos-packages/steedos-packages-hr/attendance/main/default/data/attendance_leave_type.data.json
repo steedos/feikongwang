@@ -1,0 +1,167 @@
+[
+    {
+      "_id": "${space_id}_651277453d30a1ad9e095036",
+      "vacation_type": "leave",
+      "minimum_unit": "day",
+      "minimum_request": 0.5,
+      "maximum_request": 2,
+      "vacation_name": "unpaid",
+      "remark": "员工因本人或家庭有紧急事务必须在正常工作时间内亲自处理的，可以申请事假，事假扣除请假期间员工的基本工资。",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:16:37.537Z",
+      "modified": "2023-09-26T06:16:37.537Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "事假(天)"
+    },
+    {
+      "_id": "${space_id}_6512780c3d30a1ad9e095038",
+      "vacation_type": "paid_annual_leave",
+      "minimum_unit": "day",
+      "minimum_request": 0.5,
+      "maximum_request": 15,
+      "remark": "连续工作1年以上的，且与本公司签订《劳动合同》的员工，可以享有法定带薪年休假",
+      "vacation_name": "full_salary",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:19:55.997Z",
+      "modified": "2023-09-26T06:19:55.997Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "带薪年休假(天)"
+    },
+    {
+      "_id": "${space_id}_651278383d30a1ad9e09503a",
+      "remark": "员工因患病或非因公负伤必须停止工作治病休息的，可以申请病假。",
+      "vacation_type": "sick_leave",
+      "minimum_unit": "day",
+      "minimum_request": 0.5,
+      "maximum_request": 2,
+      "vacation_name": "partial_salary",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:20:40.656Z",
+      "modified": "2023-09-26T06:20:40.656Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "病假(天)"
+    },
+    {
+      "_id": "${space_id}_651278663d30a1ad9e09503c",
+      "remark": "从产前到产后有98天+30天生育假，共128天。另：30天(晚育)+15天(难产)、15天(多胞胎每多生一个婴儿)",
+      "vacation_type": "maternity_leave",
+      "minimum_unit": "day",
+      "minimum_request": 98,
+      "vacation_name": "partial_salary",
+      "gender_restrictions": "female",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:21:26.010Z",
+      "modified": "2023-09-26T06:22:28.367Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "产假(天)",
+      "_display": {
+        "maximum_request": "128.0"
+      },
+      "maximum_request": 128
+    },
+    {
+      "_id": "${space_id}_6512788f3d30a1ad9e09503e",
+      "remark": "陪护假：男方享受十天护理假",
+      "gender_restrictions": "male",
+      "vacation_name": "full_salary",
+      "minimum_unit": "day",
+      "maximum_request": 10,
+      "minimum_request": 10,
+      "vacation_type": "paternity_leave",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:22:07.797Z",
+      "modified": "2023-09-26T06:22:07.797Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "陪产假(天)"
+    },
+    {
+      "_id": "${space_id}_651278c03d30a1ad9e095042",
+      "remark": "员工的直系及近亲属（仅限于子女，配偶，自己及配偶的父母、同胞兄弟姐妹、 祖父母、外祖父母）去世，可以享有3天（自然日）的丧假。",
+      "vacation_type": "bereavement_leave",
+      "minimum_unit": "day",
+      "minimum_request": 1,
+      "maximum_request": 3,
+      "vacation_name": "full_salary",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:22:56.317Z",
+      "modified": "2023-09-26T06:22:56.317Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "丧假(天)"
+    },
+    {
+      "_id": "${space_id}_651278e03d30a1ad9e095044",
+      "remark": "公司员工遇有生病、事假等，可用加班时间调休。",
+      "vacation_type": "transfer_leave",
+      "minimum_unit": "day",
+      "minimum_request": 0.5,
+      "maximum_request": 2,
+      "vacation_name": "full_salary",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:23:28.917Z",
+      "modified": "2023-09-26T06:23:28.917Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "调休假(天)"
+    },
+    {
+      "_id": "${space_id}_6512790c3d30a1ad9e095046",
+      "remark": "工转在任职期间结婚，在民政部门登记结婚之日起的6个月内，按法定年龄（男22岁、女20岁）结婚的可请婚假3天；晚婚（男25岁、女23岁）可请婚假10天； 再婚的可享受法定婚假3天，不予享受晚婚假。（婚假包含公休和法定假日在内，应在结婚登记之日起一年内一次性连续休完，过期不保留，离职未休不予补偿）假期结束须在一周内提供相关证明 文件，否则按事假处理。",
+      "vacation_type": "marriage_leave",
+      "minimum_unit": "day",
+      "minimum_request": 0.5,
+      "maximum_request": 10,
+      "vacation_name": "full_salary",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:24:12.790Z",
+      "modified": "2023-09-26T06:24:12.790Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "婚假(天)"
+    }
+  ]

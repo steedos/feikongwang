@@ -1,0 +1,12 @@
+name: actived
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 是否启用
+primary: false
+required: false
+sort_no: 160
+sortable: false
+type: toggle

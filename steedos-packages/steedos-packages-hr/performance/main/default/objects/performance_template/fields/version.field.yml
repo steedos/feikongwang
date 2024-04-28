@@ -1,0 +1,4 @@
+name: version
+label: 版本号
+sort_no: 150
+type: text

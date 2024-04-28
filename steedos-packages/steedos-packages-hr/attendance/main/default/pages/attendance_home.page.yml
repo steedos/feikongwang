@@ -1,0 +1,9 @@
+name: attendance_home
+__filename: >-
+  /workspace/chinaums-oa-apps/steedos-packages/attendance/main/default/pages/attendance_home.page.yml
+is_active: true
+label: 考勤首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

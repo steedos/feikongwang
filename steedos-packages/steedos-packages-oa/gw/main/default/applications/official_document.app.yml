@@ -1,0 +1,45 @@
+name: 公文
+code: official_document
+description: 公文管理：包括收文、发文及督办管理
+icon_slds: folder
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+showSidebar: false
+sort: 60
+tab_groups:
+  - group_name: 公文管理
+    default_open: true
+    id: 公文管理
+  - group_name: 流程审批
+    default_open: true
+    id: 流程审批
+tab_items:
+  document_management:
+    group: ''
+    index: 1
+  object_instance_tasks:
+    group: ''
+    index: 2
+  object_document:
+    group: ''
+    index: 3
+  object_incoming_document:
+    group: ''
+    index: 4
+  object_supervise:
+    group: ''
+    index: 5
+  object_asking:
+    group: ''
+    index: 6
+tabs:
+  - document_management
+  - object_instance_tasks
+  - object_document
+  - object_incoming_document
+  - object_supervise
+  - object_asking
+visible: true

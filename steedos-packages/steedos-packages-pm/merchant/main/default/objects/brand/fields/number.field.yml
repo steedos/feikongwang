@@ -1,0 +1,6 @@
+name: number
+label: 全集团员工人数（管理人员、工人）
+type: number
+precision: 18
+scale: 0
+sort_no: 140

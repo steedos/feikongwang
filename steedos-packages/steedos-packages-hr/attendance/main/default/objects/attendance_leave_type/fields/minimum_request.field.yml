@@ -1,0 +1,6 @@
+name: minimum_request
+label: 最小数值
+precision: 18
+scale: 1
+sort_no: 120
+type: number

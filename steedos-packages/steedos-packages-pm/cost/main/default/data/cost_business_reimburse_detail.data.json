@@ -1,0 +1,89 @@
+[
+    {
+        "_id": "${space_id}_62fb5871cb9c8306a51b2be9",
+        "amount": 1280,
+        "daily_expense": "${space_id}_62fb5859cb9c8306a51b2be7",
+        "date": {
+            "$date": "2022-08-01T00:00:00Z"
+        },
+        "expend_type": "${space_id}_62fb5661cb9c8306a51b2bd8",
+        "remark": "上海-北京高铁往返",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:42:25.083Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T08:44:01.786Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "2022-00001",
+        "_table": {
+            "_id": "${space_id}_62fb5871cb9c8306a51b2be9",
+            "_code": "报销明细"
+        }
+    },
+    {
+        "_id": "${space_id}_62fb588ecb9c8306a51b2beb",
+        "amount": 890,
+        "daily_expense": "${space_id}_62fb5859cb9c8306a51b2be7",
+        "date": {
+            "$date": "2022-08-01T00:00:00Z"
+        },
+        "expend_type": "${space_id}_6305d2ed336fcc09215a6f4c",
+        "remark": "两晚住宿费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:42:54.625Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:30:33.131Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "2022-00002",
+        "_table": {
+            "_id": "${space_id}_62fb588ecb9c8306a51b2beb",
+            "_code": "报销明细"
+        }
+    },
+    {
+        "_id": "${space_id}_62fb58a7cb9c8306a51b2bec",
+        "amount": 200,
+        "daily_expense": "${space_id}_62fb5859cb9c8306a51b2be7",
+        "date": {
+            "$date": "2022-08-01T00:00:00Z"
+        },
+        "expend_type": "${space_id}_62fb5745cb9c8306a51b2bdd",
+        "remark": "100*2",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:43:19.862Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T08:44:02.193Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "2022-00003",
+        "_table": {
+            "_id": "${space_id}_62fb58a7cb9c8306a51b2bec",
+            "_code": "报销明细"
+        }
+    }
+]

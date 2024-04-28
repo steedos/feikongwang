@@ -1,0 +1,78 @@
+name: 其他证明办理.管理员
+allowCreate: true
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: apply_date
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true
+  - field: number
+    readable: true
+    editable: true
+  - field: remark
+    readable: true
+    editable: true
+  - field: staff
+    readable: true
+    editable: true
+  - field: position
+    readable: true
+    editable: true
+  - field: contact
+    readable: true
+    editable: true
+  - field: identity
+    readable: true
+    editable: true
+  - field: work_date
+    readable: true
+    editable: true
+  - field: type
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: false

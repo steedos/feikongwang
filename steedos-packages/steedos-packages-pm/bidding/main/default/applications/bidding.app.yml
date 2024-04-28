@@ -1,0 +1,46 @@
+name: 招标
+code: bidding
+description: 招标、投标、评标、定标的的全生命周期管理。
+icon_slds: custom_component_task
+is_creator: true
+mobile: true
+sort: 9100
+showSidebar: true
+tab_groups:
+  - group_name: 项目信息
+    default_open: true
+  - group_name: 招标管理
+    default_open: true
+  - group_name: 流程审批
+    default_open: true
+tab_items:
+  object_project_program:
+    group: 项目信息
+    index: 1
+  object_bidding:
+    group: 招标管理
+    index: 2
+  object_simple_bidding:
+    group: 招标管理
+    index: 3
+  object_supplier_shortlisting:
+    group: 招标管理
+    index: 4
+  object_bidding_document:
+    group: 招标管理
+    index: 6
+  object_bidding_confirmation:
+    group: 招标管理
+    index: 7
+  object_instance_tasks:
+    group: 流程审批
+    index: 8
+tabs:
+  - object_project_program
+  - object_bidding
+  - object_simple_bidding
+  - object_supplier_shortlisting
+  - object_bidding_document
+  - object_bidding_confirmation
+  - object_instance_tasks
+visible: true

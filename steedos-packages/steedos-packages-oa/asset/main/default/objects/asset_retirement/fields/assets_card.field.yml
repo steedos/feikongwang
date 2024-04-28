@@ -1,0 +1,10 @@
+name: assets_card
+label: 资产名称
+reference_to: assets_card
+multiple: true
+searchable: true
+readonly: true
+visible_on: "{{false}}"
+sort_no: 160
+type: lookup
+filterable: true

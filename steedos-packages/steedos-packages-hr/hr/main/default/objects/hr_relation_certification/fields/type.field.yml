@@ -1,0 +1,27 @@
+name: type
+data_type: text
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 证明类型
+multiple: false
+options:
+  - label: 在职证明
+    value: 在职证明
+    color: 73C0DE
+  - label: 收入证明
+    value: 收入证明
+    color: EE6666
+  - label: 离职证明
+    value: 离职证明
+    color: FBC858
+  - label: 其他证明
+    value: 其他证明
+    color: 5470C6
+primary: false
+required: true
+sort_no: 115
+sortable: false
+type: select

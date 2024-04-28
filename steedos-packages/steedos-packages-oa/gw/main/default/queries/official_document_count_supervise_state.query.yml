@@ -1,0 +1,68 @@
+name: official_document_count_supervise_state
+datasource: default
+description: |-
+  查询对象：supervise 督办
+  查询条件：督办记录未删除、查询时间：办理期限（time_limit）为“本年”。
+  查询结果：根据办理状态（state）字段统计各状态下的记录数。
+label: 公文-办文状态统计
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: date-range
+      global: false
+      locals: []
+      value: d_this_month
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "supervise",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "name": "$name",
+                  "state": "$state",
+                  "time_limit": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d",
+                          "date": "$time_limit",
+                          "timezone": "+00"
+                      }
+                  }
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "$and": [
+                      {
+                          "time_limit": {
+                              "$gte": "{{ datetime.start }}"
+                          }
+                      },
+                      {
+                          "time_limit": {
+                              "$lte": "{{ datetime.end }}"
+                          }
+                      }
+                  ]
+              }
+          },
+          {
+              "$group": {
+                  "_id": "$state",
+                  "count": {
+                      "$sum": 1
+                  }
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

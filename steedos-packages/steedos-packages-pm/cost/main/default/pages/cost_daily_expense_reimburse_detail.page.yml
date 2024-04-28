@@ -1,0 +1,12 @@
+name: cost_daily_expense_reimburse_detail
+is_active: true
+label: 日常报销详情页
+object_name: cost_daily_expense_reimburse
+pageAssignments:
+  - type: orgDefault
+    page: cost_daily_expense_reimburse_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

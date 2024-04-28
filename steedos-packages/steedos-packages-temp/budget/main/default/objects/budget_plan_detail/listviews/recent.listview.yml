@@ -1,0 +1,15 @@
+name: recent
+columns:
+  - field: name
+  - field: budget_organization
+  - field: budget_subject
+  - field: budget
+  - field: budget_child_plan
+  - field: budget_plan
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

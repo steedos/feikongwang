@@ -1,0 +1,23 @@
+name: account
+label: 供应商名称
+type: lookup
+reference_to: accounts
+searchable: true
+filterable: true
+sort_no: 100
+filters: [["is_supplier", "=", true], ["status", "!=", "disabled"]]
+amis:
+  autoFill:
+    fillMapping:
+      "tender_number": "${tender_number}"
+      "bidding_number": "${bidding_number}"
+      "score": "${survey_score}"
+      "level": "${account_level}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:accounts(filters: [[\"_id\", \"=\", \"${account}\"]], top: 1){name,tender_number,bidding_number,survey_score,account_level}}"
+      adaptor: "const row = payload.data.rows[0]; payload.data = { tender_number: row.tender_number || 0,  bidding_number: row.bidding_number || 0, survey_score: row.survey_score, account_level: row.account_level} ; return payload;"

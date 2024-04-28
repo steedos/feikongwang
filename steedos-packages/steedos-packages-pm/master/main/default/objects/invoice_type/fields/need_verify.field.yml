@@ -1,0 +1,17 @@
+name: need_verify
+create: true
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 需要查验
+multiple: false
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 260
+sortable: false
+type: boolean
+write_requires_master_read: false

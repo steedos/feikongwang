@@ -1,0 +1,19 @@
+name: all
+columns:
+  - field: bidding
+  - field: simple_bidding
+  - field: bidding_confirmation
+  - field: account
+  - field: is_entry
+  - field: bidding_offer
+  - field: negotiating_offer
+  - field: offer_rank
+  - field: percent
+  - field: bidding_scope
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

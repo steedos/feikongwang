@@ -1,0 +1,12 @@
+name: major
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 专业
+primary: false
+required: false
+sort_no: 120
+sortable: false
+type: text

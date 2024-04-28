@@ -1,0 +1,5 @@
+name: used
+label: 已使用
+type: boolean
+hidden: true
+sort_no: 100

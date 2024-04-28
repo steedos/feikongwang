@@ -1,0 +1,13 @@
+name: account
+filterable: false
+generated: false
+group: 借款信息
+index: false
+is_name: false
+is_wide: true
+label: 收款方银行账号
+primary: false
+required: true
+sort_no: 210
+sortable: false
+type: text

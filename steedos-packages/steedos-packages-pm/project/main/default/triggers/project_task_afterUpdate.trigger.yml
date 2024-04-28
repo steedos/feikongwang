@@ -1,0 +1,26 @@
+name: project_task_afterUpdate
+listenTo: project_task
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { id, doc, previousDoc,userId } = ctx.params;
+  console.log("ctx===",ctx)
+  //修改项目任务分配的处理人情况后，提醒到对应任务分配的处理人
+  if (previousDoc.assignees != doc.assignees) {
+      await ctx.broker.call("notifications.add", {
+          message: {
+              name: "项目任务分配处理人通知",
+              body: "该"+doc.name+"项目任务,已分配给您,请及时处理",
+              related_to: {
+                  o: "project_task",
+                  ids: [id],
+              },
+              related_name: "project_task",
+              from: userId,
+              space: doc.space,
+          },
+          from: userId,
+          to: doc.assignees,
+      })
+  }

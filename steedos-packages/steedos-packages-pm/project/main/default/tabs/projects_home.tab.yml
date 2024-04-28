@@ -1,0 +1,7 @@
+name: projects_home
+desktop: true
+icon: task
+label: 首页
+mobile: true
+page: projects_home
+type: page

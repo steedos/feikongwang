@@ -1,0 +1,6 @@
+name: overtime
+label: 加班（小时）
+precision: 18
+scale: 2
+sort_no: 300
+type: number

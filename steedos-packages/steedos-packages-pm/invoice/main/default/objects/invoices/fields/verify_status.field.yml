@@ -1,0 +1,27 @@
+name: verify_status
+create: true
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 查验状态
+multiple: false
+options:
+  - label: 未查验
+    value: "not_verified"
+  - label: 查验已通过
+    value: "passed"
+  - label: 查验未通过
+    value: "failed"
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 240
+sortable: false
+type: select
+write_requires_master_read: false
+readonly: true
+visible_on: "{{(global.mode ==='read' && formData.type ==='vat_invoice') ? true : false}}"
+group: 查验

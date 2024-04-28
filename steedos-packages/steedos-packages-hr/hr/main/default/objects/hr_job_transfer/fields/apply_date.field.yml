@@ -1,0 +1,17 @@
+name: apply_date
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 申请日期
+primary: false
+required: true
+sort_no: 116
+sortable: false
+type: date
+defaultValue: !<tag:yaml.org,2002:js/function> |-
+  function () {
+    var date = window.moment().utc().toDate();
+    return date;
+  }

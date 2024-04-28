@@ -1,0 +1,10 @@
+name: cms_posts
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_files: true
+is_enable: true
+icon: knowledge
+label: Knowledge
+version: 2

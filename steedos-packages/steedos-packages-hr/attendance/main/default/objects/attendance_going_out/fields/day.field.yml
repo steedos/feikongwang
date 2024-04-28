@@ -1,0 +1,15 @@
+name: day
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 外出时长（小时）
+precision: 18
+primary: false
+scale: 1
+sort_no: 170
+sortable: false
+required: true
+type: number
+visible_on: "{{global.mode ==='read' ? true : false}}"

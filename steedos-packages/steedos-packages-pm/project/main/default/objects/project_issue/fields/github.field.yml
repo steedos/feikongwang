@@ -1,0 +1,14 @@
+name: github
+filterable: false
+hidden: true
+index: false
+is_name: false
+is_wide: true
+label: 外部URL
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 220
+sortable: false
+type: url

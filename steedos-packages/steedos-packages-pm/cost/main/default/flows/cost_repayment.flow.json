@@ -1,0 +1,523 @@
+{
+    "name": "个人还款审批",
+    "state": "enabled",
+    "is_deleted": false,
+    "is_valid": true,
+    "space": "655f07b6d5cbdc05c07fb284",
+    "app": "workflow",
+    "created": "2023-11-23T08:05:19.728Z",
+    "modified": "2023-11-23T08:35:38.822Z",
+    "modified_by": "655f07b1d5cbdc05c07fb282",
+    "category": "655f07b6d5cbdc05c07fb284_c415a9613044e19b6e3bac2c",
+    "instance_style": "table",
+    "current": {
+        "_id": "cd9b0e85fa6e4e175e2b3ed3",
+        "form": "6fd50aba4de5593506fd6ea7",
+        "_rev": 1,
+        "created": "2023-11-23T08:05:19.728Z",
+        "modified": "2023-11-23T08:35:38.820Z",
+        "fields": [
+            {
+                "name": "标题",
+                "code": "name",
+                "is_wide": true,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": true,
+                "is_multiselect": false,
+                "type": "input",
+                "_id": "6559ab923b502605bf3dd1bc"
+            },
+            {
+                "name": "单据编号",
+                "code": "autonumber",
+                "is_wide": false,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": false,
+                "is_multiselect": false,
+                "type": "input",
+                "_id": "6559ab923b502605bf3dd1bd"
+            },
+            {
+                "name": "申请人",
+                "code": "applicant",
+                "is_wide": false,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": true,
+                "is_multiselect": false,
+                "default_value": "{{global.userId}}",
+                "type": "lookup",
+                "reference_to": "space_users",
+                "config": "{}",
+                "_id": "6559ab923b502605bf3dd1be"
+            },
+            {
+                "name": "公司",
+                "code": "company",
+                "is_wide": false,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": true,
+                "is_multiselect": false,
+                "default_value": "{{global.user.company_id}}",
+                "type": "lookup",
+                "reference_to": "company",
+                "config": "{}",
+                "_id": "6559ab923b502605bf3dd1bf"
+            },
+            {
+                "name": "所属部门",
+                "code": "department",
+                "is_wide": false,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": false,
+                "is_multiselect": false,
+                "default_value": "{{global.user.organization._id}}",
+                "type": "lookup",
+                "reference_to": "organizations",
+                "config": "{}",
+                "_id": "6559ab923b502605bf3dd1c0"
+            },
+            {
+                "name": "借款单",
+                "code": "personal_loan",
+                "is_wide": false,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": true,
+                "is_multiselect": false,
+                "type": "lookup",
+                "reference_to": "cost_personal_loan",
+                "config": "{}",
+                "_id": "6559ab923b502605bf3dd1c1"
+            },
+            {
+                "name": "还款金额",
+                "code": "repayment_amount",
+                "is_wide": false,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": true,
+                "is_multiselect": false,
+                "type": "number",
+                "digits": 2,
+                "_id": "6559ab923b502605bf3dd1c2"
+            },
+            {
+                "name": "备注",
+                "code": "remark",
+                "is_wide": true,
+                "is_list_display": false,
+                "is_searchable": false,
+                "is_required": false,
+                "is_multiselect": false,
+                "type": "input",
+                "is_textarea": true,
+                "_id": "6559ab923b502605bf3dd1c3"
+            }
+        ],
+        "modified_by": "655f07b1d5cbdc05c07fb282",
+        "start_date": "2023-11-19T06:30:57.811Z",
+        "created_by": "655f07b1d5cbdc05c07fb282",
+        "name_forumla": "\"还款-\"+{applicant.organization.name}+\"-\"+{applicant.name}+\"-\"+{repayment_amount}+\"元\""
+    },
+    "api_name": "cost_repayment",
+    "created_by": "655f07b1d5cbdc05c07fb282",
+    "company_id": "655f07b6d5cbdc05c07fb284",
+    "company_ids": [
+        "655f07b6d5cbdc05c07fb284"
+    ],
+    "import": true,
+    "owner": "655f07b1d5cbdc05c07fb282",
+    "description": null,
+    "error_message": null,
+    "help_text": null,
+    "historys": [],
+    "category_name": "报销管理",
+    "instance_number_rules": [],
+    "flows": [
+        {
+            "_id": "c81ec03b4ef33747df4b338b",
+            "space": "655f07b6d5cbdc05c07fb284",
+            "form": "6fd50aba4de5593506fd6ea7",
+            "name_formula": "",
+            "code_formula": "",
+            "is_valid": true,
+            "flowtype": "new",
+            "state": "enabled",
+            "description": null,
+            "help_text": null,
+            "error_message": "",
+            "current_no": 0,
+            "is_deleted": false,
+            "created": "2023-11-23T08:05:19.729Z",
+            "created_by": "655f07b1d5cbdc05c07fb282",
+            "modified": "2023-11-23T08:35:01.751Z",
+            "modified_by": "655f07b1d5cbdc05c07fb282",
+            "name": "个人还款审批",
+            "app": "workflow",
+            "category": "655f07b6d5cbdc05c07fb284_c415a9613044e19b6e3bac2c",
+            "object_name": "cost_personal_repayment",
+            "instance_fields": [
+                {
+                    "name": "name",
+                    "index": true,
+                    "is_wide": true,
+                    "label": "标题",
+                    "required": true,
+                    "sort_no": 100,
+                    "type": "text",
+                    "filterable": true,
+                    "object_name": "cost_personal_repayment"
+                },
+                {
+                    "name": "autonumber",
+                    "filterable": true,
+                    "formula": "HK-{YYYY}{MM}{DD}{0000}",
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": false,
+                    "label": "单据编号",
+                    "primary": false,
+                    "sort_no": 110,
+                    "sortable": false,
+                    "type": "autonumber",
+                    "object_name": "cost_personal_repayment"
+                },
+                {
+                    "name": "applicant",
+                    "defaultValue": "{{global.userId}}",
+                    "filterable": true,
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": false,
+                    "label": "申请人",
+                    "multiple": false,
+                    "primary": false,
+                    "reference_to": "space_users",
+                    "required": true,
+                    "sort_no": 120,
+                    "sortable": false,
+                    "type": "lookup",
+                    "object_name": "cost_personal_repayment",
+                    "reference_to_field": "user"
+                },
+                {
+                    "name": "company",
+                    "defaultValue": "{{global.user.company_id}}",
+                    "filterable": false,
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": false,
+                    "label": "公司",
+                    "multiple": false,
+                    "primary": false,
+                    "reference_to": "company",
+                    "required": true,
+                    "sort_no": 130,
+                    "sortable": false,
+                    "type": "lookup",
+                    "object_name": "cost_personal_repayment"
+                },
+                {
+                    "name": "department",
+                    "defaultValue": "{{global.user.organization._id}}",
+                    "filterable": true,
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": false,
+                    "label": "所属部门",
+                    "multiple": false,
+                    "primary": false,
+                    "reference_to": "organizations",
+                    "required": false,
+                    "sort_no": 140,
+                    "sortable": false,
+                    "type": "lookup",
+                    "object_name": "cost_personal_repayment"
+                },
+                {
+                    "name": "personal_loan",
+                    "filterable": false,
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": false,
+                    "label": "借款单",
+                    "primary": false,
+                    "reference_to": "cost_personal_loan",
+                    "required": true,
+                    "sort_no": 142,
+                    "sortable": false,
+                    "type": "master_detail",
+                    "write_requires_master_read": false,
+                    "create": false,
+                    "object_name": "cost_personal_repayment",
+                    "_filtersFunction": "function anonymous(filters,values\n) {\n\n  return [[\"instance_state\",\"=\",\"approved\"],\"and\",[\"remaining_amount\",\">\",0]];\n\n}"
+                },
+                {
+                    "name": "repayment_amount",
+                    "filterable": false,
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": false,
+                    "label": "还款金额",
+                    "precision": 18,
+                    "primary": true,
+                    "required": true,
+                    "scale": 2,
+                    "sort_no": 143,
+                    "sortable": false,
+                    "type": "currency",
+                    "object_name": "cost_personal_repayment"
+                },
+                {
+                    "name": "remark",
+                    "filterable": false,
+                    "generated": false,
+                    "index": false,
+                    "is_name": false,
+                    "is_wide": true,
+                    "label": "备注",
+                    "primary": false,
+                    "required": false,
+                    "rows": 3,
+                    "sort_no": 150,
+                    "sortable": false,
+                    "type": "textarea",
+                    "object_name": "cost_personal_repayment"
+                }
+            ],
+            "instance_table_fields": [],
+            "perms": {
+                "_id": "156c6704aeefcaebae8adaea",
+                "users_can_add": [],
+                "orgs_can_add": [
+                    "655f07b6d5cbdc05c07fb284"
+                ],
+                "users_can_monitor": [],
+                "orgs_can_monitor": [],
+                "users_can_admin": [],
+                "orgs_can_admin": []
+            },
+            "current": {
+                "_id": "b07e0c3503ccb7f4bb840613",
+                "steps": [
+                    {
+                        "name": "开始",
+                        "step_type": "start",
+                        "deal_type": "",
+                        "description": "",
+                        "posx": 361.75,
+                        "posy": 446,
+                        "timeout_hours": 168,
+                        "approver_users": [],
+                        "approver_orgs": [],
+                        "approver_user_field": "",
+                        "approver_org_field": "",
+                        "approver_roles": [],
+                        "approver_step": "",
+                        "lines": [
+                            {
+                                "name": "",
+                                "state": "submitted",
+                                "to_step": "9d9afa5a-fd18-45b8-a49c-4138a0c8baad",
+                                "description": "",
+                                "timeout_line": false,
+                                "_id": "onaEEtYsFxryZuQAt"
+                            }
+                        ],
+                        "permissions": {
+                            "__form": "editable",
+                            "applicant": "editable",
+                            "autonumber": "editable",
+                            "company": "editable",
+                            "department": "editable",
+                            "name": "editable",
+                            "personal_loan": "editable",
+                            "remark": "editable",
+                            "repayment_amount": "editable"
+                        },
+                        "can_edit_main_attach": false,
+                        "can_edit_normal_attach": true,
+                        "_id": "eaDLR3euLr3CPfDgg",
+                        "fields_modifiable": [],
+                        "approver_roles_api_name": [],
+                        "approver_hr_roles_name": [],
+                        "approver_hr_roles_api_name": [],
+                        "approver_roles_name": []
+                    },
+                    {
+                        "name": "结束",
+                        "step_type": "end",
+                        "deal_type": "",
+                        "description": "",
+                        "posx": 1143.25,
+                        "posy": 446,
+                        "approver_users": [],
+                        "approver_orgs": [],
+                        "approver_user_field": "",
+                        "approver_org_field": "",
+                        "approver_roles": [],
+                        "approver_step": "",
+                        "permissions": {},
+                        "_id": "t9yehwXKx6jAh5sC7",
+                        "fields_modifiable": [],
+                        "approver_roles_api_name": [],
+                        "approver_hr_roles_name": [],
+                        "approver_hr_roles_api_name": [],
+                        "approver_roles_name": []
+                    },
+                    {
+                        "name": "审批",
+                        "step_type": "sign",
+                        "deal_type": "pickupAtRuntime",
+                        "description": "",
+                        "posx": 770,
+                        "posy": 436,
+                        "timeout_hours": 168,
+                        "approver_users": [],
+                        "approver_orgs": [],
+                        "approver_user_field": "",
+                        "approver_org_field": "",
+                        "approver_roles": [],
+                        "approver_hr_roles": [],
+                        "approver_step": "",
+                        "lines": [
+                            {
+                                "name": "",
+                                "state": "approved",
+                                "to_step": "t9yehwXKx6jAh5sC7",
+                                "description": "",
+                                "timeout_line": false
+                            }
+                        ],
+                        "permissions": {},
+                        "disableCC": false,
+                        "allowDistribute": false,
+                        "can_edit_main_attach": false,
+                        "can_edit_normal_attach": true,
+                        "cc_must_finished": false,
+                        "cc_alert": false,
+                        "allow_pick_approve_users": false,
+                        "allow_skip": false,
+                        "cc_has_edit_permission": false,
+                        "_id": "9d9afa5a-fd18-45b8-a49c-4138a0c8baad",
+                        "fields_modifiable": [],
+                        "approver_roles_api_name": [],
+                        "approver_hr_roles_name": [],
+                        "approver_hr_roles_api_name": [],
+                        "approver_roles_name": []
+                    }
+                ],
+                "_rev": 1,
+                "flow": "c81ec03b4ef33747df4b338b",
+                "form_version": "cd9b0e85fa6e4e175e2b3ed3",
+                "created": "2023-11-23T08:05:19.729Z",
+                "created_by": "655f07b1d5cbdc05c07fb282",
+                "modified": "2023-11-23T08:05:19.729Z",
+                "modified_by": "655f07b1d5cbdc05c07fb282",
+                "start_date": "2023-11-19T06:30:57.811Z"
+            },
+            "api_name": "cost_repayment",
+            "instances": null,
+            "sort_no": null,
+            "forbid_initiate_instance": true,
+            "historys": [],
+            "company_id": "655f07b6d5cbdc05c07fb284",
+            "company_ids": [
+                "655f07b6d5cbdc05c07fb284"
+            ],
+            "import": true,
+            "owner": "655f07b1d5cbdc05c07fb282",
+            "object_workflows": [
+                {
+                    "_id": "SXga2N6JrBgggcM9G",
+                    "name": "个人还款审批-还款",
+                    "object_name": "cost_personal_repayment",
+                    "flow_id": "c81ec03b4ef33747df4b338b",
+                    "sync_attachment": "lastest",
+                    "sync_type": "every_step",
+                    "sync_direction": "both",
+                    "field_map_back": [
+                        {
+                            "object_field": "name",
+                            "workflow_field": "name"
+                        },
+                        {
+                            "object_field": "autonumber",
+                            "workflow_field": "autonumber"
+                        },
+                        {
+                            "object_field": "applicant",
+                            "workflow_field": "applicant"
+                        },
+                        {
+                            "object_field": "company",
+                            "workflow_field": "company"
+                        },
+                        {
+                            "object_field": "department",
+                            "workflow_field": "department"
+                        },
+                        {
+                            "object_field": "personal_loan",
+                            "workflow_field": "personal_loan"
+                        },
+                        {
+                            "object_field": "repayment_amount",
+                            "workflow_field": "repayment_amount"
+                        },
+                        {
+                            "object_field": "remark",
+                            "workflow_field": "remark"
+                        }
+                    ],
+                    "field_map": [
+                        {
+                            "object_field": "name",
+                            "workflow_field": "name"
+                        },
+                        {
+                            "object_field": "autonumber",
+                            "workflow_field": "autonumber"
+                        },
+                        {
+                            "object_field": "applicant",
+                            "workflow_field": "applicant"
+                        },
+                        {
+                            "object_field": "company",
+                            "workflow_field": "company"
+                        },
+                        {
+                            "object_field": "department",
+                            "workflow_field": "department"
+                        },
+                        {
+                            "object_field": "personal_loan",
+                            "workflow_field": "personal_loan"
+                        },
+                        {
+                            "object_field": "repayment_amount",
+                            "workflow_field": "repayment_amount"
+                        },
+                        {
+                            "object_field": "remark",
+                            "workflow_field": "remark"
+                        }
+                    ],
+                    "lock_record_after_approval": true
+                }
+            ]
+        }
+    ]
+}

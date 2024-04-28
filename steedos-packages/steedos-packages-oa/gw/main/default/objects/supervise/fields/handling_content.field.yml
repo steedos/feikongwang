@@ -1,0 +1,12 @@
+name: handling_content
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 办理内容
+primary: false
+required: false
+sort_no: 110
+sortable: false
+type: text

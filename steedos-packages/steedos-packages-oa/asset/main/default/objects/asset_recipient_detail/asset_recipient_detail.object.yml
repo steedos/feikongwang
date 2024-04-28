@@ -1,0 +1,37 @@
+name: asset_recipient_detail
+custom: true
+enable_api: true
+enable_audit: false
+enable_chatter: false
+enable_enhanced_lookup: true
+enable_events: false
+enable_files: true
+enable_inline_edit: true
+enable_instances: false
+enable_notes: false
+enable_search: true
+enable_share: false
+enable_tasks: false
+enable_workflow: true
+icon: product_request
+is_enable: true
+label: 资产领用明细
+version: 2
+form:
+  onValuesChange: !!js/function |
+    function(args){
+      const assets_card = args.values.assets_card;
+      console.log(args.values);
+      var options, result;
+      result = [];
+      options = {
+          $filter: `(_id eq '${assets_card}')`,
+          $select: 'quantity'
+      };
+      result = Creator.odata.query('assets_card', options, true);
+      if(result && result.length>0){
+        args.form.setFieldsValue({asset_quantity: result[0].quantity});
+      }else{
+        args.form.setFieldsValue({asset_quantity: null});
+      }
+    }

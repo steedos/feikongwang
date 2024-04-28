@@ -1,0 +1,24 @@
+name: attendance_rule_settings_afterInsertOrafterUpdate
+listenTo: attendance_rule_settings
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: |-
+  // 计算每日工作时间
+  const doc = ctx.params.doc
+  console.log(">>>>>", doc);
+  const workTimes = doc.work_end - doc.work_start
+  const restTimes = doc.rest_end - doc.rest_start
+  const daily_hours = (workTimes - restTimes)/(60 * 60 * 1000)
+  console.log("每日工作时长", daily_hours);
+  const rule_settingsdDoc = {
+      daily_hours: daily_hours
+  }
+  const res = await ctx.broker.call('objectql.directUpdate', {
+      objectName: 'attendance_rule_settings',
+      doc: {
+          "daily_hours": daily_hours
+      },
+      id:doc._id
+  })

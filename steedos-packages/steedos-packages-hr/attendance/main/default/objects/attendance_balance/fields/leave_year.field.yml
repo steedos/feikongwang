@@ -1,0 +1,14 @@
+name: leave_year
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 所属年度
+precision: 18
+primary: false
+required: true
+scale: 0
+sort_no: 141
+sortable: false
+type: number

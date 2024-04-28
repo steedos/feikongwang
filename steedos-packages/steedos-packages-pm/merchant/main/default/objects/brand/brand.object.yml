@@ -1,0 +1,8 @@
+name: brand
+label: 品牌信息
+custom: true
+enable_api: true
+enable_search: false
+icon: account
+is_enable: true
+version: 2

@@ -1,0 +1,87 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:d5ce92780fc8"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:a89f78a41811"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "报销明细",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:459a6c943a61",
+                            "relatedObjectApiName": "cost_business_reimburse_detail"
+                        }
+                    ],
+                    "id": "u:8d8a109eb318"
+                },
+                {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:50f6e50e0010",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:99594361032f"
+                },
+                {
+                    "title": "审批",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:fa0c94cd830a",
+                            "relatedObjectApiName": "instances"
+                        }
+                    ],
+                    "id": "u:fb2654adb16a"
+                }
+            ],
+            "id": "u:815fc6cf06d6"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_cost_business_out_reimburse_record_detail",
+    "name": "page_cost_business_out_reimburse_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

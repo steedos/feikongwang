@@ -1,0 +1,14 @@
+name: contracts_detail
+__filename: >-
+  /workspace/steedos-ee/steedos-packages-pm/contract/main/default/pages/contracts_detail.page.yml
+is_active: true
+label: 合同详情页
+object_name: contracts
+pageAssignments:
+  - type: orgDefault
+    page: contracts_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

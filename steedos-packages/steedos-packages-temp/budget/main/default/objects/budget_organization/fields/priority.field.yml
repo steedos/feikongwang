@@ -1,0 +1,15 @@
+name: priority
+filterable: false
+generated: false
+index: false
+inlineHelpText: 决定预算匹配时，默认匹配的次序，例如某项目组织优先级为1，某部门组织优先级为2，某笔费用都能匹配到两者时，默认匹配项目组织。
+is_name: false
+is_wide: false
+label: 组织优先级
+precision: 18
+primary: false
+required: true
+scale: 0
+sort_no: 150
+sortable: false
+type: number

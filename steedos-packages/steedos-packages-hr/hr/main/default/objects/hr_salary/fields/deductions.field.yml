@@ -1,0 +1,6 @@
+name: deductions
+label: 扣款
+precision: 18
+scale: 2
+sort_no: 190
+type: currency

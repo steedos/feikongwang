@@ -1,0 +1,12 @@
+name: bidding
+label: 招标
+custom: true
+enable_api: true
+enable_search: false
+enable_instances: true
+enable_workflow: true
+enable_files: true
+enable_enhanced_lookup: true
+icon: immunization
+is_enable: true
+version: 2

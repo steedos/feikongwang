@@ -1,0 +1,6 @@
+name: driver_overtime
+label: 驾驶员加班信息
+type: lookup
+reference_to: driver_overtime
+sort_no: 999
+visible_on: "{{ global.mode === 'read' ? true : false }}"

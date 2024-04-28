@@ -1,0 +1,12 @@
+name: status
+data_type: text
+label: 启用/停用
+options:
+  - label: 启用
+    value: open
+  - label: 停用
+    value: close
+required: true
+sort_no: 120
+type: select
+defaultValue: 'open'

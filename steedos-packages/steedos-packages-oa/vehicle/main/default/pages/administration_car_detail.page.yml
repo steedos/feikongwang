@@ -1,0 +1,12 @@
+name: administration_car_detail
+is_active: true
+label: 车辆信息详情页
+object_name: administration_car
+pageAssignments:
+  - type: orgDefault
+    page: administration_car_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

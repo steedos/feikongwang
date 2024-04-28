@@ -1,0 +1,12 @@
+name: asset_recipient_detail
+is_active: true
+label: 资产领用详情页
+object_name: asset_recipient
+pageAssignments:
+  - type: orgDefault
+    page: asset_recipient_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

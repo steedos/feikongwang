@@ -1,0 +1,14 @@
+name: hr_employee
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 花名册
+primary: false
+reference_to: hr_employee
+required: true
+sort_no: 140
+sortable: false
+type: master_detail
+write_requires_master_read: false

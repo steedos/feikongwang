@@ -1,0 +1,56 @@
+rules:
+  - name: project_task_create_remind
+    active: true
+    description: 项目任务创建时提醒到对应任务分配的处理人
+    formula: 1==1
+    label: 项目任务创建提醒
+    object_name: project_task
+    trigger_type: onCreateOnly
+    workflow_notifications_actions:
+      - project_task_create_remind
+  - name: project_task_expiration_reminder
+    active: true
+    description: 任务到期前一天提醒任务处理人
+    label: 项目任务到期提醒
+    object_name: project_task
+    time_triggers:
+      - number: 1
+        unit: day
+        type: earlier_than
+        date_field: due_date
+        workflow_notifications_actions:
+          - project_task_expiration_reminder
+    trigger_type: onCreateOrTriggeringUpdate
+  - name: project_task_completion_notification
+    active: true
+    description: 任务状态变成“已完成”后，提醒任务创建人任务已完成。
+    formula: has_complete==true
+    label: 项目任务完成通知
+    object_name: project_task
+    trigger_type: onCreateOrTriggeringUpdate
+    workflow_notifications_actions:
+      - project_task_completion_notification
+fieldUpdates: []
+notifications:
+  - name: project_task_create_remind
+    assigned_user_field:
+      - assignees
+    body: '"该"+name+"项目任务已创建，请及时处理"'
+    label: 项目任务创建通知
+    object_name: project_task
+    title: '"项目任务完成通知"'
+  - name: project_task_expiration_reminder
+    assigned_user_field:
+      - assignees
+    body: '"该"+name+"项目任务，即将到期，请及时处理"'
+    label: 项目任务到期提醒
+    object_name: project_task
+    title: '"项目任务到期提醒"'
+  - name: project_task_completion_notification
+    assigned_user_field:
+      - created_by
+    body: '"该"+name+"项目任务，已完成，请及时查看"'
+    label: 项目任务完成通知
+    object_name: project_task
+    title: '"项目任务完成通知"'
+outboundMessages: []

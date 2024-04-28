@@ -1,0 +1,13 @@
+name: warehouse
+label: 存放地点
+reference_to: warehouse
+sort_no: 170
+type: lookup
+depend_on:
+    - dept
+# filtersFunction: !<tag:yaml.org,2002:js/function> |-
+#   function (filters, values){
+#     return [["dept","=",values.dept]]
+#   }
+required: true
+filterable: true

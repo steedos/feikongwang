@@ -1,0 +1,5 @@
+name: administration_stamp_usage
+label: 印章使用
+reference_to: administration_stamp_usage
+sort_no: 170
+type: master_detail

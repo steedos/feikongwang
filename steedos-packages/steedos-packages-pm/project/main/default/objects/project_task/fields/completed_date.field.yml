@@ -1,0 +1,15 @@
+name: completed_date
+filterable: false
+group: 完成情况
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 实际完成日期
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 180
+sortable: true
+type: date

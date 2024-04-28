@@ -1,0 +1,8 @@
+name: job_title_before
+index: true
+label: 原职位
+required: true
+sort_no: 120
+type: text
+filterable: true
+

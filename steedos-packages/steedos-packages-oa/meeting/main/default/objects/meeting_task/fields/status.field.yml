@@ -1,0 +1,26 @@
+name: status
+data_type: text
+defaultValue: 未开始
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 状态
+multiple: false
+options:
+  - label: 未开始
+    value: 未开始
+  - label: 进行中
+    value: 进行中
+  - label: 已完成
+    value: 已完成
+  - label: 已延期
+    value: 已延期
+  - label: 待处理
+    value: 待处理
+primary: false
+required: true
+sort_no: 160
+sortable: false
+type: select

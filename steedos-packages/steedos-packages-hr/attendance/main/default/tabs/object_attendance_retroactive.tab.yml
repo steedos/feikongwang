@@ -1,0 +1,7 @@
+name: object_attendance_retroactive
+desktop: true
+label: 补卡
+mobile: true
+object: attendance_retroactive
+permissions: []
+type: object

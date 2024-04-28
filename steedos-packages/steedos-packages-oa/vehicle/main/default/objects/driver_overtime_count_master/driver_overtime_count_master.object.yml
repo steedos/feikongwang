@@ -1,0 +1,11 @@
+name: driver_overtime_count_master
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_instances: true
+enable_workflow: true
+icon: sales_cadence
+is_enable: true
+label: 驾驶员加班统计
+version: 2

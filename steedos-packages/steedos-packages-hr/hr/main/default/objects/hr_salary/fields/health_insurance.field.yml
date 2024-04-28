@@ -1,0 +1,6 @@
+name: health_insurance
+label: 医疗保险
+precision: 18
+scale: 2
+sort_no: 210
+type: currency

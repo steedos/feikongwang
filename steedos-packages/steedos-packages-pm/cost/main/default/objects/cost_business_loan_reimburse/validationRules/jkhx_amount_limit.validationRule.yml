@@ -1,0 +1,4 @@
+name: jkhx_amount_limit
+active: true
+error_condition_formula: loan_paid_amount>personal_loan.remaining_amount
+error_message: 核销金额大于借款剩余还款金额，请修改核销金额。

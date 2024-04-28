@@ -1,0 +1,4 @@
+name: floor_area
+label: 工厂占地面积（平米）
+type: text
+sort_no: 160

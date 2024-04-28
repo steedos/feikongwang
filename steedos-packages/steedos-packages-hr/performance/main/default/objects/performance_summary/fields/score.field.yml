@@ -1,0 +1,6 @@
+name: score
+label: 分数
+type: number
+precision: 15
+scale: 2
+sort_no: 130

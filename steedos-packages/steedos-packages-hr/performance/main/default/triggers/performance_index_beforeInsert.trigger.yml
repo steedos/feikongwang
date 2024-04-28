@@ -1,0 +1,21 @@
+name: performance_index_beforeInsert
+listenTo: performance_index
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const doc = ctx.params.doc;
+  const records = await ctx.broker.call(
+      'objectql.find',
+      {
+          objectName: 'performance_index',
+          query: {
+              fields: ['_id'],
+              filters: ['performance_template', '=', doc.performance_template]
+          }
+      }
+  )
+  if (doc.sequence_number) {
+      const sum = records.length;
+      Object.assign(doc, {'sequence_number': sum + 1})
+  }

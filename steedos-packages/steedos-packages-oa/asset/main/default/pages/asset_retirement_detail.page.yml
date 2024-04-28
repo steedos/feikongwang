@@ -1,0 +1,12 @@
+name: asset_retirement_detail
+is_active: true
+label: 对象报废详情页
+object_name: asset_retirement
+pageAssignments:
+  - type: orgDefault
+    page: asset_retirement_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

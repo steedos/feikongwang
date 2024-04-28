@@ -1,0 +1,7 @@
+name: object_bidding
+desktop: true
+label: 招标
+mobile: true
+object: bidding
+permissions: []
+type: object

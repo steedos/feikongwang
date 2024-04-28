@@ -1,0 +1,12 @@
+name: attendance_leave_leave_change_attendance_field_status
+listenTo: attendance_leave
+when:
+  - afterInsert
+isEnabled: true
+handler: |-
+  // 更新请假台账中 假期余额字段（相关表类型）
+  console.log('新增请假记录之后');
+  const { doc, attendance_leave } = ctx.params;
+  await ctx.broker.call('@steedos-labs/attendance.attendanceleaveOfattendanceBalance', {
+          "doc":doc
+  });

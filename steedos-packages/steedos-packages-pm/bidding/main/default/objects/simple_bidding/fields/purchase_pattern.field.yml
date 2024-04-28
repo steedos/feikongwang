@@ -1,0 +1,5 @@
+name: purchase_pattern
+label: 采购模式
+type: lookup
+reference_to: purchase_pattern
+sort_no: 160

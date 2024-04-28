@@ -1,0 +1,64 @@
+name: attendance_absent_settings.attendance_admin
+allowCreate: true
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: attendance_admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: type
+    readable: true
+    editable: true
+  - field: greater_than
+    readable: true
+    editable: true
+  - field: less_than
+    readable: true
+    editable: true
+  - field: total
+    readable: true
+    editable: true
+  - field: count_absent_date
+    readable: true
+    editable: true
+  - field: attendance_rule_settings
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true

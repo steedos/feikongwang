@@ -1,0 +1,8 @@
+name: total
+label: 月累计次数
+precision: 18
+scale: 0
+sort_no: 140
+type: number
+required: "{{['lateandearly'].indexOf(formData.type)>-1 ? true: false}}"
+visible_on: "{{['lateandearly'].indexOf(formData.type)>-1 ? true: false}}"

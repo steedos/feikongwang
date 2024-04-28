@@ -1,0 +1,6 @@
+name: end_quit_clock
+group: 打卡时间
+label: 下班结束打卡时间
+sort_no: 190
+type: time
+required: true

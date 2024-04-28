@@ -1,0 +1,13 @@
+name: remark4
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 如何在本岗位做的更好
+primary: false
+required: true
+rows: 3
+sort_no: 330
+sortable: false
+type: textarea

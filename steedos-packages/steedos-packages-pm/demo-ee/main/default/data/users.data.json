@@ -1,0 +1,205 @@
+[
+    {
+        "_id": "${space_id}_rn7v8j67Qj26M9hrc",
+        "name": "张国强",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_rn7v8j67Qj26M9hrc",
+        "mobile": "18902576722",
+        "mobile_verified": false,
+        "username": "${space_id}_zhangguoqiang",
+        "created": {
+            "$date": "2022-08-22T09:48:24.021Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$C5WzuaALOEF9SjgdRamUKO90XuZNJK/64hmZaHwmbWiez.T4DcoiS"
+            },
+            "password_history": [
+                "$2b$10$C5WzuaALOEF9SjgdRamUKO90XuZNJK/64hmZaHwmbWiez.T4DcoiS"
+            ]
+        },
+        "email_verified": false
+    },
+    {
+        "_id": "${space_id}_skjndSByYdGRTQnKy",
+        "name": "尹翼飞",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_skjndSByYdGRTQnKy",
+        "mobile": "16783452261",
+        "mobile_verified": false,
+        "email_verified": false,
+        "username": "${space_id}_yinyifei",
+        "created": {
+            "$date": "2022-08-22T09:49:30.304Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$1OYyppcAGJKH12Y0jqi70.pIqbZhxwokW3YYWVpOPavHyQExky9H6"
+            },
+            "password_history": [
+                "$2b$10$1OYyppcAGJKH12Y0jqi70.pIqbZhxwokW3YYWVpOPavHyQExky9H6"
+            ]
+        }
+    },
+    {
+        "_id": "${space_id}_8qQ5TwdoY8fqo7tga",
+        "name": "杨田",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_8qQ5TwdoY8fqo7tga",
+        "mobile": "16277360901",
+        "mobile_verified": false,
+        "email_verified": false,
+        "username": "${space_id}_yangtian",
+        "created": {
+            "$date": "2022-08-22T09:52:23.524Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$WYXk.hfL5HkZhF/JxJ9FFO1tXLfc7IQm/1biZitCLKb5NTH2oLXWq"
+            },
+            "password_history": [
+                "$2b$10$WYXk.hfL5HkZhF/JxJ9FFO1tXLfc7IQm/1biZitCLKb5NTH2oLXWq"
+            ]
+        }
+    },
+    {
+        "_id": "${space_id}_9ZQcWvzsbqkbMyGdb",
+        "name": "刘静",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_9ZQcWvzsbqkbMyGdb",
+        "mobile": "13145237780",
+        "mobile_verified": false,
+        "email_verified": false,
+        "username": "${space_id}_liujing",
+        "created": {
+            "$date": "2022-08-22T09:53:06.182Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$zLdNibkF1qEIIjwmJC2Z9e8oxPzSbyx2NOHJQyP1UDJ45lhpamsY2"
+            },
+            "password_history": [
+                "$2b$10$zLdNibkF1qEIIjwmJC2Z9e8oxPzSbyx2NOHJQyP1UDJ45lhpamsY2"
+            ]
+        }
+    },
+    {
+        "_id": "${space_id}_SNZ2qzqzpu4K7pkE8",
+        "name": "张莉莉",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_SNZ2qzqzpu4K7pkE8",
+        "mobile": "16377829145",
+        "mobile_verified": false,
+        "email_verified": false,
+        "username": "${space_id}_zhanglili",
+        "created": {
+            "$date": "2022-08-22T09:54:04.451Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$FTI0NiSoZXVvGkAVjRJxreQWSLIDQhblLlDG31ASY.MraOQjUSA6e"
+            },
+            "password_history": [
+                "$2b$10$FTI0NiSoZXVvGkAVjRJxreQWSLIDQhblLlDG31ASY.MraOQjUSA6e"
+            ]
+        }
+    },
+    {
+        "_id": "${space_id}_TzudkPm4KRCDN3gTP",
+        "name": "魏涛",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_TzudkPm4KRCDN3gTP",
+        "mobile": "19088245281",
+        "mobile_verified": false,
+        "email_verified": false,
+        "username": "${space_id}_weitao",
+        "created": {
+            "$date": "2022-08-22T09:55:00.876Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$IVrlmWN1EKZTLS/2VzT5xOUwGvWhpDOg0flMx8N.mMvPAs.tTC3JS"
+            },
+            "password_history": [
+                "$2b$10$IVrlmWN1EKZTLS/2VzT5xOUwGvWhpDOg0flMx8N.mMvPAs.tTC3JS"
+            ]
+        }
+    },
+    {
+        "_id": "${space_id}_9W49f75qzD5qsFQMW",
+        "name": "孙明博",
+        "locale": "zh-cn",
+        "steedos_id": "${space_id}_9W49f75qzD5qsFQMW",
+        "mobile": "17622893611",
+        "mobile_verified": false,
+        "email_verified": false,
+        "username": "${space_id}_sunmingbo",
+        "created": {
+            "$date": "2022-08-22T09:56:18.086Z"
+        },
+        "is_deleted": false,
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "type": "user",
+        "active": true,
+        "roles": [
+            "user"
+        ],
+        "utcOffset": 8,
+        "services": {
+            "password": {
+                "bcrypt": "$2b$10$PgwVSw5VuWmhlVjeh.KYAeBEw4xeFa4yCJHbAeUT1Xu4uG8b3gJSy"
+            },
+            "password_history": [
+                "$2b$10$PgwVSw5VuWmhlVjeh.KYAeBEw4xeFa4yCJHbAeUT1Xu4uG8b3gJSy"
+            ]
+        }
+    }
+]

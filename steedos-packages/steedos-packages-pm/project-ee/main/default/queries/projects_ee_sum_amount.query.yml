@@ -1,0 +1,57 @@
+name: projects_ee_sum_amount
+datasource: default
+description: |-
+  查询对象：project 项目
+  查询条件：项目状态-进行中
+  查询结果：项目总应收、项目已收款、项目已付款、预期成本总额、预期利润总额。
+label: 项目ee-在建项目统计
+options:
+  parameters: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "project",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "name": "$name",
+                  "status": "$status",
+                  "contracts_all_income": "$contracts_all_income",
+                  "contracts_received_income": "$contracts_received_income",
+                  "contracts_paid_pay": "$contracts_paid_pay",
+                  "project_cost_budget": "$project_cost_budget"
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "status": "working"
+              }
+          },
+          {
+              "$group": {
+                  "_id": "",
+                  "contracts_all_income": {
+                      "$sum": "$contracts_all_income"
+                  },
+                  "contracts_received_income": {
+                      "$sum": "$contracts_received_income"
+                  },
+                  "contracts_paid_pay": {
+                      "$sum": "$contracts_paid_pay"
+                  },
+                  "project_cost_budget": {
+                      "$sum": "$project_cost_budget"
+                  }
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

@@ -1,0 +1,52 @@
+name: cms_posts_preview
+amis_schema: |-
+  {
+    "type": "service",
+    "body": [
+      {
+        "type": "button",
+        "label": "预览",
+        "id": "u:cms_posts_preview",
+        "onEvent": {
+          "click": {
+            "weight": 0,
+            "actions": [
+              {
+                "actionType": "url",
+                "args": {
+                  "url": "${context.rootUrl}/api/page/public/cms_posts_preview?postId=${recordId}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "regions": [
+      "body"
+    ],
+    "data": {
+      "objectName": "cms_posts",
+      "context": {
+        "rootUrl": "https://5000-lime-tiglon-jct37zzp.ws.vscode.steedos.cn",
+        "tenantId": "64f1795979c9191c7cdd5586",
+        "userId": "64f1795379c9191c7cdd5584",
+        "authToken": "7c408209868184000e2a4890c10b3a5842fe790efe293ce3aa017948ae277b382421dc9bf6ebb08ddf5716"
+      },
+      "dataComponentId": "",
+      "record_id": "",
+      "record": {
+      },
+      "permissions": {
+      },
+      "app_id": "",
+      "tab_id": ""
+    },
+    "id": "u:d328356f601c",
+    "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 预览
+'on': record_only
+type: amis_button
+visible: true

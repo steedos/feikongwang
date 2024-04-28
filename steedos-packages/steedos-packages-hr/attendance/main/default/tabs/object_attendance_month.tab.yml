@@ -1,0 +1,7 @@
+name: object_attendance_month
+desktop: true
+label: 月度考勤报表
+mobile: true
+object: attendance_month
+permissions: []
+type: object

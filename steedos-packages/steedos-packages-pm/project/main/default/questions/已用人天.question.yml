@@ -1,0 +1,33 @@
+name: 已用人天
+created_at: 2023-11-24T02:47:50.676Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: project
+    aggregation:
+      - - sum
+        - - field
+          - project.open_tasks
+          - null
+  type: query
+display: scalar
+entity_id: 65600ed6f084ab05cc5731e8
+id: 65600ed6f084ab05cc5731e8
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 待完成任务合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: project
+updated_at: 2023-11-24T02:47:50.676Z
+visualization_settings: '{}'

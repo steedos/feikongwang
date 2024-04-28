@@ -1,0 +1,12 @@
+name: asking
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_files: true
+enable_inline_edit: false
+enable_instances: true
+enable_workflow: true
+icon: account
+is_enable: true
+label: 请示
+version: 2

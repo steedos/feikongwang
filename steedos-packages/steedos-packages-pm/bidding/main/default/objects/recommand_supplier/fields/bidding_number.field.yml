@@ -1,0 +1,6 @@
+name: bidding_number
+label: 中标次数
+type: number
+precision: 18
+scale: 0
+sort_no: 160

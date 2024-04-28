@@ -1,0 +1,19 @@
+name: recent
+columns:
+  - field: name
+  - field: gender
+  - field: phone
+  - field: department
+  - field: job_title
+  - field: position_status
+  - field: date
+  - field: regularization_date
+  - field: instance_state
+  - field: created
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

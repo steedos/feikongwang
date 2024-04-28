@@ -1,0 +1,7 @@
+name: object_document
+desktop: true
+label: 发文
+mobile: true
+object: document
+permissions: []
+type: object

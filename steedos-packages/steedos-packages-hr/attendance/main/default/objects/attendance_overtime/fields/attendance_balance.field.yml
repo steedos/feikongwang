@@ -1,0 +1,16 @@
+name: attendance_balance
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 假期余额
+primary: false
+reference_to: attendance_balance
+required: false
+sort_no: 175
+sortable: false
+type: master_detail
+write_requires_master_read: true
+group: 加班信息
+visible_on: "{{global.mode ==='read' ? true : false}}"

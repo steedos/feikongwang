@@ -1,0 +1,15 @@
+name: hr_employee_afterInsertAndAfterUpdate
+listenTo: hr_employee
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { doc, id } = ctx.params;
+  // 判断拥有者是否属于自己
+  if (doc.owner != doc.account) {
+      const employeeObj = this.getObject("hr_employee");
+      await employeeObj.directUpdate(id, {
+          owner: doc.account
+      })
+  }

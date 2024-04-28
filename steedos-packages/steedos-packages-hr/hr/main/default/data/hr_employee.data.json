@@ -1,0 +1,383 @@
+[
+    {
+      "_id": "${space_id}_65093815841d5113adf90456",
+      "name": "李丽",
+      "gender": "female",
+      "phone": "13756235201",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_tansZq9euqCGcHPWr",
+      "job_title": "项目经理",
+      "venue": "华东区",
+      "date": "2021-07-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T05:56:37.585Z",
+      "modified": "2023-09-19T05:56:37.585Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093b19841d5113adf9045d",
+      "name": "王宝",
+      "gender": "male",
+      "phone": "13689521230",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_vZFrd87ARmzsMgkb6",
+      "job_title": "财务专员",
+      "date": "2023-05-09T00:00:00.000Z",
+      "venue": "上海",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:09:29.503Z",
+      "modified": "2023-09-19T06:15:29.699Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093b98841d5113adf90460",
+      "name": "李虎",
+      "gender": "male",
+      "phone": "13625895621",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_gWhktJTiNoF8BsPZa",
+      "job_title": "产品经理",
+      "date": "2022-08-09T00:00:00.000Z",
+      "venue": "华东区",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:11:36.099Z",
+      "modified": "2023-09-19T06:11:36.099Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093bdc841d5113adf90461",
+      "gender": "female",
+      "job_title": "客户经理",
+      "name": "何瑶",
+      "phone": "13845625241",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_XY25N6zWaFcfsSqaf",
+      "date": "2023-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:12:44.617Z",
+      "modified": "2023-09-19T06:17:11.687Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093c29841d5113adf90462",
+      "name": "曹静",
+      "gender": "female",
+      "phone": "13856232560",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_WmQ5jA2Wrhtk7mKKX",
+      "job_title": "人事行政专员",
+      "date": "2021-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:14:01.022Z",
+      "modified": "2023-09-19T06:21:59.749Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093d3d841d5113adf90463",
+      "name": "千锦旗",
+      "gender": "male",
+      "phone": "13845612654",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_oJbJh98SY5R2eyLxW",
+      "job_title": "研发总监",
+      "date": "2015-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:18:37.727Z",
+      "modified": "2023-09-19T06:19:34.129Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093dd6841d5113adf90464",
+      "job_title": "出纳",
+      "name": "夏成凤",
+      "gender": "female",
+      "phone": "1374561254",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_vZFrd87ARmzsMgkb6",
+      "date": "2023-03-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:21:10.165Z",
+      "modified": "2023-09-19T06:21:10.165Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093f43841d5113adf90466",
+      "name": "魏涛",
+      "gender": "male",
+      "phone": "1385642356",
+      "position_status": "full-time",
+      "department": "${space_id}_mqg4iCKvbqrQu7H5j",
+      "job_title": "硬件工程师",
+     "company": "${space_id}",
+      "date": "2020-09-02T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:27:15.489Z",
+      "modified": "2023-09-19T06:27:15.489Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093fa7841d5113adf90467",
+      "name": "甘甜",
+      "gender": "female",
+      "phone": "138564255",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_mqg4iCKvbqrQu7H5j",
+      "job_title": "硬件测试工程师",
+      "date": "2022-07-07T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:28:55.498Z",
+      "modified": "2023-09-19T06:28:55.498Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65093fff841d5113adf90468",
+      "name": "李丹",
+      "gender": "female",
+      "phone": "1375659624",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_F4LNEu9GrKcgPEWGD",
+      "job_title": "采购经理",
+      "date": "2022-04-08T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:30:23.387Z",
+      "modified": "2023-09-19T06:30:23.387Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65094053841d5113adf90469",
+      "job_title": "硬件总监",
+      "name": "宫德勇",
+      "gender": "male",
+      "phone": "1375632354",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_mqg4iCKvbqrQu7H5j",
+      "date": "2017-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:31:47.369Z",
+      "modified": "2023-09-19T06:31:47.369Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_650940b1841d5113adf9046a",
+      "job_title": "项目总监",
+      "name": "陈虹",
+      "gender": "female",
+      "phone": "13654323232",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_tansZq9euqCGcHPWr",
+      "date": "2017-09-05T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:33:21.462Z",
+      "modified": "2023-09-19T06:33:21.462Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_650940fa841d5113adf9046b",
+      "job_title": "产品总监",
+      "position_status": "full-time",
+      "department": "${space_id}_XY25N6zWaFcfsSqaf",
+     "company": "${space_id}",
+      "date": "2017-09-07T00:00:00.000Z",
+      "phone": "139565489565",
+      "name": "刘伟",
+      "gender": "male",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:34:34.127Z",
+      "modified": "2023-09-19T06:34:34.127Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65094168841d5113adf9046c",
+      "job_title": "采购总监",
+      "name": "王璐",
+      "gender": "female",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_F4LNEu9GrKcgPEWGD",
+      "date": "2017-09-05T00:00:00.000Z",
+      "phone": "1375626265",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:36:24.032Z",
+      "modified": "2023-09-19T06:36:24.032Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_650941a9841d5113adf9046d",
+      "job_title": "实验室管理员",
+      "name": "李勇",
+      "gender": "male",
+      "phone": "13965652232",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_oJbJh98SY5R2eyLxW",
+      "date": "2020-09-03T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:37:29.507Z",
+      "modified": "2023-09-19T06:37:29.507Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_6509597f841d5113adf90475",
+      "job_title": "结构总监",
+      "name": "方加喜",
+      "gender": "male",
+      "phone": "1375632544",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "department": "${space_id}_58ffXSnDduviuYDXg",
+      "date": "2020-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T08:19:11.571Z",
+      "modified": "2023-09-19T08:19:49.743Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_650959d9841d5113adf90476",
+      "job_title": "结构工程师",
+      "department": "${space_id}_58ffXSnDduviuYDXg",
+      "phone": "1365986522",
+      "name": "田志荣",
+      "gender": "male",
+      "position_status": "full-time",
+     "company": "${space_id}",
+      "date": "2021-08-26T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T08:20:41.515Z",
+      "modified": "2023-09-19T08:20:41.515Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65095a36841d5113adf90477",
+      "job_title": "总经理",
+      "name": "王大大",
+      "gender": "male",
+      "phone": "13756986254",
+      "position_status": "full-time",
+      "department": "${space_id}_LtjEk7tzbphA9TNTQ",
+     "company": "${space_id}",
+      "date": "2008-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T08:22:14.592Z",
+      "modified": "2023-09-19T08:22:14.592Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    }
+  ]

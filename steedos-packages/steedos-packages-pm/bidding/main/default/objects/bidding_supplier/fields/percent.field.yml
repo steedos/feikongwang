@@ -1,0 +1,6 @@
+name: percent
+label: 中标范围所占百分比
+precision: 18
+scale: 2
+sort_no: 170
+type: percent

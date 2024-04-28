@@ -1,0 +1,159 @@
+[
+    {
+        "_id": "${space_id}_62fb26bbcb9c8306a51b2b56",
+        "attend": [
+            "${space_owner_id}"
+        ],
+        "attend_other": "/",
+        "contact": "${space_owner_id}",
+        "count": 6,
+        "end": {
+            "$date": "2022-08-15T07:00:00.25Z"
+        },
+        "name": "部门周工作会议讨论",
+        "phone": "17621218417",
+        "room": "${space_id}_62fb25cdcb9c8306a51b2b4a",
+        "start": {
+            "$date": "2022-08-15T06:00:00.248Z"
+        },
+        "status": "finished",
+        "type": "部门会议",
+        "unit": "演示环境",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:10:19.741Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:49:51.612Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "features": [
+            "surfing"
+        ],
+        "content": "部门本周工作内容及下周工作安排。"
+    },
+    {
+        "_id": "${space_id}_62fb2768cb9c8306a51b2b57",
+        "attend": [
+            "${space_owner_id}"
+        ],
+        "contact": "${space_owner_id}",
+        "content": "（1）目前云应用开发情况；\n（2）下一步开发任务沟通；\n（3）高级需求讨论。",
+        "count": 8,
+        "end": {
+            "$date": "2022-08-16T08:00:00.225Z"
+        },
+        "features": [
+            "projection"
+        ],
+        "name": "业务应用需求确认",
+        "phone": "17621218417",
+        "room": "${space_id}_62fb261dcb9c8306a51b2b4e",
+        "start": {
+            "$date": "2022-08-16T06:00:00.223Z"
+        },
+        "status": "finished",
+        "type": "专题会",
+        "unit": "演示环境",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:13:12.237Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:50:12.311Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "project": "62f5ee1fd7bdc0ae4d1947f1"
+    },
+    {
+        "_id": "${space_id}_62fb2981cb9c8306a51b2b67",
+        "attend": [
+            "${space_owner_id}"
+        ],
+        "attend_other": "/",
+        "contact": "${space_owner_id}",
+        "content": "部门本周工作内容及下周工作安排。",
+        "count": 3,
+        "end": {
+            "$date": "2022-08-13T03:00:00.25Z"
+        },
+        "features": [
+            "surfing"
+        ],
+        "name": "开发问题沟通",
+        "phone": "17621218417",
+        "room": "${space_id}_62fb25efcb9c8306a51b2b4b",
+        "start": {
+            "$date": "2022-08-13T01:00:00.248Z"
+        },
+        "status": "cancelled",
+        "type": "临时会议",
+        "unit": "演示环境",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:22:09.724Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:50:21.943Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb29cccb9c8306a51b2b68",
+        "attend": [
+            "${space_owner_id}"
+        ],
+        "contact": "${space_owner_id}",
+        "count": 4,
+        "end": {
+            "$date": "2022-08-19T10:00:00.832Z"
+        },
+        "features": [
+            "vedio",
+            "projection",
+            "surfing",
+            "monogram"
+        ],
+        "name": "招标会议",
+        "phone": "17621218417",
+        "room": "${space_id}_62fb2649cb9c8306a51b2b50",
+        "start": {
+            "$date": "2022-08-19T01:00:00.831Z"
+        },
+        "status": "normal",
+        "type": "其他会议",
+        "unit": "演示环境",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:23:24.029Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:50:34.851Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

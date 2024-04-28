@@ -1,0 +1,8 @@
+name: object_administration_car_usage
+desktop: true
+icon: care_request_reviewer
+label: 车辆使用记录
+mobile: true
+object: administration_car_usage
+permissions: []
+type: object

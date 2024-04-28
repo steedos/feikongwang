@@ -1,0 +1,17 @@
+name: organization
+filterable: false
+generated: false
+group: 预算方案
+index: false
+inlineHelpText: 若方案关联所有预算组织，当提单未击中任何预算组织时，则匹配至<其他>预算组织；各预算组织额度相互独立，没有上下级包含关系。
+is_name: false
+is_wide: true
+label: 预算组织
+multiple: true
+primary: false
+reference_to: budget_organization
+required: false
+sort_no: 180
+sortable: false
+type: lookup
+visible_on: '{{formData.budget_dimension=== "按照预算科目单独编制"?false:true}}'

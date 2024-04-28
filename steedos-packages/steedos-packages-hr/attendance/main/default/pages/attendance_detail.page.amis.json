@@ -1,0 +1,98 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "input-month",
+            "name": "month",
+            "label": "打卡月份",
+            "id": "u:9ade538b4dc9",
+            "value": "${TODAY()}",
+            "clearable": false,
+            "format": "YYYY-MM",
+            "inputFormat": "YYYY-MM",
+            "inputClassName": "date_month",
+            "labelClassName": "bg-white flex justify-center"
+        },
+        {
+            "type": "service",
+            "body": [
+                {
+                    "type": "table",
+                    "columns": [
+                        {
+                            "label": "日期",
+                            "name": "date",
+                            "type": "html",
+                            "id": "u:8ec3b14920fa",
+                            "placeholder": "-",
+                            "innerClassName": "white-space-nowrap"
+                        },
+                        {
+                            "label": "打卡时间",
+                            "name": "clock_in_time",
+                            "type": "text",
+                            "id": "u:ea5f7c26ad6a",
+                            "placeholder": "-",
+                            "innerClassName": "white-space-nowrap",
+                            "className": "",
+                            "fixed": ""
+                        },
+                        {
+                            "label": "考勤状态",
+                            "name": "status",
+                            "type": "text",
+                            "id": "u:27d52fb269e0",
+                            "placeholder": "-"
+                        }
+                    ],
+                    "id": "u:f9a6f76daa04",
+                    "title": "",
+                    "source": "${attendance_source}",
+                    "tableClassName": "text-lg"
+                }
+            ],
+            "id": "u:b43c2c2c41c9",
+            "messages": {},
+            "api": {
+                "url": "${context.rootUrl}/graphql?month=${month}",
+                "method": "post",
+                "headers": {
+                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                },
+                "adaptor": "// console.log('payload==>', payload);\nconst rows = payload.data.rows;\nconst attendance_source = _.map(rows, (item) => {\n        const datetime = item.date?.substr(0, 10) || item.start?.substr(0, 10);\n        // console.log('datetime==>', datetime);\n        // const day = parseInt(datetime.substr(9, 2));\n        let day = parseInt(datetime.slice(-2));\n        \n        const datelist = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];\n        const today = datelist[new Date(datetime).getDay()];\n        day = day < 10 ? ('<span>&ensp;</span>' + day) : day;\n        const date = day + '  ' + '<span style=\"font-size:12px; color: gray\">' + today + '</span>';\n\n        // 在原始日期的基础上添加时区偏移量\n        let startHours = item.start && new Date(new Date(item.start).getTime());\n        if (startHours) {\n                // console.log('0startHours==>', startHours);\n                let hours = startHours.getHours();\n                hours = hours < 10 ? '0' + hours : hours;\n                let minutes = startHours.getMinutes();\n                minutes = minutes < 10 ? '0' + minutes : minutes;\n                startHours = hours + ':' + minutes;  \n        }\n        if (startHours === null || startHours === undefined) {\n                startHours = '未打卡';\n        }\n        // console.log('startHours==>', startHours);\n        let endHours = item.end && new Date(new Date(item.end).getTime());\n        if (endHours) {\n                // console.log('endHours==>', endHours, typeof endHours);\n                let hours = endHours.getHours();\n                hours = hours < 10 ? '0' + hours : hours;\n                let minutes = endHours.getMinutes();\n                minutes = minutes < 10 ? '0' + minutes : minutes;\n                endHours = hours + ':' + minutes;    \n        }\n        if (endHours === null || endHours === undefined) {\n                endHours = '未打卡';\n        }\n        // console.log('endHours==>', endHours);\n        const clock_in_time = startHours + ' - ' + endHours;\n        let status = item._display.status;\n        var pattern = /[\\u4e00-\\u9fa5a-zA-Z]/; // 匹配汉字或字母\n        if (!pattern.test(status)) {\n                status = '';\n        }\n        return { date, clock_in_time, status}\n})\n\npayload.data.attendance_source = attendance_source;\n// console.log('bb==>', payload);\nreturn payload;\n    ",
+                "requestAdaptor": "const input_month = api.data.month;\nconst userId = api.data.context.userId;\nlet year;\nlet month\nif (typeof input_month === 'string') {\n  const year_month = input_month.split(\"-\");\n  year = year_month[0];\n  month = year_month[1];\n} else {\n  year = input_month.getFullYear();\n  month = input_month.getMonth() + 1;\n  month = month < 10 ? \"0\" + month : month;\n}\n\nlet last_day = new Date(year, month, 0).getDate();\n\nconst start_time = year + '-' + month + '-' + '01' + \"T00:00:00.000Z\";\nconst end_time = year + '-' + month + '-' + last_day + \"T00:00:00.000Z\";\nconst query = `{rows:attendance_daily(filters:[[\\\"user\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"date\\\", \\\"between\\\", [\\\"` + start_time + `\\\",\\\"` + end_time +`\\\"]]],sort:\\\"date desc\\\"){user,status,date,start,end,remark, company,department,_display:_ui{status}}}`\napi.data.query = query;\n// console.log('api==>', api);\nreturn api;",
+                "data": {
+                    "month": "${month}",
+                    "context": "${context}"
+                },
+                "messages": {},
+                "sendOn": ""
+            }
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:a2b4f5144fc3",
+    "css": {
+        ".rdtPickerDate": {
+            "width": "100%"
+        },
+        ".antd-DateCalendar": {
+            "width": "100%"
+        },
+        ".date_month .antd-DatePicker": {
+            "border-radius": "inherit"
+        }
+    },
+    "style": {
+        "background": "#edebeb"
+    }
+}

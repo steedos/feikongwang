@@ -1,0 +1,14 @@
+name: remark
+filterable: false
+generated: false
+group: 加班信息
+index: false
+is_name: false
+is_wide: true
+label: 加班工作说明
+primary: false
+required: false
+rows: 3
+sort_no: 180
+sortable: false
+type: textarea

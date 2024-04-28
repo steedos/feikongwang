@@ -1,0 +1,14 @@
+name: attendance_overtime_attendance_overtime
+listenTo: attendance_overtime
+when:
+  - afterInsert
+isEnabled: true
+handler: >-
+  console.log('新增加班记录之后');
+
+  const { doc, attendance_overtime } = ctx.params;
+
+  await ctx.broker.call('@steedos-labs/attendance.attendanceOvertimeOfattendanceBalance',
+  {
+      "doc": doc
+  });

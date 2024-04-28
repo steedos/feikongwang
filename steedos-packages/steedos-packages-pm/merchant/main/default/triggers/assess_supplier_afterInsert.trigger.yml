@@ -1,0 +1,26 @@
+name: assess_supplier_afterInsert
+listenTo: assess_supplier
+when:
+  - afterInsert
+isEnabled: true
+handler: |-
+  const { doc, userId, spaceId } = ctx.params
+  const { assessor, suppliers, template } = doc;
+
+  const userSession = await ctx.getUser(userId, spaceId);
+  const assessRecordObj = ctx.getObject('assess_record');
+  const assessDataObj = ctx.getObject('assess_data');
+  const templateItemObj = ctx.getObject('assess_template_item');
+  // 添加供应商考核后，根据考核信息添加考核单和考核数据
+  // 添加考核单
+  const id = await assessRecordObj._makeNewID();
+  const recordDoc = {
+      '_id': id,
+      'name': doc.name,            // 标题
+      'assessor': assessor,        // 评分人
+      'suppliers': suppliers,      // 供应商
+      'assess_supplier': doc._id,  // 供应商评分
+      'template': template,
+      'space': userSession.spaceId
+  }
+  await assessRecordObj.insert(recordDoc, userSession);

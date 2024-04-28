@@ -1,0 +1,15 @@
+name: 通讯录
+code: mobile_contacts
+enable_nav_schema: false
+icon_slds: groups
+is_creator: false
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+showSidebar: false
+sort: 9100
+tab_items: {}
+tabs: []
+url: '/app/mobile_home/page/space_user_list'
+visible: true

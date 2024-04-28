@@ -1,0 +1,22 @@
+name: freeze_days
+data_type: number
+defaultValue: '0'
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 已冻结假期天数
+precision: 18
+primary: false
+scale: 2
+sort_no: 165
+sortable: false
+summary_field: days
+summary_filters:
+  - field: instance_state
+    operation: '='
+    value: pending
+summary_object: attendance_used
+summary_type: sum
+type: summary

@@ -1,0 +1,12 @@
+name: paln_code
+filterable: false
+formula: 'BP-{YYYY}{MM}{00}'
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 方案编码
+primary: false
+sort_no: 110
+sortable: false
+type: autonumber

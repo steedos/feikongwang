@@ -1,0 +1,5 @@
+name: sign_date
+label: 注册日期
+sort_no: 110
+type: date
+sortable: true

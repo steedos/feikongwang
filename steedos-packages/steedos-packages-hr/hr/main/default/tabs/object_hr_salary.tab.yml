@@ -1,0 +1,7 @@
+name: object_hr_salary
+desktop: true
+label: 工资单
+mobile: true
+object: hr_salary
+permissions: []
+type: object

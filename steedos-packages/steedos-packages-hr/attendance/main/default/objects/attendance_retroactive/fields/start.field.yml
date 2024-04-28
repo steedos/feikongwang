@@ -1,0 +1,11 @@
+name: start
+label: 上班打卡时间
+sort_no: 500
+type: datetime
+group: 补卡信息
+depend_on:
+  - type
+visible_on: "{{formData.type ==='work' ? true : false}}"
+required: "{{formData.type ==='work' ? true: false}}"
+amis:
+  format: "YYYY-MM-DDTHH:mm:00.000Z"

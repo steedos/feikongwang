@@ -1,0 +1,5 @@
+name: parent
+label: 变更前
+type: lookup
+reference_to: accounts 
+sort_no: 999

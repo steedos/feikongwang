@@ -1,0 +1,31 @@
+name: attendance_layout
+buttons: []
+field_groups:
+  - group_name: 系统信息
+fields:
+  - field_name: name
+    is_readonly: true
+    is_required: false
+  - field_name: staff
+    is_required: false
+    is_readonly: true
+  - field_name: date_time
+    is_required: false
+    is_readonly: true
+  - field_name: company
+    is_required: false
+    is_readonly: true
+  - field_name: department
+    is_required: false
+    is_readonly: true
+  - field_name: data_source
+    is_required: false
+    is_readonly: true
+  - field_name: site
+    is_readonly: true
+label: 隐藏用户新建按钮权限
+object_name: attendance
+profiles:
+  - user
+related_lists: []
+type: record

@@ -1,0 +1,5 @@
+name: enable_post_permissions
+label: Enable Article Level Permissions
+type: boolean
+defaultValue: false
+sort_no: 65

@@ -1,0 +1,16 @@
+name: all
+columns:
+  - field: name
+  - field: notes
+  - field: year
+  - field: quarter
+  - field: start_date
+  - field: end_date
+  - field: status
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

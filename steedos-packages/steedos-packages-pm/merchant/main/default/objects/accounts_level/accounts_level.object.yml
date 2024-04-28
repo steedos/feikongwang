@@ -1,0 +1,8 @@
+name: accounts_level
+label: 供应商等级
+custom: true
+enable_api: true
+enable_search: false
+icon: poll
+is_enable: true
+version: 2

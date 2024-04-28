@@ -1,0 +1,7 @@
+name: object_project_time
+desktop: true
+label: 用时
+mobile: true
+object: project_time
+permissions: []
+type: object

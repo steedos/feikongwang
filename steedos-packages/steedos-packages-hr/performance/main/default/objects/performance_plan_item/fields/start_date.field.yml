@@ -1,0 +1,6 @@
+name: start_date
+label: 开始日期
+type: date
+sort_no: 124
+sortable: true
+visible_on: "${global.mode === 'read' ? true : false}"

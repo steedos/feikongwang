@@ -1,0 +1,6 @@
+name: user
+label: 人员
+reference_to: users
+required: true
+sort_no: 110
+type: lookup

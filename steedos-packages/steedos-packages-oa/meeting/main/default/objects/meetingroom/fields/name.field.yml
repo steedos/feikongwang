@@ -1,0 +1,7 @@
+name: name
+label: 会议室
+type: text
+is_wide: true
+required: true
+searchable: true
+sort_no: 100

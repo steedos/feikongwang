@@ -1,0 +1,95 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:d9f75181348d"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:shadow sm:rounded sm:border border-slate-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:10b51aec0fd4"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "使用/借用",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:5b4fad2c2842",
+                            "relatedObjectApiName": "administration_car_usage"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:32899fb0fbaf",
+                            "relatedObjectApiName": "administration_car_borrowing"
+                        }
+                    ],
+                    "id": "u:49452e56610c"
+                },
+                {
+                    "title": "保险信息",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:188282d21a4e",
+                            "relatedObjectApiName": "administration_insurance"
+                        }
+                    ],
+                    "id": "u:8253bf53d57c"
+                },
+                {
+                    "title": "费用信息",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:42c98cbfb5dc",
+                            "relatedObjectApiName": "administration_car_expense"
+                        }
+                    ],
+                    "id": "u:a91829eb66aa"
+                }
+            ],
+            "id": "u:8edbfd8d7523"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_administration_car_record_detail",
+    "name": "page_administration_car_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

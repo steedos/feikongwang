@@ -1,0 +1,150 @@
+[
+    {
+        "_id": "${space_id}_6260eb8832cc250032e1a915",
+        "name": "内部研发",
+        "program_health": "Green",
+        "program_manager": "${space_owner_id}",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "total_projects": 0
+    },
+    {
+        "_id": "${space_id}_6260ebd432cc250032e1a917",
+        "name": "实施开发",
+        "program_health": "Green",
+        "program_manager": "${space_owner_id}",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "total_projects": 1
+    },
+    {
+        "_id": "${space_id}_63184a0574519003c9545ba5",
+        "name": "生产加工",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T07:36:37.926Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T08:46:31.219Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "total_projects": 0,
+        "program_health": "Green",
+        "program_manager": "${space_owner_id}"
+    },
+    {
+        "_id": "${space_id}_6508fe7907eabd14ee3c47de",
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "64ffbe4fa59cb80984b9d21e",
+        "name": "北外滩项目",
+        "space": "64ffbe4fa59cb80984b9d21e",
+        "created": "2023-09-19T01:50:49.823Z",
+        "modified": "2023-09-19T01:50:49.823Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+        ],
+        "total_projects": 0,
+        "children": [
+        "6508ff613fc6e4162bd2db21",
+        "6508ff773fc6e4162bd2db23"
+        ]
+    },
+    {
+        "_id": "${space_id}_6508ff613fc6e4162bd2db21",
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "64ffbe4fa59cb80984b9d21e",
+        "parent": "${space_id}_6508fe7907eabd14ee3c47de",
+        "name": "213",
+        "space": "64ffbe4fa59cb80984b9d21e",
+        "created": "2023-09-19T01:54:41.478Z",
+        "modified": "2023-09-19T01:54:41.478Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+        ],
+        "total_projects": 0
+    },
+    {
+        "_id": "${space_id}_6508ff773fc6e4162bd2db23",
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "64ffbe4fa59cb80984b9d21e",
+        "name": "217",
+        "parent": "${space_id}_6508fe7907eabd14ee3c47de",
+        "space": "64ffbe4fa59cb80984b9d21e",
+        "created": "2023-09-19T01:55:03.206Z",
+        "modified": "2023-09-19T01:55:03.206Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+        ],
+        "total_projects": 0
+    },
+    {
+        "_id": "${space_id}_6508ff943fc6e4162bd2db25",
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "64ffbe4fa59cb80984b9d21e",
+        "name": "曹家渡项目",
+        "space": "64ffbe4fa59cb80984b9d21e",
+        "created": "2023-09-19T01:55:32.673Z",
+        "modified": "2023-09-19T01:55:32.673Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+        ],
+        "total_projects": 0,
+        "children": [
+        "6508ffad3fc6e4162bd2db27"
+        ]
+    },
+    {
+        "_id": "${space_id}_6508ffad3fc6e4162bd2db27",
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "64ffbe4fa59cb80984b9d21e",
+        "name": "803",
+        "parent": "${space_id}_6508ff943fc6e4162bd2db25",
+        "space": "64ffbe4fa59cb80984b9d21e",
+        "created": "2023-09-19T01:55:57.783Z",
+        "modified": "2023-09-19T01:55:57.783Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+        ],
+        "total_projects": 0
+    }
+]

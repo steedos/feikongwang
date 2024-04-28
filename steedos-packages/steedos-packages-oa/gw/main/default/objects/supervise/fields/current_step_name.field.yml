@@ -1,0 +1,13 @@
+name: current_step_name
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 审批单当前步骤
+primary: false
+required: false
+sort_no: 150
+sortable: false
+type: text
+visible_on: "{{global.mode ==='read' ? true : false}}"

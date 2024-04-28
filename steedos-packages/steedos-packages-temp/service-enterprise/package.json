@@ -1,0 +1,29 @@
+{
+    "name": "@steedos-labs/service-enterprise",
+    "version": "2.2.9-beta.3",
+    "description": "解决方案企业版",
+    "main": "package.service.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "build:watch": "webpack --config webpack.config.js --watch"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@steedos-labs/attendance": "2.2.9-beta.3",
+        "@steedos-labs/budget": "2.2.9-beta.3",
+        "@steedos-labs/performance": "2.2.9-beta.3",
+        "@steedos-labs/project-ee": "2.2.9-beta.3",
+        "@steedos-labs/bidding": "2.2.9-beta.3",
+        "@steedos-labs/workflow": "2.2.9-beta.3",
+        "@steedos-labs/asset": "2.2.9-beta.3"
+    },
+    "devDependencies": {
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "gitHead": "f19acd58f91306840e665320b772a9db962a7cf0"
+}

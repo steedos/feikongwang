@@ -1,0 +1,18 @@
+name: start
+label: 开始时间
+type: datetime
+required: true
+defaultValue: !<tag:yaml.org,2002:js/function> |-
+  function anonymous(
+  ) {
+
+          var now, reValue;
+          now = new Date();
+          reValue = new Date(now.getTime() + 1 * 60 * 60 * 1000);
+          reValue.setMinutes(0);
+          reValue.setSeconds(0);
+          return reValue;
+        
+  }
+sortable: true
+sort_no: 110

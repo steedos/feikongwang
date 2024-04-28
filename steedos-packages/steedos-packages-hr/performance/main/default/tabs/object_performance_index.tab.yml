@@ -1,0 +1,7 @@
+name: object_performance_index
+desktop: true
+label: 考核指标
+mobile: true
+object: performance_index
+permissions: []
+type: object

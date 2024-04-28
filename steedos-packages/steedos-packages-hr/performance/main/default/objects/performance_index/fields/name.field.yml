@@ -1,0 +1,7 @@
+name: name
+index: true
+label: 考核项
+sort_no: 100
+required: true
+type: textarea
+filterable: true

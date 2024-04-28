@@ -1,0 +1,22 @@
+name: budget_dimension
+data_type: text
+filterable: false
+generated: false
+group: 预算方案
+index: false
+is_name: false
+is_wide: false
+label: 预算编制维度
+multiple: false
+options:
+  - label: 按照预算组织单独编制
+    value: 按照预算组织单独编制
+  - label: 按照预算科目单独编制
+    value: 按照预算科目单独编制
+  - label: 按照预算组织/预算科目两维编制
+    value: 按照预算组织/预算科目两维编制
+primary: false
+required: true
+sort_no: 170
+sortable: false
+type: select

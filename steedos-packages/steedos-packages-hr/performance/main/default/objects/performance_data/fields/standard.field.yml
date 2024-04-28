@@ -1,0 +1,7 @@
+name: standard
+label: 评价标准
+type: formula
+formula: performance_index.description
+data_type: text
+formula_blank_value: blanks
+sort_no: 140

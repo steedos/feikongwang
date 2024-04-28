@@ -1,0 +1,96 @@
+name: copy_performance_plan
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "复制考核计划",
+              "id": "u:copy_performance_plan",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "复制考核计划",
+                                  "body": [
+                                      {
+                                          "type": "tpl",
+                                          "tpl": "确认复制此考核计划吗",
+                                          "wrapperComponent": "",
+                                          "inline": false,
+                                          "id": "u:937cab4f0533"
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:d2529f5fc6ac",
+                                  "onEvent": {
+                                      "confirm": {
+                                          "weight": 0,
+                                          "actions": [
+                                              {
+                                                  "actionType": "ajax",
+                                                  "outputVar": "responseResult",
+                                                  "args": {
+                                                      "options": {},
+                                                      "api": {
+                                                          "url": "/service/api/performance/plan/duplicate",
+                                                          "method": "post",
+                                                          "requestAdaptor": "",
+                                                          "adaptor": "",
+                                                          "messages": {
+                                                              "success": "复制成功"
+                                                          },
+                                                          "headers": {
+                                                              "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                          },
+                                                          "data": {
+                                                              "_id": "$recordId"
+                                                          }
+                                                      }
+                                                  }
+                                              }, 
+                                              {
+                                                  "actionType": "broadcast",
+                                                  "args": {
+                                                      "eventName": "@data.changed.performance_plan"
+                                                  },
+                                                  "data": {
+                                                      "objectName": "performance_plan"
+                                                  }
+                                              }
+                                          ]
+                                      }
+                                  }
+                              }
+                          }
+                      ]
+                  }
+              }
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:2291e1891841"
+  }
+is_enable: true
+label: 复制考核计划
+'on': record
+type: amis_button
+visible: true

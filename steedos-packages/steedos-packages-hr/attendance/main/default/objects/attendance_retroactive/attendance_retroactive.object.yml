@@ -1,0 +1,11 @@
+name: attendance_retroactive
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+icon: identifier
+is_enable: true
+label: 补卡
+version: 2
+enable_instances: true
+enable_workflow: true

@@ -1,0 +1,35 @@
+[
+    {
+      "_id": "${space_id}_650944fd841d5113adf9046f",
+      "name": "离职申请",
+      "staff": "${space_id}_65093fff841d5113adf90468",
+      "start": "2021-09-01T00:00:00.000Z",
+      "apply_date": "2023-09-18T00:00:00.000Z",
+      "company": "${space_id}",
+      "end": "2023-09-30T00:00:00.000Z",
+      "remark1": "个人原因",
+      "department": "${space_id}_F4LNEu9GrKcgPEWGD",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:51:41.736Z",
+      "modified": "2023-09-19T07:02:36.001Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "LZ-20230001",
+      "job_title": "采购经理",
+      "instance_state": "pending",
+      "instances": [
+        {
+          "_id": "XgMbNRbPaH5qxwfqr",
+          "state": "pending"
+        }
+      ],
+      "locked": true,
+      "remark2": "",
+      "remark3": ""
+    }
+  ]

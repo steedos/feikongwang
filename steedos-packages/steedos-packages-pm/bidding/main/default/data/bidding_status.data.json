@@ -1,0 +1,87 @@
+[
+    {
+      "_id": "${space_id}_650ba91d37adde1befc508aa",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "立项审批",
+      "remark": "发起立项审批流程",
+      "code": "LX001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T02:23:25.386Z",
+      "modified": "2023-09-21T06:51:35.181Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650ba93137adde1befc508ab",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "供应商入围",
+      "code": "LX002",
+      "remark": "发起供应商入围流程",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T02:23:45.004Z",
+      "modified": "2023-09-21T06:51:35.244Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650ba94b37adde1befc508ac",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "标书制作",
+      "remark": "供应商入围流程审批完成",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T02:24:11.115Z",
+      "modified": "2023-09-21T06:51:35.275Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "code": "LX003"
+    },
+    {
+      "_id": "${space_id}_650ba96c37adde1befc508ad",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "定标",
+      "code": "LX004",
+      "remark": "发起定标审批流程",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T02:24:44.921Z",
+      "modified": "2023-09-21T06:51:35.303Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650ba98b37adde1befc508ae",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "完成招标",
+      "remark": "定标审批流程完成",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T02:25:15.917Z",
+      "modified": "2023-09-21T06:51:35.327Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "code": "LX005"
+    }
+  ]

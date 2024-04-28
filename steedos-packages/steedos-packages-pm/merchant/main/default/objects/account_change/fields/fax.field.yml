@@ -1,0 +1,5 @@
+name: fax
+type: text
+required: false
+label: 传真
+hidden: true

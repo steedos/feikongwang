@@ -1,0 +1,5 @@
+name: enable_open
+label: 开放预约
+type: boolean
+defaultValue: true
+sort_no: 180

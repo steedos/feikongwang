@@ -1,0 +1,13 @@
+name: site
+label: Site
+type: lookup
+reference_to: cms_sites
+required: true
+sortable: true
+index: true
+defaultValue: !!js/function |
+  function () {
+    var site = Session.get("site");
+    return site ? site._id : null;
+  }
+sort_no: 50

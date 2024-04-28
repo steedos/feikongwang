@@ -1,0 +1,4 @@
+name: register_status
+label: 注册情况
+sort_no: 150
+type: text

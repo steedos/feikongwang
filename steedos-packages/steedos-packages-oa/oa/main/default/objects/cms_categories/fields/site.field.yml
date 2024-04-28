@@ -1,0 +1,16 @@
+name: site
+label: Site
+type: lookup
+reference_to: cms_sites
+required: true
+sortable: true
+index: true
+filtersFunction: !!js/function |
+  function (filters, values) {
+    if(!Steedos.isSpaceAdmin()){
+      var userId = Steedos.userId();
+      return ["admins", "=", userId];
+    }
+    return [];
+  }
+sort_no: 30

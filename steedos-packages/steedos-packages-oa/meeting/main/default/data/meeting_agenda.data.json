@@ -1,0 +1,78 @@
+[
+    {
+        "_id": "${space_id}_62fb27e1cb9c8306a51b2b5b",
+        "meeting": "${space_id}_62fb2768cb9c8306a51b2b57",
+        "name": "目前云应用开发情况",
+        "staff": "${space_owner_id}",
+        "status": "已完成",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:15:13.199Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:51:07.487Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "remark": "/",
+        "project": [
+            "${space_id}_62fefd49f63a8f27ae6a025f"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb27f1cb9c8306a51b2b5c",
+        "meeting": "${space_id}_62fb2768cb9c8306a51b2b57",
+        "name": "下一步开发任务沟通",
+        "staff": "${space_owner_id}",
+        "status": "已完成",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:15:29.581Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:51:07.659Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "remark": "/",
+        "project": [
+            "${space_id}_62620e5787e5c50032d9bd39"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb2813cb9c8306a51b2b5d",
+        "meeting": "${space_id}_62fb2768cb9c8306a51b2b57",
+        "name": "系统功能高级需求讨论",
+        "staff": "${space_owner_id}",
+        "status": "已完成",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:16:03.283Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:51:13.333Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "remark": "/",
+        "project": [
+            "${space_id}_630486ce9cc40f03d6e7cb60"
+        ],
+        "attach": []
+    }
+]

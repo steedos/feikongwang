@@ -1,0 +1,7 @@
+name: object_assess_score
+desktop: true
+label: 评分结果
+mobile: true
+object: assess_score
+permissions: []
+type: object

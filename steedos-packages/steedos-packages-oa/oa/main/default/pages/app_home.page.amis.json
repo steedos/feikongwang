@@ -1,0 +1,118 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "service",
+            "affixFooter": false,
+            "body": [
+                {
+                    "type": "service",
+                    "body": [
+                        {
+                            "type": "each",
+                            "name": "app_items",
+                            "items": {
+                                "type": "button",
+                                "level": "link",
+                                "body": [
+                                    {
+                                        "type": "tpl",
+                                        "tpl": "<div class='flex flex-col justify-center'><div class='text-center'><svg class='w-12 h-12 slds-icon_container' style='fill:#00ACC1' aria-hidden='true'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#${icon}'></use></svg></div><div class='text-center text-lg'>${name}</div></div>",
+                                        "badge": {
+                                            "mode": "text",
+                                            "style": {
+                                                "right": "50%",
+                                                "margin-right": "-23px"
+                                            },
+                                            "text": "${ss:keyvalues.badge.value|pick:${badgeId} | toInt}",
+                                            "visibleOn": "${ss:keyvalues.badge.value|pick:${badgeId} | toInt}"
+                                        }
+                                    }
+                                ],
+                                "className": "block w-1/3 py-4 border",
+                                "style": {
+                                    "display": "inline-flex",
+                                    "justify-content": "center"
+                                },
+                                "onEvent": {
+                                    "click": {
+                                        "actions": [
+                                            {
+                                                "actionType": "link",
+                                                "args": {
+                                                    "link": "${path}"
+                                                },
+                                                "expression": "${AND(!blank , !on_click)}"
+                                            },
+                                            {
+                                                "actionType": "custom",
+                                                "expression": "${AND(blank , !on_click)}",
+                                                "script": "if(event.data.path[0] == \"/\"){Steedos.openWindow(event.data.context.rootUrl+ event.data.path)}else{Steedos.openWindow(event.data.path)}"
+                                            },
+                                            {
+                                                "actionType": "custom",
+                                                "script": "var evalFunString = \"(function(){\" + event.data.on_click + \"})()\";try{eval(evalFunString);}catch(e){console.error(\"catch some error when eval the on_click script for app link:\");console.error(e.message + \"\\r\\n\" + e.stack);}",
+                                                "expression": "${on_click}"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "className": "flex flex-wrap",
+                            "id": "u:a98e9f6fb4db",
+                            "placeholder": "暂无内容"
+                        }
+                    ],
+                    "id": "u:06ee48db134a",
+                    "messages": {},
+                    "onEvent": {
+                        "@data.changed.steedos_keyvalues": {
+                            "actions": [
+                                {
+                                    "actionType": "setValue",
+                                    "args": {
+                                        "value": {
+                                            "keyvalue": "${event.data.keyvalue.value}"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "clearValueOnHidden": false,
+            "visible": true,
+            "messages": {},
+            "api": {
+                "method": "get",
+                "url": "${context.rootUrl}/service/api/apps/menus?mobile=true",
+                "headers": {
+                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                },
+                "adaptor": "let app_items = payload;\nfor (let i = 0; i < app_items.length; i++){\n  app_items[i]['badgeId'] = app_items[i]['id'];\n  if (app_items[i]['id'] == 'mobile_gwcl') app_items[i]['badgeId'] = 'gwcl';\n  if (app_items[i]['id'] == 'mobile_contracts2') app_items[i]['badgeId'] = 'contracts2';\n  if (app_items[i]['id'] == 'bzshenpi') app_items[i]['badgeId'] = '7iBYueNTLusA2j5Li';\n}\napp_items = _.filter(app_items, function (o) { return [\"mobile_home\",\"admin\"].indexOf(o.id) < 0; });\npayload.data = {\n  app_items\n}\n\n return payload;\n\n",
+                "messages": {}
+            },
+            "id": "u:2c8bd22d4ea8"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:e172a9feb84e",
+    "style": {
+        "padding": "0"
+    },
+    "className": "",
+    "headerClassName": "",
+    "bodyClassName": "p-none",
+    "asideClassName": "",
+    "toolbarClassName": ""
+}

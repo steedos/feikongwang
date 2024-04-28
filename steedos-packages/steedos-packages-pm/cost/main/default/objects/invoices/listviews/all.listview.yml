@@ -1,0 +1,22 @@
+name: all
+columns:
+  - field: invoice_code
+  - field: invoice_num
+  - field: type
+  - field: invoice_date
+  - field: invoice_amount
+  - field: seller_name
+  - field: purchaser_name
+  - field: verify_status
+  - field: status
+  - field: created
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid
+sort:
+  - - created
+    - desc

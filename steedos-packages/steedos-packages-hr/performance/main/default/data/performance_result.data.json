@@ -1,0 +1,86 @@
+[
+    {
+      "_id": "${space_id}_650190d8a0a18a323b1e0273",
+      "performance_plan": "${space_id}_650167f7eef6ae1472649376",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "score": 98.8,
+      "quarter_score": 69.16,
+      "organization": "${space_id}_3NiKjvRoha7RgGcxx",
+      "type": "accessment",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T10:37:12.869Z",
+      "modified": "2023-09-13T10:37:12.869Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650190e0a0a18a323b1e0274",
+      "performance_plan": "${space_id}_6501683ceef6ae1472649377",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "score": 99.6,
+      "quarter_score": 69.72,
+      "organization": "${space_id}_3NiKjvRoha7RgGcxx",
+      "type": "accessment",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T10:37:20.133Z",
+      "modified": "2023-09-13T10:37:20.133Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650190e6a0a18a323b1e0275",
+      "performance_plan": "${space_id}_65016864eef6ae1472649378",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "score": 100,
+      "quarter_score": 70,
+      "organization": "${space_id}_3NiKjvRoha7RgGcxx",
+      "type": "accessment",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T10:37:26.925Z",
+      "modified": "2023-09-13T10:37:26.925Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_65019f5a4a7e2e371647770d",
+      "performance_plan": "${space_id}_6501898da0a18a323b1e026a",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "score": 30,
+      "quarter_score": 9,
+      "organization": "${space_id}_3NiKjvRoha7RgGcxx",
+      "type": "personal",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T11:39:06.012Z",
+      "modified": "2023-09-13T11:39:06.012Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    }
+  ]

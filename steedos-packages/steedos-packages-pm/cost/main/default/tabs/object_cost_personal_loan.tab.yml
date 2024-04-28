@@ -1,0 +1,7 @@
+name: object_cost_personal_loan
+desktop: true
+label: 借款
+mobile: true
+object: cost_personal_loan
+permissions: []
+type: object

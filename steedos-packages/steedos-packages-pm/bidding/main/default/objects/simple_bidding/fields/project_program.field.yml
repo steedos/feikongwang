@@ -1,0 +1,7 @@
+name: project_program
+label: 所属项目
+type: master_detail
+reference_to: project_program
+sort_no: 100
+searchable: true
+filterable: true

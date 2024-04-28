@@ -1,0 +1,162 @@
+[
+    {
+      "_id": "${space_id}_65127db23d30a1ad9e09504f",
+      "apply_date": "2023-09-26T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "name": "加班申请",
+      "start": "2023-09-10T01:00:00.000Z",
+      "end": "2023-09-10T10:00:00.000Z",
+      "hours": 8,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:44:02.049Z",
+      "modified": "2023-09-26T06:44:22.166Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JBSQ-2023-0001",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "2yXbY6zFxCBxBQccu",
+          "state": "approved"
+        }
+      ],
+      "locked": false,
+      "remark": ""
+    },
+    {
+      "_id": "${space_id}_65127ec63d30a1ad9e095052",
+      "apply_date": "2023-09-26T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "name": "加班申请",
+      "start": "2023-09-16T16:00:00.000Z",
+      "end": "2023-09-16T16:00:00.000Z",
+      "hours": 8,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:48:38.973Z",
+      "modified": "2023-09-26T06:48:52.194Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JBSQ-2023-0002",
+      "attendance_balance": "${space_id}_65127dc63d30a1ad9e095050",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "${space_id}_LyCGpWQDmKZvRCu9E",
+          "state": "approved"
+        }
+      ],
+      "locked": false,
+      "remark": ""
+    },
+    {
+      "_id": "${space_id}_65127f413d30a1ad9e095054",
+      "apply_date": "2023-09-26T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "name": "加班申请",
+      "start": "2023-09-15T16:00:00.000Z",
+      "end": "2023-09-15T16:00:00.000Z",
+      "hours": 3,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:50:41.141Z",
+      "modified": "2023-09-26T06:51:12.154Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JBSQ-2023-0003",
+      "attendance_balance": "${space_id}_65127dc63d30a1ad9e095050",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "${space_id}_nAHNpMf7nNZEYgSQR",
+          "state": "approved"
+        }
+      ],
+      "locked": false,
+      "remark": ""
+    },
+    {
+      "_id": "${space_id}_651280353d30a1ad9e095056",
+      "apply_date": "2023-09-26T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "hours": 0.5,
+      "start": "2023-09-25T16:00:00.000Z",
+      "end": "2023-09-25T16:00:00.000Z",
+      "name": "加班申请",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:54:45.688Z",
+      "modified": "2023-09-26T06:55:02.157Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JBSQ-2023-0004",
+      "attendance_balance": "${space_id}_65127dc63d30a1ad9e095050",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "W4GSdqu6tCxqp9bu9",
+          "state": "approved"
+        }
+      ],
+      "locked": false,
+      "remark": ""
+    },
+    {
+      "_id": "${space_id}_651280903d30a1ad9e095057",
+      "apply_date": "2023-09-26T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "attendance_balance": "${space_id}_65127dc63d30a1ad9e095050",
+      "hours": 1.5,
+      "start": "2023-09-25T16:00:00.000Z",
+      "end": "2023-09-25T16:00:00.000Z",
+      "name": "加班申请",
+      "displayAs": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:56:16.117Z",
+      "modified": "2023-09-26T06:56:42.159Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JBSQ-2023-0005",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "${space_id}_srEjmcEP8zrs4aC9r",
+          "state": "approved"
+        }
+      ],
+      "locked": false,
+      "remark": ""
+    }
+  ]

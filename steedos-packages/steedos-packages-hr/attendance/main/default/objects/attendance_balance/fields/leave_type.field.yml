@@ -1,0 +1,14 @@
+name: leave_type
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 关联假期类型
+primary: false
+reference_to: attendance_leave_type
+required: true
+sort_no: 140
+sortable: false
+type: master_detail
+write_requires_master_read: true

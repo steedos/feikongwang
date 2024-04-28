@@ -1,0 +1,6 @@
+name: proportion
+label: 生产产品供应国内的比例
+type: number
+precision: 18
+scale: 2
+sort_no: 210

@@ -1,0 +1,38 @@
+name: complete
+columns:
+  - field: name
+  - field: assignees
+  - field: start_date
+  - field: due_date
+  - field: completed_date
+  - field: collaborator
+  - field: project_milestone
+  - field: project
+  - field: created
+crud_mode: table
+filter_scope: space
+filters:
+  - - has_complete
+    - '='
+    - true
+is_enable: true
+label: 已完成任务
+mobile_columns:
+  - field: name
+  - field: assignees
+  - field: project
+  - field: completed_date
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: project
+  - field: assignees
+  - field: project_milestone
+  - field: completed_date
+shared: true
+show_count: true
+sort:
+  - field_name: completed_date
+    order: desc
+sort_no: 30
+type: grid

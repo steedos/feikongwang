@@ -1,0 +1,6 @@
+name: start_mileage
+label: 始公里数
+precision: 18
+scale: 2
+sort_no: 140
+type: number

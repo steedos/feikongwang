@@ -1,0 +1,27 @@
+name: instance_type
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 适用的单据类型
+multiple: true
+options:
+  - label: 日常报销
+    value: 日常报销
+    color: 73C0DE
+  - label: 差旅报销
+    value: 差旅报销
+    color: EE6666
+  - label: 借款核销
+    value: 借款核销
+    color: FBC858
+  - label: 对公付款
+    value: 对公付款
+    color: 91CC75
+primary: false
+required: true
+sort_no: 140
+sortable: false
+type: select

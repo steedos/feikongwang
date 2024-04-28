@@ -1,0 +1,22 @@
+name: request_date
+defaultValue: !<tag:yaml.org,2002:js/function> |-
+  function () {
+    var date = window.moment().utc().toDate();
+    return date;
+  }
+description: null
+filterable: false
+group: null
+hidden: false
+index: false
+inlineHelpText: null
+is_name: false
+is_wide: false
+label: 提出日期
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 185
+sortable: true
+type: date

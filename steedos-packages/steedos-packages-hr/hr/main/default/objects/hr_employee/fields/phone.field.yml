@@ -1,0 +1,12 @@
+name: phone
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 手机号码
+primary: false
+required: true
+sort_no: 140
+sortable: false
+type: text

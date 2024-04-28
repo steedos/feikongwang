@@ -1,0 +1,33 @@
+name: type
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 会议类型
+multiple: false
+options:
+  - label: 部门会议
+    value: 部门会议
+  - label: 临时会议
+    value: 临时会议
+  - label: 培训会议
+    value: 培训会议
+  - label: 市场管理部会议
+    value: 市场管理部会议
+  - label: 董事会
+    value: 董事会
+  - label: 办公室会议
+    value: 办公室会议
+  - label: 党委会
+    value: 党委会
+  - label: 专题会
+    value: 专题会
+  - label: 其他会议
+    value: 其他会议
+primary: false
+required: false
+sort_no: 9999
+sortable: false
+type: select

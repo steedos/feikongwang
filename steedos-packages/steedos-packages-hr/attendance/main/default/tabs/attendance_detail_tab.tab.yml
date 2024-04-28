@@ -1,0 +1,8 @@
+name: attendance_detail_tab
+desktop: true
+icon: picklist_type
+label: 考勤明细
+mobile: true
+page: attendance_detail
+permissions: []
+type: page

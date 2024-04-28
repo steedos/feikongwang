@@ -1,0 +1,17 @@
+name: model
+data_type: text
+filterable: false
+formula: assets_card.model
+formula_blank_value: blanks
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 规格型号
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 150
+sortable: false
+type: formula

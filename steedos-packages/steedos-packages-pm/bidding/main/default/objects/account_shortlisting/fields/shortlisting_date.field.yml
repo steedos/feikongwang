@@ -1,0 +1,4 @@
+name: shortlisting_date
+label: 入围日期
+type: date
+sort_no: 140

@@ -1,0 +1,7 @@
+name: object_attendance
+desktop: true
+label: 原始打卡记录
+mobile: true
+object: attendance
+permissions: []
+type: object

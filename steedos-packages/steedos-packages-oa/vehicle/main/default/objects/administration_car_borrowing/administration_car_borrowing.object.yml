@@ -1,0 +1,11 @@
+name: administration_car_borrowing
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_workflow: true
+enable_instances: true
+icon: carousel
+is_enable: true
+label: 车辆借用记录
+version: 2

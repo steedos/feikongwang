@@ -1,0 +1,6 @@
+name: name
+index: true
+label: 文件标题
+required: true
+sort_no: 100
+type: text

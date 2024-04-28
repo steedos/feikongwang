@@ -1,0 +1,5 @@
+name: purchase_method
+label: 采购方式
+type: lookup
+reference_to: purchase_method
+sort_no: 150

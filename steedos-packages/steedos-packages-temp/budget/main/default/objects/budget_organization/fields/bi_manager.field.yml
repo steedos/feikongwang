@@ -1,0 +1,15 @@
+name: bi_manager
+filterable: false
+generated: false
+index: false
+inlineHelpText: 报表查询人可负责预算报表数据查询
+is_name: false
+is_wide: false
+label: 报表查询人
+multiple: true
+primary: false
+reference_to: users
+required: false
+sort_no: 140
+sortable: false
+type: lookup

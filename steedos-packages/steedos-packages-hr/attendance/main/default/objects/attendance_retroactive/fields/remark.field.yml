@@ -1,0 +1,14 @@
+name: remark
+filterable: false
+generated: false
+group: 补卡信息
+index: false
+is_name: false
+is_wide: true
+label: 补卡说明
+primary: false
+required: false
+rows: 3
+sort_no: 999
+sortable: false
+type: textarea

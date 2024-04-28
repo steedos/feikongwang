@@ -1,0 +1,8 @@
+name: administration_car_expense
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: decision
+is_enable: true
+label: 车辆费用
+version: 2

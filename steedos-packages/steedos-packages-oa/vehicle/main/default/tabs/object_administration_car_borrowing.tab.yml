@@ -1,0 +1,8 @@
+name: object_administration_car_borrowing
+desktop: true
+icon: carousel
+label: 车辆借用记录
+mobile: true
+object: administration_car_borrowing
+permissions: []
+type: object

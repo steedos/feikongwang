@@ -1,0 +1,6 @@
+name: housing_provident_fund
+label: 住房公积金
+precision: 18
+scale: 2
+sort_no: 240
+type: currency

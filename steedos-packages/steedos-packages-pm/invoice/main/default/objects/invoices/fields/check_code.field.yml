@@ -1,0 +1,19 @@
+name: check_code
+create: true
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 校验码
+multiple: false
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 140
+sortable: false
+type: text
+write_requires_master_read: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

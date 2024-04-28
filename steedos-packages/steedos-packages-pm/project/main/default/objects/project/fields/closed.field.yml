@@ -1,0 +1,14 @@
+name: closed
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 已关闭
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 250
+sortable: false
+type: boolean

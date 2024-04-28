@@ -1,0 +1,21 @@
+name: type
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 成本中心类型
+multiple: false
+options:
+  - label: 管理
+    value: manage
+  - label: 销售
+    value: sale
+  - label: 财务
+    value: finance
+primary: false
+required: true
+sort_no: 130
+sortable: false
+type: select

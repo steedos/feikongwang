@@ -1,0 +1,7 @@
+name: document_management
+desktop: true
+icon: home
+label: 首页
+mobile: true
+page: official_document_home
+type: page

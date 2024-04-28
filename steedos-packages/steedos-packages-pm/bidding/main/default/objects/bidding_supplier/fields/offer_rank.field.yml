@@ -1,0 +1,6 @@
+name: offer_rank
+label: 总价排名
+precision: 18
+scale: 0
+sort_no: 160
+type: number

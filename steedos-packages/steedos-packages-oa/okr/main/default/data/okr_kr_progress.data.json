@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "${space_id}_62b18d5f0aa493003e53296d",
+        "confidence": "5",
+        "current_progress": 20,
+        "key_result": "${space_id}_62b18c3c0aa493003e532967",
+        "name": "老客户情况更新",
+        "update_date": {
+            "$date": "2022-06-15T00:00:00Z"
+        },
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:20:31.552Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:20:31.552Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b18d6b0aa493003e53296e",
+        "confidence": "5",
+        "current_progress": 30,
+        "key_result": "${space_id}_62b18c3c0aa493003e532967",
+        "name": "老客户情况更新",
+        "update_date": {
+            "$date": "2022-06-15T00:00:00Z"
+        },
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:20:43.616Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:20:43.616Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    }
+]

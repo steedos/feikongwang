@@ -1,0 +1,121 @@
+name: ocr
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+        {
+            "type": "button",
+            "label": "识别发票文件",
+            "id": "u:ocr",
+            "onEvent": {
+              "click": {
+                "weight": 0,
+                "actions": [
+                  {
+                    "actionType": "dialog",
+                    "dialog": {
+                      "type": "dialog",
+                      "title": "识别发票文件",
+                      "body": [
+                        {
+                          "type": "form",
+                          "title": "表单",
+                          "body": [
+                            {
+                              "type": "input-text",
+                              "label": "文本",
+                              "name": "filename",
+                              "id": "u:35e301fb6b2c",
+                              "className": "hidden"
+                            },
+                            {
+                              "type": "input-file",
+                              "description": "每次只可上传一个附件，多张发票可存放在一个文件中进行上传，图片不超过4M，PDF不超过8M",
+                              "autoUpload": true,
+                              "proxy": true,
+                              "uploadType": "asForm",
+                              "name": "file",
+                              "id": "u:95d037212db1",
+                              "maxSize": 8388608,
+                              "multiple": false,
+                              "useChunk": false,
+                              "accept": ".jpg,.jpeg,.png,.bmp,.pdf",
+                              "drag": true,
+                              "asBlob": false,
+                              "formType": "asBase64",
+                              "asBase64": true,
+                              "autoFill": {},
+                              "onEvent": {
+                                "change": {
+                                  "weight": 0,
+                                  "actions": [
+                                    {
+                                      "componentId": "u:35e301fb6b2c",
+                                      "actionType": "setValue",
+                                      "args": {
+                                        "value": "${event.data.file.name}"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ],
+                          "api": {
+                            "url": "${context.rootUrl}/api/invoice/ocr",
+                            "method": "post",
+                            "requestAdaptor": "",
+                            "adaptor": "",
+                            "messages": {},
+                            "headers": {
+                              "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                            }
+                          },
+                          "id": "u:f31d12f16a18",
+                          "onEvent": {
+                            "submitSucc": {
+                              "weight": 0,
+                              "actions": [
+                                {
+                                  "componentId": "listview_invoices",
+                                  "actionType": "reload",
+                                  "dataMergeMode": "merge"
+                                }
+                              ]
+                            }
+                          },
+                          "debug": false,
+                          "mode": "normal"
+                        }
+                      ],
+                      "showCloseButton": true,
+                      "showErrorMsg": true,
+                      "showLoading": true,
+                      "className": "app-popover",
+                      "id": "u:c94ba2994146",
+                      "closeOnEsc": true
+                    }
+                  }
+                ]
+              }
+            }
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "id": "u:c09bfcc85314",
+      "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 识别发票文件
+'on': list
+type: amis_button
+visible: true

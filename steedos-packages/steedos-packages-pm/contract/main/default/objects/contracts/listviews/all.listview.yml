@@ -1,0 +1,70 @@
+name: all
+columns:
+  - field: 'no'
+    width: '150'
+    wrap: true
+  - field: name
+    width: '260'
+    wrap: true
+  - field: contract_type
+    width: '150'
+    wrap: true
+  - field: othercompany
+    width: '220'
+    wrap: true
+  - field: amount
+    width: '150'
+    wrap: true
+  - field: cash_flow_type
+    width: '100'
+    wrap: true
+  - field: contract_fulfillment_state
+    width: '100'
+    wrap: false
+  - field: signed_date
+    width: '120'
+    wrap: false
+  - field: owner
+    width: '120'
+    wrap: false
+  - field: created
+    wrap: false
+filter_fields:
+  - contract_type
+  - signed_date
+  - othercompany
+  - instance_state
+  - owner
+filter_scope: space
+filters:
+  - - instance_state
+    - <>
+    - - terminated
+from_code_id: contracts.all
+label: 所有合同
+mobile_columns:
+  - field: name
+  - field: contract_type
+  - field: othercompany
+  - field: contract_fulfillment_state
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: 'no'
+  - field: project
+  - field: contract_type
+  - field: collection
+  - field: payment
+  - field: othercompany
+  - field: signed_date
+  - field: amount
+  - field: contract_fulfillment_state
+  - field: main_contract
+  - field: instance_state
+shared: true
+show_count: false
+sort:
+  - field_name: 'no'
+    order: desc
+sort_no: 100
+type: grid

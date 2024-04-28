@@ -1,0 +1,31 @@
+name: all
+columns:
+  - field: name
+  - field: users
+  - field: department
+  - field: phone
+  - field: base_salary
+  - field: performance_pay
+  - field: overtime_pay
+  - field: telephone_subsidy
+  - field: transportation_subsidies
+  - field: meal_subsidy
+  - field: deductions
+  - field: pension_insurance
+  - field: health_insurance
+  - field: unemployment_insurance
+  - field: compensation_insurance
+  - field: housing_provident_fund
+  - field: total_wages_before_tax
+  - field: personal_income_tax
+  - field: actual_amount
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

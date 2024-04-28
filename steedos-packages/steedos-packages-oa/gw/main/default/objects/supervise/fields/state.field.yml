@@ -1,0 +1,26 @@
+name: state
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 办理状态
+multiple: false
+options:
+  - label: 正常进行
+    value: normal
+    color: 1890FF
+  - label: 正常结束
+    value: normal_end
+    color: 91CC75
+  - label: 逾期进行
+    value: overdue
+    color: FBC858
+  - value: overdue_end
+    label: 逾期结束
+    color: F4A460
+primary: false
+required: false
+sort_no: 135
+sortable: false
+type: select

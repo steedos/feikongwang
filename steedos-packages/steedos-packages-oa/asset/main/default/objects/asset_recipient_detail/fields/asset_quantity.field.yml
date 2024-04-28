@@ -1,0 +1,10 @@
+name: asset_quantity
+label: 资产数量
+type: number
+precision: 18
+scale: 2
+sort_no: 130
+required: true
+
+
+

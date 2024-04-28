@@ -1,0 +1,24 @@
+name: attendance_overtime_processManagement_working
+listenTo: attendance_overtime
+when:
+    - afterUpdate
+isEnabled: false
+handler: |-
+    const { doc, attendance_overtime,previousDoc } = ctx.params;
+    const userId = doc.staff; 
+    const spaceId = doc.space;
+     if (previousDoc.instance_state !== 'approved' && doc.instance_state ===
+    'approved'){
+        console.log("加班审批通过之后")
+         const updateAttendanceDailyOfWorking = await ctx.broker.call(
+        '@steedos-labs/attendance.workOvertimeSettlement',
+        {
+            "workOvertimeId":doc._id
+        },
+        {
+            meta: {
+                user: null
+            }
+        }
+    );
+    }

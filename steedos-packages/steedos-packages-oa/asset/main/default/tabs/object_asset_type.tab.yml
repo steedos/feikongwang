@@ -1,0 +1,7 @@
+name: object_asset_type
+desktop: true
+label: 物料类型
+mobile: true
+object: asset_type
+permissions: []
+type: object

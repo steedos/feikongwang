@@ -1,0 +1,6 @@
+name: maintenance_fee
+label: 维修保养费（元）
+precision: 18
+scale: 2
+sort_no: 130
+type: currency

@@ -1,0 +1,10 @@
+name: administration_stamp_usage
+custom: true
+enable_api: true
+enable_inline_edit: true
+enable_instances: true
+enable_workflow: true
+icon: serialized_product_transaction
+is_enable: true
+label: 印章使用
+version: 2

@@ -1,0 +1,16 @@
+name: attendance_retroactive_validate_retroactive
+listenTo: attendance_retroactive
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+ const { previousDoc, doc, attendance_retroactive } = ctx.params;
+ const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+ const spaceId = doc.space;
+ console.log("补卡新增记录之前");
+  await ctx.broker.call(
+      '@steedos-labs/attendance.retroactiveValidate',
+      {
+              'doc': doc
+      }
+  );

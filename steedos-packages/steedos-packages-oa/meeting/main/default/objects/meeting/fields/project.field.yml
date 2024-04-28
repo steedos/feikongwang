@@ -1,0 +1,14 @@
+name: project
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 相关项目
+multiple: false
+primary: false
+reference_to: project
+required: false
+sort_no: 9999
+sortable: false
+type: lookup

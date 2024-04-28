@@ -1,0 +1,7 @@
+name: budget_home
+desktop: true
+icon: connected_apps
+label: 首页
+mobile: true
+page: budget_home
+type: page

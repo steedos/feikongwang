@@ -1,0 +1,24 @@
+name: open_tasks
+data_type: number
+filterable: false
+group: 任务与问题
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 待完成任务
+omit: false
+precision: 18
+readonly: false
+required: false
+scale: 0
+searchable: false
+sort_no: 185
+sortable: true
+summary_object: project_task
+summary_type: count
+type: summary
+summary_filters: 
+  - field: state
+    operation: '<>'
+    value: completed

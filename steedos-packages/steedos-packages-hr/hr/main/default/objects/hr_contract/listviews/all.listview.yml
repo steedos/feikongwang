@@ -1,0 +1,19 @@
+name: all
+columns:
+  - field: name
+  - field: number
+  - field: staff
+  - field: job_title
+  - field: start
+  - field: end
+  - field: status
+  - field: instance_state
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort: []
+sort_no: 100
+type: grid

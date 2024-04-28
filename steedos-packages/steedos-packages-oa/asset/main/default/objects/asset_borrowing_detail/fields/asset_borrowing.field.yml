@@ -1,0 +1,10 @@
+name: asset_borrowing
+label: 资产借用
+reference_to: asset_borrowing
+searchable: true
+sort_no: 170
+type: master_detail
+write_requires_master_read: true
+required: true
+
+

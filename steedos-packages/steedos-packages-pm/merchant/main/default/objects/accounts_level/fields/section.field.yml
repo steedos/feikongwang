@@ -1,0 +1,5 @@
+name: section
+label: 得分区间
+type: text
+sort_no: 120
+filterable: true

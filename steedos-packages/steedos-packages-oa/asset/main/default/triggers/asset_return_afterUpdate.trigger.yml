@@ -1,0 +1,28 @@
+name: asset_return_afterUpdate
+listenTo: asset_return
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, asset_return, previousDoc } = ctx.params;
+
+  const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+
+  const spaceId = doc.space;
+
+  // 资产归还审批通过后，修改资产卡片状态、数量
+
+  if (previousDoc.instance_state !== 'approved' && doc.instance_state ===
+  'approved') {
+      await ctx.broker.call(
+          '@steedos-labs/asset.assetReturnOfAssetsCard',
+          {
+              "doc": doc
+          },
+          {
+              meta: {
+                  user: null
+              }
+          }
+      );
+  }

@@ -1,0 +1,68 @@
+name: project_meeting
+label: Meeting
+description: 
+fields:
+  assignees2:
+    label: Participants(Contacts)
+    help: Select participants from customer contacts
+    description: 
+  assignees:
+    label: Participants(Users)
+    help: Select participants from system users
+    description: 
+  description:
+    label: Description
+    help: Meeting objectives, agenda, participants and other explanations.
+    description: 
+  end:
+    label: End Date
+    help: 
+    description: 
+  is_all_day:
+    label: All Day Meeting
+    help: 
+    description: 
+  location:
+    label: Address
+    help: 
+    description: 
+  meeting_type:
+    label: Meeting Type
+    help: 
+    options:
+      - label: Project Start
+        value: Kick-off
+      - label: Stage Seview/technical Review
+        value: Review
+      - label: Project Acceptance
+        value: Acceptance
+      - label: Requirement Survey
+        value: Research
+      - label: Discussion
+        value: Problem
+      - label: Periodic Regular Meeting
+        value: Periodic
+      - label: Others
+        value: Others
+    description: 
+  name:
+    label: Topic
+    help: 
+    description: 
+  owner:
+    label: Header
+    help: 
+    description: 
+  project:
+    label: Project
+    help: 
+    description: 
+  start:
+    label: Start Date
+    help: 
+    description: 
+listviews:
+  all:
+    label: All Meeting List
+  recent:
+    label: Recently Viewed

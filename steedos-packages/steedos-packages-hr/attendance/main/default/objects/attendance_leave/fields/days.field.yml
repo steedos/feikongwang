@@ -1,0 +1,17 @@
+name: days
+filterable: false
+generated: false
+group: 请假信息
+index: false
+is_name: false
+is_wide: false
+label: 请假时长
+precision: 18
+primary: false
+required: true
+scale: 1
+sort_no: 198
+sortable: false
+type: number
+searchable: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

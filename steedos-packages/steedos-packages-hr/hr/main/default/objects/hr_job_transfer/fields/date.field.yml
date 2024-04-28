@@ -1,0 +1,13 @@
+name: date
+filterable: true
+generated: false
+group: 调动信息
+index: false
+is_name: false
+is_wide: false
+label: 调动日期
+primary: false
+required: true
+sort_no: 220
+sortable: false
+type: date

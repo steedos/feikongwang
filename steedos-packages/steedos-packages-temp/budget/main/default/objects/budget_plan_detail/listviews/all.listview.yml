@@ -1,0 +1,17 @@
+name: all
+columns:
+  - field: name
+  - field: budget_organization
+  - field: budget_subject
+  - field: budget
+  - field: budget_child_plan
+  - field: budget_plan
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort: []
+sort_no: 100
+type: grid

@@ -1,0 +1,13 @@
+name: attach
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 相关附件
+multiple: true
+primary: false
+required: false
+sort_no: 140
+sortable: false
+type: file

@@ -1,0 +1,15 @@
+name: features
+label: 提供功能
+type: select
+options:
+  - label: 上网
+    value: surfing
+  - label: 投影
+    value: projection
+  - label: 视频
+    value: vedio
+  - label: 会标
+    value: monogram
+multiple: true
+filterable: true
+sort_no: 150

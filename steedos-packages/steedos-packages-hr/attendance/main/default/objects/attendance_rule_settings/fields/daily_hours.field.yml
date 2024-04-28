@@ -1,0 +1,10 @@
+name: daily_hours
+group: 打卡时间
+is_wide: true
+label: 每日工作时长（小时）
+precision: 18
+required: false
+scale: 1
+sort_no: 155
+type: number
+visible_on: "{{global.mode ==='read' ? true : false}}"

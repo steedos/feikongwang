@@ -1,0 +1,6 @@
+name: assist_department
+label: 协助部门
+multiple: true
+reference_to: organizations
+sort_no: 160
+type: lookup

@@ -1,0 +1,65 @@
+name: admin_cost_schedule_reimburse_detail
+allowCreate: true
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowExport: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: amount
+    readable: true
+    editable: true
+  - field: cost_code
+    readable: true
+    editable: true
+  - field: daily_expense
+    readable: true
+    editable: true
+  - field: date
+    readable: true
+    editable: true
+  - field: expend_type
+    readable: true
+    editable: true
+  - field: name
+    readable: false
+    editable: false
+  - field: remark
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: false
+    editable: false

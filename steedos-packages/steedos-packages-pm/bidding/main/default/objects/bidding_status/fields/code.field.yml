@@ -1,0 +1,5 @@
+name: code
+label: 立项状态编码
+type: text
+sort_no: 110
+filterable: true

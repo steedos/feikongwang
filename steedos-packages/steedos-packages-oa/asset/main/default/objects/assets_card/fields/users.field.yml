@@ -1,0 +1,7 @@
+name: users
+group: 管理信息
+label: 使用人
+reference_to: users
+sort_no: 140
+type: lookup
+filterable: true

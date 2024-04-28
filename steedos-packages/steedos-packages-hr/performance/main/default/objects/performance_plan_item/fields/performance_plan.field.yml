@@ -1,0 +1,11 @@
+name: performance_plan
+label: 考核计划
+type: master_detail
+reference_to: performance_plan
+sort_no: 110
+required: true
+filtersFunction: |-
+  function(filters,values) {
+    return [['status', '=','unplayed']];
+  }
+filterable: true

@@ -1,0 +1,28 @@
+[
+    {
+        "_id": "${space_id}_65852bbb423fb105be135850",
+        "owner": "65852b93423fb105be13584c",
+        "company_id": "65852b96423fb105be13584e",
+        "attendance_rule_settings": "${space_id}_6512546b806d085d4f5ee12f",
+        "name": "全体员工",
+        "users": [
+            "9ZQcWvzsbqkbMyGdb",
+            "9W49f75qzD5qsFQMW",
+            "TzudkPm4KRCDN3gTP",
+            "8qQ5TwdoY8fqo7tga",
+            "skjndSByYdGRTQnKy",
+            "rn7v8j67Qj26M9hrc",
+            "SNZ2qzqzpu4K7pkE8",
+            "${space_owner_id}"
+        ],
+        "displayAs": null,
+        "space": "65852b96423fb105be13584e",
+        "created": "2023-12-22T06:24:59.856Z",
+        "modified": "2023-12-22T06:24:59.856Z",
+        "created_by": "65852b93423fb105be13584c",
+        "modified_by": "65852b93423fb105be13584c",
+        "company_ids": [
+            "65852b96423fb105be13584e"
+        ]
+    }
+  ]

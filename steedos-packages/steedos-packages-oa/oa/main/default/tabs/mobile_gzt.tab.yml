@@ -1,0 +1,8 @@
+name: mobile_gzt
+desktop: true
+icon: apps
+label: 工作台
+mobile: true
+page: app_home
+permissions: []
+type: page

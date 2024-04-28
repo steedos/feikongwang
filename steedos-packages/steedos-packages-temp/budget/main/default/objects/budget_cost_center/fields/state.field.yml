@@ -1,0 +1,22 @@
+name: state
+data_type: text
+defaultValue: start
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 状态
+multiple: false
+options:
+  - label: 已启用
+    value: start
+    color: 91CC75
+  - label: 已停用
+    value: stop
+    color: F4A460
+primary: false
+required: true
+sort_no: 160
+sortable: false
+type: select

@@ -1,0 +1,6 @@
+name: avatar
+label: Avatar
+type: avatar
+group: Site
+sort_no: 90
+hidden: true

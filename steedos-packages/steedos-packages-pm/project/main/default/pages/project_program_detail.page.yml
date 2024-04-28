@@ -1,0 +1,12 @@
+name: project_program_detail
+is_active: true
+label: 项目集详情页
+object_name: project_program
+pageAssignments:
+  - type: orgDefault
+    page: project_program_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

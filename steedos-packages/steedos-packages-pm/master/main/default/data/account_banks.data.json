@@ -1,0 +1,270 @@
+[
+    {
+        "_id": "${space_id}_62611dac32cc250032e1aa45",
+        "accname": "西北建设有限公司",
+        "accnum": "29898376390287",
+        "account": "${space_id}_BuA27aMKaG6XfPWRH",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": false,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "accopendate": {
+            "$date": "2022-04-21T09:01:36.329Z"
+        },
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_6262518d87e5c50032d9be02",
+        "accname": "上海浦东供水工程有限公司",
+        "accnum": "61296372604865297",
+        "accopendate": {
+            "$date": "2022-04-22T06:55:17.433Z"
+        },
+        "account": "${space_id}_qq6FFzuzujzH9r5bQ",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": true,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_banktype": "${space_id}_6261101632cc250032e1a9b4",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62aad6192c7a71003fe03eb5",
+        "accname": "中铁上海工程局集团有限公司",
+        "accnum": "21100040396090305064066",
+        "account": "${space_id}_k5XyXgtzYyzH7Ne7P",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": true,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b56ec98aee24003d08efd3",
+        "accname": "致圈无锡有限公司",
+        "accnum": "31050177490000006987",
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": false,
+        "pk_bankdoc": "${space_id}_6261147c32cc250032e1aa0a",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:50:30.158Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62f5fd7e3a99bfb696152445",
+        "accname": "江苏大仲集团有限公司",
+        "accnum": "6214873577890054",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": true,
+        "pk_bankdoc": "${space_id}_6261148f32cc250032e1aa29",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T05:55:49.937Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62f5fe453a99bfb696152453",
+        "accname": "上海炎黄科技有限公司",
+        "accnum": "6128991077351738",
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": true,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62faffeccb9c8306a51b2ae2",
+        "accname": "江苏大仲集团有限公司",
+        "accnum": "6208562345624123",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": false,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_currtype": "${space_id}_6261092e32cc250032e1a979",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T02:24:44.428Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T06:02:53.277Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fc8a8fcb9c8306a51b2c6c",
+        "accname": "上海炎黄科技有限公司",
+        "accnum": "621083627782934",
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": false,
+        "pk_bankdoc": "${space_id}_6261147232cc250032e1a9fa",
+        "pk_currtype": "${space_id}_6261092a32cc250032e1a977",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-17T06:28:31.667Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T06:03:35.289Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fefe07f63a8f27ae6a0264",
+        "accname": "上海优思软件有限公司",
+        "accnum": "6109773892012289",
+        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": false,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-19T03:05:43.174Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T06:13:13.375Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_6303221789de4506e594b392",
+        "accname": "格致股份有限公司",
+        "accnum": "9665326598445223",
+        "account": "${space_id}_eDaRCvott7i7pP2F7",
+        "accountproperty": "company",
+        "accstate": "normal",
+        "enablestate": "enable",
+        "isdefault": false,
+        "pk_bankdoc": "${space_id}_6261147132cc250032e1a9f9",
+        "pk_currtype": "${space_id}_6261092232cc250032e1a973",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T06:28:39.265Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T06:28:39.265Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

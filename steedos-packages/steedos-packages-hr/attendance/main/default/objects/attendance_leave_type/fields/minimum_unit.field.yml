@@ -1,0 +1,11 @@
+name: minimum_unit
+data_type: text
+label: 申请最小单位
+options:
+  - label: 小时
+    value: hour
+  - label: 天
+    value: day
+required: true
+sort_no: 110
+type: select

@@ -1,0 +1,333 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "label": "统计期间",
+            "type": "input-datetime-range",
+            "name": "datetime",
+            "id": "u:de60dc7f7766",
+            "ranges": [
+                "today",
+                "yesterday",
+                "prevweek",
+                "thisweek",
+                "prevmonth",
+                "thismonth",
+                "lastYear",
+                "thisyear",
+                "7daysago"
+            ],
+            "inputFormat": "YYYY-MM-DD HH:mm",
+            "minDate": "",
+            "maxDate": "",
+            "format": "YYYY-MM-DD HH:mm",
+            "embed": false,
+            "utc": false,
+            "clearable": false,
+            "value": "-6month, now",
+            "className": "p r",
+            "mode": "inline"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "body": [
+                                        {
+                                            "type": "panel",
+                                            "title": "日常费用报销金额",
+                                            "body": [
+                                                {
+                                                    "type": "tpl",
+                                                    "tpl": "<div class=\"text-center  text-4xl sm:text-7xl \">\n<div style=\"transform: scale(0.65);\"><span class=\"leading-normal\" title=\"${amount__c+ loan_paid_amount}\">￥${amount__c+ loan_paid_amount}</span></div>\n</div>",
+                                                    "inline": false,
+                                                    "style": {},
+                                                    "id": "u:5584678f62ae"
+                                                }
+                                            ],
+                                            "id": "u:73871fecf5f8",
+                                            "affixFooter": false,
+                                            "actions": [],
+                                            "headerClassName": "p p-b-xs font-bold r",
+                                            "inline": false,
+                                            "className": "Panel--default r m-b b-a"
+                                        }
+                                    ],
+                                    "id": "u:15d9f16e1c7c",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/cost_business_loan_reimburse/results?datetime=${datetime}&owner=${context.userId}",
+                                        "sendOn": "this.datetime",
+                                        "requestAdaptor": "\nvar datetime = api.data.datetime;\nvar owner = api.query.owner;\nvar start_and_end;\nif (datetime) {\n    start_and_end = datetime.split(',');\n} else {\n    start_and_end = ['', ''];\n}\napi.data.parameters = {\n    owner,\n    datetime: {\n        start: start_and_end[0],\n        end: start_and_end[1]\n    }\n}\nreturn api;",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n    rows = rows[0]\n} else {\n    rows = { amount: 0 }\n}\npayload.data = {\n    loan_paid_amount: rows.amount\n};\nreturn payload;\n",
+                                        "messages": {}
+                                    }
+                                }
+                            ],
+                            "id": "u:29bd9dde1d4a",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/cost_daily_expense_reimburse/results?datetime=${datetime}&owner=${context.userId}",
+                                "sendOn": "this.datetime",
+                                "requestAdaptor": "\nvar datetime = api.data.datetime;\nvar owner = api.query.owner;\nvar start_and_end;\nif (datetime) {\n  start_and_end = datetime.split(',');\n} else {\n  start_and_end = ['', ''];\n}\napi.data.parameters = {\n  owner,\n  datetime: {\n    start: start_and_end[0],\n    end: start_and_end[1]\n  }\n}",
+                                "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n  rows = rows[0]\n} else {\n  rows = { amount: 0 }\n}\npayload.data = {\n  amount__c: rows.amount\n};\n\nreturn payload;\n",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                },
+                                "messages": {}
+                            },
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:abd44c28ab8f"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "body": [
+                                        {
+                                            "type": "panel",
+                                            "title": "差旅费用报销金额",
+                                            "body": [
+                                                {
+                                                    "type": "tpl",
+                                                    "tpl": "<div class=\"text-center  text-4xl sm:text-7xl \">\n<div style=\"transform: scale(0.65);\"><span class=\"leading-normal\" title=\"${out_amount__c+ loan_paid_amount}\">￥${out_amount__c+ loan_paid_amount}</span></div>\n</div>",
+                                                    "inline": false,
+                                                    "style": {},
+                                                    "id": "u:bbc3ec9b40d7"
+                                                }
+                                            ],
+                                            "id": "u:73871fecf5f8",
+                                            "affixFooter": false,
+                                            "actions": [],
+                                            "headerClassName": "p p-b-xs font-bold r",
+                                            "inline": false,
+                                            "className": "Panel--default r m-b b-a",
+                                            "placeholder": "暂无数据",
+                                            "showHeader": false
+                                        }
+                                    ],
+                                    "id": "u:08bc863d198e",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/cost_business_loan_reimburse_2/results?datetime=${datetime}&owner=${context.userId}",
+                                        "sendOn": "this.datetime",
+                                        "requestAdaptor": "\nvar datetime = api.data.datetime;\nvar owner = api.query.owner;\nvar start_and_end;\nif (datetime) {\n    start_and_end = datetime.split(',');\n} else {\n    start_and_end = ['', ''];\n}\napi.data.parameters = {\n    owner,\n    datetime: {\n        start: start_and_end[0],\n        end: start_and_end[1]\n    }\n}",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n    rows = rows[0]\n} else {\n    rows = { amount: 0 }\n}\npayload.data = {\n    loan_paid_amount: rows.amount\n};\n\nreturn payload;\n",
+                                        "messages": {}
+                                    }
+                                }
+                            ],
+                            "id": "u:29bd9dde1d4a",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/cost_out_expense_reimburse/results?datetime=${datetime}&owner=${context.userId}",
+                                "sendOn": "this.datetime",
+                                "requestAdaptor": "\nvar datetime = api.data.datetime;\nvar owner = api.query.owner;\nvar start_and_end;\nif (datetime) {\n  start_and_end = datetime.split(',');\n} else {\n  start_and_end = ['', ''];\n}\napi.data.parameters = {\n  owner,\n  datetime: {\n    start: start_and_end[0],\n    end: start_and_end[1]\n  }\n}",
+                                "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n  rows = rows[0]\n} else {\n  rows = { amount: 0 }\n}\npayload.data = {\n  out_amount__c: rows.amount\n};\n// console.log('payload ==>', payload)\nreturn payload;\n",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                },
+                                "messages": {}
+                            },
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:e0ffa55e0444"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "个人借款金额",
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<div class=\"text-center  text-4xl sm:text-7xl \">\n<div style=\"transform: scale(0.65);\"><span class=\"leading-normal\" title=\"${personal_amount__c}\">￥${personal_amount__c}</span></div></div>",
+                                            "inline": false,
+                                            "style": {},
+                                            "id": "u:011a3e437185"
+                                        }
+                                    ],
+                                    "id": "u:73871fecf5f8",
+                                    "affixFooter": false,
+                                    "actions": [],
+                                    "headerClassName": "p p-b-xs font-bold r",
+                                    "inline": false,
+                                    "className": "Panel--default r m-b b-a"
+                                }
+                            ],
+                            "id": "u:29bd9dde1d4a",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/cost_personal_loan/results?datetime=${datetime}&owner=${context.userId}",
+                                "sendOn": "this.datetime",
+                                "requestAdaptor": "\nvar datetime = api.data.datetime;\nvar owner = api.query.owner;\nvar start_and_end;\nif (datetime) {\n  start_and_end = datetime.split(',');\n} else {\n  start_and_end = ['', ''];\n}\napi.data.parameters = {\n  owner,\n  datetime: {\n    start: start_and_end[0],\n    end: start_and_end[1]\n  }\n}",
+                                "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n  rows = rows[0]\n} else {\n  rows = { amount: 0 }\n}\npayload.data = {\n  personal_amount__c: rows.amount\n};\n// console.log('payload ==>', payload)\nreturn payload;\n",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                },
+                                "messages": {}
+                            },
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:415a334a9bc5"
+                }
+            ],
+            "id": "u:4d4c871e362f"
+        },
+        {
+            "type": "panel",
+            "title": "费用趋势图",
+            "body": [
+                {
+                    "type": "chart",
+                    "config": {},
+                    "replaceChartOption": true,
+                    "id": "u:5995108e1d92",
+                    "api": {
+                        "url": "${context.rootUrl}/api/cost/statistic/trend?datetime=${datetime}&owner=${context.userId}",
+                        "headers": {
+                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                        }
+                    }
+                }
+            ],
+            "id": "u:7a10c81d97fd",
+            "inline": false,
+            "affixFooter": false,
+            "className": "Panel--default b-r b-l"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "tpl",
+                            "tpl": "<p>费用类型统计</p>",
+                            "inline": false,
+                            "id": "u:d351ba0268bc",
+                            "style": {},
+                            "className": "m-xs"
+                        },
+                        {
+                            "type": "chart",
+                            "config": {
+                                "tooltip": {
+                                    "trigger": "axis",
+                                    "axisPointer": {
+                                        "type": "shadow",
+                                        "id": "u:642a6557aaa9"
+                                    }
+                                },
+                                "legend": {},
+                                "series": "${series_data}",
+                                "yAxis": {},
+                                "xAxis": {
+                                    "type": "category",
+                                    "data": "${xAxis_data}",
+                                    "id": "u:a2eba40ada65"
+                                }
+                            },
+                            "replaceChartOption": true,
+                            "id": "u:b3c29c8cb643",
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql?datetime=${datetime}&owner=${context.userId}",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                },
+                                "requestAdaptor": "const datetime = api.query.datetime; //\"2023-04-12 00:00,2023-10-12 17:51\"\nconst owner = api.query.owner; \nconst datetime_array = datetime.split(',');\nconst start_date = datetime_array[0].slice(0, 10) + \"T00:00:00.000Z\";\nconst end_date = datetime_array[1].slice(0, 10) + \"T00:00:00.000Z\";\nconst filters = JSON.stringify([[\"date\", \"between\", [start_date, end_date]], [\"status\", \"=\", [\"before\", \"approving\", \"complete\"]], [\"owner\", \"=\", owner]]);\n\napi.data = {\n  query: `{rows:cost_reimburse_detail(filters: ${filters}, top: 1000, skip: 0, sort: \"created desc\"){\n        _id,autonumber,expend_type,amount,date,remark,instance,instance_state,status,applicant,department,created,\n        _display:_ui{\n          expend_type,amount,date,instance,instance_state,status,applicant,department,created\n        }\n    },\n    count:cost_reimburse_detail__count(filters:${filters})}`\n};\n\nreturn api;",
+                                "adaptor": "let rows = payload.data.rows;\n\n// \"before\" 未报销, \"approving\" 审批中, \"complete\" 已报销\nlet xAxis_name_data = []; // ['机票费', '火车费']\nrows.forEach((item) => {\n  const x_name = item._display.expend_type.label;\n  if (xAxis_name_data.indexOf(x_name) < 0) {\n    xAxis_name_data.push(x_name);\n  }\n});\nlet xAxis_data = [];  \n// [{\"approving\": 11,\"before\": 122,\"complete\": 1000},\n// {\"complete\": 10000}]\nrows.forEach((item) => {\n  const x_name = item._display.expend_type.label;\n  const name_index = xAxis_name_data.indexOf(x_name);\n  if (!xAxis_data[name_index]) {\n    xAxis_data[name_index] = {}\n  }\n  if (!xAxis_data[name_index][item.status]) {\n    xAxis_data[name_index][item.status] = 0;\n  }\n  xAxis_data[name_index][item.status] += item.amount;\n});\n\nlet before_data = [];\nlet approving_data = [];\nlet complete_data = [];\nxAxis_name_data.forEach((item,index) => {\n  before_data.push(xAxis_data[index].before || 0);\n  approving_data.push(xAxis_data[index].approving || 0);\n  complete_data.push(xAxis_data[index].complete || 0);\n});\n\nif (!xAxis_name_data.length) {\n  xAxis_name_data.push('机票费');\n  before_data.push(0);\n}\nseries_data = [\n  {\n    name: \"未报销\",\n    type: \"bar\",\n    stack: \"state\",\n    emphasis: {\n      focus: \"series\"\n    },\n    data: before_data\n  },\n  {\n    name: \"审批中\",\n    type: \"bar\",\n    stack: \"state\",\n    emphasis: {\n      focus: \"series\"\n    },\n    data: approving_data\n  },\n  {\n    name: \"已报销\",\n    type: \"bar\",\n    stack: \"state\",\n    emphasis: {\n      focus: \"series\"\n    },\n    data: complete_data\n  }\n]\n// console.log('series_data==>', series_data);\npayload.data = {\n  xAxis_data: xAxis_name_data,\n  series_data\n};\n\nreturn payload;\n",
+                                "sendOn": "!!this.datetime"
+                            },
+                            "interval": 300000
+                        }
+                    ],
+                    "id": "u:6a5f6719f172",
+                    "columnClassName": "b-a m-l-xs m-b-md m-r-xs r",
+                    "style": {
+                        "background": "#ffffff"
+                    }
+                },
+                {
+                    "body": [
+                        {
+                            "type": "tpl",
+                            "tpl": "<p>借还款情况</p>",
+                            "inline": false,
+                            "id": "u:d351ba0268bc",
+                            "style": {},
+                            "className": "m-xs"
+                        },
+                        {
+                            "type": "chart",
+                            "config": {},
+                            "replaceChartOption": true,
+                            "id": "u:6be6bbcbda48",
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql?datetime=${datetime}&owner=${context.userId}",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                },
+                                "requestAdaptor": "\nconst owner = api.query.owner;\nlet datetime = api.query.datetime; //2023-06-24 00:00,2023-12-24 13:04\ndatetime = datetime.split(',');\nconst start_time_string = datetime[0];\nconst end_time_string = datetime[1];\nconst start_time = start_time_string.slice(0, 10) + 'T' + start_time_string.slice(11, 16) + \":00.000Z\";\nconst end_time = end_time_string.slice(0, 10) + 'T' + end_time_string.slice(11, 16) + \":00.000Z\";\n\nconst query = `{rows:cost_personal_loan(filters:[[\\\"owner\\\", \\\"=\\\",\\\"` + owner + `\\\"],[\\\"modified\\\", \\\"between\\\", [\\\"` + start_time + `\\\",\\\"` + end_time +`\\\"]]]){is_deleted,remaining_amount,repayment,frozen_amount,modified}}`\napi.data.query = query;\nreturn api;",
+                                "adaptor": "\nlet rows = payload?.data?.rows || [];\n\nlet repayment = 0;\nlet frozen_amount = 0;\nlet remaining_amount = 0;\nif (rows.length) {\n  rows.forEach((item) => {\n    repayment += item.repayment;\n    frozen_amount += item.frozen_amount;\n    remaining_amount += item.remaining_amount;\n  })\n}\n\nlet series_data = [\n  { name: \"已还款金额\", value: repayment },\n  { name: \"还款中金额\", value: frozen_amount },\n  { name: \"剩余还款金额\", value: remaining_amount }\n];\n\npayload.data = {\n  series_data\n};\n\nreturn payload;\n",
+                                "sendOn": "!!this.datetime"
+                            },
+                            "dataFilter": "// formatter为字符串模板时，如果所有数据为0，百分比显示为undefined。\nconst series_data = data.series_data;\nconfig = {\n  \"title\": {\n    \"text\": \"\"\n  },\n  \"tooltip\": {\n    \"trigger\": \"item\"\n  },\n  \"legend\": {\n    \"left\": \"center\"\n  },\n  \"series\": [\n    {\n      \"name\": \"\",\n      \"type\": \"pie\",\n      \"data\": series_data,\n      \"radius\": \"50%\",\n      \"emphasis\": {\n        \"itemStyle\": {\n          \"shadowBlur\": 10,\n          \"shadowOffsetX\": 0,\n          \"shadowColor\": \"rgba(0, 0, 0, 0.5)\"\n        }\n      },\n      \"label\": {\n        \"show\": true,\n        \"formatter\": function (params) {\n          const { name, value, percent = 0 } = params;\n          const text = name + \":\" + value + \"元\" + \" (\" + percent + \"%)\";\n          return text;\n        }\n      }\n    }\n  ]\n}\nreturn config;"
+                        }
+                    ],
+                    "id": "u:4722aaca5e73",
+                    "columnClassName": "m-r-xs b-a m-b-md m-l-xs r",
+                    "style": {
+                        "background": "#ffffff"
+                    }
+                }
+            ],
+            "id": "u:b2e0f7a7d4a0",
+            "className": "",
+            "gap": "sm",
+            "subFormMode": ""
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:0ad89b762188",
+    "messages": {},
+    "style": {},
+    "initApi": "",
+    "asideClassName": "",
+    "asideResizor": false,
+    "pullRefresh": {
+        "disabled": true
+    }
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "_id": "${space_id}_62fb559dcb9c8306a51b2bd0",
+        "project": "${space_id}_62620e4d87e5c50032d9bd25",
+        "applicant": "${space_owner_id}",
+        "company": "${space_id}",
+        "department": "${space_id}_DP3zmEYJ7AyJH47GT",
+        "name": "项目需求沟通",
+        "reason": "项目需求沟通",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:30:21.895Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T08:29:04.573Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "202208160001",
+        "days": 2,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "${space_id}_P9ZAjCt5CkDfGJ4BD",
+                "state": "approved"
+            }
+        ],
+        "locked": true,
+        "remark": "相关行程信息见明细"
+    }
+]

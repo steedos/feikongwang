@@ -1,0 +1,15 @@
+name: account
+filterable: true
+generated: false
+group: 其他信息
+index: false
+is_name: false
+is_wide: false
+label: 系统账户
+multiple: false
+primary: false
+reference_to: users
+required: false
+sort_no: 999
+sortable: false
+type: lookup

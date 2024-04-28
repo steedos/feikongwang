@@ -1,0 +1,19 @@
+name: recent
+columns:
+  - field: name
+  - field: paln_code
+  - field: start
+    width: 150
+  - field: end
+    width: 150
+  - field: instance_type
+    width: 350
+  - field: budget_approve
+  - field: actived
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

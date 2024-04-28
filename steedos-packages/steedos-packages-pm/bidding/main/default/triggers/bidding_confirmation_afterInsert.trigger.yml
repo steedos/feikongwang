@@ -1,0 +1,79 @@
+name: bidding_confirmation_afterInsert
+listenTo: bidding_confirmation
+when:
+  - afterInsert
+isEnabled: true
+handler: |-
+  /**
+   * 定标记录添加之后
+   * TODO：
+   * 1、将推荐入围供应商写入到中标供应商中。
+   */
+  const { doc } = ctx.params;
+  const bidding = doc.bidding;
+  const simple_bidding = doc.simple_bidding;
+
+  if (bidding) {
+      // 一般招投标时，先找到供应商入围信息，在通过供应商入围信息找到对应的供应商
+      const shortlisting = await ctx.broker.call('objectql.find',
+          {
+              'objectName': 'supplier_shortlisting',
+              'query': { 'filters': ['bidding', '=', bidding], 'fields': ['_id'] }
+          }
+      )
+
+      if (shortlisting.length > 0) {
+          const result = new Set();  // 推荐供应商集合
+          for (const item of shortlisting) {
+              const suppliers = await ctx.broker.call('objectql.find',
+                  {
+                      'objectName': 'recommand_supplier',
+                      'query': { 'fields': ['account'], 'filters': [['supplier_shortlisting', '=', item._id], ['status', '=', 'already_shortlisted']] }
+                  }
+              )
+              for (let supplier of suppliers) {
+                  result.add(supplier.account);
+              }
+          };
+          // 将数据插入到中标供应商中
+          await insertBiddingSupplier(Array.from(result));
+      }
+  }
+
+  if (simple_bidding) {
+      const result = new Set();  // 推荐供应商集合
+      const suppliers = await ctx.broker.call('objectql.find',
+          {
+              'objectName': 'recommand_supplier',
+              'query': { 'fields': ['account'], 'filters': [['simple_bidding', '=', simple_bidding], ['status', '=', 'already_shortlisted']] }
+          }
+      );
+      for (let supplier of suppliers) {
+          result.add(supplier.account);
+      };
+      // 将数据插入到中标供应商中
+      await insertBiddingSupplier(Array.from(result));
+  }
+
+  /**
+   * 定标时，将推荐供应商写入到中标供应商
+   */
+  async function insertBiddingSupplier(suppliers) {
+      const master_detail = doc._id;
+      const project_program = doc.project_program;
+      const bidding = doc.bidding;
+      const simple_bidding = doc.simple_bidding;
+      // 将数据插入到中标供应商中
+      for (const supplier of suppliers) {
+          let insertDoc = {
+              'bidding_confirmation': master_detail,
+              'project_program': project_program,
+              'bidding': bidding,
+              'simple_bidding': simple_bidding,
+              'account': supplier,
+              'is_entry': 'Yes',
+              'space': doc.space
+          }
+          await ctx.broker.call('objectql.insert', { 'objectName': 'bidding_supplier', 'doc': insertDoc })
+      }
+  }

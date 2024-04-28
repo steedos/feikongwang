@@ -1,0 +1,13 @@
+name: filing_unit
+filterable: false
+generated: false
+group: 归档信息
+index: false
+is_name: false
+is_wide: false
+label: 归档单位
+primary: false
+required: false
+sort_no: 230
+sortable: false
+type: text

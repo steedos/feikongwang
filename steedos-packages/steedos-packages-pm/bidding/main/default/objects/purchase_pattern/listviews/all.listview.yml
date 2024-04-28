@@ -1,0 +1,13 @@
+name: all
+label: 所有采购模式
+columns:
+  - field: name
+  - field: code
+  - field: enable
+  - field: is_bidding
+filter_scope: space
+filters: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

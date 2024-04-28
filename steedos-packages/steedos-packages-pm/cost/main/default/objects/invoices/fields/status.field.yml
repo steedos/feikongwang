@@ -1,0 +1,18 @@
+name: status
+label: 报销状态
+defaultValue: '"before"'
+options:
+  - label: 未报销
+    value: before
+    color: cfd3d7
+  - label: 报销中
+    value: approving
+    color: 49d181
+  - label: 已报销
+    value: complete
+    color: F4A460
+sort_no: 600
+type: select
+required: false
+readonly: true
+filterable: true

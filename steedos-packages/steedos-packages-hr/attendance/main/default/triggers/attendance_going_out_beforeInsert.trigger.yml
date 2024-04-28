@@ -1,0 +1,31 @@
+name: attendance_going_out_beforeInsert
+listenTo: attendance_going_out
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const { doc, attendance_overtime } = ctx.params;
+  if (doc.start_time > doc.end_time) {
+      throw new Error("请确认：外出结束时间要大于开始时间")
+  }
+  const attendance_group = await ctx.broker.call('objectql.find', {
+      objectName: 'attendance_group',
+      query: {
+          fields: ['attendance_rule_settings'],
+          filters: ["users", "contains", doc.applicant]
+      }
+  })
+  console.log("attendance_group", attendance_group);
+  if (attendance_group.length > 0) {
+      const attendance_rule_settings = await ctx.broker.call('objectql.find', {
+          objectName: 'attendance_rule_settings',
+          query: {
+              filters: [["_id", "=", attendance_group[0].attendance_rule_settings], ["status", "=", "open"]]
+          }
+      })
+      if (attendance_rule_settings.length == 0) {
+          throw new Error("该考勤组未设置考勤规则，请联系管理员")
+      }
+  } else {
+      throw new Error("该员工还没加入考勤组,请联系管理员")
+  }

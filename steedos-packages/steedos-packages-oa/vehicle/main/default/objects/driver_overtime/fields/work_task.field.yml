@@ -1,0 +1,5 @@
+name: work_task
+label: 出车任务
+sort_no: 130
+type: text
+is_wide: true

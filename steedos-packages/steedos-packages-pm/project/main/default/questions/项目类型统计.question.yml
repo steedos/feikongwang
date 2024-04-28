@@ -1,0 +1,45 @@
+name: 项目类型统计
+created_at: 2023-11-24T02:23:22.075Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: project
+    aggregation:
+      - - count
+    breakout:
+      - - field
+        - project.project_type
+        - null
+  type: query
+display: pie
+entity_id: 6560091af084ab05cc5731de
+id: 6560091af084ab05cc5731de
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: project_type
+    name: project_type
+    unit: null
+    display_name: 项目类型
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/Source
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - base_type: type/BigInteger
+    display_name: 计数
+    effective_type: type/BigInteger
+    field_ref:
+      - aggregation
+      - 1
+    name: count
+    semantic_type: type/Quantity
+    source: aggregation
+table_id: project
+updated_at: 2023-11-24T02:23:22.075Z
+visualization_settings: >-
+  {"pivot_table.column_split":{"rows":[null],"columns":[],"values":[["aggregation",1]]}}

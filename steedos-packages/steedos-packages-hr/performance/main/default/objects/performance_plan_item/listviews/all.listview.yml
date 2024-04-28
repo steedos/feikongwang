@@ -1,0 +1,18 @@
+name: all
+columns:
+  - field: name
+  - field: performance_plan
+  - field: performance_template
+  - field: start_date
+  - field: end_date
+  - field: employee
+  - field: assessor
+  - field: assessor_weight
+  - field: template_weight
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

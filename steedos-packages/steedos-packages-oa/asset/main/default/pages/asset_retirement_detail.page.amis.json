@@ -1,0 +1,101 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:16549f8cbdea"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:a35267691100"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "报废明细",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:2fbf69bfa6b7",
+                            "relatedObjectApiName": "asset_retirement_detail"
+                        }
+                    ],
+                    "id": "u:7a2af075b4d4"
+                },
+                {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:b324f18e932f",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:9a0ad96bd1ab"
+                },
+                {
+                    "title": "审批",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:68af03ebec1b",
+                            "relatedObjectApiName": "instances"
+                        }
+                    ],
+                    "id": "u:a751a2846af8"
+                },
+                {
+                    "title": "审计日志",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:b163834804fa",
+                            "relatedObjectApiName": "audit_records"
+                        }
+                    ],
+                    "id": "u:a34bc62299af"
+                }
+            ],
+            "id": "u:8407df6cdb71"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_asset_retirement_record_detail",
+    "name": "page_asset_retirement_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

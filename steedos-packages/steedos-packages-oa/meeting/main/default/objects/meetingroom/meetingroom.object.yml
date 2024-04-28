@@ -1,0 +1,6 @@
+name: meetingroom
+enable_enhanced_lookup: true
+version: 2
+label: 会议室
+icon: location
+enable_search: true

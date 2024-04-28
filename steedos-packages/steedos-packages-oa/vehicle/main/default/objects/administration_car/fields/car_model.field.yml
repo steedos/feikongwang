@@ -1,0 +1,4 @@
+name: car_model
+label: 车型
+sort_no: 110
+type: text

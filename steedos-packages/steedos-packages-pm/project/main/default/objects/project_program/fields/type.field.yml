@@ -1,0 +1,20 @@
+name: type
+label: 项目系列
+type: select
+sort_no: 150
+options: 
+ - label: 住宅
+   value: 住宅
+ - label: 商业
+   value: 商业
+ - label: 办公
+   value: 办公
+ - label: 酒店
+   value: 酒店
+ - label: 住宅 + 办公
+   value: 住宅 + 办公
+ - label: 办公 + 商业
+   value: 办公 + 商业
+ - label: 房地产
+   value: 房地产
+visible_on: "{{false}}"

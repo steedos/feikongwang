@@ -1,0 +1,6 @@
+name: assets_card
+label: 资产卡片
+type: master_detail
+reference_to: assets_card
+group: 管理信息
+required: true

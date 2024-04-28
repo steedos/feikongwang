@@ -1,0 +1,7 @@
+name: survey_score
+label: 考察得分
+type: number
+precision: 18
+scale: 0
+sort_no: 130
+group: 工程信息

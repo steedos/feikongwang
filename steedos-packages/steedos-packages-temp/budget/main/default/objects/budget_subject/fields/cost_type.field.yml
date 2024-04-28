@@ -1,0 +1,15 @@
+name: cost_type
+filterable: false
+generated: false
+index: false
+inlineHelpText: 允许占用的费用/补贴类型
+is_name: false
+is_wide: true
+label: 费用类型
+multiple: true
+primary: false
+reference_to: cost_type
+required: true
+sort_no: 110
+sortable: false
+type: lookup

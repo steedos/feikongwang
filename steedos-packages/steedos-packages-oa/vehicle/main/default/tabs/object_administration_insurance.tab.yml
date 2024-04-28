@@ -1,0 +1,7 @@
+name: object_administration_insurance
+desktop: true
+label: 保险信息
+mobile: true
+object: administration_insurance
+permissions: []
+type: object

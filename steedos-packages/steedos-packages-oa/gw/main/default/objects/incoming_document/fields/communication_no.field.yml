@@ -1,0 +1,12 @@
+name: communication_no
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 来文号
+primary: false
+required: false
+sort_no: 110
+sortable: false
+type: text

@@ -1,0 +1,6 @@
+name: begins_quit_clock
+group: 打卡时间
+label: 下班开始打卡时间
+sort_no: 180
+type: time
+required: true

@@ -1,0 +1,5 @@
+name: first_participation
+group: 其他信息
+label: 首次参加工作时间
+sort_no: 360
+type: date

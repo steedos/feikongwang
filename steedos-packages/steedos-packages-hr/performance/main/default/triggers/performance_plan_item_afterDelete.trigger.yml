@@ -1,0 +1,38 @@
+name: performance_plan_item_afterDelete
+listenTo: performance_plan_item
+when:
+  - afterDelete
+isEnabled: true
+handler: |-
+  const { previousDoc, userId, spaceId } = ctx.params;
+  const user = await ctx.getUser(userId, spaceId);
+  let records = await ctx.broker.call(
+      'objectql.find',
+      {
+          'objectName': 'performance_data',
+          'query': {
+              'fields': ['_id', 'name'],                    
+              'filters': ['performance_plan_item', '=', previousDoc._id]
+          },
+      },
+      {
+          'meta': {
+              'user': user
+          }
+      }
+  )
+
+  for (let record of records) {
+      await ctx.broker.call(
+          'objectql.delete',
+          {
+              'objectName': 'performance_data',
+              'id': record._id
+          },
+          {
+              'meta': {
+                  'user': user
+              }
+          }
+      )
+  }

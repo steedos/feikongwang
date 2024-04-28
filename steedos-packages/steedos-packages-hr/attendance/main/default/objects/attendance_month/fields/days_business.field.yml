@@ -1,0 +1,6 @@
+name: days_business
+label: 出差（天）
+precision: 18
+scale: 2
+sort_no: 200
+type: number

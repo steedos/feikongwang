@@ -1,0 +1,4 @@
+name: address
+label: 工厂地址
+type: text
+sort_no: 120

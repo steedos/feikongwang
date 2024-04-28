@@ -1,0 +1,11 @@
+name: end
+label: 下班打卡时间
+sort_no: 510
+type: datetime
+group: 补卡信息
+depend_on:
+  - type
+visible_on: "{{formData.type ==='quit' ? true : false}}"
+required: "{{formData.type ==='quit' ? true: false}}"
+amis:
+  format: "YYYY-MM-DDTHH:mm:00.000Z"

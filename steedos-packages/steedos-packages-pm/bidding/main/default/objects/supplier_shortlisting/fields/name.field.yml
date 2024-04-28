@@ -1,0 +1,7 @@
+name: name
+filterable: true
+formula: 'ZB-{0000}'
+label: 招标编号
+searchable: true
+sort_no: 120
+type: autonumber

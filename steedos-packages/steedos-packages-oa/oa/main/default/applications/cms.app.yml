@@ -1,0 +1,12 @@
+name: 知识
+code: cms
+description: 管理企业的知识与信息，并可分享给外部用户。
+icon_slds: approval
+is_creator: true
+mobile: true
+objects:
+  # - cms_sites
+  # - cms_categories
+  - cms_posts
+sort: 9100
+visible: false

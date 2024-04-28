@@ -1,0 +1,31 @@
+name: staff
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 人员
+primary: false
+reference_to: hr_employee
+required: true
+sort_no: 115
+sortable: false
+type: master_detail
+write_requires_master_read: false
+filtersFunction:  |-
+  function(filters,values) {
+    return [["account","=","{userId}"],["status","=","trail"]];
+  }
+amis:
+  autoFill:
+    fillMapping:
+      "start": "${date}"
+      "department": "${department}"
+      "company": "${company}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:hr_employee(filters: [[\"_id\", \"=\", \"${staff}\"]], top: 1){date, company,department}}"

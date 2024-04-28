@@ -1,0 +1,7 @@
+name: object_cost_daily_expense_reimburse
+desktop: true
+label: 日常报销
+mobile: true
+object: cost_daily_expense_reimburse
+permissions: []
+type: object

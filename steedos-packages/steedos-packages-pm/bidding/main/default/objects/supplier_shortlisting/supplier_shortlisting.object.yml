@@ -1,0 +1,11 @@
+name: supplier_shortlisting
+label: 供应商入围
+custom: true
+enable_api: true
+enable_search: false
+enable_instances: true
+enable_workflow: true
+enable_files: true
+icon: immunization
+is_enable: true
+version: 2

@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "${space_id}_0b45c3f3291188c2c87214d1",
+        "name": "车辆管理",
+        "space": "655331588a2535c81f60e26f",
+        "created": {
+            "$date": "2023-11-14T08:35:37.182Z"
+        },
+        "created_by": "655331568a2535c81f60e26d",
+        "modified": {
+            "$date": "2023-11-14T08:35:37.182Z"
+        },
+        "modified_by": "655331568a2535c81f60e26d",
+        "owner": "655331568a2535c81f60e26d",
+        "company_id": "655331588a2535c81f60e26f",
+        "company_ids": [
+            "655331588a2535c81f60e26f"
+        ],
+        "app": "vehicle",
+        "sort_no" : 450
+    }
+]

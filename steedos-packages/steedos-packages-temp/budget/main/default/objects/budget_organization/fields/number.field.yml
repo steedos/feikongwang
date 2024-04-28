@@ -1,0 +1,12 @@
+name: number
+filterable: false
+formula: 'YSZZ-{0000}'
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 组织编码
+primary: false
+sort_no: 110
+sortable: false
+type: autonumber

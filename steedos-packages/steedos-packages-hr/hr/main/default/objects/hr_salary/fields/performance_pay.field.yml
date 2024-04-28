@@ -1,0 +1,6 @@
+name: performance_pay
+label: 绩效工资
+precision: 18
+scale: 2
+sort_no: 140
+type: currency

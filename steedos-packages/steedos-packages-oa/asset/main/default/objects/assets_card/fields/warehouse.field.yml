@@ -1,0 +1,6 @@
+name: warehouse
+label: 存放地点
+reference_to: warehouse
+sort_no: 170
+type: lookup
+filterable: true

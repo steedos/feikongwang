@@ -1,0 +1,16 @@
+name: incurred_by
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 经手人员
+multiple: false
+omit: false
+readonly: false
+reference_to: users
+required: false
+searchable: false
+sort_no: 160
+sortable: true
+type: lookup

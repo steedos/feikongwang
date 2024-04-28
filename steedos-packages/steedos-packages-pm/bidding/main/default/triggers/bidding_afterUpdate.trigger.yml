@@ -1,0 +1,18 @@
+name: bidding_afterUpdate
+listenTo: bidding
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, previousDoc } = ctx.params
+
+
+  // 发起审批时，将立项状态修正为“立项”
+
+  if (doc.instance_state === 'pending' && doc.instance_state !== previousDoc.instance_state) {
+     const status = await ctx.broker.call('@steedos-labs/bidding.getBiddingStatusByCode', { 'code': 'LX001' });
+     console.log('status: ', status)
+      await ctx.broker.call('objectql.update',
+          { 'objectName': 'bidding', 'id': doc._id, 'doc': { 'bidding_status': status } }
+      )
+  }

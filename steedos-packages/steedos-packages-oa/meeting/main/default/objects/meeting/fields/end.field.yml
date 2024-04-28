@@ -1,0 +1,17 @@
+name: end
+label: 结束时间
+type: datetime
+required: true
+defaultValue: !<tag:yaml.org,2002:js/function> |-
+  function anonymous(
+  ) {
+
+          var now, reValue;
+          now = new Date();
+          reValue = new Date(now.getTime() + 2 * 60 * 60 * 1000);
+          reValue.setMinutes(0);
+          reValue.setSeconds(0);
+          return reValue;
+        
+  }
+sort_no: 120

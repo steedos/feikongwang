@@ -1,0 +1,6 @@
+name: unemployment_insurance
+label: 失业保险
+precision: 18
+scale: 2
+sort_no: 220
+type: currency

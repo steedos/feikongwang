@@ -1,0 +1,6 @@
+name: leave_count
+label: 早退次数
+precision: 18
+scale: 0
+sort_no: 270
+type: number

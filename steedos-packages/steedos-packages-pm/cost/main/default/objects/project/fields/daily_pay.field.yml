@@ -1,0 +1,17 @@
+name: daily_pay
+data_type: currency
+filterable: false
+formula: daily_sum+daily_pay_sum
+formula_blank_value: zeroes
+generated: false
+group: 预算与执行
+index: false
+is_name: false
+is_wide: false
+label: 日常费用已用金额
+precision: 18
+primary: false
+scale: 2
+sort_no: 9999
+sortable: false
+type: formula

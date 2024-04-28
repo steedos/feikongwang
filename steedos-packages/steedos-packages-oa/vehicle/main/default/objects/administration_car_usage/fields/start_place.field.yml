@@ -1,0 +1,4 @@
+name: start_place
+label: 起始地
+sort_no: 140
+type: text

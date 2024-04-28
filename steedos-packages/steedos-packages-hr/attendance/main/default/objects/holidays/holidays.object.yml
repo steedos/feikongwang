@@ -1,0 +1,5 @@
+name: holidays
+extend: holidays
+hidden: false
+enable_audit: true
+

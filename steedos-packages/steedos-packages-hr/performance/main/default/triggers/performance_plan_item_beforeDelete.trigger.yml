@@ -1,0 +1,31 @@
+name: performance_plan_item_beforeDelete
+listenTo: performance_plan_item
+when:
+  - beforeDelete
+isEnabled: true
+handler: |-
+  const { userId, spaceId, isBefore } = ctx.params;
+  const user = await ctx.getUser(userId, spaceId);
+  let planItem = await ctx.broker.call('api.graphql', {
+      query: `
+           {
+              rows: performance_plan_item(filters: ["_id", "=", "${ctx.params.id}"]) {
+                      name
+                      performance_plan__expand {
+                          _id
+                          name
+                          status
+                      }
+              }
+          }
+      `},
+      {
+          user: user
+      }
+  );
+  let plan = planItem.data.rows[0].performance_plan__expand
+
+
+  if (isBefore && plan.status !== 'unplayed') {
+      throw new Error('考核正在进行中或已结束 禁止操作！')
+  }

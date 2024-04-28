@@ -1,0 +1,8 @@
+name: object_attendance_site
+desktop: true
+icon: promotion_segments
+label: 打卡位置
+mobile: true
+object: attendance_site
+permissions: []
+type: object

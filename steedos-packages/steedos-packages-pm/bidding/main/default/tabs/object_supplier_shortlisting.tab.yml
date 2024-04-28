@@ -1,0 +1,7 @@
+name: object_supplier_shortlisting
+desktop: true
+label: 供应商入围
+mobile: true
+object: supplier_shortlisting
+permissions: []
+type: object

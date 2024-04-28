@@ -1,0 +1,7 @@
+name: object_performance_result
+desktop: true
+label: 考核结果
+mobile: true
+object: performance_result
+permissions: []
+type: object

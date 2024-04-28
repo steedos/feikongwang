@@ -1,0 +1,14 @@
+name: reason
+filterable: false
+generated: false
+index: false
+inlineHelpText: 请输入借款事由
+is_name: false
+is_wide: true
+label: 借款事由
+primary: false
+required: false
+rows: 3
+sort_no: 150
+sortable: false
+type: textarea

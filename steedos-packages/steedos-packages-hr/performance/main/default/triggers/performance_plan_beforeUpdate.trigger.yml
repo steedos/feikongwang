@@ -1,0 +1,38 @@
+name: performance_plan_beforeUpdate
+listenTo: performance_plan
+when:
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  /**
+   * 考核开始后，禁止修改考核计划
+   */
+  const { doc, previousDoc } = ctx.params
+  // let plan = await ctx.broker.call(
+  //     'objectql.findOne',
+  //     {
+  //         'objectName': 'performance_plan',
+  //         'id': ctx.params.id,
+  //         'query': {
+  //             'fields': ['status']
+  //         }
+  //     }
+  // )
+  // console.log('doc: ', doc)
+  // console.log('plan: ', plan);
+  // // doc中存在status时，此次操作为工作流规则自动触发。 
+  // if (!doc.status && plan.status != 'unplayed') {
+  //     throw new Error('考核正在进行中或已结束 禁止操作')
+  // }
+
+  if (doc.end_date) {
+      let date = new Date(doc.end_date);
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1;
+      let quarter = ['first_quarter', 'second_quarter', 'third_quarter', 'fourth_quarter']
+      let currQuarter = Math.floor((month % 3 == 0 ? (month / 3) : (month / 3 + 1)));
+      Object.assign(doc, {
+          'year': year + '',
+          'quarter': quarter[currQuarter - 1]
+      })
+  };

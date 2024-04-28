@@ -1,0 +1,4 @@
+name: card_number
+label: 返利打入卡号
+sort_no: 110
+type: text

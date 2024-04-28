@@ -1,0 +1,18 @@
+name: amount
+data_type: currency
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 报销金额
+precision: 18
+primary: false
+scale: 2
+sort_no: 145
+sortable: false
+summary_field: amount
+summary_object: cost_loan_detail
+summary_type: sum
+type: summary
+

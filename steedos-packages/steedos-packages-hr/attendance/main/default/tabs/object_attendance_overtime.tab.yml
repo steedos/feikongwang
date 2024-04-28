@@ -1,0 +1,7 @@
+name: object_attendance_overtime
+desktop: true
+label: 加班
+mobile: true
+object: attendance_overtime
+permissions: []
+type: object

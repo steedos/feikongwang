@@ -1,0 +1,5 @@
+name: other_features
+label: 其他功能
+type: text
+multiple: true
+sort_no: 160

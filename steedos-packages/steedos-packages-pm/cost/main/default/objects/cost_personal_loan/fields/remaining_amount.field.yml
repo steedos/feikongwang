@@ -1,0 +1,17 @@
+name: remaining_amount
+data_type: currency
+filterable: false
+formula: amount-repayment-frozen_amount
+formula_blank_value: zeroes
+generated: false
+group: 还款信息
+index: false
+is_name: false
+is_wide: true
+label: 剩余还款金额
+precision: 18
+primary: false
+scale: 2
+sort_no: 230
+sortable: false
+type: formula

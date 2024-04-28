@@ -1,0 +1,4 @@
+name: insurance_start_date
+label: 保险开始日期
+sort_no: 110
+type: date

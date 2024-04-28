@@ -1,0 +1,11 @@
+name: type
+label: 业务类型
+options:
+  - label: 启用
+    value: enable
+  - label: 封存
+    value: sealed
+  - label: 销毁
+    value: destroyed
+sort_no: 140
+type: select

@@ -1,0 +1,50 @@
+name: 项目立项情况
+archived: false
+created_at: 2023-11-24T01:29:30.116Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  type: query
+  query:
+    source-table: project
+    aggregation:
+      - - sum
+        - - field
+          - project.contracts_all_pay
+          - null
+    breakout:
+      - - field
+        - project.kickoff
+        - temporal-unit: day
+  database: '1'
+display: line
+enable_embedding: false
+entity_id: 655ffc7af084ab05cc5731c0
+id: 655ffc7af084ab05cc5731c0
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - id: kickoff
+    name: kickoff
+    unit: day
+    display_name: 启动日期
+    base_type: type/Instant
+    effective_type: type/Instant
+    semantic_type: null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - base_type: type/Integer
+    display_name: 合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 1
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: project
+updated_at: 2023-11-24T01:29:30.116Z
+visualization_settings: >-
+  {"graph.dimensions":["kickoff"],"graph.metrics":["sum"],"graph.y_axis.labels_enabled":false,"graph.y_axis.auto_range":true}

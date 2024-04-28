@@ -1,0 +1,43 @@
+name: invoice_type
+create: false
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 增值税发票的细分类型
+multiple: false
+primary: false
+required: "{{formData.type ==='vat_invoice' ? true : false}}"
+searchable: false
+show_as_qr: false
+sort_no: 320
+sortable: false
+type: select
+options:
+  - label: 普通发票
+    value: 普通发票
+  - label: 专用发票
+    value: 专用发票
+  - label: 电子普通发票
+    value: 电子普通发票
+  - label: 增值税普通发票（卷式）
+    value: 增值税普通发票（卷式）
+  - label: 电子专用发票
+    value: 电子专用发票
+  - label: 通行费电子普票
+    value: 通行费电子普票
+  - label: 区块链发票
+    value: 区块链发票
+  - label: 电子发票(专用发票)
+    value: 电子发票(专用发票)
+  - label: 电子发票(普通发票)
+    value: 电子发票(普通发票)
+  - label: 货运运输业增值税专用发票
+    value: 货运运输业增值税专用发票
+  - label: 机动车销售发票
+    value: 机动车销售发票
+  - label: 二手车销售发票
+    value: 二手车销售发票
+readonly: false
+visible_on: "{{formData.type ==='vat_invoice' ? true : false}}"

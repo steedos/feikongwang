@@ -1,0 +1,14 @@
+name: all
+columns:
+  - field: user
+  - field: car_no
+  - field: start_place
+  - field: destination
+  - field: driver
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

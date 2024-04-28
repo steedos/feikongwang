@@ -1,0 +1,9 @@
+name: assess_template
+label: 供应商评估模版
+custom: true
+enable_api: true
+enable_search: false
+enable_enhanced_lookup: true
+icon: account
+is_enable: true
+version: 2

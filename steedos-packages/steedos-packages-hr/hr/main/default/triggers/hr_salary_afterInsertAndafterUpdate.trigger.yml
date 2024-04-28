@@ -1,0 +1,15 @@
+name: hr_salary_afterInsertAndafterUpdate
+listenTo: hr_salary
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { doc, id } = ctx.params;
+  // 判断拥有者是否属于自己
+  if (doc.owner != doc.users) {
+      const salaryObj = this.getObject("hr_salary");
+      await salaryObj.directUpdate(id, {
+          owner: doc.users
+      })
+  }

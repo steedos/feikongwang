@@ -1,0 +1,8 @@
+name: administration_insurance
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: multi_picklist
+is_enable: true
+label: 保险信息
+version: 2

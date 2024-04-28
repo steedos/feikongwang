@@ -1,0 +1,17 @@
+name: collaborator
+defaultValue: ''
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 协作人
+multiple: true
+omit: false
+readonly: false
+reference_to: users
+required: false
+searchable: true
+sort_no: 110
+sortable: true
+type: lookup

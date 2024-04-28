@@ -1,0 +1,8 @@
+name: clock_in_tab
+desktop: true
+icon: people
+label: 每日打卡
+mobile: true
+page: clock_in
+permissions: []
+type: page

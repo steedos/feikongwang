@@ -1,0 +1,5 @@
+name: business_file
+label: 商务标标书
+type: file
+sort_no: 250
+hidden: true

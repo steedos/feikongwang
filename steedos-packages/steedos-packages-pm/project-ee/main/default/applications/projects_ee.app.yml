@@ -1,0 +1,57 @@
+name: 项目
+code: projects_ee
+description: 闭环项目管理，管控销售合同、采购合同、收付款、任务进度等。
+icon_slds: goals
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+showSidebar: true
+sort: 10
+tab_groups:
+  - group_name: 项目管理
+    default_open: true
+  - group_name: 合同管理
+    default_open: true
+  - group_name: 收付款管理
+    default_open: true
+tab_items:
+  projects_ee:
+    group: 项目管理
+    index: 1
+  object_project:
+    group: 项目管理
+    index: 2
+  object_project_task:
+    group: 项目管理
+    index: 3
+  object_contracts:
+    group: 合同管理
+    index: 4
+  object_finance_invoice:
+    group: 收付款管理
+    index: 5
+  object_finance_receive:
+    group: 收付款管理
+    index: 6
+  object_invoices:
+    group: 收付款管理
+    index: 7
+  object_finance_payment:
+    group: 收付款管理
+    index: 8
+  object_accounts:
+    group: 收付款管理
+    index: 9
+tabs:
+  - projects_ee
+  - object_project
+  - object_project_task
+  - object_contracts
+  - object_finance_invoice
+  - object_finance_receive
+  - object_invoices
+  - object_finance_payment
+  - object_accounts
+visible: true

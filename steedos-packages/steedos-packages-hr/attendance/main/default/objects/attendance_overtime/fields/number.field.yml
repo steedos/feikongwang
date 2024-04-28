@@ -1,0 +1,12 @@
+name: number
+filterable: true
+formula: 'JBSQ-{YYYY}-{0000}'
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 单据编号
+primary: false
+sort_no: 145
+sortable: false
+type: autonumber

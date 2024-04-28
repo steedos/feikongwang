@@ -1,0 +1,30 @@
+name: type
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 组织类型
+multiple: false
+options:
+  - label: 公司
+    value: 公司
+    color: 1890FF
+  - label: 部门
+    value: 部门
+    color: 49d181
+  - label: 人员
+    value: 人员
+    color: F4A460
+  - label: 成本中心
+    value: 成本中心
+    color: FBC858
+  - label: 项目
+    value: 项目
+    color: 73C0DE
+primary: false
+required: true
+sort_no: 115
+sortable: false
+type: select

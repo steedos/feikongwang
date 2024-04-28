@@ -1,0 +1,16 @@
+name: project_program
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 项目集
+multiple: false
+omit: false
+readonly: false
+reference_to: project_program
+required: false
+searchable: false
+sort_no: 125
+sortable: false
+type: master_detail

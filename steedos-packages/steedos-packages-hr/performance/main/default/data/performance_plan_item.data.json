@@ -1,0 +1,127 @@
+[
+    {
+      "_id": "${space_id}_6501691aeef6ae147264937a",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_plan": "${space_id}_650167f7eef6ae1472649376",
+      "name": "7月份出纳绩效考核",
+      "performance_template": "${space_id}_65016459eef6ae147264936f",
+      "assessor": "${space_id}_rn7v8j67Qj26M9hrc",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "assessor_weight": 1,
+      "template_weight": 0.7,
+      "displayAs": null,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:47:38.155Z",
+      "modified": "2023-09-13T08:38:42.423Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "start_date": "2023-07-01T00:00:00.000Z",
+      "end_date": "2023-07-30T00:00:00.000Z",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "type": "accessment",
+      "max_score": 100,
+      "_display": {
+        "assessor": {
+          "label": "张国强",
+          "value": "rn7v8j67Qj26M9hrc"
+        }
+      }
+    },
+    {
+      "_id": "${space_id}_65016a5deef6ae147264937e",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_plan": "${space_id}_6501683ceef6ae1472649377",
+      "name": "8月份绩效考核",
+      "performance_template": "${space_id}_65016459eef6ae147264936f",
+      "assessor": "${space_id}_rn7v8j67Qj26M9hrc",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "assessor_weight": 1,
+      "template_weight": 0.7,
+      "displayAs": null,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:53:01.102Z",
+      "modified": "2023-09-13T08:38:42.647Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "start_date": "2023-08-01T00:00:00.000Z",
+      "end_date": "2023-08-31T00:00:00.000Z",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "type": "accessment",
+      "max_score": 100,
+      "_display": {
+        "assessor": {
+          "label": "张国强",
+          "value": "rn7v8j67Qj26M9hrc"
+        }
+      }
+    },
+    {
+      "_id": "${space_id}_65016a83eef6ae1472649382",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_plan": "${space_id}_65016864eef6ae1472649378",
+      "name": "9月份出纳绩效考核",
+      "performance_template": "${space_id}_65016459eef6ae147264936f",
+      "assessor": "${space_id}_rn7v8j67Qj26M9hrc",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "assessor_weight": 1,
+      "template_weight": 0.7,
+      "displayAs": null,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:53:39.702Z",
+      "modified": "2023-09-13T08:38:42.848Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "start_date": "2023-09-01T00:00:00.000Z",
+      "end_date": "2023-09-30T00:00:00.000Z",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "type": "accessment",
+      "max_score": 100,
+      "_display": {
+        "assessor": {
+          "label": "张国强",
+          "value": "rn7v8j67Qj26M9hrc"
+        }
+      }
+    },
+    {
+      "_id": "${space_id}_65018bb1a0a18a323b1e026c",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "performance_plan": "${space_id}_6501898da0a18a323b1e026a",
+      "name": "个人评分",
+      "performance_template": "${space_id}_650164d9eef6ae1472649371",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "assessor": "${space_id}_rn7v8j67Qj26M9hrc",
+      "assessor_weight": 1,
+      "template_weight": 0.3,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T10:15:13.384Z",
+      "modified": "2023-09-13T10:15:13.384Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "start_date": "2023-09-01T00:00:00.000Z",
+      "end_date": "2023-09-30T00:00:00.000Z",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "type": "personal",
+      "max_score": 30
+    }
+  ]

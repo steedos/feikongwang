@@ -1,0 +1,19 @@
+name: material_group
+label: 物料分组
+reference_to: material_group
+sort_no: 120
+type: lookup
+required: true
+filterable: true
+amis:
+  autoFill:
+    fillMapping:
+      "asset_type": "${asset_type}"
+    api:
+      url: "${context.rootUrl}/graphql?material_group=${material_group}"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:material_group(filters: [[\"_id\", \"=\", \"${material_group}\"]], top: 1){name,asset_type}}"
+      adaptor: "console.log('11==> ', payload);payload.data.asset_type=payload.data.rows[0].asset_type; return payload; "

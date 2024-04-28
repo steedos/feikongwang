@@ -1,0 +1,4 @@
+name: end_time
+label: 用车结束时间
+sort_no: 160
+type: time

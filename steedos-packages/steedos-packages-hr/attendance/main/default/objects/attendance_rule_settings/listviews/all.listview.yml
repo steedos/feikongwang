@@ -1,0 +1,26 @@
+name: all
+columns:
+  - field: name
+  - field: rule_type
+  - field: work_start
+  - field: work_end
+  - field: enable_flexible_commuting
+  - field: daily_hours
+  - field: status
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns:
+  - field: name
+  - field: rule_type
+  - field: status
+  - field: enable_flexible_commuting
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: rule_type
+  - field: status
+shared: true
+sort: []
+sort_no: 100
+type: grid

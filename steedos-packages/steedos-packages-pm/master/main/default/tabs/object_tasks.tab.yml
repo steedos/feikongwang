@@ -1,0 +1,7 @@
+name: object_tasks
+desktop: true
+label: 任务
+mobile: true
+object: tasks
+permissions: []
+type: object

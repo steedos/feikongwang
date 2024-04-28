@@ -1,0 +1,6 @@
+CustomApplications:
+  admin:
+    name: 设置
+    description: 管理员设置公司、人员、权限等。
+    groups: 
+      app_settings: 应用设置

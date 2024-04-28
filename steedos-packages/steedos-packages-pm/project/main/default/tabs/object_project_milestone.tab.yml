@@ -1,0 +1,7 @@
+name: object_project_milestone
+desktop: true
+label: 里程碑
+mobile: true
+object: project_milestone
+permissions: []
+type: object

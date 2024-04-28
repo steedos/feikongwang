@@ -1,0 +1,7 @@
+name: object_hr_regular_apply
+desktop: true
+label: 转正
+mobile: true
+object: hr_regular_apply
+permissions: []
+type: object

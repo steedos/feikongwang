@@ -1,0 +1,44 @@
+name: 供应商
+code: merchant
+description: 供应商资质审查、绩效评估与风险管理。
+icon_slds: channel_program_members
+is_creator: true
+mobile: true
+showSidebar: true
+sort: 9100
+tab_groups:
+  - group_name: 供应商管理
+    default_open: true
+  - group_name: 考核设置
+    default_open: true
+tab_items:
+  object_accounts:
+    group: 供应商管理
+    index: 1
+  object_accounts_type:
+    group: 供应商管理
+    index: 2
+  object_accounts_level:
+    group: 供应商管理
+    index: 3
+  object_assess_template:
+    group: 考核设置
+    index: 4
+  object_assess_supplier:
+    group: 考核设置
+    index: 5
+  object_assess_record:
+    group: 考核设置
+    index: 6
+  object_assess_score: 
+    group: 考核设置
+    index: 8
+tabs:
+  - object_accounts
+  - object_accounts_type
+  - object_accounts_level
+  - object_assess_template
+  - object_assess_supplier
+  - object_assess_record
+  - object_assess_score
+visible: true

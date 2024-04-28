@@ -1,0 +1,6 @@
+name: assess_evaluation_score
+label: 供应商评分
+type: lookup
+reference_to: assess_evaluation_score
+sort_no: 400
+hidden: true

@@ -1,0 +1,34 @@
+name: performance_plan_item_beforeUpdate
+listenTo: performance_plan_item
+when:
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  /**
+   * 限制用户更新考核计划明细
+   * 考核计划状态为进行中或已结束时，不允许修改考核计划明细
+   */
+  const { userId, spaceId } = ctx.params;
+  const user = await ctx.getUser(userId, spaceId);
+  let planItem = await ctx.broker.call('api.graphql', {
+      query: `
+             {
+                rows: performance_plan_item(filters: ["_id", "=", "${ctx.params.id}"]) {
+                          _id
+                          performance_plan__expand {
+                              _id
+                              status
+                          }
+                      }
+            }
+        `},
+      {
+          user: user
+      }
+  )
+
+  let plan = planItem.data.rows[0].performance_plan__expand
+
+  if (plan.status !== 'unplayed') {
+      throw new Error('考核正在进行中或已结束 禁止操作！')
+  }

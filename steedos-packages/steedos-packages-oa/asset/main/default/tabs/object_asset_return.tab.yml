@@ -1,0 +1,7 @@
+name: object_asset_return
+desktop: true
+label: 资产归还
+mobile: true
+object: asset_return
+permissions: []
+type: object

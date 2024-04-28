@@ -1,0 +1,7 @@
+name: budget_home
+is_active: true
+label: 预算首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

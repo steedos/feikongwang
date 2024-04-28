@@ -1,0 +1,5 @@
+name: sequence_number
+label: 序号
+sort_no: 90
+type: number
+visible_on: "${global.mode === 'read' ? true : false}"

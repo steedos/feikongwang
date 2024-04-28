@@ -1,0 +1,4 @@
+name: car
+label: 车号
+sort_no: 120
+type: text

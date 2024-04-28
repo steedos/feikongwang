@@ -1,0 +1,14 @@
+name: assets_card_datail
+__filename: >-
+  /workspace/steedos-ee/steedos-packages-oa/asset/main/default/pages/assets_card_datail.page.yml
+is_active: true
+label: 资产卡片详情页
+object_name: assets_card
+pageAssignments:
+  - type: orgDefault
+    page: assets_card_datail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

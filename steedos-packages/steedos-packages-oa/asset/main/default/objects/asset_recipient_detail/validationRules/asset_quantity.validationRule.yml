@@ -1,0 +1,5 @@
+name: asset_quantity
+active: true
+error_condition_formula: |-
+  quantity > asset_quantity
+error_message: 资产领用不能大于剩余数量

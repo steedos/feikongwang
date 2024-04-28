@@ -1,0 +1,6 @@
+name: enable
+label: 是否启用
+type: boolean
+sort_no: 140
+defaultValue: true
+filterable: true

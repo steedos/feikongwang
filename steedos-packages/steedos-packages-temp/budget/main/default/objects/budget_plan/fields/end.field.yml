@@ -1,0 +1,14 @@
+name: end
+filterable: false
+generated: false
+group: 预算方案
+index: false
+inlineHelpText: 请填写完整年度区间范围。
+is_name: false
+is_wide: false
+label: 预算结束日期
+primary: false
+required: true
+sort_no: 130
+sortable: false
+type: date

@@ -1,0 +1,6 @@
+name: maximum_request
+label: 单次请假最大数值
+precision: 18
+scale: 1
+sort_no: 130
+type: number

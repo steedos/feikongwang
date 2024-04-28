@@ -1,0 +1,13 @@
+name: venue
+filterable: false
+generated: false
+group: 调动信息
+index: false
+is_name: false
+is_wide: false
+label: 办公地点
+primary: false
+required: false
+sort_no: 210
+sortable: false
+type: text

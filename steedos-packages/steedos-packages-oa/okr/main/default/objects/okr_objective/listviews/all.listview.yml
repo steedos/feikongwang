@@ -1,0 +1,21 @@
+name: all
+columns:
+  - field: name
+    wrap: false
+  - field: period
+    wrap: false
+  - field: ownership
+    wrap: false
+  - field: owner
+    wrap: false
+  - field: progress
+    wrap: false
+  - field: confidence
+    wrap: false
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+show_count: false
+type: grid

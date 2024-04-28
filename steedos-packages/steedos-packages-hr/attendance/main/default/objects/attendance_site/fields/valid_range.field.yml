@@ -1,0 +1,7 @@
+name: valid_range
+label: 有效范围（米）
+precision: 18
+required: true
+scale: 2
+sort_no: 200
+type: number

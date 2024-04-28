@@ -1,0 +1,38 @@
+name: project_log
+label: Log
+description: 
+fields:
+  detail:
+    label: Content
+    help: 
+    description: 
+  name:
+    label: Title
+    help: 
+    description: 
+  project:
+    label: Project
+    help: 
+    description: 
+  project_milestone:
+    label: Project Milestone
+    help: 
+    description: 
+  type:
+    label: Type
+    help: 
+    options:
+      - label: Report
+        value: Report
+      - label: Discussion
+        value: Discussion
+      - label: Risk
+        value: Risk
+      - label: Others
+        value: Others
+    description: 
+listviews:
+  all:
+    label: All Logs
+  recent:
+    label: Recently Viewed

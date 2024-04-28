@@ -1,0 +1,5 @@
+name: resign_date
+group: 其他信息
+label: 离职日期
+sort_no: 365
+type: date

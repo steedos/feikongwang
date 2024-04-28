@@ -1,0 +1,19 @@
+name: weekday
+label: 星期
+options:
+  - label: 一
+    value: Monday
+  - label: 二
+    value: Tuesday
+  - label: 三
+    value: Wednesday
+  - label: 四
+    value: Thursday
+  - label: 五
+    value: Friday
+  - label: 六
+    value: Saturday
+  - label: 日
+    value: Sunday
+sort_no: 120
+type: select

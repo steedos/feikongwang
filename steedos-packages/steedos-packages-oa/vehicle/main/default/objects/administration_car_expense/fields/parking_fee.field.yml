@@ -1,0 +1,6 @@
+name: parking_fee
+label: 停车过路费（元）
+precision: 18
+scale: 2
+sort_no: 130
+type: currency

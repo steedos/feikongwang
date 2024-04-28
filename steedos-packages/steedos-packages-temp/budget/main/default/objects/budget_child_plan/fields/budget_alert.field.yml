@@ -1,0 +1,21 @@
+name: budget_alert
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算预警
+multiple: false
+options:
+  - label: 不预警
+    value: 不预警
+  - label: 80%百分比预警
+    value: 80%百分比预警
+  - label: 90%百分比预警
+    value: 90%百分比预警
+primary: false
+required: true
+sort_no: 200
+sortable: false
+type: select

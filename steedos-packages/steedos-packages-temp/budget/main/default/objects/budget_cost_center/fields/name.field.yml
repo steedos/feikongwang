@@ -1,0 +1,6 @@
+name: name
+index: true
+label: 成本中心名称
+required: true
+sort_no: 100
+type: text

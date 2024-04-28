@@ -1,0 +1,5 @@
+name: next_inspect_time
+label: 下次验车时间
+sort_no: 200
+type: date
+sortable: true

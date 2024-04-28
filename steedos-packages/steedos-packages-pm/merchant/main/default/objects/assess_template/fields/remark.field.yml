@@ -1,0 +1,6 @@
+name: remark
+label: 模版说明
+type: text
+is_wide: true
+rows: 2
+sort_no: 130

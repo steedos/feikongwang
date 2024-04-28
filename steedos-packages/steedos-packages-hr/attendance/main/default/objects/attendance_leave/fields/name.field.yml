@@ -1,0 +1,7 @@
+name: name
+index: true
+label: 事由
+required: true
+sort_no: 100
+type: text
+filterable: true

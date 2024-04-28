@@ -1,0 +1,26 @@
+name: all
+columns:
+  - field: name
+  - field: staff
+  - field: type
+  - field: company
+  - field: department
+  - field: apply_date
+  - field: number
+  - field: position
+  - field: contact
+  - field: work_date
+  - field: identity
+  - field: remark
+  - field: instance_state
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort:
+  - field_name: apply_date
+    order: desc
+sort_no: 100
+type: grid

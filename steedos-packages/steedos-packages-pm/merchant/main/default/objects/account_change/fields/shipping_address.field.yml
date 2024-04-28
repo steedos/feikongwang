@@ -1,0 +1,4 @@
+name: shipping_address
+type: textarea
+hidden: true
+label: 发货地址

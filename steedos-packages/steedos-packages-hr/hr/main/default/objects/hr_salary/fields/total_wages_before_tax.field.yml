@@ -1,0 +1,6 @@
+name: total_wages_before_tax
+label: 税前工资合计
+precision: 18
+scale: 2
+sort_no: 250
+type: currency

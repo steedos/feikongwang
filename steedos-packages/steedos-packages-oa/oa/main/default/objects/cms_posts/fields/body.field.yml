@@ -1,0 +1,8 @@
+name: body
+type: markdown
+label: Body
+rows: 5
+is_wide: true
+hidden: true
+omit: true
+sort_no: 30

@@ -1,0 +1,47 @@
+name: project_time
+label: 用时
+description: 
+fields:
+  description:
+    label: 备注
+    help: 
+    description: 
+  hours:
+    label: 花费人时
+    help: 
+    description: 
+  incurred_by:
+    label: 处理人员
+    help: 
+    description: 
+  incurred_date:
+    label: 发生日期
+    help: 
+    description: 
+  name:
+    label: 编号
+    help: 
+    description: 
+  owner:
+    label: 人员
+    help: 
+    description: 
+  project_id:
+    label: 项目
+    help: 
+    description: 
+  project_task:
+    label: 任务
+    help: 
+    description: 
+  task_finished:
+    label: 任务已完成
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  my:
+    label: 我的
+  recent:
+    label: 最近查看

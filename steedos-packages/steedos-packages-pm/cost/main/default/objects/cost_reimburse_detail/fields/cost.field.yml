@@ -1,0 +1,13 @@
+name: cost
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 费用明细
+primary: false
+reference_to: [cost_schedule_reimburse_detail,cost_business_reimburse_detail,cost_loan_detail]
+hidden: true
+sortable: false
+type: lookup
+create: false

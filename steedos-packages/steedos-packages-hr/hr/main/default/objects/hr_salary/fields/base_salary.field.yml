@@ -1,0 +1,6 @@
+name: base_salary
+label: 基本工资
+precision: 18
+scale: 2
+sort_no: 130
+type: currency

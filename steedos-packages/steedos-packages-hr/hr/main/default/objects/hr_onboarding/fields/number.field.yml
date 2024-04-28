@@ -1,0 +1,6 @@
+name: number
+group: 在职信息
+label: 工号
+sort_no: 110
+type: text
+filterable: true

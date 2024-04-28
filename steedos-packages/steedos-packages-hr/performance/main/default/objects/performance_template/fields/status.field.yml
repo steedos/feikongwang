@@ -1,0 +1,14 @@
+name: status
+type: select
+label: 状态
+defaultValue: enable
+visible_on: "{{global.mode === 'read' ? true : false}}"
+sort_no: 140
+options:
+  - label: 启用
+    value: enable
+    color: 49d181
+  - label: 停用
+    value: disable
+    color: cfd3d7
+filterable: true

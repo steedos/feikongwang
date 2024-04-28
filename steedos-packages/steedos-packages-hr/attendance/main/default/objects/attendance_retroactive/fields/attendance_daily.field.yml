@@ -1,0 +1,23 @@
+name: attendance_daily
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 异常考勤记录
+primary: false
+reference_to: attendance_daily
+required: true
+sort_no: 300
+sortable: false
+type: master_detail
+write_requires_master_read: true
+group: 补卡信息
+filtersFunction: |-
+  function(filters,values) {
+    console.log("补卡信息",values)
+    return [
+      ['status', 'contains',["late",'early','absent','lack']],
+      ['user','=',values.staff]
+    ];
+  }

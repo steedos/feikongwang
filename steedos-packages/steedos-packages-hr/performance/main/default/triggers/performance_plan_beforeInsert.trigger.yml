@@ -1,0 +1,29 @@
+name: performance_plan_beforeInsert
+listenTo: performance_plan
+when:
+  - beforeInsert
+isEnabled: true
+handler: >-
+  /**
+   * 根据考核计划中结束日期确定考核计划的所属季度
+   */
+  const { doc } = ctx.params
+
+  let end_date = new Date(doc.end_date);
+
+
+  let year = end_date.getFullYear();
+
+  let month = end_date.getMonth() + 1;
+
+  let quarter = ['first_quarter', 'second_quarter', 'third_quarter',
+  'fourth_quarter']
+
+  let currQuarter = Math.floor((month % 3 == 0 ? (month / 3) : (month / 3 +
+  1)));
+
+
+  Object.assign(doc, {
+      'quarter': quarter[currQuarter - 1],
+      'year': '' + year
+  })

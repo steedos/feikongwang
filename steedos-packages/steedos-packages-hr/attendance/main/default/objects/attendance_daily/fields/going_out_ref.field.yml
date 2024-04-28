@@ -1,0 +1,7 @@
+name: going_out_ref
+label: 外出记录
+sort_no: 340
+type: lookup
+reference_to: attendance_going_out
+multiple: true
+group: 相关流程

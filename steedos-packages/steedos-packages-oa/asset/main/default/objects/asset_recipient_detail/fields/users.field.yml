@@ -1,0 +1,7 @@
+name: users
+label: 领用人
+reference_to: users
+sort_no: 140
+sortable: false
+type: lookup
+required: true

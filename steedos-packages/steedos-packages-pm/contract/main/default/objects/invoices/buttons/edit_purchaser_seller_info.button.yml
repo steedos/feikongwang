@@ -1,0 +1,69 @@
+name: edit_purchaser_seller_info
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "编辑购销方信息",
+              "id": "u:edit_purchaser_seller_info",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "编辑 发票台账",
+                                  "body": [
+                                      {
+                                          "type": "steedos-object-form",
+                                          "label": "对象表单",
+                                          "objectApiName": "${objectName}",
+                                          "recordId": "${recordId}",
+                                          "className": "",
+                                          "id": "u:7bb57a610c8a",
+                                          "mode": "edit",
+                                          "fields": [
+                                              "purchaser_name",
+                                              "purchaser_register_num",
+                                              "seller_name",
+                                              "seller_register_num"
+                                          ]
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "className": "app-popover",
+                                  "id": "u:b3bfb4b1d4ca",
+                                  "closeOnEsc": false,
+                                  "size": "lg"
+                              }
+                          }
+                      ]
+                  }
+              },
+              "disabled": false,
+              "hidden": false
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "id": "u:e26d585232cb",
+      "bodyClassName": "p-0"
+  }
+is_enable: true
+label: 编辑
+'on': record_only
+type: amis_button

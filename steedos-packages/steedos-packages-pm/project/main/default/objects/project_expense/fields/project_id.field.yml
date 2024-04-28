@@ -1,0 +1,15 @@
+name: project_id
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 项目
+omit: false
+readonly: false
+reference_to: project
+required: true
+searchable: false
+sort_no: 130
+sortable: true
+type: lookup

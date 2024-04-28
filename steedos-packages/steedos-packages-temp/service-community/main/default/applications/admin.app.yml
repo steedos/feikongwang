@@ -1,0 +1,6 @@
+code: admin
+name: admin_pm
+tab_items:
+  admin_pm_card:
+    group: app_settings
+    index: 50

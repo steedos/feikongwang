@@ -1,0 +1,6 @@
+name: times
+label: 申请用印次数
+precision: 18
+scale: 0
+sort_no: 150
+type: number

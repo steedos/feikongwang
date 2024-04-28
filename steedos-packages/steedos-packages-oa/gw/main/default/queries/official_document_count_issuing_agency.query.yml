@@ -1,0 +1,109 @@
+name: official_document_count_issuing_agency
+datasource: default
+description: |-
+  查询对象：incoming_document 收文
+  查询条件：审批记录未删除、来文日期在当月、本年时间范围内。
+  查询结果：来文单位在当月、本年的次数。
+label: 公文-来文单位统计
+options:
+  parameters:
+    - title: this_year
+      name: this_year
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_year
+    - title: this_month
+      name: this_month
+      type: date-range
+      global: false
+      locals: []
+      value: d_this_month
+  apply_auto_limit: false
+query: |-
+  {
+    "collection": "incoming_document",
+    "aggregate": [
+        {
+            "$project": {
+                "is_deleted": "$is_deleted",
+                "name": "$name",
+                "issuing_agency": "$issuing_agency",
+                "date_of_issue": {
+                    "$dateToString": {
+                        "format": "%Y-%m-%d %H:%M:%S",
+                        "date": "$date_of_issue",
+                        "timezone": "+00"
+                    }
+                }
+            }
+        },
+        {
+              "$facet": {
+                  "this_month": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "$and": [
+                                  {
+                                      "date_of_issue": {
+                                          "$gte": "{{ this_month.start }}"
+                                      }
+                                  },
+                                  {
+                                      "date_of_issue": {
+                                          "$lte": "{{ this_month.end }}"
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "$group": {
+                              "_id": "$issuing_agency",
+                              "count": {
+                                  "$sum": 1
+                              }
+                          }
+                      }
+                  ],
+                  "this_year": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "$and": [
+                                  {
+                                      "date_of_issue": {
+                                          "$gte": "{{ this_year.start }}"
+                                      }
+                                  },
+                                  {
+                                      "date_of_issue": {
+                                          "$lte": "{{ this_year.end }}"
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "$group": {
+                              "_id": "$issuing_agency",
+                              "count": {
+                                  "$sum": 1
+                              }
+                          }
+                      }
+                  ]
+              }
+          }
+     ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

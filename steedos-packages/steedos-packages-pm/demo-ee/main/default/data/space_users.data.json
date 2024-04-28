@@ -1,0 +1,277 @@
+[
+    {
+        "_id": "${space_id}_rn7v8j67Qj26M9hrc",
+        "name": "张国强",
+        "username": "${space_id}_zhangguoqiang",
+        "mobile": "18902576722",
+        "organizations": [
+            "${space_id}_wYdW3rLotPofktany"
+        ],
+        "position": "总经理",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:48:24.016Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:51:20.011Z"
+        },
+        "owner": "rn7v8j67Qj26M9hrc",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "user": "${space_id}_rn7v8j67Qj26M9hrc",
+        "organization": "${space_id}_wYdW3rLotPofktany",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_wYdW3rLotPofktany",
+            "${space_id}_XqNXgeQokjatopEv6"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "email_verified": false,
+        "sort_no": null
+    },
+    {
+        "_id": "${space_id}_zgahuynzvxfwYFSae",
+        "name": "尹翼飞",
+        "username": "${space_id}_yinyifei",
+        "mobile": "16783452261",
+        "organizations": [
+            "${space_id}_aQZRY5qEzZN9GuSku"
+        ],
+        "position": "办公室主任",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:49:30.301Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:51:27.387Z"
+        },
+        "owner": "skjndSByYdGRTQnKy",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "email_verified": false,
+        "user": "${space_id}_skjndSByYdGRTQnKy",
+        "organization": "${space_id}_aQZRY5qEzZN9GuSku",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_aQZRY5qEzZN9GuSku",
+            "${space_id}_XqNXgeQokjatopEv6"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "sort_no": null
+    },
+    {
+        "_id": "${space_id}_8qQ5TwdoY8fqo7tga",
+        "name": "杨田",
+        "username": "${space_id}_yangtian",
+        "mobile": "16277360901",
+        "organizations": [
+            "${space_id}_fwozpNYKxP86maExN"
+        ],
+        "position": "销售主管",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:52:23.521Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:52:23.521Z"
+        },
+        "owner": "8qQ5TwdoY8fqo7tga",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "email_verified": false,
+        "user": "${space_id}_8qQ5TwdoY8fqo7tga",
+        "organization": "${space_id}_fwozpNYKxP86maExN",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_fwozpNYKxP86maExN",
+            "${space_id}_XqNXgeQokjatopEv6"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_9ZQcWvzsbqkbMyGdb",
+        "name": "刘静",
+        "username": "${space_id}_liujing",
+        "mobile": "13145237780",
+        "organizations": [
+            "${space_id}_3NiKjvRoha7RgGcxx"
+        ],
+        "position": "出纳",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:53:06.179Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:53:06.179Z"
+        },
+        "owner": "9ZQcWvzsbqkbMyGdb",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "email_verified": false,
+        "user": "${space_id}_9ZQcWvzsbqkbMyGdb",
+        "organization": "${space_id}_3NiKjvRoha7RgGcxx",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_3NiKjvRoha7RgGcxx",
+            "${space_id}_XqNXgeQokjatopEv6"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_SNZ2qzqzpu4K7pkE8",
+        "name": "张莉莉",
+        "username": "${space_id}_zhanglili",
+        "mobile": "16377829145",
+        "organizations": [
+            "${space_id}_XS7nMqRyJSNMiyz9Q"
+        ],
+        "position": "人事经理",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:54:04.448Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:54:04.448Z"
+        },
+        "owner": "SNZ2qzqzpu4K7pkE8",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "email_verified": false,
+        "user": "${space_id}_SNZ2qzqzpu4K7pkE8",
+        "organization": "${space_id}_XS7nMqRyJSNMiyz9Q",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_XS7nMqRyJSNMiyz9Q",
+            "${space_id}_XqNXgeQokjatopEv6"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_TzudkPm4KRCDN3gTP",
+        "name": "魏涛",
+        "username": "${space_id}_weitao",
+        "mobile": "19088245281",
+        "organizations": [
+            "${space_id}_6jJafbSSHxnCuvhEM"
+        ],
+        "position": "项目经理",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:55:00.873Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:55:00.873Z"
+        },
+        "owner": "TzudkPm4KRCDN3gTP",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "email_verified": false,
+        "user": "${space_id}_TzudkPm4KRCDN3gTP",
+        "organization": "${space_id}_6jJafbSSHxnCuvhEM",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_6jJafbSSHxnCuvhEM",
+            "${space_id}_XqNXgeQokjatopEv6"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_Gj4J9xYqciQq5FFgz",
+        "name": "孙明博",
+        "username": "${space_id}_sunmingbo",
+        "mobile": "17622893611",
+        "organizations": [
+            "${space_id}_nkT6Wkk3bGtMYXXNf"
+        ],
+        "position": "普通用户",
+        "profile": "user",
+        "locale": "zh-cn",
+        "email_notification": false,
+        "sms_notification": false,
+        "user_accepted": true,
+        "password_expired": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:56:18.083Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:56:18.083Z"
+        },
+        "owner": "9W49f75qzD5qsFQMW",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "invite_state": "accepted",
+        "mobile_verified": false,
+        "email_verified": false,
+        "user": "${space_id}_9W49f75qzD5qsFQMW",
+        "organization": "${space_id}_nkT6Wkk3bGtMYXXNf",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "organizations_parents": [
+            "${space_id}_nkT6Wkk3bGtMYXXNf",
+            "${space_id}_hgpMFjxg7j6KTGj7t"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

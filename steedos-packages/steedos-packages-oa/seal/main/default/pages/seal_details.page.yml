@@ -1,0 +1,12 @@
+name: seal_details
+is_active: true
+label: 印章详情页
+object_name: seal
+pageAssignments:
+  - type: orgDefault
+    page: seal_details
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

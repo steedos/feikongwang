@@ -1,0 +1,16 @@
+name: company
+defaultValue: '{{global.user.company_id}}'
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 所属公司
+multiple: false
+primary: false
+reference_to: company
+required: false
+sort_no: 180
+sortable: false
+type: lookup
+searchable: true

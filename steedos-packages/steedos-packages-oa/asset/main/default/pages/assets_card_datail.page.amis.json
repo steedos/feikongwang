@@ -1,0 +1,114 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:5199b17f9f38"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:rounded sm:border border-gray-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:985fddb67db0"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "资产明细",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:5b1cd4810723",
+                            "relatedObjectApiName": "assets_card_detail"
+                        }
+                    ],
+                    "id": "u:bdc592461154"
+                },
+                {
+                    "title": "变动信息",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:92c2f7fe979a",
+                            "relatedObjectApiName": "asset_recipient_detail",
+                            "visibleOn": "${_master.record.separate_accounting === false}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:efb09fe14419",
+                            "relatedObjectApiName": "asset_borrowing_detail",
+                            "visibleOn": "${_master.record.separate_accounting === true}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:5d08609ede5a",
+                            "relatedObjectApiName": "asset_return_detail",
+                            "visibleOn": "${_master.record.separate_accounting === true}"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:5fd56c566e7f",
+                            "relatedObjectApiName": "asset_retirement_detail"
+                        }
+                    ],
+                    "id": "u:07741fc0e1f2"
+                },
+                {
+                    "title": "附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:97f1f365bd1d",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:4080e13cab0f"
+                }
+            ],
+            "id": "u:8c65264fc1dd"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_assets_card_record_detail",
+    "name": "page_assets_card_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

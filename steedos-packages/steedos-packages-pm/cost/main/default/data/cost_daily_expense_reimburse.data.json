@@ -1,0 +1,38 @@
+[
+    {
+        "_id": "${space_id}_62fb5656cb9c8306a51b2bd6",
+        "project": "${space_id}_62620e5787e5c50032d9bd39",
+        "applicant": "${space_owner_id}",
+        "company": "${space_id}",
+        "department": "${space_id}_aQZRY5qEzZN9GuSku",
+        "going_out": [
+            "${space_id}_62fb5541cb9c8306a51b2bca"
+        ],
+        "name": "因公外出费用报销",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:33:26.718Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T08:29:35.025Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "202208160001",
+        "amount": 400,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "${space_id}_pwrLdMMzyqeFo4iYY",
+                "state": "approved"
+            }
+        ],
+        "locked": true,
+        "remark": ""
+    }
+]

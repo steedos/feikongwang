@@ -1,0 +1,8 @@
+name: object_attendance_daily
+desktop: true
+icon: address
+label: 每日考勤情况
+mobile: true
+object: attendance_daily
+permissions: []
+type: object

@@ -1,0 +1,16 @@
+name: attendance_leave_leave_change_attendance_days
+listenTo: attendance_leave
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  // 请假流程通过，更改假期余额
+  const { doc, previousDoc } = ctx.params;
+  console.log("请假流程通过，更改假期余额")
+  await ctx.broker.call(
+      '@steedos-labs/attendance.attendance_leave_change_attendance_days',
+      {
+         previousDoc : previousDoc,
+         doc:doc
+      }
+  );

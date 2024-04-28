@@ -1,0 +1,13 @@
+name: budget_child_plan
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算子方案
+primary: false
+reference_to: budget_child_plan
+required: true
+sort_no: 180
+sortable: false
+type: lookup

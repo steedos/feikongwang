@@ -1,0 +1,23 @@
+name: budget_approve
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算审批规则
+multiple: false
+options:
+  - label: 不需要
+    value: 不需要
+  - label: 期初预算需审批
+    value: 期初预算需审批
+  - label: 预算调整后需审批
+    value: 预算调整后需审批
+  - label: 期初和预算调整后均需审批
+    value: 期初和预算调整后均需审批
+primary: false
+required: true
+sort_no: 150
+sortable: false
+type: select

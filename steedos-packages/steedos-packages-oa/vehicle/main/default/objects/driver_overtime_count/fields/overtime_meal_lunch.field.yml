@@ -1,0 +1,6 @@
+name: overtime_meal_lunch
+label: 误餐费-12点
+precision: 18
+scale: 2
+sort_no: 192
+type: number

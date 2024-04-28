@@ -1,0 +1,52 @@
+name: todo
+columns:
+  - field: name
+  - field: assignees
+  - field: start_date
+  - field: due_date
+  - field: priority
+  - field: state
+  - field: collaborator
+  - field: project_milestone
+  - field: project
+  - field: created
+crud_mode: table
+filter_fields:
+  - name
+  - project
+  - assignees
+  - due_date
+  - priority
+  - state
+  - completed
+filter_scope: space
+filters:
+  - - has_complete
+    - '!='
+    - true
+is_enable: true
+label: 进行中任务
+mobile_columns:
+  - field: name
+  - field: assignees
+  - field: project
+  - field: priority
+  - field: due_date
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: project
+  - field: state
+  - field: assignees
+  - field: collaborator
+  - field: project_milestone
+  - field: start_date
+  - field: due_date
+  - field: priority
+shared: true
+show_count: true
+sort:
+  - field_name: created
+    order: desc
+sort_no: 20
+type: grid

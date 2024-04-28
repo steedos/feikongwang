@@ -1,0 +1,4 @@
+name: hk_amount_limit
+active: true
+error_condition_formula: repayment_amount>personal_loan.remaining_amount
+error_message: 还款金额大于借款剩余还款金额，请修改还款金额。

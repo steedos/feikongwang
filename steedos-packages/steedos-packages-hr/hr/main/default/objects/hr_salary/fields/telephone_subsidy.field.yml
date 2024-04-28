@@ -1,0 +1,6 @@
+name: telephone_subsidy
+label: 话费补贴
+precision: 18
+scale: 2
+sort_no: 160
+type: currency

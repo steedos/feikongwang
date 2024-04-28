@@ -1,0 +1,73 @@
+name: 费用报销
+code: cost_contral
+description: 实现公司及人员的费用管理，包括事前申请、事后报销管理等。
+icon_slds: client
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+mobile_objects:
+  - cost_daily_expense_reimburse
+  - cost_business_out_reimburse
+  - cost_personal_loan
+  - cost_personal_repayment
+  - cost_business_loan_reimburse
+  - cost_reimburse_detail
+  - cost_type
+  - instance_tasks
+  - invoices
+showSidebar: true
+sort: 70
+tab_groups:
+  - group_name: 费用管理
+    default_open: true
+  - group_name: 借款管理
+    default_open: true
+  - group_name: 费用设置
+    default_open: true
+  - group_name: 流程审批
+    default_open: true
+tab_items:
+  cost:
+    group: 费用管理
+    index: 1
+  object_invoices:
+    group: 费用管理
+    index: 2
+  object_cost_reimburse_detail:
+    group: 费用管理
+    index: 2
+  object_cost_daily_expense_reimburse:
+    group: 费用管理
+    index: 3
+  object_cost_business_out_reimburse:
+    group: 费用管理
+    index: 4
+  object_cost_personal_loan:
+    group: 借款管理
+    index: 5
+  object_cost_personal_repayment:
+    group: 借款管理
+    index: 6
+  object_cost_business_loan_reimburse:
+    group: 借款管理
+    index: 7
+  object_cost_type:
+    group: 费用设置
+    index: 8
+  object_instance_tasks:
+    group: 流程审批
+    index: 9
+tabs:
+  - cost
+  - object_invoices
+  - object_cost_reimburse_detail
+  - object_cost_daily_expense_reimburse
+  - object_cost_business_out_reimburse
+  - object_cost_personal_loan
+  - object_cost_personal_repayment
+  - object_cost_business_loan_reimburse
+  - object_cost_type
+  - object_instance_tasks
+visible: true

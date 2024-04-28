@@ -1,0 +1,36 @@
+[
+    {
+        "_id": "${space_id}_62fb55c4cb9c8306a51b2bd2",
+        "arrive_city": "北京",
+        "depart_city": "上海",
+        "end_time": {
+            "$date": "2022-08-20T01:00:00Z"
+        },
+        "partner": "张飞",
+        "round_trip": "单程",
+        "start_time": {
+            "$date": "2022-08-18T01:00:41.363Z"
+        },
+        "travel_application": "${space_id}_62fb559dcb9c8306a51b2bd0",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:30:59.98Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T08:32:22.028Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "2022-00001",
+        "days": 2,
+        "_table": {
+            "_id": "${space_id}_62fb55c4cb9c8306a51b2bd2",
+            "_code": "行程信息"
+        }
+    }
+]

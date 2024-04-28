@@ -1,0 +1,7 @@
+name: object_cost_business_out_reimburse
+desktop: true
+label: 差旅报销
+mobile: true
+object: cost_business_out_reimburse
+permissions: []
+type: object

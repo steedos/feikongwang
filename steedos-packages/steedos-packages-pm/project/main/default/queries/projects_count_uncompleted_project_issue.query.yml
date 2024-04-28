@@ -1,0 +1,30 @@
+name: projects_count_uncompleted_project_issue
+datasource: default
+label: 项目-待处理问题
+options:
+  parameters: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "project_issue",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "status": "$status"
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "status": {
+                      "$in": ["Open", "In-Process", "Escalated"]
+                  }
+              }
+          },
+          {
+              "$count": "count"
+          }
+      ]
+  }

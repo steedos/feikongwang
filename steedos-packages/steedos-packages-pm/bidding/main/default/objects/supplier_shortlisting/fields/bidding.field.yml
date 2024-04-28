@@ -1,0 +1,28 @@
+name: bidding
+label: 招标名称
+type: lookup
+reference_to: bidding
+filterable: true
+required: true
+depend_on: 
+  - project_program
+create: false
+sort_no: 110
+filtersFunction:  |-
+  function (filters, values){
+    return [["project_program", "=", values.project_program], ["instance_state","=", "approved"]]
+  }
+
+amis:
+  autoFill:
+    fillMapping:
+      "purchase_method": "${purchase_method}"
+      "purchase_type": "${purchase_type}"
+      "principal": "${principal}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:bidding(filters: [[\"_id\", \"=\", \"${bidding}\"]], top: 1){purchase_method, purchase_type, principal}}"

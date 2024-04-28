@@ -1,0 +1,15 @@
+name: start
+filterable: true
+generated: false
+group: 加班信息
+index: false
+is_name: false
+is_wide: false
+label: 加班开始时间
+primary: false
+required: true
+sort_no: 150
+sortable: false
+type: datetime
+amis:
+  format: "YYYY-MM-DDTHH:mm:00.000Z"

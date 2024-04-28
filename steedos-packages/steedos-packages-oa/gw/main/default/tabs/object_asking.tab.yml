@@ -1,0 +1,7 @@
+name: object_asking
+desktop: true
+label: 请示
+mobile: true
+object: asking
+permissions: []
+type: object

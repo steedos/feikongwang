@@ -1,0 +1,28 @@
+name: account_change_afterUpdate
+listenTo: account_change
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  /**
+   * 供应商变更审批通过后
+   * TODO：
+   * 1、如果修改了供应商名称、则新增一条供应商信息，旧的供应商标记为“已停用”，
+   * 2、将旧供应商的未结算的合同、关联的到新供应商。
+   */
+  const { doc, previousDoc } = ctx.params
+
+  if (doc.instance_state === 'approved' && doc.instance_state !==
+  previousDoc.instance_state) {
+
+      // 去除影响主记录的字段
+      const updateDoc = Object.assign({}, doc);
+      let fieldsToDelete = ['_id', 'owner', 'parent', 'displayAs', 'space', 'created', 'modified', 'created_by', 'modified_by', 'company_ids', 'company_id'];
+      for (const field of fieldsToDelete) {
+          if (updateDoc.hasOwnProperty(field)) {
+              delete updateDoc[field];
+          }
+      }
+
+      await ctx.broker.call('@steedos-labs/merchant.modifySupplier', {'supplierId': doc.parent, 'updateDoc': updateDoc})
+  }

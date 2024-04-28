@@ -1,0 +1,7 @@
+name: department_before
+index: true
+label: 原部门
+required: true
+sort_no: 340
+type: text
+filterable: true

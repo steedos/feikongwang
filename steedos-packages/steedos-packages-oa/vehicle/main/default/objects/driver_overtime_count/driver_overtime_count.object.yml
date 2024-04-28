@@ -1,0 +1,9 @@
+name: driver_overtime_count
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+icon: buyer_account
+is_enable: true
+label: 驾驶员加班统计明细
+version: 2

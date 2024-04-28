@@ -1,0 +1,16 @@
+name: all
+columns:
+  - field: year
+  - field: quarter
+  - field: type
+  - field: performance_plan
+  - field: employee
+  - field: organization
+  - field: score
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

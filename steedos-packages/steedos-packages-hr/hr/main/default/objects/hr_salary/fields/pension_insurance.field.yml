@@ -1,0 +1,6 @@
+name: pension_insurance
+label: 养老保险
+precision: 18
+scale: 2
+sort_no: 200
+type: number

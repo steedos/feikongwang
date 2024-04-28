@@ -1,0 +1,14 @@
+name: staff
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 人员
+multiple: false
+primary: false
+reference_to: users
+required: true
+sort_no: 110
+sortable: false
+type: lookup

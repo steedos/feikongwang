@@ -1,0 +1,6 @@
+name: object_assess_record
+desktop: true
+mobile: true
+object: assess_record
+permissions: []
+type: object

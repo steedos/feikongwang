@@ -1,0 +1,25 @@
+{
+    "name": "@steedos-labs/attendance",
+    "version": "2.6.4",
+    "description": "考勤管理",
+    "main": "package.service.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "build:watch": "webpack --config webpack.config.js --watch"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@steedos-labs/master": "2.6.4",
+        "@steedos-labs/workflow": "2.6.4",
+        "moleculer-cron": "^0.0.2"
+    },
+    "devDependencies": {
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}

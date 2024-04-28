@@ -1,0 +1,6 @@
+name: organization
+label: 部门
+type: lookup
+reference_to: organizations
+sort_no: 100
+filterable: true

@@ -1,0 +1,16 @@
+name: parent
+label: Parent Category
+index: true
+type: lookup
+reference_to: cms_categories
+sortable: true
+depend_on:
+  - site
+filtersFunction: !!js/function |
+  function (filters, values) {
+    if (!values || !values.site) {
+      return ["_id", "=", null];
+    }
+    return ["site", "=", values.site];
+  }
+sort_no: 40

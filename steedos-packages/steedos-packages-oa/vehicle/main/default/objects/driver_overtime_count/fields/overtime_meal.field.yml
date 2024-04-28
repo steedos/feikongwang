@@ -1,0 +1,9 @@
+name: overtime_meal
+label: 误餐费总计
+precision: 18
+scale: 2
+sort_no: 190
+type: formula
+data_type: number
+formula: overtime_meal_lunch + overtime_meal_supper + overtime_meal_midnight
+formula_blank_value: zeros

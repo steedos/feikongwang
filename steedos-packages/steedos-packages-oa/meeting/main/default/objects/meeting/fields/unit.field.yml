@@ -1,0 +1,22 @@
+name: unit
+label: 参会单位
+type: text
+defaultValue: !<tag:yaml.org,2002:js/function> |-
+  function anonymous(
+  ) {
+
+          var collection, organziation;
+          collection = Creator.Collections["organizations"];
+          organziation = collection.findOne({
+            users: Meteor.userId(),
+            space: Session.get("spaceId")
+          }, {
+            fields: {
+              name: 1
+            }
+          }).name;
+          return organziation;
+        
+  }
+sortable: true
+sort_no: 140

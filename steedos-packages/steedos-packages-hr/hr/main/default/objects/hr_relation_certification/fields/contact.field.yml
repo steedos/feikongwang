@@ -1,0 +1,12 @@
+name: contact
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 联系方式
+primary: false
+required: true
+sort_no: 160
+sortable: false
+type: text

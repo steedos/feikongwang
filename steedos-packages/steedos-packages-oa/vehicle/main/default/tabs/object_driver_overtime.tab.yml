@@ -1,0 +1,8 @@
+name: object_driver_overtime
+desktop: true
+icon: buyer_account
+label: 驾驶员加班信息
+mobile: true
+object: driver_overtime
+permissions: []
+type: object

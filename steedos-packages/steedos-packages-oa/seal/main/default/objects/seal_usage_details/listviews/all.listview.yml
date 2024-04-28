@@ -1,0 +1,20 @@
+name: all
+columns:
+  - field: name
+  - field: file_number
+  - field: administration_stamp_usage
+  - field: company
+  - field: seal_information
+  - field: seal
+  - field: times
+  - field: actual_times
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

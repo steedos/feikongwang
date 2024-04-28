@@ -1,0 +1,5 @@
+name: company
+label: 印章所属公司
+reference_to: company
+sort_no: 110
+type: lookup

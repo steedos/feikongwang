@@ -1,0 +1,6 @@
+name: overtime_mileage
+label: 加班KM
+precision: 18
+scale: 2
+sort_no: 210
+type: number

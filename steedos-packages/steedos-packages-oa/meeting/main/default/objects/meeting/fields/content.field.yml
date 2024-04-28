@@ -1,0 +1,13 @@
+name: content
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 会议内容
+primary: false
+required: false
+rows: 3
+sort_no: 9999
+sortable: false
+type: textarea

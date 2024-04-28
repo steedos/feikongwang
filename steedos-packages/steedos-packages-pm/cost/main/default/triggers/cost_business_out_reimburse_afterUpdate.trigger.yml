@@ -1,0 +1,58 @@
+name: cost_business_out_reimburse_afterUpdate
+listenTo: cost_business_out_reimburse
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  // _ : lodash
+
+  // moment: moment
+
+  // validator: validator
+
+  // ctx
+
+  // objects
+
+  // services
+
+  const { doc, previousDoc, userId, spaceId } = ctx.params
+
+  //审批状态为已审核
+
+  if (doc.instance_state === 'approved' && doc.instance_state !==
+  previousDoc.instance_state) {
+      //查询子表差旅费用报销明细
+      const res = await ctx.broker.call('objectql.find', {
+          objectName: 'cost_business_reimburse_detail',
+          query: {
+              fields: ['_id', 'daily_expense', 'cost_code'],
+              filters: ['daily_expense', '=', doc._id],
+          },
+      }
+      );
+      for (var ress of res) {
+          //带出我的费用
+          const mydoc = await ctx.broker.call('objectql.find', {
+              objectName: 'cost_reimburse_detail',
+              query: {
+                  fields: ['_id', 'status'],
+                  filters: ['_id', '=', ress.cost_code],
+              },
+          }
+          );
+          for (var mydocs of mydoc) {
+              //修改我的费用报销状态
+              const modifyStateDoc = await ctx.broker.call(
+                  'objectql.directUpdate',
+                  {
+                      objectName: 'cost_reimburse_detail',
+                      doc: {
+                          status: 'complete'
+                      },
+                      id: mydocs._id
+                  },
+              );
+          }
+      } 
+  }

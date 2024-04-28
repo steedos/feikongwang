@@ -1,0 +1,5 @@
+name: name
+label: 计价模式名称
+type: text
+required: true
+sort_no: 100

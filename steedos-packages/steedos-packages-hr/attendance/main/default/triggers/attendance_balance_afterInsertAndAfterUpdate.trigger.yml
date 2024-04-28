@@ -1,0 +1,15 @@
+name: attendance_balance_afterInsertAndAfterUpdate
+listenTo: attendance_balance
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { doc, id } = ctx.params;
+  // 判断拥有者是否属于该用户
+  if (doc.staff != doc.owner) {
+      const balanceObj = this.getObject("attendance_balance");
+      await balanceObj.directUpdate(id, {
+          owner: doc.staff
+      })
+  }

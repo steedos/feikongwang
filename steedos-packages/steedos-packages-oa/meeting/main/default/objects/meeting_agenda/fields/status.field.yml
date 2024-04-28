@@ -1,0 +1,20 @@
+name: status
+data_type: text
+defaultValue: 未开始
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 状态
+multiple: false
+options:
+  - label: 未开始
+    value: 未开始
+  - label: 已完成
+    value: 已完成
+primary: false
+required: true
+sort_no: 160
+sortable: false
+type: select

@@ -1,0 +1,38 @@
+name: projects_sum_project_time
+datasource: default
+label: 项目-已花费工时
+options:
+  parameters: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "project_time",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "hours": "$hours"
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  }
+              }
+          },
+          {
+              "$group": {
+                  "_id": "",
+                  "hours": {
+                      "$sum": "$hours"
+                  }
+              }
+          },
+          {
+              "$project": {
+                  "_id": 1,
+                  "hours": 1
+              }
+          }
+      ]
+  }

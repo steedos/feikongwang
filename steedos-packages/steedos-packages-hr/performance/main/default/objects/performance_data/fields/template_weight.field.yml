@@ -1,0 +1,10 @@
+name: template_weight
+label: 模版权重
+type: formula
+formula: performance_plan_item.template_weight
+formula_blank_value: zeroes
+data_type: percent
+precision: 18
+scale: 2
+visilbe_on: false
+sort_no: 100

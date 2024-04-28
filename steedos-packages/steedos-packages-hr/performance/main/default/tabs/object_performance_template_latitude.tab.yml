@@ -1,0 +1,7 @@
+name: object_performance_template_latitude
+desktop: true
+label: 考核维度
+mobile: true
+object: performance_template_latitude
+permissions: []
+type: object

@@ -1,0 +1,48 @@
+name: account
+filterable: true
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters,values) {
+
+    const ids = [];
+    if (values.simple_bidding) {
+      const qR = Steedos.authRequest(`/graphql`, {
+            type: 'POST', async: false, 
+            data: JSON.stringify({
+              query: `{recommand_supplier(filters: ["simple_bidding","=", `+ JSON.stringify(simple_bidding) + `]){account}}`
+            })
+          });
+      const suppliers = qR && qR.data && qR.data.recommand_supplier;
+      for (let supplier of suppliers) {
+            ids.push(supplier.account);
+      }
+      return ['_id', 'in', ids];
+    }
+    let bidding = values.bidding;
+    const queryResult = Steedos.authRequest(`/graphql`, {
+                      type: 'POST', async: false, 
+                      data: JSON.stringify({
+                        query: `{supplier_shortlisting(filters: ["bidding","=", `+ JSON.stringify(bidding) + `]){_id}}`
+                      })
+                    });
+    const shortlisting = queryResult && queryResult.data && queryResult.data.supplier_shortlisting;
+    
+    for (let item of shortlisting) {
+          const qR = Steedos.authRequest(`/graphql`, {
+                      type: 'POST', async: false, 
+                      data: JSON.stringify({
+                        query: `{recommand_supplier(filters: ["supplier_shortlisting","=", `+ JSON.stringify(item._id) + `]){account}}`
+                      })
+                    });
+          const suppliers = qR && qR.data && qR.data.recommand_supplier;
+          console.log('suppliers: ', suppliers)
+          for (let supplier of suppliers) {
+            ids.push(supplier.account);
+          }
+    }
+    return ['_id', 'in', ids];
+
+  }
+label: 供应商名称
+reference_to: accounts
+sort_no: 115
+type: lookup

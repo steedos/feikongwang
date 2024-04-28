@@ -1,0 +1,16 @@
+name: status
+label: 入围状态
+type: select
+sort_no: 170
+filterable: true
+defaultValue: to_be_shortlisted
+options: 
+ - label: 待入围
+   value: to_be_shortlisted
+   color: cfd3d7
+ - label: 已入围
+   value: already_shortlisted
+   color: 49d181
+ - label: 未入围
+   value: not_shortlisted
+   color: E99695

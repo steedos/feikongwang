@@ -1,0 +1,14 @@
+[
+    {
+      "_id": "${space_id}_65019f5a4a7e2e371647770e",
+      "year": "2023",
+      "quarter": "third_quarter",
+      "employee": "${space_id}_9ZQcWvzsbqkbMyGdb",
+      "organization": "${space_id}_3NiKjvRoha7RgGcxx",
+      "score": 78.62666666666667,
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T11:39:06.052Z",
+      "modified": "2023-09-13T11:39:06.089Z",
+      "coefficient": 1
+    }
+  ]

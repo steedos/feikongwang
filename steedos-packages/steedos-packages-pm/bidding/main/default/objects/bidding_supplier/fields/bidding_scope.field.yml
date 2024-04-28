@@ -1,0 +1,6 @@
+name: bidding_scope
+is_wide: true
+label: 中标范围
+rows: 2
+sort_no: 180
+type: textarea

@@ -1,0 +1,6 @@
+name: reasons
+is_wide: true
+label: 领用原因
+rows: 3
+sort_no: 500
+type: textarea

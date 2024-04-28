@@ -1,0 +1,150 @@
+name: projects_ee_sum_contracts
+datasource: default
+description: |-
+  查询对象：contracts 合同
+  查询条件：签订日期-今年
+  查询结果：销售合同总应收、销售合同已收、采购合同总应付、采购合同已付、销售合同已开票。
+label: 项目ee-收支报告统计
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_year
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "contracts",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "name": "$name",
+                  "cash_flow_type": "$cash_flow_type",
+                  "collection": "$collection",
+                  "payment": "$payment",
+                  "amount": "$amount",
+                  "received_amount": "$received_amount",
+                  "made_invoice_amount": "$made_invoice_amount",
+                  "paid_amount": "$paid_amount",
+                  "signed_date": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d %H:%M",
+                          "date": "$signed_date",
+                          "timezone": "+00"
+                      }
+                  }
+              }
+          },
+          {
+              "$facet": {
+                  "collection": [
+                      {
+                          "$match": {
+                              "collection": true,
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "$and": [
+                                  {
+                                      "signed_date": {
+                                          "$gte": "{{ datetime.start }}"
+                                      }
+                                  },
+                                  {
+                                      "signed_date": {
+                                          "$lte": "{{ datetime.end }}"
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "$group": {
+                              "_id": "",
+                              "collectionAmount": {
+                                  "$sum": "$amount"
+                              },
+                              "receivedAmount": {
+                                  "$sum": "$received_amount"
+                              },
+                              "madeInvoiceAmount": {
+                                  "$sum": "$made_invoice_amount"
+                              }
+                          }
+                      }
+                  ],
+
+                  "payment": [
+                      {
+                          "$match": {
+                              "payment": true,
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "$and": [
+                                  {
+                                      "signed_date": {
+                                          "$gte": "{{ datetime.start }}"
+                                      }
+                                  },
+                                  {
+                                      "signed_date": {
+                                          "$lte": "{{ datetime.end }}"
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                          "$group": {
+                              "_id": "",
+                              "paymentAmount": {
+                                  "$sum": "$amount"
+                              },
+                              "paidAmount": {
+                                  "$sum": "$paid_amount"
+                              }
+                          }
+                      }
+                  ]
+              }
+          },
+
+          {
+              "$unwind": "$collection"
+          },
+
+          {
+              "$unwind": "$payment"
+          },
+
+          {
+              "$addFields": {
+                  "_id": "",
+                  "totalCollectionAmount": "$collection.collectionAmount",
+                  "totalReceivedAmount": "$collection.receivedAmount",
+                  "totalMadeInvoiceAmount": "$collection.madeInvoiceAmount",
+                  "totalPaymentAmount": "$payment.paymentAmount",
+                  "totalPaidAmount": "$payment.paidAmount"
+              }
+          },
+          {
+              "$project": {
+                  "_id": 1,
+                  "totalCollectionAmount": 1,
+                  "totalReceivedAmount": 1,
+                  "totalMadeInvoiceAmount": 1,
+                  "totalPaymentAmount": 1,
+                  "totalPaidAmount": 1
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

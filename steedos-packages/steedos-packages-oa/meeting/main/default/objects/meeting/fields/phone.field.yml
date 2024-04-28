@@ -1,0 +1,21 @@
+name: phone
+label: 联系方式
+type: text
+defaultValue: !<tag:yaml.org,2002:js/function> |-
+  function anonymous(
+  ) {
+
+          var collection, mobile;
+          collection = Creator.Collections["space_users"];
+          mobile = collection.findOne({
+            user: Meteor.userId(),
+            space: Session.get("spaceId")
+          }, {
+            fields: {
+              mobile: 1
+            }
+          }).mobile;
+          return mobile;
+        
+  }
+sort_no: 160

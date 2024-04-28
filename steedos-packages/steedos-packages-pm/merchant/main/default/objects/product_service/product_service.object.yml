@@ -1,0 +1,8 @@
+name: product_service
+label: 产品及服务
+custom: true
+enable_api: true
+enable_search: false
+icon: immunization
+is_enable: true
+version: 2

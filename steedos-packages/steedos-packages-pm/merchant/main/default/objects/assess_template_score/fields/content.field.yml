@@ -1,0 +1,6 @@
+name: content
+label: 评分标准
+type: textarea
+sort_no: 150
+is_wide: true
+rows: 2

@@ -1,0 +1,11 @@
+name: type
+type: select
+hidden: true
+omit: true
+defaultValue: '"space"'
+options:
+  - label: Space
+    value: space
+  - label: User
+    value: user
+sort_no: 10

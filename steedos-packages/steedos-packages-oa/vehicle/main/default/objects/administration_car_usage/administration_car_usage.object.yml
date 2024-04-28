@@ -1,0 +1,11 @@
+name: administration_car_usage
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_workflow: true
+enable_instances: true
+icon: care_request_reviewer
+is_enable: true
+label: 车辆使用记录
+version: 2

@@ -1,0 +1,4 @@
+name: loan_time
+label: 外借时间
+sort_no: 110
+type: date

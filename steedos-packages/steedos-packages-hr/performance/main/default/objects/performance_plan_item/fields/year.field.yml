@@ -1,0 +1,6 @@
+name: year
+label: 所属年度
+type: text
+sort_no: 122
+visible_on: "${global.mode === 'read' ? true : fasle}"
+filterable: true

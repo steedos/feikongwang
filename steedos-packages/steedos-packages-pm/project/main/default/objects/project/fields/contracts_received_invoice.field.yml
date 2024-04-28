@@ -1,0 +1,23 @@
+name: contracts_received_invoice
+data_type: number
+filterable: false
+group: 付款合同
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 已收票
+omit: false
+precision: 18
+readonly: true
+required: false
+scale: 2
+visible_on: 
+searchable: false
+sort_no: 166
+sortable: true
+summary_field: received_invoice_amount
+summary_filters: [ [ "is_valid", "=", "valid" ], "and", [ "payment", "=", true ] ]
+summary_object: contracts
+summary_type: sum
+type: summary

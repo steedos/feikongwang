@@ -1,0 +1,9 @@
+name: early
+group: 弹性考勤
+label: 允许早退（分钟）
+precision: 18
+scale: 0
+sort_no: 250
+type: number
+required: "{{true === formData.enable_flexible_commuting ? true: false}}"
+visible_on: "{{true === formData.enable_flexible_commuting ? true: false}}"

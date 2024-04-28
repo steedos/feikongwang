@@ -1,0 +1,86 @@
+name: cost_business_loan_reimburse
+datasource: default
+label: 费控-日常借款核销金额
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_year
+    - title: owner
+      name: owner
+      type: text
+      global: false
+      locals: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "cost_business_loan_reimburse",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "loan_paid_amount": "$loan_paid_amount",
+                  "instance_state": "$instance_state",
+                  "type": "$type",
+                  "modified": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d %H:%M",
+                          "date": "$modified",
+                          "timezone": "+08"
+                      }
+                  },
+                  "owner": "$owner"
+              }
+          },
+          {
+              "$match": {
+                  "owner":{
+                    "$eq": "{{owner}}"
+                  },
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "$and": [
+                      {
+                          "modified": {
+                              "$gte": "{{ datetime.start }}"
+                          }
+                      },
+                      {
+                          "modified": {
+                              "$lte": "{{ datetime.end }}"
+                          }
+                      }
+                  ],
+                  "instance_state": {
+                      "$eq": "approved"
+                  },
+                  "type": {
+                      "$eq": "daily"
+                  }
+              }
+          },
+          {
+              "$group": {
+                  "_id": "",
+                  "amount": {
+                      "$sum": "$loan_paid_amount"
+                  }
+              }
+          },
+          {
+              "$project": {
+                  "_id": 1,
+                  "amount": 1
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

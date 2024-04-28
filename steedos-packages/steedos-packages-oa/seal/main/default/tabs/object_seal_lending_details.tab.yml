@@ -1,0 +1,8 @@
+name: object_seal_lending_details
+desktop: true
+icon: bundle_policy
+label: 印章外借明细
+mobile: true
+object: seal_lending_details
+permissions: []
+type: object

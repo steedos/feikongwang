@@ -1,0 +1,6 @@
+name: bidding
+label: 立项信息
+type: lookup
+filterable: true
+reference_to: bidding
+sort_no: 120

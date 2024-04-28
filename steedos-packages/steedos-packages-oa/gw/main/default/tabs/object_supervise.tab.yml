@@ -1,0 +1,7 @@
+name: object_supervise
+desktop: true
+label: 督办
+mobile: true
+object: supervise
+permissions: []
+type: object

@@ -1,0 +1,14 @@
+name: cost_code
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 费用编号
+primary: false
+reference_to: cost_reimburse_detail
+required: true
+sort_no: 135
+sortable: false
+type: lookup
+write_requires_master_read: false

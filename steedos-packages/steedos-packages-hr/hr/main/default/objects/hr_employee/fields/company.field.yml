@@ -1,0 +1,15 @@
+name: company
+filterable: true
+generated: false
+group: 在职信息
+index: false
+is_name: false
+is_wide: false
+label: 所属公司
+multiple: false
+primary: false
+reference_to: company
+required: true
+sort_no: 160
+sortable: false
+type: lookup

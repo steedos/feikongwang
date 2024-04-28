@@ -1,0 +1,21 @@
+name: attendance_leave_afterDelete
+listenTo: attendance_leave
+when:
+  - afterDelete
+isEnabled: true
+handler: |-
+  const { id, doc, previousDoc } = ctx.params;
+  console.log("删除请假台账previousDoc", previousDoc);
+  // 如果请假台账在审批中之后被删除掉,将冻结的假期余额返回
+  if (previousDoc.instance_state == "pending") {
+      console.log("假期余额", previousDoc.attendance_balance)
+      if (previousDoc.attendance_balance) {
+          const attendanceBalanceObj = this.getObject("attendance_balance");
+          const attendanceBalanceDoc = await attendanceBalanceObj.findOne(previousDoc.attendance_balance)
+          await attendanceBalanceObj.update(previousDoc.attendance_balance, {
+              freeze_days: attendanceBalanceDoc.freeze_days - previousDoc.days,
+              leave_remain_days: attendanceBalanceDoc.leave_remain_days + previousDoc.days
+          })
+      }
+  }
+locked: false

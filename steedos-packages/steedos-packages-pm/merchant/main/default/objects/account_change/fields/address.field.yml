@@ -1,0 +1,6 @@
+name: address
+label: 公司地址
+required: false
+sort_no: 80
+type: text
+defaultValue: "${_master.record.address}"

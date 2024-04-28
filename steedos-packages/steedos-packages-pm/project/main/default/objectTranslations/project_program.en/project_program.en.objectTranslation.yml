@@ -1,0 +1,41 @@
+name: project_program
+label: Project Program
+description: 
+fields:
+  name:
+    label: Project Program Name
+    help: 
+    description: 
+  note:
+    label: Remark
+    help: 
+    description: 
+  program_health:
+    label: Running Status
+    help: 
+    options:
+      - label: Emergency
+        value: Red
+        color: c11d25
+      - label: Normal
+        value: Green
+        color: 49d181
+      - label: Postpone
+        value: Yellow
+        color: f9e29d
+    description: 
+  program_manager:
+    label: Project Manager
+    help: 
+    description: 
+  total_projects:
+    label: Project Count
+    help: 
+    description: 
+listviews:
+  all:
+    label: All Project Programs
+  my:
+    label: My Project Programs
+  recent:
+    label: Recently Viwed

@@ -1,0 +1,15 @@
+name: use_date
+group: 管理信息
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 投用年月
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 280
+sortable: false
+type: date

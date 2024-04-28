@@ -1,0 +1,21 @@
+name: all
+columns:
+  - field: name
+    _id: 875cd416-6a62-4e60-880c-d581a34af70f
+  - _id: e3ce5350-7dd6-488e-8170-4779529f3eaa
+    field: host_department
+  - _id: e34f6637-571b-405e-bf5f-d741e3cfd218
+    field: co_department
+  - _id: 965801ae-8273-47fd-b26d-815f341120e0
+    field: urgency
+  - _id: 21e64867-ddd9-4c83-accd-5c1a0d277774
+    field: time_limit
+  - _id: 415a3e0f-aeee-448f-a80b-5abfbae0d80c
+    field: state
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

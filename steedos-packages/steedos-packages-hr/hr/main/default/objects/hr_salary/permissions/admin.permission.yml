@@ -1,0 +1,100 @@
+name: 工资单.管理员
+allowCreate: true
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: users
+    readable: true
+    editable: true
+  - field: phone
+    readable: true
+    editable: true
+  - field: base_salary
+    readable: true
+    editable: true
+  - field: performance_pay
+    readable: true
+    editable: true
+  - field: overtime_pay
+    readable: true
+    editable: true
+  - field: telephone_subsidy
+    readable: true
+    editable: true
+  - field: transportation_subsidies
+    readable: true
+    editable: true
+  - field: meal_subsidy
+    readable: true
+    editable: true
+  - field: deductions
+    readable: true
+    editable: true
+  - field: pension_insurance
+    readable: true
+    editable: true
+  - field: health_insurance
+    readable: true
+    editable: true
+  - field: unemployment_insurance
+    readable: true
+    editable: true
+  - field: compensation_insurance
+    readable: true
+    editable: true
+  - field: housing_provident_fund
+    readable: true
+    editable: true
+  - field: total_wages_before_tax
+    readable: true
+    editable: true
+  - field: personal_income_tax
+    readable: true
+    editable: true
+  - field: actual_amount
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true

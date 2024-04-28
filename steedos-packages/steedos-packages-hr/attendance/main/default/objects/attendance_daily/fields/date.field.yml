@@ -1,0 +1,12 @@
+name: date
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 考勤日期
+primary: false
+required: false
+sort_no: 117
+sortable: false
+type: date

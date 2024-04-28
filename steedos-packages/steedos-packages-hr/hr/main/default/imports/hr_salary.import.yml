@@ -1,0 +1,47 @@
+name: hr_salary
+description: 工资单数据导入
+encoding: GB2312
+field_mappings:
+  - api_name: name
+    header: 发放月份
+  - api_name: users
+    header: 姓名
+    matched_by: name
+  - api_name: department
+    header: 部门
+    matched_by: name
+  - api_name: phone
+    header: 手机号
+  - api_name: base_salary
+    header: 基本工资
+  - api_name: performance_pay
+    header: 绩效工资
+  - api_name: overtime_pay
+    header: 加班工资
+  - api_name: telephone_subsidy
+    header: 话费补贴
+  - api_name: transportation_subsidies
+    header: 交通补贴
+  - api_name: meal_subsidy
+    header: 餐费补贴
+  - api_name: deductions
+    header: 扣款
+  - api_name: pension_insurance
+    header: 养老保险
+  - api_name: health_insurance
+    header: 医疗保险
+  - api_name: unemployment_insurance
+    header: 失业保险
+  - api_name: compensation_insurance
+    header: 工伤保险
+  - api_name: housing_provident_fund
+    header: 住房公积金
+  - api_name: total_wages_before_tax
+    header: 税前工资合计
+  - api_name: personal_income_tax
+    header: 个人所得税
+  - api_name: actual_amount
+    header: 实发金额
+object_name: hr_salary
+operation: insert
+value_separator: ','

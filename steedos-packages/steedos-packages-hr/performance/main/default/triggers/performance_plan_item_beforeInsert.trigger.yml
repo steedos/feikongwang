@@ -1,0 +1,45 @@
+name: performance_plan_item_beforeInsert
+listenTo: performance_plan_item
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  /**
+   * 考核计划明细操作限制
+   * 考核计划的状态为进行中或已结束时，不允许操作。
+   */
+  const { doc, userId, spaceId } = ctx.params;
+  const user = await ctx.getUser(userId, spaceId);
+  let planItem = await ctx.broker.call('api.graphql', {
+          query: `
+             {
+                rows: performance_plan(filters: ["_id", "=", "${doc.performance_plan}"]) {
+                          _id
+                          status,
+                          start_date,
+                          end_date,
+                          year,
+                          quarter,
+                          type,
+                          max_score
+                      }
+            }
+        `},
+      {
+          user: user
+      }
+  )
+
+  let plan = planItem.data.rows[0]
+  if (plan.status !== 'unplayed') {
+      throw new Error('考核正在进行中或已结束 禁止操作！')
+  }
+  // 补充字段
+  Object.assign(doc, {
+      'start_date': plan.start_date,
+      'end_date': plan.end_date,
+      'year': plan.year,
+      'quarter': plan.quarter,
+      'type': plan.type,
+      'max_score': plan.max_score
+  })

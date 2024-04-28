@@ -1,0 +1,56 @@
+name: cost_sum_personal_loan
+datasource: default
+description: |-
+  查询对象：cost_personal_loan 借款
+  查询条件：该记录未删除、、查询时间为：创建时间（modified）。
+  查询结果：借款金额汇总、已还款金额汇总、冻结金额汇总。
+label: 费控-借还款情况
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_year
+    - title: owner
+      name: owner
+      type: text
+      global: false
+      locals: []
+  apply_auto_limit: false
+query: |-
+    {
+        "collection": "cost_personal_loan",
+        "aggregate": [
+            {
+                "$match": {
+                    "owner":{
+                        "$eq": "{{owner}}"
+                    },
+                    "is_deleted": {
+                        "$ne": true
+                    },
+                    "$and": [
+                        {
+                            "modified": {
+                                "$gte": "{{ datetime.start }}"
+                            }
+                        },
+                        {
+                            "modified": {
+                                "$lte": "{{ datetime.end }}"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "$project": {
+                    "remaining_amount": 1,
+                    "repayment": 1,
+                    "frozen_amount": 1
+                }
+            }
+        ]
+    }

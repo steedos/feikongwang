@@ -1,0 +1,16 @@
+name: parent
+filterable: true
+hidden: false
+index: false
+inlineHelpText: 上级里程碑
+is_name: false
+is_wide: false
+label: 父里程碑
+omit: false
+readonly: false
+reference_to: project_milestone
+required: false
+searchable: false
+sort_no: 108
+sortable: true
+type: lookup

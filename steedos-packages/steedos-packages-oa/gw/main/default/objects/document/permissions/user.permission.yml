@@ -1,0 +1,92 @@
+name: 发文台账.user
+allowCreate: false
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: false
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: false
+    editable: false
+  - field: 'no'
+    readable: true
+    editable: true
+  - field: dep
+    readable: true
+    editable: true
+  - field: date_of_issue
+    readable: true
+    editable: true
+  - field: status
+    readable: true
+    editable: true
+  - field: end_time
+    readable: true
+    editable: true
+  - field: drafter
+    readable: true
+    editable: true
+  - field: main_delivery
+    readable: true
+    editable: true
+  - field: cc
+    readable: true
+    editable: true
+  - field: cr
+    readable: true
+    editable: true
+  - field: pages
+    readable: true
+    editable: true
+  - field: file
+    readable: true
+    editable: true
+  - field: filing_unit
+    readable: true
+    editable: true
+  - field: current_step_name
+    readable: true
+    editable: false
+  - field: official_document_type
+    readable: true
+    editable: true
+  - field: type
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true

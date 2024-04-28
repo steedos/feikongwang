@@ -1,0 +1,12 @@
+name: work_date
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 进入公司日期
+primary: false
+required: false
+sort_no: 190
+sortable: false
+type: date

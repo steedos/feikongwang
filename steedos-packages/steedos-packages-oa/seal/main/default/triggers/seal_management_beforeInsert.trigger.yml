@@ -1,0 +1,25 @@
+name: seal_management_beforeInsert
+listenTo: seal_management
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const { doc, userId, spaceId } = ctx.params;
+  const user = await ctx.getUser(userId, spaceId);
+  let records = await ctx.broker.call('api.graphql', {
+      query: `
+               {
+                  rows: seal(filters: [["_id", "=", "${doc.seal}"]]) {
+                          _id
+                          seal_admin
+                  }
+              }
+          `},
+      {
+          user: user
+      }
+  );
+  let seal = records.data.rows[0];
+  if (seal.seal_admin) {
+      Object.assign(doc, { 'seal_admin': seal.seal_admin});
+  }

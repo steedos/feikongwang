@@ -1,0 +1,12 @@
+name: leader_phone
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 证明人联系电话
+primary: false
+required: false
+sort_no: 150
+sortable: false
+type: text

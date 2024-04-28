@@ -1,0 +1,7 @@
+name: object_attendance_going_out
+desktop: true
+label: 外出
+mobile: true
+object: attendance_going_out
+permissions: []
+type: object

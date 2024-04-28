@@ -1,0 +1,8 @@
+name: performance_result
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: return_order_line_item
+is_enable: true
+label: 考核结果
+version: 2

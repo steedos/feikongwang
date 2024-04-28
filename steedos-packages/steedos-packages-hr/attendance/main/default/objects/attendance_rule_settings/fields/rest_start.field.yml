@@ -1,0 +1,6 @@
+name: rest_start
+group: 打卡时间
+label: 午休开始时间
+sort_no: 151
+type: time
+required: true

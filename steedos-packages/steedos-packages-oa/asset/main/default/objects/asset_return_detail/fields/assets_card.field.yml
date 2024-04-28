@@ -1,0 +1,11 @@
+name: assets_card
+label: 资产名称
+reference_to: assets_card
+searchable: true
+required: true
+sort_no: 100
+type: lookup
+filtersFunction:  |-
+  function(filters,values) {
+    return [["users","=","{userId}"],["quantity","=",0]];
+  }

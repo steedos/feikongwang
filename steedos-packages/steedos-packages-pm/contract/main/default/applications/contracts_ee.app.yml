@@ -1,0 +1,79 @@
+name: 合同
+code: contracts_ee
+description: 查看合同看板，管理合同及其收付款，发起和处理合同相关流程。
+icon_slds: contract
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+showSidebar: true
+sort: 25
+tab_groups:
+  - group_name: 合同管理
+    default_open: true
+  - group_name: 收付款管理
+    default_open: true
+  - group_name: 其他信息
+    default_open: true
+  - group_name: 流程审批
+    default_open: true
+tab_items:
+  contracts_ee_portal:
+    group: 合同管理
+    index: 1
+  object_contracts:
+    group: 合同管理
+    index: 2
+  object_contract_types:
+    group: 合同管理
+    index: 3
+  object_contract_payments:
+    group: 合同管理
+    index: 4
+  object_contract_receipts:
+    group: 合同管理
+    index: 5
+  object_finance_invoice:
+    group: 收付款管理
+    index: 6
+  object_finance_receive:
+    group: 收付款管理
+    index: 7
+  object_invoices:
+    group: 收付款管理
+    index: 8
+  object_finance_payment:
+    group: 收付款管理
+    index: 9
+  object_accounts:
+    group: 收付款管理
+    index: 10
+  object_tasks:
+    group: 其他信息
+    index: 11
+  object_events:
+    group: 其他信息
+    index: 12
+  object_seal:
+    group: 其他信息
+    index: 13
+  object_instance_tasks:
+    group: 流程审批
+    index: 14
+tabs:
+  - contracts_ee_portal
+  - object_contracts
+  - object_contract_types
+  - object_contract_payments
+  - object_contract_receipts
+  - object_finance_invoice
+  - object_finance_receive
+  - object_invoices
+  - object_finance_payment
+  - object_accounts
+  - object_tasks
+  - object_events
+  - object_seal
+  - object_instance_tasks
+visible: true

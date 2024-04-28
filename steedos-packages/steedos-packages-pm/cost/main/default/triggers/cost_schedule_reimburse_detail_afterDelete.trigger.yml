@@ -1,0 +1,33 @@
+name: cost_schedule_reimburse_detail_afterDelete
+listenTo: cost_schedule_reimburse_detail
+when:
+  - afterDelete
+isEnabled: true
+handler: |-
+  // _ : lodash
+  // moment: moment
+  // validator: validator
+  // ctx
+  // objects
+  // services
+  const { doc, previousDoc, userId, spaceId } = ctx.params;
+  console.log("previousDoc", previousDoc)
+  const mydoc = await ctx.broker.call('objectql.find', {
+      objectName: 'cost_reimburse_detail',
+      query: {
+          fields: ['_id', 'status','instance'],
+          filters: ['_id', '=', previousDoc.cost_code],
+      },
+  }
+  );
+  console.log("mydoc", mydoc)
+  const modifyStateDoc = await ctx.broker.call('objectql.directUpdate',{
+          objectName: 'cost_reimburse_detail',
+          doc: {
+              status: 'before',
+              instance: null
+          },
+          id: mydoc[0]._id
+      },
+  );
+  console.log("modifyStateDoc", modifyStateDoc)

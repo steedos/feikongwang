@@ -1,0 +1,39 @@
+name: assets_card_beforeInsertAndbeforeUpdate
+listenTo: assets_card
+when:
+  - beforeInsert
+  - beforeUpdate
+isEnabled: true
+handler: |-
+  // 新增或者修改资产卡片之前，如果资产类型为单独核算类型，数量不能大于1
+  const { doc, previousDoc, id, isUpdate } = ctx.params;
+  var assetTypeId = null
+  if (isUpdate) {
+      // 查询资产卡片信息
+      const assets_card = await ctx.broker.call('objectql.find', {
+          objectName: 'assets_card',
+          query: {
+              fields: ['asset_type', '_id', "name"],
+              filters: ["_id", "=", id]
+          }
+      })
+      assetTypeId = assets_card[0].asset_type
+  } else {
+      assetTypeId = doc.asset_type
+  }
+  // 查询物料类型信息
+  const asset_type = await ctx.broker.call(
+      '@steedos-labs/asset.findAssetType',
+      {
+          typeId: assetTypeId
+      }
+  );
+
+  if (asset_type) {
+      // 判断物料类型是否是单独核算类型
+      if (asset_type.separate_accounting && doc.quantity > 1) {
+          throw new Error("该资产为单独核算类型，数量不能大于1")
+      }
+  } else {
+      throw new Error("数据异常，请稍后再试")
+  }

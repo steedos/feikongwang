@@ -1,0 +1,7 @@
+name: app_home
+is_active: true
+label: app_home
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

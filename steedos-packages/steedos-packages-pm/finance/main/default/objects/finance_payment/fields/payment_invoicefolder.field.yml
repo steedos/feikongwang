@@ -1,0 +1,28 @@
+name: payment_invoicefolder
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 发票台账
+create: false
+multiple: true
+omit: false
+# depend_on:
+#   - contract
+# filtersFunction: !<tag:yaml.org,2002:js/function> |-
+#     function (filters, values){
+#       if(values == undefined){
+#         return [];
+#       }else{
+#         return [["contract","=",values.contract]]
+#       }
+#     }
+filters: [ [[["type", "=", "vat_invoice"],['verify_status', '=', 'passed']], 'or', ["type", "!=", "vat_invoice"]], ['has_used_by_cost', '!=', true] ]
+readonly: false
+reference_to: invoices
+required: false
+searchable: false
+sort_no: 188
+sortable: false
+type: lookup

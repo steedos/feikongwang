@@ -1,0 +1,65 @@
+name: project_milestone
+label: 里程碑
+description: 
+fields:
+  children:
+    label: 子里程碑
+    help: 
+    description: 
+  completed:
+    label: 已完成
+    help: 
+    description: 
+  completed_date:
+    label: 实际完成日期
+    help: 
+    description: 
+  deadline:
+    label: 截止日期
+    help: 
+    description: 
+  description:
+    label: 简述
+    help: 
+    description: 
+  has_collection:
+    label: 有回款
+    help: 
+    description: 
+  head:
+    label: 责任人
+    help: 
+    description: 
+  head_spaceuser:
+    label: 责任人
+    help: 
+    description: 
+  kickoff:
+    label: 启动日期
+    help: 
+    description: 
+  name:
+    label: 里程碑名
+    help: 
+    description: 
+  owner:
+    label: 所有者
+    help: 
+    description: 
+  project:
+    label: 项目
+    help: 所属项目
+    description: 
+  project_milestone:
+    label: 父里程碑
+    help: 上级里程碑
+    description: 
+listviews:
+  all:
+    label: 所有
+  mine:
+    label: 我的里程碑
+  recent:
+    label: 最近查看
+  to_be_completed:
+    label: 待完成的里程碑

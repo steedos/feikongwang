@@ -1,0 +1,14 @@
+name: all
+label: 列表
+columns:
+  - name
+  - room
+  - type
+  - start
+  - end
+  - contacts
+  - phone
+  - attend
+  - features
+  - status
+filter_scope: space

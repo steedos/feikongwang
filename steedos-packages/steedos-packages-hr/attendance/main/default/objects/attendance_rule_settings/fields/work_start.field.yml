@@ -1,0 +1,6 @@
+name: work_start
+group: 打卡时间
+label: 上班时间
+sort_no: 140
+type: time
+required: true

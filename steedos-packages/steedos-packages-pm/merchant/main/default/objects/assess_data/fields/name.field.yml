@@ -1,0 +1,5 @@
+name: name
+label: 标题
+type: text
+sortable: true
+sort_no: 100

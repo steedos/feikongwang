@@ -1,0 +1,7 @@
+name: object_cost_business_loan_reimburse
+desktop: true
+label: 借款核销
+mobile: true
+object: cost_business_loan_reimburse
+permissions: []
+type: object

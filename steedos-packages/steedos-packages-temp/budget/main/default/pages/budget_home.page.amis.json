@@ -1,0 +1,414 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "panel",
+            "title": "",
+            "body": [
+                {
+                    "type": "select",
+                    "label": "预算方案",
+                    "name": "预算方案",
+                    "options": [
+                        {
+                            "label": "选项A",
+                            "value": "A"
+                        },
+                        {
+                            "label": "选项B",
+                            "value": "B"
+                        }
+                    ],
+                    "id": "u:f709bd89b4a5",
+                    "multiple": false,
+                    "mode": "inline"
+                },
+                {
+                    "type": "select",
+                    "label": "周期类型",
+                    "name": "周期类型",
+                    "options": [
+                        {
+                            "label": "选项A",
+                            "value": "A"
+                        },
+                        {
+                            "label": "选项B",
+                            "value": "B"
+                        }
+                    ],
+                    "id": "u:f709bd89b4a5",
+                    "multiple": false,
+                    "mode": "inline",
+                    "className": "m-l-lg"
+                },
+                {
+                    "type": "select",
+                    "label": "预算组织",
+                    "name": "预算组织",
+                    "options": [
+                        {
+                            "label": "选项A",
+                            "value": "A"
+                        },
+                        {
+                            "label": "选项B",
+                            "value": "B"
+                        }
+                    ],
+                    "id": "u:f709bd89b4a5",
+                    "multiple": false,
+                    "mode": "inline",
+                    "className": "m-l-lg"
+                },
+                {
+                    "type": "select",
+                    "label": "预算科目",
+                    "name": "组织科目",
+                    "options": [
+                        {
+                            "label": "选项A",
+                            "value": "A"
+                        },
+                        {
+                            "label": "选项B",
+                            "value": "B"
+                        }
+                    ],
+                    "id": "u:f709bd89b4a5",
+                    "multiple": false,
+                    "mode": "inline",
+                    "className": "m-l-lg"
+                },
+                {
+                    "type": "reset",
+                    "label": "重置",
+                    "onEvent": {
+                        "click": {
+                            "actions": []
+                        }
+                    },
+                    "id": "u:8eafc0e1ff4b",
+                    "className": "m-l-lg"
+                },
+                {
+                    "type": "button",
+                    "label": "导出预算报表",
+                    "onEvent": {
+                        "click": {
+                            "actions": []
+                        }
+                    },
+                    "id": "u:a1cf66e04c82",
+                    "className": "b-r b-info m-l-sm",
+                    "block": false,
+                    "level": "primary"
+                }
+            ],
+            "id": "u:dba486aceb0a",
+            "inline": false,
+            "affixFooter": false,
+            "className": "Panel--default no-border"
+        },
+        {
+            "type": "panel",
+            "title": "配额￥10,000.00 ",
+            "body": [
+                {
+                    "type": "progress",
+                    "value": 66,
+                    "strokeWidth": 6,
+                    "valueTpl": "${value}%",
+                    "id": "u:1c159a6599d5",
+                    "placeholder": "-",
+                    "progressClassName": "",
+                    "map": [
+                        {
+                            "color": "#dc3545",
+                            "value": 20
+                        },
+                        {
+                            "color": "#fad733",
+                            "value": 60
+                        },
+                        {
+                            "color": "#ee8b64",
+                            "value": 100
+                        }
+                    ],
+                    "gapDegree": 0,
+                    "gapPosition": "",
+                    "mode": "line",
+                    "showLabel": true
+                },
+                {
+                    "type": "grid",
+                    "columns": [
+                        {
+                            "body": [
+                                {
+                                    "type": "tpl",
+                                    "tpl": "<p>已占用: ￥8,000.00</p>",
+                                    "inline": true,
+                                    "id": "u:0a1639a1aabb"
+                                }
+                            ],
+                            "id": "u:a8999609028e"
+                        },
+                        {
+                            "body": [
+                                {
+                                    "type": "tpl",
+                                    "tpl": "<ul class=\"antd-pro-pages-budget-management-budget-report-budget-report-budgetInfoListProgressTips\">\n<li class=\"antd-pro-pages-budget-management-budget-report-budget-report-budgetInfoListProgressTipsPart\">冻结: ￥800.00</li>\n</ul>",
+                                    "inline": true,
+                                    "id": "u:92753f9314c7"
+                                }
+                            ],
+                            "id": "u:6ebbbbb1af4a"
+                        },
+                        {
+                            "body": [
+                                {
+                                    "type": "tpl",
+                                    "tpl": "<p>剩余: ￥1,200.00</p>",
+                                    "inline": true,
+                                    "id": "u:898b96a85a86"
+                                }
+                            ],
+                            "id": "u:7a4a254286c6"
+                        }
+                    ],
+                    "id": "u:c9963e40c68f",
+                    "valign": "top",
+                    "className": "m-t-sm"
+                },
+                {
+                    "type": "tabs",
+                    "tabs": [
+                        {
+                            "title": "预算详情表",
+                            "body": [
+                                {
+                                    "type": "table",
+                                    "columns": [
+                                        {
+                                            "label": "预算组织",
+                                            "name": "a",
+                                            "type": "text",
+                                            "id": "u:f7edcbc34405",
+                                            "placeholder": "-"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:1856d703eea4",
+                                            "placeholder": "-",
+                                            "label": "预算科目"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:1c0e61ce28ba",
+                                            "placeholder": "-",
+                                            "label": "第一期"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "第二期"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "第三期"
+                                        }
+                                    ],
+                                    "id": "u:547f3502c414",
+                                    "showHeader": true,
+                                    "columnsTogglable": false
+                                }
+                            ],
+                            "id": "u:a129233c0458",
+                            "className": "no-border"
+                        },
+                        {
+                            "title": "占用明细表",
+                            "body": [
+                                {
+                                    "type": "table",
+                                    "columns": [
+                                        {
+                                            "label": "预算单元",
+                                            "name": "a",
+                                            "type": "text",
+                                            "id": "u:f7edcbc34405",
+                                            "placeholder": "-"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:1856d703eea4",
+                                            "placeholder": "-",
+                                            "label": "占用对象"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:1c0e61ce28ba",
+                                            "placeholder": "-",
+                                            "label": "占用/冻结金额"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "所属单据名称"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "所属单据编号"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "占用明细"
+                                        }
+                                    ],
+                                    "id": "u:547f3502c414",
+                                    "columnsTogglable": false
+                                }
+                            ],
+                            "id": "u:e84969c6c19c"
+                        },
+                        {
+                            "title": "保留明细表",
+                            "body": [
+                                {
+                                    "type": "table",
+                                    "columns": [
+                                        {
+                                            "label": "预算单元",
+                                            "name": "a",
+                                            "type": "text",
+                                            "id": "u:f7edcbc34405",
+                                            "placeholder": "-"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:1856d703eea4",
+                                            "placeholder": "-",
+                                            "label": "保留对象"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:1c0e61ce28ba",
+                                            "placeholder": "-",
+                                            "label": "保留金额"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "所属单据名称"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "所属单据编号"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "u:4c02795b047a",
+                                            "placeholder": "-",
+                                            "label": "保留明细"
+                                        }
+                                    ],
+                                    "id": "u:547f3502c414",
+                                    "columnsTogglable": false
+                                }
+                            ],
+                            "id": "u:b2c3f35b4978"
+                        }
+                    ],
+                    "id": "u:9badb60bdc10",
+                    "className": "m-t-md",
+                    "tabsMode": "strong"
+                }
+            ],
+            "id": "u:2e6816a69ff1",
+            "affixFooter": false,
+            "className": "Panel--default no-border"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "recordId": "",
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {},
+        "money": [
+            {
+                "name": "客户拜访，因公出差",
+                "room": "出差",
+                "start": "2022-08-10 0 9:00",
+                "end": "2022-08-12 18:00",
+                "contact": "3",
+                "status": "审批中"
+            },
+            {
+                "name": "身体不舒服，医院就医",
+                "room": "带薪病假",
+                "start": "2022-08-02 9:00",
+                "end": "2022-08-02 13:00",
+                "contact": "0.5",
+                "status": "审批中"
+            },
+            {
+                "name": "加班调休，休息身体",
+                "room": "加班转调休",
+                "start": "2022-07-15 9:00",
+                "end": "2022-07-15 18:00",
+                "contact": "1",
+                "status": "已审批"
+            }
+        ],
+        "payment_money": [
+            {
+                "name": "ERP系统开发",
+                "amount": 59800,
+                "signed_date": "2022-07-28",
+                "othercompany": "浙江三立"
+            },
+            {
+                "name": "闻英集团低代码开发平台采购",
+                "amount": 104000,
+                "signed_date": "2022-07-19",
+                "othercompany": "闻英集团"
+            },
+            {
+                "name": "EDM系统2022年度系统运维",
+                "amount": 180000,
+                "signed_date": "2022-07-16",
+                "othercompany": "宏途中国"
+            },
+            {
+                "name": "岩实股份PRMD资产重组事务咨询",
+                "amount": 298000,
+                "signed_date": "2022-07-09",
+                "othercompany": "寰球资本"
+            }
+        ]
+    },
+    "id": "u:d4a944908b17",
+    "messages": {},
+    "style": {
+        "backgroundColor": ""
+    },
+    "pullRefresh": {}
+}

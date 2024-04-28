@@ -1,0 +1,576 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "input-datetime-range",
+            "label": "会议时间",
+            "name": "input-datetime-range",
+            "id": "u:68247995b81f",
+            "mode": "inline",
+            "className": "bg-white p r"
+        },
+        {
+            "type": "tree-select",
+            "label": "会议室",
+            "name": "tree-select",
+            "options": [
+                {
+                    "label": "选项A",
+                    "value": "A",
+                    "children": [
+                        {
+                            "label": "选项C",
+                            "value": "C"
+                        },
+                        {
+                            "label": "选项D",
+                            "value": "D"
+                        }
+                    ]
+                },
+                {
+                    "label": "选项B",
+                    "value": "B"
+                }
+            ],
+            "id": "u:004cd0d763f2",
+            "mode": "inline",
+            "className": "bg-white p r"
+        },
+        {
+            "type": "tree-select",
+            "label": "会议类型",
+            "name": "tree-select",
+            "options": [
+                {
+                    "label": "选项A",
+                    "value": "A",
+                    "children": [
+                        {
+                            "label": "选项C",
+                            "value": "C"
+                        },
+                        {
+                            "label": "选项D",
+                            "value": "D"
+                        }
+                    ]
+                },
+                {
+                    "label": "选项B",
+                    "value": "B"
+                }
+            ],
+            "id": "u:004cd0d763f2",
+            "mode": "inline",
+            "className": "bg-white p r"
+        },
+        {
+            "type": "tree-select",
+            "label": "会议状态",
+            "name": "tree-select",
+            "options": [
+                {
+                    "label": "选项A",
+                    "value": "A",
+                    "children": [
+                        {
+                            "label": "选项C",
+                            "value": "C"
+                        },
+                        {
+                            "label": "选项D",
+                            "value": "D"
+                        }
+                    ]
+                },
+                {
+                    "label": "选项B",
+                    "value": "B"
+                }
+            ],
+            "id": "u:004cd0d763f2",
+            "mode": "inline",
+            "className": "bg-white p r"
+        },
+        {
+            "type": "tree-select",
+            "label": "联系人",
+            "name": "tree-select",
+            "options": [
+                {
+                    "label": "选项A",
+                    "value": "A",
+                    "children": [
+                        {
+                            "label": "选项C",
+                            "value": "C"
+                        },
+                        {
+                            "label": "选项D",
+                            "value": "D"
+                        }
+                    ]
+                },
+                {
+                    "label": "选项B",
+                    "value": "B"
+                }
+            ],
+            "id": "u:004cd0d763f2",
+            "mode": "inline",
+            "className": "bg-white p r"
+        },
+        {
+            "type": "input-text",
+            "label": "会议名称",
+            "name": "name",
+            "id": "u:2aa59a458a40",
+            "mode": "inline",
+            "className": "bg-white p r",
+            "addOn": {
+                "type": "submit",
+                "label": "搜索",
+                "level": "primary"
+            },
+            "placeholder": "请输入名称"
+        },
+        {
+            "type": "panel",
+            "title": "会议信息",
+            "body": [
+                {
+                    "type": "panel",
+                    "title": "",
+                    "body": [
+                        {
+                            "type": "tabs",
+                            "tabs": [
+                                {
+                                    "title": "今日会议",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "会议名称",
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "会议室",
+                                                    "name": "room",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "开始时间",
+                                                    "name": "start",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "结束时间",
+                                                    "name": "end",
+                                                    "placeholder": "-",
+                                                    "id": "u:5fda4ff8f482"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "联系人",
+                                                    "name": "contact",
+                                                    "placeholder": "-",
+                                                    "id": "u:4a5876cde97f"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "状态",
+                                                    "name": "status",
+                                                    "placeholder": "-",
+                                                    "id": "u:4a5876cde97f"
+                                                }
+                                            ],
+                                            "id": "u:933acd399b31",
+                                            "className": "p-sm",
+                                            "source": "${money}"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "本周会议",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "会议名称",
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "会议室",
+                                                    "name": "room",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "开始时间",
+                                                    "name": "start",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "结束时间",
+                                                    "name": "end",
+                                                    "placeholder": "-",
+                                                    "id": "u:5fda4ff8f482"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "联系人",
+                                                    "name": "contact",
+                                                    "placeholder": "-",
+                                                    "id": "u:4a5876cde97f"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "状态",
+                                                    "name": "status",
+                                                    "placeholder": "-",
+                                                    "id": "u:4a5876cde97f"
+                                                }
+                                            ],
+                                            "id": "u:933acd399b31",
+                                            "className": "p-sm",
+                                            "source": "${money}"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "u:6cd96e685d9f"
+                        }
+                    ],
+                    "id": "u:46462eebc807",
+                    "inline": false,
+                    "affixFooter": false
+                }
+            ],
+            "id": "u:1de3385ef0b5",
+            "affixFooter": false,
+            "inline": false,
+            "actions": [],
+            "className": "Panel--default no-border p-t-sm",
+            "bodyClassName": "",
+            "headerClassName": "no-border m-l-sm font-bold"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "会议类型",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "$$comments": {
+                                            "legend": [
+                                                0,
+                                                0,
+                                                0,
+                                                [
+                                                    "\n                    // \"grid\": {\n                    ",
+                                                    "//   \"left\": \"3%\",\n                    ",
+                                                    "//   \"right\": \"4%\",\n                    ",
+                                                    "//   \"bottom\": \"3%\",\n                    ",
+                                                    "//   \"containLabel\": true\n                    ",
+                                                    "// }\n                  "
+                                                ]
+                                            ]
+                                        },
+                                        "xAxis": {
+                                            "$$comments": {
+                                                "data": [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    [
+                                                        "\n                      // \"boundaryGap\": false\n                    "
+                                                    ]
+                                                ]
+                                            },
+                                            "type": "category",
+                                            "data": [
+                                                "2022-01",
+                                                "2022-02",
+                                                "2022-03",
+                                                "2022-04",
+                                                "2022-05",
+                                                "2022-06",
+                                                "2022-07"
+                                            ]
+                                        },
+                                        "yAxis": {
+                                            "type": "value"
+                                        },
+                                        "series": [
+                                            {
+                                                "data": [
+                                                    30,
+                                                    40,
+                                                    50,
+                                                    45,
+                                                    37,
+                                                    44,
+                                                    42
+                                                ],
+                                                "type": "line",
+                                                "name": "部门会议",
+                                                "smooth": true
+                                            },
+                                            {
+                                                "name": "临时会议",
+                                                "type": "line",
+                                                "smooth": true,
+                                                "data": [
+                                                    20,
+                                                    30,
+                                                    40,
+                                                    40,
+                                                    35,
+                                                    30,
+                                                    33
+                                                ]
+                                            },
+                                            {
+                                                "name": "培训会议",
+                                                "type": "line",
+                                                "smooth": true,
+                                                "data": [
+                                                    25,
+                                                    35,
+                                                    42,
+                                                    41,
+                                                    37,
+                                                    39,
+                                                    42
+                                                ]
+                                            },
+                                            {
+                                                "name": "专题会议",
+                                                "type": "line",
+                                                "smooth": true,
+                                                "data": [
+                                                    40,
+                                                    30,
+                                                    35,
+                                                    42,
+                                                    46,
+                                                    36,
+                                                    31
+                                                ]
+                                            },
+                                            {
+                                                "name": "其他会议",
+                                                "type": "line",
+                                                "smooth": true,
+                                                "data": [
+                                                    18,
+                                                    24,
+                                                    30,
+                                                    33,
+                                                    31,
+                                                    29,
+                                                    25
+                                                ]
+                                            }
+                                        ],
+                                        "tooltip": {
+                                            "trigger": "axis"
+                                        },
+                                        "legend": {
+                                            "data": [
+                                                "培训会议",
+                                                "专题会议",
+                                                "部门会议",
+                                                "其他会议",
+                                                "临时会议"
+                                            ],
+                                            "bottom": 0
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:5c2941389906",
+                                    "affixFooter": false
+                                }
+                            ],
+                            "id": "u:2c18d31d885a",
+                            "inline": false,
+                            "affixFooter": false,
+                            "headerClassName": "font-bold m-t m-l"
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "会议任务",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "xAxis": {
+                                            "type": "category"
+                                        },
+                                        "yAxis": {},
+                                        "series": [
+                                            {
+                                                "type": "bar"
+                                            },
+                                            {
+                                                "type": "bar"
+                                            },
+                                            {
+                                                "type": "bar"
+                                            },
+                                            {
+                                                "type": "bar"
+                                            }
+                                        ],
+                                        "legend": {
+                                            "bottom": 0
+                                        },
+                                        "tooltip": {},
+                                        "dataset": {
+                                            "source": [
+                                                [
+                                                    "未处理",
+                                                    "未处理",
+                                                    "处理中",
+                                                    "已完成",
+                                                    "暂不处理"
+                                                ],
+                                                [
+                                                    "培训会议",
+                                                    21,
+                                                    10,
+                                                    13,
+                                                    62
+                                                ],
+                                                [
+                                                    "专题会议",
+                                                    10,
+                                                    36,
+                                                    60,
+                                                    23
+                                                ],
+                                                [
+                                                    "部门会议",
+                                                    92,
+                                                    65,
+                                                    60,
+                                                    38
+                                                ],
+                                                [
+                                                    "其他会议",
+                                                    62,
+                                                    18,
+                                                    37,
+                                                    16
+                                                ]
+                                            ]
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:66eb0d5197c0",
+                                    "affixFooter": false
+                                }
+                            ],
+                            "id": "u:148f185289a1",
+                            "inline": false,
+                            "affixFooter": false,
+                            "headerClassName": "font-bold m-t m-l"
+                        }
+                    ]
+                }
+            ],
+            "id": "u:f8b113c7e815"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "recordId": "",
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {
+            "rootUrl": "https://5000-emerald-anteater-cr9kkrwe.ws.vscode.steedos.cn"
+        },
+        "money": [
+            {
+                "name": "LCP平台采购及运营事项沟通",
+                "room": "301会议室",
+                "start": "2022-08-02 9:00",
+                "end": "2022-08-02 10:30",
+                "contact": "张飞",
+                "status": "已召开"
+            },
+            {
+                "name": "ERP系统基础数据功能开发评审",
+                "room": "301会议室",
+                "start": "2022-08-02 13:00",
+                "end": "2022-08-02 14:00",
+                "contact": "李明",
+                "status": "进行中"
+            },
+            {
+                "name": "项目开发部每周工作安排",
+                "room": "302会议室",
+                "start": "2022-08-02 15:30",
+                "end": "2022-08-02 16:30",
+                "contact": "刘亮博",
+                "status": "未开始"
+            }
+        ],
+        "payment_money": [
+            {
+                "name": "ERP系统开发",
+                "amount": 59800,
+                "signed_date": "2022-07-28",
+                "othercompany": "浙江三立"
+            },
+            {
+                "name": "闻英集团低代码开发平台采购",
+                "amount": 104000,
+                "signed_date": "2022-07-19",
+                "othercompany": "闻英集团"
+            },
+            {
+                "name": "EDM系统2022年度系统运维",
+                "amount": 180000,
+                "signed_date": "2022-07-16",
+                "othercompany": "宏途中国"
+            },
+            {
+                "name": "岩实股份PRMD资产重组事务咨询",
+                "amount": 298000,
+                "signed_date": "2022-07-09",
+                "othercompany": "寰球资本"
+            }
+        ]
+    },
+    "messages": {},
+    "style": {
+        "backgroundColor": "#e1effe"
+    }
+}

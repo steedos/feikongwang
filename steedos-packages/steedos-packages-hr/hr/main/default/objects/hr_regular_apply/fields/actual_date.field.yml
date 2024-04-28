@@ -1,0 +1,5 @@
+name: actual_date
+label: 实际转正日期
+sort_no: 175
+type: date
+required: true

@@ -1,0 +1,6 @@
+name: description
+label: Description
+type: textarea
+rows: 3
+is_wide: true
+sort_no: 70

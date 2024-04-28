@@ -1,0 +1,21 @@
+name: recent
+columns:
+  - field: name
+  - field: number
+  - field: staff
+  - field: apply_date
+  - field: job_title_before
+  - field: department_before
+  - field: department
+  - field: job_title
+  - field: remark
+  - field: instance_state
+filter_scope: space
+filters: []
+label: 最近查看
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort: []
+sort_no: 100
+type: grid

@@ -1,0 +1,31 @@
+{
+    "name": "@steedos-labs/project-ee",
+    "version": "2.6.4",
+    "description": "通过项目、任务、里程碑，管理项目的整个生命周期。",
+    "main": "package.service.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "build:watch": "webpack --config webpack.config.js --watch"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@steedos-labs/budget": "2.2.9-beta.3",
+        "@steedos-labs/contract": "2.6.4",
+        "@steedos-labs/contract-ee": "2.2.9-beta.3",
+        "@steedos-labs/cost": "2.6.4",
+        "@steedos-labs/cost-ee": "2.2.9-beta.3",
+        "@steedos-labs/demo-ee": "2.6.4",
+        "@steedos-labs/finance": "2.6.4",
+        "@steedos-labs/master": "2.6.4",
+        "@steedos-labs/project": "2.6.4"
+    },
+    "devDependencies": {
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}

@@ -1,0 +1,6 @@
+name: end_mileage
+label: 讫公里数
+precision: 18
+scale: 2
+sort_no: 150
+type: number

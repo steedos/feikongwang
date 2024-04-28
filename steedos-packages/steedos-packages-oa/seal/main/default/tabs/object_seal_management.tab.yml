@@ -1,0 +1,7 @@
+name: object_seal_management
+desktop: true
+label: 印章管理
+mobile: true
+object: seal_management
+permissions: []
+type: object

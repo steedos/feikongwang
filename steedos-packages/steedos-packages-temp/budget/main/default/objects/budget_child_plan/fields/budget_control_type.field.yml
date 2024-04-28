@@ -1,0 +1,22 @@
+name: budget_control_type
+data_type: text
+filterable: false
+generated: false
+index: false
+inlineHelpText: 控制周期与编制周期的区别：例如按月度编制，按年度控制，即只要不超过全年的预算就可以报销。
+is_name: false
+is_wide: false
+label: 控制周期类型
+multiple: false
+options:
+  - label: 月度控制
+    value: 月度控制
+  - label: 季度控制
+    value: 季度控制
+  - label: 年度控制
+    value: 年度控制
+primary: false
+required: true
+sort_no: 180
+sortable: false
+type: select

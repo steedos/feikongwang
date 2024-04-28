@@ -1,0 +1,18 @@
+name: all
+columns:
+  - field: name
+  - field: company
+  - field: seal
+  - field: seal_admin
+  - field: type
+  - field: assist_department
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

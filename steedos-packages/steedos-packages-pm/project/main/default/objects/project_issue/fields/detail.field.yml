@@ -1,0 +1,15 @@
+name: detail
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: true
+rows: 2
+label: 内容
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 120
+sortable: false
+type: textarea

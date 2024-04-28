@@ -1,0 +1,6 @@
+name: days_absent
+label: 旷工（天）
+precision: 18
+scale: 2
+sort_no: 225
+type: number

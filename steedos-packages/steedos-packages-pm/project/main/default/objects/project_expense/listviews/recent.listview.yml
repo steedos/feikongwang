@@ -1,0 +1,28 @@
+name: recent
+columns:
+  - field: name
+    wrap: false
+  - field: project
+    wrap: false
+  - field: project_task
+    wrap: false
+  - field: incurred_by
+    wrap: false
+  - field: incurred_date
+    wrap: false
+  - field: amount
+    wrap: false
+  - field: description
+    wrap: false
+filter_fields:
+  - incurred_by
+  - incurred_date
+  - amount
+  - project_id
+  - project_task
+filter_scope: space
+label: 最近查看
+scrolling_mode: standard
+shared: true
+show_count: false
+type: grid

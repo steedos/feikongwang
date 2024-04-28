@@ -1,0 +1,71 @@
+name: 资产
+code: asset
+description: 管理资产、出入库、报废等。
+icon_slds: metrics
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+mobile_objects:
+  - assets_card
+  - asset_recipient
+  - asset_borrowing
+  - asset_return
+  - asset_retirement
+  - process_instance_history
+  - product
+  - material_group
+  - asset_type
+  - warehouse
+showSidebar: true
+sort: 120
+tab_groups:
+  - group_name: 资产信息
+    default_open: true
+  - group_name: 资产管理
+    default_open: true
+  - group_name: 基础设置
+    default_open: true
+  - group_name: 流程审批
+    default_open: true
+tab_items:
+  object_assets_card:
+    group: 资产信息
+    index: 1
+  object_asset_borrowing:
+    group: 资产管理
+    index: 2
+  object_asset_recipient:
+    group: 资产管理
+    index: 3
+  object_asset_return:
+    group: 资产管理
+    index: 4
+  object_asset_retirement:
+    group: 资产管理
+    index: 5
+  object_material_group:
+    group: 基础设置
+    index: 8
+  object_asset_type:
+    group: 基础设置
+    index: 9
+  object_warehouse:
+    group: 基础设置
+    index: 10
+  object_instance_tasks:
+    group: 流程审批
+    index: 11
+tabs:
+  - object_assets_card
+  - object_asset_borrowing
+  - object_asset_recipient
+  - object_asset_return
+  - object_asset_retirement
+  - object_instance_tasks
+  - object_product
+  - object_material_group
+  - object_asset_type
+  - object_warehouse
+visible: true

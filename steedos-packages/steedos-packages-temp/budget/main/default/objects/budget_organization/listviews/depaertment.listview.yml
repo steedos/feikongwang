@@ -1,0 +1,22 @@
+name: depaertment
+columns:
+  - field: name
+  - field: number
+  - field: organization
+  - field: manager
+  - field: bi_manager
+  - field: priority
+filter_scope: space
+filters:
+  - - type
+    - '='
+    - 部门
+label: 部门
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort:
+  - field_name: number
+    order: asc
+sort_no: 100
+type: grid

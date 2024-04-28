@@ -1,0 +1,130 @@
+[
+    {
+        "_id": "${space_id}_62b18c3c0aa493003e532967",
+        "contributors": [
+            "${space_owner_id}"
+        ],
+        "name": "老客户回访沟通,项目签约",
+        "objective": "${space_id}_62b18bbd0aa493003e532963",
+        "owner": "6260d6ae32cc250032e1a907",
+        "risk": "Low Risk",
+        "starting_value": 0,
+        "target": 40,
+        "target_type": "Increase to",
+        "update_frequency": "Daily",
+        "weight": 40,
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:15:40.873Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:16:26.298Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "uom": "Number",
+        "calculated_confidence": 120,
+        "param1": 120,
+        "description": ""
+    },
+    {
+        "_id": "${space_id}_62b18c630aa493003e532968",
+        "contributors": [
+            "${space_owner_id}"
+        ],
+        "name": "新客户开展",
+        "objective": "${space_id}_62b18bbd0aa493003e532963",
+        "owner": "6260d6ae32cc250032e1a907",
+        "risk": "Medium Risk",
+        "starting_value": 40,
+        "target": 100,
+        "target_type": "Increase to",
+        "update_frequency": "Daily",
+        "weight": 60,
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:16:19.899Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:18:39.773Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "uom": "Number",
+        "calculated_confidence": 180,
+        "param1": 180,
+        "description": ""
+    },
+    {
+        "_id": "${space_id}_62b18c8c0aa493003e53296b",
+        "contributors": [
+            "${space_owner_id}"
+        ],
+        "description": "",
+        "name": "老客户回访沟通,项目签约",
+        "objective": "${space_id}_62b18bd60aa493003e532964",
+        "owner": "6260d6ae32cc250032e1a907",
+        "risk": "Low Risk",
+        "starting_value": 100,
+        "target": 130,
+        "target_type": "Increase to",
+        "update_frequency": "Daily",
+        "weight": 40,
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:17:00.376Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:17:00.376Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "uom": "Number",
+        "calculated_confidence": 120,
+        "param1": 120
+    },
+    {
+        "_id": "${space_id}_62b18cd40aa493003e53296c",
+        "contributors": [
+            "${space_owner_id}"
+        ],
+        "description": "",
+        "name": "新客户开展",
+        "objective": "${space_id}_62b18bd60aa493003e532964",
+        "owner": "6260d6ae32cc250032e1a907",
+        "risk": "Medium Risk",
+        "starting_value": 130,
+        "target": 150,
+        "target_type": "Increase to",
+        "update_frequency": "Daily",
+        "weight": 60,
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:18:12.736Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:18:52.408Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "uom": "Number",
+        "calculated_confidence": 180,
+        "param1": 180
+    }
+]

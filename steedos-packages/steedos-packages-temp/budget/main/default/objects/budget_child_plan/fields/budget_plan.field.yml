@@ -1,0 +1,14 @@
+name: budget_plan
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算方案
+primary: false
+reference_to: budget_plan
+required: true
+sort_no: 180
+sortable: false
+type: master_detail
+write_requires_master_read: true

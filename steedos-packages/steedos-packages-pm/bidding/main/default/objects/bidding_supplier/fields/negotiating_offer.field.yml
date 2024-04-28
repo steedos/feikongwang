@@ -1,0 +1,6 @@
+name: negotiating_offer
+label: 谈判报价
+precision: 18
+scale: 2
+sort_no: 150
+type: number

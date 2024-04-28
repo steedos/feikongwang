@@ -1,0 +1,31 @@
+name: 预算 (Beta)
+code: budget
+description: 实现公司及人员的预算管控。
+icon_slds: macros
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+mobile_objects:
+  - budget_plan
+  - budget_plan_detail
+  - cost_reimburse_detail
+  - budget_organization
+  - budget_subject
+  - budget_subject_type
+  - budget_cost_center
+  - instance_tasks
+objects:
+  - budget_plan
+  - budget_plan_detail
+  - cost_reimburse_detail
+  - budget_organization
+  - budget_subject
+  - budget_subject_type
+  - budget_cost_center
+  - instance_tasks
+sort: 70
+visible: true
+tabs:
+  - budget_home

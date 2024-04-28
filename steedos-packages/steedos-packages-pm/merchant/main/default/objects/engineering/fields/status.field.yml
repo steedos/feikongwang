@@ -1,0 +1,9 @@
+name: status
+label: 工程状态
+type: select
+options:
+  - label: 在建
+    value: doing
+  - label: 完工
+    value: completed
+sort_no: 160

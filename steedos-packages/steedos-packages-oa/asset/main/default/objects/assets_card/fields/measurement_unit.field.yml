@@ -1,0 +1,5 @@
+name: measurement_unit
+label: 计量单位
+reference_to: measurement_unit
+sort_no: 250
+type: lookup

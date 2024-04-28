@@ -1,0 +1,8 @@
+name: parents
+label: All Parent Categories
+type: lookup
+reference_to: cms_categories
+sortable: true
+omit: true
+hidden: true
+sort_no: 50

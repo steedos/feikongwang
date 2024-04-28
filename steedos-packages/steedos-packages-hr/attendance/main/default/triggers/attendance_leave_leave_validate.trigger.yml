@@ -1,0 +1,16 @@
+name: attendance_leave_leave_validate
+listenTo: attendance_leave
+when:
+  - beforeUpdate
+isEnabled: false
+handler: >-
+    
+     const { doc, previousDoc,id } = ctx.params;
+
+     // console.log('doc:', doc, 'id:', id);
+
+     // 修改请假记录，校验假期余额是否足够
+     const a = await ctx.broker.call('@steedos-labs/attendance.IsTheHolidayBalanceEnough', {
+         "attendanceleaveId": id
+      });
+      

@@ -1,0 +1,18 @@
+name: recent
+columns:
+  - field: name
+  - field: staff
+  - field: project
+  - field: contract
+  - field: attach
+  - field: remark
+  - field: meeting
+filter_scope: space
+filters: []
+label: 最近查看
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort: []
+sort_no: 100
+type: grid

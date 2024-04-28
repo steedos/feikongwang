@@ -1,0 +1,80 @@
+name: cost_trend_finance_payment
+datasource: default
+description: |-
+  查询对象：finance_payment 付款
+  查询条件：该记录未删除、付款状态为“已支付”、查询时间为：付款日期（payment_date）。
+  查询结果：付款金额每月汇总。
+label: 费控-费用趋势图-对公付款金额
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: date-range
+      global: false
+      locals: []
+      value: d_this_year
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "finance_payment",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "amount": "$amount",
+                  "payment_status": "$payment_status",
+                  "payment_date": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d %H:%M",
+                          "date": "$payment_date"
+                      }
+                  },
+                  "created_month": {
+                      "$dateToString": {
+                          "format": "%Y-%m",
+                          "date": "$payment_date"
+                      }
+                  }
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "$and": [{
+                          "payment_date": {
+                              "$gte": "{{ datetime.start }}"
+                          }
+                      },
+                      {
+                          "payment_date": {
+                              "$lte": "{{ datetime.end }}"
+                          }
+                      }
+                  ],
+                  "payment_status": {
+                      "$eq": "paid"
+                  }
+              }
+          },
+          {
+              "$group": {
+                  "_id": "$created_month",
+                  "amount": {
+                      "$sum": "$amount"
+                  }
+              }
+          },
+          {
+              "$project": {
+                  "_id": 1,
+                  "amount": 1
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

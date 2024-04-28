@@ -1,0 +1,12 @@
+name: pages
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 页数
+primary: false
+required: false
+sort_no: 210
+sortable: false
+type: text

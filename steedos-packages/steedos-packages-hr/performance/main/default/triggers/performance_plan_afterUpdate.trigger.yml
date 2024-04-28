@@ -1,0 +1,177 @@
+name: performance_plan_afterUpdate
+listenTo: performance_plan
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  /**
+   * 考核计划结束后，自动计算考核结果
+   */
+  const { doc, previousDoc } = ctx.params;
+  const userId = doc.owner; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+  const spaceId = doc.space;
+  const user = await ctx.getUser(userId, spaceId);
+  if (previousDoc.status === 'unplayed' && doc.status === 'unplayed') {
+      await updateRelatedRecords(doc, previousDoc);
+  }
+
+  if (previousDoc.status !== 'finished' && doc.status === 'finished') {
+      // 处理考核结束未填写分数
+      await fillingData(doc._id, doc.max_score, user)
+
+      // 计算考核结果
+      await ctx.broker.call(
+          '@steedos-labs/performance.calcPerformanceData',
+          {
+              'planId': doc._id
+          },
+          {
+              meta: {
+                  user: user
+              }
+          }
+      )
+
+      // 如果此季度所有的考核计划均已结束，则执行汇总操作，计算最终结果
+      let year = doc.year;
+      let quarter = doc.quarter;
+      let month = (new Date(doc.end_date)).getMonth() + 1;
+      let flag = await isAllFinished(year, quarter, user);
+      if (flag && month % 3 == 0) { // 保证月份是此季度最后一个月
+          await ctx.broker.call(
+              '@steedos-labs/performance.summaryPerformanceResult',
+              {
+                  'year': year,
+                  'quarter': quarter 
+              },
+              {
+                  meta: {
+                      user: user
+                  }
+              }
+          );
+
+          // 计算考核系数
+          await ctx.broker.call(
+              '@steedos-labs/performance.calcPerformanceCoefficient',
+              {
+                  'year': year,
+                  'quarter': quarter
+              },
+              {
+                  meta: {
+                      user: user
+                  }
+              }
+          );
+      }
+
+  }
+
+  /**
+   * 考核计划修改后，同步修改考核计划明细和考核数据中的字段
+   * 更新的字段包括 type, max_score, year, quarter
+   */
+  async function updateRelatedRecords(doc, previousDoc) {
+      // 更新考核计划明细
+      await ctx.broker.call(
+          'objectql.updateMany',
+          {
+              'objectName': 'performance_plan_item',
+              'queryFilters': ['performance_plan', '=', doc._id],
+              'doc': {
+                  'type': doc.type,
+                  'max_score': doc.max_score,
+                  'year': doc.year,
+                  'quarter': doc.quarter
+              }
+          }
+      );
+
+      // 更新考核数据
+      await ctx.broker.call(
+          'objectql.updateMany',
+          {
+              'objectName': 'performance_data',
+              'queryFilters': ['performance_plan', '=', doc._id],
+              'doc': {
+                  'type': doc.type,
+                  'max_score': doc.max_score,
+                  'year': doc.year,
+                  'quarter': doc.quarter
+              }
+          }
+      );
+  }
+
+  /**
+   * 考核结束后，将此考核计划下未填写的考核数据补充为满分。
+   *  planId: 考核计划id
+   * max_score: 最大分值
+   */
+  async function fillingData(planId, max_score, user) {
+      let dataRecords = await ctx.broker.call(
+          'objectql.find',
+          {
+              'objectName': 'performance_data',
+              'query': {
+                  'fields': ['_id', 'score'],
+                  'filters': [['performance_plan', '=', planId]]
+              }
+          },
+          {
+              meta: {
+                  user: user
+              }
+          }
+      )
+      for (let record of dataRecords) {
+          let score = record.score;
+          if (!score) { // 分数为空，则将分数处理为满分
+              await ctx.broker.call(
+                  'objectql.update',
+                  {
+                      'objectName': 'performance_data',
+                      'doc': {
+                          'score': max_score,
+                          'remark': '系统自动填写'
+                      },
+                      'id': record._id
+                  },
+                  {
+                      meta: {
+                          user: user
+                      }
+                  }
+              )
+          }
+      }
+  }
+
+  /**
+   * 判断此季度所有的考核计划都已结束
+   * 全部结束返回true，否则返回false
+   */
+  async function isAllFinished(year, quarter, user) {
+      let records = await ctx.broker.call('api.graphql', {
+          query: `
+             {
+                rows: performance_plan(filters: [["year", "=", "${year}"], ["quarter", "=", "${quarter}"]]) {
+                        _id
+                        name
+                        status
+                }
+            }
+        `},
+          {
+              user: user
+          }
+      );
+      let plans = records.data.rows;
+      for (let plan of plans) {
+          if (plan.status !== 'finished') {
+              return false;
+          }
+      }
+      return true;
+  }

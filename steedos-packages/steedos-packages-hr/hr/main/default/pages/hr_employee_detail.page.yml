@@ -1,0 +1,12 @@
+name: hr_employee_detail
+is_active: true
+label: 花名册记录详情页
+object_name: hr_employee
+pageAssignments:
+  - type: orgDefault
+    page: hr_employee_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

@@ -1,0 +1,5 @@
+name: assess_template
+label: 评估模版
+type: master_detail
+reference_to: assess_template
+sort_no: 150

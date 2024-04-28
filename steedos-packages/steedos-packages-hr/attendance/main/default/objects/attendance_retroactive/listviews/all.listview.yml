@@ -1,0 +1,21 @@
+name: all
+columns:
+  - field: name
+  - field: staff
+  - field: number
+  - field: date
+  - field: retroactive_date
+  - field: date_apply
+  - field: type
+  - field: remark
+  - field: instance_state
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

@@ -1,0 +1,47 @@
+name: project_time
+label: Time
+description: 
+fields:
+  description:
+    label: Remark
+    help: 
+    description: 
+  hours:
+    label: Person-Hours
+    help: 
+    description: 
+  incurred_by:
+    label: Handled By
+    help: 
+    description: 
+  incurred_date:
+    label: Handled Date
+    help: 
+    description: 
+  name:
+    label: Number
+    help: 
+    description: 
+  owner:
+    label: Owner
+    help: 
+    description: 
+  project_id:
+    label: Project
+    help: 
+    description: 
+  project_task:
+    label: Task
+    help: 
+    description: 
+  task_finished:
+    label: Task Completed
+    help: 
+    description: 
+listviews:
+  all:
+    label: All Time List
+  my:
+    label: My Time List
+  recent:
+    label: Recently Viewed

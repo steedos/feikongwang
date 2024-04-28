@@ -1,0 +1,14 @@
+name: leave_days
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 假期天数
+precision: 18
+primary: false
+required: true
+scale: 2
+sort_no: 150
+sortable: false
+type: number

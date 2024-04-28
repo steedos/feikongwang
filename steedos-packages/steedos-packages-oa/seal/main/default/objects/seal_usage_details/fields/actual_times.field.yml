@@ -1,0 +1,6 @@
+name: actual_times
+label: 实际用印次数
+precision: 18
+scale: 0
+sort_no: 160
+type: number

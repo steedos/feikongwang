@@ -1,0 +1,7 @@
+name: object_attendance_balance
+desktop: true
+label: 假期余额
+mobile: true
+object: attendance_balance
+permissions: []
+type: object

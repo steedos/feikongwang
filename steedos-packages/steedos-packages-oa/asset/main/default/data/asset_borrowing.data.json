@@ -1,0 +1,28 @@
+[
+    {
+      "_id": "${space_id}_6513dd1cfc206be19658e246",
+      "applicant": "${space_owner_id}",
+      "dept": "${space_id}",
+      "owner": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "name": "sensor",
+      "borrow_date": "2023-09-27T00:00:00.000Z",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-27T07:43:24.205Z",
+      "modified": "2023-10-19T05:40:35.467Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "instance_state": "draft",
+      "instances": [
+        {
+          "_id": "${space_id}_FhyvLsqAsaFFafECZ",
+          "state": "draft"
+        }
+      ],
+      "locked": true
+    }
+  ]

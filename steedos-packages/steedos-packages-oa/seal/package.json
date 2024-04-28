@@ -1,0 +1,16 @@
+{
+  "name": "@steedos-labs/seal",
+  "version": "2.6.4",
+  "main": "package.service.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "webpack --config webpack.config.js --watch"
+  },
+  "dependencies": {
+    "@steedos-labs/workflow": "2.6.4"
+  },
+  "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}

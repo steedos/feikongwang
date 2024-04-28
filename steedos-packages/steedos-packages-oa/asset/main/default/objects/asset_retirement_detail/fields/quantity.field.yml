@@ -1,0 +1,8 @@
+name: quantity
+defaultValue: 1
+label: 数量
+precision: 18
+scale: 2
+sort_no: 160
+type: number
+required: true

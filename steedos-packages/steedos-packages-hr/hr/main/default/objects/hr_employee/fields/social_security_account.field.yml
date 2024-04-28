@@ -1,0 +1,5 @@
+name: social_security_account
+group: 其他信息
+label: 社保账号
+sort_no: 380
+type: text

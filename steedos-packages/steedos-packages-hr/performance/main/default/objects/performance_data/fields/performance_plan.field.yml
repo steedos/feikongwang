@@ -1,0 +1,7 @@
+name: performance_plan
+label: 考核计划
+type: lookup
+reference_to: performance_plan
+sort_no: 100
+visilbe_on: false
+filterable: true

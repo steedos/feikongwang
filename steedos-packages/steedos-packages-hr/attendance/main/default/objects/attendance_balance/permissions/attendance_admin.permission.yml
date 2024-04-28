@@ -1,0 +1,73 @@
+name: attendance_balance.attendance_admin
+allowCreate: true
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: attendance_admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: company
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true
+  - field: freeze_days
+    readable: true
+    editable: true
+  - field: leave_days
+    readable: true
+    editable: true
+  - field: leave_remain_days
+    readable: true
+    editable: true
+  - field: leave_type
+    readable: true
+    editable: true
+  - field: leave_used_days
+    readable: true
+    editable: true
+  - field: leave_year
+    readable: true
+    editable: true
+  - field: name
+    readable: true
+    editable: false
+  - field: staff
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true

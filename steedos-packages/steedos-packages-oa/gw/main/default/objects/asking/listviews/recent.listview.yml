@@ -1,0 +1,32 @@
+name: recent
+columns:
+  - field: name
+  - field: organization
+  - field: date
+  - field: manager
+  - field: priority
+  - field: deadline
+  - field: bljg
+  - field: ssbm
+filter_scope: space
+filters: []
+label: 最近查看
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: organization
+  - field: date
+  - field: manager
+  - field: priority
+  - field: ssbm
+shared: true
+sort:
+  - field_name: deadline
+    order: desc
+  - field_name: date
+    order: desc
+sort_no: 100
+type: grid
+
+

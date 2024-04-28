@@ -1,0 +1,198 @@
+[
+    {
+        "_id": "${space_id}_kZ6fe6hDEidSZreyk",
+        "name": "workflow_admin",
+        "label": "流程管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:57:05.59Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:57:24.82Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_kBHcNrEqWfmSWK2Gz",
+        "name": "project_manager",
+        "label": "项目管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:57:35.686Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:57:45.118Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_HPqn9nhQPFvA6jHST",
+        "name": "contract_manager",
+        "label": "合同管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:57:51.682Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:58:01.415Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_XQxTsb7J44vtjhLPG",
+        "name": "organization_admin",
+        "label": "分部管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:58:14.221Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:58:25.955Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_xQTTQWKL6iBGH6dZm",
+        "name": "master_admin",
+        "label": "主数据管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:58:36.593Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:58:46.651Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_DSxX3Wfms78SfokZw",
+        "name": "crm_manager",
+        "label": "销售管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:58:57.08Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:59:07.455Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_axrTFHX8CHQQifdvx",
+        "name": "finance_manager",
+        "label": "财务管理员",
+        "type": "permission_set",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:59:15.188Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T09:59:27.293Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "password_history": 3,
+        "max_login_attempts": 10,
+        "lockout_interval": 15,
+        "login_expiration_in_days": 90,
+        "phone_login_expiration_in_days": 90,
+        "users": [
+            "${space_owner_id}"
+        ]
+    }
+]

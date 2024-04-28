@@ -1,0 +1,8 @@
+name: assess_record
+label: 考核单
+custom: true
+enable_api: true
+enable_search: false
+icon: account
+is_enable: true
+version: 2

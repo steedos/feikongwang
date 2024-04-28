@@ -1,0 +1,20 @@
+name: asset_recipient_detail_beforeInsert
+listenTo: asset_recipient_detail
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const { doc, asset_recipient_detail, previousDoc } = ctx.params;
+  const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+  const spaceId = doc.space;
+  await ctx.broker.call(
+      '@steedos-labs/asset.assetRecipientDetailOfAssetsCard',
+      {
+          "doc": doc
+      },
+      {
+          meta: {
+              user: null
+          }
+      }
+  );

@@ -1,0 +1,15 @@
+name: recent
+columns:
+  - field: name
+  - field: users
+  - field: attendance_rule_settings
+filter_scope: space
+filters: []
+label: 最近查看
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

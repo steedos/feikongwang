@@ -1,0 +1,15 @@
+name: quarter
+label: 季度
+type: select
+options:
+  - label: 第一季度
+    value: first_quarter
+  - label: 第二季度
+    value: second_quarter
+  - label: 第三季度
+    value: third_quarter
+  - label: 第四季度
+    value: fourth_quarter
+date_type: text
+sort_no: 110
+filterable: true

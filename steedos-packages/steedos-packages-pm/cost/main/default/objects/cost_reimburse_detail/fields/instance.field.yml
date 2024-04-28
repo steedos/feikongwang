@@ -1,0 +1,15 @@
+name: instance
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 费用单据
+primary: false
+reference_to: [cost_daily_expense_reimburse,cost_business_out_reimburse,cost_business_loan_reimburse]
+required: false
+sort_no: 135
+sortable: false
+type: lookup
+create: false
+readonly: true

@@ -1,0 +1,7 @@
+name: object_simple_bidding
+desktop: true
+label: 简易招投标
+mobile: true
+object: simple_bidding
+permissions: []
+type: object

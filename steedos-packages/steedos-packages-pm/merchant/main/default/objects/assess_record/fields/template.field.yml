@@ -1,0 +1,5 @@
+name: template
+label: 考核模版
+type: lookup
+reference_to: assess_template
+sort_no: 100

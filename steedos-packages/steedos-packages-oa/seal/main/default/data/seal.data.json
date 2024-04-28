@@ -1,0 +1,86 @@
+[
+    {
+        "_id": "${space_id}_62de66161818d734371ce8b3",
+        "name": "公章",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "seal_admin": "${space_owner_id}",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:33:42.364Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "code": "YZ-001",
+        "state":"enable"
+    },
+    {
+        "_id": "${space_id}_62de66271818d734371ce8b4",
+        "name": "合同章",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "seal_admin": "${space_owner_id}",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:33:42.508Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "code": "YZ-002",
+        "state":"enable"
+    },
+    {
+        "_id": "${space_id}_62eb85203baf9606e66bf013",
+        "name": "法人章",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "seal_admin": "${space_owner_id}",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:33:42.714Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "code": "YZ-003",
+        "state":"enable"
+    },
+    {
+        "_id": "${space_id}_62eb85383baf9606e66bf014",
+        "name": "财务专用章",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "seal_admin": "${space_owner_id}",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:33:42.857Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "code": "YZ-004",
+        "state":"enable"
+    }
+]

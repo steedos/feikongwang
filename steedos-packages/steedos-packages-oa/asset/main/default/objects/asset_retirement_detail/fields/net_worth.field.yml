@@ -1,0 +1,8 @@
+name: net_worth
+label: 净值(元)
+type: currency
+group: 报废信息
+sort_no: 420
+omit: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

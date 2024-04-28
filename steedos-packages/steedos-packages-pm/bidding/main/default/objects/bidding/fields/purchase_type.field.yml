@@ -1,0 +1,6 @@
+name: purchase_type
+label: 采购类型
+type: lookup
+reference_to: purchase_type
+sort_no: 140
+filterable: true

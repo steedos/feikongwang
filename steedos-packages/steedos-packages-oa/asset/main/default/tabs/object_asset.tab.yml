@@ -1,0 +1,7 @@
+name: object_asset
+desktop: true
+label: 资产
+mobile: true
+object: asset
+permissions: []
+type: object

@@ -1,0 +1,5 @@
+name: name
+label: 保费名称
+required: true
+type: text
+sort_no: 80

@@ -1,0 +1,8 @@
+name: performance_data
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: data_mapping
+is_enable: true
+label: 考核数据
+version: 2

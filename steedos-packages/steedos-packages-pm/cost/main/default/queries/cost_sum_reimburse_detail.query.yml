@@ -1,0 +1,124 @@
+name: cost_sum_reimburse_detail
+datasource: default
+description: |-
+
+  查询对象：cost_reimburse_detail 费用明细
+  查询条件：该记录未删除、查询时间：费用日期（date）为“本年”。
+  查询结果：根据审批状态 “进行中”、“已核准”统计费用金额总额。
+label: 费控-费用类型统计
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: date-range
+      global: false
+      locals: []
+      value: d_this_year
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "cost_reimburse_detail",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "amount": "$amount",
+                  "instance_state": "$instance_state",
+                  "expend_type": "$expend_type",
+                  "date": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d",
+                          "date": "$date"
+                      }
+                  }
+              }
+          },
+          {
+              "$lookup": {
+                  "from": "cost_type",
+                  "localField": "expend_type",
+                  "foreignField": "_id",
+                  "as": "expend_type"
+              }
+          },
+          {
+              "$unwind": {
+                  "path": "$expend_type",
+                  "preserveNullAndEmptyArrays": true
+              }
+          },
+          {
+              "$facet": {
+                  "pending": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "$and": [
+                                  {
+                                      "date": {
+                                          "$gte": "{{ datetime.start }}"
+                                      }
+                                  },
+                                  {
+                                      "date": {
+                                          "$lte": "{{ datetime.end }}"
+                                      }
+                                  }
+                              ],
+                              "instance_state": {
+                                  "$eq": "pending"
+                              }
+                          }
+                      },
+                      {
+                          "$group": {
+                              "_id": "$expend_type.name",
+                              "amount": {
+                                  "$sum": "$amount"
+                              }
+                          }
+                      }
+                  ],
+                  "approved": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                  "$ne": true
+                              },
+                              "$and": [
+                                  {
+                                      "date": {
+                                          "$gte": "{{ datetime.start }}"
+                                      }
+                                  },
+                                  {
+                                      "date": {
+                                          "$lte": "{{ datetime.end }}"
+                                      }
+                                  }
+                              ],
+                              "instance_state": {
+                                  "$eq": "approved"
+                              }
+                          }
+                      },
+                      {
+                          "$group": {
+                              "_id": "$expend_type.name",
+                              "amount": {
+                                  "$sum": "$amount"
+                              }
+                          }
+                      }
+                  ]
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

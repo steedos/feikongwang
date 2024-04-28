@@ -1,0 +1,4 @@
+name: product_capacity
+label: 年生产能力（套/樘/平米等）
+type: text
+sort_no: 200

@@ -1,0 +1,105 @@
+name: 新员工入职.管理员
+allowCreate: true
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: false
+  - field: gender
+    readable: true
+    editable: true
+  - field: identify
+    readable: true
+    editable: true
+  - field: idetify_file
+    readable: true
+    editable: true
+  - field: phone
+    readable: true
+    editable: true
+  - field: email
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true
+  - field: manager
+    readable: true
+    editable: true
+  - field: job_title
+    readable: true
+    editable: true
+  - field: job_line
+    readable: true
+    editable: true
+  - field: venue
+    readable: true
+    editable: true
+  - field: date
+    readable: true
+    editable: true
+  - field: training
+    readable: true
+    editable: true
+  - field: training_method
+    readable: true
+    editable: true
+  - field: tutor
+    readable: true
+    editable: true
+  - field: detail
+    readable: true
+    editable: true
+  - field: account
+    readable: true
+    editable: true
+  - field: company_email
+    readable: true
+    editable: true
+  - field: computer_detail
+    readable: true
+    editable: true
+  - field: computer_num
+    readable: true
+    editable: true

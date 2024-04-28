@@ -1,0 +1,30 @@
+name: all
+columns:
+  - field: assets_card
+    wrap: false
+    width: '150'
+  - field: asset_number
+    wrap: false
+    width: '150'
+  - field: model
+    wrap: false
+    width: '150'
+  - field: amount
+    wrap: false
+    width: '120'
+  - field: quantity
+    wrap: false
+    width: '120'
+  - field: users
+    wrap: false
+    width: '120'
+  - field: asset_recipient
+    wrap: false
+filter_scope: space
+filters: []
+label: 所有资产领用明细
+scrolling_mode: standard
+shared: true
+show_count: false
+sort_no: 100
+type: grid

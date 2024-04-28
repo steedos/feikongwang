@@ -1,0 +1,9 @@
+name: attendance_detail
+__filename: >-
+  /workspace/chinaums-oa-apps/steedos-packages/attendance/main/default/pages/attendance_detail.page.yml
+is_active: true
+label: 考勤明细
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

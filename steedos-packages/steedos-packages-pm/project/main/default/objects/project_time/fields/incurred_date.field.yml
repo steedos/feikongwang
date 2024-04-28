@@ -1,0 +1,14 @@
+name: incurred_date
+filterable: false
+hidden: true
+index: false
+is_name: false
+is_wide: false
+label: 发生日期
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 115
+sortable: true
+type: date

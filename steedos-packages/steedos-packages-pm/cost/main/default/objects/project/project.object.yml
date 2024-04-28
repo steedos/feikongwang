@@ -1,0 +1,14 @@
+name: project
+extend: project
+# relatedList:
+#   - cms_files
+#   - contacts
+#   - account_banks
+#   - opportunity
+#   - contracts
+#   - finance_invoice
+#   - finance_receive
+#   - finance_payment
+#   - tasks
+#   - events
+#   - audit_records

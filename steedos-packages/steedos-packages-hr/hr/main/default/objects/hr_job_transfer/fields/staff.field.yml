@@ -1,0 +1,29 @@
+name: staff
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 人员
+primary: false
+reference_to: hr_employee
+required: true
+sort_no: 115
+sortable: false
+type: master_detail
+write_requires_master_read: false
+amis:
+  autoFill:
+    fillMapping:
+      "company_before": "${company__expand.name}"
+      "department_before": "${department__expand.name}"
+      "job_title_before": "${job_title}"
+      "manager_before": "${manager__expand.name}"
+      "venue_before": "${venue}"
+    api:
+      url: "${context.rootUrl}/graphql?a=1"
+      method: post
+      headers:
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: '{rows:hr_employee(filters: [["_id", "=", "${staff}"]], top: 1){company__expand{name},department__expand{name},job_title,manager__expand{name},venue}}'

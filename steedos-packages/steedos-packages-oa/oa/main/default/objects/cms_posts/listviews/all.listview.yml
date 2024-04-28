@@ -1,0 +1,11 @@
+name: all
+label: All Knowledge
+filter_scope: space
+columns:
+  - name
+  - category
+  - modified
+  - modified_by
+sort:
+  - - modified
+    - desc

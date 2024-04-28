@@ -1,0 +1,22 @@
+name: project_task
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 任务
+multiple: true
+readonly: false
+reference_to: project_task
+required: false
+searchable: false
+sort_no: 130
+sortable: true
+type: master_detail
+write_requires_master_read: true
+depend_on:
+  - project_id
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+    function (filters, values){
+        return [["project","=",values.project_id]]
+    }

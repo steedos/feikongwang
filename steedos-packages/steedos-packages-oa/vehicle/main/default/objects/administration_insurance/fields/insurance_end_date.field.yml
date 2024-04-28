@@ -1,0 +1,4 @@
+name: insurance_end_date
+label: 保险结束日期
+sort_no: 120
+type: date

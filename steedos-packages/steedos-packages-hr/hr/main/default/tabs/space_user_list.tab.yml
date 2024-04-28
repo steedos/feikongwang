@@ -1,0 +1,10 @@
+name: space_user_list
+desktop: false
+icon: groups
+is_new_window: false
+is_use_iframe: false
+label: 通讯录
+mobile: false
+page: space_user_list
+permissions: []
+type: page

@@ -1,0 +1,73 @@
+name: cost_trend_loan_reimburse
+datasource: default
+label: 费控-费用趋势图-借款核销应付
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_year
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "cost_business_loan_reimburse",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "paid_amount": "$paid_amount",
+                  "instance_state": "$instance_state",
+                  "created": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d %H:%M",
+                          "date": "$created",
+                          "timezone": "+08"
+                      }
+                  },
+                  "created_month": {
+                      "$dateToString": {
+                          "format": "%Y-%m",
+                          "date": "$created",
+                          "timezone": "+08"
+                      }
+                  }
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "$and": [{
+                          "created": {
+                              "$gte": "{{ datetime.start }}"
+                          }
+                      },
+                      {
+                          "created": {
+                              "$lte": "{{ datetime.end }}"
+                          }
+                      }
+                  ],
+                  "instance_state": {
+                      "$eq": "approved"
+                  }
+              }
+          },
+          {
+              "$group": {
+                  "_id": "$created_month",
+                  "amount": {
+                      "$sum": "$paid_amount"
+                  }
+              }
+          },
+          {
+              "$project": {
+                  "_id": 1,
+                  "amount": 1
+              }
+          }
+      ]
+  }

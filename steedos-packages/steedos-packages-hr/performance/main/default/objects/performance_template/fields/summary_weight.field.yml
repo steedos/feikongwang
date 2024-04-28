@@ -1,0 +1,10 @@
+name: summary_weight
+label: 权重总计
+sort_no: 120
+data_type: percent
+precision: 18
+scale: 2
+summary_field: weight
+summary_object: performance_index
+summary_type: sum
+type: summary

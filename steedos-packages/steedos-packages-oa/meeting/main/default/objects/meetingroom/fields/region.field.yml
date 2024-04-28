@@ -1,0 +1,5 @@
+name: region
+label: 所属区域
+type: text
+required: true
+sort_no: 120

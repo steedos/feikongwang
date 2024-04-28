@@ -1,0 +1,4 @@
+name: owner
+label: 所有者
+hidden: false
+visible_on: "{{ global.mode === 'read' ? true : false }}"

@@ -1,0 +1,34 @@
+[
+    {
+      "_id": "${space_id}_651289e5f3a40dff226bf0c7",
+      "applicant": "${space_owner_id}",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "name": "外地出差",
+      "start_time": "2023-09-28T01:00:00.000Z",
+      "end_time": "2023-09-29T10:00:00.000Z",
+      "days": 2,
+      "arrive_city": "西安",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T07:36:05.958Z",
+      "modified": "2023-09-26T07:41:14.533Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "autonumber": "CC202309260001",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "${space_id}_usTmxrSE7bk5YSLxi",
+          "state": "approved"
+        }
+      ],
+      "locked": false,
+      "reason": ""
+    }
+  ]

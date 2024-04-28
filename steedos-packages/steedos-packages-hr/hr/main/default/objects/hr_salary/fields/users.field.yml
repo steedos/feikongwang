@@ -1,0 +1,7 @@
+name: users
+label: 姓名
+reference_to: users
+required: true
+sort_no: 110
+type: lookup
+filterable: true

@@ -1,0 +1,6 @@
+name: supplier_shortlisting
+label: 供应商入围信息
+type: master_detail
+reference_to: supplier_shortlisting
+sort_no: 50
+visible_on: "{{ formData.simple_bidding ? false : true }}"

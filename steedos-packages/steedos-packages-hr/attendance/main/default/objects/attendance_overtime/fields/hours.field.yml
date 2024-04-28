@@ -1,0 +1,16 @@
+name: hours
+filterable: true
+generated: false
+group: 加班信息
+index: false
+is_name: false
+is_wide: false
+label: 加班时长（小时）
+precision: 18
+primary: false
+required: true
+scale: 1
+sort_no: 170
+sortable: false
+type: number
+#visible_on: "{{global.mode ==='read' ? true : false}}"

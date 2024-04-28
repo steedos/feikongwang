@@ -1,0 +1,16 @@
+name: attributes
+group: 采购信息
+defaultValue: outsourcing
+label: 属性
+options:
+  - label: 外购
+    value: outsourcing
+  - label: 自制
+    value: self-made
+  - label: 委外
+    value: out-made
+  - label: 虚拟件
+    value: phantom
+searchable: true
+sort_no: 270
+type: select

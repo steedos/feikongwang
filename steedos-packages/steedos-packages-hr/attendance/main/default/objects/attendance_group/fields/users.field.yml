@@ -1,0 +1,8 @@
+name: users
+is_wide: true
+label: 考勤人员
+multiple: true
+reference_to: users
+required: true
+sort_no: 150
+type: lookup

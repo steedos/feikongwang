@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "${space_id}_f4b27e34492878b46ffc644e",
+        "name": "项目管理",
+        "space": "655331588a2535c81f60e26f",
+        "created": {
+            "$date": "2023-11-14T08:35:37.192Z"
+        },
+        "created_by": "655331568a2535c81f60e26d",
+        "modified": {
+            "$date": "2023-11-14T08:35:37.192Z"
+        },
+        "modified_by": "655331568a2535c81f60e26d",
+        "owner": "655331568a2535c81f60e26d",
+        "company_id": "655331588a2535c81f60e26f",
+        "company_ids": [
+            "655331588a2535c81f60e26f"
+        ],
+        "app": "milestones",
+        "sort_no" : 1000
+    }
+]

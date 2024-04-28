@@ -1,0 +1,20 @@
+name: all
+columns:
+  - field: name
+  - field: number
+  - field: type
+  - field: organization
+  - field: manager
+  - field: bi_manager
+  - field: priority
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort:
+  - field_name: number
+    order: asc
+sort_no: 100
+type: grid

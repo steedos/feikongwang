@@ -1,0 +1,8 @@
+name: performance_plan
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: picklist_choice
+is_enable: true
+label: 考核计划
+version: 2

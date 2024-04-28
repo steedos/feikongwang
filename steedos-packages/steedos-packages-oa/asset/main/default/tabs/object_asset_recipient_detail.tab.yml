@@ -1,0 +1,7 @@
+name: object_asset_recipient_detail
+desktop: true
+label: 资产领用明细
+mobile: true
+object: asset_recipient_detail
+permissions: []
+type: object

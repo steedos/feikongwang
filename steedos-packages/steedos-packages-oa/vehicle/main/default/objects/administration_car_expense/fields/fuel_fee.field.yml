@@ -1,0 +1,6 @@
+name: fuel_fee
+label: 汽油费（元）
+precision: 18
+scale: 2
+sort_no: 110
+type: currency

@@ -1,0 +1,5 @@
+name: product
+label: 分类
+reference_to: product
+sort_no: 120
+type: lookup

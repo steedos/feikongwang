@@ -1,0 +1,12 @@
+name: number
+filterable: false
+formula: 'CBZX-{0000}'
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 成本中心编号
+primary: false
+sort_no: 110
+sortable: false
+type: autonumber

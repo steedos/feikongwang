@@ -1,0 +1,60 @@
+[
+    {
+        "_id": "${space_id}_62fb57bdcb9c8306a51b2bde",
+        "amount": 50,
+        "daily_expense": "${space_id}_62fb5656cb9c8306a51b2bd6",
+        "date": {
+            "$date": "2022-08-02T00:00:00Z"
+        },
+        "expend_type": "${space_id}_62fb5661cb9c8306a51b2bd8",
+        "remark": "公共交通",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:39:25.277Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T08:40:31.714Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "2022-00001",
+        "_table": {
+            "_id": "${space_id}_62fb57bdcb9c8306a51b2bde",
+            "_code": "报销明细"
+        }
+    },
+    {
+        "_id": "${space_id}_62fb57dfcb9c8306a51b2be0",
+        "amount": 350,
+        "daily_expense": "${space_id}_62fb5656cb9c8306a51b2bd6",
+        "date": {
+            "$date": "2022-08-02T00:00:00Z"
+        },
+        "expend_type": "${space_id}_6305d2af336fcc09215a6f48",
+        "remark": "餐费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:39:59.577Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:30:02.002Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "2022-00002",
+        "_table": {
+            "_id": "${space_id}_62fb57dfcb9c8306a51b2be0",
+            "_code": "报销明细"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+name: seal_management
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_files: true
+enable_inline_edit: true
+enable_instances: true
+enable_workflow: true
+icon: approval
+is_enable: true
+label: 印章管理
+version: 2

@@ -1,0 +1,402 @@
+[
+    {
+        "_id": "${space_id}_62fb5661cb9c8306a51b2bd8",
+        "group": "费用类",
+        "name": "机票费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:33:37.312Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:23:23.708Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0001"
+    },
+    {
+        "_id": "${space_id}_62fb568acb9c8306a51b2bda",
+        "group": "费用类",
+        "name": "火车费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:34:18.26Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:23:23.874Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0002"
+    },
+    {
+        "_id": "${space_id}_62fb5712cb9c8306a51b2bdb",
+        "group": "费用类",
+        "name": "轮船费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:36:34.92Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:23:24.126Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0003"
+    },
+    {
+        "_id": "${space_id}_62fb573bcb9c8306a51b2bdc",
+        "group": "费用类",
+        "name": "住宿费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:37:15.761Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:23:28.443Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0004"
+    },
+    {
+        "_id": "${space_id}_62fb5745cb9c8306a51b2bdd",
+        "group": "费用类",
+        "name": "招待费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:37:25.842Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:23:28.578Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0005"
+    },
+    {
+        "_id": "${space_id}_6305d212336fcc09215a6f3e",
+        "group": "费用类",
+        "name": "市内交通费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:24:02.099Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:24:02.099Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0006"
+    },
+    {
+        "_id": "${space_id}_6305d222336fcc09215a6f3f",
+        "group": "费用类",
+        "name": "团建费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:24:18.772Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:24:18.772Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0007"
+    },
+    {
+        "_id": "${space_id}_6305d231336fcc09215a6f40",
+        "group": "费用类",
+        "name": "活动费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:24:33.095Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:24:33.095Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0008"
+    },
+    {
+        "_id": "${space_id}_6305d24f336fcc09215a6f41",
+        "group": "费用类",
+        "name": "通讯费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:25:03.633Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:25:03.633Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0009"
+    },
+    {
+        "_id": "${space_id}_6305d25e336fcc09215a6f42",
+        "group": "费用类",
+        "name": "培训费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:25:18.772Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:25:18.772Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0010"
+    },
+    {
+        "_id": "${space_id}_6305d26d336fcc09215a6f43",
+        "group": "费用类",
+        "name": "采购费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:25:33.644Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:25:33.644Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0011"
+    },
+    {
+        "_id": "${space_id}_6305d27b336fcc09215a6f44",
+        "group": "费用类",
+        "name": "礼品费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:25:47.377Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:25:47.377Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0012"
+    },
+    {
+        "_id": "${space_id}_6305d287336fcc09215a6f45",
+        "group": "费用类",
+        "name": "活动用品费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:25:59.413Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:25:59.413Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0013"
+    },
+    {
+        "_id": "${space_id}_6305d294336fcc09215a6f46",
+        "group": "费用类",
+        "name": "生产物料费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:26:12.837Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:26:12.837Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0014"
+    },
+    {
+        "_id": "${space_id}_6305d2a1336fcc09215a6f47",
+        "group": "费用类",
+        "name": "办公费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:26:25.212Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:26:25.212Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0015"
+    },
+    {
+        "_id": "${space_id}_6305d2af336fcc09215a6f48",
+        "group": "费用类",
+        "name": "餐饮费",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:26:39.519Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:26:39.519Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0016"
+    },
+    {
+        "_id": "${space_id}_6305d2be336fcc09215a6f49",
+        "group": "费用类",
+        "name": "其他费用",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:26:54.903Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:26:54.903Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0017"
+    },
+    {
+        "_id": "${space_id}_6305d2d4336fcc09215a6f4a",
+        "group": "补助类",
+        "name": "差旅补贴",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:27:16.07Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:27:16.07Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0018"
+    },
+    {
+        "_id": "${space_id}_6305d2e0336fcc09215a6f4b",
+        "group": "补助类",
+        "name": "餐饮补贴",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:27:28.453Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:27:28.453Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0019"
+    },
+    {
+        "_id": "${space_id}_6305d2ed336fcc09215a6f4c",
+        "group": "补助类",
+        "name": "住宿补贴",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-24T07:27:41.034Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:27:41.034Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "0020"
+    }
+]

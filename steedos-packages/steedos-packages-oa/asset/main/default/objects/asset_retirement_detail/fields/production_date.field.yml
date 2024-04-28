@@ -1,0 +1,6 @@
+name: production_date
+label: 出厂日期
+type: formula
+data_type: date
+formula: assets_card.production_date
+sort_no: 180

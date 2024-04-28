@@ -1,0 +1,6 @@
+name: overtime_meal_midnight
+label: 误餐费-0点
+precision: 18
+scale: 2
+sort_no: 196
+type: number

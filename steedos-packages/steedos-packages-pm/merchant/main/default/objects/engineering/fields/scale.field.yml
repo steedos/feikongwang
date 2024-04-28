@@ -1,0 +1,6 @@
+name: scale
+label: 工程规模（金额）
+type: number
+precision: 18
+scale: 2
+sort_no: 150

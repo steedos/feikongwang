@@ -1,0 +1,7 @@
+name: object_asset_borrowing_detail
+desktop: true
+label: 资产借用明细
+mobile: true
+object: asset_borrowing_detail
+permissions: []
+type: object

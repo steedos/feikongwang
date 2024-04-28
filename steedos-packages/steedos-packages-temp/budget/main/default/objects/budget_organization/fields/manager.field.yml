@@ -1,0 +1,15 @@
+name: manager
+filterable: false
+generated: false
+index: false
+inlineHelpText: 组织负责人可负责该预算组织的预算额申请，预算报表数据查询。
+is_name: false
+is_wide: false
+label: 组织负责人
+multiple: true
+primary: false
+reference_to: users
+required: false
+sort_no: 130
+sortable: false
+type: lookup

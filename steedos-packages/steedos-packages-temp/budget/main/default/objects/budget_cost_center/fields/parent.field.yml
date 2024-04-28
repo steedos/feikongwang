@@ -1,0 +1,4 @@
+name: parent
+label: 上级成本中心
+reference_to: budget_cost_center
+type: lookup

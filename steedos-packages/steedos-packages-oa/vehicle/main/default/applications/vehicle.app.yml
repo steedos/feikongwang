@@ -1,0 +1,45 @@
+name: 车辆
+code: vehicle
+description: 企业车辆管理模块
+icon_slds: work_order
+is_creator: true
+mobile: true
+showSidebar: false
+sort: 9100
+tab_groups:
+  - group_name: 车辆管理
+    default_open: true
+    id: 车辆管理
+  - group_name: 流程审批
+    default_open: true
+    id: 流程审批
+tab_items:
+  object_administration_car:
+    group: ''
+    index: 1
+  object_administration_insurance:
+    group: ''
+    index: 2
+  object_administration_car_expense:
+    group: ''
+    index: 3
+  object_instance_tasks:
+    group: ''
+    index: 4
+  object_administration_car_usage:
+    group: ''
+    index: 5
+  object_administration_car_borrowing:
+    group: ''
+    index: 6
+tabs:
+  - object_administration_car
+  - object_administration_insurance
+  - object_administration_car_expense
+  - object_administration_car_usage
+  - object_administration_car_borrowing
+  - object_driver_overtime
+  - object_driver_overtime_count_master
+  - object_driver_overtime_count
+  - object_instance_tasks
+visible: true

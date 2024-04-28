@@ -1,0 +1,6 @@
+name: level
+label: 供应商等级
+type: lookup
+filterable: true
+reference_to: accounts_level
+sort_no: 140

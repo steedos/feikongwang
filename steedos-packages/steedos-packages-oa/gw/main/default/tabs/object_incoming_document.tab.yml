@@ -1,0 +1,7 @@
+name: object_incoming_document
+desktop: true
+label: 收文
+mobile: true
+object: incoming_document
+permissions: []
+type: object

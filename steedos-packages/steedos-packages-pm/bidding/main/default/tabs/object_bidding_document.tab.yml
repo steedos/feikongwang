@@ -1,0 +1,7 @@
+name: object_bidding_document
+desktop: true
+label: 标书
+mobile: true
+object: bidding_document
+permissions: []
+type: object

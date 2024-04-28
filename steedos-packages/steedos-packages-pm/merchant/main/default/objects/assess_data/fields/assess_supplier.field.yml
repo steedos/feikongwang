@@ -1,0 +1,5 @@
+name: assess_supplier
+label: 供应商评分
+type: lookup
+reference_to: assess_supplier
+sort_no: 110

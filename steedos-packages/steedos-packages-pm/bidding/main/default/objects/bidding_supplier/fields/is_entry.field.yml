@@ -1,0 +1,11 @@
+name: is_entry
+data_type: text
+defaultValue: 'Yes'
+label: 入围供应商
+options:
+  - label: 是
+    value: 'Yes'
+  - label: 否
+    value: 'No'
+sort_no: 120
+type: select

@@ -1,0 +1,17 @@
+name: incurred_by
+defaultValue: '{userId}'
+filterable: true
+hidden: true
+index: false
+is_name: false
+is_wide: false
+label: 人员
+multiple: false
+omit: false
+readonly: true
+reference_to: users
+required: false
+searchable: false
+sort_no: 140
+sortable: true
+type: lookup

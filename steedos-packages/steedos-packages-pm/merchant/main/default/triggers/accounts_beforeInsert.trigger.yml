@@ -1,0 +1,23 @@
+name: accounts_beforeInsert
+listenTo: accounts
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const { doc } = ctx.params
+
+  // 客商信息录入时，校验纳税人识别号
+  const code = doc.credit_code
+  const record = await ctx.broker.call(
+      'objectql.find',
+      {
+          'objectName': 'accounts',
+          'query': {
+              fields: ['_id', 'name', 'credit_code'],
+              'filters': [['credit_code', '=', code], ['status', '!=', 'disabled']]
+          }
+      }
+  );
+  if (record.length > 0) {
+      throw new Error(`纳税人识别号/身份证号码重复！重复客商为：${record[0].name}`);
+  } 

@@ -1,0 +1,82 @@
+name: official_document_count_document_classification
+datasource: default
+description: |-
+  查询对象：document 发文
+  查询条件：发文记录未删除、、查询时间：签发日期（date_of_issue）为“本年”。
+  查询结果：根据公文分类（official_document_type）字段统计各分类总数。
+label: 公文-发文分类统计
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: date-range
+      global: false
+      locals: []
+      value: d_this_month
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "document",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "name": "$name",
+                  "official_document_type": "$official_document_type",
+                  "date_of_issue": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d",
+                          "date": "$date_of_issue",
+                          "timezone": "+00"
+                      }
+                  }
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "$and": [
+                      {
+                          "date_of_issue": {
+                              "$gte": "{{ datetime.start }}"
+                          }
+                      },
+                      {
+                          "date_of_issue": {
+                              "$lte": "{{ datetime.end }}"
+                          }
+                      }
+                  ]
+              }
+          },
+          {
+              "$lookup": {
+                  "from": "official_document_type",
+                  "localField": "official_document_type",
+                  "foreignField": "_id",
+                  "as": "official_document_type"
+              }
+          },
+          {
+              "$unwind": {
+                  "path": "$official_document_type",
+                  "preserveNullAndEmptyArrays": true
+              }
+          },
+          {
+              "$group": {
+                  "_id": "$official_document_type.name",
+                  "count": {
+                      "$sum": 1
+                  }
+              }
+          }
+      ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

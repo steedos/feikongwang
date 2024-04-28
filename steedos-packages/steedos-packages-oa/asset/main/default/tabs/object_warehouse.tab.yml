@@ -1,0 +1,7 @@
+name: object_warehouse
+desktop: true
+label: 仓库
+mobile: true
+object: warehouse
+permissions: []
+type: object

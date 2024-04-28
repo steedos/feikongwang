@@ -1,0 +1,20 @@
+name: attendance
+description: 原始打卡记录数据导入模版
+encoding: GB2312
+field_mappings:
+  - api_name: staff
+    matched_by: name
+    header: 人员
+  - api_name: date_time
+    header: 打卡时间
+  - api_name: company
+    matched_by: name
+    header: 公司
+  - api_name: department
+    matched_by: name
+    header: 部门
+  - api_name: data_source
+    header: 数据来源（移动打卡/考勤机/数据导入）
+object_name: attendance
+operation: insert
+value_separator: ','

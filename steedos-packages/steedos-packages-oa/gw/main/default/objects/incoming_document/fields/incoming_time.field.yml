@@ -1,0 +1,12 @@
+name: incoming_time
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 收文日期
+primary: false
+required: false
+sort_no: 125
+sortable: false
+type: date

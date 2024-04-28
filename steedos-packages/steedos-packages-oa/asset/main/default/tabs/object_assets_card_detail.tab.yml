@@ -1,0 +1,7 @@
+name: object_assets_card_detail
+desktop: true
+label: 资产卡片明细
+mobile: true
+object: assets_card_detail
+permissions: []
+type: object

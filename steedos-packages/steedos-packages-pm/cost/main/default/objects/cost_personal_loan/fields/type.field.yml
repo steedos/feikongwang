@@ -1,0 +1,19 @@
+name: type
+data_type: text
+defaultValue: 员工借款
+filterable: true
+generated: false
+group: 借款信息
+index: false
+is_name: false
+is_wide: false
+label: 借款类型
+multiple: false
+options:
+  - label: 员工借款
+    value: 员工借款
+primary: false
+required: true
+sort_no: 160
+sortable: false
+type: select

@@ -1,0 +1,24 @@
+[
+    {
+      "_id": "${space_id}_65093ed5841d5113adf90465",
+      "name": "应武",
+      "gender": "male",
+      "phone": "1385689462",
+      "company": "${space_id}",
+      "position_status": "full-time",
+      "department": "${space_id}_oJbJh98SY5R2eyLxW",
+      "manager": "${space_owner_id}",
+      "job_title": "研发工程师",
+      "date": "2023-09-01T00:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:25:25.709Z",
+      "modified": "2023-09-19T06:25:25.709Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    }
+  ]

@@ -1,0 +1,4 @@
+name: billing_address
+type: textarea
+hidden: true
+label: 开单地址

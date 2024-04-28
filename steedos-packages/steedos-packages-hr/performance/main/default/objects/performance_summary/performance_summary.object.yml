@@ -1,0 +1,8 @@
+name: performance_summary
+label: 考核汇总
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: return_order_line_item
+is_enable: true
+version: 2

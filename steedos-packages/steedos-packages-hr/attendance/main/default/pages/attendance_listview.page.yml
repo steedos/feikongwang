@@ -1,0 +1,9 @@
+name: attendance_listview
+__filename: >-
+  /workspace/chinaums-oa-apps/steedos-packages/attendance/main/default/pages/attendance_listview.page.yml
+is_active: true
+label: 考勤视图
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

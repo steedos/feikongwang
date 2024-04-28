@@ -1,0 +1,5 @@
+name: ocr_result
+label: 发票识别结果
+type: object
+blackbox: true
+omit: true

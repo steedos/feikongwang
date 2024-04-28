@@ -1,0 +1,5 @@
+name: status
+label: 状态
+type: boolean
+visible_on: "${global.mode === 'read' ? true : false }"
+sort_no: 140

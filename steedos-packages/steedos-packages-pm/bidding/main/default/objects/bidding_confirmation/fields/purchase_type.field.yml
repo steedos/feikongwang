@@ -1,0 +1,7 @@
+name: purchase_type
+label: 采购类型
+type: lookup
+filterable: true
+reference_to: purchase_type
+sort_no: 120
+defaultValue: "${_master.record.purchase_type}"

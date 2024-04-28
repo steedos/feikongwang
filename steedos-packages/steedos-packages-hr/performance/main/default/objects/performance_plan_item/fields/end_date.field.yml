@@ -1,0 +1,6 @@
+name: end_date
+label: 结束日期
+type: date 
+sort_no: 128
+sortable: true
+visible_on: "${global.mode === 'read' ? true : false}"

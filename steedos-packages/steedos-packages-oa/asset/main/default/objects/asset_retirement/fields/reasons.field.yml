@@ -1,0 +1,7 @@
+name: reasons
+is_wide: true
+label: 报废原因
+rows: 3
+sort_no: 500
+type: textarea
+filterable: true

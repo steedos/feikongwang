@@ -1,0 +1,7 @@
+name: trial_period
+group: 在职信息
+label: 试用期（月）
+precision: 18
+scale: 1
+sort_no: 300
+type: number

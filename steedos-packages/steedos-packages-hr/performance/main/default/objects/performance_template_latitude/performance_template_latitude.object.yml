@@ -1,0 +1,8 @@
+name: performance_template_latitude
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: category
+is_enable: true
+label: 考核维度
+version: 2

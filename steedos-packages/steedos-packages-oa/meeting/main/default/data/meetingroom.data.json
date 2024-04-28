@@ -1,0 +1,192 @@
+[
+    {
+        "_id": "${space_id}_62fb25cdcb9c8306a51b2b4a",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "capacity": 5,
+        "color": "#ff9500",
+        "enable_open": true,
+        "features": [
+            "surfing"
+        ],
+        "name": "小会议室（1）",
+        "phone": "18977893029",
+        "region": "301室",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:06:21.037Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:07:13.812Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb25efcb9c8306a51b2b4b",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "capacity": 5,
+        "color": "#ffcc00",
+        "enable_open": true,
+        "features": [
+            "surfing",
+            "projection"
+        ],
+        "name": "小会议室（2）",
+        "other_features": "圆桌会议",
+        "phone": "18977893029",
+        "region": "302室",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:06:55.44Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:13:59.053Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb261dcb9c8306a51b2b4e",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "capacity": 15,
+        "color": "#65db39",
+        "enable_open": true,
+        "features": [
+            "surfing",
+            "projection",
+            "vedio"
+        ],
+        "name": "中会议室（1）",
+        "other_features": null,
+        "phone": "18977893029",
+        "region": "401室",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:07:41.606Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:14:10.241Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb2633cb9c8306a51b2b4f",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "capacity": 15,
+        "color": "#34aadc",
+        "enable_open": true,
+        "features": [
+            "surfing",
+            "projection",
+            "vedio"
+        ],
+        "name": "中会议室（2）",
+        "other_features": null,
+        "phone": "18977893029",
+        "region": "401室",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:08:03.201Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:14:17.284Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb2649cb9c8306a51b2b50",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "capacity": 15,
+        "color": "#cc73e1",
+        "enable_open": true,
+        "features": [
+            "surfing",
+            "projection",
+            "vedio",
+            "monogram"
+        ],
+        "name": "大会议室（1）",
+        "other_features": null,
+        "phone": "18977893029",
+        "region": "501室",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:08:25.341Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:14:23.51Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_62fb265ecb9c8306a51b2b51",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "capacity": 15,
+        "color": "#a2845e",
+        "enable_open": true,
+        "features": [
+            "surfing",
+            "projection",
+            "vedio",
+            "monogram"
+        ],
+        "name": "大会议室（2）",
+        "other_features": null,
+        "phone": "18977893029",
+        "region": "502室",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T05:08:46.356Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:14:28.932Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    }
+]

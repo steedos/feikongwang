@@ -1,0 +1,34 @@
+[
+    {
+      "_id": "${space_id}_65094ab9841d5113adf90470",
+      "apply_date": "2023-09-19T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}_oJbJh98SY5R2eyLxW",
+      "staff": "${space_owner_id}",
+      "name": "收入证明",
+      "type": "收入证明",
+      "position": "研发工程师",
+      "identity": "12365548511311",
+      "remark": "购房贷款用于验资",
+      "contact": "136545464",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T07:16:09.760Z",
+      "modified": "2023-09-19T07:17:16.039Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "ZM-2023-0001",
+      "instance_state": "approved",
+      "instances": [
+        {
+          "_id": "FtHHKZgLB4LtTePMS",
+          "state": "approved"
+        }
+      ],
+      "locked": false
+    }
+  ]

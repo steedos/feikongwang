@@ -1,0 +1,19 @@
+name: all
+label: 所有
+columns:
+  - field: project_program
+  - field: bidding
+  - field: name
+  - field: principal
+  - field: purchase_type
+  - field: purchase_method
+  - field: plan_date
+  - field: instance_state
+  - field: created_by
+  - field: created
+filter_scope: space
+filters: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

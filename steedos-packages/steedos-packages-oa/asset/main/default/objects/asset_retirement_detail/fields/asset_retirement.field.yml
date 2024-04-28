@@ -1,0 +1,7 @@
+name: asset_retirement
+label: 资产报废
+reference_to: asset_retirement
+searchable: true
+sort_no: 170
+type: master_detail
+write_requires_master_read: true

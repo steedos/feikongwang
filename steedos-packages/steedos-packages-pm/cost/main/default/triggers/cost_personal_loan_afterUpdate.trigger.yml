@@ -1,0 +1,25 @@
+name: cost_personal_loan_afterUpdate
+listenTo: cost_personal_loan
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  // _ : lodash
+  // moment: moment
+  // validator: validator
+  // ctx
+  // objects
+  // services
+  const { doc, previousDoc, userId, spaceId } = ctx.params
+  if (previousDoc.amount == doc.repayment) {
+      const res = await ctx.broker.call(
+          'objectql.directUpdate',
+          {
+              objectName: 'cost_personal_loan',
+              doc: {
+                  state: '已还款'
+              },
+              id: "doc._id"
+          },
+      );
+  }

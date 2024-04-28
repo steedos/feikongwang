@@ -1,0 +1,22 @@
+name: attendance_business_out_business_out_out_business
+listenTo: attendance_business_out
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { previousDoc, doc } = ctx.params;
+
+  // 修改出差时长
+
+  await
+  ctx.broker.call('@steedos-labs/attendance.afterInsertCountBusinessTimes', {
+      "doc": doc
+  })
+
+  if (previousDoc.instance_state !== 'approved' && doc.instance_state ===
+  'approved') {
+      // 出差台账结算：
+      await ctx.broker.call('@steedos-labs/attendance.businessTripSettlement', {
+          businessTripId: doc._id
+      });
+  }

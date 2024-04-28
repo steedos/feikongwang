@@ -1,0 +1,12 @@
+name: number
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 科目编码
+primary: false
+required: false
+sort_no: 130
+sortable: false
+type: text

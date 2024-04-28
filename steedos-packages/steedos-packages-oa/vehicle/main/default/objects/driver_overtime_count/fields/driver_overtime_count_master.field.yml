@@ -1,0 +1,6 @@
+name: driver_overtime_count_master
+label: 驾驶员加班统计
+type: master_detail
+reference_to: driver_overtime_count_master
+sort_no: 100
+visible_on: "{{false}}"

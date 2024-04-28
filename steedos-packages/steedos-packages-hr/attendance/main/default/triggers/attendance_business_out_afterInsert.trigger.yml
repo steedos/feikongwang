@@ -1,0 +1,14 @@
+name: attendance_business_out_afterInsert
+listenTo: attendance_business_out
+when:
+  - afterInsert
+isEnabled: true
+handler: >-
+  // 新增出差记录之后，自动带出时长
+
+  const { doc } = ctx.params;
+
+  await
+  ctx.broker.call('@steedos-labs/attendance.afterInsertCountBusinessTimes', {
+     "doc": doc
+  })

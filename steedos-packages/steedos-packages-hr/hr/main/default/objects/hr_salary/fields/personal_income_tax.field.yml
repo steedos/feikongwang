@@ -1,0 +1,6 @@
+name: personal_income_tax
+label: 个人所得税
+precision: 18
+scale: 2
+sort_no: 260
+type: currency

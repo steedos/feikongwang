@@ -1,0 +1,1078 @@
+[
+    {
+      "_id": "${space_id}_650c07fdef192099b05dc29a",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "材料设备类",
+      "code": "CLSB",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:08:12.985Z",
+      "modified": "2023-09-21T09:08:12.985Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "children": [
+        "${space_id}_650c082cef192099b05dc29b",
+        "${space_id}_650c0870ef192099b05dc29c",
+        "${space_id}_650c0a5af94c029bb616ffdf",
+        "${space_id}_650c0aa9f94c029bb616ffe0",
+        "${space_id}_650c0ab9f94c029bb616ffe1",
+        "${space_id}_650c0ad1f94c029bb616ffe2",
+        "${space_id}_650c0ae2f94c029bb616ffe3",
+        "${space_id}_650c0af9f94c029bb616ffe4",
+        "${space_id}_650c0b0af94c029bb616ffe5",
+        "${space_id}_650c0b1cf94c029bb616ffe6",
+        "${space_id}_650c0b3af94c029bb616ffe7",
+        "${space_id}_650c0b4cf94c029bb616ffe8",
+        "${space_id}_650c0b60f94c029bb616ffe9",
+        "${space_id}_650c0b7bf94c029bb616ffea",
+        "${space_id}_650c0b92f94c029bb616ffeb",
+        "${space_id}_650c0babf94c029bb616ffec",
+        "${space_id}_650c0bbff94c029bb616ffed"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c082cef192099b05dc29b",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "玻璃",
+      "code": "CLSB.CLSBBL",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:09:00.943Z",
+      "modified": "2023-09-21T09:09:15.077Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0870ef192099b05dc29c",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "保温吸音材料",
+      "code": "CLSB.CLSBBWXY",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:10:08.955Z",
+      "modified": "2023-09-21T09:10:08.955Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0a5af94c029bb616ffdf",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "厨卫器材",
+      "code": "CLSB.CLSBCWQC",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:18:18.147Z",
+      "modified": "2023-09-21T09:18:18.147Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0aa9f94c029bb616ffe0",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "灯具及附件",
+      "code": "CLSB.CLSBDJ",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:19:37.260Z",
+      "modified": "2023-09-21T09:19:37.260Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ab9f94c029bb616ffe1",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "电气辅料",
+      "code": "CLSB.CLSBDOFL",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:19:53.589Z",
+      "modified": "2023-09-21T09:19:53.589Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ad1f94c029bb616ffe2",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "电线电缆",
+      "code": "CLSB.CLSBDXDL",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:20:17.192Z",
+      "modified": "2023-09-21T09:20:17.192Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ae2f94c029bb616ffe3",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "水设备及材料",
+      "code": "CLSB.CLSBFM",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:20:34.826Z",
+      "modified": "2023-09-21T09:20:34.826Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0af9f94c029bb616ffe4",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "机电设备及材料",
+      "code": "CLSB.CLSBJDSB",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:20:57.317Z",
+      "modified": "2023-09-21T09:20:57.317Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b0af94c029bb616ffe5",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "家具类产品",
+      "code": "CLSB.CLSBJJ",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:21:14.346Z",
+      "modified": "2023-09-21T09:21:14.346Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b1cf94c029bb616ffe6",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "门窗",
+      "code": "CLSB.CLSBMC",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:21:32.354Z",
+      "modified": "2023-09-21T09:21:32.354Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b3af94c029bb616ffe7",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "木材及制品",
+      "code": "CLSB.CLSBMCJZP",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:22:01.990Z",
+      "modified": "2023-09-21T09:22:01.990Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b4cf94c029bb616ffe8",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "其他",
+      "code": "CLSB.CLSBQT",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:22:20.509Z",
+      "modified": "2023-09-21T09:22:20.509Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b60f94c029bb616ffe9",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "弱电及智能化材料",
+      "code": "CLSB.CLSBRD",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:22:40.076Z",
+      "modified": "2023-09-21T09:22:40.076Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b7bf94c029bb616ffea",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "通风器材",
+      "code": "CLSB.CLSBTFQC",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:23:07.374Z",
+      "modified": "2023-09-21T09:23:07.374Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0b92f94c029bb616ffeb",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "五金制品",
+      "code": "CLSB.CLSBWJZP",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:23:30.961Z",
+      "modified": "2023-09-21T09:23:30.961Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0babf94c029bb616ffec",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "油漆及化工材料",
+      "code": "CLSB.CLSBYQ",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:23:55.105Z",
+      "modified": "2023-09-21T09:23:55.105Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0bbff94c029bb616ffed",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "装饰材料",
+      "code": "CLSB.CLSBZSCL",
+      "parent": "650c07fdef192099b05dc29a",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:24:15.344Z",
+      "modified": "2023-09-21T09:24:15.344Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0bd0f94c029bb616ffee",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "服务类",
+      "code": "FW",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:24:32.004Z",
+      "modified": "2023-09-21T09:24:32.004Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "children": [
+        "${space_id}_650c0be8f94c029bb616ffef",
+        "${space_id}_650c0bfaf94c029bb616fff0",
+        "${space_id}_650c0c14f94c029bb616fff1",
+        "${space_id}_650c0c29f94c029bb616fff2",
+        "${space_id}_650c0c3cf94c029bb616fff3"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0be8f94c029bb616ffef",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "监理",
+      "code": "FW.FWJL",
+      "parent": "650c0bd0f94c029bb616ffee",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:24:55.992Z",
+      "modified": "2023-09-21T09:24:55.992Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0bfaf94c029bb616fff0",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "勘察",
+      "code": "FW.FWKC",
+      "parent": "650c0bd0f94c029bb616ffee",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:25:14.256Z",
+      "modified": "2023-09-21T09:25:14.256Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c14f94c029bb616fff1",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "其他",
+      "code": "FW.FWQT",
+      "parent": "650c0bd0f94c029bb616ffee",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:25:40.485Z",
+      "modified": "2023-09-21T09:25:40.485Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c29f94c029bb616fff2",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "设计",
+      "code": "FW.FWSJ",
+      "parent": "650c0bd0f94c029bb616ffee",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:26:01.136Z",
+      "modified": "2023-09-21T09:26:01.136Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c3cf94c029bb616fff3",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "造价咨询",
+      "code": "FW.FWZJZX",
+      "parent": "650c0bd0f94c029bb616ffee",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:26:20.906Z",
+      "modified": "2023-09-21T09:26:20.906Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c50f94c029bb616fff4",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "工程类",
+      "code": "GC",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:26:40.904Z",
+      "modified": "2023-09-21T09:26:40.904Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "children": [
+        "${space_id}_650c0c62f94c029bb616fff5",
+        "${space_id}_650c0c76f94c029bb616fff6",
+        "${space_id}_650c0c8ff94c029bb616fff7",
+        "${space_id}_650c0c9cf94c029bb616fff8",
+        "${space_id}_650c0cb0f94c029bb616fff9",
+        "${space_id}_650c0ccef94c029bb616fffa",
+        "${space_id}_650c0cdff94c029bb616fffb",
+        "${space_id}_650c0cf0f94c029bb616fffc",
+        "${space_id}_650c0d0cf94c029bb616fffd",
+        "${space_id}_650c0d1ff94c029bb616fffe",
+        "${space_id}_650c0d57f94c029bb616ffff",
+        "${space_id}_650c0d67f94c029bb6170000"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c62f94c029bb616fff5",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "钢结构工程",
+      "code": "GC.GCGJG",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:26:58.725Z",
+      "modified": "2023-09-21T09:26:58.725Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c76f94c029bb616fff6",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "基础工程",
+      "code": "GC.GCJC",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:27:18.488Z",
+      "modified": "2023-09-21T09:27:18.488Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c8ff94c029bb616fff7",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "机电安装工程",
+      "code": "GC.GCJDAZ",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:27:43.829Z",
+      "modified": "2023-09-21T09:27:43.829Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0c9cf94c029bb616fff8",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "机电其他工程",
+      "code": "GC.GCJDQT",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:27:56.023Z",
+      "modified": "2023-09-21T09:27:56.023Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0cb0f94c029bb616fff9",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "景观绿化工程",
+      "code": "GC.GCJGLH",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:28:16.079Z",
+      "modified": "2023-09-21T09:28:16.079Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ccef94c029bb616fffa",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "精装修工程",
+      "code": "GC.GCJZX",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:28:46.387Z",
+      "modified": "2023-09-21T09:28:46.387Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0cdff94c029bb616fffb",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "幕墙工程",
+      "code": "GC.GCMQ",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:29:03.727Z",
+      "modified": "2023-09-21T09:29:03.727Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0cf0f94c029bb616fffc",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "其他",
+      "code": "GC.GCQT",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:29:20.875Z",
+      "modified": "2023-09-21T09:29:20.875Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0d0cf94c029bb616fffd",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "code": "GC.GCRDAZ",
+      "name": "弱典安装工程",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:29:48.777Z",
+      "modified": "2023-09-21T09:29:48.777Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0d1ff94c029bb616fffe",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "土建工程",
+      "code": "GC.GCTJ",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:30:07.483Z",
+      "modified": "2023-09-21T09:30:07.483Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0d57f94c029bb616ffff",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "消防安装工程",
+      "code": "GC.GCXFAZ",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:31:03.844Z",
+      "modified": "2023-09-21T09:31:03.844Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0d67f94c029bb6170000",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "总包工程",
+      "code": "GC.GCZB",
+      "parent": "650c0c50f94c029bb616fff4",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:31:19.879Z",
+      "modified": "2023-09-21T09:31:19.879Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0dd8f94c029bb6170001",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "配套工程类",
+      "code": "PT",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:33:12.711Z",
+      "modified": "2023-09-21T09:33:12.711Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "children": [
+        "${space_id}_650c0df0f94c029bb6170002",
+        "${space_id}_650c0e0df94c029bb6170003",
+        "${space_id}_650c0e22f94c029bb6170004",
+        "${space_id}_650c0e34f94c029bb6170005",
+        "${space_id}_650c0e47f94c029bb6170006",
+        "${space_id}_650c0e5af94c029bb6170007",
+        "${space_id}_650c0e72f94c029bb6170008",
+        "${space_id}_650c0ea1f94c029bb6170009",
+        "${space_id}_650c0eb2f94c029bb617000a",
+        "${space_id}_650c0ed2f94c029bb617000b"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0df0f94c029bb6170002",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "电讯配套",
+      "code": "PT.PTDX",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:33:36.413Z",
+      "modified": "2023-09-21T09:33:36.413Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0e0df94c029bb6170003",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "供电工程",
+      "code": "PT.PTGD",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:34:05.809Z",
+      "modified": "2023-09-21T09:34:05.809Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0e22f94c029bb6170004",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "供气工程",
+      "code": "PT.PTGQ",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:34:26.882Z",
+      "modified": "2023-09-21T09:34:26.882Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0e34f94c029bb6170005",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "供水工程",
+      "code": "PT.PTGS",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:34:44.314Z",
+      "modified": "2023-09-21T09:34:44.314Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0e47f94c029bb6170006",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "环卫工程",
+      "code": "PT.PTHW",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:35:03.684Z",
+      "modified": "2023-09-21T09:35:03.684Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0e5af94c029bb6170007",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "交通工程",
+      "code": "PT.PTJT",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:35:22.565Z",
+      "modified": "2023-09-21T09:35:22.565Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0e72f94c029bb6170008",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "排水、排污",
+      "code": "PT.PTPSPW",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:35:46.268Z",
+      "modified": "2023-09-21T09:35:46.268Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ea1f94c029bb6170009",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "消防配套",
+      "code": "PT.PTXF",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:36:33.133Z",
+      "modified": "2023-09-21T09:36:33.133Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0eb2f94c029bb617000a",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "市政配套",
+      "code": "PT.PTXZ",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:36:50.185Z",
+      "modified": "2023-09-21T09:36:50.185Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ed2f94c029bb617000b",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "有线电视配套",
+      "code": "PT.PTYX",
+      "parent": "650c0dd8f94c029bb6170001",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:37:22.311Z",
+      "modified": "2023-09-21T09:37:22.311Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0ef1f94c029bb617000c",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "人力资源类",
+      "code": "RLZY",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:37:53.225Z",
+      "modified": "2023-09-21T09:37:53.225Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "children": [
+        "${space_id}_650c0f02f94c029bb617000d",
+        "${space_id}_650c0f13f94c029bb617000e",
+        "${space_id}_650c0f2cf94c029bb617000f",
+        "${space_id}_650c0f3df94c029bb6170010",
+        "${space_id}_650c0f52f94c029bb6170011",
+        "${space_id}_650c0f65f94c029bb6170012"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f02f94c029bb617000d",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "培训服务",
+      "code": "RLZY.PX",
+      "parent": "650c0ef1f94c029bb617000c",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:38:10.525Z",
+      "modified": "2023-09-21T09:38:10.525Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f13f94c029bb617000e",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "猎头",
+      "code": "LZY.LT",
+      "parent": "650c0ef1f94c029bb617000c",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:38:27.686Z",
+      "modified": "2023-09-21T09:38:27.686Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f2cf94c029bb617000f",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "人员招聘",
+      "code": "RLZY.ZP",
+      "parent": "650c0ef1f94c029bb617000c",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:38:52.497Z",
+      "modified": "2023-09-21T09:38:52.497Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f3df94c029bb6170010",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "项目咨询",
+      "code": "RLZY.ZX",
+      "parent": "650c0ef1f94c029bb617000c",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:39:09.435Z",
+      "modified": "2023-09-21T09:39:09.435Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f52f94c029bb6170011",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "福利",
+      "code": "RLZY.FL",
+      "parent": "650c0ef1f94c029bb617000c",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:39:30.660Z",
+      "modified": "2023-09-21T09:39:30.660Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f65f94c029bb6170012",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "其他人力资源",
+      "code": "RLZY.QT",
+      "parent": "650c0ef1f94c029bb617000c",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:39:49.735Z",
+      "modified": "2023-09-21T09:39:49.735Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f7af94c029bb6170013",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "财务类",
+      "code": "CW",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:40:10.557Z",
+      "modified": "2023-09-21T09:40:10.557Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "children": [
+        "${space_id}_650c0f8cf94c029bb6170014",
+        "${space_id}_650c0fa7f94c029bb6170015"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0f8cf94c029bb6170014",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "税务类",
+      "code": "CW.SW",
+      "parent": "650c0f7af94c029bb6170013",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:40:28.247Z",
+      "modified": "2023-09-21T09:40:28.247Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0fa7f94c029bb6170015",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "审计类",
+      "code": "CW.SJ",
+      "parent": "650c0f7af94c029bb6170013",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:40:55.731Z",
+      "modified": "2023-09-21T09:40:55.731Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0fc1f94c029bb6170016",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "物业供应商",
+      "code": "wy",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:41:21.513Z",
+      "modified": "2023-09-21T09:41:21.513Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    },
+    {
+      "_id": "${space_id}_650c0fcef94c029bb6170017",
+      "enable": true,
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "其他",
+      "code": "QT",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-21T09:41:34.726Z",
+      "modified": "2023-09-21T09:41:34.726Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ]
+    }
+  ]

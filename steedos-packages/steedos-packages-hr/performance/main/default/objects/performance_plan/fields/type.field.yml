@@ -1,0 +1,13 @@
+name: type
+label: 考核类型
+type: select
+options:
+  - label: 绩效考核
+    value: accessment
+  - label: 个人评分
+    value: personal
+sort_no: 102
+filterable: true
+amis:
+  autoFill:
+    "max_score": "${type == 'accessment' ? 30 : 100}"

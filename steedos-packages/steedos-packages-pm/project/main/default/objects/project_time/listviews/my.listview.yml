@@ -1,0 +1,29 @@
+name: my
+columns:
+  - field: name
+    wrap: false
+  - field: project_id
+    wrap: false
+  - field: project_task
+    wrap: false
+  - field: owner
+    width: '150'
+    wrap: false
+  - field: incurred_date
+    width: '150'
+    wrap: false
+  - field: hours
+    width: '100'
+    wrap: false
+  - field: description
+    wrap: false
+filter_fields:
+  - incurred_date
+  - hours
+  - project_task
+filter_scope: mine
+label: 我的
+scrolling_mode: standard
+shared: true
+show_count: false
+type: grid

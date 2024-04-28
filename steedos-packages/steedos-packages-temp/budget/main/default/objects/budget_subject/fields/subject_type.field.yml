@@ -1,0 +1,14 @@
+name: subject_type
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 所属分类
+multiple: false
+primary: false
+required: true
+sort_no: 105
+sortable: false
+type: lookup
+reference_to: budget_subject_type

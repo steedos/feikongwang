@@ -1,0 +1,10 @@
+name: gender_restrictions
+data_type: text
+label: 性别限制
+options:
+  - label: 女
+    value: female
+  - label: 男
+    value: male
+sort_no: 150
+type: select

@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "${space_id}_dc3ffc8350b64b25b9628438",
+        "name": "公文管理",
+        "space": "655331588a2535c81f60e26f",
+        "created": {
+            "$date": "2023-11-14T08:35:37.048Z"
+        },
+        "created_by": "655331568a2535c81f60e26d",
+        "modified": {
+            "$date": "2023-11-14T08:37:55.088Z"
+        },
+        "modified_by": "655331568a2535c81f60e26d",
+        "owner": "655331568a2535c81f60e26d",
+        "company_id": "655331588a2535c81f60e26f",
+        "company_ids": [
+            "655331588a2535c81f60e26f"
+        ],
+        "app": "official_document",
+        "sort_no" : 750
+    }
+]

@@ -1,0 +1,12 @@
+name: asset_return_datail
+is_active: true
+label: 资产归还详情页
+object_name: asset_return
+pageAssignments:
+  - type: orgDefault
+    page: asset_return_datail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

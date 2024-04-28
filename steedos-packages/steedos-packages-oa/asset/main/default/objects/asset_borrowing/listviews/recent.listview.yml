@@ -1,0 +1,20 @@
+name: recent
+columns:
+  - field: applicant
+    wrap: false
+    width: '120'
+  - field: borrow_date
+    wrap: false
+    width: '150'
+  - field: dept
+    wrap: false
+    width: '150'
+  - field: instance_state
+    wrap: false
+filter_scope: space
+filters: []
+label: 最近查看数据
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

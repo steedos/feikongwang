@@ -1,0 +1,11 @@
+name: attendance_beforeInsert
+listenTo: attendance
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  // 原始打卡记录新增记录之前校验
+  const { doc, attendance_overtime } = ctx.params;
+  await ctx.broker.call('@steedos-labs/attendance.checkAttendance', {
+      "doc": doc
+  });

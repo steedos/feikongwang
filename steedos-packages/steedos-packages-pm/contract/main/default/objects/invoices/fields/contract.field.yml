@@ -1,0 +1,22 @@
+name: contract
+create: false
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 合同/业务
+multiple: false
+precision: 18
+primary: false
+reference_to: contracts
+required: false
+scale: 2
+searchable: false
+show_as_qr: false
+sort_no: 400
+sortable: false
+type: lookup
+write_requires_master_read: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

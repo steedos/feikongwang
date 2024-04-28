@@ -1,0 +1,6 @@
+name: object_assess_template
+desktop: true
+mobile: true
+object: assess_template
+permissions: []
+type: object

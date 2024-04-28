@@ -1,0 +1,14 @@
+name: department
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 部门
+multiple: false
+primary: false
+reference_to: organizations
+required: false
+sort_no: 140
+sortable: false
+type: lookup

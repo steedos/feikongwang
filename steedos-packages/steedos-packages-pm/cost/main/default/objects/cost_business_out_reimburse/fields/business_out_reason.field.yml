@@ -1,0 +1,15 @@
+name: business_out_reason
+data_type: text
+filterable: false
+formula: business_out.reason
+formula_blank_value: blanks
+generated: false
+group: 出差信息
+index: false
+is_name: false
+is_wide: true
+label: 出差事由
+primary: false
+sort_no: 9999
+sortable: false
+type: formula

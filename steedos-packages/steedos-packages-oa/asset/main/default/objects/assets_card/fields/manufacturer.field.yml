@@ -1,0 +1,5 @@
+name: manufacturer
+group: 采购信息
+label: 制造厂商
+sort_no: 260
+type: text

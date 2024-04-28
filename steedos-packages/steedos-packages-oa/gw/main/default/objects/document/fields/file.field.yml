@@ -1,0 +1,13 @@
+name: file
+filterable: false
+generated: false
+group: 归档信息
+index: false
+is_name: false
+is_wide: false
+label: 归档
+primary: false
+required: false
+sort_no: 220
+sortable: false
+type: boolean

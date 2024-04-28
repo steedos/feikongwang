@@ -1,0 +1,21 @@
+name: pdf_file_size
+create: true
+filterable: false
+generated: false
+index: false
+inlineHelpText: 传入PDF文件的总页数，当 pdf_file 参数有效时返回该字段
+is_name: false
+is_wide: false
+label: 传入PDF文件的总页数
+multiple: false
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 130
+sortable: false
+type: text
+write_requires_master_read: false
+readonly: true
+
+

@@ -1,0 +1,8 @@
+name: estimated_residual_value
+label: 估计残值(元)
+type: currency
+group: 报废信息
+sort_no: 410
+omit: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

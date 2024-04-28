@@ -1,0 +1,12 @@
+name: type
+label: 标书类型
+type: select
+sort_no: 110
+filterable: true
+options: 
+ - label: 技术标
+   value: technical
+   color: 49d181
+ - label: 商务标
+   value: commercial 
+   color: F4A460

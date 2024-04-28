@@ -1,0 +1,6 @@
+name: score
+label: 考察得分
+type: number
+precision: 18
+scale: 0
+sort_no: 145

@@ -1,0 +1,531 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "panel",
+            "title": "在建项目",
+            "body": [
+                {
+                    "type": "service",
+                    "id": "u:a9edd3e43c0d",
+                    "body": [
+                        {
+                            "type": "grid",
+                            "columns": [
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>项目总应收</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${contracts_all_income}</span></p>",
+                                            "inline": false,
+                                            "id": "u:ae58a1da0146",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:27de789ab014"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>项目已收款</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen;${contracts_received_income}</span></p>",
+                                            "inline": false,
+                                            "id": "u:4f66fa4fef3b",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:89ccaf36d1d8"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>项目已付款</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen;${contracts_paid_pay}</span></p>",
+                                            "inline": false,
+                                            "id": "u:9dc968256e42",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:4b3789a43425"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>预期成本总额</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${project_cost_budget}</span></p>",
+                                            "inline": false,
+                                            "id": "u:403619088cbd",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:b53468531826"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>预期利润总额</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${total_expected_profit}</span></p>",
+                                            "inline": false,
+                                            "id": "u:8265e5ed5713",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:839ed9154483"
+                                }
+                            ],
+                            "id": "u:214b11a7ec33"
+                        }
+                    ],
+                    "messages": {},
+                    "api": {
+                        "method": "post",
+                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_ee_sum_amount/results",
+                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n  rows = rows[0]\n} else {\n  rows = { contracts_all_income: 0, contracts_received_income: 0, contracts_paid_pay: 0, project_cost_budget: 0 }\n}\n\nvar contracts_all_income = rows.contracts_all_income;\nvar contracts_received_income = rows.contracts_received_income;\nvar contracts_paid_pay = rows.contracts_paid_pay;\nvar project_cost_budget = rows.project_cost_budget;\nvar total_expected_profit = contracts_all_income - project_cost_budget;\npayload.data = {\n  contracts_all_income,\n  contracts_received_income,\n  contracts_paid_pay,\n  project_cost_budget,\n  total_expected_profit\n};\n\nreturn payload;",
+                        "headers": {
+                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                        }
+                    },
+                    "interval": 300000
+                }
+            ],
+            "id": "u:1de3385ef0b5",
+            "affixFooter": false,
+            "inline": false,
+            "actions": [],
+            "className": "",
+            "bodyClassName": "",
+            "headerClassName": ""
+        },
+        {
+            "type": "panel",
+            "title": "收支报告",
+            "body": [
+                {
+                    "type": "service",
+                    "id": "u:356972059e13",
+                    "messages": {},
+                    "api": {
+                        "method": "post",
+                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_ee_sum_contracts/results",
+                        "requestAdaptor": "\nconst date = new Date();\nconst this_year = date.getFullYear();\napi.data.parameters = {\n  datetime: {\n    start: this_year + \"-01-01 00:00\",\n    end: this_year + \"-12-31 23:59\"\n  }\n}",
+                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows;\nif (rows.length) {\n  rows = rows[0]\n} else {\n  rows = { totalCollectionAmount: 0, totalReceivedAmount: 0, totalMadeInvoiceAmount: 0, totalPaymentAmount: 0, totalPaidAmount:0 }\n}\n\nvar totalCollectionAmount = rows.totalCollectionAmount;\nvar totalReceivedAmount = rows.totalReceivedAmount;\nvar totalMadeInvoiceAmount = rows.totalMadeInvoiceAmount;\nvar totalPaymentAmount = rows.totalPaymentAmount;\nvar totalPaidAmount = rows.totalPaidAmount;\npayload.data = {\n  totalCollectionAmount,\n  totalReceivedAmount,\n  totalMadeInvoiceAmount,\n  totalPaymentAmount,\n  totalPaidAmount\n};\n\nreturn payload;",
+                        "headers": {
+                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                        }
+                    },
+                    "body": [
+                        {
+                            "type": "grid",
+                            "columns": [
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>销售合同总应收</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${totalCollectionAmount}</span></p>",
+                                            "inline": false,
+                                            "id": "u:9471991e1d6c",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm",
+                                            "affixFooter": false
+                                        }
+                                    ],
+                                    "id": "u:e1bc04c9c460"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>销售合同已收</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${totalReceivedAmount}</span></p>",
+                                            "inline": false,
+                                            "id": "u:70a454f40c03",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm",
+                                            "affixFooter": false
+                                        }
+                                    ],
+                                    "id": "u:401d2c9fb7b0"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>采购合同总应付</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${totalPaymentAmount}</span></p>",
+                                            "inline": false,
+                                            "id": "u:6c0d910a6424",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:1515d3777457"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>采购合同已付</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${totalPaidAmount}</span></p>",
+                                            "inline": false,
+                                            "id": "u:01e08cd48707",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:94579f445af9"
+                                },
+                                {
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<p>销售合同已开票</p>\n<p><span style=\"font-size: 14pt; color: #3598db;\">&yen; ${totalMadeInvoiceAmount}</span></p>",
+                                            "inline": false,
+                                            "id": "u:539991fec440",
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "b-a p-t-sm p-b-sm"
+                                        }
+                                    ],
+                                    "id": "u:39cd2ed3cdfc"
+                                }
+                            ],
+                            "id": "u:bc655b13134b"
+                        }
+                    ],
+                    "affixFooter": false,
+                    "interval": 300000,
+                    "silentPolling": false
+                }
+            ],
+            "id": "u:1cc5560d8893",
+            "affixFooter": false,
+            "inline": false,
+            "actions": [],
+            "className": "",
+            "bodyClassName": "",
+            "headerClassName": "",
+            "footerClassName": ""
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "最新收入合同",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "合同名称",
+                                                    "type": "link",
+                                                    "id": "u:69db1f47edf5",
+                                                    "placeholder": "-",
+                                                    "body": "${name}",
+                                                    "href": "/app/-/contracts/view/${_id}",
+                                                    "blank": false
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "合同金额",
+                                                    "name": "amount",
+                                                    "placeholder": "-",
+                                                    "id": "u:78b8d16be35f"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "相对方",
+                                                    "name": "_display.othercompany",
+                                                    "placeholder": "-",
+                                                    "id": "u:ea662e48393f"
+                                                },
+                                                {
+                                                    "type": "date",
+                                                    "label": "签订日期",
+                                                    "name": "signed_date",
+                                                    "placeholder": "-",
+                                                    "id": "u:260df790da67"
+                                                }
+                                            ],
+                                            "id": "u:933acd399b31",
+                                            "className": "",
+                                            "source": "${rows}",
+                                            "affixFooter": false,
+                                            "title": ""
+                                        }
+                                    ],
+                                    "id": "u:5be71e100dd2",
+                                    "affixFooter": false,
+                                    "inline": false,
+                                    "bodyClassName": "p-0",
+                                    "className": "",
+                                    "actions": [],
+                                    "footerClassName": "",
+                                    "headerClassName": ""
+                                }
+                            ],
+                            "id": "u:931e622f8191",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql",
+                                "data": {
+                                    "query": "{ rows: contracts(top: 5,filters:[[\"collection\",\"=\",true],[\"signed_date\", \"between\", \"this_year\"]], sort: \"signed_date desc\") { _id, name, amount,othercompany ,_display{ othercompany },signed_date } }"
+                                },
+                                "adaptor": "",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                }
+                            },
+                            "affixFooter": false,
+                            "interval": 300000
+                        },
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "最新项目收款",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "合同名称",
+                                                    "type": "link",
+                                                    "placeholder": "-",
+                                                    "id": "u:b03f7eed72d1",
+                                                    "body": "${_display.contract}",
+                                                    "href": "/app/-/finance_receive/view/${_id}",
+                                                    "blank": false
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "收款金额",
+                                                    "name": "amount",
+                                                    "placeholder": "-",
+                                                    "id": "u:2d0c3fc54b19"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "付款方",
+                                                    "name": "_display.account",
+                                                    "placeholder": "-",
+                                                    "id": "u:da596dd21ba3"
+                                                },
+                                                {
+                                                    "type": "date",
+                                                    "label": "收款日期",
+                                                    "name": "receipt_date",
+                                                    "placeholder": "-",
+                                                    "id": "u:70030a21d9ca"
+                                                }
+                                            ],
+                                            "id": "u:890f04a8ea9d",
+                                            "className": "p-0 ",
+                                            "source": "${rows}",
+                                            "affixFooter": false,
+                                            "title": ""
+                                        }
+                                    ],
+                                    "id": "u:e6c6e3fe5bc4",
+                                    "affixFooter": false,
+                                    "inline": false,
+                                    "bodyClassName": "p-0",
+                                    "className": "",
+                                    "actions": [],
+                                    "footerClassName": "",
+                                    "headerClassName": ""
+                                }
+                            ],
+                            "id": "u:ffa1d4056741",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql",
+                                "data": {
+                                    "query": "{ rows: finance_receive( top: 5, filters: [[\"contract_receipts_state\",\"=\",\"received\"],[\"receipt_date\", \"between\", \"this_year\"]],sort: \"receipt_date desc\") { _id, contract, amount,account , _display{ contract,account },receipt_date } }"
+                                },
+                                "adaptor": "",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                }
+                            },
+                            "affixFooter": false,
+                            "interval": 300000
+                        }
+                    ],
+                    "id": "u:9977493b8c0a"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "项目执行",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "xAxis": {
+                                            "type": "category",
+                                            "data": "${xAxis_data}"
+                                        },
+                                        "yAxis": {
+                                            "type": "value"
+                                        },
+                                        "tooltip": {
+                                            "trigger": "axis"
+                                        },
+                                        "legend": {
+                                            "data": [
+                                                "应收",
+                                                "已收",
+                                                "开票",
+                                                "应付",
+                                                "已付"
+                                            ],
+                                            "bottom": 0
+                                        },
+                                        "series": "${series_data}",
+                                        "grid": {
+                                            "containLabel": true,
+                                            "left": "1%",
+                                            "bottom": "15%",
+                                            "top": "15%"
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:5c2941389906",
+                                    "affixFooter": false,
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/projects_ee_sum_execution/results?datetime=${datetime}",
+                                        "requestAdaptor": "const date = new Date();\nconst this_year = date.getFullYear();\napi.data.parameters = {\n  datetime: {\n    start: this_year + \"-01-01 00:00:00\",\n    end: this_year + \"-12-31 23:59:59\"\n  }\n}\n",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows[0];\nlet collection = rows?.collection;\nlet payment = rows?.payment;\n\nlet collectionAmountArr = { \"data\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"type\": \"line\", \"name\": \"应收\", \"smooth\": true };\nlet receivedAmountArr = { \"data\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"type\": \"line\", \"name\": \"已收\", \"smooth\": true };\nlet madeInvoiceAmountArr = { \"data\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"type\": \"line\", \"name\": \"开票\", \"smooth\": true };\nlet paymentAmountArr = { \"data\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"type\": \"line\", \"name\": \"应付\", \"smooth\": true };\nlet paidAmountArr = { \"data\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"type\": \"line\", \"name\": \"已付\", \"smooth\": true };\n\ncollection.forEach((item) => {\n  let month = Number(item._id);\n  let index = month - 1;\n  collectionAmountArr.data[index] = item.collectionAmount || 0;\n  receivedAmountArr.data[index] = item.receivedAmount || 0;\n  madeInvoiceAmountArr.data[index] = item.madeInvoiceAmount || 0;\n});\npayment.forEach((item) => {\n  let month = Number(item._id);\n  let index = month - 1;\n  paymentAmountArr.data[index] = item.paymentAmount || 0;\n  paidAmountArr.data[index] = item.paidAmount || 0;\n});\n\nlet series_data = [collectionAmountArr, receivedAmountArr, madeInvoiceAmountArr, paymentAmountArr, paidAmountArr];\n\nconst date = new Date();\nconst this_year = date.getFullYear();\nlet monthStr = [\"01\", \"02\", \"03\", \"04\", \"05\", \"06\", \"07\", \"08\", \"09\", \"10\", \"11\", \"12\"];\nconst xAxis_data = monthStr.map((item) => {\n  return this_year + \"-\" + item;\n})\n\npayload.data = {\n  xAxis_data,\n  series_data\n};\n\nreturn payload;\n",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "initFetch": true,
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:2c18d31d885a",
+                            "inline": false,
+                            "affixFooter": false,
+                            "headerClassName": "",
+                            "className": ""
+                        },
+                        {
+                            "type": "panel",
+                            "title": "项目经营",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "xAxis": {
+                                            "type": "category"
+                                        },
+                                        "yAxis": {},
+                                        "legend": {
+                                            "bottom": 0
+                                        },
+                                        "tooltip": {},
+                                        "dataset": {
+                                            "source": "${source}"
+                                        },
+                                        "series": [
+                                            {
+                                                "type": "bar"
+                                            },
+                                            {
+                                                "type": "bar"
+                                            },
+                                            {
+                                                "type": "bar"
+                                            },
+                                            {
+                                                "type": "bar"
+                                            }
+                                        ],
+                                        "grid": {
+                                            "containLabel": true,
+                                            "left": "1%",
+                                            "bottom": "15%",
+                                            "top": "15%"
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:66eb0d5197c0",
+                                    "affixFooter": false,
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/graphql",
+                                        "data": {
+                                            "query": "{ rows: project( top: 5, filters: [[\"status\",\"=\",\"working\"]],sort: \"contracts_all_income desc\") { _id, name, contracts_all_income ,contracts_waiting_income,project_cost_budget, contracts_paid_pay}  }"
+                                        },
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        },
+                                        "adaptor": "var rows = payload?.data?.rows;\nvar source = [[\"product\", \"总应收款\", \"总待收款\", \"预计支出\", \"总已付款\"]];\nrows.forEach((item) => {\n  var arr = [item.name, item.contracts_all_income, item.contracts_waiting_income, item.project_cost_budget, item.contracts_paid_pay];\n  source.push(arr);\n})\n\npayload.data = {\n  source\n};\n\nreturn payload;"
+                                    },
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:148f185289a1",
+                            "inline": false,
+                            "affixFooter": false,
+                            "headerClassName": "",
+                            "className": ""
+                        }
+                    ],
+                    "id": "u:e9287314a3af"
+                }
+            ],
+            "id": "u:f8b113c7e815"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:3f5576df4e49",
+    "messages": {},
+    "style": {},
+    "asideResizor": false,
+    "pullRefresh": {
+        "disabled": true
+    }
+}

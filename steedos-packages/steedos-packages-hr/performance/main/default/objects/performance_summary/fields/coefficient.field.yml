@@ -1,0 +1,7 @@
+name: coefficient
+label: 绩效系数
+type: number
+precision: 15
+scale: 2
+sort_no: 150
+visible_on: "${global.mode === 'read' ? true : false}"

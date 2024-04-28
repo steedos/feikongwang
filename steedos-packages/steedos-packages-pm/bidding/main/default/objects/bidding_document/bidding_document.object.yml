@@ -1,0 +1,9 @@
+name: bidding_document
+label: 标书
+custom: true
+enable_api: true
+enable_search: false
+enable_files: true
+icon: document
+is_enable: true
+version: 2

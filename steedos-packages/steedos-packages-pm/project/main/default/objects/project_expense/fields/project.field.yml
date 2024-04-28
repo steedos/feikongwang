@@ -1,0 +1,17 @@
+name: project
+data_type: text
+filterable: false
+formula: project_task.project.name
+formula_blank_value: blanks
+hidden: true
+index: false
+is_name: false
+is_wide: false
+label: 项目名
+omit: false
+readonly: true
+required: false
+searchable: false
+sort_no: 140
+sortable: false
+type: formula

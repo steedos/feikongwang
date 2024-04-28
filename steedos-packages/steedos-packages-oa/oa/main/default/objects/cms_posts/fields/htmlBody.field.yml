@@ -1,0 +1,6 @@
+name: htmlBody
+type: html
+label: Main Body
+required: true
+is_wide: true
+sort_no: 40

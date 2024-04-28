@@ -1,0 +1,6 @@
+name: children
+label: 子项目
+multiple: true
+reference_to: project_program
+type: lookup
+visible_on: '{{false}}'

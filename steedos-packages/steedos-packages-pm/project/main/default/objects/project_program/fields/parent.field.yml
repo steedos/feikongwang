@@ -1,0 +1,6 @@
+name: parent
+label: 父项目集
+type: lookup
+reference_to: project_program
+sort_no: 200
+create: false

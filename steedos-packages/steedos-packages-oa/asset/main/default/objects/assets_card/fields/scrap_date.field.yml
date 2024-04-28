@@ -1,0 +1,5 @@
+name: scrap_date
+label: 报废日期
+type: date
+group: 报废信息
+sort_no: 430

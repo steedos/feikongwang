@@ -1,0 +1,26 @@
+name: state
+defaultValue: ''
+filterable: false
+group: 其他
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 状态
+omit: false
+options:
+  - label: 进度正常
+    value: normal
+    color: 78d190
+  - label: 存在风险
+    value: warrning
+    color: df6825
+  - label: 偏离进度
+    value: delay
+    color: DA3234
+readonly: false
+required: false
+searchable: false
+sort_no: 105
+sortable: true
+type: select

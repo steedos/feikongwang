@@ -1,0 +1,62 @@
+[
+    {
+      "_id": "${space_id}_65016459eef6ae147264936f",
+      "status": "enable",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "出纳绩效考核模版",
+      "latitude": "${space_id}_65016411eef6ae147264936d",
+      "start_date": "2022-01-01T00:00:00.000Z",
+      "end_date": "2023-12-31T00:00:00.000Z",
+      "version": "V1.0.0",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:27:21.439Z",
+      "modified": "2023-09-13T09:24:25.420Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "summary_weight": 1
+    },
+    {
+      "_id": "${space_id}_6501649beef6ae1472649370",
+      "status": "disable",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "出纳个人评分模版",
+      "latitude": "${space_id}_6501641eeef6ae147264936e",
+      "start_date": "2023-01-01T00:00:00.000Z",
+      "end_date": "2023-12-31T00:00:00.000Z",
+      "version": "V1.0.0",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:28:27.144Z",
+      "modified": "2023-09-13T09:24:25.487Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "summary_weight": 0
+    },
+    {
+      "_id": "${space_id}_650164d9eef6ae1472649371",
+      "status": "enable",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "64ffbe4fa59cb80984b9d21e",
+      "name": "出纳个人评分模版",
+      "latitude": "${space_id}_6501641eeef6ae147264936e",
+      "start_date": "2023-01-01T00:00:00.000Z",
+      "end_date": "2023-12-31T00:00:00.000Z",
+      "version": "V1.0.1",
+      "space": "64ffbe4fa59cb80984b9d21e",
+      "created": "2023-09-13T07:29:29.591Z",
+      "modified": "2023-09-13T09:24:35.634Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "64ffbe4fa59cb80984b9d21e"
+      ],
+      "summary_weight": 1
+    }
+  ]

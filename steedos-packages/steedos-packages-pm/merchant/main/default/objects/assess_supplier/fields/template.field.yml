@@ -1,0 +1,5 @@
+name: template
+label: 评分模版
+type: lookup
+reference_to: assess_template
+sort_no: 130

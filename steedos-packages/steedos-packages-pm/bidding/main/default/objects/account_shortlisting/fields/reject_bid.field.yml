@@ -1,0 +1,9 @@
+name: reject_bid
+label: 是否废标
+type: select
+sort_no: 160
+options: 
+ - label: 是
+   value: Yes
+ - label: 否
+   value: No

@@ -1,0 +1,10 @@
+name: meal_count
+data_type: number
+label: 餐费总计
+precision: 18
+scale: 2
+sort_no: 140
+summary_field: overtime_meal
+summary_object: driver_overtime_count
+summary_type: sum
+type: summary

@@ -1,0 +1,7 @@
+name: manager_before
+index: true
+label: 原直接上级
+required: true
+sort_no: 360
+type: text
+filterable: true

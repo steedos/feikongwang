@@ -1,0 +1,22 @@
+[
+    {
+      "_id": "${space_id}_650938bc841d5113adf9045b",
+      "staff": "${space_id}_65093815841d5113adf90456",
+      "name": "劳动合同",
+      "start": "2021-07-01T00:00:00.000Z",
+      "end": "2023-06-30T00:00:00.000Z",
+      "displayAs": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T05:59:24.657Z",
+      "modified": "2023-09-19T05:59:24.657Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "HR-20230001",
+      "job_title": "项目经理"
+    }
+  ]

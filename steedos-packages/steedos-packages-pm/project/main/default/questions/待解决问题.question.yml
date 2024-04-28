@@ -1,0 +1,33 @@
+name: 待解决问题
+created_at: 2023-11-24T02:50:37.121Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  type: query
+  query:
+    source-table: project
+    aggregation:
+      - - sum
+        - - field
+          - project.open_issues
+          - null
+  database: '1'
+display: scalar
+entity_id: 65600f7df084ab05cc5731ee
+id: 65600f7df084ab05cc5731ee
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 待解决问题合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: project
+updated_at: 2023-11-24T02:50:37.121Z
+visualization_settings: '{}'

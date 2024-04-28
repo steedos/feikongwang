@@ -1,0 +1,156 @@
+[
+    {
+        "_id": "${space_id}_D4QfMeGjjQtxx2Rzb",
+        "name": "拜访信息管理部，推介新产品",
+        "start": {
+            "$date": "2022-08-26T08:00:00Z"
+        },
+        "end": {
+            "$date": "2022-08-26T09:00:00Z"
+        },
+        "assignees": [
+            "${space_owner_id}"
+        ],
+        "related_to": {
+            "o": "accounts",
+            "ids": [
+                "${space_id}_Dh2o6BcPzXsMnzphb"
+            ]
+        },
+        "is_all_day": false,
+        "space": "yt37ZrzLBMwteXCuH",
+        "owner": "630710c9a778f10a2f85fdb0",
+        "created": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "created_by": "630710c9a778f10a2f85fdb0",
+        "modified_by": "630710c9a778f10a2f85fdb0",
+        "company_id": "dn5aRN3dsWKAK73dZ",
+        "company_ids": [
+            "dn5aRN3dsWKAK73dZ"
+        ]
+    },
+    {
+        "_id": "${space_id}_JAmMskucLy9G6DNyJ",
+        "name": "采购招标标书",
+        "start": {
+            "$date": "2022-06-16T09:00:00.284Z"
+        },
+        "end": {
+            "$date": "2022-06-16T10:00:00.305Z"
+        },
+        "assignees": [
+            "${space_owner_id}"
+        ],
+        "related_to": {
+            "o": "accounts",
+            "ids": [
+                "${space_id}_rp6f28g9xszJRGjwN"
+            ]
+        },
+        "is_all_day": true,
+        "description": "整理资料，打印封装",
+        "space": "yt37ZrzLBMwteXCuH",
+        "created": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "owner": "630710c9a778f10a2f85fdb0",
+        "created_by": "630710c9a778f10a2f85fdb0",
+        "modified_by": "630710c9a778f10a2f85fdb0",
+        "company_id": "dn5aRN3dsWKAK73dZ",
+        "company_ids": [
+            "dn5aRN3dsWKAK73dZ"
+        ]
+    },
+    {
+        "_id": "${space_id}_PDHjaobLPkExbnSdx",
+        "name": "招标会议",
+        "start": {
+            "$date": "2022-08-16T01:00:00.378Z"
+        },
+        "end": {
+            "$date": "2022-08-16T04:00:00Z"
+        },
+        "assignees": [
+            "${space_owner_id}"
+        ],
+        "is_all_day": false,
+        "space": "yt37ZrzLBMwteXCuH",
+        "created": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "owner": "630710c9a778f10a2f85fdb0",
+        "created_by": "630710c9a778f10a2f85fdb0",
+        "modified_by": "630710c9a778f10a2f85fdb0",
+        "company_id": "dn5aRN3dsWKAK73dZ",
+        "company_ids": [
+            "dn5aRN3dsWKAK73dZ"
+        ]
+    },
+    {
+        "_id": "${space_id}_adAWW3xC5ux9oStwD",
+        "name": "业务需求沟通",
+        "start": {
+            "$date": "2022-08-17T02:00:00Z"
+        },
+        "end": {
+            "$date": "2022-08-17T03:00:00Z"
+        },
+        "assignees": [
+            "${space_owner_id}"
+        ],
+        "is_all_day": false,
+        "description": "部门例会",
+        "space": "yt37ZrzLBMwteXCuH",
+        "created": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "owner": "630710c9a778f10a2f85fdb0",
+        "created_by": "630710c9a778f10a2f85fdb0",
+        "modified_by": "630710c9a778f10a2f85fdb0",
+        "company_id": "dn5aRN3dsWKAK73dZ",
+        "company_ids": [
+            "dn5aRN3dsWKAK73dZ"
+        ]
+    },
+    {
+        "_id": "${space_id}_35WMnGKtawjKTvw9r",
+        "name": "客户演示",
+        "start": {
+            "$date": "2022-08-11T08:00:00.803Z"
+        },
+        "end": {
+            "$date": "2022-08-11T09:00:00.855Z"
+        },
+        "assignees": [
+            "${space_owner_id}"
+        ],
+        "is_all_day": false,
+        "space": "yt37ZrzLBMwteXCuH",
+        "created": {
+            "$date": "2022-08-25T06:04:16.549Z"
+        },
+        "modified": {
+            "$date": "2022-08-25T08:00:26.863Z"
+        },
+        "owner": "630710c9a778f10a2f85fdb0",
+        "created_by": "630710c9a778f10a2f85fdb0",
+        "modified_by": "630710c9a778f10a2f85fdb0",
+        "company_id": "dn5aRN3dsWKAK73dZ",
+        "company_ids": [
+            "dn5aRN3dsWKAK73dZ"
+        ]
+    }
+]

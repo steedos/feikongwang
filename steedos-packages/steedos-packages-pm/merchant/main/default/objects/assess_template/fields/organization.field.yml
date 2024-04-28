@@ -1,0 +1,15 @@
+name: organization
+defaultValue: '{{global.user.organization._id}}'
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 所属部门
+multiple: false
+primary: false
+reference_to: organizations
+required: true
+sort_no: 120
+sortable: false
+type: lookup

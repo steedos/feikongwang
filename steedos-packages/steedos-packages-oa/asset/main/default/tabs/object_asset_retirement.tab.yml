@@ -1,0 +1,7 @@
+name: object_asset_retirement
+desktop: true
+label: 资产报废
+mobile: true
+object: asset_retirement
+permissions: []
+type: object

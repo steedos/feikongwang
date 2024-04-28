@@ -1,0 +1,6 @@
+name: overtime_meal_supper
+label: 误餐费-20点
+precision: 18
+scale: 2
+sort_no: 194
+type: number

@@ -1,0 +1,7 @@
+name: receiving_detail
+label: 收料明细
+reference_to: receiving_detail
+required: true
+searchable: true
+sort_no: 170
+type: master_detail

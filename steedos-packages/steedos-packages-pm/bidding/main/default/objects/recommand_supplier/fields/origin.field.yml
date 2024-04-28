@@ -1,0 +1,11 @@
+name: origin
+label: 推荐来源
+type: select
+sort_no: 180
+filterable: true
+defaultValue: internal
+options: 
+ - label: 内部来源
+   value: internal
+ - label: 外部来源
+   value: external

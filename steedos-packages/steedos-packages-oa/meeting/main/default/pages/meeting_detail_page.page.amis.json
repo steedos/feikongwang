@@ -1,0 +1,61 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:97dd3902b4ac"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:shadow sm:rounded sm:border border-slate-300 p-4",
+            "tabs": [
+                {
+                    "title": "详细",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "meeting",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:b47f4c0aaf12",
+                            "mode": "read",
+                            "className": "mb-4"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "相关",
+                    "className": "px-0 pt-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-lists",
+                            "label": "所有相关表",
+                            "objectApiName": "meeting",
+                            "recordId": "${recordId}",
+                            "id": "u:8acb578d9746"
+                        }
+                    ],
+                    "id": "u:acb1834e0575"
+                }
+            ],
+            "id": "u:27a673f35ea4"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_meeting_record_detail",
+    "name": "page_meeting_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

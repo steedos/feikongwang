@@ -1,0 +1,102 @@
+name: admin
+allowCreate: true
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: admin
+record_permissions: {}
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: attend
+    readable: true
+    editable: true
+  - field: attend_other
+    readable: true
+    editable: true
+  - field: contact
+    readable: true
+    editable: true
+  - field: content
+    readable: true
+    editable: true
+  - field: contract
+    readable: true
+    editable: true
+  - field: customer
+    readable: true
+    editable: true
+  - field: files
+    readable: true
+    editable: true
+  - field: number_customer
+    readable: true
+    editable: true
+  - field: project
+    readable: true
+    editable: true
+  - field: room
+    readable: true
+    editable: true
+  - field: status
+    readable: true
+    editable: true
+  - field: type
+    readable: true
+    editable: true
+  - field: count
+    readable: true
+    editable: true
+  - field: description
+    readable: true
+    editable: true
+  - field: end
+    readable: true
+    editable: true
+  - field: features
+    readable: true
+    editable: true
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: phone
+    readable: true
+    editable: true
+  - field: start
+    readable: true
+    editable: true
+  - field: unit
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: false
+    editable: false

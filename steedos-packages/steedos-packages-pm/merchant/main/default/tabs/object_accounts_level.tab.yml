@@ -1,0 +1,7 @@
+name: object_accounts_level
+desktop: true
+label: 供应商等级
+mobile: true
+object: accounts_level
+permissions: []
+type: object

@@ -1,0 +1,21 @@
+name: all
+columns:
+  - field: name
+    _id: 0f12c238-5655-472e-8689-aa7635673041
+  - _id: 75a517ee-e37b-492c-86a5-397b4ebaca38
+    field: receipt_no
+  - _id: e28bfa0c-2b9b-44c7-8d45-569f4d7c9ab1
+    field: communication_no
+  - _id: 0f9d5129-9e08-451b-b340-025469e062c8
+    field: issuing_agency
+  - _id: 2ba3c8bc-b073-41f1-a199-ceb41af20444
+    field: urgency
+  - _id: 52fe9c7b-199e-4b52-b0e8-1d40c1de3972
+    field: openness
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

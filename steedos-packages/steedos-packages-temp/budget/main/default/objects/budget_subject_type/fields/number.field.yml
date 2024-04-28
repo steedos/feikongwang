@@ -1,0 +1,12 @@
+name: number
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 分类编码
+primary: false
+required: false
+sort_no: 110
+sortable: false
+type: text

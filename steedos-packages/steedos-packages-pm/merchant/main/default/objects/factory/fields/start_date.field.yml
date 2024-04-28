@@ -1,0 +1,4 @@
+name: start_date
+label: 投产时间
+type: date
+sort_no: 230

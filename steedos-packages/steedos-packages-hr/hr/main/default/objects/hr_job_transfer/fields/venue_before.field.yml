@@ -1,0 +1,7 @@
+name: venue_before
+index: true
+label: 原办公地点
+required: true
+sort_no: 370
+type: text
+filterable: true

@@ -1,0 +1,14 @@
+name: customer
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 参会业务伙伴
+multiple: false
+primary: false
+reference_to: accounts
+required: false
+sort_no: 9999
+sortable: false
+type: lookup

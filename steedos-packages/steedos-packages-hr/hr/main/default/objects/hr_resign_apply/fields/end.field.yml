@@ -1,0 +1,12 @@
+name: end
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 离职日期
+primary: false
+required: true
+sort_no: 175
+sortable: false
+type: date

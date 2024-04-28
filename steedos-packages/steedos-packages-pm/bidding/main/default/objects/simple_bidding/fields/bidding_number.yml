@@ -1,0 +1,4 @@
+name: bidding_number
+label: 招标编号
+type: text
+sort_no: 110

@@ -1,0 +1,15 @@
+name: invoices
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 关联发票
+primary: false
+reference_to: invoices
+hidden: false
+sortable: false
+type: lookup
+create: false
+sort_no: 400
+multiple: true

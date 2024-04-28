@@ -1,0 +1,14 @@
+name: name
+index: true
+label: 编号
+required: true
+sort_no: 100
+filterable: false
+formula: 'BP-{0000}'
+generated: false
+is_name: true
+is_wide: false
+primary: false
+sortable: false
+type: autonumber
+

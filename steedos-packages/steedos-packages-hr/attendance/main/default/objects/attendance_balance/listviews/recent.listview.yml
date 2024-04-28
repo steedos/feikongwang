@@ -1,0 +1,31 @@
+name: recent
+columns:
+  - field: staff
+  - field: company
+  - field: department
+  - field: leave_year
+  - field: leave_days
+  - field: freeze_days
+  - field: leave_used_days
+  - field: leave_remain_days
+  - field: leave_type
+filter_scope: space
+filters: []
+label: 最近查看
+mobile_columns:
+  - field: staff
+  - field: leave_year
+  - field: leave_type
+  - field: leave_remain_days
+scrolling_mode: standard
+searchable_fields:
+  - field: staff
+  - field: company
+  - field: department
+  - field: leave_year
+  - field: leave_type
+  - field: leave_days
+shared: true
+sort: []
+sort_no: 100
+type: grid

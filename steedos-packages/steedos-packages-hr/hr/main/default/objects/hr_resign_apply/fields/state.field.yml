@@ -1,0 +1,23 @@
+name: state
+data_type: text
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 离职状态
+multiple: false
+options:
+  - label: 待离职
+    value: 待离职
+  - label: 已离职
+    value: 已离职
+  - label: 取消离职
+    value: 取消离职
+primary: false
+required: false
+sort_no: 156
+sortable: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"
+type: select

@@ -1,0 +1,5 @@
+name: enable
+label: 是否启用
+type: boolean
+sort_no: 120
+defaultValue: true

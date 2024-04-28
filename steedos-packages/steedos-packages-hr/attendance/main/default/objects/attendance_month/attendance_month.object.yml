@@ -1,0 +1,10 @@
+name: attendance_month
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_enhanced_lookup: true
+icon: address
+is_enable: true
+label: 月度考勤报表
+version: 2

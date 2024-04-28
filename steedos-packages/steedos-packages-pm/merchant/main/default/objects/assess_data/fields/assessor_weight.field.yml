@@ -1,0 +1,6 @@
+name: assessor_weight
+label: 评分人权重
+type: percent
+precision: 18
+scale: 0
+sort_no: 120

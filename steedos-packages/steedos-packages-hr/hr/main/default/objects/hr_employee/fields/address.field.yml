@@ -1,0 +1,6 @@
+name: address
+group: 其他信息
+is_wide: true
+label: 现居住地址
+sort_no: 370
+type: text

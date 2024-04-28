@@ -1,0 +1,13 @@
+name: remark1
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 离职原因
+primary: false
+required: true
+rows: 3
+sort_no: 300
+sortable: false
+type: textarea

@@ -1,0 +1,6 @@
+name: fee
+label: 相关费用
+precision: 18
+scale: 2
+sort_no: 180
+type: currency

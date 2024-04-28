@@ -1,0 +1,12 @@
+name: asset_borrowing_detail
+is_active: true
+label: 资产借用详情页
+object_name: asset_borrowing
+pageAssignments:
+  - type: orgDefault
+    page: asset_borrowing_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

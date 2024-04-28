@@ -1,0 +1,21 @@
+name: category
+label: Category
+type: lookup
+reference_to: cms_categories
+filterable: true
+sortable: true
+defaultValue: !!js/function |
+  function () {
+    var category = Session.get("category");
+    return category ? category._id : null;
+  }
+filtersFunction: !!js/function |
+  function (filters, values) {
+    if (!values || !values.site) {
+      return ["_id", "=", null];
+    }
+    return ["site", "=", values.site];
+  }
+depend_on:
+  - site
+sort_no: 60

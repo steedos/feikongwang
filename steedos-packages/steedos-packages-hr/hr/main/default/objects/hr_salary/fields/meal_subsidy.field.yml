@@ -1,0 +1,6 @@
+name: meal_subsidy
+label: 餐费补贴
+precision: 18
+scale: 2
+sort_no: 180
+type: currency

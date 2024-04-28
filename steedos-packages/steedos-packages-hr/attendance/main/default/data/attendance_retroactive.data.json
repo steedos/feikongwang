@@ -1,0 +1,66 @@
+[
+    {
+      "_id": "${space_id}_65128b6af3a40dff226bf0ca",
+      "company": "${space_id}",
+      "date": "2023-09-26T07:41:44.037Z",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "owner": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "name": "忘打卡补卡申请",
+      "attendance_daily": "651274513d30a1ad9e09502c",
+      "type": "work",
+      "start": "2023-09-26T01:00:00.000Z",
+      "remark": "忘打卡补卡申请",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T07:42:34.445Z",
+      "modified": "2023-09-26T07:42:42.272Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "BKSQ-2023-0001",
+      "instance_state": "draft",
+      "instances": [
+        {
+          "_id": "GcCLihgWC2SMiMoqR",
+          "state": "draft"
+        }
+      ],
+      "locked": true
+    },
+    {
+      "_id": "${space_id}_65128dbcf3a40dff226bf0cc",
+      "company": "${space_id}",
+      "date": "2023-09-26T07:45:58.674Z",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "owner": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "name": "外出未打卡",
+      "attendance_daily": "651274513d30a1ad9e09502c",
+      "type": "work",
+      "record": null,
+      "start": "2023-09-26T01:00:00.000Z",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T07:52:28.321Z",
+      "modified": "2023-09-26T07:52:30.943Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "BKSQ-2023-0002",
+      "instance_state": "draft",
+      "instances": [
+        {
+          "_id": "u5NFntM3Eg8ZjFn5R",
+          "state": "draft"
+        }
+      ],
+      "locked": true
+    }
+  ]

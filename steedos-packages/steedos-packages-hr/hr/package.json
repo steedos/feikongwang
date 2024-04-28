@@ -1,0 +1,41 @@
+{
+    "name": "@steedos-labs/hr",
+    "version": "2.6.4",
+    "description": "人力资源管理",
+    "main": "package.service.js",
+    "private": false,
+    "files": [
+        "/package.json",
+        "/README.md",
+        "/main/**",
+        "package.service.js"
+    ],
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "build:watch": "webpack --config webpack.config.js --watch",
+        "pub": "npm publish --registry https://registry.npmjs.org && open https://npm.taobao.org/sync/@steedos-labs/hr",
+        "pub_next": "npm publish --tag next --registry https://registry.npmjs.org && open https://npm.taobao.org/sync/@steedos-labs/hr"
+    },
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "author": "Jack Zhuang",
+    "dependencies": {
+        "@steedos-labs/master": "2.6.4"
+    },
+    "devDependencies": {
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/steedos/steedos-apps/issues"
+    },
+    "homepage": "https://github.com/steedos/steedos-apps#readme",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}

@@ -1,0 +1,6 @@
+name: result
+label: 考察结论
+type: textarea
+rows: 2
+is_wide: true
+sort_no: 190

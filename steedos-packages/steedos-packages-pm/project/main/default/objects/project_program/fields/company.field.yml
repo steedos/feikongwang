@@ -1,0 +1,6 @@
+name: company
+label: 甲方
+type: lookup
+reference_to: company
+sort_no: 130
+visible_on: "{{false}}"

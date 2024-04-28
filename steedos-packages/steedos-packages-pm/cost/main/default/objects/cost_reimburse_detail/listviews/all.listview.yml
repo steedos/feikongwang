@@ -1,0 +1,24 @@
+name: all
+columns:
+  - field: autonumber
+  - field: expend_type
+  - field: amount
+  - field: date
+  - field: remark
+  - field: instance
+  - field: instance_state
+  - field: status
+  - field: applicant
+  - field: department
+  - field: created
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid
+sort:
+  - field_name: date
+    order: desc

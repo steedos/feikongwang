@@ -1,0 +1,10 @@
+name: mileage_count
+data_type: number
+label: 里程总计(KM)
+precision: 18
+scale: 2
+sort_no: 150
+summary_field: overtime_mileage
+summary_object: driver_overtime_count
+summary_type: sum
+type: summary

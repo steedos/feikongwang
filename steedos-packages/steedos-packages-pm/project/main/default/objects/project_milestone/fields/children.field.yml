@@ -1,0 +1,7 @@
+name: children
+label: 子里程碑
+reference_to: project_milestone
+sort_no: 180
+type: lookup
+multiple: true
+visible_on: '{{false}}'

@@ -1,0 +1,11 @@
+name: bidding_confirmation
+label: 定标
+custom: true
+enable_api: true
+enable_search: false
+enable_instances: true
+enable_workflow: true
+enable_enhanced_lookup: true
+icon: procedure
+is_enable: true
+version: 2

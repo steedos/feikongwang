@@ -1,0 +1,14 @@
+name: priority
+data_type: text
+label: 缓急程度
+options:
+  - label: 普通
+    value: 普通
+  - label: 办文
+    value: 办文
+  - label: 紧急
+    value: 紧急
+  - label: 特急
+    value: 特急
+sort_no: 140
+type: select

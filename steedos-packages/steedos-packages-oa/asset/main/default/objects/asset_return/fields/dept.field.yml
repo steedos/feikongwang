@@ -1,0 +1,7 @@
+name: dept
+defaultValue: '{{global.user.organization._id}}'
+label: 申请部门
+reference_to: organizations
+sort_no: 120
+type: lookup
+filterable: true

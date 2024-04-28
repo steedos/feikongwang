@@ -1,0 +1,7 @@
+name: retroactive_ref
+label: 补卡记录
+sort_no: 350
+type: lookup
+reference_to: attendance_retroactive
+multiple: true
+group: 相关流程

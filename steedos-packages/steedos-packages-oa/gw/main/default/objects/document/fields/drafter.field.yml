@@ -1,0 +1,14 @@
+name: drafter
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 拟稿人
+multiple: false
+primary: false
+reference_to: space_users
+required: false
+sort_no: 170
+sortable: false
+type: lookup

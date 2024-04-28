@@ -1,0 +1,7 @@
+name: attendance_rule_settings
+label: 考勤规则
+reference_to: attendance_rule_settings
+required: true
+sort_no: 120
+type: master_detail
+write_requires_master_read: true

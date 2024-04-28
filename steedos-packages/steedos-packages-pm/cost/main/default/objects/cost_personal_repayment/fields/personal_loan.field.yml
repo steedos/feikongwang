@@ -1,0 +1,19 @@
+name: personal_loan
+filterable: false
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters, values){
+    return [["instance_state","=","approved"],"and",["remaining_amount",">",0]];
+  }
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 借款单
+primary: false
+reference_to: cost_personal_loan
+required: true
+sort_no: 142
+sortable: false
+type: master_detail
+write_requires_master_read: false
+create: false

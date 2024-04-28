@@ -1,0 +1,6 @@
+name: registered_capital
+label: 注册资金
+scale: 2
+sort_no: 140
+type: currency
+defaultValue: "${_master.record.registered_capital}"

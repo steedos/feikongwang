@@ -1,0 +1,6 @@
+name: year
+label: 年度
+type: number
+precision: 18
+scale: 0
+sort_no: 90

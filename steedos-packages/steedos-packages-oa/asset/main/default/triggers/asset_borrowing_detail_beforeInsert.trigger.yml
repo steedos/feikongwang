@@ -1,0 +1,20 @@
+name: asset_borrowing_detail_beforeInsert
+listenTo: asset_borrowing_detail
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const { doc, asset_borrowing_detail, previousDoc } = ctx.params;
+  const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+  const spaceId = doc.space;
+  await ctx.broker.call(
+      '@steedos-labs/asset.assetBorrowingDetailOfAssetsCard',
+      {
+          "doc": doc
+      },
+      {
+          meta: {
+              user: null
+          }
+      }
+  );

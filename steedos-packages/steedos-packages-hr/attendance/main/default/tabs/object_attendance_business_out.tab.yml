@@ -1,0 +1,7 @@
+name: object_attendance_business_out
+desktop: true
+label: 出差
+mobile: true
+object: attendance_business_out
+permissions: []
+type: object

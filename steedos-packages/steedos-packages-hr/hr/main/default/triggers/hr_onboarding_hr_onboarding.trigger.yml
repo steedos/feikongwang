@@ -1,0 +1,28 @@
+name: hr_onboarding_hr_onboarding
+listenTo: hr_onboarding
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { previousDoc, doc, hr_onboarding } = ctx.params;
+
+  const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+
+  const spaceId = doc.space;
+
+  if (previousDoc.instance_state != "approved" && doc.instance_state ==
+  "approved") {
+      console.log("审批已通过");
+  const updateAttendanceDailyOfWorking = await ctx.broker.call(
+      '@steedos-labs/hr.hr_onboarding',
+      {
+          'doc':doc
+      },
+      {
+          meta: {
+              user: null
+          }
+      }
+  );
+
+  }

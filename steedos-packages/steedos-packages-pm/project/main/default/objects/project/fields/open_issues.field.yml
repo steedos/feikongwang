@@ -1,0 +1,24 @@
+name: open_issues
+data_type: number
+filterable: false
+group: 任务与问题
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 待解决问题
+omit: false
+precision: 18
+readonly: false
+required: false
+scale: 0
+searchable: false
+sort_no: 190
+sortable: true
+summary_object: project_issue
+summary_type: count
+type: summary
+summary_filters:
+  - field: status
+    operation: '<>'
+    value: Closed

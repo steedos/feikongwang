@@ -1,0 +1,7 @@
+name: object_administration_stamp_usage
+desktop: true
+label: 印章使用
+mobile: true
+object: administration_stamp_usage
+permissions: []
+type: object

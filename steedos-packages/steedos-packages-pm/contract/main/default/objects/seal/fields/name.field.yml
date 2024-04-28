@@ -1,0 +1,6 @@
+name: name
+label: 印章名称
+sort_no: 100
+type: text
+filterable: true
+searchable: true

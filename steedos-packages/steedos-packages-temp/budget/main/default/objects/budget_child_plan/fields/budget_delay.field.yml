@@ -1,0 +1,19 @@
+name: budget_delay
+data_type: text
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算顺延
+multiple: false
+options:
+  - label: 不顺延
+    value: 不顺延
+  - label: 每个编制周期末自动顺延
+    value: 每个编制周期末自动顺延
+primary: false
+required: true
+sort_no: 210
+sortable: false
+type: select

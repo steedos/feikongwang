@@ -1,0 +1,44 @@
+name: mine
+columns:
+  - field: name
+  - field: start_date
+  - field: due_date
+  - field: priority
+  - field: state
+  - field: collaborator
+  - field: project
+  - field: project_milestone
+  - field: created
+crud_mode: table
+filter_fields:
+  - name
+  - project
+  - due_date
+  - priority
+  - state
+  - completed
+filter_scope: mine
+filters: [['has_complete', '=', false], ['assignees', '=', '{userId}']]
+is_enable: true
+label: 我的任务
+mobile_columns:
+  - field: name
+  - field: state
+  - field: project
+  - field: priority
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: project
+  - field: state
+  - field: project_milestone
+  - field: start_date
+  - field: due_date
+  - field: priority
+shared: true
+show_count: false
+sort:
+  - field_name: created
+    order: desc
+sort_no: 10
+type: grid

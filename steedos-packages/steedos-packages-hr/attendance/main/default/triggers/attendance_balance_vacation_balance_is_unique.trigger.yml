@@ -1,0 +1,79 @@
+name: attendance_balance_vacation_balance_is_unique
+listenTo: attendance_balance
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  // _ : lodash
+  // moment: moment
+  // validator: validator
+  // ctx
+  // objects
+  // services
+  // 每人每年只能又一种假期类型 比如：带薪年假（天） 就不能有带薪年假（小时）
+  const { doc } = ctx.params;
+  const staff = doc.staff;
+  const leave_type = doc.leave_type;
+  const leave_year = doc.leave_year;
+  const vacation = await ctx.broker.call(
+      'objectql.directFind',
+      {
+          objectName: 'attendance_leave_type',
+          query: {
+              fields: ['name'],
+              filters: ['_id', '=', leave_type]
+          }
+      }
+  );
+
+  const leave_type_name = getLeaveTypeName(vacation[0].name);
+
+  const attendance_balance = await ctx.broker.call(
+      'objectql.directFind',
+      {
+          objectName: 'attendance_balance',
+          query: {
+              fields: ['leave_type'],
+              filters: [['staff', '=', staff], ['leave_year', '=', leave_year]]
+          }
+      }
+  );
+  if (attendance_balance.length !== 0) {
+      if (await isDuplicateType(ctx, attendance_balance, leave_type_name)) {
+          throw new Error('该人员当年已有此类型的假期余额数据');
+      }
+  }
+
+
+  async function isDuplicateType(ctx, attendance_balance, insert_name) {
+      for (let i = 0; i < attendance_balance.length; i++) {
+          let leave_type = attendance_balance[i].leave_type;
+          const attendance_leave_type = await ctx.broker.call(
+              'objectql.directFind',
+              {
+                  objectName: 'attendance_leave_type',
+                  query: {
+                      fields: ['name'],
+                      filters: ["_id", "=", leave_type]
+                  }
+              }
+          );
+          if (attendance_leave_type.length !== 0 && attendance_leave_type[0].name.includes(insert_name)) {
+              return true;
+          }
+      }
+      return false;
+
+  }
+
+  function getLeaveTypeName(leave_type_name) {
+      if (leave_type_name === undefined) {
+          leave_type_name = '';
+      }
+      let last_index_of = leave_type_name.lastIndexOf('(');
+      if (last_index_of !== -1) {
+          return leave_type_name.slice(0, last_index_of);
+      } else {
+          return null;
+      }
+  }

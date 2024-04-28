@@ -1,0 +1,6 @@
+name: days_actual
+label: 正常考勤天数
+precision: 18
+scale: 0
+sort_no: 190
+type: number

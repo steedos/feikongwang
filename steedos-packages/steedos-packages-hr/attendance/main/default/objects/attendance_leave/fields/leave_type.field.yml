@@ -1,0 +1,15 @@
+name: leave_type
+filterable: true
+generated: false
+group: 请假信息
+index: false
+is_name: false
+is_wide: false
+label: 假期类型
+multiple: false
+primary: false
+reference_to: attendance_leave_type
+required: true
+sort_no: 195
+sortable: false
+type: lookup

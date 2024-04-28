@@ -1,0 +1,19 @@
+name: recent
+columns:
+  - field: name
+  - field: autonumber
+  - field: applicant
+  - field: amount
+  - field: company
+  - field: department
+  - field: instance_state
+  - field: loan_paid_amount
+  - field: paid_amount
+  - field: created
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

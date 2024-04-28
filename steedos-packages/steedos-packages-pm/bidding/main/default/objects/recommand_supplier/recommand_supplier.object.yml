@@ -1,0 +1,10 @@
+name: recommand_supplier
+label: 推荐考察供应商
+custom: true
+enable_api: true
+enable_search: false
+enable_instances: true
+enable_workflow: true
+icon: immunization
+is_enable: true
+version: 2

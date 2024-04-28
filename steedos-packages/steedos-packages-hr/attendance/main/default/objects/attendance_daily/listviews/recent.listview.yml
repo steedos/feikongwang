@@ -1,0 +1,37 @@
+name: recent
+columns:
+  - field: user
+  - field: company
+  - field: department
+  - field: date
+  - field: status
+  - field: start
+  - field: end
+  - field: late
+  - field: leave
+  - field: overtime
+  - field: absent
+  - field: annual_leave
+  - field: business_out
+  - field: going_out
+  - field: remark
+filter_scope: space
+filters: []
+label: 最近查看
+mobile_columns:
+  - field: user
+  - field: date
+  - field: status
+scrolling_mode: standard
+searchable_fields:
+  - field: user
+  - field: company
+  - field: department
+  - field: date
+  - field: status
+shared: true
+sort:
+  - field_name: date
+    order: desc
+sort_no: 100
+type: grid

@@ -1,0 +1,7 @@
+name: all
+columns:
+  - name
+  - company_id
+  - seal_admin
+label: 所有印章
+shared: true

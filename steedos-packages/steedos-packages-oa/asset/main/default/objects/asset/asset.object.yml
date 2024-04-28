@@ -1,0 +1,12 @@
+name: asset
+enable_api: true
+enable_audit: true
+enable_events: false
+enable_files: true
+enable_notes: false
+enable_search: true
+enable_workflow: true
+enable_enhanced_lookup: true
+icon: entity
+label: 资产
+version: 2

@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "${space_id}_6512546b806d085d4f5ee12f",
+    "enable_flexible_commuting": false,
+    "rule_type": "fixed_commuting",
+    "status": "open",
+    "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+    "company_id": "650931833a01c30a93e26339",
+    "name": "每日考勤",
+    "work_start": "1970-01-01T09:00:00.000Z",
+    "work_end": "1970-01-01T18:00:00.000Z",
+    "rest_start": "1970-01-01T12:00:00.000Z",
+    "rest_end": "1970-01-01T13:00:00.000Z",
+    "daily_hours": 8,
+    "begins_work_clock": "1970-01-01T05:30:00.000Z",
+    "end_work_clock": "1970-01-01T17:30:00.000Z",
+    "begins_quit_clock": "1970-01-01T09:30:00.000Z",
+    "end_quit_clock": "1970-01-01T23:59:00.000Z",
+    "space": "650931833a01c30a93e26339",
+    "created": "2023-09-26T03:47:55.519Z",
+    "modified": "2023-09-26T03:47:55.519Z",
+    "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+    "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+    "company_ids": [
+      "650931833a01c30a93e26339"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+name: dept
+label: 使用部门
+reference_to: organizations
+sort_no: 140
+type: lookup
+

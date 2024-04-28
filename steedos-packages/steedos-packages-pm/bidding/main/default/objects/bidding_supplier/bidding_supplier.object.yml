@@ -1,0 +1,8 @@
+name: bidding_supplier
+custom: true
+enable_api: true
+enable_search: false
+icon: employee_job
+is_enable: true
+label: 中标供应商
+version: 2

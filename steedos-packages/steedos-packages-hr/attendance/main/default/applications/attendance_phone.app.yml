@@ -1,0 +1,18 @@
+name: 移动考勤
+code: attendance_phone
+icon_slds: person_account
+is_creator: false
+mobile: true
+sort: 9100
+tab_items:
+  clock_in_tab:
+    index: 1
+  attendance_listview_tab:
+    index: 2
+  attendance_detail_tab:
+    index: 3
+tabs:
+  - clock_in_tab
+  - attendance_listview_tab
+  - attendance_detail_tab
+visible: true

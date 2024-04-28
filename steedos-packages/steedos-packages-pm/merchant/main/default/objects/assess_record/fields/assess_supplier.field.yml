@@ -1,0 +1,5 @@
+name: assess_supplier
+label: 供应商考核
+type: master_detail
+reference_to: assess_supplier
+sort_no: 100

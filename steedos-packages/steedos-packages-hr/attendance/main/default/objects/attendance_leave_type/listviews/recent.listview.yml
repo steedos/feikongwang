@@ -1,0 +1,28 @@
+name: recent
+columns:
+  - field: vacation_type
+  - field: vacation_name
+  - field: minimum_unit
+  - field: minimum_request
+  - field: maximum_request
+  - field: gender_restrictions
+  - field: remark
+  - field: sort
+filter_scope: space
+filters: []
+from_code_id: attendance_leave_type.all
+label: 最近查看
+mobile_columns:
+  - field: vacation_name
+  - field: vacation_type
+scrolling_mode: standard
+searchable_fields:
+  - field: vacation_name
+  - field: gender_restrictions
+  - field: vacation_type
+shared: true
+sort:
+  - field_name: sort
+    order: asc
+sort_no: 100
+type: grid

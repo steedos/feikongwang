@@ -1,0 +1,9 @@
+name: official_document_home
+__filename: >-
+  /workspace/steedos-ee/steedos-packages/gw/main/default/pages/official_document_home.page.yml
+is_active: true
+label: 公文首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

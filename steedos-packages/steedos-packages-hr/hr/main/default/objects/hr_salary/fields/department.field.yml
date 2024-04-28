@@ -1,0 +1,6 @@
+name: department
+label: 部门
+reference_to: organizations
+sort_no: 115
+type: lookup
+filterable: true

@@ -1,0 +1,31 @@
+name: all
+label: All Categories
+filter_scope: space
+columns:
+  - name
+  - site
+  - parent
+  - order
+filters: !<tag:yaml.org,2002:js/function> |-
+  function () {
+    if(!Steedos.isSpaceAdmin()){
+      try {
+        var userId = Steedos.userId();
+        var queryFilters = ["admins", "=", userId];
+        var queryResult = Steedos.authRequest("/graphql", {
+          type: 'POST', async: false,
+          data: JSON.stringify({
+            query: "{ cms_sites(filters: " + JSON.stringify(queryFilters) + "){ _id } }"
+          })
+        });
+        var sites = queryResult && queryResult.data && queryResult.data.cms_sites;
+        return [["site", "in", _.map(sites, "_id")]];
+      } catch (e) {
+        return ["_id", "=", null];
+      }
+    }
+  }
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

@@ -1,0 +1,18 @@
+name: service_type
+create: false
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 发票消费类型
+multiple: false
+primary: false
+required: false
+searchable: false
+show_as_qr: false
+sort_no: 310
+sortable: false
+type: text
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

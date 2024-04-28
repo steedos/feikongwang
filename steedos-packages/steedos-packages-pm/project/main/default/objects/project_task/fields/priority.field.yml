@@ -1,0 +1,25 @@
+name: priority
+defaultValue: normal
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 优先级
+omit: false
+options:
+  - label: 高
+    value: high
+    color: c11d25
+  - label: 中
+    value: normal
+    color: f9e29d
+  - label: 低
+    value: low
+    color: 49d181
+readonly: false
+required: false
+searchable: false
+sort_no: 200
+sortable: false
+type: select

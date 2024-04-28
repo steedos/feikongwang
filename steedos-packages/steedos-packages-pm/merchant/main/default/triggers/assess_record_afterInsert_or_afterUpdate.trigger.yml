@@ -1,0 +1,57 @@
+name: assess_record_afterInsert_or_afterUpdate
+listenTo: assess_record
+when:
+  - afterInsert
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, previousDoc, isBefore, isAfter, isInsert, isUpdate, userId,
+  spaceId } = ctx.params
+
+  const userSession = await ctx.getUser(userId, spaceId); // 保证评分人即是记录所有者
+
+
+  const { template, assessor } = doc;
+
+  const assessSupplierObj = ctx.getObject('assess_supplier')
+
+  const assessDataObj = ctx.getObject('assess_data');
+
+  const templateItemObj = ctx.getObject('assess_template_item');
+
+
+  if (isAfter) {
+      if (isInsert) {
+          const masterRecord = await assessSupplierObj.findOne(doc.assess_supplier); // 供应商考核数据
+          for (const supplier of doc.suppliers) {
+              // 添加考核数据
+              const items = await templateItemObj.find({ filters: ['assess_template', '=', template] });
+              for (const item of items) {
+                  // 考核数据
+                  const dataDoc = {
+                      'name': item.name,
+                      'content': item.content,                          // 评价标准
+                      'item_weight': item.weight,                       // 指标权重
+                      'assessor': assessor,                             // 评分人
+                      'assessor_weight': masterRecord.assessor_weight,  // 考核人权重
+                      'supplier': supplier,                             // 供应商
+                      'template': doc.template,                         // 考核模版
+                      'template_item': doc.template_item,               // 考核指标
+                      'template_weight': masterRecord.template_weight,  // 模版权重
+                      'assess_supplier': doc.assess_supplier,           // 供应商评分
+                      'assess_record': doc._id,                         // 考核单
+                      'space': userSession.spaceId,
+                      'owner': assessor                                 // 所有者
+                  };
+                  await assessDataObj.insert(dataDoc, userSession);
+              }
+          }
+      }
+
+      if (isUpdate) {
+          let removeSupplier = global._.difference(previousDoc.suppliers, doc.suppliers); // 删除的供应商
+          let insertSupplier = global._.difference(doc.suppliers, previousDoc.suppliers); // 新添加的供应商
+          
+      }
+      
+  }

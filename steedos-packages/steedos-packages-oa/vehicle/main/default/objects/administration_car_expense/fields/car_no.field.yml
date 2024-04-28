@@ -1,0 +1,7 @@
+name: car_no
+label: 车号
+type: lookup
+reference_to: administration_car
+sort_no: 100
+required: true
+index: true

@@ -1,0 +1,7 @@
+name: quantity
+group: 管理信息
+label: 数量
+precision: 18
+scale: 0
+sort_no: 180
+type: number

@@ -1,0 +1,5 @@
+name: seal
+label: 印章名称
+reference_to: seal
+sort_no: 120
+type: master_detail

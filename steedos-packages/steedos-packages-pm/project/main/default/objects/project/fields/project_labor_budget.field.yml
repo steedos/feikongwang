@@ -1,0 +1,17 @@
+name: project_labor_budget
+filterable: false
+group: 预算与执行
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 预算人工合计(人天)
+omit: false
+precision: 18
+readonly: false
+required: false
+scale: 0
+searchable: false
+sort_no: 148
+sortable: false
+type: number

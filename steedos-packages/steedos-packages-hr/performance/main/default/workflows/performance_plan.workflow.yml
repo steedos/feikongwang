@@ -1,0 +1,37 @@
+rules:
+  - name: update_performance_plan_status
+    active: true
+    label: 更新考核计划状态
+    object_name: performance_plan
+    time_triggers:
+      - number: 0
+        unit: hour
+        type: earlier_than
+        date_field: start_date
+        updates_field_actions:
+          - update_performance_plan_status
+      - number: 0
+        unit: hour
+        type: later_than
+        date_field: end_date
+        updates_field_actions:
+          - after_performance_end
+    trigger_type: onCreateOrTriggeringUpdate
+fieldUpdates:
+  - name: update_performance_plan_status
+    field_name: status
+    label: 将考核计划状态修改为‘进行中’
+    literal_value: ongoing
+    object_name: performance_plan
+    operation: literal
+    target_object: performance_plan
+  - name: after_performance_end
+    field_name: status
+    label: 将考核计划状态更新为'已结束'
+    literal_value: finished
+    object_name: performance_plan
+    operation: literal
+    target_object: performance_plan
+    undirect: true
+notifications: []
+outboundMessages: []

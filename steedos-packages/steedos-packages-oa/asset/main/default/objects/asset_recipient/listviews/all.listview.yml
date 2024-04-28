@@ -1,0 +1,17 @@
+name: all
+columns:
+  - field: name
+  - field: applicant
+  - field: applicant_date
+  - field: dept
+  - field: instance_state
+  - field: reasons
+  - field: warehouse
+filter_scope: space
+filters: []
+label: 所有资产领用
+scrolling_mode: standard
+shared: true
+show_count: false
+sort_no: 100
+type: grid

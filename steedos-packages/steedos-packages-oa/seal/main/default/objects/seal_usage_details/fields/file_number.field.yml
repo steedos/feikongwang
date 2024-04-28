@@ -1,0 +1,6 @@
+name: file_number
+label: 文件份数
+precision: 18
+scale: 0
+sort_no: 120
+type: number

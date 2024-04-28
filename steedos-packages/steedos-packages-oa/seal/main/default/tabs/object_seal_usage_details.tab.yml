@@ -1,0 +1,7 @@
+name: object_seal_usage_details
+desktop: true
+label: 印章使用明细
+mobile: true
+object: seal_usage_details
+permissions: []
+type: object

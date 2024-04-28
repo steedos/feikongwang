@@ -1,0 +1,5 @@
+name: supplier
+group: 采购信息
+label: 供应商
+sort_no: 290
+type: text

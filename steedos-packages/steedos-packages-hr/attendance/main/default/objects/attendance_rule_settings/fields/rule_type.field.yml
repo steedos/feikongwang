@@ -1,0 +1,10 @@
+name: rule_type
+data_type: text
+label: 规则类型
+options:
+  - label: 固定上下班
+    value: fixed_commuting
+required: true
+sort_no: 110
+type: select
+defaultValue: 'fixed_commuting'

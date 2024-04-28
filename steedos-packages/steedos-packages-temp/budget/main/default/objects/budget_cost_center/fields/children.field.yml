@@ -1,0 +1,6 @@
+name: children
+label: 子成本中心
+multiple: true
+reference_to: budget_cost_center
+type: lookup
+visible_on: '{{false}}'

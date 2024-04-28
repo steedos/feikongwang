@@ -1,0 +1,7 @@
+name: object_attendance_leave_type
+desktop: true
+label: 假期类型
+mobile: true
+object: attendance_leave_type
+permissions: []
+type: object

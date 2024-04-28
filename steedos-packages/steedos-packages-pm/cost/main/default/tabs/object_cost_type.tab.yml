@@ -1,0 +1,7 @@
+name: object_cost_type
+desktop: true
+label: 费用类型
+mobile: true
+object: cost_type
+permissions: []
+type: object

@@ -1,0 +1,25 @@
+{
+    "name": "@steedos-labs/contract",
+    "version": "2.6.4",
+    "description": "合同管理",
+    "main": "package.service.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "build:watch": "webpack --config webpack.config.js --watch"
+    },
+    "dependencies": {
+        "@steedos-labs/finance": "2.6.4",
+        "@steedos-labs/invoice": "2.6.4",
+        "@steedos-labs/master": "2.6.4"
+    },
+    "devDependencies": {
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}

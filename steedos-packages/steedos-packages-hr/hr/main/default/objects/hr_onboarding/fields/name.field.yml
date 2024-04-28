@@ -1,0 +1,5 @@
+name: name
+label: 员工姓名
+required: true
+type: text
+filterable: true

@@ -1,0 +1,5 @@
+name: end_date
+label: 停用时间
+type: date
+sort_no: 114
+sortable: true

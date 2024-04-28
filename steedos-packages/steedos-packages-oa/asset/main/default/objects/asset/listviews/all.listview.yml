@@ -1,0 +1,11 @@
+name: all
+columns:
+  - name
+  - asset_number
+  - classify
+  - prdeptice
+  - status
+  - model
+  - measurement_unit
+label: 所有资产
+shared: true

@@ -1,0 +1,5 @@
+name: depreciation_charged
+label: 已提折旧(元)
+type: currency
+group: 报废信息
+sort_no: 400

@@ -1,0 +1,25 @@
+rules:
+  - name: contract_expiration_reminder
+    active: true
+    description: 合同到期日期前一周提醒合同即将到期
+    label: 合同到期提醒
+    object_name: contracts
+    time_triggers:
+      - number: 8
+        unit: day
+        type: earlier_than
+        date_field: end_date
+        workflow_notifications_actions:
+          - contract_expiration_reminder
+    trigger_type: onCreateOrTriggeringUpdate
+    workflow_notifications_actions: []
+fieldUpdates: []
+notifications:
+  - name: contract_expiration_reminder
+    assigned_user_field:
+      - owner
+    body: name
+    label: 合同到期提醒
+    object_name: contracts
+    title: '"该合同即将到期，请及时续签"'
+outboundMessages: []

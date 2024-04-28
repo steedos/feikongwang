@@ -1,0 +1,6 @@
+name: accessory_fee
+label: 汽车用品美容费（元）
+precision: 18
+scale: 2
+sort_no: 130
+type: currency

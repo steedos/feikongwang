@@ -1,0 +1,65 @@
+name: 印章使用明细.user
+allowCreate: true
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: false
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true
+  - field: actual_times
+    readable: true
+    editable: true
+  - field: administration_stamp_usage
+    readable: true
+    editable: true
+  - field: !<tag:yaml.org,2002:js/undefined> ''
+    readable: true
+    editable: true
+  - field: file_number
+    readable: true
+    editable: true
+  - field: times
+    readable: true
+    editable: true
+  - field: seal
+    readable: true
+    editable: true

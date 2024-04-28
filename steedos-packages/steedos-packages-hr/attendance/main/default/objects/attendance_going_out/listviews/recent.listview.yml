@@ -1,0 +1,20 @@
+name: recent
+columns:
+  - field: name
+  - field: autonumber
+  - field: applicant
+  - field: company
+  - field: department
+  - field: start_time
+  - field: end_time
+  - field: day
+  - field: reason
+  - field: instance_state
+  - field: created
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

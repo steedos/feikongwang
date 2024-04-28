@@ -1,0 +1,8 @@
+name: project_program
+label: 所属项目
+filterable: true
+type: master_detail
+reference_to: project_program
+sort_no: 100
+required: true
+defaultValue: "${_master.record.project_program}"

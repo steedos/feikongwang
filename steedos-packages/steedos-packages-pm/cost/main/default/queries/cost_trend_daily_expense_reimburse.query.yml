@@ -1,0 +1,83 @@
+name: cost_trend_daily_expense_reimburse
+datasource: default
+label: 费控-费用趋势图-日常费用报销
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: datetime-range
+      global: false
+      locals: []
+      value: d_this_year
+    - title: owner
+      name: owner
+      type: text
+      global: false
+      locals: []
+  apply_auto_limit: false
+query: |-
+
+  {
+      "collection": "cost_daily_expense_reimburse",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "amount": "$amount",
+                  "instance_state": "$instance_state",
+                  "created": {
+                      "$dateToString": {
+                          "format": "%Y-%m-%d %H:%M",
+                          "date": "$created",
+                          "timezone": "+08"
+                      }
+                  },
+                  "created_month": {
+                      "$dateToString": {
+                          "format": "%Y-%m",
+                          "date": "$created",
+                          "timezone": "+08"
+                      }
+                  },
+                  "owner": "$owner"
+              }
+          },
+          {
+              "$match": {
+                  "owner":{
+                    "$eq": "{{owner}}"
+                  },
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "$and": [{
+                          "created": {
+                              "$gte": "{{ datetime.start }}"
+                          }
+                      },
+                      {
+                          "created": {
+                              "$lte": "{{ datetime.end }}"
+                          }
+                      }
+                  ],
+                  "instance_state": {
+                      "$eq": "approved"
+                  }
+              }
+          },
+          {
+              "$group": {
+                  "_id": "$created_month",
+                  "amount": {
+                      "$sum": "$amount"
+                  }
+              }
+          },
+          {
+              "$project": {
+                  "_id": 1,
+                  "amount": 1
+              }
+          }
+      ]
+  }

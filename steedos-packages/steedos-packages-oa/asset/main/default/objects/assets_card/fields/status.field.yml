@@ -1,0 +1,20 @@
+name: status
+group: 管理信息
+filterable: true
+label: 状态
+options:
+  - label: 在库
+    value: 在库
+  - label: 使用中
+    value: 使用中
+  - label: 审批中
+    value: 审批中
+  - label: 停用
+    value: 停用
+  - label: 报废
+    value: 报废
+required: true
+searchable: true
+sort_no: 150
+sortable: true
+type: select

@@ -1,0 +1,30 @@
+name: projects_count_uncompleted_project_task
+datasource: default
+label: 项目-待完成任务
+options:
+  parameters: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "project_task",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "state": "$state"
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "state": {
+                      "$in": ["in_progress", "waiting", "deferred"]
+                  }
+              }
+          },
+          {
+              "$count": "count"
+          }
+      ]
+  }

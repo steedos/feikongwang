@@ -1,0 +1,13 @@
+name: type
+data_type: text
+group: 补卡信息
+label: 补卡类型
+options:
+  - label: 上班卡
+    value: work
+  - label: 下班卡
+    value: quit
+sort_no: 310
+type: select
+required: true
+filterable: true

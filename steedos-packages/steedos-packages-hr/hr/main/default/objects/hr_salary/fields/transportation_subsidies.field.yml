@@ -1,0 +1,6 @@
+name: transportation_subsidies
+label: 交通补贴
+precision: 18
+scale: 2
+sort_no: 170
+type: currency

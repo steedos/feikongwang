@@ -1,0 +1,9 @@
+name: hr_salary
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+icon: agent_session
+is_enable: true
+label: 工资单
+version: 2

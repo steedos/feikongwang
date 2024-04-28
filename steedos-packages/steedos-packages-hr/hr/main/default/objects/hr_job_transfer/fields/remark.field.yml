@@ -1,0 +1,13 @@
+name: remark
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 调动原因
+primary: false
+required: true
+rows: 3
+sort_no: 380
+sortable: false
+type: textarea

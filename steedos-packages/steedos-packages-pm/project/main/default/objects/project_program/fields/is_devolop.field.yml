@@ -1,0 +1,10 @@
+name: is_devolop
+label: 是否开发中项目
+type: select
+sort_no: 190
+options: 
+ - label: 是
+   value: Yes
+ - label: 否
+   value: No
+visible_on: "{{false}}"

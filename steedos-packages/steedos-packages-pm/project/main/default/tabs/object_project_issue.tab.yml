@@ -1,0 +1,7 @@
+name: object_project_issue
+desktop: true
+label: 问题
+mobile: true
+object: project_issue
+permissions: []
+type: object

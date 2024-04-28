@@ -1,0 +1,124 @@
+name: official_document_count_department_tasks
+datasource: default
+description: |-
+  查询对象：tasks 任务
+  查询条件：审批记录未删除、办理状态分为办理中（办理状态：正常进行、逾期进行）、已办理（办理状态：正常结束、逾期结束）、查询时间为：办理期限范围“本年”。
+  查询结果：当前各主办部门在办理中、已办理状态下各有多少条记录。
+label: 公文-部门任务数
+options:
+  parameters:
+    - title: datetime
+      name: datetime
+      type: date-range
+      global: false
+      locals: []
+      value: d_this_year
+  apply_auto_limit: false
+query: |-
+  {
+    "collection": "tasks",
+    "aggregate": [
+        {
+            "$project": {
+                "is_deleted": "$is_deleted",
+                "name": "$name",
+                "related_to": "$related_to",
+                "related_to_object": "$related_to.o",
+                "related_to_ids": "$related_to.ids",
+                "state": "$state",
+                "due_date": {
+                    "$dateToString": {
+                        "format": "%Y-%m-%d",
+                        "date": "$due_date",
+                        "timezone": "+00"
+                    }
+                }
+            }
+        },
+           {
+              "$facet": {
+                  "ongoing": [
+                      {
+                          "$match": {
+                              "is_deleted": {
+                                "$ne": true
+                            },
+                            "state": {
+                                  "$in": ["in_progress", "waiting", "deferred"]
+                            },
+                            "related_to_ids": {
+                              "$ne": []  
+                            },
+                            "related_to_object": {
+                                "$in": ["document", "incoming_document", "supervise"]
+                            },
+                            "$and": [
+                                {
+                                    "due_date": {
+                                        "$gte": "{{ datetime.start }}"
+                                    }
+                                },
+                                {
+                                    "due_date": {
+                                        "$lte": "{{ datetime.end }}"
+                                    }
+                                }
+                            ]
+                          }
+                      },
+                      {
+                          "$group": {
+                                "_id": "$related_to.o",
+                                "count": {
+                                    "$sum": 1
+                                }
+                          }
+                      }
+                  ],
+                  "completed": [
+                      {
+                          "$match": {
+                             "is_deleted": {
+                                "$ne": true
+                            },
+                            "state": {
+                                  "$in": ["completed"]
+                            },
+                            "related_to_ids": {
+                              "$ne": []  
+                            },
+                            "related_to_object": {
+                                "$in": ["document", "incoming_document", "supervise"]
+                            },
+                            "$and": [
+                                {
+                                    "due_date": {
+                                        "$gte": "{{ datetime.start }}"
+                                    }
+                                },
+                                {
+                                    "due_date": {
+                                        "$lte": "{{ datetime.end }}"
+                                    }
+                                }
+                            ]
+                          }
+                      },
+                      {
+                          "$group": {
+                                "_id": "$related_to.o",
+                                "count": {
+                                    "$sum": 1
+                                }
+                          }
+                      }
+                  ]
+              }
+          }
+    ]
+  }
+schedule:
+  interval: 60
+  time: null
+  day_of_week: null
+  until: null

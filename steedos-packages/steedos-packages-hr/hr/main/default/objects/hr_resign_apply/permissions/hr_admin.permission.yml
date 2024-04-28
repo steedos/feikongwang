@@ -1,0 +1,81 @@
+name: hr_resign_apply.hr_admin
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: hr_admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: apply_date
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true
+  - field: end
+    readable: true
+    editable: true
+  - field: job_title
+    readable: true
+    editable: true
+  - field: name
+    readable: true
+    editable: true
+  - field: number
+    readable: true
+    editable: true
+  - field: remark1
+    readable: true
+    editable: true
+  - field: remark2
+    readable: true
+    editable: true
+  - field: remark3
+    readable: true
+    editable: true
+  - field: staff
+    readable: true
+    editable: true
+  - field: start
+    readable: true
+    editable: true
+  - field: state
+    readable: true
+    editable: false
+  - field: owner
+    readable: true
+    editable: true
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: true
+    editable: true
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true

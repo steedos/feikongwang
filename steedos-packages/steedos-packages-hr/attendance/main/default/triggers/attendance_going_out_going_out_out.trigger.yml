@@ -1,0 +1,22 @@
+name: attendance_going_out_going_out_out
+listenTo: attendance_going_out
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, previousDoc } = ctx.params;
+
+  // 修改外出记录后，修改外出时长
+
+  await
+  ctx.broker.call('@steedos-labs/attendance.afterInsertCountGoingOutTimes', {
+      "doc": doc
+  })
+
+  if (previousDoc.instance_state !== 'approved' && doc.instance_state ===
+  'approved') {
+      console.log("外出单审批状态",doc.instance_state)
+      await ctx.broker.call('@steedos-labs/attendance.outSettlement', {
+          outId: doc._id
+      })
+  }

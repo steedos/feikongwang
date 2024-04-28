@@ -1,0 +1,15 @@
+name: organization
+filterable: false
+generated: false
+index: false
+inlineHelpText: 允许占用的部门、个人、成本中心或项目管理选项。
+is_name: false
+is_wide: true
+label: 关联组织
+multiple: true
+primary: false
+required: true
+sort_no: 120
+sortable: false
+type: lookup
+reference_to: [company,organizations,space_users,budget_cost_center,project]

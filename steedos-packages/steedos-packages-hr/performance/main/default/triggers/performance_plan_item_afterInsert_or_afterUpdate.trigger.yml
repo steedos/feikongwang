@@ -1,0 +1,40 @@
+name: performance_plan_item_afterInsert_or_afterUpdate
+listenTo: performance_plan_item
+when:
+  - afterUpdate
+  - afterInsert
+isEnabled: true
+handler: |-
+  /**
+   * 考核计划明细新增后或更新后，同步修改考核数据
+   */
+  const { doc, isInsert, isUpdate, userId, spaceId } = ctx.params
+  const user = await ctx.getUser(userId, spaceId);
+  const params = {
+      '_id': doc._id,
+      'planId': doc.performance_plan,
+      'templateId': doc.performance_template,
+      'assessor': doc.assessor,
+      'employee': doc.employee,
+  };
+
+  if (isInsert) {
+      // 添加记录
+      await ctx.broker.call(
+          '@steedos-labs/performance.createPerformanceData',
+          params,
+          {
+              meta: {'user': user}
+          }
+      );
+
+  } else if (isUpdate) {
+      // 修正记录
+      await ctx.broker.call(
+          '@steedos-labs/performance.updatePerformanceData',
+          params,
+          {
+              meta: { 'user': user }
+          }
+      );
+  }

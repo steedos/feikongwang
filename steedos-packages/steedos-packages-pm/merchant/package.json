@@ -1,0 +1,20 @@
+{
+  "name": "@steedos-labs/merchant",
+  "version": "2.6.4",
+  "description": "供应商管理",
+  "main": "package.service.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@steedos-labs/master": "2.6.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "webpack --config webpack.config.js --watch"
+  }
+}

@@ -1,0 +1,23 @@
+name: urgency
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 紧急程度
+multiple: false
+options:
+  - label: 普通
+    value: 普通
+    color: 49d181
+  - label: 紧急
+    value: 紧急
+    color: EE6666
+  - label: 特急
+    value: 特急
+    color: FF2D2D
+primary: false
+required: false
+sort_no: 117
+sortable: false
+type: select

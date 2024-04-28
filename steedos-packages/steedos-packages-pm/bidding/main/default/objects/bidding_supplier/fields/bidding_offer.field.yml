@@ -1,0 +1,6 @@
+name: bidding_offer
+label: 投标报价
+precision: 18
+scale: 2
+sort_no: 140
+type: number

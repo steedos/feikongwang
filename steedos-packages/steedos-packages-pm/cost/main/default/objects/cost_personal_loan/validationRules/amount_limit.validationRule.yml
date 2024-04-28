@@ -1,0 +1,5 @@
+name: amount_limit
+active: true
+description: 借款金额校验
+error_condition_formula: amount<=0
+error_message: 请确认借款金额。

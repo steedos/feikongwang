@@ -1,0 +1,4 @@
+name: cost_outing_restrict
+active: true
+error_condition_formula: start_time > end_time
+error_message: 结束时间不能早于开始时间。

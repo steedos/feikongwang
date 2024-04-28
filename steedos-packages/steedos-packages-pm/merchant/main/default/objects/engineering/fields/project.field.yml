@@ -1,0 +1,6 @@
+name: project
+label: 楼盘名称
+type: text
+sort_no: 110
+required: true
+is_name: true

@@ -1,0 +1,5 @@
+name: level
+group: 管理信息
+label: 等级
+sort_no: 240
+type: text

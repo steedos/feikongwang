@@ -1,0 +1,7 @@
+name: object_events
+desktop: true
+label: 日程
+mobile: true
+object: events
+permissions: []
+type: object

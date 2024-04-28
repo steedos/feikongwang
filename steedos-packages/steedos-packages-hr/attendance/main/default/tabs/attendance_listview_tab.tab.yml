@@ -1,0 +1,8 @@
+name: attendance_listview_tab
+desktop: true
+icon: event
+label: 考勤视图
+mobile: true
+page: attendance_listview
+permissions: []
+type: page

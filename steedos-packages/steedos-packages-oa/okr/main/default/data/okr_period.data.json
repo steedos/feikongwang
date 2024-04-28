@@ -1,0 +1,102 @@
+[
+    {
+        "_id": "${space_id}_62b18ae00aa493003e53295e",
+        "end_date": {
+            "$date": "2022-03-31T00:00:00Z"
+        },
+        "name": "2022年第一季度",
+        "start_date": {
+            "$date": "2022-01-01T00:00:00Z"
+        },
+        "status": "Closed Period",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:09:52.47Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:09:52.47Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b18aff0aa493003e53295f",
+        "end_date": {
+            "$date": "2022-06-30T00:00:00Z"
+        },
+        "name": "2022年第二季度",
+        "start_date": {
+            "$date": "2022-04-01T00:00:00Z"
+        },
+        "status": "Current Period",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:10:23.489Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:11:07.261Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b18b160aa493003e532960",
+        "end_date": {
+            "$date": "2022-09-30T00:00:00Z"
+        },
+        "name": "2022年第三季度",
+        "start_date": {
+            "$date": "2022-07-01T00:00:00Z"
+        },
+        "status": "Future Period",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:10:46.157Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:10:46.157Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62b18b550aa493003e532961",
+        "end_date": {
+            "$date": "2022-12-31T00:00:00Z"
+        },
+        "name": "2022年第四季度",
+        "start_date": {
+            "$date": "2022-10-01T00:00:00Z"
+        },
+        "status": "Future Period",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:11:49.21Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:11:49.21Z"
+        },
+        "owner": "6260d6ae32cc250032e1a907",
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    }
+]

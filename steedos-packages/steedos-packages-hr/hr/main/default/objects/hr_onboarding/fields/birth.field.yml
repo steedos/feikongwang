@@ -1,0 +1,5 @@
+name: birth
+group: 其他信息
+label: 出生日期
+sort_no: 330
+type: date

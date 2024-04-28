@@ -1,0 +1,7 @@
+name: object_hr_onboarding
+desktop: true
+label: 入职
+mobile: true
+object: hr_onboarding
+permissions: []
+type: object

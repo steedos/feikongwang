@@ -1,0 +1,5 @@
+name: supplier
+label: 供应商
+type: lookup
+reference_to: accounts
+sort_no: 100

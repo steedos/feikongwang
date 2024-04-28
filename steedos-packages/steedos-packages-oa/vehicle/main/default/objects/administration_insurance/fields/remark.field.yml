@@ -1,0 +1,5 @@
+name: remark
+label: 备注
+is_wide: true
+type: text
+sort_no: 900

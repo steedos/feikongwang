@@ -1,0 +1,131 @@
+[
+    {
+        "_id": "${space_id}_62b18bbd0aa493003e532963",
+        "confidence": "3",
+        "name": "公司营业额实现100万",
+        "organization": "${space_id}_XqNXgeQokjatopEv6",
+        "owner": "6260d6ae32cc250032e1a907",
+        "ownership": "Company",
+        "period": "${space_id}_62b18ae00aa493003e53295e",
+        "status": "Incomplete",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:13:33.722Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:16:26.301Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "end_date": {
+            "$date": "2022-03-31T00:00:00Z"
+        },
+        "start_date": {
+            "$date": "2022-01-01T00:00:00Z"
+        },
+        "confidence_x": 300,
+        "no_of_krs": 2,
+        "progress": 0,
+        "description": ""
+    },
+    {
+        "_id": "${space_id}_62b18bd60aa493003e532964",
+        "confidence": "3",
+        "name": "公司营业额实现150万",
+        "organization": "${space_id}_XqNXgeQokjatopEv6",
+        "owner": "6260d6ae32cc250032e1a907",
+        "ownership": "Company",
+        "period": "${space_id}_62b18aff0aa493003e53295f",
+        "status": "Partially Achieved",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:13:58.604Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:13:58.605Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "end_date": {
+            "$date": "2022-06-30T00:00:00Z"
+        },
+        "start_date": {
+            "$date": "2022-04-01T00:00:00Z"
+        },
+        "confidence_x": 300,
+        "no_of_krs": 2,
+        "progress": 0
+    },
+    {
+        "_id": "${space_id}_62b18bf10aa493003e532965",
+        "confidence": "4",
+        "name": "公司营业额实现400万",
+        "organization": "${space_id}_XqNXgeQokjatopEv6",
+        "owner": "6260d6ae32cc250032e1a907",
+        "ownership": "Company",
+        "period": "${space_id}_62b18b160aa493003e532960",
+        "status": "Draft",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:14:25.558Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:14:25.558Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "end_date": {
+            "$date": "2022-09-30T00:00:00Z"
+        },
+        "start_date": {
+            "$date": "2022-07-01T00:00:00Z"
+        },
+        "confidence_x": 0,
+        "no_of_krs": 0,
+        "progress": 0
+    },
+    {
+        "_id": "${space_id}_62b18c070aa493003e532966",
+        "confidence": "5",
+        "name": "公司营业额实现600万",
+        "organization": "${space_id}_XqNXgeQokjatopEv6",
+        "owner": "6260d6ae32cc250032e1a907",
+        "ownership": "Company",
+        "period": "${space_id}_62b18b550aa493003e532961",
+        "status": "Draft",
+        "space": "6260d4ff102bc40032fa9b15",
+        "created": {
+            "$date": "2022-06-21T09:14:47.515Z"
+        },
+        "modified": {
+            "$date": "2022-06-21T09:14:47.515Z"
+        },
+        "created_by": "6260d6ae32cc250032e1a907",
+        "modified_by": "6260d6ae32cc250032e1a907",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ],
+        "end_date": {
+            "$date": "2022-12-31T00:00:00Z"
+        },
+        "start_date": {
+            "$date": "2022-10-01T00:00:00Z"
+        },
+        "confidence_x": 0,
+        "no_of_krs": 0,
+        "progress": 0
+    }
+]

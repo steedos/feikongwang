@@ -1,0 +1,161 @@
+name: create_cost_reimburse_detail
+amis_schema: |-
+    {
+        "type": "service",
+        "body": [
+            {
+                "type": "button",
+                "label": "快速创建费用",
+                "id": "u:create_cost_reimburse_detail",
+                "editorState": "default",
+                "onEvent": {
+                    "click": {
+                        "weight": 0,
+                        "actions": [
+                            {
+                                "actionType": "custom",
+                                "script": "/* 自定义JS使用说明：\n  * 1.动作执行函数doAction，可以执行所有类型的动作\n  * 2.通过上下文对象context可以获取当前组件实例，例如context.props可以获取该组件相关属性\n  * 3.事件对象event，在doAction之后执行event.stopPropagation();可以阻止后续动作执行\n*/\nconst isLookup = event.data.isLookup;\nif (isLookup) {\n  // lookup弹出窗口的新建功能不需要支持复制新建\n  return;\n}\nconst uiSchema = event.data.uiSchema;\nconst objectName = event.data.objectName;\nconst listViewRef = event.context.scoped.getComponentById(\"listview_\" + objectName);\nconst selectedItems = listViewRef && listViewRef.props.store.toJSON().selectedItems || [];\nevent.data.selectedIds = _.map(selectedItems, uiSchema.idFieldName || '_id');\nconsole.log(selectedItems)\nif (selectedItems.length === 0) {\n  doAction({\n    actionType: 'toast',\n    args: {\n      msg: '请至少选择一张发票'\n    }\n  });\n  event.stopPropagation();\n}\ndelete event.data.invoiceAllInOne;\nif (selectedItems.length === 1) { \n  event.data.invoiceAllInOne = false;\n}\n\n"
+                            },
+                            {
+                                "actionType": "dialog",
+                                "expression": "${selectedIds.length > 1}",
+                                "dialog": {
+                                    "type": "dialog",
+                                    "title": "费用生成",
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "是否将选择的发票合并生成一条费用？",
+                                            "wrapperComponent": "",
+                                            "inline": false,
+                                            "id": "u:8c4b2e9659f8"
+                                        }
+                                    ],
+                                    "showCloseButton": true,
+                                    "showErrorMsg": true,
+                                    "showLoading": true,
+                                    "className": "app-popover",
+                                    "id": "u:45d31c98b233",
+                                    "closeOnEsc": false,
+                                    "actions": [
+                                        {
+                                            "type": "button",
+                                            "label": "不合并",
+                                            "onEvent": {
+                                                "click": {
+                                                    "actions": [
+                                                        {
+                                                            "actionType": "broadcast",
+                                                            "args": {
+                                                                "eventName": "broadcast_invoices_create_cost_reimburse_detail"
+                                                            },
+                                                            "data": {
+                                                                "invoiceIds": "${selectedIds}",
+                                                                "invoiceAllInOne": false
+                                                            }
+                                                        },
+                                                        {
+                                                            "actionType": "closeDialog"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "id": "u:c32354354468",
+                                            "editorState": "default"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "label": "合并",
+                                            "onEvent": {
+                                                "click": {
+                                                    "actions": [
+                                                        {
+                                                            "actionType": "broadcast",
+                                                            "args": {
+                                                                "eventName": "broadcast_invoices_create_cost_reimburse_detail"
+                                                            },
+                                                            "data": {
+                                                                "invoiceIds": "${selectedIds}",
+                                                                "invoiceAllInOne": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "actionType": "closeDialog"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "id": "u:b6f51c89e547",
+                                            "level": "primary",
+                                            "editorState": "default"
+                                        }
+                                    ],
+                                    "withDefaultData": false,
+                                    "dataMapSwitch": false
+                                }
+                            },
+                            {
+                                "actionType": "broadcast",
+                                "args": {
+                                    "eventName": "broadcast_invoices_create_cost_reimburse_detail"
+                                },
+                                "data": {
+                                    "invoiceIds": "${selectedIds}",
+                                    "invoiceAllInOne": false
+                                },
+                                "expression": "${selectedIds.length == 1}"
+                            }
+                        ]
+                    }
+                },
+                "hiddenOn": "${appId != 'cost_contral'}"
+            }
+        ],
+        "regions": [
+            "body"
+        ],
+        "data": {
+            "context": {},
+            "dataComponentId": "",
+            "record_id": "",
+            "record": {},
+            "permissions": {}
+        },
+        "bodyClassName": "p-0",
+        "id": "u:1e04db341f6d",
+        "onEvent": {
+            "broadcast_invoices_create_cost_reimburse_detail": {
+                "weight": 2,
+                "actions": [
+                    {
+                        "actionType": "ajax",
+                        "args": {
+                            "options": {},
+                            "api": {
+                                "url": "${context.rootUrl}/api/invoice/create_cost_reimburse_detail",
+                                "method": "post",
+                                "requestAdaptor": "",
+                                "adaptor": "",
+                                "messages": {},
+                                "dataType": "json",
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                },
+                                "data": {
+                                    "invoiceIds": "${selectedIds}",
+                                    "invoiceAllInOne": "${invoiceAllInOne}"
+                                }
+                            }
+                        },
+                        "expression": "${selectedIds.length == 1 || (selectedIds.length > 1 && (invoiceAllInOne == false || invoiceAllInOne == true))}",
+                        "outputVar": "responseResult"
+                    }
+                ]
+            }
+        }
+    }
+is_enable: true
+label: 快速创建费用
+"on": list
+type: amis_button
+visible: true

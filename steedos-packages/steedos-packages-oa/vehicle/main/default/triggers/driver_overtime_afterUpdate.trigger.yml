@@ -1,0 +1,33 @@
+name: driver_overtime_afterUpdate
+listenTo: driver_overtime
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { doc, previousDoc,userId, spaceId } = ctx.params
+  const user = await ctx.getUser(doc.owner, spaceId);
+  if (doc.confirm) { // 主管确认
+      let insertDoc = {
+          'name': previousDoc.name,
+          'date': previousDoc.date,
+          'weekday': previousDoc.weekday,
+          'start_time': previousDoc.start_time,
+          'end_time': previousDoc.end_time,
+          'overtime_hour': (new Date(previousDoc.end_time) - new Date(previousDoc.start_time)) / (1000 * 60 * 60),
+          'work_task': previousDoc.work_task,
+          'overtime_mileage': previousDoc.end_mileage - previousDoc.start_mileage,
+          'driver': previousDoc.owner,
+          'driver_overtime': doc._id,
+          'owner': previousDoc.owner,
+          'space': previousDoc.space,
+          'created': previousDoc.created,
+          'created_by': previousDoc.created_by
+      }
+      await ctx.broker.call(
+          'objectql.insert',
+          {
+              'objectName': 'driver_overtime_count',
+              'doc': insertDoc
+          }
+      )
+  }

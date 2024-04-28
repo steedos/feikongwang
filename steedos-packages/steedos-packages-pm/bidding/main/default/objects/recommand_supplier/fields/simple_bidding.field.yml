@@ -1,0 +1,6 @@
+name: simple_bidding
+label: 简易招投标
+type: master_detail
+reference_to: simple_bidding
+sort_no: 100
+visible_on: "{{ formData.supplier_shortlisting ? false : true }}"

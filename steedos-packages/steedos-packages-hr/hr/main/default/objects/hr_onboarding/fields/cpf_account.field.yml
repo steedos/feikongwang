@@ -1,0 +1,5 @@
+name: cpf_account
+group: 其他信息
+label: 公积金账号
+sort_no: 390
+type: text

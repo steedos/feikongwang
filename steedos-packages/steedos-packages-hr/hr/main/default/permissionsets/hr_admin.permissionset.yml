@@ -1,0 +1,5 @@
+name: hr_admin
+label: 人事专员
+login_expiration_in_days: 90
+phone_login_expiration_in_days: 90
+type: permission_set

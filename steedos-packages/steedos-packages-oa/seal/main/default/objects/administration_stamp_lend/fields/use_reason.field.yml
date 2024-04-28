@@ -1,0 +1,4 @@
+name: use_reason
+label: 外借事由
+sort_no: 110
+type: text

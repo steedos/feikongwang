@@ -1,0 +1,9 @@
+name: hr_home
+__filename: >-
+  /workspace/chinaums-oa-apps/steedos-packages/hr/main/default/pages/hr_home.page.yml
+is_active: true
+label: 人事首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

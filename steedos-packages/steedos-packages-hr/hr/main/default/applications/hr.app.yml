@@ -1,0 +1,61 @@
+name: 人事
+code: hr
+description: 人员入转调离及业务办理模块。
+icon_slds: service_resource
+is_creator: true
+is_new_window: false
+is_use_ie: false
+is_use_iframe: false
+mobile: true
+showSidebar: true
+sort: 80
+tab_groups:
+  - group_name: 人员管理
+    default_open: true
+  - group_name: 其他信息
+    default_open: true
+  - group_name: 流程审批
+    default_open: true
+tab_items:
+  hr_home:
+    group: 人员管理
+    index: 1
+  object_hr_employee:
+    group: 人员管理
+    index: 2
+  object_hr_onboarding:
+    group: 人员管理
+    index: 3
+  object_hr_regular_apply:
+    group: 人员管理
+    index: 4
+  object_hr_job_transfer:
+    group: 人员管理
+    index: 5
+  object_hr_resign_apply:
+    group: 人员管理
+    index: 6
+  object_hr_contract:
+    group: 其他信息
+    index: 7
+  object_hr_relation_certification:
+    group: 其他信息
+    index: 8
+  object_hr_salary:
+    group: 其他信息
+    index: 9
+  object_instance_tasks:
+    group: 流程审批
+    index: 10
+tabs:
+  - hr_home
+  - object_hr_employee
+  - object_hr_onboarding
+  - object_hr_regular_apply
+  - object_hr_job_transfer
+  - object_hr_resign_apply
+  - object_hr_contract
+  - object_hr_relation_certification
+  - object_hr_salary
+  - object_instance_tasks
+visible: true

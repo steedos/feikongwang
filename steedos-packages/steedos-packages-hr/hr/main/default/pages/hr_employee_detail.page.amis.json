@@ -1,0 +1,125 @@
+{
+    "type": "steedos-record-service",
+    "body": [
+        {
+            "type": "steedos-record-detail-header",
+            "label": "标题面板",
+            "objectApiName": "${objectName}",
+            "recordId": "${recordId}",
+            "id": "u:b75b1f51fc66"
+        },
+        {
+            "type": "tabs",
+            "className": "sm:mt-3 bg-white sm:shadow sm:rounded sm:border border-slate-300 p-4",
+            "tabs": [
+                {
+                    "title": "个人信息",
+                    "className": "px-0 py-4",
+                    "body": [
+                        {
+                            "type": "steedos-object-form",
+                            "label": "对象表单",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "appId": "${appId}",
+                            "id": "u:44fb9c43ec29"
+                        }
+                    ],
+                    "id": "u:5d4e7e3f6ecc"
+                },
+                {
+                    "title": "工作/教育经历",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:90feb066b7bb",
+                            "relatedObjectApiName": "hr_employer_experience"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:e197e658a890",
+                            "relatedObjectApiName": "hr_employer_education"
+                        }
+                    ],
+                    "id": "u:9611cd676720"
+                },
+                {
+                    "title": "人事合同",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:08038aa2ad3d",
+                            "relatedObjectApiName": "hr_contract"
+                        }
+                    ],
+                    "id": "u:fba7c8d72def"
+                },
+                {
+                    "title": "异动信息",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:0244bf690195",
+                            "relatedObjectApiName": "hr_regular_apply"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:f78a03273fa4",
+                            "relatedObjectApiName": "hr_job_transfer"
+                        },
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:b59a3b589b96",
+                            "relatedObjectApiName": "hr_resign_apply"
+                        }
+                    ],
+                    "id": "u:4ba864823da0"
+                },
+                {
+                    "title": "相关附件",
+                    "body": [
+                        {
+                            "type": "steedos-object-related-listview",
+                            "label": "相关表",
+                            "objectApiName": "${objectName}",
+                            "recordId": "${recordId}",
+                            "id": "u:6c9b89446f92",
+                            "relatedObjectApiName": "cms_files"
+                        }
+                    ],
+                    "id": "u:933d47cdac60"
+                }
+            ],
+            "id": "u:cdff7ea9b302"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {}
+    },
+    "id": "page_hr_employee_record_detail",
+    "name": "page_hr_employee_record_detail",
+    "objectApiName": "${objectName}",
+    "bodyClassName": "",
+    "className": "object-detail-page"
+}

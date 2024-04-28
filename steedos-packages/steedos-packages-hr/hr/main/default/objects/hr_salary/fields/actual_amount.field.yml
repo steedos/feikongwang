@@ -1,0 +1,6 @@
+name: actual_amount
+label: 实发金额
+precision: 18
+scale: 2
+sort_no: 270
+type: currency

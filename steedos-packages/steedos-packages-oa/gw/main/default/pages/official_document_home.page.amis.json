@@ -1,0 +1,719 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "发文统计",
+                            "body": [
+                                {
+                                    "type": "group",
+                                    "label": " ",
+                                    "required": "",
+                                    "gap": "xs",
+                                    "description": "",
+                                    "body": [
+                                        {
+                                            "type": "button-group-select",
+                                            "name": "document",
+                                            "value": "this_month",
+                                            "btnActiveLevel": "primary",
+                                            "mode": "inline",
+                                            "options": [
+                                                {
+                                                    "label": "上月",
+                                                    "value": "last_month"
+                                                },
+                                                {
+                                                    "label": "本月",
+                                                    "value": "this_month"
+                                                }
+                                            ],
+                                            "joinValues": true,
+                                            "className": "",
+                                            "columnClassName": "a",
+                                            "labelClassName": "",
+                                            "inputClassName": "",
+                                            "horizontal": {
+                                                "leftFixed": "lg",
+                                                "left": 2,
+                                                "right": 10
+                                            },
+                                            "id": "u:e66354576213",
+                                            "multiple": false
+                                        }
+                                    ],
+                                    "affixFooter": false,
+                                    "id": "u:574104fc0d4b"
+                                },
+                                {
+                                    "type": "service",
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<div>发文总数\n<div class=\"text-2xl\">${total_amount}</div>\n</div>",
+                                            "inline": false,
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "",
+                                            "id": "u:9da394d4279d"
+                                        },
+                                        {
+                                            "type": "divider",
+                                            "className": "m-l-xs m-r-xs",
+                                            "id": "u:b127fd64a52e"
+                                        },
+                                        {
+                                            "type": "grid",
+                                            "columns": [
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "tpl",
+                                                            "tpl": "<p>待办&ensp;${inboxCount}</p>",
+                                                            "inline": false,
+                                                            "id": "u:75764428ee45",
+                                                            "style": {
+                                                                "textAlign": "center"
+                                                            },
+                                                            "className": ""
+                                                        }
+                                                    ],
+                                                    "id": "u:bf221a36ab0b"
+                                                },
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "tpl",
+                                                            "tpl": "<p>已办&ensp;${outboxCount}</p>",
+                                                            "inline": false,
+                                                            "id": "u:b970d2958dba",
+                                                            "style": {
+                                                                "textAlign": "center"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:49d5e38a1709"
+                                                }
+                                            ],
+                                            "id": "u:02b574c945cd"
+                                        }
+                                    ],
+                                    "id": "u:e9032dc4c354",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_document/results?document=${document}",
+                                        "data": {
+                                            "userId": "${context.userId}"
+                                        },
+                                        "sendOn": "this.document",
+                                        "requestAdaptor": "// 精确到 小时，需要减8小时； 查找列表视图中的时间过滤代码实现。\n// console.log('api==>', api)\nvar document = api.query.document;\nvar time = Creator.getBetweenTimeBuiltinValueItem(\"datetime\", document).values;\nvar year = time[0].getFullYear();\nvar start_month = time[0].getMonth() + 1;\nstart_month = start_month > 9 ? '' + start_month : '0' + start_month;\nvar end_month = time[1].getMonth() + 1;\nend_month = end_month > 9 ? '' + end_month : '0' + end_month;\nvar days = time[1].getDate();\n\n\napi.data.parameters = {\n  userId: api.data.userId,\n  datetime: {\n    start: year + '-' + start_month + '-01 00:00:00',\n    end: year + '-' + end_month + '-' + days + ' 23:59:59'\n  }\n}\n// console.log('api2==>', api)",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows[0];\n\nvar inboxCount = 0, outboxCount = 0;\nvar inbox = rows.inbox, outbox = rows.outbox;\n\nif (inbox.length) { inboxCount = inbox[0].inboxCount }\nif (outbox.length) { outboxCount = outbox[0].outboxCount }\n\npayload.data = {\n  total_amount: inboxCount + outboxCount,\n  inboxCount: inboxCount,\n  outboxCount: outboxCount\n};\nreturn payload;",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "affixFooter": false,
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:5504124e52c8",
+                            "inline": false,
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:294e412dbd82"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "收文统计",
+                            "body": [
+                                {
+                                    "type": "group",
+                                    "label": " ",
+                                    "required": "",
+                                    "gap": "xs",
+                                    "description": "",
+                                    "body": [
+                                        {
+                                            "type": "button-group-select",
+                                            "name": "incoming_document",
+                                            "value": "this_month",
+                                            "btnActiveLevel": "primary",
+                                            "mode": "inline",
+                                            "options": [
+                                                {
+                                                    "label": "上月",
+                                                    "value": "last_month"
+                                                },
+                                                {
+                                                    "label": "本月",
+                                                    "value": "this_month"
+                                                }
+                                            ],
+                                            "joinValues": true,
+                                            "id": "u:b995a12d0977",
+                                            "multiple": false
+                                        }
+                                    ],
+                                    "affixFooter": false,
+                                    "id": "u:107127810fee"
+                                },
+                                {
+                                    "type": "service",
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<div>收文总数\n<div class=\"text-2xl\">${total_amount}</div>\n</div>",
+                                            "inline": false,
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "",
+                                            "id": "u:78122d1d15ed"
+                                        },
+                                        {
+                                            "type": "divider",
+                                            "className": "m-l-xs m-r-xs",
+                                            "id": "u:25e88f576859"
+                                        },
+                                        {
+                                            "type": "grid",
+                                            "columns": [
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "tpl",
+                                                            "tpl": "<p>待办&ensp;${inboxCount}</p>",
+                                                            "inline": false,
+                                                            "id": "u:aa021ecd9961",
+                                                            "style": {
+                                                                "textAlign": "center"
+                                                            },
+                                                            "className": ""
+                                                        }
+                                                    ],
+                                                    "id": "u:6b5f5196c138"
+                                                },
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "tpl",
+                                                            "tpl": "<p>已办&ensp;${outboxCount}</p>",
+                                                            "inline": false,
+                                                            "id": "u:c1c776ab5434",
+                                                            "style": {
+                                                                "textAlign": "center"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:b9dcaa38c28e"
+                                                }
+                                            ],
+                                            "id": "u:f17240ff596a"
+                                        }
+                                    ],
+                                    "id": "u:8b2ebaf8bf85",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_incoming_document/results?incoming_document=${incoming_document}",
+                                        "requestAdaptor": "// 精确到 小时，需要减8小时； 查找列表视图中的时间过滤代码实现。\n// console.log('api==>', api)\nvar incoming_document = api.query.incoming_document;\nvar time = Creator.getBetweenTimeBuiltinValueItem(\"datetime\", incoming_document).values;\nvar year = time[0].getFullYear();\nvar start_month = time[0].getMonth() + 1;\nstart_month = start_month > 9 ? '' + start_month : '0' + start_month;\nvar end_month = time[1].getMonth() + 1;\nend_month = end_month > 9 ? '' + end_month : '0' + end_month;\nvar days = time[1].getDate();\n\n\napi.data.parameters = {\n  userId: api.data.userId,\n  datetime: {\n    start: year + '-' + start_month + '-01 00:00:00',\n    end: year + '-' + end_month + '-' + days + ' 23:59:59'\n  }\n}\n// console.log('api2==>', api)",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows[0];\nvar inboxCount = 0, outboxCount = 0;\nvar inbox = rows.inbox, outbox = rows.outbox;\n\nif (inbox.length) { inboxCount = inbox[0].inboxCount }\nif (outbox.length) { outboxCount = outbox[0].outboxCount }\n\npayload.data = {\n  total_amount: inboxCount + outboxCount,\n  inboxCount: inboxCount,\n  outboxCount: outboxCount\n};\n\nreturn payload;",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        },
+                                        "sendOn": "this.incoming_document",
+                                        "data": {
+                                            "userId": "${context.userId}"
+                                        },
+                                        "cache": ""
+                                    },
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:28ff4376ea2f",
+                            "inline": false,
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:7c3525c7eed2"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "督办统计",
+                            "body": [
+                                {
+                                    "type": "group",
+                                    "label": " ",
+                                    "required": "",
+                                    "gap": "xs",
+                                    "description": "",
+                                    "body": [
+                                        {
+                                            "type": "button-group-select",
+                                            "name": "supervise",
+                                            "value": "this_month",
+                                            "btnActiveLevel": "primary",
+                                            "mode": "inline",
+                                            "options": [
+                                                {
+                                                    "label": "上月",
+                                                    "value": "last_month"
+                                                },
+                                                {
+                                                    "label": "本月",
+                                                    "value": "this_month"
+                                                }
+                                            ],
+                                            "joinValues": true,
+                                            "id": "u:834bbadf334b",
+                                            "multiple": false
+                                        }
+                                    ],
+                                    "affixFooter": false,
+                                    "id": "u:ac6b8d03b841"
+                                },
+                                {
+                                    "type": "service",
+                                    "body": [
+                                        {
+                                            "type": "tpl",
+                                            "tpl": "<div>督办总数\n<div class=\"text-2xl\">${total_amount}</div>\n</div>",
+                                            "inline": false,
+                                            "style": {
+                                                "textAlign": "center"
+                                            },
+                                            "className": "",
+                                            "affixFooter": false,
+                                            "id": "u:10b1cc3255e4"
+                                        },
+                                        {
+                                            "type": "divider",
+                                            "className": "m-l-xs m-r-xs",
+                                            "id": "u:30f0b402b2f0"
+                                        },
+                                        {
+                                            "type": "grid",
+                                            "columns": [
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "tpl",
+                                                            "tpl": "<p>待办&ensp;${inboxCount}</p>",
+                                                            "inline": false,
+                                                            "id": "u:bdfd7f17263f",
+                                                            "style": {
+                                                                "textAlign": "center"
+                                                            },
+                                                            "className": ""
+                                                        }
+                                                    ],
+                                                    "id": "u:aa1cc9b85bfc"
+                                                },
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "tpl",
+                                                            "tpl": "<p>已办&ensp;${outboxCount}</p>",
+                                                            "inline": false,
+                                                            "id": "u:e20caeb302ff",
+                                                            "style": {
+                                                                "textAlign": "center"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:b6cdca262a33"
+                                                }
+                                            ],
+                                            "id": "u:77b20d6f74f4"
+                                        }
+                                    ],
+                                    "id": "u:3cf4dcf47e0a",
+                                    "messages": {},
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_supervise/results?supervise=${supervise}",
+                                        "data": {
+                                            "userId": "${context.userId}"
+                                        },
+                                        "sendOn": "this.supervise",
+                                        "requestAdaptor": "// 精确到 小时，需要减8小时； 查找列表视图中的时间过滤代码实现。\n// console.log('api==>', api)\nvar supervise = api.query.supervise;\nvar time = Creator.getBetweenTimeBuiltinValueItem(\"datetime\", supervise).values;\nvar year = time[0].getFullYear();\nvar start_month = time[0].getMonth() + 1;\nstart_month = start_month > 9 ? '' + start_month : '0' + start_month;\nvar end_month = time[1].getMonth() + 1;\nend_month = end_month > 9 ? '' + end_month : '0' + end_month;\nvar days = time[1].getDate();\n\n\napi.data.parameters = {\n  userId: api.data.userId,\n  datetime: {\n    start: year + '-' + start_month + '-01 00:00:00',\n    end: year + '-' + end_month + '-' + days + ' 23:59:59'\n  }\n}\n// console.log('api2==>', api)",
+                                        "adaptor": "\nvar rows = payload?.query_result?.data?.rows[0];\n\nvar inboxCount = 0, outboxCount = 0;\nvar inbox = rows.inbox, outbox = rows.outbox;\n\nif (inbox.length) { inboxCount = inbox[0].inboxCount }\nif (outbox.length) { outboxCount = outbox[0].outboxCount }\n\npayload.data = {\n  total_amount: inboxCount + outboxCount,\n  inboxCount: inboxCount,\n  outboxCount: outboxCount\n};\n\nreturn payload;"
+                                    },
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:ced3c10ec7a8",
+                            "inline": false,
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:cedd56b8f1bc"
+                }
+            ],
+            "id": "u:c45be32a6079"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "我的待办审批：公文管理",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "",
+                                                    "type": "link",
+                                                    "placeholder": "-",
+                                                    "body": "${name}",
+                                                    "href": "/app/-/instances/view/${_id}?side_object=instance_tasks&side_listview_id=inbox",
+                                                    "blank": false,
+                                                    "id": "u:7744e966da66"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "",
+                                                    "name": "submitter_name",
+                                                    "placeholder": "-",
+                                                    "id": "u:26e01a5c9f99"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "",
+                                                    "name": "flow_name",
+                                                    "placeholder": "-",
+                                                    "id": "u:46000c831b83"
+                                                },
+                                                {
+                                                    "type": "datetime",
+                                                    "label": "",
+                                                    "name": "modified",
+                                                    "placeholder": "-",
+                                                    "format": "YYYY-MM-DD HH:mm",
+                                                    "width": "8rem",
+                                                    "id": "u:b57929a31062"
+                                                }
+                                            ],
+                                            "id": "u:e8e8cc085f0c",
+                                            "source": "${rows}",
+                                            "className": "p-sm"
+                                        }
+                                    ],
+                                    "id": "u:303f1fa65892",
+                                    "inline": false,
+                                    "affixFooter": false,
+                                    "bodyClassName": "h-72 overflow-auto",
+                                    "actions": [],
+                                    "headerClassName": "",
+                                    "className": "Panel--default p-b-lg p-t-xs"
+                                }
+                            ],
+                            "id": "u:842b30fa331c",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/graphql",
+                                "data": {
+                                    "query": "{ rows: instances(top:5, filters: [[[\"inbox_users\", \"=\", \"{userId}\"],\"or\",[\"cc_users\", \"=\", \"{userId}\"]], [\"category_name\",\"=\",\"公文管理\"]], sort: \"modified desc\") {  _id, name, category_name, flow_name, submitter_name,modified }}"
+                                },
+                                "headers": {
+                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                }
+                            },
+                            "affixFooter": false,
+                            "interval": 300000
+                        }
+                    ],
+                    "md": 8,
+                    "id": "u:b167e3fb06ad"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "发文类型统计",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "xAxis": {
+                                            "type": "value",
+                                            "minInterval": 1,
+                                            "id": "u:6acc81ff60b9"
+                                        },
+                                        "yAxis": {
+                                            "type": "category",
+                                            "axisTick": {
+                                                "show": false
+                                            },
+                                            "data": "${yAxis_data}",
+                                            "id": "u:3cf0662b3f66"
+                                        },
+                                        "series": [
+                                            {
+                                                "type": "bar",
+                                                "label": {
+                                                    "show": true,
+                                                    "position": "right"
+                                                },
+                                                "data": "${series_data}",
+                                                "id": "u:097b55fae4ce"
+                                            }
+                                        ],
+                                        "grid": {
+                                            "containLabel": true,
+                                            "left": "left"
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:e02d8a5f2cbe",
+                                    "className": "",
+                                    "affixFooter": false,
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_document_type/results",
+                                        "requestAdaptor": "const date = new Date();\nconst this_year = date.getFullYear();\napi.data.parameters = {\n  datetime: {\n    start: this_year + \"-01-01 00:00:00\",\n    end: this_year + \"-12-31 23:59:59\"\n  }\n}\n",
+                                        "adaptor": "\nlet rows = payload?.query_result?.data?.rows;\nlet yAxis_data = [], series_data = [];\nrows.forEach((item) => {\n  yAxis_data.push(item._id);\n  series_data.push(item.count);\n});\n\npayload.data = {\n  yAxis_data,\n  series_data\n};\nreturn payload;\n",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        }
+                                    },
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:60f43c0535e0",
+                            "affixFooter": false,
+                            "inline": false,
+                            "headerClassName": ""
+                        }
+                    ],
+                    "id": "u:e190da66943a"
+                }
+            ],
+            "id": "u:20b20782d4d6"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "id": "u:3b112928363c",
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "部门办文数",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "xAxis": [
+                                            {
+                                                "type": "category",
+                                                "data": "$department_name",
+                                                "axisPointer": {
+                                                    "type": "shadow"
+                                                }
+                                            }
+                                        ],
+                                        "yAxis": [
+                                            {
+                                                "type": "value",
+                                                "name": "",
+                                                "axisLabel": {
+                                                    "formatter": "{value}份"
+                                                },
+                                                "axisLine": {
+                                                    "show": true
+                                                },
+                                                "minInterval": 1
+                                            }
+                                        ],
+                                        "series": [
+                                            {
+                                                "type": "bar",
+                                                "name": "办理中",
+                                                "data": "${ongoing_count}"
+                                            },
+                                            {
+                                                "name": "已办结",
+                                                "type": "bar",
+                                                "data": "${completed_count}"
+                                            }
+                                        ],
+                                        "tooltip": {
+                                            "trigger": "axis",
+                                            "axisPointer": {
+                                                "type": "shadow",
+                                                "crossStyle": {
+                                                    "color": "#999"
+                                                }
+                                            }
+                                        },
+                                        "legend": {
+                                            "data": [
+                                                "办理中",
+                                                "已办结"
+                                            ],
+                                            "top": "5%"
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:6c67cfd1c942",
+                                    "affixFooter": false,
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_department_office_document/results",
+                                        "requestAdaptor": "const date = new Date();\nconst this_year = date.getFullYear();\napi.data.parameters = {\n  datetime: {\n    start: this_year + \"-01-01 00:00:00\",\n    end: this_year + \"-12-31 23:59:59\"\n  }\n}",
+                                        "adaptor": "\nlet rows = payload?.query_result?.data?.rows[0];\n\nlet ongoing = rows.ongoing, completed = rows.completed;\nlet department_name = [], ongoing_object = {}, completed_object = {} ;\nongoing.forEach((item) => {\n  department_name.push(item._id);\n  ongoing_object[item._id] = item;\n})\ncompleted.forEach((item) => {\n  if (department_name.indexOf(item._id) < 0) {\n    department_name.push(item._id)\n  }\n  completed_object[item._id] = item;\n})\n\nlet ongoing_count = [], completed_count = [];\ndepartment_name.forEach((item) => {\n  let ongoingCount = ongoing_object[item] ? ongoing_object[item].count : 0;\n  ongoing_count.push(ongoingCount);\n  let completedCount = completed_object[item] ? completed_object[item].count : 0;\n  completed_count.push(completedCount);\n})\n\npayload.data = {\n  department_name,\n  ongoing_count,\n  completed_count\n};\nreturn payload;\n"
+                                    },
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:80c74c51c4b9",
+                            "inline": false
+                        }
+                    ]
+                },
+                {
+                    "body": [
+                        {
+                            "type": "service",
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "来文单位统计",
+                                    "body": [
+                                        {
+                                            "type": "table",
+                                            "columns": [
+                                                {
+                                                    "label": "单位名称",
+                                                    "name": "company",
+                                                    "type": "text",
+                                                    "id": "u:af7ec8a09040"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "本月",
+                                                    "name": "this_month",
+                                                    "id": "u:115912b90941",
+                                                    "placeholder": "-"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "label": "本年",
+                                                    "name": "this_year",
+                                                    "id": "u:2139a7b67b63",
+                                                    "placeholder": "-"
+                                                }
+                                            ],
+                                            "id": "u:4300790edc6c",
+                                            "source": "${company_rows}",
+                                            "className": "p-sm"
+                                        }
+                                    ],
+                                    "id": "u:ceb585f80c15",
+                                    "affixFooter": false,
+                                    "inline": false,
+                                    "headerClassName": "",
+                                    "bodyClassName": "h-72 overflow-auto",
+                                    "className": "Panel--default p-b-lg p-t-xs",
+                                    "actions": []
+                                }
+                            ],
+                            "id": "u:33165a29c2bc",
+                            "messages": {},
+                            "api": {
+                                "method": "post",
+                                "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_issuing_agency/results",
+                                "requestAdaptor": "const date = new Date();\nconst this_year = date.getFullYear();\nconst this_month = date.getMonth() + 1;\nconst thisMonth = this_month > 9 ? '' + this_month : '0' + this_month;\nconst days = new Date(this_year, this_month, 0).getDate();\napi.data.parameters = {\n  this_month: {\n    start: this_year + \"-\" + thisMonth+\"-01 00:00:00\",\n    end: this_year + \"-\" + thisMonth +\"-\"+days+\" 23:59:59\"\n  },\n  this_year: {\n    start: this_year + \"-01-01 00:00:00\",\n    end: this_year + \"-12-31 23:59:59\"\n  }\n}\n",
+                                "adaptor": "\nlet rows = payload?.query_result?.data?.rows[0];\nlet company_rows = [];\nlet month_array = rows.this_month;\nlet year_array = rows.this_year;\nlet month_object = {};\nmonth_array.forEach((item) => {\n  month_object[item._id] = item;\n})\n\nlet yAxis_data = [], series_data = [];\nyear_array.forEach((item) => {\n  let this_month = month_object[item._id] ? month_object[item._id].count : 0;\n  company_rows.push({ company: item._id, this_month, this_year: item.count})\n});\n\npayload.data = {\n  company_rows\n};\nreturn payload;\n"
+                            },
+                            "interval": 300000
+                        }
+                    ],
+                    "id": "u:b1c770eab2b1"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "办文状态统计",
+                            "body": [
+                                {
+                                    "type": "chart",
+                                    "config": {
+                                        "series": [
+                                            {
+                                                "type": "pie",
+                                                "label": {
+                                                    "show": true,
+                                                    "position": "inside",
+                                                    "formatter": "{b}: ({d}%)"
+                                                },
+                                                "labelLine": {
+                                                    "show": false
+                                                },
+                                                "data": "${series_data}"
+                                            }
+                                        ],
+                                        "tooltip": {
+                                            "trigger": "item"
+                                        }
+                                    },
+                                    "replaceChartOption": true,
+                                    "id": "u:d27206fcf0ac",
+                                    "affixFooter": false,
+                                    "api": {
+                                        "method": "post",
+                                        "url": "${context.rootUrl}/service/api/~packages-@steedos/service-charts/queries/official_document_count_supervise_state/results",
+                                        "requestAdaptor": "const date = new Date();\nconst this_year = date.getFullYear();\napi.data.parameters = {\n  datetime: {\n    start: this_year + \"-01-01 00:00:00\",\n    end: this_year + \"-12-31 23:59:59\"\n  }\n}\n",
+                                        "adaptor": "\nlet rows = payload?.query_result?.data?.rows;\nlet series_data = [];\nrows.forEach((item) => {\n  if (item._id === 'normal') {\n    series_data.push({ name: \"正常进行\", value: item.count})\n  } else if (item._id === 'overdue') {\n    series_data.push({ name: \"逾期进行\", value: item.count })\n  } else if (item._id === 'normal_end') {\n    series_data.push({ name: \"正常完成\", value: item.count })\n  } else if (item._id === 'overdue_end') {\n    series_data.push({ name: \"逾期完成\", value: item.count })\n  }\n});\n\npayload.data = {\n  series_data\n};\nreturn payload;\n"
+                                    },
+                                    "interval": 300000
+                                }
+                            ],
+                            "id": "u:75c7a3904829",
+                            "inline": false,
+                            "affixFooter": false
+                        }
+                    ],
+                    "id": "u:65529fa8839b"
+                }
+            ],
+            "id": "u:bfb2093301f2"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:f7045ab5f5da",
+    "messages": {},
+    "style": {
+        "backgroundColor": "#e1effe"
+    }
+}

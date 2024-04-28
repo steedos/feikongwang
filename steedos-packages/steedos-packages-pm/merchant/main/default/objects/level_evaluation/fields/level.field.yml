@@ -1,0 +1,9 @@
+name: level
+label: 供应商等级
+type: select
+options: 
+  - label: A
+    value: A
+  - label: B
+    value: B
+sort_no: 110

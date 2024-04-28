@@ -1,0 +1,12 @@
+name: identity
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 身份证号码
+primary: false
+required: true
+sort_no: 170
+sortable: false
+type: text

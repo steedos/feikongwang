@@ -1,0 +1,4 @@
+name: standard_create_instance
+is_enable: true
+label: 新建审批
+"on": list

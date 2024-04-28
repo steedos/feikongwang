@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "${space_id}_11073f9597e0737eb5819cb4",
+        "name": "招标立项",
+        "space": "655331588a2535c81f60e26f",
+        "created": {
+            "$date": "2023-11-14T08:35:37.509Z"
+        },
+        "created_by": "655331568a2535c81f60e26d",
+        "modified": {
+            "$date": "2023-11-14T08:35:37.509Z"
+        },
+        "modified_by": "655331568a2535c81f60e26d",
+        "owner": "655331568a2535c81f60e26d",
+        "company_id": "655331588a2535c81f60e26f",
+        "company_ids": [
+            "655331588a2535c81f60e26f"
+        ],
+        "app": "bidding",
+        "sort_no" : 850
+    }
+]

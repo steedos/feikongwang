@@ -1,0 +1,7 @@
+name: object_seal
+desktop: true
+label: 印章
+mobile: true
+object: seal
+permissions: []
+type: object

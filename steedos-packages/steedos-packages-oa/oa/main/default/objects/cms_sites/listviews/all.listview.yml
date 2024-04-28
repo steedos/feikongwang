@@ -1,0 +1,7 @@
+name: all
+label: All Sites
+filter_scope: space
+columns:
+  - name
+  - visibility
+  - order

@@ -1,0 +1,10 @@
+name: account_change
+label: 变更信息
+custom: true
+enable_api: true
+enable_search: false
+enable_workflow: true
+enable_instances: true
+icon: account
+is_enable: true
+version: 2

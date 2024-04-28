@@ -1,0 +1,7 @@
+name: object_process_instance_history
+desktop: true
+label: 批准步骤
+mobile: true
+object: process_instance_history
+permissions: []
+type: object

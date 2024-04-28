@@ -1,0 +1,6 @@
+name: enable_flexible_commuting
+group: 弹性考勤
+is_wide: true
+label: 允许迟到早退
+sort_no: 230
+type: boolean

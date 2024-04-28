@@ -1,0 +1,17 @@
+name: type
+data_type: text
+label: 类型
+options:
+  - label: 迟到
+    value: late
+  - label: 早退
+    value: early
+  - label: 迟到或早退
+    value: lateandearly
+  - label: 上班漏打卡
+    value: start
+  - label: 下班漏打卡
+    value: end
+sort_no: 110
+type: select
+required: true

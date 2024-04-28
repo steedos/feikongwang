@@ -1,0 +1,6 @@
+name: remark
+is_wide: true
+label: 备注信息
+rows: 2
+sort_no: 999
+type: textarea

@@ -1,0 +1,4 @@
+name: fuel_card
+label: 油卡情况
+sort_no: 190
+type: text

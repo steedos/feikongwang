@@ -1,0 +1,19 @@
+[
+    {
+      "_id": "${space_id}_6521228cc42dc7062490536c",
+      "applicant": "${space_owner_id}",
+      "dept": "${space_id}",
+      "owner": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "name": "损坏报废",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-10-07T09:19:08.822Z",
+      "modified": "2023-10-07T09:19:08.822Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    }
+  ]

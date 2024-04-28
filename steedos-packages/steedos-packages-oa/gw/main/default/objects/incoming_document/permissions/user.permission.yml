@@ -1,0 +1,77 @@
+name: 收文台账.user
+allowCreate: false
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: false
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: false
+    editable: false
+  - field: receipt_no
+    readable: true
+    editable: true
+  - field: communication_no
+    readable: true
+    editable: true
+  - field: issuing_agency
+    readable: true
+    editable: true
+  - field: urgency
+    readable: true
+    editable: true
+  - field: openness
+    readable: true
+    editable: true
+  - field: source
+    readable: true
+    editable: true
+  - field: channel
+    readable: true
+    editable: true
+  - field: current_step_name
+    readable: true
+    editable: true
+  - field: incoming_time
+    readable: true
+    editable: true
+  - field: date_of_issue
+    readable: true
+    editable: true
+  - field: receiving_unit
+    readable: true
+    editable: true

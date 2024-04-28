@@ -1,0 +1,8 @@
+name: all
+label: 所有
+columns:
+  - name
+  - capacity
+  - region
+  - features
+filter_scope: space

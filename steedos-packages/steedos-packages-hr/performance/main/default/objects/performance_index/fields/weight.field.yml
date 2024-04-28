@@ -1,0 +1,6 @@
+name: weight
+label: 权重
+type: percent
+precision: 18
+scale: 2
+sort_no: 120

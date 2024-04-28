@@ -1,0 +1,6 @@
+name: begins_work_clock
+group: 打卡时间
+label: 上班开始打卡时间
+sort_no: 160
+type: time
+required: true

@@ -1,0 +1,12 @@
+name: handling_results
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 办理结果
+primary: false
+required: false
+sort_no: 140
+sortable: false
+type: text

@@ -1,0 +1,6 @@
+name: manufacturer
+label: 制造厂商
+type: formula
+data_type: text
+formula: assets_card.manufacturer
+sort_no: 180

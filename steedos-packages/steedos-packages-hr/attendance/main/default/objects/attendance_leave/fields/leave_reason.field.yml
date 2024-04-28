@@ -1,0 +1,14 @@
+name: leave_reason
+filterable: false
+generated: false
+group: 请假信息
+index: false
+is_name: false
+is_wide: true
+label: 其他说明
+primary: false
+required: false
+rows: 3
+sort_no: 270
+sortable: false
+type: textarea

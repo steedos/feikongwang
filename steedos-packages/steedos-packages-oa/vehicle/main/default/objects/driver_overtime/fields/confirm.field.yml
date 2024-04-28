@@ -1,0 +1,5 @@
+name: confirm
+label: 主管确认
+type: boolean
+sort_no: 180
+visible_on: "{{global.mode === 'read' ? true : false}}"

@@ -1,0 +1,6 @@
+name: overtime_hour
+label: 加班时数
+precision: 18
+scale: 2
+sort_no: 200
+type: number

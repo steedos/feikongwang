@@ -1,0 +1,54 @@
+[
+    {
+      "_id": "${space_id}_65128a98f3a40dff226bf0c8",
+      "applicant": "${space_owner_id}",
+      "autonumber": "",
+      "company": "${space_id}",
+      "day": 0.5,
+      "department": "${space_id}",
+      "end_time": "2023-09-26T16:00:00.000Z",
+      "name": "外出税务局办理业务",
+      "reason": "",
+      "start_time": "2023-09-26T16:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "locked": false,
+      "instances": [
+        {
+          "_id": "${space_id}_DbcTDgdC2NjxsBNp",
+          "state": "approved"
+        }
+      ],
+      "instance_state": "approved",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "created": "2023-09-26T07:39:04.461Z",
+      "modified": "2023-09-26T07:40:54.530Z"
+    },
+    {
+      "_id": "${space_id}_65128ae8f3a40dff226bf0c9",
+      "applicant": "${space_owner_id}",
+      "autonumber": "",
+      "company": "${space_id}",
+      "day": 0.3,
+      "department": "${space_id}",
+      "end_time": "2023-09-25T16:00:00.000Z",
+      "name": "外出银行办理业务",
+      "reason": "",
+      "start_time": "2023-09-25T16:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "locked": false,
+      "instances": [
+        {
+          "_id": "${space_id}_YDpqTQaSXtB5obgmm",
+          "state": "approved"
+        }
+      ],
+      "instance_state": "approved",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "created": "2023-09-26T07:40:24.464Z",
+      "modified": "2023-09-26T07:40:44.467Z"
+    }
+  ]

@@ -1,0 +1,37 @@
+name: projects_chart_state_project_task
+datasource: default
+label: 项目-按状态统计任务
+options:
+  parameters: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "project_task",
+      "aggregate": [
+          {
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "name":"$name",
+                  "state": "$state"
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  }
+              }
+          },
+          {
+              "$group": {
+                  "_id": "$state",
+                  "count": {
+                      "$sum": 1
+                  }
+              }
+          },
+          {
+              "$sort" : { "_id" : 1 }
+          }
+      ]
+  }

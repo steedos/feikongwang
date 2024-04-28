@@ -1,0 +1,16 @@
+name: all
+columns:
+  - field: name
+  - field: date
+  - field: weekday
+  - field: work_task
+  - field: overtime_hour
+  - field: overtime_mileage
+  - field: overtime_meal
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

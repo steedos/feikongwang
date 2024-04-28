@@ -1,0 +1,17 @@
+name: all
+columns:
+  - field: car_no
+  - field: user
+  - field: fuel_fee
+  - field: parking_fee
+  - field: maintenance_fee
+  - field: insurance_fee
+  - field: accessory_fee
+  - field: total_fee
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

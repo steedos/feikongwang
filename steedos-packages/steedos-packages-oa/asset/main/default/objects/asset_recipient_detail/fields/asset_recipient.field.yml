@@ -1,0 +1,7 @@
+name: asset_recipient
+label: 资产领用
+reference_to: asset_recipient
+searchable: true
+sort_no: 170
+type: master_detail
+write_requires_master_read: true

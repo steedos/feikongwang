@@ -1,0 +1,6 @@
+name: use_date
+label: 投用年月
+type: formula
+data_type: date
+formula: assets_card.use_date
+sort_no: 180

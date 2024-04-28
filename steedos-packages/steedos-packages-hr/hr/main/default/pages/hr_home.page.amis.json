@@ -1,0 +1,453 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "grid",
+            "columns": [
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "",
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "body": [
+                                        {
+                                            "type": "carousel",
+                                            "controlsTheme": "light",
+                                            "id": "u:104c026ce438",
+                                            "name": "imageList",
+                                            "interval": 5000,
+                                            "duration": 500
+                                        }
+                                    ],
+                                    "id": "u:cc56345fde8e",
+                                    "messages": {},
+                                    "data": {
+                                        "imageList": [
+                                            {
+                                                "html": "<img src='${context.rootUrl}/hr/image/carousel.png'>"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "id": "u:4c8797c28361",
+                            "inline": false,
+                            "affixFooter": false,
+                            "auto": false,
+                            "className": "no-border p-t-xs",
+                            "headerClassName": "",
+                            "actions": []
+                        }
+                    ],
+                    "affixFooter": false,
+                    "md": 7,
+                    "id": "u:e8563bab9468"
+                },
+                {
+                    "body": [
+                        {
+                            "type": "panel",
+                            "title": "",
+                            "body": [
+                                {
+                                    "type": "tabs",
+                                    "tabs": [
+                                        {
+                                            "title": "自助申请",
+                                            "body": [
+                                                {
+                                                    "type": "grid",
+                                                    "columns": [
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:e1f16da53e8d",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#client'></use></svg> &nbsp;请假</p>",
+                                                                    "object_name": "attendance_leave",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "请假"
+                                                                }
+                                                            ],
+                                                            "id": "u:b785f1c72614",
+                                                            "valign": "middle"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:6245521d93d8",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#household'></use></svg>&nbsp; 加班</p>",
+                                                                    "object_name": "attendance_overtime",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "加班"
+                                                                }
+                                                            ],
+                                                            "id": "u:e7dd77c90ef6",
+                                                            "valign": "middle"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:6245521d93d8",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#announcement'></use></svg> &nbsp;外出</p>",
+                                                                    "object_name": "attendance_going_out",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "外出"
+                                                                }
+                                                            ],
+                                                            "id": "u:fac3d6754398",
+                                                            "valign": "middle"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:6245521d93d8",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#address'></use></svg>&nbsp; 出差</p>",
+                                                                    "object_name": "attendance_business_out",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "出差"
+                                                                }
+                                                            ],
+                                                            "id": "u:709ff711dba1",
+                                                            "valign": "middle"
+                                                        }
+                                                    ],
+                                                    "id": "u:df894f155c2e"
+                                                },
+                                                {
+                                                    "type": "grid",
+                                                    "columns": [
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "inline": false,
+                                                                    "id": "u:6245521d93d8",
+                                                                    "affixFooter": false,
+                                                                    "style": {},
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#cms'></use></svg>&nbsp; 转正</p>",
+                                                                    "object_name": "hr_regular_apply",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "转正"
+                                                                }
+                                                            ],
+                                                            "id": "u:76064a55382d",
+                                                            "valign": "middle"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:6245521d93d8",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#assigned_resource'></use></svg>&nbsp; 调岗</p>",
+                                                                    "object_name": "hr_job_transfer",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "调岗"
+                                                                }
+                                                            ],
+                                                            "id": "u:9acd4460789b",
+                                                            "valign": "middle"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:6245521d93d8",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#merge'></use></svg>&nbsp; 离职</p>",
+                                                                    "object_name": "hr_resign_apply",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "离职"
+                                                                }
+                                                            ],
+                                                            "id": "u:08a6a27d3ff0",
+                                                            "valign": "middle"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "id": "u:6245521d93d8",
+                                                                    "body": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><svg focusable='false' data-key='down' aria-hidden='true' class='mr-2 slds-button__icon slds-icon slds-icon-standard-goals rounded'><use xlink:href='/assets/icons/standard-sprite/svg/symbols.svg#goals'></use></svg> &nbsp;补卡</p>",
+                                                                    "object_name": "attendance_retroactive",
+                                                                    "$ref": "onevent",
+                                                                    "object_name_label": "补卡"
+                                                                }
+                                                            ],
+                                                            "id": "u:3c89352b7c89",
+                                                            "valign": "middle"
+                                                        }
+                                                    ],
+                                                    "id": "u:cc041de732e2"
+                                                }
+                                            ],
+                                            "id": "u:95aa2cee503e",
+                                            "className": "p-t-none p-b-none"
+                                        }
+                                    ],
+                                    "id": "u:b374777f120c"
+                                }
+                            ],
+                            "id": "u:1cff02ab7fef",
+                            "inline": false,
+                            "affixFooter": false,
+                            "className": "m-b-sm",
+                            "actions": []
+                        }
+                    ],
+                    "id": "u:7963b90a6175"
+                }
+            ],
+            "id": "u:0469b645310f"
+        },
+        {
+            "type": "panel",
+            "id": "u:ebe88c578e2f",
+            "inline": false,
+            "title": "",
+            "body": [
+                {
+                    "type": "tabs",
+                    "tabs": [
+                        {
+                            "title": "我的申请",
+                            "body": [
+                                {
+                                    "type": "steedos-object-table",
+                                    "label": "对象表格",
+                                    "objectApiName": "instances",
+                                    "fields": [
+                                        "name",
+                                        "applicant",
+                                        "submit_date",
+                                        "flow_name",
+                                        "current_step_name"
+                                    ],
+                                    "className": "sm:border sm:shadow sm:rounded sm:border-gray-300",
+                                    "id": "u:81204ec98d45",
+                                    "amisCondition": {
+                                        "id": "0a427cc2f21c",
+                                        "conjunction": "and",
+                                        "children": [
+                                            {
+                                                "id": "4d7bc618d666",
+                                                "conjunction": "and",
+                                                "children": [
+                                                    {
+                                                        "id": "f48e937f7cba",
+                                                        "left": {
+                                                            "type": "field",
+                                                            "field": "applicant",
+                                                            "id": "u:0694acd97127"
+                                                        },
+                                                        "op": "select_equals",
+                                                        "right": "{userId}"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "36fc824f0f66",
+                                                "left": {
+                                                    "type": "field",
+                                                    "field": "category_name",
+                                                    "id": "u:f44c27de4a69"
+                                                },
+                                                "op": "select_any_in",
+                                                "right": [
+                                                    "考勤管理",
+                                                    "人事管理",
+                                                    "报销管理"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "crud": {
+                                        "headerToolbar": [],
+                                        "footerToolbar": [],
+                                        "id": "u:d223fbcbc080"
+                                    },
+                                    "sortField": "submit_date",
+                                    "sortOrder": "desc"
+                                }
+                            ],
+                            "id": "u:f7dcb4dc808e",
+                            "className": "p-r-none p-l-none"
+                        }
+                    ],
+                    "id": "u:37e1fe88c4a6",
+                    "affixFooter": false
+                }
+            ],
+            "affixFooter": false,
+            "className": "Panel--default p-t-sm p-b-sm p-l-sm no-border"
+        },
+        {
+            "type": "panel",
+            "title": "人事变动",
+            "body": [
+                {
+                    "type": "chart",
+                    "id": "u:5d45b254bc04",
+                    "config": {
+                        "xAxis": [
+                            {
+                                "type": "category",
+                                "axisTick": {
+                                    "alignWithLabel": true
+                                },
+                                "data": "${xAxis_data}",
+                                "id": "u:777aa84dbaaa"
+                            }
+                        ],
+                        "yAxis": [
+                            {
+                                "type": "value",
+                                "name": "人数",
+                                "position": "left",
+                                "alignTicks": true,
+                                "axisLine": {
+                                    "show": true,
+                                    "lineStyle": {
+                                        "color": "#5470C6"
+                                    }
+                                },
+                                "axisLabel": {
+                                    "formatter": "{value} 人"
+                                },
+                                "minInterval": 1,
+                                "id": "u:a03a7867ed4d"
+                            }
+                        ],
+                        "series": [
+                            {
+                                "data": "${number_of_employees}",
+                                "type": "bar",
+                                "name": "在职人数",
+                                "z": 0,
+                                "id": "u:7b18bde0686f"
+                            },
+                            {
+                                "name": "今年试用人数",
+                                "type": "line",
+                                "yAxisIndex": 0,
+                                "z": 1,
+                                "data": "${number_of_trial_users_this_year}",
+                                "id": "u:77b693d29f86"
+                            },
+                            {
+                                "name": "今年正式人数",
+                                "type": "line",
+                                "yAxisIndex": 0,
+                                "z": 1,
+                                "data": "${official_number_of_people_this_year}",
+                                "id": "u:dae5d242d487"
+                            },
+                            {
+                                "name": "今年离职人数",
+                                "type": "line",
+                                "yAxisIndex": 0,
+                                "z": 1,
+                                "data": "${number_of_resignations_this_year}",
+                                "id": "u:5f277a122e1b"
+                            }
+                        ],
+                        "grid": {
+                            "right": "10%"
+                        },
+                        "color": [
+                            "#5470C6",
+                            "#91CC75",
+                            "#EE6666",
+                            "#FF9990"
+                        ],
+                        "tooltip": {
+                            "trigger": "axis",
+                            "axisPointer": {
+                                "type": "cross",
+                                "id": "u:def04fcd2142"
+                            }
+                        },
+                        "toolbox": {
+                            "feature": {
+                                "dataView": {
+                                    "show": true,
+                                    "readOnly": false
+                                },
+                                "restore": {
+                                    "show": true
+                                },
+                                "saveAsImage": {
+                                    "show": true
+                                }
+                            }
+                        },
+                        "legend": {
+                            "data": [
+                                "在职人数",
+                                "今年试用人数",
+                                "今年正式人数",
+                                "今年离职人数"
+                            ]
+                        }
+                    },
+                    "replaceChartOption": true,
+                    "className": "",
+                    "affixFooter": false,
+                    "api": {
+                        "method": "get",
+                        "url": "${context.rootUrl}/api/hr/mixed_chart",
+                        "adaptor": "let data = payload?.data;\npayload.data = data;\nreturn payload;"
+                    },
+                    "interval": ""
+                }
+            ],
+            "id": "u:d62d912de8a1",
+            "affixFooter": false,
+            "className": "Panel--default no-border p-l-sm p-t-sm"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:13643acf26be",
+    "messages": {},
+    "style": {
+        "backgroundColor": "#e1effe"
+    },
+    "asideResizor": false,
+    "pullRefresh": {
+        "disabled": true
+    },
+    "onEvent": {
+        "init": {
+            "weight": 0,
+            "actions": []
+        }
+    },
+    "definitions": {
+        "onevent": {
+            "onEvent": {
+                "click": {
+                    "actions": [
+                        {
+                            "actionType": "custom",
+                            "script": "const object_name = context.props.object_name;\nconst object_name_label = context.props.object_name_label;\n\ndoAction(\n  {\n    actionType: 'dialog',\n    dialog: {\n      \"type\": \"dialog\",\n      \"title\": \"新建 \" + object_name_label,\n      \"body\": [\n        {\n          \"type\": \"steedos-object-form\",\n          \"label\": \"对象表单\",\n          \"mode\": \"edit\",\n          \"objectApiName\": object_name,\n          \"recordId\": \"\",\n          \"className\": \"sm:border sm:rounded sm:border-gray-300 bg-white p-4\",\n          \"form\": {\n            \"onEvent\": {\n              \"submitSucc\": {\n                \"weight\": 0,\n                \"actions\": [\n                  {\n                    \"actionType\": \"link\",\n                    \"args\": {\n                      \"link\": `/app/-/${object_name}/view/\\${event.data.result.data.recordId}`,\n                      \"blank\": false\n                    }\n                  }\n                ]\n              }\n            }\n          }\n        }\n      ],\n      \"showCloseButton\": true,\n      \"showErrorMsg\": true,\n      \"showLoading\": true,\n      \"size\": \"md\",\n      \"className\": \"app-popover\"\n    }\n  }\n);\n"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

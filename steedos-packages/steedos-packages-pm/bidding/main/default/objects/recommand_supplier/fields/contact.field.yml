@@ -1,0 +1,23 @@
+name: contact
+label: 联系人
+type: lookup
+reference_to: contacts
+depend_on: 
+  - account
+sort_no: 110
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters, values) {
+    return [['account', '=', values.account]];
+  }
+amis:
+  autoFill:
+    fillMapping:
+      "phone": "${phone}"
+    api:
+      url: "${context.rootUrl}/graphql"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:contacts(filters: [[\"_id\", \"=\", \"${contact}\"]], top: 1){phone}}"
+      adaptor: "const row = payload.data.rows[0]; payload.data.phone = row.phone; return payload;"

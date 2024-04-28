@@ -1,0 +1,22 @@
+name: accounts_afterUpdate
+listenTo: accounts
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, previousDoc, userId, spaceId } = ctx.params
+
+  if (doc.instance_state === 'approved' && doc.instance_state !=
+  previousDoc.instance_state) {
+      console.log('doc: ', doc);
+      if (doc.is_supplier) {
+          await ctx.broker.call(
+              'objectql.directUpdate',
+              {
+                  'objectName': 'accounts',
+                  'id': doc._id,
+                  'doc': {'is_qualified': true}
+              }
+          )
+      }
+  }

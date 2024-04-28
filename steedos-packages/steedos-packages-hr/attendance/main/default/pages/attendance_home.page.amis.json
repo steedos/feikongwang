@@ -1,0 +1,592 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "panel",
+            "title": "标题",
+            "body": [
+                {
+                    "type": "grid",
+                    "columns": [
+                        {
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "异常考勤统计",
+                                    "body": [
+                                        {
+                                            "type": "service",
+                                            "body": [
+                                                {
+                                                    "type": "grid",
+                                                    "columns": [
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "tpl",
+                                                                    "tpl": "<p style=\"text-align: center;\"><span style=\"color: #f1c40f; font-size: 18pt;\"><strong>${business_days}</strong></span></p>\n<p style=\"text-align: center;\"><span style=\"background-color: #ffffff; color: #000000;\">出差（天）</span></p>",
+                                                                    "inline": false,
+                                                                    "id": "u:fbcf30a169c6",
+                                                                    "affixFooter": false,
+                                                                    "style": {
+                                                                        "lineHeight": ""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "id": "u:5014c6ec54f8"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "tpl",
+                                                                    "tpl": "<p style=\"text-align: center;\"><span style=\"color: #3598db; font-size: 18pt;\"><strong>${out_days}</strong></span></p>\n<p style=\"text-align: center;\"><span style=\"background-color: #ffffff; color: #000000;\">公出（天）</span></p>",
+                                                                    "inline": false,
+                                                                    "id": "u:e2a6c32b4337",
+                                                                    "affixFooter": false,
+                                                                    "style": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:a1a2234bf340"
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "tpl",
+                                                                    "tpl": "<p style=\"text-align: center;\"><span style=\"color: #e03e2d; font-size: 18pt;\"><strong>${overtime_hours}</strong></span></p>\n<p style=\"text-align: center;\"><span style=\"background-color: #ffffff; color: #000000;\">加班（小时）</span></p>",
+                                                                    "inline": false,
+                                                                    "id": "u:5842b3f3a3cf",
+                                                                    "affixFooter": false,
+                                                                    "style": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:01b523affb9c"
+                                                        }
+                                                    ],
+                                                    "id": "u:96acfeab4ac5"
+                                                }
+                                            ],
+                                            "id": "u:45987046b45d",
+                                            "api": {
+                                                "url": "${context.rootUrl}/graphql",
+                                                "method": "post",
+                                                "headers": {
+                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                },
+                                                "adaptor": "\nconst rows = payload.data.rows;\n\n// const business_rows = _.filter(rows, function (o) { return o.status.indexOf('business') > -1; });\n// const out_rows = _.filter(rows, function (o) { return o.status.indexOf('out') > -1; });\n// const overtime_rows = _.filter(rows, function (o) { return o.status.indexOf('overtime') > -1; });\n\nlet business_days = 0;\n// _.forEach(business_rows, function (o) { business_days += o.business_out || 0; });\nlet out_days = 0;\n// _.forEach(out_rows, function (o) { out_days += o.going_out || 0; });\nlet overtime_hours = 0;\n// _.forEach(overtime_rows, function (o) { overtime_hours += o.overtime || 0; });\n\n//移除过滤条件\n_.forEach(rows, function (o) {\n  business_days += o.business_out || 0;\n  out_days += o.going_out || 0;\n  overtime_hours += o.overtime || 0;\n});\n\n\npayload.data = {\n  business_days,\n  out_days,\n  overtime_hours\n}\n\nreturn payload;",
+                                                "requestAdaptor": "\nlet date = new Date();\nconst userId = api.data.context.userId;\nlet year = date.getFullYear();\nlet month = date.getMonth() + 1;\nmonth = month < 10 ? \"0\" + month : month;\nlet last_day = new Date(year, month, 0).getDate();\n\nconst start_time = year + '-' + month + '-' + '01' + \"T00:00:00.000Z\";\nconst end_time = year + '-' + month + '-' + last_day + \"T00:00:00.000Z\";\n\nconst query = `{rows:attendance_daily(filters:[[\\\"user\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"date\\\", \\\"between\\\", [\\\"` + start_time + `\\\",\\\"` + end_time + `\\\"]]],sort:\\\"date desc\\\"){user,status,date,start,end, company,department, business_out, going_out,overtime,_display:_ui{status, start, end}}}`\napi.data.query = query;\n\nreturn api;",
+                                                "data": {
+                                                    "context": "${context}"
+                                                },
+                                                "messages": {}
+                                            },
+                                            "messages": {}
+                                        }
+                                    ],
+                                    "id": "u:444d0df4a858",
+                                    "inline": false,
+                                    "affixFooter": false,
+                                    "className": "Panel--default p-b-lg",
+                                    "subFormMode": "inline",
+                                    "actions": []
+                                },
+                                {
+                                    "type": "panel",
+                                    "title": "假期情况",
+                                    "body": [
+                                        {
+                                            "type": "grid",
+                                            "columns": [
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "service",
+                                                            "body": [
+                                                                {
+                                                                    "type": "service",
+                                                                    "body": [
+                                                                        {
+                                                                            "type": "tpl",
+                                                                            "tpl": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><span style=\"font-size: 18pt; color: #3598db;\">年假</span></p>\n<p style=\"text-align: center;\">已用天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_used_days}</p>\n<p style=\"text-align: center;\">剩余天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_remain_days}</p>",
+                                                                            "inline": false,
+                                                                            "id": "u:37047a5b784d",
+                                                                            "affixFooter": false,
+                                                                            "style": {
+                                                                                "borderStyle": "solid"
+                                                                            },
+                                                                            "className": "b-a"
+                                                                        }
+                                                                    ],
+                                                                    "id": "u:39431b80a65e",
+                                                                    "api": {
+                                                                        "url": "${context.rootUrl}/graphql?leave_type_id=${rows[0]._id}",
+                                                                        "method": "post",
+                                                                        "headers": {
+                                                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                        },
+                                                                        "adaptor": "\nconst rows = payload.data.rows;\n// console.log('rr==>', rows);\npayload.data = {\n  leave_used_days: (rows[0] && rows[0].leave_used_days) || 0,\n  leave_remain_days: (rows[0] && rows[0].leave_remain_days) || 0\n}\nreturn payload;",
+                                                                        "requestAdaptor": "\n// console.log('apiaa==>', api);\nlet date = new Date();\nconst userId = api.data.context.userId;\nconst leave_type_id = api.data.leave_type_id;\n\nif (!leave_type_id) {\n  api.data.query = \"{rows:attendance_balance(filters: [\\\"_id\\\", \\\"=\\\", \\\"-1\\\"]){_id}}\";\n  return api;\n}\nlet year = date.getFullYear();\n\nconst query = `{rows:attendance_balance(filters:[[\\\"staff\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"leave_type\\\", \\\"=\\\",\\\"` + leave_type_id + `\\\"],[\\\"leave_year\\\", \\\"=\\\", ` + year + `]],sort:\\\"date desc\\\"){leave_year,leave_used_days,leave_remain_days}}`\napi.data.query = query;\n\nreturn api;",
+                                                                        "data": {
+                                                                            "context": "${context}",
+                                                                            "leave_type_id": "${rows[0]._id}"
+                                                                        },
+                                                                        "messages": {},
+                                                                        "sendOn": ""
+                                                                    },
+                                                                    "messages": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:88f01620af53",
+                                                            "api": {
+                                                                "url": "${context.rootUrl}/graphql",
+                                                                "method": "post",
+                                                                "headers": {
+                                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                },
+                                                                "data": {
+                                                                    "query": "{rows:attendance_leave_type(filters: [[\"vacation_type\", \"=\",\"paid_annual_leave\"]]){_id}}",
+                                                                    "context": "${context}"
+                                                                },
+                                                                "messages": {}
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:bba7373bd880"
+                                                },
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "service",
+                                                            "body": [
+                                                                {
+                                                                    "type": "service",
+                                                                    "body": [
+                                                                        {
+                                                                            "type": "tpl",
+                                                                            "tpl": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><span style=\"font-size: 18pt; color: #3598db;\">带薪病假</span></p>\n<p style=\"text-align: center;\">已用天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_used_days}</p>\n<p style=\"text-align: center;\">剩余天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_remain_days}</p>",
+                                                                            "inline": false,
+                                                                            "id": "u:b261b7586c90",
+                                                                            "affixFooter": false,
+                                                                            "style": {
+                                                                                "borderStyle": "solid"
+                                                                            },
+                                                                            "className": "b-a"
+                                                                        }
+                                                                    ],
+                                                                    "id": "u:f27c11352a3a",
+                                                                    "api": {
+                                                                        "url": "${context.rootUrl}/graphql?leave_type_id=${rows[0]._id}",
+                                                                        "method": "post",
+                                                                        "headers": {
+                                                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                        },
+                                                                        "adaptor": "\nconst rows = payload.data.rows;\n// console.log('rr==>', rows);\npayload.data = {\n  leave_used_days: (rows[0] && rows[0].leave_used_days) || 0,\n  leave_remain_days: (rows[0] && rows[0].leave_remain_days) || 0\n}\nreturn payload;",
+                                                                        "requestAdaptor": "\n// console.log('apiaa==>', api);\nlet date = new Date();\nconst userId = api.data.context.userId;\nconst leave_type_id = api.data.leave_type_id;\n\nif (!leave_type_id) {\n  api.data.query = \"{rows:attendance_balance(filters: [\\\"_id\\\", \\\"=\\\", \\\"-1\\\"]){_id}}\";\n  return api;\n}\nlet year = date.getFullYear();\n\nconst query = `{rows:attendance_balance(filters:[[\\\"staff\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"leave_type\\\", \\\"=\\\",\\\"` + leave_type_id + `\\\"],[\\\"leave_year\\\", \\\"=\\\", ` + year + `]],sort:\\\"date desc\\\"){leave_year,leave_used_days,leave_remain_days}}`\napi.data.query = query;\n\nreturn api;",
+                                                                        "data": {
+                                                                            "context": "${context}",
+                                                                            "leave_type_id": "${rows[0]._id}"
+                                                                        },
+                                                                        "messages": {},
+                                                                        "sendOn": ""
+                                                                    },
+                                                                    "messages": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:37195bb84c8e",
+                                                            "api": {
+                                                                "url": "${context.rootUrl}/graphql",
+                                                                "method": "post",
+                                                                "headers": {
+                                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                },
+                                                                "data": {
+                                                                    "query": "{rows:attendance_leave_type(filters: [[\"vacation_type\", \"=\",\"paid_sick_leave\"]]){_id}}",
+                                                                    "context": "${context}"
+                                                                },
+                                                                "messages": {},
+                                                                "requestAdaptor": "",
+                                                                "adaptor": ""
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:9d7858a9b538"
+                                                },
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "service",
+                                                            "body": [
+                                                                {
+                                                                    "type": "service",
+                                                                    "body": [
+                                                                        {
+                                                                            "type": "tpl",
+                                                                            "tpl": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><span style=\"font-size: 18pt; color: #3598db;\">事假</span></p>\n<p style=\"text-align: center;\">已用天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_used_days}</p>\n<p style=\"text-align: center;\">剩余天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_remain_days}</p>",
+                                                                            "inline": false,
+                                                                            "id": "u:904b05a25c2a",
+                                                                            "affixFooter": false,
+                                                                            "style": {
+                                                                                "borderStyle": "solid"
+                                                                            },
+                                                                            "className": "b-a"
+                                                                        }
+                                                                    ],
+                                                                    "id": "u:835f8c35b68d",
+                                                                    "api": {
+                                                                        "url": "${context.rootUrl}/graphql?leave_type_id=${rows[0]._id}",
+                                                                        "method": "post",
+                                                                        "headers": {
+                                                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                        },
+                                                                        "adaptor": "\nconst rows = payload.data.rows;\n// console.log('rr==>', rows);\npayload.data = {\n  leave_used_days: (rows[0] && rows[0].leave_used_days) || 0,\n  leave_remain_days: (rows[0] && rows[0].leave_remain_days) || 0\n}\nreturn payload;",
+                                                                        "requestAdaptor": "\n// console.log('apiaa==>', api);\nlet date = new Date();\nconst userId = api.data.context.userId;\nconst leave_type_id = api.data.leave_type_id;\n\nif (!leave_type_id) {\n  api.data.query = \"{rows:attendance_balance(filters: [\\\"_id\\\", \\\"=\\\", \\\"-1\\\"]){_id}}\";\n  return api;\n}\nlet year = date.getFullYear();\n\nconst query = `{rows:attendance_balance(filters:[[\\\"staff\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"leave_type\\\", \\\"=\\\",\\\"` + leave_type_id + `\\\"],[\\\"leave_year\\\", \\\"=\\\", ` + year + `]],sort:\\\"date desc\\\"){leave_year,leave_used_days,leave_remain_days}}`\napi.data.query = query;\n\nreturn api;",
+                                                                        "data": {
+                                                                            "context": "${context}",
+                                                                            "leave_type_id": "${rows[0]._id}"
+                                                                        },
+                                                                        "messages": {},
+                                                                        "sendOn": ""
+                                                                    },
+                                                                    "messages": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:d25df20ab60f",
+                                                            "api": {
+                                                                "url": "${context.rootUrl}/graphql",
+                                                                "method": "post",
+                                                                "headers": {
+                                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                },
+                                                                "data": {
+                                                                    "query": "{rows:attendance_leave_type(filters: [[\"vacation_type\", \"=\",\"leave\"]]){_id}}",
+                                                                    "context": "${context}"
+                                                                },
+                                                                "messages": {}
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:edcf2cd3dd79"
+                                                },
+                                                {
+                                                    "body": [
+                                                        {
+                                                            "type": "service",
+                                                            "body": [
+                                                                {
+                                                                    "type": "service",
+                                                                    "body": [
+                                                                        {
+                                                                            "type": "tpl",
+                                                                            "tpl": "<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\"><span style=\"font-size: 18pt; color: #3598db;\">调休</span></p>\n<p style=\"text-align: center;\">已经天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_used_days}</p>\n<p style=\"text-align: center;\">剩余天数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${leave_remain_days}</p>",
+                                                                            "inline": false,
+                                                                            "id": "u:7810272fc8d9",
+                                                                            "affixFooter": false,
+                                                                            "style": {
+                                                                                "borderStyle": "solid"
+                                                                            },
+                                                                            "className": "b-a"
+                                                                        }
+                                                                    ],
+                                                                    "id": "u:f37b508c2c7a",
+                                                                    "api": {
+                                                                        "url": "${context.rootUrl}/graphql?leave_type_id=${rows[0]._id}",
+                                                                        "method": "post",
+                                                                        "headers": {
+                                                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                        },
+                                                                        "adaptor": "\nconst rows = payload.data.rows;\n// console.log('rr==>', rows);\npayload.data = {\n  leave_used_days: (rows[0] && rows[0].leave_used_days) || 0,\n  leave_remain_days: (rows[0] && rows[0].leave_remain_days) || 0\n}\nreturn payload;",
+                                                                        "requestAdaptor": "\n// console.log('apiaa==>', api);\nlet date = new Date();\nconst userId = api.data.context.userId;\nconst leave_type_id = api.data.leave_type_id;\n\nif (!leave_type_id) {\n  api.data.query = \"{rows:attendance_balance(filters: [\\\"_id\\\", \\\"=\\\", \\\"-1\\\"]){_id}}\";\n  return api;\n}\nlet year = date.getFullYear();\n\nconst query = `{rows:attendance_balance(filters:[[\\\"staff\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"leave_type\\\", \\\"=\\\",\\\"` + leave_type_id + `\\\"],[\\\"leave_year\\\", \\\"=\\\", ` + year + `]],sort:\\\"date desc\\\"){leave_year,leave_used_days,leave_remain_days}}`\napi.data.query = query;\n\nreturn api;",
+                                                                        "data": {
+                                                                            "context": "${context}",
+                                                                            "leave_type_id": "${rows[0]._id}"
+                                                                        },
+                                                                        "messages": {},
+                                                                        "sendOn": ""
+                                                                    },
+                                                                    "messages": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:cfbfb698479b",
+                                                            "api": {
+                                                                "url": "${context.rootUrl}/graphql",
+                                                                "method": "post",
+                                                                "headers": {
+                                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                                },
+                                                                "data": {
+                                                                    "query": "{rows:attendance_leave_type(filters: [[\"vacation_type\", \"=\",\"transfer_leave\"]]){_id}}",
+                                                                    "context": "${context}"
+                                                                },
+                                                                "messages": {}
+                                                            }
+                                                        }
+                                                    ],
+                                                    "id": "u:07915f4077ab"
+                                                }
+                                            ],
+                                            "id": "u:ef811163a499"
+                                        }
+                                    ],
+                                    "id": "u:1600a030d553",
+                                    "inline": false,
+                                    "affixFooter": false,
+                                    "className": "Panel--default p-xs p-b-lg",
+                                    "actions": []
+                                },
+                                {
+                                    "type": "panel",
+                                    "title": "考勤流程",
+                                    "body": [
+                                        {
+                                            "type": "steedos-object-table",
+                                            "label": "对象表格",
+                                            "objectApiName": "instances",
+                                            "fields": [
+                                                "name",
+                                                "applicant",
+                                                "submit_date",
+                                                "flow_name",
+                                                "current_step_name"
+                                            ],
+                                            "className": "sm:border sm:shadow sm:rounded sm:border-gray-300",
+                                            "id": "u:a61b65545286",
+                                            "amisCondition": {
+                                                "id": "0a427cc2f21c",
+                                                "conjunction": "and",
+                                                "children": [
+                                                    {
+                                                        "id": "4d7bc618d666",
+                                                        "conjunction": "and",
+                                                        "children": [
+                                                            {
+                                                                "id": "f48e937f7cba",
+                                                                "left": {
+                                                                    "type": "field",
+                                                                    "field": "applicant",
+                                                                    "id": "u:f72fd915b326"
+                                                                },
+                                                                "op": "select_equals",
+                                                                "right": "{userId}"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "36fc824f0f66",
+                                                        "left": {
+                                                            "type": "field",
+                                                            "field": "category_name",
+                                                            "id": "u:c0733919e373"
+                                                        },
+                                                        "op": "select_any_in",
+                                                        "right": [
+                                                            "考勤管理"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "crud": {
+                                                "headerToolbar": [],
+                                                "footerToolbar": [],
+                                                "id": "u:dca0de9294ac"
+                                            },
+                                            "sortField": "submit_date",
+                                            "sortOrder": "desc"
+                                        }
+                                    ],
+                                    "id": "u:f654c5148390",
+                                    "inline": false,
+                                    "affixFooter": false,
+                                    "subFormMode": "inline",
+                                    "className": "Panel--default m-none",
+                                    "bodyClassName": "p-none"
+                                }
+                            ],
+                            "id": "u:96f7b78de1b7",
+                            "md": 8
+                        },
+                        {
+                            "body": [
+                                {
+                                    "type": "panel",
+                                    "title": "当月出勤统计",
+                                    "body": [
+                                        {
+                                            "type": "service",
+                                            "body": [
+                                                {
+                                                    "type": "chart",
+                                                    "config": {
+                                                        "series": [
+                                                            {
+                                                                "data": [
+                                                                    {
+                                                                        "value": "${days.actual_attendance_days}",
+                                                                        "name": "实际出勤（天）"
+                                                                    },
+                                                                    {
+                                                                        "value": "${days.no_attendance_days}",
+                                                                        "name": "未出勤（天）"
+                                                                    }
+                                                                ],
+                                                                "type": "pie",
+                                                                "label": {
+                                                                    "show": true
+                                                                },
+                                                                "labelLine": {
+                                                                    "show": true
+                                                                },
+                                                                "center": [
+                                                                    "50%",
+                                                                    "50%"
+                                                                ],
+                                                                "radius": [
+                                                                    "30%",
+                                                                    "70%"
+                                                                ],
+                                                                "id": "u:494a06e566eb"
+                                                            }
+                                                        ],
+                                                        "tooltip": {
+                                                            "trigger": "item"
+                                                        }
+                                                    },
+                                                    "replaceChartOption": true,
+                                                    "id": "u:4346131afc31",
+                                                    "className": "",
+                                                    "trackExpression": "${days|json}"
+                                                },
+                                                {
+                                                    "type": "grid",
+                                                    "columns": [
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "tpl",
+                                                                    "tpl": "<p style=\"text-align: center;\"><span style=\"font-size: 18pt;\"><strong><span style=\"color: #91cc75;\">${days.no_attendance_days}</span></strong></span></p>\n<p style=\"text-align: center;\">未出勤（天）</p>",
+                                                                    "inline": false,
+                                                                    "id": "u:4b8059ffdb40",
+                                                                    "style": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:a1bbe2700767",
+                                                            "md": 6
+                                                        },
+                                                        {
+                                                            "body": [
+                                                                {
+                                                                    "type": "tpl",
+                                                                    "tpl": "<p style=\"text-align: center;\"><span style=\"color: #5470c6; font-size: 18pt;\"><strong>${days.actual_attendance_days}</strong></span></p>\n<p style=\"text-align: center;\"><span style=\"background-color: #ffffff; color: #000000;\">实际出勤（天）</span></p>",
+                                                                    "inline": false,
+                                                                    "id": "u:b6d7ecfc65ff",
+                                                                    "style": {}
+                                                                }
+                                                            ],
+                                                            "id": "u:47ae2cbaf60a"
+                                                        }
+                                                    ],
+                                                    "id": "u:b1c412f6b1b4",
+                                                    "className": ""
+                                                }
+                                            ],
+                                            "id": "u:0cc4ab8b2359",
+                                            "messages": {},
+                                            "api": {
+                                                "url": "${context.rootUrl}/graphql",
+                                                "method": "post",
+                                                "headers": {
+                                                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                },
+                                                "adaptor": "\n// const today = api.data.today;\n// 实际出勤天数：打卡记录数\n// const actual_attendance_days = payload.data.rows.length;\n// 未出勤天数：当月截止天数 - 打卡记录数\n// const no_attendance_days = today - actual_attendance_days;\n\n// 当月共应出勤天数：表中当月当前用户记录条数；\nconst rows = payload.data.rows;\n// 未出勤（天）：表中当月当前用户记录中，旷工列记录合计；\nconst no_attendance_days_rows = _.filter(rows, (item) => { return item.absent });\nlet no_attendance_days = 0;\n_.forEach(no_attendance_days_rows, (item) => {\n  no_attendance_days += item.absent;\n})\n// 实际出勤（天）：当月共应出勤天数 - 未出勤（天）\nconst actual_attendance_days = rows.length - no_attendance_days;\n\npayload.data = {\n  days: {\n    actual_attendance_days,\n    no_attendance_days\n  }\n}\nreturn payload;",
+                                                "requestAdaptor": "\nlet date = new Date();\nconst userId = api.data.context.userId;\nlet year = date.getFullYear();\nlet month = date.getMonth() + 1;\nmonth = month < 10 ? \"0\" + month : month;\nlet last_day = new Date(year, month, 0).getDate();\n// const today = date.getDate();\n\nconst start_time = year + '-' + month + '-' + '01' + \"T00:00:00.000Z\";\nconst end_time = year + '-' + month + '-' + last_day + \"T00:00:00.000Z\";\n\nconst query = `{rows:attendance_daily(filters:[[\\\"user\\\", \\\"=\\\",\\\"` + userId + `\\\"],[\\\"date\\\", \\\"between\\\", [\\\"` + start_time + `\\\",\\\"` + end_time + `\\\"]]],sort:\\\"date desc\\\"){user,status,date,start,end,remark, company,department,absent,_display:_ui{status, start, end}}}`\napi.data.query = query;\n// api.data.today = today;\n\nreturn api;",
+                                                "data": {
+                                                    "context": "${context}"
+                                                },
+                                                "messages": {}
+                                            }
+                                        }
+                                    ],
+                                    "id": "u:a81a487248e5",
+                                    "affixFooter": false
+                                }
+                            ],
+                            "id": "u:8446e3ce1a78"
+                        }
+                    ],
+                    "id": "u:ddfa4cb9660c"
+                }
+            ],
+            "id": "u:316d0c1dc078"
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {},
+        "money": [
+            {
+                "name": "客户拜访，因公出差",
+                "room": "出差",
+                "start": "2022-08-10 0 9:00",
+                "end": "2022-08-12 18:00",
+                "contact": "3",
+                "status": "审批中"
+            },
+            {
+                "name": "身体不舒服，医院就医",
+                "room": "带薪病假",
+                "start": "2022-08-02 9:00",
+                "end": "2022-08-02 13:00",
+                "contact": "0.5",
+                "status": "审批中"
+            },
+            {
+                "name": "加班调休，休息身体",
+                "room": "加班转调休",
+                "start": "2022-07-15 9:00",
+                "end": "2022-07-15 18:00",
+                "contact": "1",
+                "status": "已审批"
+            }
+        ],
+        "payment_money": [
+            {
+                "name": "ERP系统开发",
+                "amount": 59800,
+                "signed_date": "2022-07-28",
+                "othercompany": "浙江三立"
+            },
+            {
+                "name": "闻英集团低代码开发平台采购",
+                "amount": 104000,
+                "signed_date": "2022-07-19",
+                "othercompany": "闻英集团"
+            },
+            {
+                "name": "EDM系统2022年度系统运维",
+                "amount": 180000,
+                "signed_date": "2022-07-16",
+                "othercompany": "宏途中国"
+            },
+            {
+                "name": "岩实股份PRMD资产重组事务咨询",
+                "amount": 298000,
+                "signed_date": "2022-07-09",
+                "othercompany": "寰球资本"
+            }
+        ]
+    },
+    "messages": {},
+    "style": {
+        "backgroundColor": "#e1effe"
+    },
+    "id": "u:c81eb053a4b6",
+    "css": {
+        ".steedos-object-table .antd-Table .antd-Table-content":{
+            "min-height": "140px"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+name: leave
+label: 早退时长（分钟）
+precision: 18
+scale: 0
+sort_no: 280
+type: number

@@ -1,0 +1,826 @@
+name: 项目列表
+created_at: 2023-11-24T02:34:17.888Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  database: '1'
+  query:
+    source-table: project
+    fields:
+      - - field
+        - project.name
+        - null
+      - - field
+        - project.project_code
+        - null
+      - - field
+        - project.project_type
+        - null
+      - - field
+        - project.status
+        - null
+      - - field
+        - project.project_manager
+        - null
+      - - field
+        - project.account
+        - null
+      - - field
+        - project.project_program
+        - null
+      - - field
+        - project.kickoff
+        - null
+      - - field
+        - project.deadline
+        - null
+      - - field
+        - project.project_cost_budget
+        - null
+      - - field
+        - project.project_labor_budget
+        - null
+      - - field
+        - project.project_labor
+        - null
+      - - field
+        - project.contracts_received_income
+        - null
+      - - field
+        - project.project_labor_balance
+        - null
+      - - field
+        - project.contracts_waiting_income
+        - null
+      - - field
+        - project.contracts_made_invoice
+        - null
+      - - field
+        - project.contracts_all_pay
+        - null
+      - - field
+        - project.contracts_paid_pay
+        - null
+      - - field
+        - project.contracts_waiting_pay
+        - null
+      - - field
+        - project.contracts_received_invoice
+        - null
+      - - field
+        - project.open_tasks
+        - null
+      - - field
+        - project.open_issues
+        - null
+      - - field
+        - project.count_milestones
+        - null
+      - - field
+        - project.count_milestones_ok
+        - null
+      - - field
+        - project.workload_days
+        - null
+      - - field
+        - project.company_id
+        - null
+  type: query
+display: table
+entity_id: 65600ba9f084ab05cc5731e2
+id: 65600ba9f084ab05cc5731e2
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - description: null
+    database_type: java.lang.String
+    semantic_type: type/PK
+    table_id: project
+    coercion_strategy: null
+    name: _id
+    fingerprint_version: 0
+    has_field_values: search
+    settings: null
+    caveats: null
+    fk_target_field_id: null
+    dimensions: []
+    dimension_options: []
+    updated_at: '2023-08-04T05:39:33.039939'
+    custom_position: 0
+    effective_type: type/Text
+    active: true
+    nfc_path: null
+    parent_id: null
+    id: project._id
+    last_analyzed: null
+    database_is_auto_increment: false
+    position: 0
+    visibility_type: normal
+    default_dimension_option: null
+    target: null
+    preview_display: true
+    display_name: ID
+    database_position: 0
+    database_required: false
+    fingerprint: null
+    created_at: '2023-08-04T05:39:33.039939'
+    base_type: type/Text
+    points_of_interest: null
+  - id: project.name
+    name: name
+    display_name: 名称
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: null
+    field_ref:
+      - field
+      - project.name
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_code
+    name: project_code
+    display_name: 项目编号
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: null
+    field_ref:
+      - field
+      - project.project_code
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_type
+    name: project_type
+    display_name: 项目类型
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/Source
+    field_ref:
+      - field
+      - project.project_type
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.status
+    name: status
+    display_name: 项目状态
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/Source
+    field_ref:
+      - field
+      - project.status
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_manager
+    name: project_manager
+    display_name: 项目经理
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.project_manager
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_project_manager
+  - id: project.account
+    name: account
+    display_name: 客户
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.account
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_account
+  - id: project.project_amount
+    name: project_amount
+    display_name: 项目金额
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Score
+    field_ref:
+      - field
+      - project.project_amount
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contract
+    name: contract
+    display_name: 合同
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.contract
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_contract
+  - id: project.project_program
+    name: project_program
+    display_name: 项目集
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.project_program
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_project_program
+  - id: project.kickoff
+    name: kickoff
+    display_name: 启动日期
+    base_type: type/Date
+    effective_type: type/Date
+    semantic_type: null
+    field_ref:
+      - field
+      - project.kickoff
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.deadline
+    name: deadline
+    display_name: 截止日期
+    base_type: type/Date
+    effective_type: type/Date
+    semantic_type: null
+    field_ref:
+      - field
+      - project.deadline
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_cost_budget
+    name: project_cost_budget
+    display_name: 预算成本总额(元)
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.project_cost_budget
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_labor_budget
+    name: project_labor_budget
+    display_name: 预算人工合计(人天)
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.project_labor_budget
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_all_income
+    name: contracts_all_income
+    display_name: 总应收款
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_all_income
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_labor
+    name: project_labor
+    display_name: 累计人工合计(人天)
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: null
+    field_ref:
+      - field
+      - project.project_labor
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_received_income
+    name: contracts_received_income
+    display_name: 总已收款
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_received_income
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.project_labor_balance
+    name: project_labor_balance
+    display_name: 剩余人工合计(人天)
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: null
+    field_ref:
+      - field
+      - project.project_labor_balance
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_waiting_income
+    name: contracts_waiting_income
+    display_name: 总待收款
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_waiting_income
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_made_invoice
+    name: contracts_made_invoice
+    display_name: 已开票
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_made_invoice
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_all_pay
+    name: contracts_all_pay
+    display_name: 总应付款
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_all_pay
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_paid_pay
+    name: contracts_paid_pay
+    display_name: 总已付款
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_paid_pay
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_waiting_pay
+    name: contracts_waiting_pay
+    display_name: 总待付款
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_waiting_pay
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.contracts_received_invoice
+    name: contracts_received_invoice
+    display_name: 已收票
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.contracts_received_invoice
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.open_tasks
+    name: open_tasks
+    display_name: 待完成任务
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.open_tasks
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.open_issues
+    name: open_issues
+    display_name: 待解决问题
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.open_issues
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.internal
+    name: internal
+    display_name: 内部项目
+    base_type: type/Boolean
+    effective_type: type/Boolean
+    semantic_type: type/Source
+    field_ref:
+      - field
+      - project.internal
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.closed
+    name: closed
+    display_name: 已关闭
+    base_type: type/Boolean
+    effective_type: type/Boolean
+    semantic_type: type/Source
+    field_ref:
+      - field
+      - project.closed
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.count_milestones
+    name: count_milestones
+    display_name: 里程碑总数
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.count_milestones
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.others
+    name: others
+    display_name: 项目组成员
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.others
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.count_milestones_ok
+    name: count_milestones_ok
+    display_name: 里程碑完成数
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.count_milestones_ok
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.workload_days
+    name: workload_days
+    display_name: 工作量(人时)
+    base_type: type/Float
+    effective_type: type/Float
+    semantic_type: type/Float
+    field_ref:
+      - field
+      - project.workload_days
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.description
+    name: description
+    display_name: 简述
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: null
+    field_ref:
+      - field
+      - project.description
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.owner
+    name: owner
+    display_name: 所有者
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.owner
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_owner
+  - id: project.locked
+    name: locked
+    display_name: 已锁定
+    base_type: type/Boolean
+    effective_type: type/Boolean
+    semantic_type: type/Source
+    field_ref:
+      - field
+      - project.locked
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.company_id
+    name: company_id
+    display_name: 我方单位
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.company_id
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_company_id
+  - id: project.company_ids
+    name: company_ids
+    display_name: 所属分部
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.company_ids
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.instance_state
+    name: instance_state
+    display_name: 申请单审批状态
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/Source
+    field_ref:
+      - field
+      - project.instance_state
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.created
+    name: created
+    display_name: 创建时间
+    base_type: type/DateTime
+    effective_type: type/DateTime
+    semantic_type: null
+    field_ref:
+      - field
+      - project.created
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.created_by
+    name: created_by
+    display_name: 创建人
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.created_by
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_created_by
+  - id: project.modified
+    name: modified
+    display_name: 修改时间
+    base_type: type/DateTime
+    effective_type: type/DateTime
+    semantic_type: null
+    field_ref:
+      - field
+      - project.modified
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+  - id: project.modified_by
+    name: modified_by
+    display_name: 修改人
+    base_type: type/Text
+    effective_type: type/Text
+    semantic_type: type/FK
+    field_ref:
+      - field
+      - project.modified_by
+      - null
+    source: fields
+    visibility_type: normal
+    table_id: project
+    remapped_to: external_modified_by
+  - description: null
+    semantic_type: type/Name
+    table_id: space_users
+    coercion_strategy: null
+    name: external_project_manager
+    settings: null
+    source: fields
+    remapped_from: project_manager
+    fk_field_id: project_manager
+    field_ref:
+      - field
+      - space_users.name
+      - source-field: project.project_manager
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: space_users.name
+    visibility_type: normal
+    display_name: 项目经理
+  - description: null
+    semantic_type: type/Name
+    table_id: accounts
+    coercion_strategy: null
+    name: external_account
+    settings: null
+    source: fields
+    remapped_from: account
+    fk_field_id: account
+    field_ref:
+      - field
+      - accounts.name
+      - source-field: project.account
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: accounts.name
+    visibility_type: normal
+    display_name: 客户
+  - description: null
+    semantic_type: type/Name
+    table_id: contracts
+    coercion_strategy: null
+    name: external_contract
+    settings: null
+    source: fields
+    remapped_from: contract
+    fk_field_id: contract
+    field_ref:
+      - field
+      - contracts.name
+      - source-field: project.contract
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: contracts.name
+    visibility_type: normal
+    display_name: 合同
+  - description: null
+    semantic_type: type/Name
+    table_id: project_program
+    coercion_strategy: null
+    name: external_project_program
+    settings: null
+    source: fields
+    remapped_from: project_program
+    fk_field_id: project_program
+    field_ref:
+      - field
+      - project_program.name
+      - source-field: project.project_program
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: project_program.name
+    visibility_type: normal
+    display_name: 项目集
+  - description: null
+    semantic_type: type/Name
+    table_id: users
+    coercion_strategy: null
+    name: external_owner
+    settings: null
+    source: fields
+    remapped_from: owner
+    fk_field_id: owner
+    field_ref:
+      - field
+      - users.name
+      - source-field: project.owner
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: users.name
+    visibility_type: normal
+    display_name: 所有者
+  - description: null
+    semantic_type: type/Name
+    table_id: company
+    coercion_strategy: null
+    name: external_company_id
+    settings: null
+    source: fields
+    remapped_from: company_id
+    fk_field_id: company_id
+    field_ref:
+      - field
+      - company.name
+      - source-field: project.company_id
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: company.name
+    visibility_type: normal
+    display_name: 我方单位
+  - description: null
+    semantic_type: type/Name
+    table_id: users
+    coercion_strategy: null
+    name: external_created_by
+    settings: null
+    source: fields
+    remapped_from: created_by
+    fk_field_id: created_by
+    field_ref:
+      - field
+      - users.name
+      - source-field: project.created_by
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: users.name
+    visibility_type: normal
+    display_name: 创建人
+  - description: null
+    semantic_type: type/Name
+    table_id: users
+    coercion_strategy: null
+    name: external_modified_by
+    settings: null
+    source: fields
+    remapped_from: modified_by
+    fk_field_id: modified_by
+    field_ref:
+      - field
+      - users.name
+      - source-field: project.modified_by
+    effective_type: type/Text
+    nfc_path: null
+    parent_id: null
+    id: users.name
+    visibility_type: normal
+    display_name: 修改人
+table_id: project
+updated_at: 2023-11-24T02:34:17.888Z
+visualization_settings: >-
+  {"table.columns":[{"name":"_id","enabled":false},{"name":"name","fieldRef":["field","project.name",null],"enabled":true},{"name":"project_code","fieldRef":["field","project.project_code",null],"enabled":true},{"name":"project_type","fieldRef":["field","project.project_type",null],"enabled":true},{"name":"status","fieldRef":["field","project.status",null],"enabled":true},{"name":"project_manager","fieldRef":["field","project.project_manager",null],"enabled":true},{"name":"account","fieldRef":["field","project.account",null],"enabled":true},{"name":"project_amount","fieldRef":["field","project.project_amount",null],"enabled":false},{"name":"contract","fieldRef":["field","project.contract",null],"enabled":false},{"name":"project_program","fieldRef":["field","project.project_program",null],"enabled":true},{"name":"kickoff","fieldRef":["field","project.kickoff",null],"enabled":true},{"name":"deadline","fieldRef":["field","project.deadline",null],"enabled":true},{"name":"project_cost_budget","fieldRef":["field","project.project_cost_budget",null],"enabled":true},{"name":"project_labor_budget","fieldRef":["field","project.project_labor_budget",null],"enabled":true},{"name":"contracts_all_income","fieldRef":["field","project.contracts_all_income",null],"enabled":false},{"name":"project_labor","fieldRef":["field","project.project_labor",null],"enabled":true},{"name":"contracts_received_income","fieldRef":["field","project.contracts_received_income",null],"enabled":true},{"name":"project_labor_balance","fieldRef":["field","project.project_labor_balance",null],"enabled":true},{"name":"contracts_waiting_income","fieldRef":["field","project.contracts_waiting_income",null],"enabled":true},{"name":"contracts_made_invoice","fieldRef":["field","project.contracts_made_invoice",null],"enabled":true},{"name":"contracts_all_pay","fieldRef":["field","project.contracts_all_pay",null],"enabled":true},{"name":"contracts_paid_pay","fieldRef":["field","project.contracts_paid_pay",null],"enabled":true},{"name":"contracts_waiting_pay","fieldRef":["field","project.contracts_waiting_pay",null],"enabled":true},{"name":"contracts_received_invoice","fieldRef":["field","project.contracts_received_invoice",null],"enabled":true},{"name":"open_tasks","fieldRef":["field","project.open_tasks",null],"enabled":true},{"name":"open_issues","fieldRef":["field","project.open_issues",null],"enabled":true},{"name":"internal","fieldRef":["field","project.internal",null],"enabled":false},{"name":"closed","fieldRef":["field","project.closed",null],"enabled":false},{"name":"count_milestones","fieldRef":["field","project.count_milestones",null],"enabled":true},{"name":"others","fieldRef":["field","project.others",null],"enabled":false},{"name":"count_milestones_ok","fieldRef":["field","project.count_milestones_ok",null],"enabled":true},{"name":"workload_days","fieldRef":["field","project.workload_days",null],"enabled":true},{"name":"description","fieldRef":["field","project.description",null],"enabled":false},{"name":"owner","fieldRef":["field","project.owner",null],"enabled":false},{"name":"locked","fieldRef":["field","project.locked",null],"enabled":false},{"name":"company_id","fieldRef":["field","project.company_id",null],"enabled":true},{"name":"company_ids","fieldRef":["field","project.company_ids",null],"enabled":false},{"name":"instance_state","fieldRef":["field","project.instance_state",null],"enabled":false},{"name":"created","fieldRef":["field","project.created",null],"enabled":false},{"name":"created_by","fieldRef":["field","project.created_by",null],"enabled":false},{"name":"modified","fieldRef":["field","project.modified",null],"enabled":false},{"name":"modified_by","fieldRef":["field","project.modified_by",null],"enabled":false}],"table.pivot_column":"project_manager","table.cell_column":"project_amount"}

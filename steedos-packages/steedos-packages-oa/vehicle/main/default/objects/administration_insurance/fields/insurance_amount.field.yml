@@ -1,0 +1,6 @@
+name: insurance_amount
+label: 保费
+precision: 18
+scale: 2
+sort_no: 110
+type: currency

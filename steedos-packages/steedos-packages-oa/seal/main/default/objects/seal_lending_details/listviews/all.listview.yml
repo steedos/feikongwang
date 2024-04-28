@@ -1,0 +1,17 @@
+name: all
+columns:
+  - field: name
+  - field: seal
+  - field: loan_time
+  - field: actual_return_time
+  - field: company
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

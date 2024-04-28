@@ -1,0 +1,12 @@
+name: end
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 工作结束日期
+primary: false
+required: true
+sort_no: 130
+sortable: false
+type: date

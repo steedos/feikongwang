@@ -1,0 +1,8 @@
+name: assess_supplier
+label: 供应商考核
+custom: true
+enable_api: true
+enable_search: false
+icon: account
+is_enable: true
+version: 2

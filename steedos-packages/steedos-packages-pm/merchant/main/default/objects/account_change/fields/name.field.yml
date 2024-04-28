@@ -1,0 +1,10 @@
+name: name
+label: 业务伙伴名称
+type: text
+searchable: true
+sortable: true
+index: true
+sort_no: 10
+defaultValue: "${_master.record.name}"
+amis:
+  disabledOn: true

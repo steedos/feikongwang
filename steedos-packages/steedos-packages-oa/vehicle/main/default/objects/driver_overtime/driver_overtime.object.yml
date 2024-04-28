@@ -1,0 +1,11 @@
+name: driver_overtime
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+enable_instances: true
+enable_workflow: true
+icon: buyer_account
+is_enable: true
+label: 驾驶员加班信息
+version: 2

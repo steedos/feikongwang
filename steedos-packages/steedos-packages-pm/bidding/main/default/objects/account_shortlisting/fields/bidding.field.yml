@@ -1,0 +1,5 @@
+name: bidding
+label: 招标任务
+type: lookup
+reference_to: bidding
+sort_no: 120

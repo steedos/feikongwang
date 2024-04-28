@@ -1,0 +1,12 @@
+name: object_attendance_rule_settings
+desktop: true
+icon: aggregation_policy
+label: 考勤规则
+mobile: true
+object: attendance_rule_settings
+permissions: 
+  - permission: 'off'
+    permission_set: user
+  - permission: 'on'
+    permission_set: attendance_admin
+type: object

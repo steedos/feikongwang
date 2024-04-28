@@ -1,0 +1,57 @@
+name: driver_overtime_count_beforeInsert
+listenTo: driver_overtime_count
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  const { doc } = ctx.params
+  const driverId = doc.driver;
+  const date = doc.date;
+  const year = (new Date(date)).getFullYear();
+  const month = (new Date(date)).getMonth() + 1;
+
+  // 判断驾驶员在这个月是否已经有总计记录，
+  const record = await ctx.broker.call(
+      'objectql.find',
+      {
+          'objectName': 'driver_overtime_count_master',
+          'query': {
+              'filters': [['driver', '=', driverId], ['month', '=', month], ['year', '=', year]]
+          }
+      }
+  )
+
+  if (record.length) {
+      // 已有总计记录，则将此记录关联到总计记录上
+      const masterId = record[0]._id;
+      Object.assign(doc, {'driver_overtime_count_master': masterId})
+  } else {
+      // 没有总计记录，先添加后关联
+      let driver = await ctx.broker.call(
+          'objectql.find',
+          {
+              'objectName': 'space_users',
+              'query': {
+                  'filters': [["user", "=", driverId]]
+              }
+          }
+      )
+      const master = await ctx.broker.call(
+          'objectql.insert',
+          {
+              'objectName': 'driver_overtime_count_master',
+              'doc': {
+                  'name': '' + year + '年' + month + '月-' + driver[0].name,
+                  'year': year,
+                  'month': month,
+                  'owner': doc.owner,
+                  'space': doc.space,
+                  'driver': doc.driver,
+                  'created': (new Date()).toISOString(),
+                  'created_by': doc.driver
+              }
+          }
+      )
+
+      Object.assign(doc, { 'driver_overtime_count_master': master._id })
+  }

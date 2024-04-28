@@ -1,0 +1,38 @@
+[
+    {
+      "_id": "${space_id}_65093a36841d5113adf9045c",
+      "staff": "${space_id}_65093815841d5113adf90456",
+      "name": "转正",
+      "apply_date": "2021-08-30T00:00:00.000Z",
+      "start": "2021-07-01T00:00:00.000Z",
+      "company": "${space_id}",
+      "department": "${space_id}_tansZq9euqCGcHPWr",
+      "actual_date": "2021-09-01T00:00:00.000Z",
+      "remark2": "跨部门沟通有提高",
+      "remark1": "根据客户需求制定可行性计划，并严格按照计划执行，最终达到项目正式量产。",
+      "remark3": "对项目预期风险的预判能力还有待提升",
+      "remark4": "多听多学",
+      "remark5": "无",
+      "displayAs": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-19T06:05:42.668Z",
+      "modified": "2023-09-19T06:07:25.896Z",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "ZZ-20230001",
+      "job_title": "项目经理",
+      "instance_state": "pending",
+      "instances": [
+        {
+          "_id": "25dzpPtL7zQNAQmA4",
+          "state": "pending"
+        }
+      ],
+      "locked": false
+    }
+  ]

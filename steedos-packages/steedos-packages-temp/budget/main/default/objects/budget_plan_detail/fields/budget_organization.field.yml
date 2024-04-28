@@ -1,0 +1,14 @@
+name: budget_organization
+create: false
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 预算组织
+primary: false
+reference_to: budget_organization
+required: true
+sort_no: 115
+sortable: false
+type: lookup

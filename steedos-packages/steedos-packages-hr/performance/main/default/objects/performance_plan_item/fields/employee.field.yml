@@ -1,0 +1,8 @@
+name: employee
+label: 被考核人
+type: lookup
+reference_to: space_users
+reference_to_field: user
+sort_no: 130
+required: true
+filterable: true

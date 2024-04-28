@@ -1,0 +1,78 @@
+[
+    {
+      "_id": "${space_id}_651153ec59b73a04f4a26bef",
+      "applicant": "${space_owner_id}",
+      "applicant_date": "2023-09-25T09:33:08.798Z",
+      "dept": "${space_id}",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+     "warehouse": "${space_id}_65111aed59b73a04f4a26b80",
+      "name": "听筒",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-25T09:33:32.901Z",
+      "modified": "2023-09-25T09:33:32.901Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_651154c559b73a04f4a26bf1",
+      "applicant": "${space_owner_id}",
+      "applicant_date": "2023-09-25T09:36:19.028Z",
+      "dept": "${space_id}",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "name": "··3䝟",
+     "warehouse": "${space_id}_65111aed59b73a04f4a26b80",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-25T09:37:09.671Z",
+      "modified": "2023-09-25T09:37:09.671Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65124602641a5504eba8b68e",
+      "applicant": "${space_owner_id}",
+      "applicant_date": "2023-09-26T02:45:21.627Z",
+      "dept": "${space_id}",
+      "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_id": "650931833a01c30a93e26339",
+      "name": "sensor",
+     "warehouse": "${space_id}_65111aed59b73a04f4a26b80",
+      "reasons": "组装调试",
+      "record": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T02:46:26.766Z",
+      "modified": "2023-09-26T02:46:26.766Z",
+      "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    },
+    {
+      "_id": "${space_id}_65151f5cd948f00699a2b929",
+      "applicant": "${space_owner_id}",
+      "applicant_date": "2023-09-28T05:55:05.136Z",
+      "dept": "${space_id}",
+      "owner": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+     "warehouse": "${space_id}_65111aed59b73a04f4a26b80",
+      "name": "S",
+      "record": null,
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-28T06:38:20.946Z",
+      "modified": "2023-09-28T06:38:20.946Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ]
+    }
+  ]

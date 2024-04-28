@@ -1,0 +1,15 @@
+name: all
+columns:
+  - field: year
+  - field: quarter
+  - field: organization
+  - field: employee
+  - field: score
+  - field: coefficient
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

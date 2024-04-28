@@ -1,0 +1,46 @@
+name: contract_othercompany
+listenTo: contract_othercompany
+when:
+  - afterInsert
+  - afterUpdate
+  - afterDelete
+isEnabled: true
+handler: |-
+  const { isInsert, isUpdate, isDelete, isAfter, doc, previousDoc } = ctx.params
+  if (isAfter && isInsert) { //afterInsert
+
+      await checkOthers(doc.contracts);
+  }
+
+  if (isAfter && isUpdate) { // afterUpdate
+
+      await checkOthers(doc.contracts);
+  }
+
+  if (isAfter && isDelete) { // afterDelete
+
+      await checkOthers(previousDoc.contracts);
+  }
+
+
+
+  //同步修改，合同主表中的相关方字段值
+  async function checkOthers(ContractId) {
+      let otherCompanies = await ctx.broker.call(
+          'objectql.find',
+          {
+              'objectName': 'contract_othercompany',
+              'query': { 'filters': [['contracts', '=', ContractId]]}
+          }
+      )
+
+      let othercompanyIds = [];
+      for (const oCompany of otherCompanies) {
+          othercompanyIds.push(oCompany.othercompany_name);
+      }
+
+      await ctx.broker.call(
+          'objectql.directUpdate',
+          { 'objectName': 'contracts', 'id': ContractId, 'doc': { othercompany: othercompanyIds } }
+      );
+  }

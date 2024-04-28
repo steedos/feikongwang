@@ -1,0 +1,9 @@
+name: projects_ee_home
+__filename: >-
+  /workspace/steedos-ee/steedos-packages-pm/project-ee/main/default/pages/projects_ee_home.page.yml
+is_active: true
+label: 项目首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

@@ -1,0 +1,16 @@
+name: operator
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 操作人
+multiple: false
+omit: false
+readonly: false
+reference_to: users
+required: true
+searchable: false
+sort_no: 180
+sortable: false
+type: lookup

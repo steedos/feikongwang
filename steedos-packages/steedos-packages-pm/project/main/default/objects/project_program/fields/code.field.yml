@@ -1,0 +1,5 @@
+name: code
+label: 工程编码
+type: text
+sort_no: 110
+visible_on: "{{false}}"

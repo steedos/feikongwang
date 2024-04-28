@@ -1,0 +1,12 @@
+name: attendance_leave_type_detail
+is_active: true
+label: 假期类型详情页
+object_name: attendance_leave_type
+pageAssignments:
+  - type: orgDefault
+    page: attendance_leave_type_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

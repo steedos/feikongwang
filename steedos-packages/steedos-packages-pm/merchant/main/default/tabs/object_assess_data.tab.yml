@@ -1,0 +1,6 @@
+name: object_assess_data
+desktop: true
+mobile: true
+object: assess_data
+permissions: []
+type: object

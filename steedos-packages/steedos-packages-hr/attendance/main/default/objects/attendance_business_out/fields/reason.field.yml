@@ -1,0 +1,13 @@
+name: reason
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: true
+label: 事项说明
+primary: false
+required: false
+rows: 3
+sort_no: 999
+sortable: false
+type: textarea

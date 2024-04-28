@@ -1,0 +1,41 @@
+[
+    {
+        "_id": "${space_id}_62fb5541cb9c8306a51b2bca",
+        "project": "${space_id}_62620e5787e5c50032d9bd39",
+        "applicant": "${space_owner_id}",
+        "company": "${space_id}",
+        "department": "${space_id}_aQZRY5qEzZN9GuSku",
+        "end_time": {
+            "$date": "2022-08-18T00:00:00Z"
+        },
+        "name": "客户拜访申请",
+        "reason": "客户跟进，平台需求沟通",
+        "start_time": {
+            "$date": "2022-08-17T00:00:13.503Z"
+        },
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:28:49.802Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T08:27:45.951Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "202208160001",
+        "day": 1,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "${space_id}_d7ZuuWLvjkCB62e2y",
+                "state": "approved"
+            }
+        ],
+        "locked": true
+    }
+]

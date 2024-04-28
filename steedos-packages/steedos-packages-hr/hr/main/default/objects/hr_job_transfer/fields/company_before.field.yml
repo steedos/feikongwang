@@ -1,0 +1,7 @@
+name: company_before
+index: true
+label: 原分部
+required: true
+sort_no: 330
+type: text
+filterable: true

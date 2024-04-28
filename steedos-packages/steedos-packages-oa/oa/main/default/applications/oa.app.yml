@@ -1,0 +1,24 @@
+name: 协同办公
+code: oa
+description: 协同办公系统，包含文档、公告、任务、报表等模块。
+icon_slds: groups
+is_creator: true
+mobile: false
+mobile_objects:
+  - instance_tasks
+  - space_users
+  - announcements
+  - cms_posts
+  - events
+  - tasks
+objects:
+  - instance_tasks
+  - space_users
+  - announcements
+  - cms_posts
+  - events
+  - tasks
+sort: 0
+tabs:
+  - oa_home
+visible: true

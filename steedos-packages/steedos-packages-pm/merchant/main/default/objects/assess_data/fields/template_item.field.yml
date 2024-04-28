@@ -1,0 +1,6 @@
+name: template_item
+label: 考核指标
+type: lookup
+reference_to: assess_template_item
+sort_no: 100
+hidden: true

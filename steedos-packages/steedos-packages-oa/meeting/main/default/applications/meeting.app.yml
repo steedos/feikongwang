@@ -1,0 +1,20 @@
+name: 会议
+code: meeting
+description: 企业日常会议管理应用。
+icon_slds: announcement
+is_creator: true
+mobile: true
+mobile_objects:
+  - meeting
+  - meeting_agenda
+  - meeting_task
+  - meetingroom
+objects:
+  - meeting
+  - meeting_agenda
+  - meeting_task
+  - meetingroom
+sort: 110
+# tabs:
+#   - meeting_home
+visible: true

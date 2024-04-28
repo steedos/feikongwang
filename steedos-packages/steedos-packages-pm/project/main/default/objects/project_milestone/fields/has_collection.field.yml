@@ -1,0 +1,14 @@
+name: has_collection
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 有回款
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 118
+sortable: true
+type: boolean

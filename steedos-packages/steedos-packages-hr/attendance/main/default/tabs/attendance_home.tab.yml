@@ -1,0 +1,7 @@
+name: attendance_home
+desktop: true
+icon: home
+label: 首页
+mobile: true
+page: attendance_home
+type: page

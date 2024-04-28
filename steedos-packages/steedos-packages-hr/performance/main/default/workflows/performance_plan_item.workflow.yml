@@ -1,0 +1,26 @@
+rules:
+  - name: performance_plan_item
+    active: true
+    description: 到达考核开始日期时，通知被考核人评分
+    label: 通知考核人
+    object_name: performance_plan_item
+    time_triggers:
+      - number: 0
+        unit: hour
+        type: earlier_than
+        date_field: start_date
+        workflow_notifications_actions:
+          - performance_plan
+        updates_field_actions: []
+    trigger_type: onCreateOrTriggeringUpdate
+    workflow_notifications_actions: []
+fieldUpdates: []
+notifications:
+  - name: performance_plan
+    assigned_user_field:
+      - assessor
+    body: name
+    label: 通知考核人
+    object_name: performance_plan_item
+    title: name
+outboundMessages: []

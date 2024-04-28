@@ -1,0 +1,6 @@
+name: going_out
+label: 外出（天）
+precision: 18
+scale: 2
+sort_no: 340
+type: number

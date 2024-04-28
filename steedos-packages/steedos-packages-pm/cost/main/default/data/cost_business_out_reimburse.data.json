@@ -1,0 +1,36 @@
+[
+    {
+        "_id": "${space_id}_62fb5859cb9c8306a51b2be7",
+        "project": "${space_id}_62620e5787e5c50032d9bd39",
+        "applicant": "${space_owner_id}",
+        "business_out": "${space_id}_651289e5f3a40dff226bf0c7",
+        "company": "${space_id}",
+        "department": "${space_id}_aQZRY5qEzZN9GuSku",
+        "name": "上海-北京客户现场需求沟通费用报销",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T08:42:01.278Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T08:29:58.736Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "autonumber": "202208160001",
+        "amount": 2370,
+        "instance_state": "approved",
+        "instances": [
+            {
+                "_id": "${space_id}_24kBvXPXLbpBf32AJ",
+                "state": "approved"
+            }
+        ],
+        "locked": true,
+        "remark": ""
+    }
+]

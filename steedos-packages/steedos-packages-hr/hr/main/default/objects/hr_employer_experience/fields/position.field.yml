@@ -1,0 +1,12 @@
+name: position
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 曾任岗位
+primary: false
+required: true
+sort_no: 110
+sortable: false
+type: text

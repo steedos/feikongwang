@@ -1,0 +1,17 @@
+name: all
+columns:
+  - field: name
+  - field: company_id
+  - field: seal_admin
+  - field: state
+filter_scope: space
+filters: []
+from_code_id: seal.all
+label: 所有印章
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

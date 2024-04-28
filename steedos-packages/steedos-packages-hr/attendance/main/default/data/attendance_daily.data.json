@@ -1,0 +1,122 @@
+[
+    {
+      "_id": "${space_id}_651274513d30a1ad9e09502c",
+      "user": "${space_owner_id}",
+      "start": "2023-09-26T06:04:00.688Z",
+      "data_source": "mobile",
+      "space": "650931833a01c30a93e26339",
+      "date": "2023-09-26T00:00:00.000Z",
+      "end": null,
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "status": [
+        "late"
+      ],
+      "late": 304.01146666666665,
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "created": "2023-09-26T06:04:01.952Z",
+      "modified": "2023-09-26T07:40:44.558Z",
+      "name": "230926-000002",
+      "absent": null,
+      "annual_leave": null,
+      "business_out": null,
+      "business_out_ref": [],
+      "going_out": null,
+      "going_out_ref": [],
+      "leave": null,
+      "leave_ref": [],
+      "overtime": null,
+      "overtime_ref": [],
+      "remark": "",
+      "retroactive_ref": []
+    },
+    {
+      "_id": "${space_id}_65127dc63d30a1ad9e095051",
+      "user": "${space_owner_id}",
+      "owner": "651250df641a5504eba8b692",
+      "space": "650931833a01c30a93e26339",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "status": "overtime",
+      "overtime": 8,
+      "date": "2023-09-11T00:00:00.000Z",
+      "overtime_ref": [
+        "65127db23d30a1ad9e09504f"
+      ],
+      "created": "2023-09-26T06:44:22.371Z",
+      "modified": "2023-09-26T06:44:22.371Z",
+      "name": "230926-000003"
+    },
+    {
+      "_id": "${space_id}_65127ed43d30a1ad9e095053",
+      "user": "${space_owner_id}",
+      "owner": "651250df641a5504eba8b692",
+      "space": "650931833a01c30a93e26339",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "status": "overtime",
+      "overtime": 8,
+      "date": "2023-09-18T00:00:00.000Z",
+      "overtime_ref": [
+        "65127ec63d30a1ad9e095052"
+      ],
+      "created": "2023-09-26T06:48:52.383Z",
+      "modified": "2023-09-26T06:48:52.383Z",
+      "name": "230926-000004"
+    },
+    {
+      "_id": "${space_id}_65127f603d30a1ad9e095055",
+      "user": "${space_owner_id}",
+      "owner": "651250df641a5504eba8b692",
+      "space": "650931833a01c30a93e26339",
+      "company": "${space_id}",
+      "department": "${space_id}",
+      "status": "overtime",
+      "overtime": 3,
+      "date": "2023-09-17T00:00:00.000Z",
+      "overtime_ref": [
+        "65127f413d30a1ad9e095054"
+      ],
+      "created": "2023-09-26T06:51:12.261Z",
+      "modified": "2023-09-26T06:51:12.261Z",
+      "name": "230926-000005"
+    },
+    {
+      "_id": "${space_id}_65128d51f3a40dff226bf0cb",
+      "owner": "${space_owner_id}",
+      "company_id": "650931833a01c30a93e26339",
+      "user": "${space_owner_id}",
+      "department": "${space_id}",
+      "company": "${space_id}",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T07:50:41.000Z",
+      "modified": "2023-09-26T07:50:41.000Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "230926-000006"
+    },
+    {
+      "_id": "${space_id}_65128e5cf3a40dff226bf0cd",
+      "owner": "${space_owner_id}",
+      "company_id": "650931833a01c30a93e26339",
+      "user": "${space_owner_id}",
+      "department": "${space_id}",
+      "company": "${space_id}",
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T07:55:08.805Z",
+      "modified": "2023-09-26T07:55:08.805Z",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "name": "230926-000007"
+    }
+  ]

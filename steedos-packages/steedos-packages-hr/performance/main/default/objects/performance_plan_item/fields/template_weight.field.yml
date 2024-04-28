@@ -1,0 +1,6 @@
+name: template_weight
+label: 模版权重
+type: percent
+precision: 18
+scale: 2
+sort_no: 160

@@ -1,0 +1,12 @@
+name: assets_card_detail
+enable_api: true
+enable_audit: true
+enable_events: false
+enable_files: true
+enable_notes: false
+enable_search: true
+enable_workflow: true
+enable_enhanced_lookup: true
+icon: entity
+label: 资产卡片明细
+version: 2

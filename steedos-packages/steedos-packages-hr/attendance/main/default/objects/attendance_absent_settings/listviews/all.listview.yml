@@ -1,0 +1,19 @@
+name: all
+columns:
+  - field: name
+  - field: type
+  - field: greater_than
+  - field: less_than
+  - field: total
+  - field: count_absent_date
+  - field: attendance_rule_settings
+filter_scope: space
+filters: []
+label: 所有
+mobile_columns: []
+scrolling_mode: standard
+searchable_fields: []
+shared: true
+sort: []
+sort_no: 100
+type: grid

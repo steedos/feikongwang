@@ -1,0 +1,26 @@
+name: openness
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 公开程度
+multiple: false
+options:
+  - label: 普通
+    value: 普通
+    color: 91CC75
+  - label: 秘密
+    value: 秘密
+    color: FBC858
+  - label: 机密
+    value: 机密
+    color: F4A460
+  - label: 绝密
+    value: 绝密
+    color: FF2D2D
+primary: false
+required: false
+sort_no: 150
+sortable: false
+type: select

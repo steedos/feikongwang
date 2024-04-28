@@ -1,0 +1,133 @@
+[
+    {
+        "_id": "${space_id}_62fa0d15cb9c8306a51b2a94",
+        "amount": 80000,
+        "company_id": "z86R5s8DCv7wQydKo",
+        "contract": "${space_id}_63184d8474519003c9545bb7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "finished": true,
+        "payment_name": "signed",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T10:26:32.292Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "contract_amount": 3600000,
+        "pay_proportion": 0.022222222222222223,
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "name": "开13%专票，指定部分更换升级款",
+        "_table": {
+            "_id": "${space_id}_62fa0d15cb9c8306a51b2a94",
+            "_code": "付款计划"
+        },
+        "amount_description": null,
+        "due_date": {
+            "$date": "2022-08-09T00:00:00Z"
+        }
+    },
+    {
+        "_id": "${space_id}_62fb024ccb9c8306a51b2ae8",
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "amount": 150000,
+        "amount_description": "对公转账，开13%专票",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "contract": "${space_id}_63184d8474519003c9545bb7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "finished": false,
+        "payment_name": "pending",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T10:26:31.766Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "contract_amount": 3600000,
+        "pay_proportion": 0.041666666666666664,
+        "name": "合同签定后支付，开13%专票",
+        "_table": {
+            "_id": "${space_id}_62fb024ccb9c8306a51b2ae8",
+            "_code": "付款计划"
+        },
+        "due_date": {
+            "$date": "2022-08-31T00:00:00Z"
+        }
+    },
+    {
+        "_id": "${space_id}_62fb0298cb9c8306a51b2ae9",
+        "account": "${space_id}_Dh2o6BcPzXsMnzphb",
+        "amount": 50000,
+        "amount_description": "开13%专票",
+        "company_id": "z86R5s8DCv7wQydKo",
+        "contract": "${space_id}_63184d8474519003c9545bb7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "finished": false,
+        "payment_name": "rejected",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T10:26:32.537Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "contract_amount": 3600000,
+        "pay_proportion": 0.013888888888888888,
+        "name": "验收合格，支付尾款",
+        "_table": {
+            "_id": "${space_id}_62fb0298cb9c8306a51b2ae9",
+            "_code": "付款计划"
+        },
+        "due_date": {
+            "$date": "2022-08-03T00:00:00Z"
+        }
+    },
+    {
+        "_id": "${space_id}_6305c975336fcc09215a6eda",
+        "amount": 1500000,
+        "company_id": "z86R5s8DCv7wQydKo",
+        "contract": "${space_id}_6262243287e5c50032d9bda5",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-08-25T00:00:00Z"
+        },
+        "finished": false,
+        "name": "采购完成",
+        "payment_name": "pending",
+        "space": "FCLaRczEXGKAjwvnn",
+        "created": {
+            "$date": "2022-09-07T05:48:47.321Z"
+        },
+        "modified": {
+            "$date": "2022-09-07T10:26:32.047Z"
+        },
+        "owner": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "created_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "modified_by": "72f002e2-18e3-4ae5-bd63-b60832c94e83",
+        "company_ids": [
+            "z86R5s8DCv7wQydKo"
+        ],
+        "contract_amount": 500000,
+        "pay_proportion": 3,
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z"
+    }
+]

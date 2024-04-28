@@ -1,0 +1,14 @@
+label: Visibility
+name: visibility
+type: select
+# is_wide: true
+defaultValue: team
+required: true
+options:
+  - label: Private - Only members can see .
+    value: private
+  - label: Team - Users accessible , only members can edit .
+    value: team
+  - label: Public - Anonymous accessible, only members can edit .
+    value: public
+sort_no: 30

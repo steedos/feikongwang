@@ -1,0 +1,287 @@
+[
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f76178b",
+        "name": "请示",
+        "describe": "适用于向上级机关请求指示、批准。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.305Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.305Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f76178c",
+        "name": "报告",
+        "describe": "适用于向上级机关汇报工作、反映情况，回复上级机关的询问。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.373Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.373Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f76178d",
+        "name": "意见",
+        "describe": "适用于对重要问题提出见解和处理办法。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.415Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.415Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f76178e",
+        "name": "函",
+        "describe": "适用于不相隶属机关之间商洽工作、询问和答复问题、请求批准和答复审批事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.464Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.464Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f76178f",
+        "name": "通知",
+        "describe": "适用于发布、传达要求下级机关执行和有关单位周知或者执行的事项，批转、转发公文。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.507Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.507Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761790",
+        "name": "纪要",
+        "describe": "适用于记载会议主要情况和议定事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.558Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.558Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761791",
+        "name": "议案",
+        "describe": "适用于各级人民政府按照法律程序向同级人民代表大会或者人民代表大会常务委员会提请审议事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.61Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.61Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761792",
+        "name": "命令（令）",
+        "describe": "适用于公布行政法规和规章、宣布施行重大强制性措施、批准授予和晋升衔级、嘉奖有关单位和人员。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.652Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.652Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761793",
+        "name": "决定",
+        "describe": "适用于对重要事项作出决策和部署、奖惩有关单位和人员、变更或者撤销下级机关不适当的决定事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.693Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.693Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761794",
+        "name": "公告",
+        "describe": "适用于向国内外宣布重要事项或者法定事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.749Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.749Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761795",
+        "name": "通告",
+        "describe": "适用于在一定范围内公布应当遵守或者周知的事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.792Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.792Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761796",
+        "name": "通报",
+        "describe": "适用于表彰先进、批评错误、传达重要精神和告知重要情况。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.831Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.831Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761797",
+        "name": "批复",
+        "describe": "适用于答复下级机关请示事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.876Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.876Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761798",
+        "name": "决议",
+        "describe": "适用于会议讨论通过的重大决策事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.917Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.917Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    },
+    {
+        "_id": "${space_id}_62e777f4fa26c63d6f761799",
+        "name": "公报",
+        "describe": "适用于公布重要决定或者重大事项。",
+        "space": "qSueSd6jJrJ58uean",
+        "owner": "62d7d883adb90b83da677240",
+        "created": {
+            "$date": "2022-08-01T06:51:32.959Z"
+        },
+        "modified": {
+            "$date": "2022-08-01T06:51:32.959Z"
+        },
+        "created_by": "62d7d883adb90b83da677240",
+        "modified_by": "62d7d883adb90b83da677240",
+        "company_id": "oF6WZeN5ehRaF9TNP",
+        "company_ids": [
+            "oF6WZeN5ehRaF9TNP"
+        ]
+    }
+]

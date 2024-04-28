@@ -1,0 +1,15 @@
+name: manager
+filterable: false
+generated: false
+group: 在职信息
+index: false
+is_name: false
+is_wide: false
+label: 直接上级
+multiple: false
+primary: false
+reference_to: users
+required: false
+sort_no: 180
+sortable: false
+type: lookup

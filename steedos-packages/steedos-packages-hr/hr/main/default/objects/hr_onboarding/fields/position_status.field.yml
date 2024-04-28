@@ -1,0 +1,22 @@
+name: position_status
+data_type: text
+filterable: true
+generated: false
+group: 在职信息
+index: false
+is_name: false
+is_wide: false
+label: 员工类型
+multiple: false
+options:
+  - label: 全职
+    value: full-time
+  - label: 实习
+    value: exercitation
+  - label: 其他
+    value: others
+primary: false
+required: true
+sort_no: 156
+sortable: false
+type: select

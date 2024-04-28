@@ -1,0 +1,29 @@
+name: recent
+columns:
+  - field: borrow_date
+    wrap: false
+    width: '120'
+  - field: applicant
+    wrap: false
+    width: '120'
+  - field: assets_card
+    wrap: false
+    width: '150'
+  - field: model
+    wrap: false
+    width: '120'
+  - field: asset_number
+    wrap: false
+    width: '120'
+  - field: quantity
+    wrap: false
+    width: '100'
+  - field: warehouse
+    wrap: false
+filter_scope: space
+filters: []
+label: 最近查看数据
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

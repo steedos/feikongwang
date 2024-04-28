@@ -1,0 +1,37 @@
+{
+  "name": "@steedos-labs/demo-ee",
+  "version": "2.6.4",
+  "description": "业务示例数据",
+  "main": "package.service.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "webpack --config webpack.config.js --watch"
+  },
+  "private": false,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@steedos-labs/asset": "2.6.4",
+    "@steedos-labs/contract": "2.6.4",
+    "@steedos-labs/cost": "2.6.4",
+    "@steedos-labs/finance": "2.6.4",
+    "@steedos-labs/master": "2.6.4",
+    "@steedos-labs/meeting": "2.6.4",
+    "@steedos-labs/oa": "2.6.4",
+    "@steedos-labs/okr": "2.6.4",
+    "@steedos-labs/project": "2.6.4",
+    "@steedos-labs/purchase": "2.2.9-beta.3",
+    "bson": "4.6.4",
+    "csvtojson": "~2.0.10",
+    "globby": "9.2.0"
+  },
+  "devDependencies": {
+    "typescript": "4.5.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "gitHead": "24d4f3c614efb07e373e34a97bef04e8a5929a5b"
+}

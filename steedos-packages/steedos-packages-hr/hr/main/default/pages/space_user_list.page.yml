@@ -1,0 +1,8 @@
+name: space_user_list
+allow_anonymous: false
+is_active: true
+label: 通讯录
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

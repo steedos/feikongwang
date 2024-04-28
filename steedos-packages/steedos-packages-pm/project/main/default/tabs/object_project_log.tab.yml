@@ -1,0 +1,7 @@
+name: object_project_log
+desktop: true
+label: 日志
+mobile: true
+object: project_log
+permissions: []
+type: object

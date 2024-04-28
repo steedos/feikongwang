@@ -1,0 +1,19 @@
+rules:
+  - name: hr_regular_notification
+    active: true
+    label: 员工试用期转正提醒
+    object_name: hr_employee
+    time_triggers: []
+    trigger_type: onAllChanges
+    workflow_notifications_actions:
+      - hr_regular_notification
+fieldUpdates: []
+notifications:
+  - name: hr_regular_notification
+    assigned_user_field:
+      - account
+    body: '" 计划转正日期为："&regularization_date'
+    label: 转正提醒通知试用员工
+    object_name: hr_employee
+    title: '"下周为您的预计转正时间，请及时提交转正申请"'
+outboundMessages: []

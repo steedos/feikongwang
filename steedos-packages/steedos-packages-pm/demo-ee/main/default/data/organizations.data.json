@@ -1,0 +1,508 @@
+[
+    {
+        "_id": "${space_id}",
+        "name": "华众集团",
+        "fullname": "华众集团",
+        "is_company": true,
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "children": [
+            "${space_id}_hgpMFjxg7j6KTGj7t",
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}_tansZq9euqCGcHPWr",
+            "${space_id}_QXHvtTen3fbSErT7t",
+            "${space_id}_gWhktJTiNoF8BsPZa",
+            "${space_id}_vZFrd87ARmzsMgkb6",
+            "${space_id}_WmQ5jA2Wrhtk7mKKX",
+            "${space_id}_XY25N6zWaFcfsSqaf",
+            "${space_id}_oJbJh98SY5R2eyLxW",
+            "${space_id}_mqg4iCKvbqrQu7H5j",
+            "${space_id}_F4LNEu9GrKcgPEWGD",
+            "${space_id}_58ffXSnDduviuYDXg",
+            "${space_id}_LtjEk7tzbphA9TNTQ"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_aQZRY5qEzZN9GuSku",
+        "name": "综合管理部",
+        "parent": "${space_id}_XqNXgeQokjatopEv6",
+        "sort_no": 2800,
+        "users": [
+            "${space_owner_id}"
+        ],
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:38:13.126Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部/综合管理部",
+        "parents": [
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_fwozpNYKxP86maExN",
+        "name": "业务销售部",
+        "parent": "${space_id}_XqNXgeQokjatopEv6",
+        "sort_no": 2700,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:38:23.626Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部/业务销售部",
+        "parents": [
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_3NiKjvRoha7RgGcxx",
+        "name": "计划财务部",
+        "parent": "${space_id}_XqNXgeQokjatopEv6",
+        "sort_no": 2600,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:38:38.99Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部/计划财务部",
+        "parents": [
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_XS7nMqRyJSNMiyz9Q",
+        "name": "人力资源部",
+        "parent": "${space_id}_XqNXgeQokjatopEv6",
+        "sort_no": 2500,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:38:52.566Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部/人力资源部",
+        "parents": [
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_6jJafbSSHxnCuvhEM",
+        "name": "项目管理部",
+        "parent": "${space_id}_XqNXgeQokjatopEv6",
+        "sort_no": 2400,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:39:05.892Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部/项目管理部",
+        "parents": [
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_hgpMFjxg7j6KTGj7t",
+        "name": "华众商务",
+        "parent": "${space_id}",
+        "sort_no": 1000,
+        "hidden": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:36:45.565Z"
+        },
+        "company_id": "zbkpCKXePhawMXtmj",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "华众商务",
+        "parents": [
+            "${space_id}"
+        ],
+        "users": [],
+        "children": [
+            "${space_id}_nkT6Wkk3bGtMYXXNf"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "is_company": true
+    },
+    {
+        "_id": "${space_id}_XqNXgeQokjatopEv6",
+        "name": "集团本部",
+        "parent": "${space_id}",
+        "sort_no": 2000,
+        "hidden": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:36:53.786Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部",
+        "parents": [
+            "${space_id}"
+        ],
+        "children": [
+            "${space_id}_aQZRY5qEzZN9GuSku",
+            "${space_id}_fwozpNYKxP86maExN",
+            "${space_id}_3NiKjvRoha7RgGcxx",
+            "${space_id}_XS7nMqRyJSNMiyz9Q",
+            "${space_id}_6jJafbSSHxnCuvhEM",
+            "${space_id}_wYdW3rLotPofktany"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_wYdW3rLotPofktany",
+        "name": "集团领导",
+        "parent": "${space_id}_XqNXgeQokjatopEv6",
+        "sort_no": 2900,
+        "hidden": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:38:01.747Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "集团本部/集团领导",
+        "parents": [
+            "${space_id}_XqNXgeQokjatopEv6",
+            "${space_id}"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_nkT6Wkk3bGtMYXXNf",
+        "name": "人事行政部",
+        "parent": "${space_id}_hgpMFjxg7j6KTGj7t",
+        "sort_no": 1900,
+        "hidden": false,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified": {
+            "$date": "2022-08-22T09:39:28.691Z"
+        },
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "fullname": "华众商务/人事行政部",
+        "parents": [
+            "${space_id}_hgpMFjxg7j6KTGj7t",
+            "${space_id}"
+        ],
+        "users": [
+            "${space_owner_id}"
+        ],
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ]
+    },
+    {
+        "_id": "${space_id}_tansZq9euqCGcHPWr",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "项目部",
+        "record": null,
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T05:43:25.055Z",
+        "modified": "2023-09-19T05:43:25.055Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "项目部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_QXHvtTen3fbSErT7t",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "财务",
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:08:54.181Z",
+        "modified": "2023-09-19T06:08:54.181Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "财务",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_gWhktJTiNoF8BsPZa",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "产品部",
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:11:04.532Z",
+        "modified": "2023-09-19T06:11:04.532Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "产品部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_vZFrd87ARmzsMgkb6",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "财务部",
+        "parent": "${space_id}",
+        "displayAs": null,
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:15:01.641Z",
+        "modified": "2023-09-19T06:15:01.641Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "财务部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_WmQ5jA2Wrhtk7mKKX",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "综合管理部",
+        "parent": "${space_id}",
+        "displayAs": null,
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:16:26.900Z",
+        "modified": "2023-09-19T06:16:26.900Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "综合管理部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_XY25N6zWaFcfsSqaf",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "市场部",
+        "parent": "${space_id}",
+        "displayAs": null,
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:17:02.799Z",
+        "modified": "2023-09-19T06:17:02.799Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "市场部",
+        "parents": [
+            "${space_id}"
+        ],
+        "is_company": true
+    },
+    {
+        "_id": "${space_id}_oJbJh98SY5R2eyLxW",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "研发部",
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:18:15.652Z",
+        "modified": "2023-09-19T06:18:15.652Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "研发部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_mqg4iCKvbqrQu7H5j",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "硬件部",
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:26:46.589Z",
+        "modified": "2023-09-19T06:26:46.589Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "硬件部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_F4LNEu9GrKcgPEWGD",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "采购部",
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T06:29:55.470Z",
+        "modified": "2023-09-19T06:29:55.470Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "采购部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_58ffXSnDduviuYDXg",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "结构部",
+        "parent": "${space_id}",
+        "displayAs": null,
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T08:19:43.678Z",
+        "modified": "2023-09-19T08:19:43.678Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "结构部",
+        "parents": [
+            "${space_id}"
+        ]
+    },
+    {
+        "_id": "${space_id}_LtjEk7tzbphA9TNTQ",
+        "hidden": false,
+        "sort_no": 100,
+        "owner": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "name": "管理部",
+        "parent": "${space_id}",
+        "space": "650931833a01c30a93e26339",
+        "created": "2023-09-19T08:21:57.279Z",
+        "modified": "2023-09-19T08:21:57.279Z",
+        "created_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "modified_by": "3656c6bd-4ae8-4749-badf-5744a04c7af7",
+        "company_id": "650931833a01c30a93e26339",
+        "fullname": "管理部",
+        "parents": [
+            "${space_id}"
+        ]
+    }
+]

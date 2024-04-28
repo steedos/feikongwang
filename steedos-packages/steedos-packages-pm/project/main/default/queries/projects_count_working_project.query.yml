@@ -1,0 +1,30 @@
+name: projects_count_working_project
+datasource: default
+label: 项目-在建项目
+options:
+  parameters: []
+  apply_auto_limit: false
+query: |-
+  {
+      "collection": "project",
+      "aggregate": [{
+              "$project": {
+                  "is_deleted": "$is_deleted",
+                  "status": "$status"
+              }
+          },
+          {
+              "$match": {
+                  "is_deleted": {
+                      "$ne": true
+                  },
+                  "status": {
+                      "$eq": "working"
+                  }
+              }
+          },
+          {
+              "$count": "count"
+          }
+      ]
+  }

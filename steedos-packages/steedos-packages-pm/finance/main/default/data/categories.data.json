@@ -1,0 +1,20 @@
+[{
+    "_id": "${space_id}_912ba129ee6464951bc9cdac",
+    "name": "财务管理",
+    "space": "655331588a2535c81f60e26f",
+    "created": {
+        "$date": "2023-11-14T08:35:37.37Z"
+    },
+    "created_by": "655331568a2535c81f60e26d",
+    "modified": {
+        "$date": "2023-11-14T08:35:37.37Z"
+    },
+    "modified_by": "655331568a2535c81f60e26d",
+    "owner": "655331568a2535c81f60e26d",
+    "company_id": "655331588a2535c81f60e26f",
+    "company_ids": [
+        "655331588a2535c81f60e26f"
+    ],
+    "app": "contracts_ee",
+    "sort_no": 900
+}]

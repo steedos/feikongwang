@@ -1,0 +1,4 @@
+name: borrower
+label: 借用人
+sort_no: 130
+type: text

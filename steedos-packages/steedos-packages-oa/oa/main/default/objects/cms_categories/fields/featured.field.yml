@@ -1,0 +1,6 @@
+name: featured
+type: boolean
+defaultValue: true
+hidden: true
+omit: true
+sort_no: 70

@@ -1,0 +1,7 @@
+name: object_borrowing_record
+desktop: true
+label: 借阅记录
+mobile: true
+object: borrowing_record
+permissions: []
+type: object

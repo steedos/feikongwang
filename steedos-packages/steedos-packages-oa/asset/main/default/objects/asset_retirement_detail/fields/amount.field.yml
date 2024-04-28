@@ -1,0 +1,17 @@
+name: amount
+data_type: currency
+filterable: false
+formula: assets_card.amount
+formula_blank_value: blanks
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 价格
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 130
+sortable: false
+type: formula

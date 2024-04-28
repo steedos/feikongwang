@@ -1,0 +1,69 @@
+name: 工作经历.管理员
+allowCreate: true
+allowCreateFiles: true
+allowDelete: true
+allowDeleteFiles: true
+allowEdit: true
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllFiles: true
+modifyAllRecords: true
+permission_set_id: admin
+viewAllFiles: true
+viewAllRecords: true
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: true
+  - field: position
+    readable: true
+    editable: true
+  - field: start
+    readable: true
+    editable: true
+  - field: end
+    readable: true
+    editable: true
+  - field: leader
+    readable: true
+    editable: true
+  - field: leader_phone
+    readable: true
+    editable: true
+  - field: salary
+    readable: true
+    editable: true
+  - field: resign_reason
+    readable: true
+    editable: true
+  - field: employee
+    readable: true
+    editable: true

@@ -1,0 +1,47 @@
+[
+    {
+        "_id": "${space_id}",
+        "name": "华众集团",
+        "organization": "${space_id}",
+        "sort_no": 100,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T06:26:45.582Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T10:00:11.525Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "code": "HZJT"
+    },
+    {
+        "_id": "${space_id}_zbkpCKXePhawMXtmj",
+        "name": "华众商务",
+        "organization": "${space_id}_hgpMFjxg7j6KTGj7t",
+        "sort_no": 100,
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-22T09:45:33.616Z"
+        },
+        "modified": {
+            "$date": "2022-08-22T10:00:26.599Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_id": "zbkpCKXePhawMXtmj",
+        "admins": [
+            "${space_owner_id}"
+        ],
+        "code": "HZSW"
+    }
+]

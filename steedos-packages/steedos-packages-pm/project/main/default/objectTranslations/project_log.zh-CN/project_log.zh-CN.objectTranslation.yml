@@ -1,0 +1,38 @@
+name: project_log
+label: 日志
+description: 
+fields:
+  detail:
+    label: 内容
+    help: 
+    description: 
+  name:
+    label: 标题
+    help: 
+    description: 
+  project:
+    label: 项目
+    help: 
+    description: 
+  project_milestone:
+    label: 里程碑
+    help: 
+    description: 
+  type:
+    label: 类型
+    help: 
+    options:
+      - label: 汇报
+        value: Report
+      - label: 讨论
+        value: Discussion
+      - label: 风险
+        value: Risk
+      - label: 其他
+        value: Others
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

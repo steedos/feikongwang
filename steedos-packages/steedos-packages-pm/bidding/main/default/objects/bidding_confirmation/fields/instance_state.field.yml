@@ -1,0 +1,23 @@
+name: instance_state
+label: 审批状态
+options:
+  - label: 草稿
+    value: draft
+    color: cfd3d7
+  - label: 进行中
+    value: pending
+    color: a2eeef
+  - label: 已完成
+    value: completed
+  - label: 已核准
+    value: approved
+    color: 49d181 
+  - label: 已驳回
+    value: rejected
+    color: E99695
+  - label: 已取消
+    value: terminated
+    color: f9e29d
+sort_no: 140
+type: select
+visible_on: '{{global.mode === ''read'' ? true : false}}'

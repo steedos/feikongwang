@@ -1,0 +1,21 @@
+name: recent
+columns:
+  - field: name
+  - field: number
+  - field: staff
+  - field: company
+  - field: department
+  - field: date
+  - field: leave_type
+  - field: days
+  - field: start
+  - field: end
+  - field: instance_state
+  - field: leave_reason
+filter_scope: space
+filters: []
+label: 最近查看
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

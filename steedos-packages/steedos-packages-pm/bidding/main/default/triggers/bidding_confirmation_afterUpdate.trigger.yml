@@ -1,0 +1,76 @@
+name: bidding_confirmation_afterUpdate
+listenTo: bidding_confirmation
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, previousDoc } = ctx.params;
+
+  let objectName = '';
+
+  let _id = '';
+
+  // 判断此次定标是一般招标/简易招标
+
+  if (previousDoc.bidding && previousDoc.bidding !== '') {
+      objectName = 'bidding';
+      _id = previousDoc.bidding;
+  } else if (previousDoc.simple_bidding && previousDoc.simple_bidding !== ''){
+      objectName = 'simple_bidding';
+      _id = previousDoc.simple_bidding;
+  }
+
+  /**
+   * 发起审批后
+   * TODO:
+   * 1、变更“立项状态“为”定标（LX004）“
+   */
+  if (doc.instance_state === 'pending' && doc.instance_state !==
+  previousDoc.instance_state) {
+      const status = await ctx.broker.call('@steedos-labs/bidding.getBiddingStatusByCode', { 'code': 'LX004' });
+      console.log('objectName: ', objectName);
+      console.log('id: ', _id);
+      await ctx.broker.call('objectql.directUpdate',
+          { 'objectName': objectName, 'id': _id, 'doc': { 'bidding_status': status }}
+      );
+  }
+
+
+  /**
+   * 审批通过后
+   * TODO:
+   * 1、变更“立项状态“为”完成招标（LX005）“
+   * 3、修正供应商的中标次数
+   */
+  if (doc.instance_state === 'approved' && doc.instance_state !==
+  previousDoc.instance_state) {
+      const status = await ctx.broker.call('@steedos-labs/bidding.getBiddingStatusByCode', { 'code': 'LX005' });
+      await ctx.broker.call('objectql.directUpdate',
+          { 'objectName': objectName, 'id': _id, 'doc': { 'bidding_status': status } }
+      );
+
+      const accounts = await ctx.broker.call('api.graphql', {
+          query: `
+              {
+                  rows: bidding_supplier(filters: ["bidding_confirmation", "=", "${doc._id}"]){
+                      _id
+                      account
+                      account__expand{
+                          bidding_number
+                      }
+                  }
+              }
+          `}
+      );
+      for (const item of accounts.data.rows) {
+          let bidding_number = (item.account__expand.bidding_number ?? 0) + 1;
+          await ctx.broker.call('objectql.update',
+              {
+                  'objectName': 'accounts',
+                  'id': item.account,
+                  'doc': {
+                      'bidding_number': bidding_number
+                  }
+              })
+      };
+  }

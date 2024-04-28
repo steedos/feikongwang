@@ -1,0 +1,254 @@
+{
+    "type": "page",
+    "body": [
+        {
+            "type": "service",
+            "id": "outer_service",
+            "data": {
+                "isVisible": true
+            },
+            "messages": {},
+            "body": [
+                {
+                    "type": "steedos-object-listview",
+                    "label": "列表视图",
+                    "objectApiName": "${objectName}",
+                    "visibleOn": "${isVisible}",
+                    "listName": "all",
+                    "showHeader": true,
+                    "className": "sm:shadow sm:rounded sm:border-gray-300 mb-4",
+                    "style": {
+                        "border": 0,
+                        "border-radius": 0
+                    },
+                    "headerToolbarItems": [
+                        {
+                            "type": "button",
+                            "label": "组织",
+                            "icon": "fa fa-sitemap",
+                            "className": "bg-white p-2 rounded border-gray-300 text-gray-500",
+                            "align": "left",
+                            "onEvent": {
+                                "click": {
+                                    "actions": [
+                                        {
+                                            "actionType": "custom",
+                                            "script": "console.log(event.target);document.querySelector('.cms_posts-list').classList.toggle('cms_posts-sidebar-open');if(window.innerWidth < 768){document.querySelector('.isInset').classList.toggle('inset-0')}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "id": "u:115e270cae4d",
+                            "visibleOn": "${window:innerWidth < 768}"
+                        }
+                    ],
+                    "id": "u:2ee11aa2a699"
+                },
+                {
+                    "type": "tpl",
+                    "tpl": "请在左侧选择栏目。",
+                    "className": "flex items-center justify-center h-full",
+                    "visibleOn": "${!isVisible}"
+                },
+                {
+                    "type": "action",
+                    "body": [
+                        {
+                            "type": "action",
+                            "className": {
+                                "mobileCss": "${window:innerWidth < 768}",
+                                "pcCss": "${window:innerWidth > 768}",
+                                "cms_posts-sidebar-wrapper px-0 fixed z-20 h-full h-fill ease-in-out duration-300 flex flex-col border-r overflow-y-auto bg-white border-slate-200 block -translate-x-0 py-0": "true"
+                            },
+                            "body": [
+                                {
+                                    "type": "service",
+                                    "id": "navSchema",
+                                    "schemaApi": {
+                                        "url": "${context.rootUrl}/graphql",
+                                        "method": "post",
+                                        "headers": {
+                                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                        },
+                                        "adaptor": "\ntry {\n  const user = api.data.context.user;\n  const userId = api.data.context.userId;\n\n  const rows = payload.data.rows;\n  // TODO: activeOn属性值中必须要有两个\\，且同级定义的abc属性只是用来引用current_id，以便activeOn属性值中使用。\n  const getChildren = (records, record_id, site, buttonPermissions) => {\n    const children = _.filter(records, (record) => {\n      return record_id === record.parent\n    });\n    const childrens = _.map(children, (item, index) => {\n      return {\n        _id: item._id, label: item.name, to: \"\", value: index + '',\n        // icon: \"fa fa-user\",\n        abc: \"${current_id}\",\n        activeOn: \"\\\\${current_id ==='\" + item._id + \"'}\",\n        object_name: 'cms_categories',\n        site: site, buttonPermissions: buttonPermissions, parent: item._id,\n        children: getChildren(records, item._id, site, buttonPermissions),\n  isVisible: true,\n     additionalFilters: [[\"site\", \"=\", site], [\"category\", \"=\", item._id]]\n      }\n    })\n    // console.log('children==>', children)\n    return childrens;\n  }\n\n  const links = _.map(rows, (item, index) => {\n    // 1、是否是大管理员， user.is_space_admin\n    // 2、是否是站点成员，admins.includes(userId)\n    // 3、是否是当事人 owner === userId  暂时不采用该权限判断\n\n    let allowEditAndDeleteSite = false;\n    let allowCreateEditDeleteCategories = false;\n    if (user.is_space_admin || item.admins.includes(userId)) {\n      allowEditAndDeleteSite = true;\n      allowCreateEditDeleteCategories = true;\n    }\n    const records = item._categories;\n    const treeRecords = [];\n    _.each(records, (record, index) => {\n      if (!record.parent) {\n        treeRecords.push(Object.assign(\n          {},\n          {\n            _id: record._id, label: record.name, to: \"\", value: index + '',\n            // icon: \"fa fa-user\",\n            abc: \"${current_id}\",\n            activeOn: \"\\\\${current_id ==='\" + record._id + \"'}\",\n            object_name: 'cms_categories',\n            site: item._id,\n            buttonPermissions: {\n              allowEditAndDeleteSite,\n              allowCreateEditDeleteCategories\n            },\n            parent: record._id,\n   isVisible: true,\n           additionalFilters: [[\"site\", \"=\", item._id], [\"category\", \"=\", record._id]]\n          },\n          {\n            children: getChildren(records, record._id, item._id, {\n              allowEditAndDeleteSite,\n              allowCreateEditDeleteCategories\n            })\n          }\n        ));\n      }\n    });\n    // console.log('treeRecords==>', treeRecords);\n    return {\n      _id: item._id,\n      label: item.name,\n      site: item._id,\n      buttonPermissions: {\n        allowEditAndDeleteSite,\n        allowCreateEditDeleteCategories\n      },\n      parent: '',\n      object_name: 'cms_sites',\n      to: \"\",\n      abc: \"${current_id}\",\n      activeOn: \"\\\\${current_id ==='\" + item._id + \"'}\",\n      value: index + '',\n      icon: treeRecords.length > 0 ? \"\" : \"fa fa-user\",\n      children: treeRecords,\n  isVisible: true,\n      additionalFilters: [\"site\", \"=\", item._id]\n    }\n  })\n  // console.log('links==>', links);\n  const data = {\n    \"type\": \"service\",\n      \"data\": {\n      \"links\": links\n    },\n    \"id\": \"navService\",\n      \"body\": {\n      \"type\": \"nav\",\n        \"style\": {\n        \"marginTop\": \"10px\"\n      },\n      \"id\": \"navId\",\n        \"onEvent\": {\n        \"click\": {\n          \"weight\": 0,\n            \"actions\": [\n              {\n                \"actionType\": \"setValue\",\n                \"args\": {\n                  \"value\": {\n                    \"current_id\": \"${event.data.item._id}\",\n                    \"links\": links\n                  }\n                },\n                \"componentId\": \"navService\"\n              },\n              {\n                \"actionType\": \"setValue\",\n                \"args\": {\n                  \"value\": {\n          \"isVisible\": true,\n            \"additionalFilters\": \"${event.data.item.additionalFilters}\"\n                  }\n                },\n                \"componentId\": \"outer_service\"\n              }\n              \n            ]\n        },\n        \"toggled\": {\n          \"weight\": 0,\n          \"actions\": [\n            {\n              \"actionType\": \"setValue\",\n              \"componentId\": \"navService\",\n              \"args\": {\n                \"value\": {\n                  \"current_id\": \"${event.data.item._id}\",\n                  \"links\": links\n                }\n              }\n            },\n            {\n              \"actionType\": \"setValue\",\n              \"componentId\": \"outer_service\",\n              \"args\": {\n                \"value\": {\n          \"isVisible\": true,\n         \"additionalFilters\": \"${event.data.item.additionalFilters}\"\n                }\n              }\n            }\n            \n          ]\n        }\n      },\n      \"className\": \"\",\n        \"source\": \"\\${links}\",\n          \"stacked\": true,\n            \"itemActions\": [\n              {\n                \"type\": \"dropdown-button\",\n                \"level\": \"link\",\n                \"icon\": \"fa fa-ellipsis-h\",\n                \"hideCaret\": true,\n                \"buttons\": [\n                  {\n                    \"type\": \"button\",\n                    \"label\": \"编辑站点\",\n                    \"visibleOn\": \"${global.user.profile === 'admin' && object_name === 'cms_sites' && buttonPermissions.allowEditAndDeleteSite}\",\n                    \"actionType\": \"dialog\",\n                    \"dialog\": {\n                      \"type\": \"dialog\",\n                      \"title\": \"编辑站点\",\n                      \"body\": [\n                        {\n                          \"type\": \"steedos-object-form\",\n                          \"label\": \"对象表单\",\n                          \"objectApiName\": \"${object_name}\",\n                          \"recordId\": \"${_id}\",\n                          \"className\": \"bg-white\",\n                          \"id\": \"u:1a0be526e371\",\n                          \"mode\": \"edit\",\n                          \"form\": {\n                            \"onEvent\": {\n                              \"submitSucc\": {\n                                \"actions\": [\n                                  {\n                                    \"actionType\": \"reload\",\n                                    \"componentId\": \"navSchema\"\n                                  }\n                                ]\n                              }\n                            }\n                          }\n                        }\n                      ],\n                      \"showCloseButton\": true,\n                      \"showErrorMsg\": true,\n                      \"showLoading\": true,\n                      \"className\": \"app-popover\",\n                      \"closeOnEsc\": false,\n                      \"size\": \"md\"\n                    }\n                  },\n                  {\n                    \"type\": \"button\",\n                    \"label\": \"编辑栏目\",\n                    \"visibleOn\": \"${global.user.profile === 'admin' && object_name === 'cms_categories' && buttonPermissions.allowCreateEditDeleteCategories}\",\n                    \"actionType\": \"dialog\",\n                    \"dialog\": {\n                      \"type\": \"dialog\",\n                      \"title\": \"编辑栏目\",\n                      \"body\": [\n                        {\n                          \"type\": \"steedos-object-form\",\n                          \"label\": \"对象表单\",\n                          \"objectApiName\": \"${object_name}\",\n                          \"recordId\": \"${_id}\",\n                          \"className\": \"bg-white\",\n                          \"id\": \"u:1a0be526e371\",\n                          \"mode\": \"edit\",\n                          \"form\": {\n                            \"onEvent\": {\n                              \"submitSucc\": {\n                                \"actions\": [\n                                  {\n                                    \"actionType\": \"reload\",\n                                    \"componentId\": \"navSchema\"\n                                  }\n                                ]\n                              }\n                            }\n                          }\n                        }\n                      ],\n                      \"showCloseButton\": true,\n                      \"showErrorMsg\": true,\n                      \"showLoading\": true,\n                      \"className\": \"app-popover\",\n                      \"closeOnEsc\": false,\n                      \"size\": \"md\"\n                    }\n                  },\n                  {\n                    \"type\": \"button\",\n                    \"label\": \"删除站点\",\n                    \"visibleOn\": \"${global.user.profile === 'admin' && object_name === 'cms_sites'  && buttonPermissions.allowEditAndDeleteSite}\",\n                    \"confirmText\": \"确定要删除 ${label} 站点吗？\",\n                    \"onEvent\": {\n                      \"click\": {\n                        \"actions\": [\n                          {\n                            \"args\": {\n                              \"api\": {\n                                \"method\": \"post\",\n                                \"url\": \"${context.rootUrl}/graphql\",\n                                \"data\": {\n                                  \"&\": \"$$\",\n                                  \"recordId\": \"${_id}\",\n                                  \"objectName\": \"${object_name}\"\n                                },\n                                \"requestAdaptor\": \"const {recordId, objectName} = api.body; api.data = {query: `mutation{delete:${objectName}__delete(id: \\\"${recordId}\\\")}`}; return api;\",\n                                \"headers\": {\n                                  \"Authorization\": \"Bearer ${context.tenantId},${context.authToken}\"\n                                },\n                                \"adaptor\": \"if(payload.errors){payload.status = 2;payload.msg = window.t ? window.t(payload.errors[0].message) : payload.errors[0].message; } return payload;\"\n                              }\n                            },\n                            \"actionType\": \"ajax\"\n                          },\n                          {\n                            \"actionType\": \"reload\",\n                            \"componentId\": \"navSchema\"\n                          }\n                        ]\n                      }\n                    }\n                  },\n                  {\n                    \"type\": \"button\",\n                    \"label\": \"删除栏目\",\n                    \"visibleOn\": \"${global.user.profile === 'admin' && object_name === 'cms_categories' && buttonPermissions.allowCreateEditDeleteCategories}\",\n                    \"confirmText\": \"确定要删除 ${label} 栏目吗？\",\n                    \"onEvent\": {\n                      \"click\": {\n                        \"actions\": [\n                          {\n                            \"args\": {\n                              \"api\": {\n                                \"method\": \"post\",\n                                \"url\": \"${context.rootUrl}/graphql\",\n                                \"data\": {\n                                  \"&\": \"$$\",\n                                  \"recordId\": \"${_id}\",\n                                  \"objectName\": \"${object_name}\"\n                                },\n                                \"requestAdaptor\": \"const {recordId, objectName} = api.body; api.data = {query: `mutation{delete:${objectName}__delete(id: \\\"${recordId}\\\")}`}; return api;\",\n                                \"headers\": {\n                                  \"Authorization\": \"Bearer ${context.tenantId},${context.authToken}\"\n                                },\n                                \"adaptor\": \"if(payload.errors){payload.status = 2;payload.msg = window.t ? window.t(payload.errors[0].message) : payload.errors[0].message; } return payload;\"\n                              }\n                            },\n                            \"actionType\": \"ajax\"\n                          },\n                          {\n                            \"actionType\": \"reload\",\n                            \"componentId\": \"navSchema\"\n                          }\n                        ]\n                      }\n                    }\n                  },\n                  {\n                    \"type\": \"button\",\n                    \"label\": \"新建栏目\",\n                    \"actionType\": \"dialog\",\n                    \"dialog\": {\n                      \"type\": \"dialog\",\n                      \"title\": \"新建栏目\",\n                      \"body\": [\n                        {\n                          \"type\": \"steedos-object-form\",\n                          \"label\": \"对象表单\",\n                          \"objectApiName\": \"cms_categories\",\n                          \"defaultData\": {\n                            \"site\": \"${site}\",\n                            \"parent\": \"${parent}\"\n                          },\n                          \"recordId\": \"\",\n                          \"className\": \"bg-white\",\n                          \"id\": \"u:1a0be526e371\",\n                          \"mode\": \"edit\",\n                          \"form\": {\n                            \"onEvent\": {\n                              \"submitSucc\": {\n                                \"actions\": [\n                                  {\n                                    \"actionType\": \"reload\",\n                                    \"componentId\": \"navSchema\"\n                                  }\n                                ]\n                              }\n                            }\n                          }\n                        }\n                      ],\n                      \"showCloseButton\": true,\n                      \"showErrorMsg\": true,\n                      \"showLoading\": true,\n                      \"className\": \"app-popover\",\n                      \"id\": \"u:16fb32580cf2\",\n                      \"closeOnEsc\": false,\n                      \"size\": \"md\"\n                    },\n                    \"visibleOn\": \"${global.user.profile === 'admin' && buttonPermissions.allowCreateEditDeleteCategories}\"\n                  }\n                ],\n                \"id\": \"u:39af3408b67d\",\n                \"visibleOn\": \"${buttonPermissions.allowEditAndDeleteSite || buttonPermissions.allowCreateEditDeleteCategories}\"\n              }\n            ],\n              \"draggable\": false\n    }\n  }\n  // console.log('data==>', data);\n  payload = {\n    data,\n    msg: '',\n    status: 0\n  }\n}catch (error) {\n  console.log(\"error\", error)\n}\nreturn payload;",
+                                        "requestAdaptor": "",
+                                        "data": {
+                                            "query": "{rows:cms_sites(filters: [], top: 20, skip: 0, sort: \"order asc\"){_id,name,visibility,order,admins,owner,_display:_ui{visibility,order},_categories:_related_cms_categories_site(sort: \"order asc\"){_id,name,parent,order}},count:cms_sites__count(filters:[])}",
+                                            "context": "${context}"
+                                        },
+                                        "messages": {}
+                                    }
+                                },
+                                {
+                                    "type": "tpl",
+                                    "tpl": "+ 新建站点",
+                                    "inline": false,
+                                    "wrapperComponent": "",
+                                    "style": {
+                                        "marginLeft": "16px",
+                                        "marginTop": "10px"
+                                    },
+                                    "id": "u:8b332b604ee8",
+                                    "onEvent": {
+                                        "click": {
+                                            "weight": 0,
+                                            "actions": [
+                                                {
+                                                    "actionType": "dialog",
+                                                    "dialog": {
+                                                        "type": "dialog",
+                                                        "title": "新建站点",
+                                                        "body": [
+                                                            {
+                                                                "type": "steedos-object-form",
+                                                                "id": "u:1a0be526e371",
+                                                                "label": "对象表单",
+                                                                "objectApiName": "cms_sites",
+                                                                "recordId": "",
+                                                                "className": "bg-white",
+                                                                "mode": "edit",
+                                                                "form": {
+                                                                    "onEvent": {
+                                                                        "submitSucc": {
+                                                                            "actions": [
+                                                                                {
+                                                                                    "actionType": "reload",
+                                                                                    "componentId": "navSchema"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
+                                                        "showCloseButton": true,
+                                                        "showErrorMsg": true,
+                                                        "showLoading": true,
+                                                        "className": "app-popover",
+                                                        "id": "u:16fb32580cf2",
+                                                        "closeOnEsc": false,
+                                                        "size": "md"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "visibleOn": "${global.user.profile === 'admin'}"
+                                }
+                            ],
+                            "id": "u:04f0e5aafaf0"
+                        }
+                    ],
+                    "onEvent": {
+                        "click": {
+                            "actions": [
+                                {
+                                    "actionType": "custom",
+                                    "script": " if(window.innerWidth < 768){ document.querySelector('.cms_posts-list').classList.remove('cms_posts-sidebar-open');document.querySelector('.isInset').classList.remove('inset-0') }"
+                                }
+                            ]
+                        }
+                    },
+                    "className": {
+                        "absolute isInset": "true",
+                        "inset-0": "${window:innerWidth < 768}"
+                    },
+                    "id": "u:10896530250e"
+                }
+            ],
+            "className": "h-full",
+            "onEvent": {
+                "init": {
+                    "actions": [
+                        {
+                            "actionType": "setValue",
+                            "args": {
+                                "value": {
+                                    "isVisible": false,
+                                    "additionalFilters": [
+                                        "organizations_parents",
+                                        "in",
+                                        []
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "context": {},
+        "isLookup": true
+    },
+    "id": "u:b7167e2fcaf0",
+    "name": "page_cms_posts_list",
+    "bodyClassName": {
+        "p-0 cms_posts-sidebar cms_posts-list cms_posts-sidebar-open": "true",
+        "cms_posts-pc cms_posts-minwidth": "${window:innerWidth > 768}",
+        "cms_posts-mobile": "${window:innerWidth < 768}"
+    },
+    "asideResizor": false,
+    "pullRefresh": {
+        "disabled": true
+    },
+    "css": {
+        ".page-list-grid": {
+            "padding": "0px"
+        },
+        ".pcCss": {
+            "top": "90px",
+            "left": "0px"
+        },
+        ".mobileCss": {
+            "top": "50px",
+            "left": "0px",
+            "padding-bottom": "65px"
+        },
+        ".cms_posts-list.cms_posts-sidebar.cms_posts-sidebar-open.cms_posts-pc": {
+            "margin-left": "250px"
+        },
+        ".cms_posts-sidebar-wrapper": {
+            "transition": "0.5s ease transform",
+            "will-change": "transform",
+            "transform": "translate(-100%,0)",
+            "-webkit-transform": "translate(-100%,0)",
+            "-moz-transform": "translate(-100%,0)",
+            "-ms-transform": "translate(-100%,0)",
+            "-o-transform": "translate(-100%,0)",
+            "width": "250px"
+        },
+        ".cms_posts-list.cms_posts-sidebar-open .cms_posts-sidebar-wrapper": {
+            "transform": "translate(0,0)",
+            "-webkit-transform": "translate(0,0)",
+            "-moz-transform": "translate(0,0)",
+            "-ms-transform": "translate(0,0)",
+            "-o-transform": "translate(0,0)"
+        },
+        ".cms_posts-minwidth": {
+            "min-width": "388px"
+        },
+        "body.zoom-extra-large .cms_posts-list.cms_posts-mobile .antd-Tree": {
+            "max-height": "calc(100vh - 347px) !important",
+            "overflow": "auto !important"
+        },
+        "body.zoom-large .cms_posts-list.cms_posts-mobile .antd-Tree": {
+            "max-height": "calc(100vh - 271px) !important",
+            "overflow": "auto !important"
+        },
+        "body.zoom-normal .cms_posts-list.cms_posts-mobile .antd-Tree": {
+            "max-height": "calc(100vh - 174px) !important",
+            "overflow": "auto !important"
+        }
+    },
+    "style": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px"
+    }
+}

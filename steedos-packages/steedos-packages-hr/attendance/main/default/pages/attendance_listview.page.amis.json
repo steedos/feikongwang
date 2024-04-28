@@ -1,0 +1,239 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "input-month",
+            "id": "u:9ade538b4dc9",
+            "name": "month",
+            "label": "打卡月份",
+            "value": "${NOW()}",
+            "clearable": false,
+            "onEvent": {
+                "change": {
+                    "actions": [
+                        {
+                            "actionType": "custom",
+                            "script": "/* 自定义JS使用说明：\n  * 1.动作执行函数doAction，可以执行所有类型的动作\n  * 2.通过上下文对象context可以获取当前组件实例，例如context.props可以获取该组件相关属性\n  * 3.事件对象event，在doAction之后执行event.stopPropagation();可以阻止后续动作执行\n*/\nconst myMsg = '我是自定义JS';\ndoAction({\n  actionType: 'setValue',\n  args: {\n    value: event.data.month\n  },\n  componentId: \"calendar_year_month\"\n});\n"
+                        }
+                    ]
+                }
+            },
+            "className": "",
+            "labelClassName": "bg-white flex justify-center",
+            "inputClassName": "date_month",
+            "staticClassName": "",
+            "mode": "horizontal",
+            "size": "full"
+        },
+        {
+            "type": "service",
+            "id": "u:80ca0aa3182c",
+            "body": [
+                {
+                    "type": "container",
+                    "body": [
+                        {
+                            "type": "calendar",
+                            "todayActiveStyle": {
+                                "backgroundColor": "#007dff !important",
+                                "color": "#f8f9fa",
+                                "border": "none"
+                            },
+                            "schedules": "${schedules}",
+                            "id": "calendar_year_month",
+                            "largeMode": false,
+                            "scheduleAction": {},
+                            "onEvent": {
+                                "change": {
+                                    "actions": [
+                                        {
+                                            "actionType": "custom",
+                                            "script": "\nvar clickDate = new Date();\nif (event.data.value) {\n  clickDate = new Date(parseInt(event.data.value) * 1000);\n}\n// 使用 Date 对象的相关方法获取年、月、日\nvar year = clickDate.getFullYear(); // 四位数年份\nvar month = (\"0\" + (clickDate.getMonth() + 1)).slice(-2); // 月份，从 0 开始计数需要加 1，并保持两位数格式\nvar day = (\"0\" + clickDate.getDate()).slice(-2); // 日，保持两位数格式\n// 拼接年月日为 YYYY-MM-DD 格式\nvar clickDate = year + \"-\" + month + \"-\" + day;\n\nvar clickRecord = _.filter(event.data.schedules, function (o) { return o.date === clickDate; });\n\nvar start_work = clickRecord && clickRecord[0] && clickRecord[0]._startTime;\nvar end_work = clickRecord && clickRecord[0] && clickRecord[0]._endTime;\nvar status = clickRecord && clickRecord[0] && clickRecord[0]._status;\ndoAction({\n    \"actionType\": \"setValue\",\n    \"args\": {\n      \"value\": {\n        \"start_work\": start_work,\n        \"end_work\": end_work,\n        \"status\": status\n      }\n    },\n    \"componentId\": \"attendance_listview\"\n});\n\n\n"
+                                        }
+                                    ]
+                                }
+                            },
+                            "className": "calendar_header",
+                            "name": "calendar_year_month"
+                        },
+                        {
+                            "type": "html",
+                            "html": "&ensp;&ensp;<span class=\"antd-ScheduleCalendar-icon bg-danger static inline-block\" style='transform: initial'></span> 旷工 &ensp;<span class=\"antd-ScheduleCalendar-icon bg-red-300 static inline-block\" style='transform: initial'></span> 缺卡/补卡 &ensp;<span class=\"antd-ScheduleCalendar-icon bg-yellow-300 static inline-block\" style='transform: initial'></span> 迟到早退 &ensp;&ensp; <span style='display: block'></span> &ensp;&ensp;<span class=\"antd-ScheduleCalendar-icon bg-primary static inline-block\" style='transform: initial'></span> 正常 &ensp;<span class=\"antd-ScheduleCalendar-icon bg-cyan-400 static inline-block\" style='transform: initial'></span> 请假/加班/出差/外出",
+                            "id": "u:3c2b44a26679",
+                            "style": {
+                                "paddingTop": "0px",
+                                "paddingRight": "0px",
+                                "paddingBottom": "0px",
+                                "paddingLeft": "0px",
+                                "color": "#a8a5a5"
+                            }
+                        }
+                    ],
+                    "style": {
+                        "position": "static",
+                        "display": "block",
+                        "background": "#ffffff",
+                        "paddingBottom": "10px",
+                        "radius": {
+                            "top-left-border-radius": "0.5rem",
+                            "top-right-border-radius": "0.5rem",
+                            "bottom-left-border-radius": "0.5rem",
+                            "bottom-right-border-radius": "0.5rem"
+                        }
+                    },
+                    "wrapperBody": false,
+                    "id": "u:c37ec5dddff4",
+                    "isFixedHeight": false,
+                    "isFixedWidth": false
+                }
+            ],
+            "api": {
+                "url": "${context.rootUrl}/graphql?month=${month}",
+                "method": "post",
+                "headers": {
+                    "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                },
+                "requestAdaptor": "let input_month = api.data.month;\nconst userId = api.data.context.userId;\nlet year;\nlet month;\n\nif (typeof input_month === 'string') {\n  if (typeof parseInt(input_month) === 'number') {\n    input_month = new Date(parseInt(input_month)*1000);\n    year = input_month.getFullYear();\n    month = input_month.getMonth() + 1;\n    month = month < 10 ? \"0\" + month : month;\n  } else {\n    const year_month = input_month.split(\"-\");\n    year = year_month[0];\n    month = year_month[1];\n  }\n}else {\n  year = input_month.getFullYear();\n  month = input_month.getMonth() + 1;\n  month = month < 10 ? \"0\" + month : month;\n}\n\nlet last_day = new Date(year, month, 0).getDate();\n\nconst start_time = year + '-' + month + '-' + '01' + \"T00:00:00.000Z\";\nconst end_time = year + '-' + month + '-' + last_day + \"T00:00:00.000Z\";\nconst query = `{rows:attendance_daily(filters:[[\\\"user\\\", \\\"=\\\",\\\"`+userId+`\\\"],[\\\"date\\\", \\\"between\\\", [\\\"` + start_time + `\\\",\\\"` + end_time +`\\\"]]],sort:\\\"date desc\\\"){user,status,date,start,end,remark, company,department,_display:_ui{status, start, end}}}`\napi.data.query = query;\n// console.log('aa==>',api)\nreturn api;",
+                "sendOn": "!!this.month",
+                "adaptor": "\nconst rows = payload.data.rows;\nconst schedules = [];\n_.forEach(rows, (item) => {\n  let date = item.date;\n  let startTime = item._display.start;\n  let endTime = item._display.end;\n  let status = item._display.status;\n  var pattern = /[\\u4e00-\\u9fa5a-zA-Z]/; // 匹配汉字或字母\n  if (!pattern.test(status)) {\n    status = '';\n  }\n  const statusArray = [\n    { \"label\": \"正常\", \"value\": \"normal\", \"className\":\"bg-primary\" },\n    { \"label\": \"迟到\", \"value\": \"late\", \"className\": \"bg-yellow-300\"},\n    { \"label\": \"早退\", \"value\": \"early\", \"className\": \"bg-yellow-300\" },\n    { \"label\": \"旷工\", \"value\": \"absent\", \"className\": \"bg-danger\" },\n    { \"label\": \"缺卡\", \"value\": \"lack\", \"className\": \"bg-red-300\" },\n    { \"label\": \"请假\", \"value\": \"leave\", \"className\": \"bg-cyan-400\" },\n    { \"label\": \"外出\", \"value\": \"out\", \"className\": \"bg-cyan-400\" },\n    { \"label\": \"出差\", \"value\": \"business\", \"className\": \"bg-cyan-400\" },\n    { \"label\": \"补卡\", \"value\": \"supplement\", \"className\": \"bg-red-300\" }\n  ];\n  const currentStatus = _.filter(statusArray, function (o) { return o.value === item.status[0]; });\n  const content = currentStatus[0] && currentStatus[0].label;\n  const className = currentStatus[0] && currentStatus[0].className;\n\n  const currentDate = new Date();\n  let formattedDate = currentDate.toISOString();\n  formattedDate = formattedDate.slice(0, 10);\n  const attendanceDate = item.date.slice(0, 10);\n  // 当天考勤不在视图上显示出来\n  if (attendanceDate !== formattedDate) {\n    schedules.push(\n      {\n        date: date.slice(0, 10),\n        _status: status,\n        startTime: startTime || (attendanceDate + ' ' + '00:00:00'),\n        _startTime: startTime,\n        endTime: endTime || (attendanceDate + ' ' + '00:00:00'),\n        _endTime: endTime,\n        content,\n        className\n      }\n    )\n  } \n})\npayload.data.schedules = schedules;\n\nreturn payload;\n    ",
+                "data": {
+                    "month": "${month}",
+                    "context": "${context}"
+                },
+                "messages": {}
+            },
+            "messages": {}
+        },
+        {
+            "type": "container",
+            "id": "u:c1f4f2d0777a",
+            "body": [
+                {
+                    "type": "tpl",
+                    "id": "u:bad7b941c34f",
+                    "tpl": "<p style='text-overflow:ellipsis; white-space:nowrap;  overflow:hidden; width:80%'>考勤状态：${status}</p>",
+                    "inline": true,
+                    "wrapperComponent": "h2"
+                },
+                {
+                    "type": "divider",
+                    "id": "u:88017ba8f9ea",
+                    "className": "m-xs"
+                },
+                {
+                    "type": "service",
+                    "body": [
+                        {
+                            "type": "tpl",
+                            "tpl": "上班：${start_work || start}",
+                            "inline": false,
+                            "wrapperComponent": "",
+                            "id": "start_work",
+                            "style": {
+                                "fontSize": "16px"
+                            }
+                        },
+                        {
+                            "type": "tpl",
+                            "tpl": "下班：${end_work || end}",
+                            "inline": false,
+                            "wrapperComponent": "",
+                            "id": "u:0f54140449af",
+                            "style": {
+                                "fontSize": "16px"
+                            }
+                        }
+                    ],
+                    "id": "u:d983c101b16b",
+                    "api": {
+                        "url": "${context.rootUrl}/graphql",
+                        "method": "post",
+                        "headers": {
+                            "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                        },
+                        "requestAdaptor": "// console.log('ba=>', api, event.data)\nconst userId = api.data.context.userId;\n\nconst date = new Date();\nconst year = date.getFullYear();\nlet month = date.getMonth() + 1;\nmonth = month < 10 ? \"0\" + month : month;\nlet day = date.getDate();\nday = day < 10 ? \"0\" + day : day;\n\n\nconst time = year + '-' + month + '-' + day + \"T00:00:00.000Z\";\nconst query = `{rows:attendance_daily(filters:[[\\\"user\\\", \\\"=\\\",\\\"` + userId +`\\\"],[\\\"date\\\", \\\"between\\\", [\\\"` + time + `\\\",\\\"` + time + `\\\"]]],sort:\\\"date desc\\\"){user,status,date,start,end,remark, company,department,_display:_ui{status,start,end}}}`\napi.data.query = query;\n\nreturn api;",
+                        "sendOn": "",
+                        "adaptor": "let start = '';\nlet end = '';\nif (payload.data.rows && payload.data.rows.length > 0) {\n  let status = payload.data.rows[0]._display.status;\n  const pattern = /[\\u4e00-\\u9fa5a-zA-Z]/; // 匹配汉字或字母\n  if (!pattern.test(status)) {\n    status = '';\n  }\n  // TODO: 取时分 =》 .slice(11, 16)\n  payload.data = {\n    start: payload.data.rows[0]._display.start || '未打卡',\n    end: payload.data.rows[0]._display.end || '未打卡',\n    status: status\n  }\n} else {\n  payload.data = {\n    start: '未打卡',\n    end: '未打卡',\n    status: ''\n  }\n}\nreturn payload;\n    ",
+                        "data": {
+                            "context": "${context}"
+                        },
+                        "messages": {}
+                    },
+                    "messages": {}
+                }
+            ],
+            "style": {
+                "position": "static",
+                "display": "block",
+                "marginTop": "0.5rem",
+                "radius": {
+                    "top-left-border-radius": "0.5rem",
+                    "top-right-border-radius": "0.5rem",
+                    "bottom-left-border-radius": "0.5rem",
+                    "bottom-right-border-radius": "0.5rem"
+                },
+                "background": "#ffffff",
+                "paddingTop": "1rem",
+                "paddingRight": "1rem",
+                "paddingBottom": "1rem",
+                "paddingLeft": "1rem"
+            },
+            "wrapperBody": false,
+            "isFixedHeight": false,
+            "isFixedWidth": false
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {},
+        "calendar": "NOW()"
+    },
+    "id": "attendance_listview",
+    "style": {
+        "background": "#edebeb"
+    },
+    "asideResizor": false,
+    "pullRefresh": {
+        "disabled": true
+    },
+    "onEvent": {
+        "init": {
+            "weight": 0,
+            "actions": [
+                {
+                    "actionType": "custom",
+                    "script": "window.CreateObjectInstanceDraft = function (object_name) {\n  var object_workflow = _.find(Creator.object_workflows, function (item) {\n    return item.object_name === object_name;\n  })\n  if (!object_workflow) {\n    toastr.error(object_name + '对象没有相关流程');\n    return ;\n  }\n  var flowId = object_workflow.flow_id;\n  var url = Steedos.absoluteUrl() + 'api/workflow/v2/draft';\n  var data = {\n    instance: {\n      flow: flowId,\n      applicant: Meteor.userId(),\n      space: Session.get('spaceId')\n    }\n  };\n  data = JSON.stringify(data);\n  $(document.body).addClass('loading');\n  $.ajax({\n    url: url,\n    type: 'POST',\n    async: true,\n    data: data,\n    dataType: 'json',\n    processData: false,\n    contentType: 'application/json',\n    success: function (responseText, status) {\n      $(document.body).removeClass('loading');\n      if (responseText.errors) {\n        responseText.errors.forEach(function (e) {\n          toastr.error(e.errorMessage);\n        });\n        return;\n      }\n      var instance = responseText.instance;\n      // 跳转到APPS草稿\n      // Steedos.openWindow(Steedos.absoluteUrl('workflow/space/' + Session.get('spaceId') + '/draft/' + instance._id))\n      Steedos.openWindow(Steedos.absoluteUrl('/app/' + FlowRouter.current().params.app_id + '/instances/view/' + instance._id + '?display=' + FlowRouter.current().queryParams.display + '&side_object=instances&side_listview_id=draft'));\n    },\n    error: function (xhr, msg, ex) {\n      $(document.body).removeClass('loading');\n      toastr.error(msg);\n    }\n  });\n}"
+                }
+            ]
+        }
+    },
+    "css": {
+        ".calendar_header .rdtPicker": {
+            "width": "100%"
+        },
+        ".calendar_header .antd-DateCalendar": {
+            "width": "100%",
+            "border-width": "0px"
+        },
+        ".calendar_header table thead tr:first-child": {
+            "display": "none"
+        },
+        ".date_month .antd-DatePicker": {
+            "border-radius": "inherit"
+        },
+        ".antd-ScheduleCalendar .rdt .rdtPicker tr td.rdtActive:hover":{
+            "background": "transparent"
+        },
+        ".antd-ScheduleCalendar .rdt .rdtPicker tr td.rdtActive > span":{
+            "background-color": "#e5e5e5 !important",
+            "color": "black"
+        }
+    },
+    "className": "overflow-auto"
+}

@@ -1,0 +1,22 @@
+name: status
+data_type: text
+generated: false
+group: 在职信息
+index: false
+is_name: false
+is_wide: false
+label: 员工状态
+filterable: true
+multiple: false
+options:
+  - label: 试用
+    value: trail
+  - label: 正式
+    value: in
+  - label: 离职
+    value: out
+primary: false
+required: false
+sort_no: 155
+sortable: false
+type: select

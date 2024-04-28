@@ -1,0 +1,72 @@
+name: 假期余额情况.用户
+allowCreate: false
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: false
+allowDeleteFiles: true
+allowEdit: false
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: false
+field_permissions:
+  - field: name
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: false
+    editable: false
+  - field: staff
+    readable: true
+    editable: true
+  - field: leave_type
+    readable: true
+    editable: true
+  - field: leave_days
+    readable: true
+    editable: true
+  - field: leave_remain_days
+    readable: true
+    editable: true
+  - field: leave_used_days
+    readable: true
+    editable: true
+  - field: freeze_days
+    readable: true
+    editable: true
+  - field: leave_year
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true

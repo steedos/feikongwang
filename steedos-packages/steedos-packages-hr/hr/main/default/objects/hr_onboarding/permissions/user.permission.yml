@@ -1,0 +1,108 @@
+name: user_hr_onboarding
+allowCreate: false
+allowCreateFiles: true
+allowCreateListViews: true
+allowDelete: false
+allowDeleteFiles: true
+allowEdit: false
+allowEditFiles: true
+allowRead: true
+allowReadFiles: true
+modifyAllRecords: false
+permission_set_id: user
+viewAllFiles: true
+viewAllRecords: false
+field_permissions:
+  - field: address
+    readable: true
+    editable: true
+  - field: birth
+    readable: true
+    editable: true
+  - field: company
+    readable: true
+    editable: true
+  - field: cpf_account
+    readable: true
+    editable: true
+  - field: date
+    readable: true
+    editable: true
+  - field: department
+    readable: true
+    editable: true
+  - field: email
+    readable: true
+    editable: true
+  - field: first_participation
+    readable: true
+    editable: true
+  - field: gender
+    readable: true
+    editable: true
+  - field: identify
+    readable: true
+    editable: true
+  - field: job_title
+    readable: true
+    editable: true
+  - field: manager
+    readable: true
+    editable: true
+  - field: marrige
+    readable: true
+    editable: true
+  - field: name
+    readable: true
+    editable: true
+  - field: number
+    readable: true
+    editable: true
+  - field: phone
+    readable: true
+    editable: true
+  - field: political
+    readable: true
+    editable: true
+  - field: position_status
+    readable: true
+    editable: true
+  - field: regularization_date
+    readable: true
+    editable: true
+  - field: social_security_account
+    readable: true
+    editable: true
+  - field: trial_period
+    readable: true
+    editable: true
+  - field: venue
+    readable: true
+    editable: true
+  - field: owner
+    readable: false
+    editable: false
+  - field: created
+    readable: true
+    editable: false
+  - field: created_by
+    readable: true
+    editable: false
+  - field: modified
+    readable: true
+    editable: false
+  - field: modified_by
+    readable: true
+    editable: false
+  - field: locked
+    readable: false
+    editable: false
+  - field: company_id
+    readable: false
+    editable: false
+  - field: company_ids
+    readable: false
+    editable: false
+  - field: instance_state
+    readable: true
+    editable: false

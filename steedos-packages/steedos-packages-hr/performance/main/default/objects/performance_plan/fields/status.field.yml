@@ -1,0 +1,17 @@
+name: status
+label: 状态
+type: select
+defaultValue: unplayed
+options: 
+  - label: 未开始
+    value: unplayed
+    color: cfd3d7
+  - label: 进行中
+    value: ongoing
+    color: 49d181
+  - label: 已结束
+    value: finished
+    color: e99695
+sort_no: 140
+visible_on: "${global.mode === 'read' ? true : false}"
+filterable: true

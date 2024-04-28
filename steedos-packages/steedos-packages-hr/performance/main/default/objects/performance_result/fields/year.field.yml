@@ -1,0 +1,5 @@
+name: year
+label: 年度
+type: text
+sort_no: 90
+filterable: true

@@ -1,0 +1,15 @@
+name: production_date
+group: 采购信息
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 出厂日期
+omit: false
+readonly: false
+required: false
+searchable: false
+sort_no: 220
+sortable: false
+type: date

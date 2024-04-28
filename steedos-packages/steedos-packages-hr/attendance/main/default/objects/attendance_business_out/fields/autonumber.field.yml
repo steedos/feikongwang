@@ -1,0 +1,12 @@
+name: autonumber
+filterable: true
+formula: 'CC{YYYY}{MM}{DD}{0000}'
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 单据编号
+primary: false
+sort_no: 120
+sortable: false
+type: autonumber

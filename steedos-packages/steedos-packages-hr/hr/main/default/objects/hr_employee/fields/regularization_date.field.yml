@@ -1,0 +1,5 @@
+name: regularization_date
+group: 在职信息
+label: 转正日期
+sort_no: 310
+type: date

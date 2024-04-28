@@ -1,0 +1,6 @@
+name: suppliers
+label: 供应商
+type: lookup
+reference_to: accounts
+multiple: true
+sort_no: 120

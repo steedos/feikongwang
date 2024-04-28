@@ -1,0 +1,14 @@
+name: end_time
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 结束时间
+primary: false
+required: true
+sort_no: 160
+sortable: false
+type: datetime
+amis:
+  format: "YYYY-MM-DDTHH:mm:00.000Z"

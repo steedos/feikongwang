@@ -1,0 +1,173 @@
+[
+    {
+        "_id": "${space_id}_62623e9b87e5c50032d9bdb8",
+        "name": "建设工程合同",
+        "code": "001",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:23.346Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:23.346Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9d87e5c50032d9bdb9",
+        "name": "买卖合同",
+        "code": "002",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:24.498Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:24.498Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9d87e5c50032d9bdba",
+        "name": "租赁合同",
+        "code": "003",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:25.29Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:25.29Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9d87e5c50032d9bdbb",
+        "name": "技术合同",
+        "code": "004",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:25.695Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:25.695Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9e87e5c50032d9bdbc",
+        "name": "委托合同",
+        "code": "005",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:26.092Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:26.092Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9e87e5c50032d9bdbd",
+        "name": "供用气合同",
+        "code": "006",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:26.494Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:26.494Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9f87e5c50032d9bdbe",
+        "name": "借款合同",
+        "code": "007",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:26.902Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:26.902Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9f87e5c50032d9bdbf",
+        "name": "运输合同",
+        "code": "008",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:27.299Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:27.299Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    },
+    {
+        "_id": "${space_id}_62623e9f87e5c50032d9bdc0",
+        "name": "其他合同",
+        "code": "009",
+        "space": "6260d4ff102bc40032fa9b15",
+        "owner": "ChW7jsxfBvpMavdK2",
+        "created": {
+            "$date": "2022-04-22T05:35:27.787Z"
+        },
+        "modified": {
+            "$date": "2022-04-22T05:35:27.787Z"
+        },
+        "created_by": "ChW7jsxfBvpMavdK2",
+        "modified_by": "ChW7jsxfBvpMavdK2",
+        "company_id": "DP3zmEYJ7AyJH47GT",
+        "company_ids": [
+            "DP3zmEYJ7AyJH47GT"
+        ]
+    }
+]

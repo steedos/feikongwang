@@ -1,0 +1,7 @@
+name: object_account_shortlisting
+desktop: true
+label: 入围信息
+mobile: true
+object: account_shortlisting
+permissions: []
+type: object

@@ -1,0 +1,4 @@
+name: plan_date
+label: 计划入围完成日期
+type: date
+sort_no: 150

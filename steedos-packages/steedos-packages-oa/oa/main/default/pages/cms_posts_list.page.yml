@@ -1,0 +1,13 @@
+name: cms_posts_list
+__filename: /workspace/cms/steedos-packages/cms/main/default/pages/cms_posts_list.page.yml
+is_active: true
+label: 知识列表
+object_name: cms_posts
+pageAssignments:
+  - type: orgDefault
+    page: cms_posts_list
+    desktop: true
+    mobile: true
+render_engine: amis
+type: list
+widgets: []

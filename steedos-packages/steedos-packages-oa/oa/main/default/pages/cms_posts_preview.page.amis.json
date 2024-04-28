@@ -1,0 +1,98 @@
+{
+    "type": "page",
+    "title": "Welcome to Steedos",
+    "body": [
+        {
+            "type": "service",
+            "body": [
+                {
+                    "type": "wrapper",
+                    "body": [
+                        {
+                            "type": "tpl",
+                            "tpl": "<b>${name}</b>",
+                            "id": "u:874f1bf37b23",
+                            "className": "post-title"
+                        }
+                    ],
+                    "id": "u:8c3d94e1fc9d",
+                    "className": "cms-header-wrapper"
+                },
+                {
+                    "type": "wrapper",
+                    "body": [
+                        {
+                            "type": "form",
+                            "body": [
+                                {
+                                    "type": "fieldSet",
+                                    "title": "通用",
+                                    "collapsable": true,
+                                    "body": [
+                                        {
+                                            "type": "input-rich-text",
+                                            "name": "htmlBody",
+                                            "id": "u:0b6c6a4d83d3",
+                                            "receiver": "${context.rootUrl}/s3/images",
+                                            "options": {
+                                                "plugins": [
+                                                    "autoresize"
+                                                ],
+                                                "statusbar": false,
+                                                "readonly": true,
+                                                "toolbar": false,
+                                                "menubar": false
+                                            }
+                                        }
+                                    ],
+                                    "headingClassName": "hidden"
+                                }
+                            ],
+                            "wrapWithPanel": false,
+                            "className": "steedos-amis-form bg-white",
+                            "actions": []
+                        }
+                    ],
+                    "id": "u:2c951f6c9be2",
+                    "className": "cms-content-wrapper"
+                }
+            ],
+            "id": "u:42d0a855834a",
+            "messages": {},
+            "api": {
+                "url": "${context.rootUrl}/service/api/@steedos-labs/oa/cms_posts/${postId}/preview",
+                "method": "get",
+                "messages": {},
+                "requestAdaptor": "",
+                "adaptor": ""
+            }
+        }
+    ],
+    "regions": [
+        "body"
+    ],
+    "data": {
+        "initialValues": {},
+        "appId": "builder",
+        "title": "",
+        "context": {}
+    },
+    "id": "u:e445c1147db0",
+    "css": {
+        ".cms-header-wrapper .post-title": {
+            "font-size": "150%",
+            "text-align": "center",
+            "width": "100%",
+            "display": "inline-block"
+        },
+        ".cms-content-wrapper .antd-RichTextControl": {
+            "border": "none"
+        },
+        ".cms-content-wrapper .antd-RichTextControl:hover": {
+            "border": "none"
+        },
+        ".cms-content-wrapper fieldset.antd-Collapse > legend.hidden":{
+            "display": "none!important"
+        }
+    }
+}

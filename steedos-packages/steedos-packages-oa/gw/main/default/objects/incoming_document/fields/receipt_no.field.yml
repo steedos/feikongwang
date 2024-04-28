@@ -1,0 +1,17 @@
+name: receipt_no
+filterable: false
+formula: 'SW-{YYYY}-{00000}'
+generated: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 收文号
+omit: false
+primary: false
+readonly: true
+required: false
+searchable: false
+sort_no: 120
+sortable: false
+type: autonumber

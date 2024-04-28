@@ -1,0 +1,17 @@
+name: all
+columns:
+  - field: name
+    width: '200'
+    wrap: true
+  - field: description
+    width: '300'
+    wrap: true
+  - field: weight
+  - field: performance_template
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

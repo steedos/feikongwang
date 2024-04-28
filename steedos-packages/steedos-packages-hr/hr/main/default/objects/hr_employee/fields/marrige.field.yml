@@ -1,0 +1,15 @@
+name: marrige
+data_type: text
+group: 其他信息
+label: 婚姻状况
+options:
+  - label: 已婚
+    value: married
+  - label: 未婚
+    value: unmarried
+  - label: 离异
+    value: divorce
+  - label: 其他
+    value: other
+sort_no: 340
+type: select

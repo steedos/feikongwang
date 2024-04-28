@@ -1,0 +1,5 @@
+name: performance_template
+label: 所属考核模版
+type: master_detail
+reference_to: performance_template
+sort_no: 130

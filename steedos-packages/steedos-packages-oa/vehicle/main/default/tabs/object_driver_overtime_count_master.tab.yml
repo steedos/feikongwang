@@ -1,0 +1,8 @@
+name: object_driver_overtime_count_master
+desktop: true
+label: 驾驶员加班统计
+mobile: true
+object: driver_overtime_count_master
+permissions: []
+icon: sales_cadence
+type: object

@@ -1,0 +1,7 @@
+name: principal
+label: 招标负责人
+type: lookup
+reference_to: space_users
+reference_to_field: user
+sort_no: 120
+defaultValue: "${_master.record.principal}"

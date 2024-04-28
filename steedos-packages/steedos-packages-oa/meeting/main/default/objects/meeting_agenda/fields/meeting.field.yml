@@ -1,0 +1,14 @@
+name: meeting
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 会议信息
+primary: false
+reference_to: meeting
+required: true
+sort_no: 160
+sortable: false
+type: master_detail
+write_requires_master_read: false

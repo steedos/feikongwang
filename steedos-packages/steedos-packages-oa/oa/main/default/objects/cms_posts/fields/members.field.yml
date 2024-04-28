@@ -1,0 +1,6 @@
+name: members
+type: object
+label: Members
+is_wide: true
+sort_no: 70
+visible_on: "{{formData.enable_post_permissions}}"

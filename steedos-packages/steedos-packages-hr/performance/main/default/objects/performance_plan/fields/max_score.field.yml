@@ -1,0 +1,8 @@
+name: max_score
+label: 最大分值
+type: number
+depend_on:
+  - type
+precision: 15
+scale: 0
+sort_no: 104

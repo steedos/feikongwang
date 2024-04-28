@@ -1,0 +1,20 @@
+name: all
+columns:
+  - field: project_program
+  - field: name
+  - field: principal
+  - field: bidding_number
+  - field: bidding_type
+  - field: bidding_date
+  - field: drawing_completing_date
+  - field: technical_bid_completing_date
+  - field: bidding_status
+  - field: created_by
+  - field: created
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

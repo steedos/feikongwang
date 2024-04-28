@@ -1,0 +1,23 @@
+name: attendance_balance
+description: 假期余额导入模板
+encoding: GB2312
+field_mappings:
+  - api_name: staff
+    header: 员工
+    matched_by: name
+  - api_name: company
+    header: 公司
+    matched_by: name
+  - api_name: department
+    header: 部门
+    matched_by: name
+  - api_name: leave_type
+    header: 假期类型
+    matched_by: name
+  - api_name: leave_year
+    header: 所属年度
+  - api_name: leave_days
+    header: 假期天数
+object_name: attendance_balance
+operation: insert
+value_separator: ','

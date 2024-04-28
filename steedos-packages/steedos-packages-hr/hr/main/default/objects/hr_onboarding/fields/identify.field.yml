@@ -1,0 +1,13 @@
+name: identify
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 身份证号码
+primary: false
+required: false
+sort_no: 120
+sortable: false
+type: text
+group: 其他信息

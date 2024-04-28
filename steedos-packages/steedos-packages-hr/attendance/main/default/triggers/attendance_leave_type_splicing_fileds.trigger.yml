@@ -1,0 +1,54 @@
+name: attendance_leave_type_splicing_fileds
+listenTo: attendance_leave_type
+when:
+  - afterInsert
+isEnabled: true
+handler: |-
+  // _ : lodash
+  // moment: moment
+  // validator: validator
+  // ctx
+  // objects
+  // services
+  // 根据假期类型名，和假期类型单位，更新假期类型name字段
+  const { doc } = ctx.params;
+  var vname;
+  let time_unit = (doc.minimum_unit==='hour')?'(小时)':'(天)'
+  if (doc.vacation_type === 'paid_annual_leave') {
+      vname = '带薪年休假' 
+  } else if (doc.vacation_type==='paid_sick_leave') {
+      vname = '带薪病假'
+  } else if (doc.vacation_type === 'sick_leave') {
+      vname = '病假'
+  } else if (doc.vacation_type === 'transfer_leave') {
+      vname = '调休假'
+  } else if (doc.vacation_type === 'leave') {
+      vname = '事假'
+  } else if (doc.vacation_type === 'family_leave') {
+      vname = '探亲假'
+  } else if (doc.vacation_type === 'marriage_leave') {
+      vname = '婚假'
+  } else if (doc.vacation_type === 'maternity_leave') {
+      vname = '产假'
+  } else if (doc.vacation_type === 'birth_leave') {
+      vname = '生育假'
+  } else if (doc.vacation_type === 'breastfeeding_leave') {
+      vname = '哺乳假'
+  } else if (doc.vacation_type === 'paternity_leave') {
+      vname = '陪产假'
+  } else if (doc.vacation_type === 'abortion_leave') {
+      vname = '流产假'
+  } else if (doc.vacation_type === 'bereavement_leave') {
+      vname = '丧假'
+  }
+
+  await ctx.broker.call(
+      'objectql.directUpdate',
+      {
+          objectName: 'attendance_leave_type',
+          doc: {
+              name: vname + time_unit
+          },
+          id: doc._id
+      }
+  );

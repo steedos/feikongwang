@@ -1,0 +1,54 @@
+name: attendance_overtime_afterUpdate
+listenTo: attendance_overtime
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  const { doc, attendance_overtime,previousDoc } = ctx.params;
+
+  const userId = doc.staff; 
+
+  const spaceId = doc.space;
+
+  // 查询考勤组
+
+  const attendance_group = await ctx.broker.call('objectql.find', {
+      objectName: 'attendance_group',
+      query: {
+          fields: ['attendance_rule_settings'],
+          filters: ["users", "contains", userId]
+      }
+  })
+
+  console.log("attendance_group", attendance_group);
+
+  // 工作时长
+
+  var working_hour = null
+
+  if (attendance_group.length > 0) {
+      // 查询考勤规则
+      const attendance_rule_settings = await ctx.broker.call('objectql.find', {
+          objectName: 'attendance_rule_settings',
+          query: {
+              filters: [["_id", "=", attendance_group[0].attendance_rule_settings], ["status", "=", "open"]]
+          }
+      })
+      working_hour = attendance_rule_settings[0].daily_hours
+  }
+   if (previousDoc.instance_state !== 'approved' && doc.instance_state ===
+  'approved'){
+      console.log("加班审批通过之后")
+       const updateAttendanceDailyOfWorking = await ctx.broker.call(
+      '@steedos-labs/attendance.workOvertimeSettlement',
+      {
+          "workOvertimeId":doc._id
+      },
+      {
+          meta: {
+              user: null
+          }
+      }
+  );
+
+  }

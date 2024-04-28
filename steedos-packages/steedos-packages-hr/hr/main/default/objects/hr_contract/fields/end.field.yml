@@ -1,0 +1,12 @@
+name: end
+filterable: true
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 合同结束日期
+primary: false
+required: true
+sort_no: 130
+sortable: false
+type: date

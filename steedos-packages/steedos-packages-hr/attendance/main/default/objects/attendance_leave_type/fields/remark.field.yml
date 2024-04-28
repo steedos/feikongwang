@@ -1,0 +1,6 @@
+name: remark
+is_wide: true
+label: 申请信息
+rows: 2
+sort_no: 140
+type: textarea

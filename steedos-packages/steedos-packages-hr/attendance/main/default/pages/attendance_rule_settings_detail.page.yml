@@ -1,0 +1,12 @@
+name: attendance_rule_settings_detail
+is_active: true
+label: 考勤规则详情页
+object_name: attendance_rule_settings
+pageAssignments:
+  - type: orgDefault
+    page: attendance_rule_settings_detail
+    desktop: true
+    mobile: true
+render_engine: amis
+type: record
+widgets: []

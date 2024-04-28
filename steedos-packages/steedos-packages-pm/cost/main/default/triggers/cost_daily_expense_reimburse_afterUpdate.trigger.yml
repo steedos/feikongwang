@@ -1,0 +1,57 @@
+name: cost_daily_expense_reimburse_afterUpdate
+listenTo: cost_daily_expense_reimburse
+when:
+  - afterUpdate
+isEnabled: true
+handler: >-
+  // _ : lodash
+
+  // moment: moment
+
+  // validator: validator
+
+  // ctx
+
+  // objects
+
+  // services
+
+  const { doc, previousDoc, userId, spaceId } = ctx.params
+
+  //审批状态为已审核
+
+  if (doc.instance_state === 'approved' && doc.instance_state !==
+  previousDoc.instance_state) {
+      //查询子表日常报销费用明细
+      const res = await ctx.broker.call('objectql.find', {
+          objectName: 'cost_schedule_reimburse_detail',
+          query: {
+              fields: ['_id', 'expend_type','cost_code'],
+              filters: ['daily_expense', '=', doc._id],
+          },
+      }
+      );
+      for (var ress of res) {
+          //带出我的费用
+          const mydoc = await ctx.broker.call('objectql.find', {
+              objectName: 'cost_reimburse_detail',
+              query: {
+                  fields: ['_id', 'status'],
+                  filters: ['_id', '=', ress.cost_code],
+              },
+          },
+          );
+          for (var mydocs of mydoc) {
+              const modifyStateDoc = await ctx.broker.call(
+                  'objectql.directUpdate',
+                  {
+                      objectName: 'cost_reimburse_detail',
+                      doc: {
+                          status: 'complete'
+                      },
+                      id: mydocs._id
+                  },
+              );
+          }
+      }  
+  }

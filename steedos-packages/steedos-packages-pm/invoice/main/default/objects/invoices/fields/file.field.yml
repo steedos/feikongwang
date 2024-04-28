@@ -1,0 +1,7 @@
+name: file
+label: 发票文件
+type: file
+sort_no: 300
+required: false
+readonly: true
+visible_on: "{{global.mode ==='read' ? true : false}}"

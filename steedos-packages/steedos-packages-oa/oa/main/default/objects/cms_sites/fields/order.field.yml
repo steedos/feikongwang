@@ -1,0 +1,4 @@
+name: order
+label: Sort Number
+type: number
+sort_no: 50

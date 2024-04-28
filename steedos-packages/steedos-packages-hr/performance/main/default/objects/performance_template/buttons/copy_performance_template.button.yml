@@ -1,0 +1,94 @@
+name: copy_performance_template
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "复制模版",
+              "id": "u:copy_performance_template",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "dialog",
+                              "dialog": {
+                                  "type": "dialog",
+                                  "title": "复制模版",
+                                  "body": [
+                                      {
+                                          "type": "tpl",
+                                          "tpl": "<p>确认复制模版吗？</p>",
+                                          "inline": false,
+                                          "id": "u:03ce6398d179"
+                                      }
+                                  ],
+                                  "showCloseButton": true,
+                                  "showErrorMsg": true,
+                                  "showLoading": true,
+                                  "id": "u:1f923fbd22db",
+                                  "onEvent": {
+                                      "confirm": {
+                                          "weight": 0,
+                                          "actions": [
+                                              {
+                                                  "args": {
+                                                      "options": {},
+                                                      "api": {
+                                                          "url": "/service/api/performance/template/duplicate",
+                                                          "method": "post",
+                                                          "messages": {
+                                                              "success": "复制成功"
+                                                          },
+                                                          "headers": {
+                                                              "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                                          },
+                                                          "data": {
+                                                              "_id": "${recordId}"
+                                                          },
+                                                          "requestAdaptor": ""
+                                                      }
+                                                  },
+                                                  "outputVar": "responseResult",
+                                                  "actionType": "ajax"
+                                              },
+                                              {
+                                                  "actionType": "broadcast",
+                                                  "args": {
+                                                      "eventName": "@data.changed.performance_template"
+                                                  },
+                                                  "data": {
+                                                      "objectName": "performance_template"
+                                                  }
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "closeOnEsc": false,
+                                  "dataMapSwitch": false
+                              }
+                          }
+                      ]
+                  }
+              }
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:a8821791db55"
+  }
+is_enable: true
+label: 复制模版
+'on': record
+type: amis_button
+visible: true

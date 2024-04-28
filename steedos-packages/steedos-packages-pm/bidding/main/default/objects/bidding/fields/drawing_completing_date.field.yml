@@ -1,0 +1,4 @@
+name: drawing_completing_date
+label: 设计图纸完成时间
+type: date
+sort_no: 180

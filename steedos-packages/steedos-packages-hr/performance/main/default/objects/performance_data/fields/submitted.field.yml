@@ -1,0 +1,6 @@
+name: submitted
+defaultValue: false
+label: 已提交
+sort_no: 200
+type: boolean
+visible_on: "${global.mode === 'read' ? true : false}"

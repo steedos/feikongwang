@@ -1,0 +1,10 @@
+name: administration_stamp_lend
+custom: true
+enable_api: true
+enable_inline_edit: true
+enable_instances: true
+enable_workflow: true
+icon: work_step
+is_enable: true
+label: 印章外借
+version: 2

@@ -1,0 +1,38 @@
+name: assets_card
+label: 资产名称
+reference_to: assets_card
+searchable: true
+required: true
+sort_no: 110
+type: lookup
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function() {
+    let type = []
+    var queryResult = Steedos.authRequest(`/graphql`, {
+        type: 'POST', async: false, 
+        data: JSON.stringify({
+          query: `{ asset_type(filters: ["separate_accounting","=", false]){ _id, name } }`
+        })
+    });
+    type = queryResult && queryResult.data && queryResult.data.asset_type;
+    let typeIds = []
+    for(var typeId of type){
+      typeIds.push(typeId._id)
+    }
+    console.log('type: ', type)
+    console.log("typeIds",typeIds)
+    return [['asset_type', 'contains', typeIds], ['status', 'in', ['在库']],['is_active','=',true],['quantity','>',0]]
+  }
+amis:
+  autoFill:
+    fillMapping:
+      "asset_quantity": "${quantity}"
+      "material_group": "${material_group}"
+    api:
+      url: "${context.rootUrl}/graphql?a=1"
+      method: post
+      headers: 
+        Authorization: "Bearer ${context.tenantId},${context.authToken}"
+      data:
+        query: "{rows:assets_card(filters: [[\"_id\", \"=\", \"${assets_card}\"]], top: 1){name,quantity,material_group}}"
+      adaptor: "console.log('11==> ', payload);payload.data.asset_quantity=payload.data.rows[0].quantity; payload.data.material_group=payload.data.rows[0].material_group;console.log('12==> ', payload); return payload; "

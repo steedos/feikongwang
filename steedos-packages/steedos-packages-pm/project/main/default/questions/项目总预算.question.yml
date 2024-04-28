@@ -1,0 +1,33 @@
+name: 项目总预算
+created_at: 2023-11-24T02:39:27.472Z
+creator_id: 655ff51af084ab05cc5731bc
+database_id: '1'
+dataset_query:
+  type: query
+  query:
+    source-table: project
+    aggregation:
+      - - sum
+        - - field
+          - project.project_cost_budget
+          - null
+  database: '1'
+display: scalar
+entity_id: 65600cdff084ab05cc5731e4
+id: 65600cdff084ab05cc5731e4
+parameter_mappings: []
+parameters: []
+query_type: query
+result_metadata:
+  - base_type: type/Integer
+    display_name: 预算成本总额(元)合计
+    effective_type: type/Integer
+    field_ref:
+      - aggregation
+      - 0
+    name: sum
+    semantic_type: null
+    source: aggregation
+table_id: project
+updated_at: 2023-11-24T02:39:27.472Z
+visualization_settings: '{}'

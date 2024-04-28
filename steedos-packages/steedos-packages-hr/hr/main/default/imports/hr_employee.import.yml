@@ -1,0 +1,63 @@
+name: hr_employee
+description: 花名册数据导入模版
+encoding: GB2312
+field_mappings:
+  - api_name: name
+    header: 员工姓名（男/女）
+  - api_name: gender
+    header: 员工性别
+  - api_name: number
+    header: 工号
+  - api_name: identify
+    header: 身份证号码
+  - api_name: phone
+    header: 手机号码
+  - api_name: email
+    header: 邮箱
+  - api_name: status
+    header: 员工状态（试用/正式/离职）
+  - api_name: position_status
+    header: 员工类型（全职/实习/其他）
+  - api_name: company
+    header: 所属公司
+    matched_by: name
+  - api_name: department
+    header: 所属部门
+    matched_by: name
+  - api_name: manager
+    header: 直接上级
+    matched_by: name
+  - api_name: job_title
+    header: 职位
+  - api_name: date
+    header: 入职日期
+  - api_name: venue
+    header: 办公地点
+  - api_name: trial_period
+    header: 试用期（月）
+  - api_name: regularization_date
+    header: 转正日期
+  - api_name: actual_date
+    header: 实际转正日期
+  - api_name: birth
+    header: 出生日期
+  - api_name: marrige
+    header: 婚姻状况（已婚/未婚/离异/其他）
+  - api_name: political
+    header: 政治面貌（团员/党员/群众/其他）
+  - api_name: first_participation
+    header: 首次参与工作时间
+  - api_name: resign_date
+    header: 离职日期
+  - api_name: address
+    header: 现居住地址
+  - api_name: social_security_account
+    header: 社保账号
+  - api_name: cpf_account
+    header: 公积金账户
+  - api_name: account
+    header: 系统账户
+    matched_by: name
+object_name: hr_employee
+operation: insert
+value_separator: ','

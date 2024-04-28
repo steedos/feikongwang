@@ -1,0 +1,18 @@
+name: state
+label: 项目状态
+type: select
+sort_no: 
+options: 
+ - label: 未获取
+   value: 未获取
+ - label: 流失
+   value: 流失
+ - label: 进行中
+   value: 进行中
+ - label: 竣工结算
+   value: 竣工结算
+ - label: 关闭
+   value: 关闭
+ - label: 已中转
+   value: 已中转
+visible_on: "{{false}}"

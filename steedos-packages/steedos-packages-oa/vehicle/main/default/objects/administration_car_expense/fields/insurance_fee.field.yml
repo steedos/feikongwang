@@ -1,0 +1,7 @@
+name: insurance_fee
+label: 保险费（元）
+precision: 18
+scale: 2
+sort_no: 110
+type: currency
+

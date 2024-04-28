@@ -1,0 +1,8 @@
+name: administration_car
+custom: true
+enable_api: true
+enable_inline_edit: true
+icon: segments
+is_enable: true
+label: 车辆信息
+version: 2

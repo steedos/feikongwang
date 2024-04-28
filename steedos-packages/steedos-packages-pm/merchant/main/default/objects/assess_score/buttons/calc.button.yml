@@ -1,0 +1,59 @@
+name: calc
+amis_schema: |-
+  {
+      "type": "service",
+      "body": [
+          {
+              "type": "button",
+              "label": "计算分数",
+              "id": "u:calc",
+              "editorState": "default",
+              "onEvent": {
+                  "click": {
+                      "weight": 0,
+                      "actions": [
+                          {
+                              "actionType": "ajax",
+                              "outputVar": "responseResult",
+                              "args": {
+                                  "options": {},
+                                  "api": {
+                                      "url": "/api/evaluation/calc",
+                                      "method": "post",
+                                      "requestAdaptor": "",
+                                      "adaptor": "",
+                                      "messages": {},
+                                      "headers": {
+                                          "Authorization": "Bearer ${context.tenantId},${context.authToken}"
+                                      }
+                                  }
+                              }
+                          },
+                          {
+                              "componentId": "listview_evaluation_score",
+                              "actionType": "reload",
+                              "dataMergeMode": "merge"
+                          }
+                      ]
+                  }
+              }
+          }
+      ],
+      "regions": [
+          "body"
+      ],
+      "data": {
+          "context": {},
+          "dataComponentId": "",
+          "record_id": "",
+          "record": {},
+          "permissions": {}
+      },
+      "bodyClassName": "p-0",
+      "id": "u:2c9b12a4ac47"
+  }
+is_enable: true
+label: 计算分数
+'on': list
+type: amis_button
+visible: true

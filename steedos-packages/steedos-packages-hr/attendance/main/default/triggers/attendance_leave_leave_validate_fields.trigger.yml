@@ -1,0 +1,17 @@
+name: attendance_leave_leave_validate_fields
+listenTo: attendance_leave
+when:
+  - beforeInsert
+isEnabled: true
+handler: |-
+  // 请假之前 看是否有足够的假期余额
+  console.log("请假之前 看是否有足够的假期余额");
+  const { doc, attendance_leave } = ctx.params;
+  const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+  const spaceId = doc.space;
+  await  ctx.broker.call(
+      '@steedos-labs/attendance.processManagement_leave_validate_fields',
+      {
+          "doc": doc
+      }
+  );

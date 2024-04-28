@@ -1,0 +1,39 @@
+name: recent
+columns:
+  - field: name
+  - field: user
+  - field: company
+  - field: department
+  - field: days
+  - field: days_actual
+  - field: days_leave
+  - field: days_business
+  - field: days_out
+  - field: days_absent
+  - field: days_overtime
+  - field: late_count
+  - field: late
+  - field: leave_count
+  - field: leave
+  - field: remark
+filter_scope: space
+filters: []
+from_code_id: attendance_month.all
+label: 最近查看
+mobile_columns:
+  - field: name
+  - field: user
+  - field: days_actual
+scrolling_mode: standard
+searchable_fields:
+  - field: name
+  - field: user
+  - field: company
+  - field: department
+shared: true
+sort:
+  - field_name: name
+    order: desc
+sort_no: 100
+type: grid
+

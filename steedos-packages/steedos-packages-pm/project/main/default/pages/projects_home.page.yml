@@ -1,0 +1,7 @@
+name: projects_home
+is_active: true
+label: 计划首页
+pageAssignments: []
+render_engine: amis
+type: app
+widgets: []

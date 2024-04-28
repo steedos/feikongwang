@@ -1,0 +1,5 @@
+name: ocr_log
+label: 发票识别日志
+type: lookup
+reference_to: invoices_ocr_logs
+omit: true

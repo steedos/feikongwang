@@ -1,0 +1,25 @@
+name: state
+data_type: text
+# defaultValue: 还款中
+filterable: true
+generated: false
+group: 借款信息
+index: false
+is_name: false
+is_wide: false
+label: 借款状态
+multiple: false
+options:
+  - label: 还款中
+    value: 还款中
+    color: 91CC75
+  - label: 已还款
+    value: 已还款
+    color: F4A460
+primary: false
+required: false
+sort_no: 160
+readonly: true
+sortable: false
+type: select
+visible_on: "{{global.mode ==='read' ? true : false}}"

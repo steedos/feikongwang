@@ -1,0 +1,18 @@
+name: all
+label: 所有定标
+columns:
+  - field: project_program
+  - field: bidding
+  - field: simple_bidding
+  - field: name 
+  - field: principal
+  - field: purchase_type
+  - field: purchase_method
+  - field: created
+  - field: created_by
+filter_scope: space
+filters: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

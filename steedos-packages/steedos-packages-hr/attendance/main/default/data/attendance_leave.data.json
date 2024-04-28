@@ -1,0 +1,125 @@
+[
+    {
+      "_id": "${space_id}_65127bed3d30a1ad9e09504d",
+      "company": "${space_id}",
+      "date": "2023-09-26T06:34:22.461Z",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "name": "请婚假",
+      "leave_type": "${space_id}_6512790c3d30a1ad9e095046",
+      "days": 10,
+      "start": "2023-09-27T01:00:00.000Z",
+      "end": "2023-10-08T10:00:00.000Z",
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:36:29.897Z",
+      "modified": "2023-09-26T06:38:09.614Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JQSQ-2023-0001",
+      "instance_state": "draft",
+      "instances": [
+        {
+          "_id": "mT37SEhGSJXJoLmcY",
+          "state": "draft"
+        }
+      ],
+      "locked": true
+    },
+    {
+      "_id": "${space_id}_65127d293d30a1ad9e09504e",
+      "company": "${space_id}",
+      "date": "2023-09-26T06:40:43.447Z",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "name": "请年假",
+      "leave_type": "${space_id}_651277453d30a1ad9e095036",
+      "start": "2023-09-27T01:00:00.000Z",
+      "end": "2023-09-27T10:00:00.000Z",
+      "days": 1,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:41:45.558Z",
+      "modified": "2023-09-26T06:41:49.798Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JQSQ-2023-0002",
+      "instance_state": "draft",
+      "instances": [
+        {
+          "_id": "C3gMHQQ6ELt4WWLN8",
+          "state": "draft"
+        }
+      ],
+      "locked": true
+    },
+    {
+      "_id": "${space_id}_6512816ece97f9f8bb4b0157",
+      "company": "${space_id}",
+      "date": "2023-09-26T06:59:23.785Z",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "attendance_balance": "651279b73d30a1ad9e095048",
+      "name": "式",
+      "leave_type": "${space_id}_651277453d30a1ad9e095036",
+      "days": 1,
+      "start": "2023-09-25T16:00:00.000Z",
+      "end": "2023-09-26T16:00:00.000Z",
+      "displayAs": null,
+      "listName": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T06:59:58.911Z",
+      "modified": "2023-09-26T06:59:58.911Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JQSQ-2023-0003"
+    },
+    {
+      "_id": "${space_id}_651282a6f3a40dff226bf0c6",
+      "company": "${space_id}",
+      "date": "2023-09-26T00:00:00.000Z",
+      "department": "${space_id}",
+      "staff": "${space_owner_id}",
+      "attendance_balance": "651279b73d30a1ad9e095048",
+      "leave_type": "${space_id}_651277453d30a1ad9e095036",
+      "name": "测试",
+      "start": "2023-09-25T16:00:00.000Z",
+      "end": "2023-09-26T16:00:00.000Z",
+      "days": 1,
+      "displayAs": null,
+      "selectedRowResponseResult": null,
+      "space": "650931833a01c30a93e26339",
+      "created": "2023-09-26T07:05:10.792Z",
+      "modified": "2023-09-26T07:05:44.417Z",
+      "owner": "651250df641a5504eba8b692",
+      "created_by": "651250df641a5504eba8b692",
+      "modified_by": "651250df641a5504eba8b692",
+      "company_id": "650931833a01c30a93e26339",
+      "company_ids": [
+        "650931833a01c30a93e26339"
+      ],
+      "number": "JQSQ-2023-0004",
+      "instance_state": "pending",
+      "instances": [
+        {
+          "_id": "3uW5c5ZcSygqAcQbQ",
+          "state": "pending"
+        }
+      ],
+      "locked": true,
+      "leave_reason": ""
+    }
+  ]

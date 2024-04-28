@@ -1,0 +1,31 @@
+name: head_spaceuser
+filterable: true
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 责任人
+multiple: false
+omit: false
+readonly: false
+reference_to: space_users
+reference_to_field: user
+required: true
+searchable: true
+sort_no: 105
+sortable: false
+type: lookup
+depend_on:
+  - project
+filtersFunction: !!js/function |
+  function (filters, values) {
+      const project = values.project;
+      const queryResult = Steedos.authRequest(`/graphql`, {
+                          type: 'POST', async: false, 
+                          data: JSON.stringify({
+                            query: `{project(filters: ["_id","=", `+ JSON.stringify(project) + `]){others}}`
+                          })
+                        });
+      const projects = queryResult && queryResult.data && queryResult.data.project;
+      return [["user", "in", projects[0].others]]
+  }

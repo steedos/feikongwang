@@ -1,0 +1,36 @@
+rules:
+  - name: update_template_status
+    active: true
+    label: 更新考核模版状态
+    object_name: performance_template
+    time_triggers:
+      - number: 0
+        unit: hour
+        type: earlier_than
+        date_field: start_date
+        updates_field_actions:
+          - update_template_to_enable
+      - number: 0
+        unit: hour
+        type: later_than
+        date_field: end_date
+        updates_field_actions:
+          - update_template_to_disable
+    trigger_type: onCreateOrTriggeringUpdate
+fieldUpdates:
+  - name: update_template_to_enable
+    field_name: status
+    label: 将考核模版修改为“启用”
+    literal_value: enable
+    object_name: performance_template
+    operation: literal
+    target_object: performance_template
+  - name: update_template_to_disable
+    field_name: status
+    label: 将考核模版修改为“停用”
+    literal_value: disable
+    object_name: performance_template
+    operation: literal
+    target_object: performance_template
+notifications: []
+outboundMessages: []

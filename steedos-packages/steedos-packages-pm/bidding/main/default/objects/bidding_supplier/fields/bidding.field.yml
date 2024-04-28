@@ -1,0 +1,7 @@
+name: bidding
+filterable: true
+label: 招标名称
+reference_to: bidding
+sort_no: 100
+type: lookup
+visible_on: '{{ formData.simple_bidding ? false : true }}'

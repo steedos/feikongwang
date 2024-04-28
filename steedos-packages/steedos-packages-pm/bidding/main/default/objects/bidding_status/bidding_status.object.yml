@@ -1,0 +1,9 @@
+name: bidding_status
+label: 立项状态
+custom: true
+enable_api: true
+enable_search: true
+icon: display_text
+is_enable: true
+enable_enhanced_lookup: true
+version: 2

@@ -1,0 +1,25 @@
+name: all
+columns:
+  - name
+  - field: asset_number
+    width: '120'
+  - material_group
+  - asset_type
+  - field: warehouse
+    width: '120'
+  - dept
+  - field: status
+    width: '100'
+  - field: inventory
+    width: '100'
+  - field: attributes
+    width: '100'
+  - model
+  - field: quantity
+    width: '90'
+  - field: measurement_unit
+    width: '100'
+  - field: is_active
+    width: '120'
+label: 所有资产卡片
+shared: true

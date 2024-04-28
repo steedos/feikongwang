@@ -1,0 +1,337 @@
+[
+    {
+        "_id": "${space_id}_62fa021fcb9c8306a51b2a82",
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "amount": 100000,
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "contract": "${space_id}_6262243287e5c50032d9bda5",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "finished": false,
+        "name": "首付款",
+        "receipts_name": "pending",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-15T08:21:51.731Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T05:12:08.901Z"
+        },
+        "owner": "8qQ5TwdoY8fqo7tga",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "contract_amount": 500000,
+        "receipts_proportion": 0.2,
+        "due_date": {
+            "$date": "2022-03-01T00:00:00Z"
+        },
+        "_table": {
+            "_id": "${space_id}_62fa021fcb9c8306a51b2a82",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_62faf26ccb9c8306a51b2ac1",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount": 300000,
+        "amount_description": "公对公转账",
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_6262289287e5c50032d9bda7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-01-31T00:00:00Z"
+        },
+        "finished": true,
+        "name": "项目启动费用",
+        "receipts_name": "pending",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T01:27:08.651Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T03:55:51.825Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 3300000,
+        "receipts_proportion": 0.09090909090909091,
+        "_table": {
+            "_id": "${space_id}_62faf26ccb9c8306a51b2ac1",
+            "_code": "收款计划"
+        }
+    },
+    {
+        "_id": "${space_id}_62faf2f2cb9c8306a51b2ac2",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount": 1000000,
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_6262289287e5c50032d9bda7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-03-01T00:00:00Z"
+        },
+        "finished": true,
+        "name": "第一笔进度款",
+        "receipts_name": "approved",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T01:29:21.974Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T03:57:06.17Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 3300000,
+        "receipts_proportion": 0.30303030303030304,
+        "_table": {
+            "_id": "${space_id}_62faf2f2cb9c8306a51b2ac2",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_62faf4f7cb9c8306a51b2ac6",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount": 1200000,
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "contract": "${space_id}_6262289287e5c50032d9bda7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-08-07T00:00:00Z"
+        },
+        "finished": true,
+        "name": "第二笔进度款",
+        "receipts_name": "approved",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T01:37:59.974Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T03:57:06.41Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "contract_amount": 3300000,
+        "receipts_proportion": 0.36363636363636365,
+        "_table": {
+            "_id": "${space_id}_62faf4f7cb9c8306a51b2ac6",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_62faf57ecb9c8306a51b2ac7",
+        "account": "${space_id}_rp6f28g9xszJRGjwN",
+        "amount": 800000,
+        "amount_description": "待验收完成后收取800000尾款",
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_6262289287e5c50032d9bda7",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-12-31T00:00:00Z"
+        },
+        "finished": false,
+        "name": "尾款",
+        "receipts_name": "rejected",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T01:40:14.448Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T03:50:41.896Z"
+        },
+        "owner": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 3300000,
+        "receipts_proportion": 0.24242424242424243,
+        "_table": {
+            "_id": "${space_id}_62faf57ecb9c8306a51b2ac7",
+            "_code": "收款计划"
+        }
+    },
+    {
+        "_id": "${space_id}_62fb03cccb9c8306a51b2aea",
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "amount": 300000,
+        "company_id": "xu68SZ8mgJ9J7EmJE",
+        "contract": "${space_id}_6262243287e5c50032d9bda5",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-04-02T00:00:00Z"
+        },
+        "finished": false,
+        "name": "进度款",
+        "receipts_name": "approved",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T02:41:16.814Z"
+        },
+        "modified": {
+            "$date": "2022-08-23T06:05:28.367Z"
+        },
+        "owner": "8qQ5TwdoY8fqo7tga",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "QNsaJZtS6kNmWmE8t",
+        "company_ids": [
+            "xu68SZ8mgJ9J7EmJE"
+        ],
+        "contract_amount": 500000,
+        "receipts_proportion": 0.6,
+        "_table": {
+            "_id": "${space_id}_62fb03cccb9c8306a51b2aea",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_62fb0485cb9c8306a51b2aeb",
+        "account": "${space_id}_o2sunJ3vuz3uSKN4z",
+        "amount": 100000,
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_6262243287e5c50032d9bda5",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-07-31T00:00:00Z"
+        },
+        "finished": false,
+        "name": "尾款",
+        "receipts_name": "rejected",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T02:44:21.412Z"
+        },
+        "modified": {
+            "$date": "2022-08-16T03:50:02.092Z"
+        },
+        "owner": "8qQ5TwdoY8fqo7tga",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 500000,
+        "receipts_proportion": 0.2,
+        "_table": {
+            "_id": "${space_id}_62fb0485cb9c8306a51b2aeb",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_62fb0720cb9c8306a51b2aec",
+        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "amount": 380000,
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_62fa1540cb9c8306a51b2a9a",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-05-18T00:00:00Z"
+        },
+        "finished": true,
+        "name": "首付款",
+        "receipts_name": "pending",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T02:55:28.938Z"
+        },
+        "modified": {
+            "$date": "2022-08-23T06:24:11.014Z"
+        },
+        "owner": "TzudkPm4KRCDN3gTP",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "QNsaJZtS6kNmWmE8t",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 780000,
+        "receipts_proportion": 0.48717948717948717,
+        "_table": {
+            "_id": "${space_id}_62fb0720cb9c8306a51b2aec",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_62fb0759cb9c8306a51b2aed",
+        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "amount": 200000,
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_62fa1540cb9c8306a51b2a9a",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-07-05T00:00:00Z"
+        },
+        "finished": false,
+        "name": "尾款",
+        "receipts_name": "rejected",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-16T02:56:25.753Z"
+        },
+        "modified": {
+            "$date": "2022-08-23T06:22:03.548Z"
+        },
+        "owner": "TzudkPm4KRCDN3gTP",
+        "created_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "modified_by": "QNsaJZtS6kNmWmE8t",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 780000,
+        "receipts_proportion": 0.2564102564102564,
+        "_table": {
+            "_id": "${space_id}_62fb0759cb9c8306a51b2aed",
+            "_code": "收款计划"
+        },
+        "amount_description": null
+    },
+    {
+        "_id": "${space_id}_6304724c9cc40f03d6e7ca2a",
+        "account": "${space_id}_ZkwHr3jeZQFMKAwQ2",
+        "amount": 200000,
+        "company_id": "XjdpdJGbbxYe44X4X",
+        "contract": "${space_id}_62fa1540cb9c8306a51b2a9a",
+        "currency": "${space_id}_6261092232cc250032e1a973",
+        "due_date": {
+            "$date": "2022-06-10T00:00:00Z"
+        },
+        "finished": false,
+        "name": "尾款",
+        "receipts_name": "approved",
+        "space": "JnBnMTjGB8c6xeCtA",
+        "created": {
+            "$date": "2022-08-23T06:23:08.694Z"
+        },
+        "modified": {
+            "$date": "2022-08-24T07:06:48.479Z"
+        },
+        "owner": "TzudkPm4KRCDN3gTP",
+        "created_by": "QNsaJZtS6kNmWmE8t",
+        "modified_by": "bd6eb4d7-0eca-4c19-b9f5-30ce6a28bfc4",
+        "company_ids": [
+            "XjdpdJGbbxYe44X4X"
+        ],
+        "contract_amount": 780000,
+        "receipts_proportion": 0.2564102564102564
+    }
+]

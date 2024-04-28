@@ -1,0 +1,34 @@
+name: attendance_afterInsert
+listenTo: attendance
+when:
+  - afterInsert
+isEnabled: true
+handler: |-
+  const { doc, attendanceDoc,id } = ctx.params;
+  const userId = doc.staff; // 自动化操作时，userId和spaceId无法从ctx.params中获取
+  const spaceId = doc.space;
+  console.log("=======>owner", doc.owner)
+  // 判断拥有者是否属于自己
+  if (userId != doc.owner) {
+      const attendanceObj = this.getObject('attendance');
+      await attendanceObj.directUpdate(id, {
+          owner:userId
+      })
+
+  }
+  const attendanceRuleSettings = await ctx.broker.call(
+      '@steedos-labs/attendance.attendanceDaily',
+      {
+          'userId': userId, //用户id
+          'originalDateTime': doc.date_time, //原始打卡时间
+          'space': spaceId, 
+          'data_source': doc.data_source, //数据来源
+          "company": doc.company, 
+          "department": doc.department
+      },
+      {
+          meta: {
+              user: null
+          }
+      }
+  );

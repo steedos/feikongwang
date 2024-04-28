@@ -1,0 +1,5 @@
+name: car_no
+label: 车牌号
+reference_to: administration_car
+sort_no: 110
+type: lookup

@@ -1,0 +1,6 @@
+name: rest_end
+group: 打卡时间
+label: 午休结束时间
+sort_no: 152
+type: time
+required: true

@@ -1,0 +1,6 @@
+name: name
+label: 名称
+type: text
+sort_no: 100
+required: true
+filterable: true

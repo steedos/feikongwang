@@ -1,0 +1,15 @@
+name: all
+label: 所有
+columns:
+  - field: name
+  - field: content
+  - field: supplier
+  - field: assessor
+  - field: template
+  - field: score
+filter_scope: space
+filters: []
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

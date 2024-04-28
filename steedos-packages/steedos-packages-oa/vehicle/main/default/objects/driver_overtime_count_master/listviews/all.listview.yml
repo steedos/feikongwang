@@ -1,0 +1,15 @@
+name: all
+columns:
+  - field: name
+  - field: driver
+  - field: car
+  - field: overtime_count
+  - field: mileage_count
+  - field: meal_count
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

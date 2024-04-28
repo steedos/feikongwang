@@ -1,0 +1,6 @@
+name: late
+label: 迟到（分钟）
+precision: 18
+scale: 0
+sort_no: 220
+type: number

@@ -1,0 +1,22 @@
+name: status
+data_type: text
+defaultValue: normal
+filterable: false
+generated: false
+index: false
+is_name: false
+is_wide: false
+label: 会议状态
+multiple: false
+options:
+  - label: 正常
+    value: normal
+  - label: 已取消
+    value: cancelled
+  - label: 已结束
+    value: finished
+primary: false
+required: false
+sort_no: 9999
+sortable: false
+type: select

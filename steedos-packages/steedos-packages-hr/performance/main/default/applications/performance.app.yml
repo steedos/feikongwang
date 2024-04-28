@@ -1,0 +1,50 @@
+name: 绩效
+code: performance
+description: 设定绩效模版，跟踪员工绩效。
+icon_slds: performance
+is_creator: true
+mobile: true
+showSidebar: true
+sort: 9100
+tab_groups:
+  - group_name: 考核计划
+    default_open: true
+  - group_name: 考核结果
+    default_open: true
+  - group_name: 模板设置
+    default_open: true
+tab_items:
+  object_performance_plan:
+    group: 考核计划
+    index: 1
+  object_performance_plan_item:
+    group: 考核计划
+    index: 2
+  object_performance_data:
+    group: 考核结果
+    index: 3
+  object_performance_result:
+    group: 考核结果
+    index: 4
+  object_performance_summary:
+    group: 考核结果
+    index: 5
+  object_performance_template_latitude:
+    group: 模板设置
+    index: 6
+  object_performance_template:
+    group: 模板设置
+    index: 7
+  object_performance_index:
+    group: 模板设置
+    index: 8
+tabs:
+  - object_performance_plan
+  - object_performance_plan_item
+  - object_performance_data
+  - object_performance_result
+  - object_performance_summary
+  - object_performance_template_latitude
+  - object_performance_template
+  - object_performance_index
+visible: true

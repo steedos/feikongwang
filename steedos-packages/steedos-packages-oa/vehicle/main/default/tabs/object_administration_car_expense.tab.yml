@@ -1,0 +1,7 @@
+name: object_administration_car_expense
+desktop: true
+label: 车辆费用
+mobile: true
+object: administration_car_expense
+permissions: []
+type: object

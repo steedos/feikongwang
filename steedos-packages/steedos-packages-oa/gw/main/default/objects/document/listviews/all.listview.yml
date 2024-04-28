@@ -1,0 +1,21 @@
+name: all
+columns:
+  - field: name
+    _id: efe4db89-5754-41a6-9783-0851ad02378e
+  - _id: 22e71ca5-c78f-42e2-8b70-3aa40209f9ef
+    field: 'no'
+  - _id: f7444624-1d32-46b0-9caa-08b020898d13
+    field: created_by
+  - _id: fe691f51-c428-4120-aeb1-db65437062fb
+    field: dep
+  - _id: 4fcdafa9-c637-4064-bf27-78656370baaf
+    field: date_of_issue
+  - _id: 2428acd0-ee46-42d0-91ef-cff7ed2273b8
+    field: status
+filter_scope: space
+filters: []
+label: 所有
+scrolling_mode: standard
+shared: true
+sort_no: 100
+type: grid

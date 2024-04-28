@@ -1,0 +1,17 @@
+name: project
+filterable: true
+hidden: false
+index: false
+inlineHelpText: 所属项目
+is_name: false
+is_wide: false
+label: 项目
+omit: false
+readonly: false
+reference_to: project
+required: true
+searchable: false
+sort_no: 102
+sortable: true
+type: master_detail
+write_requires_master_read: false

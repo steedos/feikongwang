@@ -1,0 +1,7 @@
+name: business_out_ref
+label: 出差记录
+sort_no: 340
+type: lookup
+reference_to: attendance_business_out
+multiple: true
+group: 相关流程

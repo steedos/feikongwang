@@ -1,0 +1,7 @@
+name: projects_ee
+desktop: true
+icon: lead_list
+label: 首页
+mobile: true
+page: projects_ee_home
+type: page

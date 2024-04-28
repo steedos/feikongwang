@@ -1,0 +1,9 @@
+name: outbid
+label: 是否中标
+type: select
+sort_no: 150
+options: 
+  - label: 是
+    value: Yes
+  - label: 否
+    value: No

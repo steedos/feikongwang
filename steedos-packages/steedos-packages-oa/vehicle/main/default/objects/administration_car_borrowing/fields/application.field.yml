@@ -1,0 +1,6 @@
+name: application
+label: 申请人
+reference_to: space_users
+reference_to_field: user
+sort_no: 120
+type: lookup

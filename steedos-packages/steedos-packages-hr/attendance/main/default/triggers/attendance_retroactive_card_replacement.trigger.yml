@@ -1,0 +1,15 @@
+name: attendance_retroactive_card_replacement
+listenTo: attendance_retroactive
+when:
+  - afterUpdate
+isEnabled: true
+handler: |-
+  const { doc, previousDoc,attendance_retroactive} = ctx.params;
+      if (previousDoc.instance_state != 'approved' && doc.instance_state == 'approved') {
+          console.log("审批状态",doc.instance_state)
+          console.log('补卡审批通过');
+          await ctx.broker.call('@steedos-labs/attendance.retroactiveSettlement', {
+              'retroactiveId': doc._id
+          })
+      }
+  

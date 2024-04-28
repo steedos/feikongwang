@@ -1,0 +1,9 @@
+name: cms_categories
+custom: true
+enable_api: true
+enable_dataloader: true
+enable_inline_edit: true
+is_enable: true
+icon: folder
+label: Category
+version: 2

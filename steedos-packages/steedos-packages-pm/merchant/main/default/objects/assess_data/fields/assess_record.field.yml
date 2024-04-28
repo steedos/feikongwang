@@ -1,0 +1,5 @@
+name: assess_record
+label: 考核单
+type: master_detail
+reference_to: assess_record
+sort_no: 100
