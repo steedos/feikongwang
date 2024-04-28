@@ -70,4 +70,4 @@ tabs:
   - object_cost_business_loan_reimburse
   - object_cost_type
   - object_instance_tasks
-visible: true
+visible: false

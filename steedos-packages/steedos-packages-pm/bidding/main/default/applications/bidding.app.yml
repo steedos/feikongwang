@@ -4,7 +4,7 @@ description: 招标、投标、评标、定标的的全生命周期管理。
 icon_slds: custom_component_task
 is_creator: true
 mobile: true
-sort: 9100
+sort: 9000
 showSidebar: true
 tab_groups:
   - group_name: 项目信息

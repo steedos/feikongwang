@@ -76,4 +76,4 @@ tabs:
   - object_events
   - object_seal
   - object_instance_tasks
-visible: true
+visible: false

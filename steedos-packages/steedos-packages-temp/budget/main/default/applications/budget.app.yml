@@ -26,6 +26,6 @@ objects:
   - budget_cost_center
   - instance_tasks
 sort: 70
-visible: true
+visible: false
 tabs:
   - budget_home
