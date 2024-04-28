@@ -129,7 +129,7 @@
         ],
         "completed": true,
         "blocked": false,
-        "project_milestone": "62623aa687e5c50032d9bdad"
+        "project_milestone": "${space_id}_62623aa687e5c50032d9bdad"
     },
     {
         "_id": "${space_id}_6262136a87e5c50032d9bd4f",
@@ -362,7 +362,7 @@
             "z86R5s8DCv7wQydKo"
         ],
         "completed": true,
-        "project_milestone": "62623aa687e5c50032d9bdad",
+        "project_milestone": "${space_id}_62623aa687e5c50032d9bdad",
         "due_date": {
             "$date": "2022-07-06T00:00:00Z"
         }
