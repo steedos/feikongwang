@@ -1,6 +1,6 @@
-name: 计划
+name: 项目
 code: milestones
-description: 通过项目、任务、里程碑，管理项目的进度与计划。
+description: 通过项目、任务、里程碑，管理项目的进度与计划，以及管理项目相关合同。
 icon_slds: performance
 is_creator: true
 is_new_window: false
@@ -14,36 +14,41 @@ tab_groups:
     default_open: true
   - group_name: 进度管理
     default_open: true
+  - group_name: 合同管理
+    default_open: true
   - group_name: 流程审批
     default_open: true
 tab_items:
   projects_home:
     group: 项目管理
-    index: 0
+    index: 1
   object_project_program:
     group: 项目管理
-    index: 1
+    index: 2
   object_project:
     group: 项目管理
-    index: 2
+    index: 3
   object_project_milestone:
     group: 项目管理
-    index: 3
+    index: 4
+  object_contracts:
+    group: 合同管理
+    index: 5
   object_project_task:
     group: 进度管理
-    index: 4
+    index: 6
   object_project_issue:
     group: 进度管理
-    index: 5
+    index: 7
   object_project_time:
     group: 进度管理
-    index: 6
+    index: 8
   object_project_log:
     group: 进度管理
-    index: 7
+    index: 9
   object_instance_tasks:
     group: 流程审批
-    index: 8
+    index: 10
 tabs:
   - projects_home
   - object_project_program
@@ -53,5 +58,6 @@ tabs:
   - object_project_issue
   - object_project_time
   - object_project_log
+  - object_contracts
   - object_instance_tasks
 visible: true

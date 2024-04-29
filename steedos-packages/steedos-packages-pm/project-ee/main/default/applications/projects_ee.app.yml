@@ -1,4 +1,4 @@
-name: 项目
+name: 项目(作废)
 code: projects_ee
 description: 闭环项目管理，管控销售合同、采购合同、收付款、任务进度等。
 icon_slds: goals
@@ -54,4 +54,5 @@ tabs:
   - object_invoices
   - object_finance_payment
   - object_accounts
-visible: true
+visible: false
+
