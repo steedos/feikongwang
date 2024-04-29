@@ -15,6 +15,8 @@ COPY ../steedos.config.js .
 COPY ../yarn.lock .
 COPY ../steedos-packages ./steedos-packages
 
-RUN yarn --production && yarn cache clean
+RUN yarn && yarn build 
+
+RUN yarn cache clean
 
 CMD ["yarn", "dev"]

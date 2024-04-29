@@ -24,7 +24,7 @@ services:
     build: 
       context: ../
       dockerfile: ./docker/Dockerfile
-    image: steedos/feikongwang:latest
+    image: steedos/steedos-apps-feikongwang:latest
     container_name: feikongwang
     environment:
       - TRANSPORTER=redis://redis:6379
