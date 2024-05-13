@@ -18,7 +18,7 @@ enable_share: false
 enable_tasks: true
 enable_workflow: true
 enable_audit: true
-icon: account
+icon: customer_360
 is_enable: true
 label: 客商
 version: 2

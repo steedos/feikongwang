@@ -15,7 +15,7 @@ enable_tasks: false
 enable_workflow: false
 enable_tree: true
 parent_field: material_group
-icon: account
+icon: serialized_product
 is_enable: true
 label: 产品分类
 version: 2

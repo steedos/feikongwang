@@ -2,6 +2,6 @@ name: bank_type
 enable_api: true
 enable_share: true
 enable_enhanced_lookup: false
-icon: account
+icon: agent_home
 label: 银行
 version: 2

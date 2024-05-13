@@ -12,7 +12,7 @@ enable_notes: false
 enable_tasks: false
 enable_tree: false
 enable_workflow: false
-icon: action_list_component
+icon: product_required
 is_enable: true
 label: 收款类型
 locked: false

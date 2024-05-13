@@ -13,7 +13,7 @@ enable_share: false
 enable_tasks: false
 enable_workflow: false
 enable_enhanced_lookup: false
-icon: account
+icon: timeslot
 is_enable: true
 label: 发票类型
 version: 2

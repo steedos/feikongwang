@@ -13,7 +13,7 @@ enable_search: true
 enable_share: false
 enable_tasks: false
 enable_workflow: false
-icon: account
+icon: identifier
 is_enable: true
 label: 计量单位
 version: 2

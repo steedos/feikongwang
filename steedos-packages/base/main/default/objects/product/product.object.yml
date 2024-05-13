@@ -18,7 +18,7 @@ enable_share: false
 enable_tasks: false
 enable_tree: false
 enable_workflow: false
-icon: apps
+icon: product
 is_enable: true
 is_system: true
 label: 产品

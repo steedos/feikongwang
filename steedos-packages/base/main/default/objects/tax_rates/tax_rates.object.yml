@@ -13,7 +13,7 @@ enable_share: false
 enable_tasks: false
 enable_workflow: false
 enable_enhanced_lookup: true
-icon: account
+icon: tax_rate
 is_enable: true
 label: 税率
 version: 2

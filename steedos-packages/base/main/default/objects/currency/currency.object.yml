@@ -3,6 +3,6 @@ enable_audit: true
 enable_files: true
 enable_search: true
 enable_enhanced_lookup: false
-icon: currency
+icon: qualifications
 label: 货币
 version: 2
