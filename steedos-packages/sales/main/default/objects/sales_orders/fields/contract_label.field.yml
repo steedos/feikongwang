@@ -12,7 +12,7 @@ multiple: true
 omit: false
 readonly: false
 reference_to: contract_label
-required: true
+required: false
 searchable: false
 sort_no: 600
 sortable: false
