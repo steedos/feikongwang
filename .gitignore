@@ -120,3 +120,5 @@ docker-volumes
 db
 
 stacks
+
+steedos-storage
