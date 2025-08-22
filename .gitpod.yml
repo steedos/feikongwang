@@ -17,7 +17,6 @@ tasks:
     command: |
       echo "ROOT_URL=$(gp url 5100)" >> .env.local
       yarn
-      gp await-port 5100
       yarn build
       yarn start
 
