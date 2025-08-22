@@ -1,4 +1,4 @@
-name: name
+name: product_number
 index: true
 label: 产品编号
 required: false
