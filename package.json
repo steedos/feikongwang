@@ -10,9 +10,9 @@
     "build": "lerna run build"
   },
   "dependencies": {
-    "@steedos/service-community": "3.0.0-beta.76",
+    "@steedos/service-community": "^3.0.0-beta.76",
     "@steedos/service-enterprise": "^3.0.0-beta.1",
-    "@steedos/service-package-loader": "3.0.0-beta.76",
+    "@steedos/service-package-loader": "^3.0.0-beta.76",
     "dotenv-flow": "^3.2.0",
     "moleculer": "^0.14.31",
     "steedos-cli": "^3.0.0-beta.71",
