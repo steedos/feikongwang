@@ -9,7 +9,7 @@ services:
       - "6379:6379"
   
   mongodb:
-    image: mongo:4.4
+    image: mongo:7.0
     ports:
       - 27017:27017
     command: "--bind_ip_all --replSet steedos --logpath /var/log/mongodb/mongod.log"
@@ -19,10 +19,10 @@ services:
       timeout: 10s
       retries: 5
     volumes:
-      - './steedos-storage/mongodb:/data/db'
+      - './steedos-storage-mongodb:/data/db'
 
   mongodb-init:
-    image: mongo:4.4
+    image: mongo:7.0
     restart: "no"
     depends_on:
       mongodb:
