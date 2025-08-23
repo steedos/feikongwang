@@ -12,7 +12,7 @@ COPY package*.json ./
 # 复制项目文件到工作目录
 COPY lerna.json ./
 COPY steedos.config.js ./
-COPY steedos-packages ./
+COPY steedos-packages ./steedos-packages
 
 # 安装项目依赖
 RUN yarn install
