@@ -8,9 +8,11 @@ services:
     deploy:
       replicas: 1
     ports:
-      - "5100:5100"
+      - "80:80"
+    volumes:
+      - './steedos-storage:/steedos-storage'
+      - './.steedos:/app/.steedos'
     environment:
-      - B6_PORT=5100
       - STEEDOS_LICENSE=
       - ROOT_URL=http://127.0.0.1
       - TRANSPORTER=redis://redis:6379

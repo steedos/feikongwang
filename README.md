@@ -37,6 +37,8 @@ docker-compose build
 docker-compose up
 ```
 
+启动后访问 80 端口
+
 ## 功能
 
 - 发票录入与查重
