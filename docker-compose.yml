@@ -1,0 +1,28 @@
+services:
+
+  redis:
+    image: redis:6.2.10
+    command: "redis-server --save \"\" --appendonly no --loglevel warning"
+    ports:
+      - "6379:6379"
+
+  mongodb:
+    image: 'bitnami/mongodb:7.0'
+    ports:
+      - 27017:27017
+    environment:
+      - MONGODB_ADVERTISED_HOSTNAME=mongodb
+      - MONGODB_REPLICA_SET_MODE=primary
+      - MONGODB_REPLICA_SET_NAME=steedos
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - 'steedos-mongodb:/bitnami'
+    healthcheck:
+      test: echo 'rs.status().ok' | mongo admin -u root -p steedos --quiet | grep 1
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  steedos-mongodb:
+    driver: local

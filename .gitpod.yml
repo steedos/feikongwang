@@ -12,7 +12,7 @@ ports:
 tasks:
   - name: DB
     command: |
-      docker-compose -f docker-compose-db.yml up
+      docker-compose up redis mongodb
   - name: Steedos Platform
     command: |
       echo "ROOT_URL=$(gp url 5100)" >> .env.local
