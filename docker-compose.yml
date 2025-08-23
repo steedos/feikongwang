@@ -1,5 +1,22 @@
 services:
 
+  steedos:
+    image: steedos/feikongwang:3.0.0
+    build: 
+      context: ./
+      dockerfile: ./Dockerfile
+    deploy:
+      replicas: 1
+    ports:
+      - "5100:5100"
+    environment:
+      - B6_PORT=5100
+      - STEEDOS_LICENSE=
+      - ROOT_URL=http://127.0.0.1
+      - TRANSPORTER=redis://redis:6379
+      - CACHER=redis://redis:6379/1
+      - MONGO_URL=mongodb://mongodb:27017/feikongwang
+
   redis:
     image: redis:6.2.10
     command: "redis-server --save \"\" --appendonly no --loglevel warning"
