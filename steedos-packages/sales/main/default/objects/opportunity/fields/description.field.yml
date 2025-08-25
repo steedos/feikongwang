@@ -1,7 +1,6 @@
 name: description
-group: 备注信息
 is_wide: true
 label: 描述
 rows: 3
-sort_no: 270
+sort_no: 9999
 type: textarea
