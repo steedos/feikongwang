@@ -1,13 +1,13 @@
 name: sales_orders_receipts_type
-label: 收款类型
+label: Receipts Type
 description: 
 fields:
   name:
-    label: 名称
+    label: Name
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

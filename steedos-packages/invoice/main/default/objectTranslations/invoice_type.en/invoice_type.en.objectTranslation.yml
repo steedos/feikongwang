@@ -1,25 +1,25 @@
 name: invoice_type
-label: 发票类型
+label: Invoice Type
 description: 
 fields:
   label:
-    label: 显示名称
+    label: Display Name
     help: 
     description: 
   name:
-    label: 代码
+    label: Code
     help: 
     description: 
   need_verify:
-    label: 需要查验
+    label: Requires Verification
     help: 
     description: 
   owner:
-    label: 所有者
+    label: Owner
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

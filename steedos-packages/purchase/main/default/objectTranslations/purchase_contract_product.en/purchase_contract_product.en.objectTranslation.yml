@@ -1,63 +1,63 @@
 name: purchase_contract_product
-label: 产品信息
+label: Product Information
 description: 
 fields:
   amount:
-    label: 金额
+    label: Amount
     help: 
     description: 
   contract:
-    label: 合同
+    label: Contract
     help: 
     description: 
   material_group:
-    label: 产品分类
+    label: Product Category
     help: 
     description: 
   measurement:
-    label: 计量单位
+    label: Measurement Unit
     help: 
     description: 
   name:
-    label: 产品编号
+    label: Product Number
     help: 
     description: 
   product:
-    label: 产品名称
+    label: Product Name
     help: 
     description: 
   product_barcode:
-    label: 产品条码
+    label: Product Barcode
     help: 
     description: 
   product_description:
-    label: 产品说明
+    label: Product Description
     help: 
     description: 
   purchase_unit_price:
-    label: 采购单价
+    label: Purchase Unit Price
     help: 
     description: 
   quantity:
-    label: 数量
+    label: Quantity
     help: 
     description: 
   sales_unit:
-    label: 销售单价
+    label: Sales Unit Price
     help: 
     description: 
   specification:
-    label: 规格型号
+    label: Specification Model
     help: 
     description: 
   tax_code:
-    label: 税收编码
+    label: Tax Code
     help: 
     description: 
 groups:
-  产品详情: 产品详情
+  Product Details: Product Details
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

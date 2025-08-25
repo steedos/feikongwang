@@ -1,75 +1,75 @@
 name: invoices_verify_logs
-label: 发票验真日志
+label: Invoice Verification Logs
 description: 
 fields:
   check_code:
-    label: 校验码
+    label: Check Code
     help: 
     description: 
   error_code:
-    label: 错误代码
+    label: Error Code
     help: 
     description: 
   error_msg:
-    label: 错误信息
+    label: Error Message
     help: 
     description: 
   invalid_sign:
-    label: 是否作废（冲红）
-    help: 是否作废（冲红）。Y：已作废；H：已冲红；N：未作废
+    label: Void Status (Red Denote)
+    help: 
     options:
-      - label: 已作废
+      - label: Voided
         value: 'Y'
-      - label: 已冲红
+      - label: Red Denote
         value: H
-      - label: 未作废
+      - label: Not Voided
         value: 'N'
     description: 
   invoice_code:
-    label: 发票代码
+    label: Invoice Code
     help: 
     description: 
   invoice_date:
-    label: 开票日期
+    label: Invoice Date
     help: 
     description: 
   invoice_num:
-    label: 发票号码
+    label: Invoice Number
     help: 
     description: 
   invoice_type:
-    label: 发票种类
+    label: Invoice Type
     help: >-
-      发票种类。即增值税专用发票、增值税电子专用发票、增值税普通发票、增值税普通发票（电子）、增值税普通发票（卷式）、通行费增值税电子普通发票、区块链电子发票、全电发票（专用发票）、全电发票（普通发票）、机动车销售发票、二手车销售发票、货物运输业增值税专用发票
+      The type of invoice, such as VAT Special Invoice, VAT Electronic Special Invoice, VAT General Invoice, VAT General Invoice (Electronic), VAT General Invoice (Roll), Toll VAT Electronic General Invoice, Blockchain Electronic Invoice, Fully Electronic Invoice (Special Invoice), Fully Electronic Invoice (General Invoice), Motor Vehicle Sales Invoice, Used Vehicle Sales Invoice, and Goods Transportation VAT Special Invoice.
     description: 
   log_id:
-    label: LogId
-    help: 唯一的log id，用于问题定位
+    label: Log ID
+    help: Unique log ID for issue tracking
     description: 
   machine_code:
-    label: 机器编号
+    label: Machine Code
     help: 
     description: 
   verify_frequency:
-    label: 查验次数
-    help: 查验次数。为历史查验次数
+    label: Verification Count
+    help: Number of historical verifications
     description: 
   verify_message:
-    label: 查验结果信息
-    help: 查验结果信息。查验成功且发票为真返回“查验成功发票一致“，查验失败返回对应错误原因，详见末尾表格
+    label: Verification Result Message
+    help: Verification result message. Returns "Verification successful, invoice consistent" if successful and invoice is genuine, or an appropriate error message if failed. See the table at the end for details.
     description: 
   verify_result:
-    label: 查验结果
-    help: 查验结果。查验成功返回“0001”，查验失败返回对应查验结果错误码
+    label: Verification Result
+    help: Verification result. Returns "0001" if successful, or an error code if failed.
     description: 
   words_result:
-    label: 识别结果
-    help: 识别结果
+    label: Recognition Results
+    help: Recognition results
     description: 
   words_result_num:
-    label: 识别结果数
-    help: 识别结果数，表示words_result的元素个数
+    label: Number of Recognition Results
+    help: Number of recognition results, indicates the number of elements in words_result
     description: 
 listviews:
   all:
-    label: 所有
+    label: All

@@ -1,21 +1,21 @@
 name: expense_category
-label: 费用类别
+label: Expense Category
 description: 
 fields:
   describe:
-    label: 描述
+    label: Description
     help: 
     description: 
   name:
-    label: 类别名称
+    label: Category Name
     help: 
     description: 
   open:
-    label: 启用
+    label: Enabled
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

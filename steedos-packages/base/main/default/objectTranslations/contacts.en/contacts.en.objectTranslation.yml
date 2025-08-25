@@ -1,52 +1,52 @@
 name: contacts
-label: 联系人
+label: Contacts
 description: 
 fields:
   account:
-    label: 所属客户
-    help: 联系人所链接的客户。输入客户名称、从列表中选择客户或创建客户。
+    label: Associated Customer
+    help: The customer linked to the contact. Enter the customer name, select from the list, or create a new customer.
     description: 
   department:
-    label: 部门
+    label: Department
     help: 
     description: 
   description:
-    label: 备注
+    label: Remarks
     help: 
     description: 
   email:
-    label: 邮件
+    label: Email
     help: 
     description: 
   name:
-    label: 姓名
+    label: Name
     help: 
     description: 
   owner:
-    label: 我方客户经理
+    label: Our Account Manager
     help: 
     description: 
   phone:
-    label: 电话
+    label: Phone
     help: 
     description: 
   salutation:
-    label: 性别
+    label: Gender
     help: 
     options:
-      - label: 男
+      - label: Male
         value: Male
-      - label: 女
+      - label: Female
         value: Female
     description: 
   title:
-    label: 职务
+    label: Position
     help: 
     description: 
 listviews:
   all:
-    label: 所有联系人
+    label: All Contacts
   mine:
-    label: 我的联系人
+    label: My Contacts
   recent:
-    label: 最近查看
+    label: Recently Viewed

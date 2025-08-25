@@ -1,33 +1,33 @@
 name: material_group
-label: 产品分类
+label: Product Category
 description: 
 fields:
   children:
-    label: 子分组
+    label: Subgroup
     help: 
     description: 
   group_code:
-    label: 分组编码
+    label: Group Code
     help: 
     description: 
   material_group:
-    label: 上级产品分类
+    label: Parent Product Category
     help: 
     description: 
   name:
-    label: 产品分类名称
+    label: Product Category Name
     help: 
     description: 
   owner:
-    label: 所有者
+    label: Owner
     help: 
     description: 
   remark:
-    label: 描述
+    label: Description
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

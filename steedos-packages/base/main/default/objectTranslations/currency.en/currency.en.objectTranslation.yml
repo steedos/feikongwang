@@ -1,21 +1,21 @@
 name: currency
-label: 货币
+label: Currency
 description: 
 fields:
   exchange_rate:
-    label: 汇率（人民币）
+    label: Exchange Rate (CNY)
     help: 
     description: 
   name:
-    label: 货币名称
+    label: Currency Name
     help: 
     description: 
   shorthand:
-    label: 简称
+    label: Abbreviation
     help: 
     description: 
 listviews:
   all:
-    label: 所有货币
+    label: All Currencies
   recent:
-    label: 最近查看
+    label: Recently Viewed

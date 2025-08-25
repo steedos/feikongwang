@@ -1,138 +1,138 @@
 name: quote
-label: 报价
+label: Quote
 description: 
 fields:
   account_id:
-    label: 客户
-    help: 报价的商机所链接的客户名。
+    label: Customer
+    help: The name of the customer linked to the opportunity of the quote.
     description: 
   billing_address:
-    label: 收票人地址
+    label: Billing Address
     help: 
     description: 
   billing_name:
-    label: 收票人姓名
+    label: Billing Name
     help: 
     description: 
   contact_id:
-    label: 联系人姓名
-    help: 与报价关联的联系人姓名。
+    label: Contact Name
+    help: The name of the contact associated with the quote.
     description: 
   description:
-    label: 描述
+    label: Description
     help: 
     description: 
   discount:
-    label: 折扣
-    help: 报价上所有行项目折扣的加权平均值。您可以使用最多两个小数位。
+    label: Discount
+    help: The weighted average of all line item discounts on the quote. You can use up to two decimal places.
     description: 
   email:
-    label: 电子邮件
-    help: 与报价关联的联系人电子邮件地址。如果可用，则在您添加联系人时自动填写。
+    label: Email
+    help: The email address of the contact associated with the quote. Automatically filled when you add a contact, if available.
     description: 
   expiration_date:
-    label: 到期日期
-    help: 该报价的失效日期。
+    label: Expiration Date
+    help: The date the quote becomes invalid.
     description: 
   fax:
-    label: 传真
-    help: 与报价关联的联系人传真号码。如果可用，则在您添加联系人时自动填写。
+    label: Fax
+    help: The fax number of the contact associated with the quote. Automatically filled when you add a contact, if available.
     description: 
   grand_total:
-    label: 总计
-    help: 报价的总价格加上运费和税。
+    label: Grand Total
+    help: The total price of the quote plus shipping and tax.
     description: 
   is_syncing:
-    label: 正在同步
-    help: 报价是否与关联的商机同步。(只读)
+    label: Syncing
+    help: Indicates whether the quote is synced with the associated opportunity. (Read-only)
     description: 
   line_items:
-    label: 行项目
-    help: 报价上行项目的数量。
+    label: Line Items
+    help: The number of line items on the quote.
     description: 
   name:
-    label: 报价名称
+    label: Quote Name
     help: 
     description: 
   opportunity_id:
-    label: 商机名
-    help: 与报价关联的商机名。
+    label: Opportunity Name
+    help: The name of the opportunity associated with the quote.
     description: 
   owner:
-    label: 所有人姓名
+    label: Owner Name
     help: 
     description: 
   phone:
-    label: 电话
-    help: 与报价关联的联系人电话号码。如果可用，则在您添加联系人时自动填写。
+    label: Phone
+    help: The phone number of the contact associated with the quote. Automatically filled when you add a contact, if available.
     description: 
   quote_currency:
-    label: 报价币种
+    label: Quote Currency
     help: 
     description: 
   quote_number:
-    label: 报价编号
+    label: Quote Number
     help: 
     description: 
   quote_to_address:
-    label: 收报价人地址
+    label: Quote To Address
     help: 
     description: 
   quote_to_name:
-    label: 收报价人姓名
+    label: Quote To Name
     help: 
     description: 
   shipping_address:
-    label: 收货人地址
-    help: 与报价关联的客户的发货地址。
+    label: Shipping Address
+    help: The shipping address of the customer associated with the quote.
     description: 
   shipping_handling:
-    label: 运费和手续费
-    help: 报价的总的运费和手续费。
+    label: Shipping and Handling
+    help: The total freight and handling charges for the quote.
     description: 
   shipping_name:
-    label: 收货人姓名
-    help: 报价行项目的收货的实体（如个人或公司）名称。
+    label: Shipping Name
+    help: The name of the entity (individual or company) receiving the shipping for the quote line item.
     description: 
   status:
-    label: 状态
-    help: 报价的状态。
+    label: Status
+    help: The status of the quote.
     options:
-      - label: 草稿
+      - label: Draft
         value: Draft
-      - label: 需要审核
+      - label: Needs Review
         value: Needs_Review
-      - label: 审核中
+      - label: In Review
         value: In_Review
-      - label: 已批准
+      - label: Approved
         value: Approved
-      - label: 已拒绝
-        value: Projectde
-      - label: 已提交
+      - label: Rejected
+        value: Rejected
+      - label: Presented
         value: Presented
-      - label: 已接受
+      - label: Accepted
         value: Accepted
-      - label: 已否决
+      - label: Denied
         value: Denied
     description: 
   subtotal:
-    label: 小计
-    help: 在应用折扣、税和运费之前的报价行项目的总和。(只读)
+    label: Subtotal
+    help: The sum of the quote line items before applying discounts, taxes, and shipping charges. (Read-only)
     description: 
   tax:
-    label: 税收
-    help: 报价的总税额。
+    label: Tax
+    help: The total tax amount for the quote.
     description: 
   total_price:
-    label: 总价
-    help: 折扣后，不含税和运费的报价行项目的总和。(只读)
+    label: Total Price
+    help: The sum of the quote line items after discounts, excluding taxes and shipping charges. (Read-only)
     description: 
 groups:
-  准备用于: 准备用于
-  地址信息: 地址信息
-  总计: 总计
+  Prepare For: Prepare For
+  Address Information: Address Information
+  Totals: Totals
 listviews:
   all:
-    label: 所有报价
+    label: All Quotes
   recent:
-    label: 最近查看
+    label: Recently Viewed

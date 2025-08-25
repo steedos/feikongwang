@@ -1,11 +1,11 @@
 name: contract_label
-label: 应收合同标签
+label: Receivables Contract Label
 description: 
 fields:
   name:
-    label: 名称
+    label: Name
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All

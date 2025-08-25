@@ -1,25 +1,25 @@
 name: measurement_unit
-label: 计量单位
+label: Measurement Unit
 description: 
 fields:
   code:
-    label: 编码
+    label: Code
     help: 
     description: 
   name:
-    label: 计量单位名称
+    label: Measurement Unit Name
     help: 
     description: 
   owner:
-    label: 所有者
+    label: Owner
     help: 
     description: 
   remark:
-    label: 描述
+    label: Description
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

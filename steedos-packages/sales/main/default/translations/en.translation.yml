@@ -1,10 +1,10 @@
 CustomApplications:
   opportunity:
-    name: 客户
-    description: 管理客户、线索与商机
+    name: Customer
+    description: Manage customers, leads, and opportunities
   sales:
-    name: 应收
-    description: 精确追踪与分析每一笔收入
+    name: Receivables
+    description: Accurately track and analyze every revenue stream
 CustomTabs:
   object_accounts: object_accounts
   object_opportunity: object_opportunity

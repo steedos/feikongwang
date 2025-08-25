@@ -1,58 +1,58 @@
 name: product
-label: 物料
+label: Product
 description: 
 fields:
   annex:
-    label: 附件
+    label: Attachment
     help: 
     description: 
   external_id:
-    label: 外部ID
+    label: External ID
     help: 
     description: 
   material_group:
-    label: 产品分类
+    label: Product Category
     help: 
     description: 
   measurement:
-    label: 计量单位
+    label: Measurement Unit
     help: 
     description: 
   name:
-    label: 物料名称
+    label: Product Name
     help: 
     description: 
   product_barcode:
-    label: 产品条码
+    label: Product Barcode
     help: 
     description: 
   product_description:
-    label: 产品说明
+    label: Product Description
     help: 
     description: 
   product_number:
-    label: 产品编号
+    label: Product Number
     help: 
     description: 
   purchase_unit_price:
-    label: 采购单价
+    label: Purchase Unit Price
     help: 
     description: 
   sales_unit:
-    label: 销售单价
+    label: Sales Unit Price
     help: 
     description: 
   specification:
-    label: 规格型号
+    label: Specification Model
     help: 
     description: 
   tax_code:
-    label: 税收编码
+    label: Tax Code
     help: 
     description: 
 listviews:
   all:
-    label: 所有物料
+    label: All Products
   recent:
-    label: 最近查看
+    label: Recently Viewed
 actions: {}

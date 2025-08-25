@@ -1,184 +1,184 @@
 name: sales_orders
-label: 应收合同
+label: Receivables Contract
 description: 
 fields:
   amount:
-    label: 合同金额
+    label: Contract Amount
     help: 
     description: 
   amount_invoice:
-    label: 开票中
-    help: 除了已开票状态合同开票明细记录的汇总金额。
+    label: Invoicing
+    help: Total amount of contract invoice detail records, excluding those with status "invoiced".
     description: 
   amount_receiving:
-    label: 收款中金额
-    help: 收款审批中的收款金额
+    label: Receiving Amount
+    help: Receipt amount under approval.
     description: 
   arrival_amount:
-    label: 收款金额
-    help: 收款审批通过的收款金额
+    label: Received Amount
+    help: Amount of receipt approved.
     description: 
   billing_money:
-    label: 开票金额
-    help: 已开票状态合同开票明细记录的汇总金额。
+    label: Invoiced Amount
+    help: Total amount of contract invoice detail records with status "invoiced".
     description: 
   billing_money_receive:
-    label: 开票应收
-    help: 已开票金额-发票已收金额
+    label: Invoiced Receivables
+    help: Invoiced amount minus received invoice amount.
     description: 
   buyer:
-    label: 联系人
-    help: 请选择当前客户下的联系人。
+    label: Contact
+    help: Please select a contact under the current customer.
     description: 
   buyer_mobile:
-    label: 联系电话
+    label: Contact Phone
     help: 
     description: 
   company_id:
-    label: 主分部
+    label: Main Division
     help: 
     description: 
   company_ids:
-    label: 所属分部
+    label: Associated Divisions
     help: 
     description: 
   contract_code:
-    label: 合同编号
+    label: Contract Code
     help: 
     description: 
   contract_label:
-    label: 合同标签
+    label: Contract Label
     help: 
     description: 
   created:
-    label: 创建时间
+    label: Creation Time
     help: 
     description: 
   created_by:
-    label: 创建人
+    label: Creator
     help: 
     description: 
   customer:
-    label: 客户
+    label: Customer
     help: 
     description: 
   department:
-    label: 部门
+    label: Department
     help: 
     description: 
   description:
-    label: 备注
+    label: Remarks
     help: 
     description: 
   discount_amount:
-    label: 折让金额
-    help: 收款已审核通过的折让金额
+    label: Discount Amount
+    help: Approved discount amount.
     description: 
   discount_being_amount:
-    label: 折让中金额
-    help: 收款审批中的折让金额
+    label: Discount Amount Under Approval
+    help: Discount amount under receipt approval.
     description: 
   followup_id:
-    label: 跟进人
+    label: Follow-up Person
     help: 
     description: 
   implementation:
-    label: 执行情况
+    label: Implementation Status
     help: 
     options:
-      - label: 签订中
+      - label: Signing
         value: Signing
         color: '#4a90e2'
-      - label: 执行中
+      - label: In Progress
         value: in-progress
         color: '#7ed321'
-      - label: 已结束
-        value: finsih
+      - label: Finished
+        value: finish
         color: '#f5a623'
-      - label: 已续签
+      - label: Renewed
         value: Renewed
         color: '#f8e71c'
-      - label: 终止
+      - label: Terminated
         value: termination
         color: '#d0021b'
     description: 
   instance_state:
-    label: 申请单审批状态
+    label: Application Approval Status
     help: 
     options:
-      - label: 草稿
+      - label: Draft
         value: draft
-      - label: 进行中
+      - label: Pending
         value: pending
-      - label: 已完成
+      - label: Completed
         value: completed
-      - label: 已核准
+      - label: Approved
         value: approved
-      - label: 已驳回
+      - label: Rejected
         value: rejected
-      - label: 已取消
+      - label: Canceled
         value: terminated
     description: 
   invoice_amount:
-    label: 开票已收
-    help: 收款核销的发票金额
+    label: Received Invoices
+    help: Invoice amount for which receipts have been written off.
     description: 
   left_invoice:
-    label: 剩余开票
-    help: 合同金额-已开票金额-开票中金额
+    label: Remaining Invoices
+    help: Contract amount minus invoiced amount minus amount in invoicing.
     description: 
   left_receive:
-    label: 合同应收
-    help: 合同金额-核销金额
+    label: Receivables
+    help: Contract amount minus written-off amount.
     description: 
   locked:
-    label: 已锁定
+    label: Locked
     help: 
     description: 
   maturity_date:
-    label: 到期日期
+    label: Maturity Date
     help: 
     description: 
   modified:
-    label: 修改时间
+    label: Modification Time
     help: 
     description: 
   modified_by:
-    label: 修改人
+    label: Modified By
     help: 
     description: 
   name:
-    label: 合同名称
+    label: Contract Name
     help: 
     description: 
   owner:
-    label: 所有者
+    label: Owner
     help: 
     description: 
   product_amount:
-    label: 产品金额
+    label: Product Amount
     help: 
     description: 
   signed_date:
-    label: 合同日期
+    label: Contract Date
     help: 
     description: 
   verification_being_money:
-    label: 核销中金额
-    help: 收款中金额+折让中金额
+    label: Amount Under Write-off
+    help: Receipt amount plus discount amount under approval.
     description: 
   verification_money:
-    label: 核销金额
-    help: 收款金额+折让金额
+    label: Amount Written Off
+    help: Receipt amount plus discount amount.
     description: 
 groups:
-  开票管理: 开票管理
-  收款管理: 收款管理
-  系统信息: 系统信息
-  通用: 通用
+  Invoicing Management: Invoicing Management
+  Receipt Management: Receipt Management
+  System Information: System Information
+  General: General
 listviews:
   all:
-    label: 公司合同
+    label: Company Contracts
 actions:
   standard_approve:
-    label: 发起审批
+    label: Initiate Approval

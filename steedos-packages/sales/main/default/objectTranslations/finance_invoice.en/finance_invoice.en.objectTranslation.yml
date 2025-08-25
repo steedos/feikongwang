@@ -1,129 +1,129 @@
 name: finance_invoice
-label: 开票
+label: Invoicing
 description: 
 fields:
   account:
-    label: 客户名称
+    label: Customer Name
     help: 
     description: 
   actual_date:
-    label: 开票日期
+    label: Invoice Date
     help: 
     description: 
   address:
-    label: 地址
+    label: Address
     help: 
     description: 
   amount:
-    label: 合同开票金额
+    label: Contract Invoice Amount
     help: 
     description: 
   bank:
-    label: 开户银行
+    label: Bank
     help: 
     description: 
   bank_account:
-    label: 银行账号
+    label: Bank Account Number
     help: 
     description: 
   contract_tax_amount:
-    label: 合同开票税额
+    label: Contract Invoice Tax Amount
     help: 
     description: 
   credit_code:
-    label: 纳税人识别号
+    label: Taxpayer Identification Number
     help: 
     description: 
   detail:
-    label: 有无开票明细
-    help: 无开票明细：税率可选（单税率），税额默认；有开票明细：税率可多选（可多税率），税额由开票明细决定。
+    label: Invoice Details
+    help: No invoice details：Single tax rate selectable, tax amount defaulted. With invoice details：Multiple tax rates selectable, tax amount determined by invoice details.
     options:
-      - label: 无开票明细
+      - label: No Invoice Details
         value: 'no'
         color: d7d9dd
-      - label: 有开票明细
+      - label: With Invoice Details
         value: 'yes'
         color: 78d190
     description: 
   detail_amount:
-    label: 开票明细金额
+    label: Invoice Detail Amount
     help: 
     description: 
   invoice_amount:
-    label: 发票已收金额
+    label: Amount Received for Invoice
     help: 
     description: 
   invoice_code:
-    label: 发票代码
+    label: Invoice Code
     help: 
     description: 
   invoice_left_amount:
-    label: 发票应收金额
-    help: 开票金额-发票已收金额
+    label: Invoice Receivable Amount
+    help: Invoice Amount - Amount Received for Invoice
     description: 
   invoice_name:
-    label: 发票抬头
+    label: Invoice Header
     help: 
     description: 
   invoice_number:
-    label: 发票号码
+    label: Invoice Number
     help: 
     description: 
   invoice_type:
-    label: 发票类型
+    label: Invoice Type
     help: 
     description: 
   is_active:
-    label: 已开票
+    label: Invoiced
     help: 
     description: 
   mail:
-    label: 邮箱
+    label: Email
     help: 
     description: 
   mail_address:
-    label: 邮寄地址
+    label: Mailing Address
     help: 
     description: 
   name:
-    label: 编号
+    label: Number
     help: 
     description: 
   phone:
-    label: 电话
+    label: Phone
     help: 
     description: 
   recipient:
-    label: 收件人
+    label: Recipient
     help: 
     description: 
   remark:
-    label: 备注(特殊要求)
+    label: Remarks (Special Requirements)
     help: 
     description: 
   tax:
-    label: 税率
+    label: Tax Rate
     help: 
     description: 
   tax_amount:
-    label: 开票明细税额
+    label: Invoice Detail Tax Amount
     help: 
     description: 
   telephont:
-    label: 联系电话
+    label: Contact Phone
     help: 
     description: 
 groups:
-  发票信息: 发票信息
-  开票信息: 开票信息
-  邮寄信息: 邮寄信息
+  Invoice Information: Invoice Information
+  Invoicing Information: Invoicing Information
+  Mailing Information: Mailing Information
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed
 actions:
   confirm_invoicing:
-    label: 确认开票
+    label: Confirm Invoicing
   standard_approve:
-    label: 发起审批
+    label: Initiate Approval

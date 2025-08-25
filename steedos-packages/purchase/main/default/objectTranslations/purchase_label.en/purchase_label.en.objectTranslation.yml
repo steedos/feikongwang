@@ -1,11 +1,11 @@
 name: purchase_label
-label: 应付合同标签
+label: Payables Contract Label
 description: 
 fields:
   name:
-    label: 名称
+    label: Name
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All

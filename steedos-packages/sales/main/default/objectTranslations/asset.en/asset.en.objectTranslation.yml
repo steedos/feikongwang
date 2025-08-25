@@ -1,63 +1,63 @@
 name: asset
-label: 资产
+label: Asset
 description: 
 fields:
   account:
-    label: 客户
+    label: Customer
     help: 
     description: 
   asset_currency:
-    label: 资产币种
+    label: Asset Currency
     help: 
     description: 
   asset_number:
-    label: 资产编号
+    label: Asset Number
     help: 
     description: 
   competitor_asset:
-    label: 竞争对手资产
+    label: Competitor Asset
     help: 
     description: 
   contact:
-    label: 联系人
+    label: Contact
     help: 
     description: 
   description:
-    label: 描述
+    label: Description
     help: 
     description: 
   installed_date:
-    label: 安装日期
+    label: Installed Date
     help: 
     description: 
   name:
-    label: 资产名称
+    label: Asset Name
     help: 
     description: 
   obsoleted_date:
-    label: 使用结束日期
+    label: End of Use Date
     help: 
     description: 
   price:
-    label: 价格
+    label: Price
     help: 
     description: 
   product:
-    label: 分类
+    label: Category
     help: 
     description: 
   purchased_date:
-    label: 购买日期
+    label: Purchased Date
     help: 
     description: 
   quantity:
-    label: 数量
+    label: Quantity
     help: 
     description: 
   status:
-    label: 状态
+    label: Status
     help: 
     description: 
 listviews:
   all:
-    label: 所有资产
+    label: All Assets

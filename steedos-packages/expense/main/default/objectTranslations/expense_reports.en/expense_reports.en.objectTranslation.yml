@@ -1,64 +1,64 @@
 name: expense_reports
-label: 报销单
+label: Reimbursement Report
 description: 
 fields:
   advance_payment:
-    label: 借款抵扣金额
+    label: Loan Deduction Amount
     help: 
     description: 
   amount:
-    label: 本次报销金额
+    label: Current Reimbursement Amount
     help: 
     description: 
   applicant:
-    label: 申请人
+    label: Applicant
     help: 
     description: 
   business_purpose:
-    label: 业务目的
+    label: Business Purpose
     help: 
     description: 
   cost:
-    label: 发票数
+    label: Number of Invoices
     help: 
     description: 
   end:
-    label: 费用发生结束日期
+    label: Expense End Date
     help: 
     description: 
   expense_trips:
-    label: 差旅
-    help: 请选择审批通过的差旅申请单。
+    label: Business Travel
+    help: Please select an approved travel application form.
     description: 
   name:
-    label: 报销名称
+    label: Reimbursement Name
     help: 
     description: 
   reimbursed_amount:
-    label: 报销支付金额
+    label: Reimbursement Payment Amount
     help: 
     description: 
   reports_number:
-    label: 报销编号
+    label: Reimbursement Number
     help: 
     description: 
   start:
-    label: 费用发生开始日期
+    label: Expense Start Date
     help: 
     description: 
   total_cost:
-    label: 发票总金额
+    label: Total Invoice Amount
     help: 
     description: 
 groups:
-  费用情况: 费用情况
+  Expense Details: Expense Details
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed
   unpaid:
-    label: 待支付
+    label: Pending Payment
 actions:
   standard_approve:
-    label: 发起审批
+    label: Initiate Approval

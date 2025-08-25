@@ -1,45 +1,45 @@
 name: purchase_order_payments
-label: 付款计划
+label: Payment Plan
 description: 
 fields:
   amount:
-    label: 付款金额
+    label: Payment Amount
     help: 
     description: 
   amount_description:
-    label: 付款说明
+    label: Payment Description
     help: 
     description: 
   contract_amount:
-    label: 合同金额
+    label: Contract Amount
     help: 
     description: 
   due_date:
-    label: 计划付款时间
+    label: Planned Payment Date
     help: 
     description: 
   finished:
-    label: 已完成
+    label: Completed
     help: 
     description: 
   name:
-    label: 款项条件
+    label: Payment Conditions
     help: 
     description: 
   payment_name:
-    label: 计划类型
+    label: Plan Type
     help: 
     description: 
   payment_proportion:
-    label: 付款比例
+    label: Payment Ratio
     help: 
     description: 
   purchase_order:
-    label: 应付合同
+    label: Payables Contract
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

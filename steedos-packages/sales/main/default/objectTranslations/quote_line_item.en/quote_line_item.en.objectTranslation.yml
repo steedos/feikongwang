@@ -1,58 +1,58 @@
 name: quote_line_item
-label: 报价行条目
+label: Quote Line Item
 description: 
 fields:
   date:
-    label: 日期
-    help: 产品日期、有效日期或产品的其他日期。
+    label: Date
+    help: Product date, effective date, or other date related to the product.
     description: 
   description:
-    label: 行项目描述
+    label: Line Item Description
     help: 
     description: 
   discount:
-    label: 折扣
-    help: 您应用到行项目的折扣。您可以使用百分比符号输入数字，也可以不使用百分比符号输入数字。您可以使用最多两个小数位。
+    label: Discount
+    help: The discount you apply to the line item. You can enter numbers with or without a percentage symbol, using up to two decimal places.
     description: 
   has_schedule:
-    label: 计划
-    help: 行项目是否在商机中使用计划。当商机产品被复制到报价中时，默认计划不会从商机中移转。
+    label: Schedule
+    help: Whether the line item is using a schedule in the opportunity. Default schedules are not transferred from the opportunity when an opportunity product is copied to a quote.
     description: 
   line_number:
-    label: 行项目编号
+    label: Line Item Number
     help: 
     description: 
   list_price:
-    label: 定价
+    label: List Price
     help: 
     description: 
   product_id:
-    label: 产品
-    help: 价格手册中所列的行项目产品的名称。
+    label: Product
+    help: The name of the line item product listed in the price book.
     description: 
   quantity:
-    label: 数量
-    help: 报价中包含的该行项目产品的套数。值必须大于或等于 1。如果报价与商机同步，该字段会从报价行项目更新到商机产品。
+    label: Quantity
+    help: The number of sets of the line item product included in the quote. The value must be greater than or equal to 1. If the quote is synced with an opportunity, this field is updated from the quote line item to the opportunity product.
     description: 
   quote_id:
-    label: 报价名称
+    label: Quote Name
     help: 
     description: 
   subtotal:
-    label: 小计
-    help: 行项目的销售价格与数量相乘。
+    label: Subtotal
+    help: Sale price multiplied by quantity for the line item.
     description: 
   total_price:
-    label: 总价
-    help: 行项目的销售价格和数量相乘再减去折扣。
+    label: Total Price
+    help: Sale price multiplied by quantity for the line item, minus the discount.
     description: 
   unit_price:
-    label: 销售价格
+    label: Sale Price
     help: >-
-      您想使用的产品价格。最初，商机或报价产品的销售价格为价格手册中该产品的价目表价格，但您可在此进行更改。如果报价与商机同步，该字段会从报价行项目更新到商机产品。
+      The price of the product you wish to use. Initially, the sale price of an opportunity or quote product is the list price of that product from the price book, but you can change it here. If the quote is synced with an opportunity, this field is updated from the quote line item to the opportunity product.
     description: 
 listviews:
   all:
-    label: 所有报价行条目
+    label: All Quote Line Items
   recent:
-    label: 最近查看
+    label: Recently Viewed

@@ -1,62 +1,62 @@
 name: opportunity_line_item
-label: 商机产品
+label: Opportunity Product
 description: 
 fields:
   description:
-    label: 行描述
+    label: Line Description
     help: 
     description: 
   discount:
-    label: 折扣（%）
-    help: 产品的百分比折扣。
+    label: Discount (%)
+    help: Percentage discount for the product.
     description: 
   list_price:
-    label: 价目表价格
-    help: 价格手册中的产品价格（包含币种）。只读。
+    label: List Price
+    help: Product price from the price book (including currency). Read-only.
     description: 
   number:
-    label: 序号
+    label: Serial Number
     help: 
     description: 
   opportunity_id:
-    label: 商机名
+    label: Opportunity Name
     help: 
     description: 
   product_code:
-    label: 产品代码
+    label: Product Code
     help: 
     description: 
   product_id:
-    label: 产品
+    label: Product
     help: 
     description: 
   quantity:
-    label: 数量
+    label: Quantity
     help: 
     description: 
   service_date:
-    label: 日期
-    help: 某个商机产品的关闭日期。
+    label: Date
+    help: Close date for a specific opportunity product.
     description: 
   subtotal:
-    label: 小计
-    help: 标准和折扣价格之间的差值。商机币种与用户币种不同时转换后的币种金额。
+    label: Subtotal
+    help: The difference between standard and discounted prices. Currency amount after conversion if the opportunity currency differs from the user currency.
     description: 
   total_price:
-    label: 总价
-    help: 商机产品所有产品金额的总计。
+    label: Total Price
+    help: Total sum of all product amounts for the opportunity product.
     description: 
   unit_price:
-    label: 销售价格
-    help: 商机产品中产品的价格。对于没有相关计划的商机产品，销售价格可以编辑。当计划与商机产品相关时，销售价格变为只读。
+    label: Sale Price
+    help: Price of the product in the opportunity product. Sale price can be edited when there is no related schedule. When a schedule is related to the opportunity product, the sale price becomes read-only.
     description: 
 listviews:
   all:
-    label: 全部商机产品
+    label: All Opportunity Products
 actions:
   addProduct:
-    label: 添加产品
+    label: Add Product
   selectPriceBook:
-    label: 选择价格手册
+    label: Select Price Book
   standard_new:
-    label: 
+    label: New

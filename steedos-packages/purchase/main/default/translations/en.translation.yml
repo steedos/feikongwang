@@ -1,9 +1,9 @@
 CustomApplications:
   purchase:
-    name: 应付
-    description: 全面而精确的支出监控
+    name: Payables
+    description: Comprehensive and accurate expense monitoring
     groups:
-      设置: 设置
+      Settings: Settings
 CustomTabs:
   purchase_dashboard: Home
   object_purchase_orders: object_purchase_orders

@@ -1,121 +1,121 @@
 name: order
-label: 订单
+label: Order
 description: 
 fields:
   account_id:
-    label: 客户
+    label: Customer
     help: 
     description: 
   account_number:
-    label: 客户编号
+    label: Customer Number
     help: 
     description: 
   activated_by_id:
-    label: 启用人
+    label: Activated By
     help: 
     description: 
   activated_date:
-    label: 启用日期
+    label: Activation Date
     help: 
     description: 
   bill_to_contact:
-    label: 开单对象联系人
+    label: Billing Contact
     help: 
     description: 
   billing_address:
-    label: 账单地址
+    label: Billing Address
     help: 
     description: 
   company_authorized_by_id:
-    label: 公司授权人
+    label: Company Authorized By
     help: 
     description: 
   company_authorized_date:
-    label: 公司授权日期
+    label: Company Authorization Date
     help: 
     description: 
   customer_authorized_by_id:
-    label: 客户授权人
+    label: Customer Authorized By
     help: 
     description: 
   customer_authorized_date:
-    label: 客户授权日期
+    label: Customer Authorization Date
     help: 
     description: 
   description:
-    label: 说明
+    label: Description
     help: 
     description: 
   effective_date:
-    label: 订单开始日期
+    label: Order Start Date
     help: 
     description: 
   end_date:
-    label: 订单结束日期
+    label: Order End Date
     help: 
     description: 
   name:
-    label: 订单名
+    label: Order Name
     help: 
     description: 
   opportunity_id:
-    label: 商机
+    label: Opportunity
     help: 
     description: 
   order_number:
-    label: 订单编号
+    label: Order Number
     help: 
     description: 
   order_reference_number:
-    label: 订单参考编号
+    label: Order Reference Number
     help: 
     description: 
   owner:
-    label: 订单所有人
+    label: Order Owner
     help: 
     description: 
   po_date:
-    label: 订单日期
+    label: Purchase Order Date
     help: 
     description: 
   po_number:
-    label: 订单编号
+    label: Purchase Order Number
     help: 
     description: 
   quote_id:
-    label: 报价
+    label: Quote
     help: 
     description: 
   ship_to_contact_id:
-    label: 收货方联系人
+    label: Ship-To Contact
     help: 
     description: 
   shipping_address:
-    label: 邮寄地址
+    label: Shipping Address
     help: 
     description: 
   status:
-    label: 状态
+    label: Status
     help: 
     options:
-      - label: 草稿
+      - label: Draft
         value: Draft
-      - label: 已启用
+      - label: Activated
         value: Activated
     description: 
   total_amount:
-    label: 订单金额
+    label: Order Amount
     help: 
     description: 
   type:
-    label: 订单类型
+    label: Order Type
     help: 
     options:
-      - label: 无
+      - label: None
         value: none
     description: 
 listviews:
   all:
-    label: 所有订单
+    label: All Orders
   recent:
-    label: 最近查看
+    label: Recently Viewed

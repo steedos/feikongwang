@@ -1,7 +1,7 @@
 CustomApplications:
   admin:
     name: Setup
-    description: 管理员设置公司、人员、权限等。
+    description: Admin sets up company, personnel, permissions, etc.
     groups:
       personal_settings: personal_settings
       company_settings: company_settings

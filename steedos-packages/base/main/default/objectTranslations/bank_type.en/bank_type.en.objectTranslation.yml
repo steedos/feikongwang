@@ -1,19 +1,19 @@
 name: bank_type
-label: 银行
+label: Bank
 description: 
 fields:
   code:
-    label: 类别代码
+    label: Category Code
     help: 
     description: 
   description:
-    label: 备注
+    label: Remarks
     help: 
     description: 
   name:
-    label: 类别名称
+    label: Category Name
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All

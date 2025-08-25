@@ -1,36 +1,36 @@
 name: expense_advance_payment
-label: 借款
+label: Advance Payment
 description: 
 fields:
   amount:
-    label: 金额
+    label: Amount
     help: 
     description: 
   date:
-    label: 日期
+    label: Date
     help: 
     description: 
   expense_reports:
-    label: 报销
+    label: Reimbursement
     help: 
     description: 
   name:
-    label: 借款说明
+    label: Loan Description
     help: 
     description: 
   write_off_status:
-    label: 核销状态
+    label: Write-Off Status
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed
   unverified:
-    label: 未核销
+    label: Unverified
 actions:
   related_loans:
-    label: 关联借款
+    label: Related Loans
   standard_new:
-    label: 新建
+    label: New

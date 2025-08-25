@@ -1,60 +1,60 @@
 name: purchase_order_item
-label: 采购订单项
+label: Purchase Order Item
 description: 
 fields:
   amount_demand:
-    label: 需求数量
+    label: Demand Quantity
     help: 
     description: 
   amount_receiverd:
-    label: 已接收数量
+    label: Received Quantity
     help: 
     description: 
   delivery_date:
-    label: 交货日期
+    label: Delivery Date
     help: 
     description: 
   material_coding:
-    label: 物料
+    label: Material
     help: 
     description: 
   name:
-    label: 物料编码
+    label: Material Code
     help: 
     description: 
   owner:
-    label: 所有者
+    label: Owner
     help: 
     description: 
   price_subtotal:
-    label: 小计
+    label: Subtotal
     help: 
     description: 
   price_unit:
-    label: 单价
+    label: Unit Price
     help: 
     description: 
   product_description_variants:
-    label: 说明
+    label: Description
     help: 
     description: 
   purchase_order:
-    label: 采购订单
+    label: Purchase Order
     help: 
     description: 
   purchase_request:
-    label: 采购申请单
+    label: Purchase Request
     help: 
     description: 
   unit:
-    label: 计量单位
+    label: Measurement Unit
     help: 
     description: 
 listviews:
   all:
-    label: 所有采购订单项
+    label: All Purchase Order Items
   recent:
-    label: 最近查看
+    label: Recently Viewed
 actions:
   standard_delete:
     label: Delete

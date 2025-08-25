@@ -1,131 +1,130 @@
 name: opportunity
-label: 商机
+label: Opportunity
 description: 
 fields:
   account:
-    label: 客户
-    help: 商机所链接的客户名。您可输入客户名或使用查找图标选择客户。如果您更改的客户有合作伙伴，则将从“合作伙伴”相关列表删除所有合作伙伴。
+    label: Customer
+    help: The customer associated with the opportunity. You can enter the customer name or use the lookup icon to select a customer. If the changed customer has a partner, all partners will be removed from the "Partners" related list.
     description: 
   amount:
-    label: 金额
+    label: Amount
     help: >-
-      估计总销售额。如果启用了多种币种，默认情况下，金额以您的个人币种显示。更改商机币种选项列表以跟踪另一币种的金额。对于具有产品的商机，金额是相关产品的总和。您无法直接编辑金额，除非该商机没有产品。要更改包含产品的商机的金额，编辑相关产品的销售价格或数量。如果您更改商机对应的价格手册，那么所有的产品都从该商机的“相关产品”中删除，但是本字段中的值不变。
+      The estimated total sale amount. If multiple currencies are enabled, the amount is displayed in your personal currency by default. Change the opportunity currency option list to track the amount in another currency. For opportunities with products, the amount is the sum of the related products. You cannot directly edit the amount unless the opportunity has no products. To change the amount for an opportunity with products, edit the selling price or quantity of the related products. If you change the price book for the opportunity, all products are removed from the related list under the opportunity, but the value in this field remains unchanged.
     description: 
   budget_confirmed:
-    label: 有预算
+    label: Budget Confirmed
     help: 
     description: 
   campaign_id:
-    label: 主要市场活动源
+    label: Primary Campaign Source
     help: >-
-      负责产生商机的市场活动的名称。对于在线索转换期间创建的商机，此字段自动以线索中的市场活动名称填充。如果线索具有多个相关联市场活动，则将具有最新更新的成员状态的市场活动插入商机。对于具有多个影响的市场活动的商机，单击商机详细信息页面上“市场活动影响”相关列表中的主要市场活动旁边的编辑并选择主要市场活动源复选框。该市场活动显示在商机上主要市场活动源字段上。
+      The name of the campaign responsible for generating the opportunity. For opportunities created during lead conversions, this field automatically populates with the campaign name from the lead. If a lead has multiple related campaigns, the most recently updated member status campaign is inserted into the opportunity. For opportunities influenced by multiple campaigns, click Edit next to the primary campaign in the Campaign Influence related list on the opportunity detail page and select the Primary Campaign Source checkbox. The campaign is displayed in the Primary Campaign Source field on the opportunity.
     description: 
   description:
-    label: 描述
+    label: Description
     help: 
     description: 
   discovery_completed:
-    label: 勘察结束
+    label: Discovery Completed
     help: 
     description: 
   due_date:
-    label: 结单日期
+    label: Close Date
     help: >-
-      您计划关闭商机的日期。您可以输入一个日期，或从您将光标放在字段中时显示的日历中选择一个日期。在指定期限内具有关闭日期的商机计入该时期的预测，除非您将其分配到“忽略”类别，或按计划或产品日期预测。当您将未处理商机的阶段设为“已结束/赢得客户”，如果最初的日期是在未来，则关闭日期设为协调世界时
-      (UTC) 的当前日期。在一天的某个时间，UTC 可能与您的时区相差一天。如果结束日期是过去商机结束的日期，则日期不能更改。
+      The date you plan to close the opportunity. You can enter a date or select one from the calendar that appears when you hover in the field. Opportunities with close dates within a specific time period are included in forecasting for that period, unless you've allocated it to the "Omit" category, or forecast by scheduled or product date. When you set the stage of an open opportunity to "Closed/Won," the close date is set to the current date in Coordinated Universal Time (UTC) if the initial date was in the future. At certain times of the day, UTC might differ from your time zone by a day. If the closed date is the past close date of the opportunity, it cannot be changed.
     description: 
   expected_revenue:
-    label: 预测收入
-    help: 基于金额和商机赢率计算的收入。
+    label: Expected Revenue
+    help: Revenue calculated based on the amount and opportunity probability.
     description: 
   forecast_category:
-    label: 预测类别
-    help: 在报表、商机详细信息和编辑页面、商机搜索和商机列表视图中显示的预测类别名称。商机的设置绑定到其阶段。
+    label: Forecast Category
+    help: The forecast category name displayed in reports, opportunity details and edit pages, opportunity searches, and opportunity list views. The opportunity's category is linked to its stage.
     options:
-      - label: 忽略
+      - label: Omit
         value: Omit
-      - label: 销售漏斗
+      - label: Sales Funnel
         value: Sales_Funnel
-      - label: 最高金额
+      - label: Maximum Amount
         value: Maximum_Amount
-      - label: 提交
+      - label: Submit
         value: Submit
-      - label: 关闭
+      - label: Close
         value: Close
     description: 
   iq_score:
-    label: 商机得分
+    label: Opportunity Score
     help: 
     description: 
   lead_source:
-    label: 线索来源
+    label: Lead Source
     help: 
     options:
-      - label: 广告
+      - label: Advertisement
         value: Advertisement
-      - label: 客户活动
+      - label: Customer Event
         value: Customer_Event
-      - label: 员工推荐
+      - label: Employee Referral
         value: Employee_Referral
-      - label: 百度搜索
+      - label: Baidu Search
         value: Baidu_AdWords
-      - label: 其他
+      - label: Other
         value: Other
-      - label: 合作伙伴
+      - label: Partner
         value: Partner
-      - label: 采购清单
+      - label: Purchased List
         value: Purchased_List
-      - label: 贸易展览
+      - label: Trade Show
         value: Trade_Show
-      - label: 线上研讨
+      - label: Webinar
         value: Webinar
-      - label: 网站
+      - label: Website
         value: Website
     description: 
   loss_reason:
-    label: 失败原因
+    label: Loss Reason
     help: 
     options:
-      - label: 竞争失败
+      - label: Lost to Competitor
         value: Lost_to_Competitor
-      - label: 没有预算
+      - label: No Budget
         value: No_Budget_Lost_Funding
-      - label: 没有回应
+      - label: No Response
         value: No_Decision_Non-Responsive
-      - label: 价格因素
+      - label: Price Issue
         value: Price
-      - label: 其他
+      - label: Other
         value: Other
     description: 
   name:
-    label: 商机名
+    label: Opportunity Name
     help: 
     description: 
   next_step:
-    label: 下一步
-    help: 说明关闭商机后下一步的任务。
+    label: Next Step
+    help: Describes the tasks for the next step after closing the opportunity.
     description: 
   opportunity_currency:
-    label: 商机币种
+    label: Opportunity Currency
     help: >-
-      商机中所有币种金额字段的默认币种。金额以商机币种显示，并会转换为用户的个人币种。仅在启用多种币种时可用。对于具有产品的商机，该币种绑定到相关联价格手册的币种。您无法直接编辑此字段，除非您首先删除产品。
+      The default currency for all currency amount fields in the opportunity. Amounts are displayed in the opportunity currency and converted to the user's personal currency. Available only if multiple currencies are enabled. For opportunities with products, the currency is linked to the related price book's currency. You cannot directly edit this field unless you first remove the products.
     description: 
   owner:
-    label: 我方客户经理
+    label: Our Account Manager
     help: 
     description: 
   partner_account:
-    label: 合作伙伴客户
-    help: 表示该商机属于某合作伙伴（只读）
+    label: Partner Account
+    help: Indicates that the opportunity belongs to a partner (read-only).
     description: 
   private:
-    label: 专用
-    help: 商机是专用的。只有记录的所有人、层次结构中位于该角色之上的用户和管理员可以查看、编辑或报告专有记录。
+    label: Private
+    help: The opportunity is private. Only the record owner, users above that role in the hierarchy, and administrators can view, edit, or report on private records.
     description: 
   probability:
-    label: 商机赢率（%）
+    label: Opportunity Probability (%)
     help: >-
-      商机将关闭的可能性，以百分比表示。可能性值总是由阶段值的更改而更新，即使在您的页面布局中可能性字段标记为只读。对此字段具有编辑权限的用户可以覆盖该值。
+      The probability of closing the opportunity, expressed as a percentage. Probability values are always updated by changes in stage value, even if the probability field is marked as read-only in your page layout. Users with edit permissions for this field can override the value.
     options:
       - label: 10%
         value: 10%
@@ -141,68 +140,67 @@ fields:
         value: 0%
     description: 
   rating:
-    label: 分级
+    label: Rating
     help: 
     options:
-      - label: 非常重要
+      - label: Very Important
         value: Hot
-      - label: 重要
+      - label: Important
         value: Warm
-      - label: 普通
+      - label: Normal
         value: Cold
     description: 
   roi_analysis_completed:
-    label: 完成ROI分析
+    label: ROI Analysis Completed
     help: 
     description: 
   stage:
-    label: 商机阶段
+    label: Opportunity Stage
     help: >-
-      管理员将此选项列表中的值与决定商机如何对您的预测进行贡献的“预测类别”值关联。如果原始日期在未来，则当您将未处理商机的阶段设为已结束/赢得客户，则关闭日期设为协调世界时
-      (UTC) 的当前日期。在一天的某个时间，UTC 可能与您的时区相差一天。如果结束日期是过去商机结束的日期，则日期不能更改。
+      Administrators associate values in this option list with "Forecast Category" values that determine how the opportunity contributes to your forecast. If the original date is in the future, when you set the stage of an open opportunity to "Closed/Won," the close date is set to the current date in Coordinated Universal Time (UTC). At certain times of the day, UTC might differ from your time zone by a day. If the closed date is the past close date of the opportunity, it cannot be changed.
     options:
-      - label: 初期沟通
+      - label: Initial Communication
         value: Qualification
-      - label: 立项跟踪
+      - label: Project Tracking
         value: Needs_Analysis
-      - label: 呈报方案
+      - label: Proposal
         value: Proposal
-      - label: 商务谈判
+      - label: Negotiation
         value: Negotiation
-      - label: 赢单
+      - label: Closed Won
         value: Closed_Won
-      - label: 输单
+      - label: Closed Lost
         value: Closed_Lost
     description: 
   synced_quoted:
-    label: 同步的报价
-    help: 同步到商机的报价。只有一个报价可以同步到商机。
+    label: Synced Quote
+    help: Quote synced to the opportunity. Only one quote can be synced to the opportunity.
     description: 
   total_opportunity_quantity:
-    label: 数量
-    help: 如果商机具有产品则为“产品”相关列表中所有产品的所有数量字段值的总计。如果商机没有产品则为通用字段。
+    label: Quantity
+    help: For opportunities with products, the total of all quantity field values for all products in the "Products" related list. For opportunities without products, it is a generic field.
     description: 
   type:
-    label: 商机类型
-    help: 商机的类型，例如“现有业务”或“新业务”。
+    label: Opportunity Type
+    help: The type of opportunity, such as "Existing Business" or "New Business."
     options:
-      - label: 现有业务
+      - label: Existing Business
         value: Existing_Business
-      - label: 新业务
+      - label: New Business
         value: New_Business
     description: 
 groups:
-  备注信息: 备注信息
+  Remarks Information: Remarks Information
 listviews:
   all:
-    label: 全部商机
+    label: All Opportunities
   lost:
-    label: 已失败的商机
+    label: Lost Opportunities
   mine:
-    label: 我的商机
+    label: My Opportunities
   operating:
-    label: 进行中的商机
+    label: Active Opportunities
   recent:
-    label: 最近查看
+    label: Recently Viewed
   won:
-    label: 已成功的商机
+    label: Won Opportunities

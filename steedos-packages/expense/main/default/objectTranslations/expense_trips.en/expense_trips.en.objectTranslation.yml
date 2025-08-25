@@ -1,25 +1,25 @@
 name: expense_trips
-label: 差旅申请
+label: Business Travel Application
 description: 
 fields:
   applicant:
-    label: 申请人
+    label: Applicant
     help: 
     description: 
   business_purpose:
-    label: 业务目的
+    label: Business Purpose
     help: 
     description: 
   name:
-    label: 差旅名称
-    help: 例如：去北京出差
+    label: Travel Name
+    help:  Business trip to Beijing
     description: 
   travel_number:
-    label: 差旅编号
+    label: Travel Number
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
   recent:
-    label: 最近查看
+    label: Recently Viewed

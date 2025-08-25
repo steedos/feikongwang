@@ -1,53 +1,53 @@
 name: contract_invoice_detail
-label: 合同开票明细
+label: Contract Invoice Detail
 description: 
 fields:
   amount:
-    label: 合同金额
+    label: Contract Amount
     help: 
     description: 
   amount_invoicing:
-    label: 本次开票金额
+    label: Current Invoice Amount
     help: 
     description: 
   contract:
-    label: 合同
-    help: 只能选择开票中选择的客户关联的合同。
+    label: Contract
+    help: Only contracts related to the customer selected for invoicing can be chosen.
     description: 
   date:
-    label: 合同日期
+    label: Contract Date
     help: 
     description: 
   finance_invoice:
-    label: 开票
+    label: Invoice
     help: 
     description: 
   invoiced_amount:
-    label: 合同已开票金额
+    label: Amount Invoiced in Contract
     help: 
     description: 
   left_invoice:
-    label: 合同剩余开票金额
+    label: Remaining Invoice Amount in Contract
     help: 
     description: 
   name:
-    label: 合同开票明细编号
+    label: Contract Invoice Detail Number
     help: 
     description: 
   state:
-    label: 状态
+    label: Status
     help: 
     options:
-      - label: 待开票
+      - label: Pending Invoice
         value: unsubmitted
         color: d7d9dd
-      - label: 已开票
+      - label: Invoiced
         value: approved
         color: 78d190
     description: 
 listviews:
   all:
-    label: 所有
+    label: All
 actions:
   standard_new:
-    label: 新建
+    label: New

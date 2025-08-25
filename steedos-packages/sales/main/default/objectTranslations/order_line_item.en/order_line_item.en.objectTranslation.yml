@@ -1,77 +1,77 @@
 name: order_line_item
-label: 订单产品
+label: Order Product
 description: 
 fields:
   available_quantity:
-    label: 可用数量
-    help: 可用于减少的单位数量。当启用减单时，订单产品的可用数量将更新，以反映出相关减单产品的数量。值必须始终大于或等于 0。（只读）
+    label: Available Quantity
+    help: The unit quantity available for reduction. When reduction orders are enabled, the available quantity of an order product is updated to reflect the quantity of associated reduction order products. The value must always be greater than or equal to 0. (Read-only)
     description: 
   description:
-    label: 行备注
+    label: Line Remarks
     help: 
     description: 
   discount:
-    label: 折扣（%）
+    label: Discount (%)
     help: 
     description: 
   end_date:
-    label: 结束日期
+    label: End Date
     help: 
     description: 
   has_schedule:
-    label: 计划
+    label: Schedule
     help: 
     description: 
   list_price:
-    label: 价目表价格
-    help: 父级订单上的价格手册设定的默认价格。（只读）
+    label: List Price
+    help: The default price set by the price book on the parent order. (Read-only)
     description: 
   order_id:
-    label: 订单
-    help: 本订单产品的父级订单。
+    label: Order
+    help: The parent order of this order product.
     description: 
   order_item_number:
-    label: 订单产品编号
-    help: 识别订单产品记录的自动生成的编号。（只读）
+    label: Order Product Number
+    help: Automatically generated number identifying the order product record. (Read-only)
     description: 
   original_order_item_id:
-    label: 原始订单产品
-    help: 要减少订单产品的编号。如果订单产品正减少另一个订单产品时必填。（只读）
+    label: Original Order Product
+    help: Number of the order product to be reduced. Required if the order product is reducing another order product. (Read-only)
     description: 
   product_code:
-    label: 产品代码
-    help: 用于识别产品的内部代码或产品号。（只读）
+    label: Product Code
+    help: Internal code or product number used to identify the product. (Read-only)
     description: 
   product_id:
-    label: 产品
-    help: 本订单产品记录使用的产品名称。（只读）
+    label: Product
+    help: The product name used for this order product record. (Read-only)
     description: 
   quantity:
-    label: 数量
-    help: 产品的单位数量。
+    label: Quantity
+    help: Unit quantity of the product.
     description: 
   quote_line_item_id:
-    label: 报价行项目
-    help: 与订单产品关联的报价行项目。报价行项目的报价必须与和订单产品的父级订单相关联的报价相匹配。
+    label: Quote Line Item
+    help: The quote line item associated with the order product. The quote for the quote line item must match the quote associated with the order product's parent order.
     description: 
   service_date:
-    label: 开始日期
-    help: 订单产品的开始日期。
+    label: Start Date
+    help: Start date of the order product.
     description: 
   subtotal:
-    label: 小计
+    label: Subtotal
     help: 
     description: 
   total_price:
-    label: 总价
-    help: 订单产品数量乘以单价。
+    label: Total Price
+    help: Quantity of the order product multiplied by the unit price.
     description: 
   unit_price:
-    label: 单价
-    help: 订单产品的单价。
+    label: Unit Price
+    help: Unit price of the order product.
     description: 
 listviews:
   all:
-    label: 所有订单产品
+    label: All Order Products
   recent:
-    label: 最近查看
+    label: Recently Viewed

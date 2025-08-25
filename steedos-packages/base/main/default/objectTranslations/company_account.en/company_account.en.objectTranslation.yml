@@ -1,31 +1,31 @@
 name: company_account
-label: 结算账户
+label: Settlement Account
 description: 
 fields:
   accnum:
-    label: 开户账号
+    label: Account Number
     help: 
     description: 
   description:
-    label: 备注
+    label: Remarks
     help: 
     description: 
   init_amount:
-    label: 初始余额
+    label: Initial Balance
     help: 
     description: 
   name:
-    label: 户名
+    label: Account Name
     help: 
     description: 
   pk_bankname:
-    label: 开户支行
+    label: Bank Branch
     help: 
     description: 
   pk_banktype:
-    label: 开户银行
+    label: Bank Name
     help: 
     description: 
 listviews:
   all:
-    label: 所有
+    label: All

@@ -1,13 +1,13 @@
 CustomApplications:
   master:
-    name: 基础数据
-    description: 系统基础对象数据管理应用。
+    name: Basic Data
+    description: System basic object data management application.
     groups:
-      客商设置: 客商设置
-      费用设置: 费用设置
-      发票设置: 发票设置
-      财务设置: 财务设置
-      产品设置: 产品设置
+      Customer Settings: Customer Settings
+      Expense Settings: Expense Settings
+      Invoice Settings: Invoice Settings
+      Finance Settings: Finance Settings
+      Product Settings: Product Settings
 CustomTabs:
   object_accounts: object_accounts
   object_expense_category: object_expense_category

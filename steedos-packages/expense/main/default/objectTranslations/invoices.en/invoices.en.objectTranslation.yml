@@ -1,277 +1,277 @@
 name: invoices
-label: 发票
+label: Invoices
 description: 
 fields:
   category:
-    label: 费用类别
-    help: 请选择启用的费用类别。
+    label: Expense Category
+    help: Please select an enabled expense category.
     description: 
   check_code:
-    label: 校验码
+    label: Check Code
     help: 
     description: 
   expense_reports:
-    label: 报销单
+    label: Reimbursement Report
     help: 
     description: 
   file:
-    label: 发票文件
+    label: Invoice File
     help: 
     description: 
   has_used_by_cost:
-    label: 已被费用关联
+    label: Associated with Expense
     help: 
     description: 
   invalid_sign:
-    label: 是否作废（冲红）
+    label: Void Status (Red Denote)
     help: 
     options:
-      - label: 已作废
+      - label: Voided
         value: 'Y'
-      - label: 已冲红
+      - label: Red Denote
         value: H
-      - label: 未作废
+      - label: Not Void
         value: 'N'
     description: 
   invoice_amount:
-    label: 发票含税金额
+    label: Invoice Amount (Including Tax)
     help: 
     description: 
   invoice_code:
-    label: 发票代码
+    label: Invoice Code
     help: 
     description: 
   invoice_date:
-    label: 发票日期
+    label: Invoice Date
     help: 
     description: 
   invoice_num:
-    label: 发票号码
+    label: Invoice Number
     help: 
     description: 
   invoice_type:
-    label: 增值税发票的细分类型
+    label: Subtype of VAT Invoice
     help: 
     options:
-      - label: 普通发票
-        value: 普通发票
-      - label: 专用发票
-        value: 专用发票
-      - label: 电子普通发票
-        value: 电子普通发票
-      - label: 增值税普通发票（卷式）
-        value: 增值税普通发票（卷式）
-      - label: 电子专用发票
-        value: 电子专用发票
-      - label: 通行费电子普票
-        value: 通行费电子普票
-      - label: 区块链发票
-        value: 区块链发票
-      - label: 电子发票(专用发票)
-        value: 电子发票(专用发票)
-      - label: 电子发票(普通发票)
-        value: 电子发票(普通发票)
-      - label: 货运运输业增值税专用发票
-        value: 货运运输业增值税专用发票
-      - label: 机动车销售发票
-        value: 机动车销售发票
-      - label: 二手车销售发票
-        value: 二手车销售发票
+      - label: General Invoice
+        value: General Invoice
+      - label: Special Invoice
+        value: Special Invoice
+      - label: Electronic General Invoice
+        value: Electronic General Invoice
+      - label: VAT General Invoice (Roll)
+        value: VAT General Invoice (Roll)
+      - label: Electronic Special Invoice
+        value: Electronic Special Invoice
+      - label: ETC Electronic Invoice
+        value: ETC Electronic Invoice
+      - label: Blockchain Invoice
+        value: Blockchain Invoice
+      - label: Electronic Invoice (Special Invoice)
+        value: Electronic Invoice (Special Invoice)
+      - label: Electronic Invoice (General Invoice)
+        value: Electronic Invoice (General Invoice)
+      - label: Freight Transport VAT Special Invoice
+        value: Freight Transport VAT Special Invoice
+      - label: Motor Vehicle Sales Invoice
+        value: Motor Vehicle Sales Invoice
+      - label: Used Vehicle Sales Invoice
+        value: Used Vehicle Sales Invoice
     description: 
   name:
-    label: 发票编号
+    label: Invoice Identifier
     help: 
     description: 
   notax_amount:
-    label: 发票不含税金额
+    label: Amount Excluding Tax
     help: 
     description: 
   ocr_log:
-    label: 发票识别日志
+    label: OCR Log
     help: 
     description: 
   ocr_result:
-    label: 发票识别结果
+    label: OCR Result
     help: 
     description: 
   purchase_order:
-    label: 应付合同
+    label: Payable Contract
     help: 
     description: 
   purchaser_name:
-    label: 购方名称
+    label: Buyer Name
     help: 
     description: 
   purchaser_register_num:
-    label: 购方纳税人识别号
+    label: Buyer Taxpayer ID
     help: 
     description: 
   receipt:
-    label: 收据
+    label: Receipt
     help: 
     description: 
   seller_name:
-    label: 销售方名称
+    label: Seller Name
     help: 
     description: 
   seller_register_num:
-    label: 销售方纳税人识别号
+    label: Seller Taxpayer ID
     help: 
     description: 
   service_type:
-    label: 发票消费类型
+    label: Invoice Service Type
     help: 
     description: 
   state:
-    label: 状态
+    label: Status
     help: 
     options:
-      - label: 未关联记录
+      - label: Unassociated Record
         value: unassociated
         color: 167bc1
-      - label: 未提交审批
+      - label: Not Submitted for Approval
         value: unsubmitted
         color: d7d9dd
-      - label: 审批中
+      - label: In Approval Process
         value: approval
         color: df6825
-      - label: 已批准
+      - label: Approved
         value: approved
         color: 78d190
     description: 
   supplier:
-    label: 供应商
+    label: Supplier
     help: 
     description: 
   tax:
-    label: 税率
+    label: Tax Rate
     help: 
     description: 
   tax_amount:
-    label: 发票税额
+    label: Invoice Tax Amount
     help: 
     description: 
   type:
-    label: 发票类型
+    label: Invoice Type
     help: 
     options:
-      - label: 增值税发票
+      - label: VAT Invoice
         value: vat_invoice
-      - label: 出租车票
+      - label: Taxi Receipt
         value: taxi_receipt
-      - label: 网约车行程单
+      - label: Online Car Service Receipt
         value: taxi_online_ticket
-      - label: 火车票
+      - label: Train Ticket
         value: train_ticket
-      - label: 飞机行程单
+      - label: Air Ticket
         value: air_ticket
-      - label: 汽车票
+      - label: Bus Ticket
         value: bus_ticket
-      - label: 船票
+      - label: Ferry Ticket
         value: ferry_ticket
-      - label: 定额发票
+      - label: Quota Invoice
         value: quota_invoice
-      - label: 机打发票
+      - label: Printed Invoice
         value: printed_invoice
-      - label: 机动车销售发票
+      - label: Motor Vehicle Sales Invoice
         value: motor_vehicle_invoice
-      - label: 二手车发票
+      - label: Used Vehicle Invoice
         value: used_vehicle_invoice
-      - label: 限额发票
+      - label: Limit Invoice
         value: limit_invoice
-      - label: 购物小票
+      - label: Shopping Receipt
         value: shopping_receipt
-      - label: 过路过桥费发票
+      - label: Toll Invoice
         value: toll_invoice
-      - label: 卷票
+      - label: Roll Ticket
         value: roll_normal_invoice
-      - label: POS小票
+      - label: POS Receipt
         value: pos_invoice
-      - label: 其他
+      - label: Others
         value: others
     description: 
   verify_log:
-    label: 发票验真日志
+    label: Verification Log
     help: 
     description: 
   verify_message:
-    label: 查验结果说明
+    label: Verification Result Description
     help: 
     description: 
   verify_result:
-    label: 查验结果
+    label: Verification Result
     help: 
     options:
-      - label: 查验成功
+      - label: Verification Successful
         value: '0001'
-      - value: '9999'
-        label: 查验失败
-        description: 查验失败，业务出现异常，请提交工单咨询
-      - value: '0002'
-        label: 超过该张票当天查验次数
-        description: 此发票今日查询次数已达上限（5次），请次日查询
-      - label: 请求不合法
+      - label: Verification Failed
+        value: '9999'
+        description: Verification failed. Please submit a ticket for support.
+      - label: Verification Limit Reached Today
+        value: '0002'
+        description: The invoice has reached its query limit today (5 times). Please retry tomorrow.
+      - label: Illegal Request
         value: '0005'
-        description: 发票信息有误，请核对后再查询
-      - value: '0006'
-        label: 发票信息不一致
-        description: 发票信息有误，请核对后再查询
-      - value: 0009
-        label: 发票不存在
-        description: 所查发票不存在
-      - value: '1004'
-        label: 已超过最大查验量
-        description: 已超过最大查验量，请提交工单咨询
-      - label: 查询发票不规范
+        description: The invoice information is incorrect. Please check and retry.
+      - label: Inconsistent Invoice Information
+        value: '0006'
+        description: The invoice information is incorrect. Please check and retry.
+      - label: Invoice Does Not Exist
+        value: '0009'
+        description: The queried invoice does not exist.
+      - label: Exceeded Max Verification Capacity
+        value: '1004'
+        description: Exceeded the maximum verification capacity. Please submit a ticket for support.
+      - label: Non-Compliant Invoice Query
         value: '1005'
-        description: 信息有误，请核对后再查询
-      - value: '1006'
-        label: 查验异常
-        description: 发票信息有误，请核对后再查询
-      - value: '1008'
-        label: 字段不能为空
-        description: 发票请求参数不能为空
-      - value: '1009'
-        label: 参数长度不正确
-        description: 参数长度不符合规范，确认参数，再次查验
-      - value: '1014'
-        label: 日期当天的不能查验
-        description: 日期当天的不能查验，请隔天再查
-      - value: '1015'
-        label: 超过5年的不能查验
-        description: 超过5年的不能查验
-      - value: '1020'
-        label: 没有查验权限
-        description: 没有查验权限，请提交工单咨询
-      - value: '1021'
-        label: 网络超时
-        description: 税局维护升级，暂时无法查验，请提交工单咨询
+        description: Information is incorrect. Please check and retry.
+      - label: Verification Error
+        value: '1006'
+        description: The invoice information is incorrect. Please check and retry.
+      - label: Fields Cannot Be Empty
+        value: '1008'
+        description: Invoice request parameters cannot be empty.
+      - label: Incorrect Parameter Length
+        value: '1009'
+        description: Parameter length is incorrect. Please verify and retry.
+      - label: Cannot Verify Today's Date
+        value: '1014'
+        description: Cannot verify the invoice with today's date. Please try the next day.
+      - label: Cannot Verify Over 5 Years
+        value: '1015'
+        description: Cannot verify invoices older than 5 years.
+      - label: No Verification Permission
+        value: '1020'
+        description: No verification permission. Please submit a ticket for support.
+      - label: Network Timeout
+        value: '1021'
+        description: Tax bureau is under maintenance. Verification is temporarily unavailable. Please submit a ticket for support.
     description: 
   verify_status:
-    label: 查验状态
+    label: Verification Status
     help: 
     options:
-      - label: 未查验
+      - label: Not Verified
         value: not_verified
-      - label: 查验已通过
+      - label: Verification Passed
         value: passed
-      - label: 查验未通过
+      - label: Verification Failed
         value: failed
-      - label: 不查验
+      - label: No Inspection
         value: no_inspection
     description: 
 groups:
-  发票信息: 发票信息
-  查验: 查验
+  Invoice Information: Invoice Information
+  Verification: Verification
 listviews:
   all:
-    label: 所有
+    label: All
 actions:
   ocr:
-    label: 智能识票
+    label: Intelligent Invoice Recognition
   related_invoices:
-    label: 关联发票
+    label: Related Invoices
   standard_new:
-    label: 新建
+    label: New
   verify:
-    label: 查验
+    label: Verify

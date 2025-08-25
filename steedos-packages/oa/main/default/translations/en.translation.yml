@@ -1,7 +1,7 @@
 CustomApplications:
   approve_workflow:
-    name: 审批王
-    description: 管理审批、公告、任务、日程。
+    name: Approval Manager
+    description: Manage approvals, announcements, tasks, and schedules.
 CustomTabs:
   object_instance_tasks: object_instance_tasks
   object_announcements: object_announcements
