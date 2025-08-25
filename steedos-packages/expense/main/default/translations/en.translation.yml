@@ -5,7 +5,7 @@ CustomApplications:
     groups:
       设置: 设置
 CustomTabs:
-  reimbursement_homepage: reimbursement_homepage
+  reimbursement_homepage: Home
   object_expense_trips: object_expense_trips
   object_expense: object_expense
   object_invoices: object_invoices

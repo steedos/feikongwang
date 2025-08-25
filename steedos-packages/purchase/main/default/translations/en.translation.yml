@@ -5,7 +5,7 @@ CustomApplications:
     groups:
       设置: 设置
 CustomTabs:
-  purchase_dashboard: purchase_dashboard
+  purchase_dashboard: Home
   object_purchase_orders: object_purchase_orders
   object_accounts: object_accounts
   object_invoices: object_invoices
