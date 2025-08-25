@@ -1,0 +1,184 @@
+name: sales_orders
+label: 应收合同
+description: 
+fields:
+  amount:
+    label: 合同金额
+    help: 
+    description: 
+  amount_invoice:
+    label: 开票中
+    help: 除了已开票状态合同开票明细记录的汇总金额。
+    description: 
+  amount_receiving:
+    label: 收款中金额
+    help: 收款审批中的收款金额
+    description: 
+  arrival_amount:
+    label: 收款金额
+    help: 收款审批通过的收款金额
+    description: 
+  billing_money:
+    label: 开票金额
+    help: 已开票状态合同开票明细记录的汇总金额。
+    description: 
+  billing_money_receive:
+    label: 开票应收
+    help: 已开票金额-发票已收金额
+    description: 
+  buyer:
+    label: 联系人
+    help: 请选择当前客户下的联系人。
+    description: 
+  buyer_mobile:
+    label: 联系电话
+    help: 
+    description: 
+  company_id:
+    label: 主分部
+    help: 
+    description: 
+  company_ids:
+    label: 所属分部
+    help: 
+    description: 
+  contract_code:
+    label: 合同编号
+    help: 
+    description: 
+  contract_label:
+    label: 合同标签
+    help: 
+    description: 
+  created:
+    label: 创建时间
+    help: 
+    description: 
+  created_by:
+    label: 创建人
+    help: 
+    description: 
+  customer:
+    label: 客户
+    help: 
+    description: 
+  department:
+    label: 部门
+    help: 
+    description: 
+  description:
+    label: 备注
+    help: 
+    description: 
+  discount_amount:
+    label: 折让金额
+    help: 收款已审核通过的折让金额
+    description: 
+  discount_being_amount:
+    label: 折让中金额
+    help: 收款审批中的折让金额
+    description: 
+  followup_id:
+    label: 跟进人
+    help: 
+    description: 
+  implementation:
+    label: 执行情况
+    help: 
+    options:
+      - label: 签订中
+        value: Signing
+        color: '#4a90e2'
+      - label: 执行中
+        value: in-progress
+        color: '#7ed321'
+      - label: 已结束
+        value: finsih
+        color: '#f5a623'
+      - label: 已续签
+        value: Renewed
+        color: '#f8e71c'
+      - label: 终止
+        value: termination
+        color: '#d0021b'
+    description: 
+  instance_state:
+    label: 申请单审批状态
+    help: 
+    options:
+      - label: 草稿
+        value: draft
+      - label: 进行中
+        value: pending
+      - label: 已完成
+        value: completed
+      - label: 已核准
+        value: approved
+      - label: 已驳回
+        value: rejected
+      - label: 已取消
+        value: terminated
+    description: 
+  invoice_amount:
+    label: 开票已收
+    help: 收款核销的发票金额
+    description: 
+  left_invoice:
+    label: 剩余开票
+    help: 合同金额-已开票金额-开票中金额
+    description: 
+  left_receive:
+    label: 合同应收
+    help: 合同金额-核销金额
+    description: 
+  locked:
+    label: 已锁定
+    help: 
+    description: 
+  maturity_date:
+    label: 到期日期
+    help: 
+    description: 
+  modified:
+    label: 修改时间
+    help: 
+    description: 
+  modified_by:
+    label: 修改人
+    help: 
+    description: 
+  name:
+    label: 合同名称
+    help: 
+    description: 
+  owner:
+    label: 所有者
+    help: 
+    description: 
+  product_amount:
+    label: 产品金额
+    help: 
+    description: 
+  signed_date:
+    label: 合同日期
+    help: 
+    description: 
+  verification_being_money:
+    label: 核销中金额
+    help: 收款中金额+折让中金额
+    description: 
+  verification_money:
+    label: 核销金额
+    help: 收款金额+折让金额
+    description: 
+groups:
+  开票管理: 开票管理
+  收款管理: 收款管理
+  系统信息: 系统信息
+  通用: 通用
+listviews:
+  all:
+    label: 公司合同
+actions:
+  standard_approve:
+    label: 发起审批

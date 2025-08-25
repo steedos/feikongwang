@@ -1,0 +1,64 @@
+name: expense_reports
+label: 报销单
+description: 
+fields:
+  advance_payment:
+    label: 借款抵扣金额
+    help: 
+    description: 
+  amount:
+    label: 本次报销金额
+    help: 
+    description: 
+  applicant:
+    label: 申请人
+    help: 
+    description: 
+  business_purpose:
+    label: 业务目的
+    help: 
+    description: 
+  cost:
+    label: 发票数
+    help: 
+    description: 
+  end:
+    label: 费用发生结束日期
+    help: 
+    description: 
+  expense_trips:
+    label: 差旅
+    help: 请选择审批通过的差旅申请单。
+    description: 
+  name:
+    label: 报销名称
+    help: 
+    description: 
+  reimbursed_amount:
+    label: 报销支付金额
+    help: 
+    description: 
+  reports_number:
+    label: 报销编号
+    help: 
+    description: 
+  start:
+    label: 费用发生开始日期
+    help: 
+    description: 
+  total_cost:
+    label: 发票总金额
+    help: 
+    description: 
+groups:
+  费用情况: 费用情况
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看
+  unpaid:
+    label: 待支付
+actions:
+  standard_approve:
+    label: 发起审批
