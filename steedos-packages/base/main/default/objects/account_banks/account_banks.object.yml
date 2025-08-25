@@ -11,6 +11,7 @@ enable_audit: true
 enable_share: true
 enable_trash: true
 enable_enhanced_lookup: true
+enable_workflow: true
 icon: account
 label: 银行帐号
 version: 2

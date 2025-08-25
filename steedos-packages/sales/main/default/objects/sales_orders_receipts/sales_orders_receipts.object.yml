@@ -2,6 +2,7 @@ name: sales_orders_receipts
 custom: true
 enable_follow: false
 enable_share: true
+enable_workflow: true
 icon: orders
 is_enable: true
 label: 收款计划

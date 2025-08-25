@@ -17,7 +17,7 @@ enable_notes: false
 enable_share: false
 enable_tasks: false
 enable_tree: false
-enable_workflow: false
+enable_workflow: true
 icon: product
 is_enable: true
 is_system: true

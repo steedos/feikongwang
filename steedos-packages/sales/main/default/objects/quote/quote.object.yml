@@ -3,6 +3,7 @@ enable_audit: true
 enable_files: true
 enable_search: true
 enable_enhanced_lookup: true
+enable_workflow: true
 icon: quotes
 label: 报价单
 version: 2

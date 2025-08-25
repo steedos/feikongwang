@@ -11,7 +11,7 @@ enable_instances: false
 enable_notes: false
 enable_tasks: false
 enable_tree: false
-enable_workflow: false
+enable_workflow: true
 icon: calibration
 is_enable: true
 label: 应付合同标签

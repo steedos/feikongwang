@@ -11,7 +11,7 @@ enable_notes: false
 enable_search: true
 enable_share: false
 enable_tasks: false
-enable_workflow: false
+enable_workflow: true
 icon: metrics
 is_enable: true
 is_system: true

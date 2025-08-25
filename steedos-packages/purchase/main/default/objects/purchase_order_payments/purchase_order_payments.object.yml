@@ -2,6 +2,7 @@ name: purchase_order_payments
 custom: true
 enable_follow: false
 enable_share: true
+enable_workflow: true
 icon: orders
 is_enable: true
 label: 付款计划

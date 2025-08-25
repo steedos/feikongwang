@@ -2,6 +2,7 @@ name: campaign
 enable_audit: true
 enable_files: true
 enable_search: true
+enable_workflow: true
 icon: campaign
 label: 市场活动
 enable_enhanced_lookup: true
