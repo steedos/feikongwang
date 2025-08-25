@@ -13,7 +13,7 @@
             "className": "sm:mt-3 bg-white sm:shadow sm:rounded sm:border border-slate-300 p-4",
             "tabs": [
                 {
-                    "title": "详细",
+                    "title": "${'sales_detail' | t}",
                     "className": "px-0 py-4",
                     "body": [
                         {
@@ -28,7 +28,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "相关",
+                    "title": "${'sales_related' | t}",
                     "className": "px-0 pt-4",
                     "body": [
                         {

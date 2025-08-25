@@ -21,3 +21,14 @@ CustomTabs:
   object_finance_receive: object_finance_receive
   object_finance_pre_receive: object_finance_pre_receive
   object_instance_tasks: object_instance_tasks
+CustomLabels:
+  sales_product_infor: Product Infor
+  sales_detail: Details
+  sales_attachments: Attachments
+  sales_receipts: Receipts
+  sales_invoice: Invoice
+  sales_itemized_list: Itemized List
+  sales_receipts_check: Receipts Check
+  sales_write_off: Write-Off
+  sales_refund: Refund
+  sales_related: Releated

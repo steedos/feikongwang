@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "基础信息",
+                    "title": "${'base_infor' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -52,7 +52,7 @@
                     "className": "p-t p-l-xs"
                 },
                 {
-                    "title": "详细",
+                    "title": "${'base_detail' | t}",
                     "body": [
                         {
                             "type": "steedos-object-form",
@@ -75,7 +75,7 @@
                     "className": "px-0 py-4 p-t p-l-xs"
                 },
                 {
-                    "title": "合同",
+                    "title": "${'base_contract' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -97,7 +97,7 @@
                     "id": "u:2e205bd53cc2"
                 },
                 {
-                    "title": "附件",
+                    "title": "${'base_attachments' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -112,7 +112,7 @@
                     "className": "p-t p-l-xs"
                 },
                 {
-                    "title": "日程",
+                    "title": "${'base_events' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

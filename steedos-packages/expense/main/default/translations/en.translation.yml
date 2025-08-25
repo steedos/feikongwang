@@ -12,3 +12,9 @@ CustomTabs:
   object_expense_reports: object_expense_reports
   object_expense_advance_payment: object_expense_advance_payment
   object_instance_tasks: object_instance_tasks
+CustomLabels:
+  expense_itinerary: Itinerary
+  expense_detail: Details
+  expense_attachments: Attachments
+  expense_reimbursement: Reimbursement
+  expense_itemized_list: Itemized List

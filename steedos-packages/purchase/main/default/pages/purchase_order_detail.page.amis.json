@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "付款",
+                    "title": "${'purchase_payments' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -36,7 +36,7 @@
                     "className": "px-0 pt-4"
                 },
                 {
-                    "title": "详细",
+                    "title": "${'purchase_payments' | t}",
                     "className": "px-0 py-4",
                     "body": [
                         {
@@ -59,7 +59,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "附件",
+                    "title": "${'purchase_attachments' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -74,7 +74,7 @@
                     "className": "p-t p-l-xs"
                 },
                 {
-                    "title": "收票",
+                    "title": "${'purchase_invoices' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -88,7 +88,7 @@
                     "id": "u:99bace0024ae"
                 },
                 {
-                    "title": "产品信息",
+                    "title": "${'purchase_product_infor' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

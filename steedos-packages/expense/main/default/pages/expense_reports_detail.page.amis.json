@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "明细",
+                    "title": "${'expense_itemized_list' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -38,7 +38,7 @@
                     "className": "p-t p-l-xs"
                 },
                 {
-                    "title": "详细",
+                    "title": "${'expense_detail' | t}",
                     "className": "px-0 py-4",
                     "body": [
                         {
@@ -53,7 +53,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "附件",
+                    "title": "${'expense_attachments' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

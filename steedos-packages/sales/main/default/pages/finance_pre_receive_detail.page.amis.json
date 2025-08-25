@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "详细",
+                    "title": "${'sales_detail' | t}",
                     "className": "px-0 py-4",
                     "body": [
                         {
@@ -36,7 +36,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "核销",
+                    "title": "${'sales_write_off' | t}",
                     "className": "px-0 pt-4",
                     "body": [
                         {
@@ -51,7 +51,7 @@
                     "id": "u:0cd50f1f7b6f"
                 },
                 {
-                    "title": "退款",
+                    "title": "${'sales_refund' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

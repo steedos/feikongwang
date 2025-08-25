@@ -5,7 +5,7 @@ amis_schema: |-
       "body": [
         {
             "type": "button",
-            "label": "智能识票",
+            "label": "${'invoice_btn_ocr' | t}",
             "level": "primary",
             "id": "u:ocr",
             "onEvent": {
@@ -16,7 +16,7 @@ amis_schema: |-
                     "actionType": "dialog",
                     "dialog": {
                       "type": "dialog",
-                      "title": "智能识票",
+                      "title": "${'invoice_btn_ocr' | t}",
                       "body": [
                         {
                           "type": "form",
@@ -120,7 +120,7 @@ amis_schema: |-
       "bodyClassName": "p-0"
   }
 is_enable: true
-label: 智能识票
+label: ${'invoice_btn_ocr' | t}
 "on": list
 type: amis_button
 visible: true

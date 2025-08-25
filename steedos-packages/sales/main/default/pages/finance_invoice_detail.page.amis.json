@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "明细",
+                    "title": "${'sales_itemized_list' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -37,7 +37,7 @@
                     "id": "u:995edcca8159"
                 },
                 {
-                    "title": "详细",
+                    "title": "${'sales_detail' | t}",
                     "body": [
                         {
                             "type": "steedos-object-form",
@@ -58,7 +58,7 @@
                     "id": "u:5d4e7e3f6ecc"
                 },
                 {
-                    "title": "收款核销",
+                    "title": "${'sales_receipts_check' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -73,7 +73,7 @@
                     "id": "u:fdccbe9f7c81"
                 },
                 {
-                    "title": "附件",
+                    "title": "${'sales_attachments' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

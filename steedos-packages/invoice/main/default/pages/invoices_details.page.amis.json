@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "详细",
+                    "title": "${'invoice_invoice_detail' | t}",
                     "className": "px-0 py-4 p-t p-l-xs",
                     "body": [
                         {

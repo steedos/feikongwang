@@ -13,7 +13,7 @@
             "className": "bg-white mt-2 p-4",
             "tabs": [
                 {
-                    "title": "明细",
+                    "title": "${'sales_itemized_list' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",
@@ -28,7 +28,7 @@
                     "id": "u:c110449640a0"
                 },
                 {
-                    "title": "详细",
+                    "title": "${'sales_detail' | t}",
                     "body": [
                         {
                             "type": "steedos-object-form",
@@ -51,7 +51,7 @@
                     "className": "px-0 py-4 p-t p-l-xs"
                 },
                 {
-                    "title": "附件",
+                    "title": "${'sales_attachments' | t}",
                     "body": [
                         {
                             "type": "steedos-object-related-listview",

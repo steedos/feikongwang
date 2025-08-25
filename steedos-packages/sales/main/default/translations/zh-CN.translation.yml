@@ -1,0 +1,11 @@
+CustomLabels:
+  sales_product_infor: 产品信息
+  sales_detail: 详细
+  sales_attachments: 附件
+  sales_receipts: 收款
+  sales_invoice: 发票
+  sales_itemized_list: 明细
+  sales_receipts_check: 收款核销
+  sales_write_off: 核销
+  sales_refund: 退款
+  sales_related: 相关

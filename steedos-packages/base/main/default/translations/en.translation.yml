@@ -21,3 +21,9 @@ CustomTabs:
   object_product: object_product
   object_material_group: object_material_group
   object_measurement_unit: object_measurement_unit
+CustomLabels:
+  base_infor: Basic Information
+  base_detail: Detail
+  base_contract: Contract
+  base_attachments: Attachments
+  base_events: Events

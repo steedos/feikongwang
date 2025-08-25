@@ -120,6 +120,7 @@ fields:
     description: 
 groups:
   Planning: Planning
+  计划: Planning
 listviews:
   all:
     label: All Campaigns
