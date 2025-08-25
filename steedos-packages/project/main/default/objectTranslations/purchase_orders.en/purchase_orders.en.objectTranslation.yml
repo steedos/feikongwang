@@ -2,14 +2,6 @@ name: purchase_orders
 label: 应付合同
 description: 
 fields:
-  contract_label:
-    label: 合同标签
-    help: 
-    description: 
-  project:
-    label: 所属项目
-    help: 
-    description: 
   amount:
     label: 合同金额
     help: 
@@ -34,6 +26,10 @@ fields:
     label: 合同编号
     help: 
     description: 
+  contract_label:
+    label: 合同标签
+    help: 
+    description: 
   department:
     label: 经办部门
     help: 
@@ -56,6 +52,10 @@ fields:
     description: 
   product_amount:
     label: 产品金额
+    help: 
+    description: 
+  project:
+    label: 所属项目
     help: 
     description: 
   signed_date:

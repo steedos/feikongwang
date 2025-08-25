@@ -6,33 +6,12 @@ fields:
     label: 费用类别
     help: 请选择启用的费用类别。
     description: 
-  expense_reports:
-    label: 报销单
-    help: 
-    description: 
-  receipt:
-    label: 收据
-    help: 
-    description: 
-  state:
-    label: 状态
-    help: 
-    options:
-      - label: 未关联记录
-        value: unassociated
-        color: 167bc1
-      - label: 未提交审批
-        value: unsubmitted
-        color: d7d9dd
-      - label: 审批中
-        value: approval
-        color: df6825
-      - label: 已批准
-        value: approved
-        color: 78d190
-    description: 
   check_code:
     label: 校验码
+    help: 
+    description: 
+  expense_reports:
+    label: 报销单
     help: 
     description: 
   file:
@@ -115,12 +94,20 @@ fields:
     label: 发票识别结果
     help: 
     description: 
+  purchase_order:
+    label: 应付合同
+    help: 
+    description: 
   purchaser_name:
     label: 购方名称
     help: 
     description: 
   purchaser_register_num:
     label: 购方纳税人识别号
+    help: 
+    description: 
+  receipt:
+    label: 收据
     help: 
     description: 
   seller_name:
@@ -133,6 +120,27 @@ fields:
     description: 
   service_type:
     label: 发票消费类型
+    help: 
+    description: 
+  state:
+    label: 状态
+    help: 
+    options:
+      - label: 未关联记录
+        value: unassociated
+        color: 167bc1
+      - label: 未提交审批
+        value: unsubmitted
+        color: d7d9dd
+      - label: 审批中
+        value: approval
+        color: df6825
+      - label: 已批准
+        value: approved
+        color: 78d190
+    description: 
+  supplier:
+    label: 供应商
     help: 
     description: 
   tax:
@@ -252,14 +260,6 @@ fields:
       - label: 不查验
         value: no_inspection
     description: 
-  purchase_order:
-    label: 应付合同
-    help: 
-    description: 
-  supplier:
-    label: 供应商
-    help: 
-    description: 
 groups:
   发票信息: 发票信息
   查验: 查验
@@ -267,10 +267,10 @@ listviews:
   all:
     label: 所有
 actions:
-  related_invoices:
-    label: 关联发票
   ocr:
     label: 智能识票
+  related_invoices:
+    label: 关联发票
   standard_new:
     label: 新建
   verify:

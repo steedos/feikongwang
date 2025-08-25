@@ -1,18 +1,18 @@
 name: accounts
 label: Business Partners
-description:
+description: 
 fields:
   address:
     label: Office Address
-    help:
-    description:
+    help: 
+    description: 
   charge:
     label: Person in Charge
-    help:
-    description:
+    help: 
+    description: 
   company_type:
     label: Nature of Business Partner
-    help:
+    help: 
     options:
       - label: Enterprise
         value: Enterprise
@@ -20,14 +20,14 @@ fields:
         value: Individual
       - label: Government/Institution
         value: Government/Institution
-    description:
+    description: 
   credit_limit:
     label: Credit Limit
-    help:
-    description:
+    help: 
+    description: 
   industry:
     label: Industry
-    help:
+    help: 
     options:
       - label: Internet/Information Technology
         value: Internet/Information Technology
@@ -69,15 +69,15 @@ fields:
         value: Environmental Protection Industry
       - label: Others
         value: Others
-    description:
+    description: 
   name:
     label: Business Partner Name
-    help:
-    description:
+    help: 
+    description: 
   number:
     label: Business Partner ID
-    help:
-    description:
+    help: 
+    description: 
   state:
     label: Region
     help: The region to which the business partner is assigned.
@@ -150,7 +150,7 @@ fields:
         value: AM
       - label: Taiwan
         value: TW
-    description:
+    description: 
 listviews:
   all:
     label: All

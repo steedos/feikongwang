@@ -56,11 +56,11 @@ listviews:
   recent:
     label: 最近查看
 actions:
-  standard_edit:
-    label: Edit
   standard_delete:
     label: Delete
-  standard_new:
-    label: New
   standard_delete_many:
     label: Delete
+  standard_edit:
+    label: Edit
+  standard_new:
+    label: New

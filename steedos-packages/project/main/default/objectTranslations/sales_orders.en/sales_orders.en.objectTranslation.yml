@@ -2,14 +2,6 @@ name: sales_orders
 label: 应收合同
 description: 
 fields:
-  contract_label:
-    label: 合同标签
-    help: 
-    description: 
-  project:
-    label: 所属项目
-    help: 
-    description: 
   amount:
     label: 合同金额
     help: 
@@ -52,6 +44,10 @@ fields:
     description: 
   contract_code:
     label: 合同编号
+    help: 
+    description: 
+  contract_label:
+    label: 合同标签
     help: 
     description: 
   created:
@@ -163,6 +159,10 @@ fields:
     label: 产品金额
     help: 
     description: 
+  project:
+    label: 所属项目
+    help: 
+    description: 
   signed_date:
     label: 合同日期
     help: 
@@ -176,10 +176,10 @@ fields:
     help: 收款金额+折让金额
     description: 
 groups:
-  通用: 通用
   开票管理: 开票管理
   收款管理: 收款管理
   系统信息: 系统信息
+  通用: 通用
 listviews:
   all:
     label: 公司合同

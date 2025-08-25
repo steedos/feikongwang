@@ -18,12 +18,12 @@ fields:
     label: 借款说明
     help: 
     description: 
-  write_off_status:
-    label: 核销状态
-    help: 
-    description: 
   project:
     label: 所属项目
+    help: 
+    description: 
+  write_off_status:
+    label: 核销状态
     help: 
     description: 
 listviews:

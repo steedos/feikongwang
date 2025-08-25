@@ -34,6 +34,10 @@ fields:
     label: 报销名称
     help: 
     description: 
+  project:
+    label: 所属项目
+    help: 
+    description: 
   reimbursed_amount:
     label: 报销支付金额
     help: 
@@ -48,10 +52,6 @@ fields:
     description: 
   total_cost:
     label: 发票总金额
-    help: 
-    description: 
-  project:
-    label: 所属项目
     help: 
     description: 
 groups:
