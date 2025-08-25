@@ -15,7 +15,7 @@ CustomTabs:
   object_tasks: object_tasks
   object_events: object_events
   object_notes: object_notes
-  sales_dashboard: sales_dashboard
+  sales_dashboard: Home
   object_sales_orders: object_sales_orders
   object_finance_invoice: object_finance_invoice
   object_finance_receive: object_finance_receive
