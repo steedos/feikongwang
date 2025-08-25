@@ -1,13 +1,13 @@
-name: product
-label: 物料
+name: contract_product
+label: 产品信息
 description: 
 fields:
-  annex:
-    label: 附件
+  amount:
+    label: 金额
     help: 
     description: 
-  external_id:
-    label: 外部ID
+  contract:
+    label: 合同
     help: 
     description: 
   material_group:
@@ -19,7 +19,11 @@ fields:
     help: 
     description: 
   name:
-    label: 物料名称
+    label: 产品编号
+    help: 
+    description: 
+  product:
+    label: 产品名称
     help: 
     description: 
   product_barcode:
@@ -30,12 +34,12 @@ fields:
     label: 产品说明
     help: 
     description: 
-  product_number:
-    label: 产品编号
-    help: 
-    description: 
   purchase_unit_price:
     label: 采购单价
+    help: 
+    description: 
+  quantity:
+    label: 数量
     help: 
     description: 
   sales_unit:
@@ -50,9 +54,8 @@ fields:
     label: 税收编码
     help: 
     description: 
+groups:
+  产品详情: 产品详情
 listviews:
   all:
-    label: 所有物料
-  recent:
-    label: 最近查看
-actions: {}
+    label: 所有

@@ -1,0 +1,25 @@
+name: measurement_unit
+label: 计量单位
+description: 
+fields:
+  code:
+    label: 编码
+    help: 
+    description: 
+  name:
+    label: 计量单位名称
+    help: 
+    description: 
+  owner:
+    label: 所有者
+    help: 
+    description: 
+  remark:
+    label: 描述
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

@@ -1,0 +1,11 @@
+name: contract_label
+label: 应收合同标签
+description: 
+fields:
+  name:
+    label: 名称
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有

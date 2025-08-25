@@ -1,0 +1,40 @@
+name: expense_advance_payment
+label: 借款
+description: 
+fields:
+  amount:
+    label: 金额
+    help: 
+    description: 
+  date:
+    label: 日期
+    help: 
+    description: 
+  expense_reports:
+    label: 报销
+    help: 
+    description: 
+  name:
+    label: 借款说明
+    help: 
+    description: 
+  write_off_status:
+    label: 核销状态
+    help: 
+    description: 
+  project:
+    label: 所属项目
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看
+  unverified:
+    label: 未核销
+actions:
+  related_loans:
+    label: 关联借款
+  standard_new:
+    label: 新建

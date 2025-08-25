@@ -1,0 +1,43 @@
+name: sales_orders_receipts
+label: 收款计划
+description: 
+fields:
+  amount:
+    label: 收款金额
+    help: 
+    description: 
+  amount_description:
+    label: 收款说明
+    help: 
+    description: 
+  contract:
+    label: 应收合同
+    help: 
+    description: 
+  contract_amount:
+    label: 合同金额
+    help: 
+    description: 
+  due_date:
+    label: 计划收款时间
+    help: 
+    description: 
+  finished:
+    label: 已完成
+    help: 
+    description: 
+  name:
+    label: 款项条件
+    help: 
+    description: 
+  receipts_name:
+    label: 计划类型
+    help: 
+    description: 
+  receipts_proportion:
+    label: 收款比例
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有

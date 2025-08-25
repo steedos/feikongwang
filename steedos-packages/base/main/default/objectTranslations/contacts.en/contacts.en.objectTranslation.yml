@@ -1,0 +1,52 @@
+name: contacts
+label: 联系人
+description: 
+fields:
+  account:
+    label: 所属客户
+    help: 联系人所链接的客户。输入客户名称、从列表中选择客户或创建客户。
+    description: 
+  department:
+    label: 部门
+    help: 
+    description: 
+  description:
+    label: 备注
+    help: 
+    description: 
+  email:
+    label: 邮件
+    help: 
+    description: 
+  name:
+    label: 姓名
+    help: 
+    description: 
+  owner:
+    label: 我方客户经理
+    help: 
+    description: 
+  phone:
+    label: 电话
+    help: 
+    description: 
+  salutation:
+    label: 性别
+    help: 
+    options:
+      - label: 男
+        value: Male
+      - label: 女
+        value: Female
+    description: 
+  title:
+    label: 职务
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有联系人
+  mine:
+    label: 我的联系人
+  recent:
+    label: 最近查看

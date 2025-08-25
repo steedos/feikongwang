@@ -1,0 +1,41 @@
+name: invoice_information
+label: 开票信息
+description: 
+fields:
+  bank:
+    label: 开户银行
+    help: 
+    description: 
+  bank_account:
+    label: 银行账号
+    help: 
+    description: 
+  credit_code:
+    label: 纳税人识别号
+    help: 
+    description: 
+  customer:
+    label: 客商
+    help: 
+    description: 
+  default:
+    label: 默认
+    help: 
+    description: 
+  invoice:
+    label: 发票抬头
+    help: 
+    description: 
+  invoice_address:
+    label: 地址
+    help: 
+    description: 
+  invoice_phone:
+    label: 电话
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

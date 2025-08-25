@@ -1,0 +1,31 @@
+name: company_account
+label: 结算账户
+description: 
+fields:
+  accnum:
+    label: 开户账号
+    help: 
+    description: 
+  description:
+    label: 备注
+    help: 
+    description: 
+  init_amount:
+    label: 初始余额
+    help: 
+    description: 
+  name:
+    label: 户名
+    help: 
+    description: 
+  pk_bankname:
+    label: 开户支行
+    help: 
+    description: 
+  pk_banktype:
+    label: 开户银行
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有

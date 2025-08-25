@@ -1,0 +1,46 @@
+name: finance_refund
+label: 退款
+description: 
+fields:
+  account:
+    label: 客户
+    help: 
+    description: 
+  amount:
+    label: 退款金额
+    help: 
+    description: 
+  amount_description:
+    label: 退款原因
+    help: 
+    description: 
+  amount_left:
+    label: 预收款余额
+    help: 
+    description: 
+  customer_bank:
+    label: 退款账户
+    help: 
+    description: 
+  due_date:
+    label: 退款日期
+    help: 
+    description: 
+  finance_pre_receive:
+    label: 预收款
+    help: 
+    description: 
+  name:
+    label: 预收款编号
+    help: 
+    description: 
+  pre_amount:
+    label: 预收款金额
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+actions:
+  standard_new:
+    label: 新建

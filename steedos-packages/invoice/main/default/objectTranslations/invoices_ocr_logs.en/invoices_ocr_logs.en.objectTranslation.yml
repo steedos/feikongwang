@@ -1,0 +1,31 @@
+name: invoices_ocr_logs
+label: 发票识别日志
+description: 
+fields:
+  error_code:
+    label: 错误代码
+    help: 
+    description: 
+  error_msg:
+    label: 错误信息
+    help: 
+    description: 
+  log_id:
+    label: LogId
+    help: 唯一的log id，用于问题定位
+    description: 
+  pdf_file_size:
+    label: 传入PDF文件的总页数
+    help: 传入PDF文件的总页数，当 pdf_file 参数有效时返回该字段
+    description: 
+  words_result:
+    label: 识别结果
+    help: 识别结果
+    description: 
+  words_result_num:
+    label: 识别结果数
+    help: 识别结果数，表示words_result的元素个数
+    description: 
+listviews:
+  all:
+    label: 所有

@@ -1,0 +1,55 @@
+name: finance_invoice_detail
+label: 开票明细
+description: 
+fields:
+  amount:
+    label: 金额（含税）
+    help: 
+    description: 
+  code:
+    label: 商品编码
+    help: 
+    description: 
+  excluding_tax:
+    label: 不含税金额
+    help: 
+    description: 
+  invoiceapply:
+    label: 开票
+    help: 
+    description: 
+  measurement:
+    label: 单位
+    help: 
+    description: 
+  name:
+    label: 商品名称
+    help: 
+    description: 
+  price:
+    label: 单价（含税）
+    help: 
+    description: 
+  quantity:
+    label: 数量
+    help: 
+    description: 
+  remark:
+    label: 商品说明
+    help: 
+    description: 
+  specifications:
+    label: 规格
+    help: 
+    description: 
+  tax:
+    label: 税率
+    help: 
+    description: 
+  tax_amount:
+    label: 税额
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有开票明细

@@ -1,0 +1,73 @@
+name: purchase_orders
+label: 应付合同
+description: 
+fields:
+  contract_label:
+    label: 合同标签
+    help: 
+    description: 
+  project:
+    label: 所属项目
+    help: 
+    description: 
+  amount:
+    label: 合同金额
+    help: 
+    description: 
+  amount_paid:
+    label: 付款金额
+    help: 
+    description: 
+  amount_received_invoice:
+    label: 发票金额
+    help: 
+    description: 
+  amount_unpaid:
+    label: 应付金额
+    help: 
+    description: 
+  buyer:
+    label: 经办人
+    help: 
+    description: 
+  contract_code:
+    label: 合同编号
+    help: 
+    description: 
+  department:
+    label: 经办部门
+    help: 
+    description: 
+  description:
+    label: 备注
+    help: 
+    description: 
+  maturity_date:
+    label: 到期日期
+    help: 
+    description: 
+  name:
+    label: 合同名称
+    help: 
+    description: 
+  owner:
+    label: 负责人
+    help: 
+    description: 
+  product_amount:
+    label: 产品金额
+    help: 
+    description: 
+  signed_date:
+    label: 合同日期
+    help: 
+    description: 
+  supplier:
+    label: 供应商
+    help: 
+    description: 
+groups:
+  数据概览: 数据概览
+listviews:
+  all:
+    label: 所有应收合同

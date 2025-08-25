@@ -1,0 +1,29 @@
+name: expense_trips_itinerary
+label: 差旅行程
+description: 
+fields:
+  arrived:
+    label: 到达地点
+    help: 
+    description: 
+  departure_date:
+    label: 出发日期
+    help: 
+    description: 
+  expense_trips:
+    label: 差旅
+    help: 
+    description: 
+  name:
+    label: 出发地点
+    help: 
+    description: 
+  remark:
+    label: 描述
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

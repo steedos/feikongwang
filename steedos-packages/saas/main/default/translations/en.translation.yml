@@ -1,0 +1,50 @@
+CustomApplications:
+  admin:
+    name: Setup
+    description: 管理员设置公司、人员、权限等。
+    groups:
+      personal_settings: personal_settings
+      company_settings: company_settings
+      apps: apps
+      object_settings: object_settings
+      user_interface: user_interface
+      statistical_analysis: statistical_analysis
+      development: development
+      process_automation: process_automation
+      approval_workflow: approval_workflow
+      advanced_settings: advanced_settings
+CustomTabs:
+  admin_personal_information: admin_personal_information
+  admin_process_delegation_rules: admin_process_delegation_rules
+  admin_space_info: admin_space_info
+  admin_company: admin_company
+  admin_organizations: admin_organizations
+  admin_space_users: admin_space_users
+  admin_permission_set: admin_permission_set
+  admin_license: admin_license
+  admin_apps: admin_apps
+  admin_objects: admin_objects
+  admin_pages: admin_pages
+  admin_tabs: admin_tabs
+  admin_queue_import: admin_queue_import
+  admin_datasources: admin_datasources
+  admin_steedos_packages: admin_steedos_packages
+  admin_developer: admin_developer
+  admin_metadata: admin_metadata
+  admin_developer_triggers: admin_developer_triggers
+  admin_developer_graphql: admin_developer_graphql
+  admin_flows: admin_flows
+  admin_roles: admin_roles
+  admin_flow_roles: admin_flow_roles
+  admin_flow_positions: admin_flow_positions
+  admin_categories: admin_categories
+  admin_instance_number_rules: admin_instance_number_rules
+  admin_space_user_signs: admin_space_user_signs
+  admin_instances_statistic: admin_instances_statistic
+  admin_webhooks: admin_webhooks
+  admin_object_workflows: admin_object_workflows
+  admin_sessions: admin_sessions
+  admin_autonumber: admin_autonumber
+  admin_holidays: admin_holidays
+  admin_business_hours: admin_business_hours
+  admin_api_keys: admin_api_keys

@@ -1,0 +1,19 @@
+name: bank_type
+label: 银行
+description: 
+fields:
+  code:
+    label: 类别代码
+    help: 
+    description: 
+  description:
+    label: 备注
+    help: 
+    description: 
+  name:
+    label: 类别名称
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有

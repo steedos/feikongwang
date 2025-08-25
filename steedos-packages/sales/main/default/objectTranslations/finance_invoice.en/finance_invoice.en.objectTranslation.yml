@@ -1,0 +1,129 @@
+name: finance_invoice
+label: 开票
+description: 
+fields:
+  account:
+    label: 客户名称
+    help: 
+    description: 
+  actual_date:
+    label: 开票日期
+    help: 
+    description: 
+  address:
+    label: 地址
+    help: 
+    description: 
+  amount:
+    label: 合同开票金额
+    help: 
+    description: 
+  bank:
+    label: 开户银行
+    help: 
+    description: 
+  bank_account:
+    label: 银行账号
+    help: 
+    description: 
+  contract_tax_amount:
+    label: 合同开票税额
+    help: 
+    description: 
+  credit_code:
+    label: 纳税人识别号
+    help: 
+    description: 
+  detail:
+    label: 有无开票明细
+    help: 无开票明细：税率可选（单税率），税额默认；有开票明细：税率可多选（可多税率），税额由开票明细决定。
+    options:
+      - label: 无开票明细
+        value: 'no'
+        color: d7d9dd
+      - label: 有开票明细
+        value: 'yes'
+        color: 78d190
+    description: 
+  detail_amount:
+    label: 开票明细金额
+    help: 
+    description: 
+  invoice_amount:
+    label: 发票已收金额
+    help: 
+    description: 
+  invoice_code:
+    label: 发票代码
+    help: 
+    description: 
+  invoice_left_amount:
+    label: 发票应收金额
+    help: 开票金额-发票已收金额
+    description: 
+  invoice_name:
+    label: 发票抬头
+    help: 
+    description: 
+  invoice_number:
+    label: 发票号码
+    help: 
+    description: 
+  invoice_type:
+    label: 发票类型
+    help: 
+    description: 
+  is_active:
+    label: 已开票
+    help: 
+    description: 
+  mail:
+    label: 邮箱
+    help: 
+    description: 
+  mail_address:
+    label: 邮寄地址
+    help: 
+    description: 
+  name:
+    label: 编号
+    help: 
+    description: 
+  phone:
+    label: 电话
+    help: 
+    description: 
+  recipient:
+    label: 收件人
+    help: 
+    description: 
+  remark:
+    label: 备注(特殊要求)
+    help: 
+    description: 
+  tax:
+    label: 税率
+    help: 
+    description: 
+  tax_amount:
+    label: 开票明细税额
+    help: 
+    description: 
+  telephont:
+    label: 联系电话
+    help: 
+    description: 
+groups:
+  发票信息: 发票信息
+  开票信息: 开票信息
+  邮寄信息: 邮寄信息
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看
+actions:
+  confirm_invoicing:
+    label: 确认开票
+  standard_approve:
+    label: 发起审批

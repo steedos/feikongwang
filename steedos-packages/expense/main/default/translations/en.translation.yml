@@ -1,0 +1,14 @@
+CustomApplications:
+  expense:
+    name: 报销
+    description: 差旅申请、发票识别与验真、费用报销
+    groups:
+      设置: 设置
+CustomTabs:
+  reimbursement_homepage: reimbursement_homepage
+  object_expense_trips: object_expense_trips
+  object_expense: object_expense
+  object_invoices: object_invoices
+  object_expense_reports: object_expense_reports
+  object_expense_advance_payment: object_expense_advance_payment
+  object_instance_tasks: object_instance_tasks

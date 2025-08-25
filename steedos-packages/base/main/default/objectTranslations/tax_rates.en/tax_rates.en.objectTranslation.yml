@@ -1,0 +1,21 @@
+name: tax_rates
+label: 税率
+description: 
+fields:
+  name:
+    label: 名称
+    help: 
+    description: 
+  owner:
+    label: 所有者
+    help: 
+    description: 
+  tax_rate:
+    label: 税率
+    help: 税率为百分比字段，输入0.06即显示为6%
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

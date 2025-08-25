@@ -1,0 +1,23 @@
+CustomApplications:
+  opportunity:
+    name: 客户
+    description: 管理客户、线索与商机
+  sales:
+    name: 应收
+    description: 精确追踪与分析每一笔收入
+CustomTabs:
+  object_accounts: object_accounts
+  object_opportunity: object_opportunity
+  object_quote: object_quote
+  object_leads: object_leads
+  object_campaign: object_campaign
+  object_contacts: object_contacts
+  object_tasks: object_tasks
+  object_events: object_events
+  object_notes: object_notes
+  sales_dashboard: sales_dashboard
+  object_sales_orders: object_sales_orders
+  object_finance_invoice: object_finance_invoice
+  object_finance_receive: object_finance_receive
+  object_finance_pre_receive: object_finance_pre_receive
+  object_instance_tasks: object_instance_tasks

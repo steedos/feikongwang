@@ -1,0 +1,68 @@
+name: account_banks
+label: 银行帐号
+description: 
+fields:
+  accname:
+    label: 户名
+    help: 
+    description: 
+  accnum:
+    label: 账号
+    help: 
+    description: 
+  account:
+    label: 客商
+    help: 
+    description: 
+  account_branch:
+    label: 开户支行
+    help: 
+    description: 
+  accountproperty:
+    label: 账户性质
+    help: 
+    options:
+      - label: 公司
+        value: company
+      - label: 个人
+        value: private
+    description: 
+  accstate:
+    label: 账户状态
+    help: 
+    options:
+      - label: 正常
+        value: normal
+      - label: 冻结
+        value: frozen
+      - label: 部分冻结
+        value: partially_frozen
+      - label: 销户
+        value: closed
+    description: 
+  enablestate:
+    label: 启用状态
+    help: 
+    options:
+      - label: 未启用
+        value: not_enabled
+      - label: 已启用
+        value: enable
+      - label: 已停用
+        value: disabled
+    description: 
+  isdefault:
+    label: 默认
+    help: 
+    description: 
+  pk_bankdoc:
+    label: 开户银行
+    help: 
+    description: 
+  pk_currtype:
+    label: 币种
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有

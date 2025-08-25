@@ -1,0 +1,21 @@
+name: expense_category
+label: 费用类别
+description: 
+fields:
+  describe:
+    label: 描述
+    help: 
+    description: 
+  name:
+    label: 类别名称
+    help: 
+    description: 
+  open:
+    label: 启用
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

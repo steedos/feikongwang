@@ -10,6 +10,18 @@ fields:
     label: 市场活动中的预算成本
     help: 市场活动的预算金额。
     description: 
+  count_converted:
+    label: 已转换线索数
+    help: 
+    description: 
+  count_leads:
+    label: 线索数
+    help: 
+    description: 
+  count_member:
+    label: 响应数
+    help: 
+    description: 
   description:
     label: 描述
     help: 
@@ -111,5 +123,7 @@ groups:
 listviews:
   all:
     label: 所有市场活动
+  mine:
+    label: 我的市场活动
   recent:
     label: 最近查看

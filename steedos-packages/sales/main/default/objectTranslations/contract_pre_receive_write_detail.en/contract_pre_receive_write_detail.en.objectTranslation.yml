@@ -1,0 +1,46 @@
+name: contract_pre_receive_write_detail
+label: 预收款核销明细
+description: 
+fields:
+  amount:
+    label: 合同金额
+    help: 
+    description: 
+  amount_invoicing:
+    label: 本次核销收款金额
+    help: 
+    description: 
+  contract:
+    label: 合同
+    help: 只能选择收款中选择的客户关联的合同。
+    description: 
+  contract_receive_amount:
+    label: 合同应收金额
+    help: 
+    description: 
+  contract_receive_detail:
+    label: 合同收款明细
+    help: 
+    description: 
+  date:
+    label: 合同日期
+    help: 
+    description: 
+  finance_pre_receive:
+    label: 预收款
+    help: 
+    description: 
+  invoice_amount:
+    label: 开票应收金额
+    help: 
+    description: 
+  name:
+    label: 预收款核销明细编号
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+actions:
+  standard_new:
+    label: 新建

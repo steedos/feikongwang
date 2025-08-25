@@ -1,0 +1,25 @@
+name: expense_trips
+label: 差旅申请
+description: 
+fields:
+  applicant:
+    label: 申请人
+    help: 
+    description: 
+  business_purpose:
+    label: 业务目的
+    help: 
+    description: 
+  name:
+    label: 差旅名称
+    help: 例如：去北京出差
+    description: 
+  travel_number:
+    label: 差旅编号
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

@@ -1,0 +1,13 @@
+name: payment_plan_type
+label: 付款类型
+description: 
+fields:
+  name:
+    label: 名称
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

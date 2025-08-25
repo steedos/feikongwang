@@ -1,0 +1,13 @@
+CustomApplications:
+  purchase:
+    name: 应付
+    description: 全面而精确的支出监控
+    groups:
+      设置: 设置
+CustomTabs:
+  purchase_dashboard: purchase_dashboard
+  object_purchase_orders: object_purchase_orders
+  object_accounts: object_accounts
+  object_invoices: object_invoices
+  object_finance_payment_reports: object_finance_payment_reports
+  object_instance_tasks: object_instance_tasks

@@ -1,0 +1,110 @@
+name: finance_payment_reports
+label: 付款单
+description: 
+fields:
+  account_banks:
+    label: 收款方开户行
+    help: 
+    description: 
+  amount:
+    label: 付款金额
+    help: 
+    description: 
+  amount_description:
+    label: 备注
+    help: 
+    description: 
+  billno:
+    label: 单据编号
+    help: 
+    description: 
+  company_id:
+    label: 所属单位
+    help: 
+    description: 
+  currency:
+    label: 币种
+    help: 
+    description: 
+  due_date:
+    label: 计划付款日期
+    help: 
+    description: 
+  finished:
+    label: 已完成
+    help: 
+    description: 
+  id:
+    label: 付款单编号
+    help: 
+    description: 
+  name:
+    label: 名称
+    help: 
+    description: 
+  payment_account:
+    label: 付款账户
+    help: 
+    description: 
+  payment_date:
+    label: 付款日期
+    help: 
+    description: 
+  payment_method:
+    label: 付款方式
+    help: 
+    options:
+      - label: 汇款
+        value: 汇款
+      - label: 支票
+        value: 支票
+      - label: 现金
+        value: 现金
+      - label: 其他
+        value: 其他
+    description: 
+  payment_status:
+    label: 付款状态
+    help: 
+    options:
+      - label: 已支付
+        value: paid
+      - label: 未支付
+        value: unpaid
+    description: 
+  payment_type:
+    label: 付款类别
+    help: 
+    options:
+      - label: 合同付款
+        value: 合同付款
+      - label: 其他付款
+        value: 其他付款
+    description: 
+  supplier:
+    label: 供应商
+    help: 
+    description: 
+  supplier_bank:
+    label: 供应商收款账户
+    help: 请选择此供应商的收款账户。
+    description: 
+  ticket_information:
+    label: 票款方式
+    help: 
+    options:
+      - label: 先票后款
+        value: 先票后款
+      - label: 先款后票
+        value: 先款后票
+    description: 
+groups:
+  付款信息: 付款信息
+listviews:
+  all:
+    label: 所有
+actions:
+  confirm_pay:
+    label: 付款
+  payment:
+    label: 编辑付款信息

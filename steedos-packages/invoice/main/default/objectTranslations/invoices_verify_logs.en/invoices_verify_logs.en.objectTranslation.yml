@@ -1,0 +1,75 @@
+name: invoices_verify_logs
+label: 发票验真日志
+description: 
+fields:
+  check_code:
+    label: 校验码
+    help: 
+    description: 
+  error_code:
+    label: 错误代码
+    help: 
+    description: 
+  error_msg:
+    label: 错误信息
+    help: 
+    description: 
+  invalid_sign:
+    label: 是否作废（冲红）
+    help: 是否作废（冲红）。Y：已作废；H：已冲红；N：未作废
+    options:
+      - label: 已作废
+        value: 'Y'
+      - label: 已冲红
+        value: H
+      - label: 未作废
+        value: 'N'
+    description: 
+  invoice_code:
+    label: 发票代码
+    help: 
+    description: 
+  invoice_date:
+    label: 开票日期
+    help: 
+    description: 
+  invoice_num:
+    label: 发票号码
+    help: 
+    description: 
+  invoice_type:
+    label: 发票种类
+    help: >-
+      发票种类。即增值税专用发票、增值税电子专用发票、增值税普通发票、增值税普通发票（电子）、增值税普通发票（卷式）、通行费增值税电子普通发票、区块链电子发票、全电发票（专用发票）、全电发票（普通发票）、机动车销售发票、二手车销售发票、货物运输业增值税专用发票
+    description: 
+  log_id:
+    label: LogId
+    help: 唯一的log id，用于问题定位
+    description: 
+  machine_code:
+    label: 机器编号
+    help: 
+    description: 
+  verify_frequency:
+    label: 查验次数
+    help: 查验次数。为历史查验次数
+    description: 
+  verify_message:
+    label: 查验结果信息
+    help: 查验结果信息。查验成功且发票为真返回“查验成功发票一致“，查验失败返回对应错误原因，详见末尾表格
+    description: 
+  verify_result:
+    label: 查验结果
+    help: 查验结果。查验成功返回“0001”，查验失败返回对应查验结果错误码
+    description: 
+  words_result:
+    label: 识别结果
+    help: 识别结果
+    description: 
+  words_result_num:
+    label: 识别结果数
+    help: 识别结果数，表示words_result的元素个数
+    description: 
+listviews:
+  all:
+    label: 所有

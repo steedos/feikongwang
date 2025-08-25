@@ -1,0 +1,57 @@
+name: purchase_prepayment
+label: 预付款
+description: 
+fields:
+  amount:
+    label: 付款金额
+    help: 
+    description: 
+  billno:
+    label: 单据编号
+    help: 
+    description: 
+  due_date:
+    label: 计划付款日期
+    help: 
+    description: 
+  finished:
+    label: 已完成
+    help: 
+    description: 
+  name:
+    label: 预付款编号
+    help: 
+    description: 
+  payment_account:
+    label: 付款账户
+    help: 
+    description: 
+  payment_date:
+    label: 付款日期
+    help: 
+    description: 
+  payment_status:
+    label: 付款状态
+    help: 
+    options:
+      - label: 已支付
+        value: paid
+      - label: 未支付
+        value: unpaid
+    description: 
+  supplier:
+    label: 供应商
+    help: 
+    description: 
+  supplier_bank:
+    label: 供应商收款账户
+    help: 
+    description: 
+groups:
+  付款信息: 付款信息
+listviews:
+  all:
+    label: 所有
+actions:
+  confirm_pay:
+    label: 确认付款

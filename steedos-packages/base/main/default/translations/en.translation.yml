@@ -1,0 +1,23 @@
+CustomApplications:
+  master:
+    name: 基础数据
+    description: 系统基础对象数据管理应用。
+    groups:
+      客商设置: 客商设置
+      费用设置: 费用设置
+      发票设置: 发票设置
+      财务设置: 财务设置
+      产品设置: 产品设置
+CustomTabs:
+  object_accounts: object_accounts
+  object_expense_category: object_expense_category
+  object_tax_rates: object_tax_rates
+  object_invoice_type: object_invoice_type
+  object_currency: object_currency
+  object_bank_type: object_bank_type
+  object_company_account: object_company_account
+  object_payment_plan_type: object_payment_plan_type
+  object_sales_orders_receipts_type: object_sales_orders_receipts_type
+  object_product: object_product
+  object_material_group: object_material_group
+  object_measurement_unit: object_measurement_unit

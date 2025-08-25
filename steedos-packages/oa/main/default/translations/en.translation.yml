@@ -1,0 +1,9 @@
+CustomApplications:
+  approve_workflow:
+    name: 审批王
+    description: 管理审批、公告、任务、日程。
+CustomTabs:
+  object_instance_tasks: object_instance_tasks
+  object_announcements: object_announcements
+  object_events: object_events
+  object_tasks: object_tasks

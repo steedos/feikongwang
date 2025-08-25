@@ -1,0 +1,33 @@
+name: mailing_information
+label: 邮寄信息
+description: 
+fields:
+  address:
+    label: 邮寄地址
+    help: 
+    description: 
+  customer:
+    label: 客商
+    help: 
+    description: 
+  default:
+    label: 默认
+    help: 
+    description: 
+  email:
+    label: 邮箱
+    help: 
+    description: 
+  name:
+    label: 收件人
+    help: 
+    description: 
+  phone:
+    label: 收件人电话
+    help: 
+    description: 
+listviews:
+  all:
+    label: 所有
+  recent:
+    label: 最近查看

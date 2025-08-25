@@ -1,0 +1,95 @@
+name: contract_receive_detail
+label: 合同收款明细
+description: 
+fields:
+  amount:
+    label: 合同金额
+    help: 
+    description: 
+  amount_discount:
+    label: 本次折让金额
+    help: 
+    description: 
+  amount_discount_invoice:
+    label: 折让金额
+    help: 
+    description: 
+  amount_discount_invoice_left:
+    label: 剩余折让金额
+    help: 收款折让金额-发票核销折让金额
+    description: 
+  amount_invoice:
+    label: 收款金额
+    help: 
+    description: 
+  amount_invoice_left:
+    label: 剩余收款金额
+    help: 收款金额-发票核销收款金额
+    description: 
+  amount_invoicing:
+    label: 本次收款金额
+    help: 
+    description: 
+  amount_pre_receive:
+    label: 预收款抵扣金额
+    help: 
+    description: 
+  amount_write:
+    label: 本次核销金额
+    help: 收款金额+折让金额+预收款抵扣金额
+    description: 
+  amount_write_invoice:
+    label: 核销金额
+    help: 
+    description: 
+  amount_write_invoice_left:
+    label: 剩余核销金额
+    help: 核销金额-发票核销金额
+    description: 
+  contract:
+    label: 合同
+    help: 只能选择收款中选择的客户关联的合同。
+    description: 
+  contract_receive_amount:
+    label: 合同应收金额
+    help: 
+    description: 
+  date:
+    label: 合同日期
+    help: 
+    description: 
+  finance_receive:
+    label: 收款
+    help: 
+    description: 
+  invoice_amount:
+    label: 合同开票应收金额
+    help: 
+    description: 
+  invoice_count:
+    label: 发票数量
+    help: 
+    description: 
+  name:
+    label: 合同收款明细编号
+    help: 
+    description: 
+  state:
+    label: 状态
+    help: 
+    options:
+      - label: 待收款
+        value: unsubmitted
+        color: d7d9dd
+      - label: 已收款
+        value: approved
+        color: 78d190
+    description: 
+groups:
+  发票核销: 发票核销
+listviews:
+  all:
+    label: 所有
+actions:
+  standard_new:
+    label: 新建
