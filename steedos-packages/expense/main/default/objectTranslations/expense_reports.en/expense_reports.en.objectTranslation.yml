@@ -52,6 +52,7 @@ fields:
     description: 
 groups:
   Expense Details: Expense Details
+  费用情况: Expense Details
 listviews:
   all:
     label: All

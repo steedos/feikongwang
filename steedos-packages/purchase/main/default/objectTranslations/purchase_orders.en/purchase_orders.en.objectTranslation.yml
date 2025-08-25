@@ -64,6 +64,7 @@ fields:
     description:
 groups:
   Data Overview: Data Overview
+  数据概览: Data Overview
 listviews:
   all:
     label: All Payables Contracts

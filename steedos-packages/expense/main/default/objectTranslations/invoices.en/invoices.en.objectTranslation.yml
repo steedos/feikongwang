@@ -263,6 +263,9 @@ fields:
 groups:
   Invoice Information: Invoice Information
   Verification: Verification
+  发票信息: Invoice Information
+  查验: Verification
+
 listviews:
   all:
     label: All

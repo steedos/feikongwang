@@ -48,6 +48,7 @@ fields:
     description: 
 groups:
   Receipt Information: Receipt Information
+  收款信息: Receipt Information
 listviews:
   all:
     label: All Receipt Records

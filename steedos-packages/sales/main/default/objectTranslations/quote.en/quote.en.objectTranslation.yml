@@ -131,6 +131,9 @@ groups:
   Prepare For: Prepare For
   Address Information: Address Information
   Totals: Totals
+  准备用于: Prepare For
+  地址信息: Address Information
+  总计: Totals
 listviews:
   all:
     label: All Quotes

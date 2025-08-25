@@ -176,6 +176,10 @@ groups:
   Receipt Management: Receipt Management
   System Information: System Information
   General: General
+  开票管理: Invoicing Management
+  收款管理: Receipt Management
+  系统信息: System Information
+  通用: General
 listviews:
   all:
     label: Company Contracts

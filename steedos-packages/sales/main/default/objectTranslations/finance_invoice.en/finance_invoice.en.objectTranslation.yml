@@ -117,6 +117,9 @@ groups:
   Invoice Information: Invoice Information
   Invoicing Information: Invoicing Information
   Mailing Information: Mailing Information
+  发票信息: Invoice Information
+  开票信息: Invoicing Information
+  邮寄信息: Mailing Information
 listviews:
   all:
     label: All

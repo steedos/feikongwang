@@ -253,6 +253,7 @@ fields:
     description: 
 groups:
   Address Information: Address Information
+  地址信息: Address Information
 listviews:
   all:
     label: All Leads
