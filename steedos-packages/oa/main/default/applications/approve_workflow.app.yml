@@ -5,7 +5,7 @@ visible: true
 icon_slds: approval
 is_creator: true
 mobile: true
-sort: 40
+sort: 55
 tab_items:
   object_instance_tasks:
     index: 1
