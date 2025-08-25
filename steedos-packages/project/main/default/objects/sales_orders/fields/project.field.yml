@@ -1,7 +1,0 @@
-name: project
-label: 所属项目
-reference_to: project
-sort_no: 26
-type: master_detail
-required: false
-write_requires_master_read: false

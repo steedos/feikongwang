@@ -1,6 +1,0 @@
-name: project
-label: 所属项目
-reference_to: project
-sort_no: 130
-type: lookup
-required: false
