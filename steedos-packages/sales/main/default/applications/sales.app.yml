@@ -7,8 +7,6 @@ mobile: true
 showSidebar: false
 sort: 20
 tab_items:
-  sales_dashboard:
-    index: 0
   object_sales_orders:
     index: 1
   object_accounts:

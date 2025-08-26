@@ -16,8 +16,6 @@ tab_groups:
     default_open: true
     id: 设置
 tab_items:
-  reimbursement_homepage:
-    index: 1
   object_expense_trips:
     index: 2
   object_expense:

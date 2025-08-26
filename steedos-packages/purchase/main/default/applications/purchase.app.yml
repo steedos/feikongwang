@@ -16,8 +16,6 @@ tab_groups:
     default_open: true
     id: 设置
 tab_items:
-  purchase_dashboard:
-    index: 1
   object_purchase_orders:
     index: 2
   object_accounts:
