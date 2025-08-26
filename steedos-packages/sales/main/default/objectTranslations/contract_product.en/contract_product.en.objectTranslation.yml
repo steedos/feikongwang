@@ -56,6 +56,7 @@ fields:
     description: 
 groups:
   Product Details: Product Details
+  产品详情: Product Details
 listviews:
   all:
     label: All
