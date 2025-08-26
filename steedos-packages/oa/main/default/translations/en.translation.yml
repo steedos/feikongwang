@@ -1,6 +1,6 @@
 CustomApplications:
   approve_workflow:
-    name: Approval Manager
+    name: Approval
     description: Manage approvals, announcements, tasks, and schedules.
 CustomTabs:
   object_instance_tasks: object_instance_tasks
