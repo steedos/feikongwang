@@ -8,6 +8,11 @@ CustomApplications:
       Invoice Settings: Invoice Settings
       Finance Settings: Finance Settings
       Product Settings: Product Settings
+      客商设置: Customer Settings
+      费用设置: Expense Settings
+      发票设置: Invoice Settings
+      财务设置: Finance Settings
+      产品设置: Product Settings
 CustomTabs:
   object_accounts: object_accounts
   object_expense_category: object_expense_category
