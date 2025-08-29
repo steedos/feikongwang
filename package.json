@@ -11,7 +11,7 @@
     "i18n:en": "yarn steedos i18n en"
   },
   "dependencies": {
-    "@steedos/server": "3.0.0-beta.87"
+    "@steedos/server": "3.0.0-beta.89"
   },
   "devDependencies": {
     "lerna": "^5.4.0",
