@@ -72,4 +72,4 @@ is_enable: true
 label: 发起审批
 "on": record_only
 type: amis_button
-visible: true
+visible: false
