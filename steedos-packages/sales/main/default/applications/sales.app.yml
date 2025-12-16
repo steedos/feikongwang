@@ -4,7 +4,7 @@ description: 精确追踪与分析每一笔收入
 icon_slds: reward
 is_creator: true
 mobile: true
-showSidebar: false
+showSidebar: true
 sort: 20
 tab_items:
   object_sales_orders:
